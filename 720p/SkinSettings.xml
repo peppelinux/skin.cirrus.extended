@@ -68,7 +68,7 @@
 					<posy>15</posy>
 					<width>380</width>
 					<height>25</height>
-					<font>cirrus_35</font>
+					<font>cirrus_30</font>
 					<textcolor>grey3</textcolor>
 					<align>right</align>
 					<aligny>center</aligny>
@@ -100,7 +100,7 @@
 					<posy>15</posy>
 					<width>380</width>
 					<height>25</height>
-					<font>cirrus_35</font>
+					<font>cirrus_30</font>
 					<textcolor>white</textcolor>
 					<align>right</align>
 					<aligny>center</aligny>
@@ -1804,7 +1804,7 @@
             <font>cirrus_20</font>
             <textcolor>grey2</textcolor>
             <focusedcolor>white</focusedcolor>
-            <label>$LOCALIZE[31111] - $LOCALIZE[41106]</label>
+            <label>$LOCALIZE[31111] - $LOCALIZE[41098]</label>
             <onclick>Skin.ToggleSetting(HomeMenuNoScriptsButton)</onclick>
             <selected>Skin.HasSetting(HomeMenuNoScriptsButton)</selected>
             <texturefocus flipx="true">listwhitegradient.png</texturefocus>
@@ -6734,7 +6734,7 @@
 						<width>750</width>
 						<height>45</height>
 						<font>cirrus_20</font>
-						<label>41099</label>
+						<label>41103</label>
 						<textcolor>orange</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
@@ -6802,18 +6802,18 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus flipx="true">listwhitegradient.png</texturefocus>
 						<texturenofocus>menuitemNF.png</texturenofocus>
-						<onclick>XBMC.runscript(script.artwork.downloader, mediatype=tvshow)</onclick>
+						<onclick>XBMC.RunScript(script.artwork.downloader, mediatype=tvshow)</onclick>
 					</control>
 					<control type="button" id="1044">
 						<width>750</width>
 						<height>40</height>
 						<font>cirrus_20</font>
-						<label>47999</label>
+						<label>41302</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus flipx="true">listwhitegradient.png</texturefocus>
 						<texturenofocus>menuitemNF.png</texturenofocus>
-						<onclick>XBMC.runscript(script.artwork.downloader, mediatype=movie)</onclick>
+						<onclick>XBMC.RunScript(script.artwork.downloader, mediatype=movie)</onclick>
 					</control>
 					<!--Changes Ending-->
 				<control type="label" id="1078">
