@@ -59,6 +59,7 @@
 			<width>1280</width>
 			<height>720</height>
 			<imagepath background="true">special://userdata/extras/videofanarts/$INFO[ListItem.FolderName]/extrafanart</imagepath>
+			<imagepath background="true">$INFO[ListItem.Path]/extrafanart</imagepath>
 			<timeperimage>7000</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>FanartCrossfadeTime</fadetime>
@@ -184,6 +185,7 @@
 			<width>1280</width>
 			<height>720</height>
 			<imagepath fallback="special://skin/backgrounds/tv_shows.jpg" background="true">special://userdata/extras/tvfanarts/$INFO[ListItem.TVShowTitle]/extrafanart</imagepath>
+			<imagepath fallback="special://skin/backgrounds/tv_shows.jpg" background="true">$INFO[ListItem.Path]/extrafanart</imagepath>
 			<timeperimage>7000</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>FanartCrossfadeTime</fadetime>
@@ -196,6 +198,7 @@
 			<width>1280</width>
 			<height>720</height>
 			<imagepath fallback="special://skin/backgrounds/tv_shows.jpg" background="true">special://userdata/extras/tvfanarts/$INFO[ListItem.TVShowTitle]/extrafanart</imagepath>
+			<imagepath fallback="special://skin/backgrounds/tv_shows.jpg" background="true">$INFO[ListItem.Path]../extrafanart</imagepath>
 			<timeperimage>7000</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>FanartCrossfadeTime</fadetime>
@@ -245,7 +248,7 @@
 	<!-- LABELS FOR MUSIC VIDEO BREADCRUMB TRAIL -->
 	<control type="group">
 		<posx>20</posx>
-		<posy>10</posy>
+		<posy>0</posy>
 		<visible>Container.Content(MusicVideos)</visible>
 		<include>VisibleFadeEffect</include>
 		<animation effect="slide" end="-1300,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
@@ -261,7 +264,7 @@
 	<!-- LABELS FOR TV BREADCRUMB TRAIL -->
 	<control type="group">
 		<posx>20</posx>
-		<posy>10</posy>
+		<posy>0</posy>
 		<visible>Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)</visible>
 		<include>VisibleFadeEffect</include>
 		<animation effect="slide" end="-1300,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
@@ -275,7 +278,7 @@
 	</control>
 	<control type="group">
 		<posx>20</posx>
-		<posy>10</posy>
+		<posy>0</posy>
 		<visible>Container.Content(Movies)</visible>
 		<include>VisibleFadeEffect</include>
 		<animation effect="slide" end="-1300,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
@@ -289,7 +292,7 @@
 	</control>
 	<control type="group">
 		<posx>20</posx>
-		<posy>10</posy>
+		<posy>0</posy>
 		<visible>Container.Content(Genres)</visible>
 		<include>VisibleFadeEffect</include>
 		<animation effect="slide" end="-1300,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
@@ -303,7 +306,7 @@
 	</control>
 	<control type="group">
 		<posx>20</posx>
-		<posy>10</posy>
+		<posy>0</posy>
 		<visible>Container.Content(Years)</visible>
 		<include>VisibleFadeEffect</include>
 		<animation effect="slide" end="-1300,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
@@ -317,7 +320,7 @@
 	</control>
 	<control type="group">
 		<posx>20</posx>
-		<posy>10</posy>
+		<posy>0</posy>
 		<visible>Container.Content(Actors)</visible>
 		<include>VisibleFadeEffect</include>
 		<animation effect="slide" end="-1300,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
@@ -331,7 +334,7 @@
 	</control>
 	<control type="group">
 		<posx>20</posx>
-		<posy>10</posy>
+		<posy>0</posy>
 		<visible>Container.Content(Directors)</visible>
 		<include>VisibleFadeEffect</include>
 		<animation effect="slide" end="-1300,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
@@ -345,7 +348,7 @@
 	</control>
 	<control type="group">
 		<posx>20</posx>
-		<posy>10</posy>
+		<posy>0</posy>
 		<visible>Container.Content(Addons)</visible>
 		<include>VisibleFadeEffect</include>
 		<animation effect="slide" end="-1300,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
@@ -359,7 +362,7 @@
 	</control>
 	<control type="group">
 		<posx>20</posx>
-		<posy>10</posy>
+		<posy>0</posy>
 		<visible>Container.Content(Files)</visible>
 		<include>VisibleFadeEffect</include>
 		<animation effect="slide" end="-1300,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
@@ -426,7 +429,7 @@
 				<width>250</width>
 				<height>30</height>
 				<font>cirrus_24</font>
-				<textcolor>orange</textcolor>
+				<textcolor>accent</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scroll>false</scroll>
 				<align>left</align>
@@ -749,6 +752,20 @@
 					<selected>Skin.HasSetting(showmoviedvd)</selected>
 					<visible>!Container.Content(TVShows) + !Container.Content(Seasons) + [Container.Content(Movies) + Control.IsVisible(720) | Control.IsVisible(52) | Control.IsVisible(721)]</visible>
 				</control>
+                <control type="button" id="44">
+                    <description>Download Artwork</description>
+                    <include>ButtonCommonValues</include>
+                    <label>41600</label>
+                    <onclick>XBMC.RunScript(script.artwork.downloader, mediatype=tvshow)</onclick>
+                    <visible>System.HasAddon(script.artwork.downloader) + Container.Content(tvshows)</visible>
+                </control>
+                <control type="button" id="45">
+                    <description>Download Artwork</description>
+                    <include>ButtonCommonValues</include>
+                    <label>41600</label>
+                    <onclick>XBMC.RunScript(script.artwork.downloader, mediatype=movie)</onclick>
+                    <visible>System.HasAddon(script.artwork.downloader) + Container.Content(movies)</visible>
+                </control>
 				<control type="button" id="8">
 					<description>Search</description>
 					<include>ButtonCommonValues</include>

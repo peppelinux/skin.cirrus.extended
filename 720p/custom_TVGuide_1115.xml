@@ -4120,6 +4120,7 @@
 					<width>200</width>
 					<height>78</height>
 					<texture>$INFO[Container(4001).ListItem.Property(ShowTitle),special://userdata/extras/tvfanarts/,/logo.png]</texture>
+					<texture>$INFO[Container(4001).ListItem.Property(Path),,logo.png]</texture>
 					<animation effect="slide" start="0,0" end="0,14" center="auto" time="0" condition="Skin.HasSetting(TVShowsPosters)">Conditional</animation>
 				</control>
 				<control type="image">
@@ -4239,6 +4240,7 @@
 					<width>200</width>
 					<height>78</height>
 					<texture>$INFO[Container(4002).ListItem.Property(ShowTitle),special://userdata/extras/tvfanarts/,/logo.png]</texture>
+					<texture>$INFO[Container(4002).ListItem.Property(Path),,logo.png]</texture>
 					<animation effect="slide" start="0,0" end="0,14" center="auto" time="0" condition="Skin.HasSetting(TVShowsPosters)">Conditional</animation>
 				</control>
 				<control type="image">
@@ -4358,6 +4360,7 @@
 					<width>200</width>
 					<height>78</height>
 					<texture>$INFO[Container(4003).ListItem.Property(ShowTitle),special://userdata/extras/tvfanarts/,/logo.png]</texture>
+					<texture>$INFO[Container(4003).ListItem.Property(Path),,logo.png]</texture>
 					<animation effect="slide" start="0,0" end="0,14" center="auto" time="0" condition="Skin.HasSetting(TVShowsPosters)">Conditional</animation>
 				</control>
 				<control type="image">
@@ -4477,6 +4480,7 @@
 					<width>200</width>
 					<height>78</height>
 					<texture>$INFO[Container(4004).ListItem.Property(ShowTitle),special://userdata/extras/tvfanarts/,/logo.png]</texture>
+					<texture>$INFO[Container(4004).ListItem.Property(Path),,logo.png]</texture>
 					<animation effect="slide" start="0,0" end="0,14" center="auto" time="0" condition="Skin.HasSetting(TVShowsPosters)">Conditional</animation>
 				</control>
 				<control type="image">
@@ -4596,6 +4600,7 @@
 					<width>200</width>
 					<height>78</height>
 					<texture>$INFO[Container(4005).ListItem.Property(ShowTitle),special://userdata/extras/tvfanarts/,/logo.png]</texture>
+					<texture>$INFO[Container(4005).ListItem.Property(Path),,logo.png]</texture>
 					<animation effect="slide" start="0,0" end="0,14" center="auto" time="0" condition="Skin.HasSetting(TVShowsPosters)">Conditional</animation>
 				</control>
 				<control type="image">
@@ -4715,6 +4720,7 @@
 					<width>200</width>
 					<height>78</height>
 					<texture>$INFO[Container(4006).ListItem.Property(ShowTitle),special://userdata/extras/tvfanarts/,/logo.png]</texture>
+					<texture>$INFO[Container(4006).ListItem.Property(Path),,logo.png]</texture>
 					<animation effect="slide" start="0,0" end="0,14" center="auto" time="0" condition="Skin.HasSetting(TVShowsPosters)">Conditional</animation>
 				</control>
 				<control type="image">
@@ -4834,6 +4840,7 @@
 					<width>200</width>
 					<height>78</height>
 					<texture>$INFO[Container(4007).ListItem.Property(ShowTitle),special://userdata/extras/tvfanarts/,/logo.png]</texture>
+					<texture>$INFO[Container(4007).ListItem.Property(Path),,logo.png]</texture>
 					<animation effect="slide" start="0,0" end="0,14" center="auto" time="0" condition="Skin.HasSetting(TVShowsPosters)">Conditional</animation>
 				</control>
 				<control type="image">

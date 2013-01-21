@@ -18,6 +18,7 @@
 				<height>180</height>
 				<aspectratio>stretch</aspectratio>
 				<texture>special://userdata/extras/tvfanarts/$INFO[ListItem.TVShowTitle]/disc.png</texture>
+				<texture>$INFO[ListItem.Path,,disc.png]</texture>
 				<texture>special://userdata/extras/videofanarts/$INFO[ListItem.FolderName]/disc.png</texture>
 				<visible>Skin.HasSetting(showmoviedvd)</visible>
 			</control>
@@ -277,6 +278,7 @@
 					<width>200</width>
 					<height>112</height>
 					<texture>special://userdata/extras/videofanarts/$INFO[ListItem.FolderName]/logo.png</texture>
+					<texture>$INFO[ListItem.Path,,logo.png]</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<visible>Container.Content(Movies)</visible>
 					<visible>!Skin.HasSetting(noMPAAStudioFlags)</visible>
@@ -289,6 +291,7 @@
 					<width>200</width>
 					<height>112</height>
 					<texture>special://userdata/extras/tvfanarts/$INFO[ListItem.TVShowTitle]/logo.png</texture>
+					<texture>$INFO[ListItem.Path,,logo.png]</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<visible>Container.Content(TVShows) | !Container.Content(Movies)</visible>
 				</control>
@@ -299,6 +302,7 @@
 					<width>200</width>
 					<height>112</height>
 					<texture>special://userdata/extras/videofanarts/$INFO[ListItem.FolderName]/logo.png</texture>
+					<texture>$INFO[ListItem.Path,,logo.png]</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<visible>Container.Content(Movies)</visible>
 					<visible>Skin.HasSetting(noMPAAStudioFlags)</visible>
@@ -311,6 +315,7 @@
 					<width>200</width>
 					<height>112</height>
 					<texture>special://userdata/extras/videofanarts/$INFO[ListItem.FolderName]/logo.png</texture>
+					<texture>$INFO[ListItem.Path,,logo.png]</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<visible>Container.Content(Movies)</visible>
 					<visible>Skin.HasSetting(newMPAAFlags)</visible>
@@ -471,7 +476,7 @@
 					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>[COLOR=orange]$LOCALIZE[41271][/COLOR] $INFO[ListItem.Property(TotalSeasons)]</label>
+					<label>[COLOR=accent]$LOCALIZE[41271][/COLOR] $INFO[ListItem.Property(TotalSeasons)]</label>
 					<scrollout>false</scrollout>
 				</control>
 				<control type="label">
@@ -484,7 +489,7 @@
 					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>[COLOR=orange]$LOCALIZE[31062] [/COLOR][COLOR=ffffffff]$INFO[Window(Home).Property(NextAired.NextDate)][/COLOR]</label>
+					<label>[COLOR=accent]$LOCALIZE[31062] [/COLOR][COLOR=ffffffff]$INFO[Window(Home).Property(NextAired.NextDate)][/COLOR]</label>
 			    	<visible>!IsEmpty(Window(Home).Property(NextAired.Label))+!IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
 					<scrollout>false</scrollout>
 				</control>
