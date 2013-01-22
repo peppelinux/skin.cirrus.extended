@@ -1,4 +1,79 @@
 <includes>
+  <include name="WeatherTxt">
+    <font>cirrus_20</font>
+    <align>left</align>
+    <aligny>center</aligny>
+  </include>
+  <include name="WeatherTxtValue">
+    <height>20</height>
+    <posy>50</posy>
+    <include>WeatherTxt</include>
+    <textcolor>white</textcolor>
+    <shadowcolor>black</shadowcolor>         
+  </include>
+  <include name="WeatherTxtLabel">
+    <height>20</height>
+    <posy>50</posy>
+    <include>WeatherTxt</include>
+    <textcolor>grey2</textcolor>
+    <shadowcolor>black</shadowcolor>         
+  </include>
+  <include name="WeatherTxtLabel2">
+    <posx>185</posx>
+    <width>300</width>
+    <height>35</height>
+    <font>cirrus_20</font>
+    <align>left</align>
+    <aligny>center</aligny>
+    <textcolor>white</textcolor>
+    <shadowcolor>black</shadowcolor>
+  </include>
+  <include name="WeatherTxtLabel3">
+    <posx>170</posx>
+    <width>170</width>
+    <height>35</height>
+    <font>cirrus_20</font>
+    <align>right</align>
+    <aligny>center</aligny>
+    <textcolor>grey2</textcolor>
+    <shadowcolor>black</shadowcolor>
+  </include>    
+  <include name="WeatherTxtOutlook">
+    <posx>40</posx>
+    <posy>80</posy>
+    <height>20</height>    
+    <include>WeatherTxt</include>
+    <textcolor>white</textcolor>
+    <shadowcolor>black</shadowcolor>         
+  </include>
+  <include name="WeatherOutlookIcon">
+    <posx>360</posx>
+    <posy>15</posy>
+    <height>80</height>
+    <width>80</width>
+  </include>
+  <include name="WeatherDayLabel">
+    <posx>40</posx>
+    <posy>10</posy>
+    <width>460</width>
+    <height>35</height>
+    <font>cirrus_24_Bold</font>
+    <align>left</align>
+    <aligny>center</aligny>
+    <textcolor>white</textcolor>
+    <shadowcolor>black</shadowcolor>
+ </include>
+ <include name="WeatherSeparator">
+    <control type="image">
+      <posx>20</posx>
+      <posy>120</posy>
+      <width>460</width>
+      <height>4</height>
+      <texture>separator.png</texture>
+    </control>
+ </include>
+
+    
 	<include name="weather">
 		<control type="button" id="6000">
 			<description>fake button to steal focus</description>
@@ -137,133 +212,63 @@
         </control>
         <control type="label">
           <description>current feels like label</description>
-          <posx>170</posx>
           <posy>330</posy>
-          <width>170</width>
-          <height>35</height>
-          <font>cirrus_20</font>
-          <align>right</align>
-          <aligny>center</aligny>
+          <include>WeatherTxtLabel3</include>
           <label>$LOCALIZE[402] :</label>
-          <textcolor>grey2</textcolor>
-          <shadowcolor>black</shadowcolor>
         </control>
         <control type="label">
           <description>current dew label</description>
-          <posx>170</posx>
           <posy>355</posy>
-          <width>170</width>
-          <height>35</height>
-          <font>cirrus_20</font>
-          <align>right</align>
-          <aligny>center</aligny>
+          <include>WeatherTxtLabel3</include>
           <label>$LOCALIZE[405] :</label>
-          <textcolor>grey2</textcolor>
-          <shadowcolor>black</shadowcolor>
         </control>
         <control type="label">
           <description>current humidity label</description>
-          <posx>170</posx>
           <posy>380</posy>
-          <width>170</width>
-          <height>35</height>
-          <font>cirrus_20</font>
-          <align>right</align>
-          <aligny>center</aligny>
+          <include>WeatherTxtLabel3</include>
           <label>$LOCALIZE[406] :</label>
-          <textcolor>grey2</textcolor>
-          <shadowcolor>black</shadowcolor>
         </control>
         <control type="label">
           <description>current UV Index label</description>
-          <posx>170</posx>
           <posy>405</posy>
-          <width>170</width>
-          <height>35</height>
-          <font>cirrus_20</font>
-          <align>right</align>
-          <aligny>center</aligny>
+          <include>WeatherTxtLabel3</include>
           <label>$LOCALIZE[403] :</label>
-          <textcolor>grey2</textcolor>
-          <shadowcolor>black</shadowcolor>
         </control>
         <control type="label">
           <description>current Wind label</description>
-          <posx>170</posx>
           <posy>430</posy>
-          <width>170</width>
-          <height>35</height>
-          <font>cirrus_20</font>
-          <align>right</align>
-          <aligny>center</aligny>
+          <include>WeatherTxtLabel3</include>
           <label>$LOCALIZE[404] :</label>
-          <textcolor>grey2</textcolor>
-          <shadowcolor>black</shadowcolor>
         </control>
         <control type="label">
           <description>current feels like Value</description>
-          <posx>185</posx>
           <posy>330</posy>
-          <width>300</width>
-          <height>35</height>
-          <font>cirrus_20</font>
-          <align>left</align>
-          <aligny>center</aligny>
+          <include>WeatherTxtLabel2</include>
           <label>$INFO[Window.Property(Current.FeelsLike)]$INFO[System.TemperatureUnits]</label>
-          <textcolor>white</textcolor>
-          <shadowcolor>black</shadowcolor>
         </control>
         <control type="label">
           <description>current dew Value</description>
-          <posx>185</posx>
           <posy>355</posy>
-          <width>300</width>
-          <height>35</height>
-          <font>cirrus_20</font>
-          <align>left</align>
-          <aligny>center</aligny>
+          <include>WeatherTxtLabel2</include>
           <label>$INFO[Window.Property(Current.DewPoint)]$INFO[System.TemperatureUnits]</label>
-          <textcolor>white</textcolor>
-          <shadowcolor>black</shadowcolor>
         </control>
         <control type="label">
           <description>current humidity Value</description>
-          <posx>185</posx>
           <posy>380</posy>
-          <width>300</width>
-          <height>35</height>
-          <font>cirrus_20</font>
-          <align>left</align>
-          <aligny>center</aligny>
+          <include>WeatherTxtLabel2</include>
           <info>Window.Property(Current.Humidity)</info>
-          <textcolor>white</textcolor>
-          <shadowcolor>black</shadowcolor>
         </control>
         <control type="label">
           <description>current UV Index Value</description>
-          <posx>185</posx>
           <posy>405</posy>
-          <width>300</width>
-          <height>35</height>
-          <font>cirrus_20</font>
-          <align>left</align>
-          <aligny>center</aligny>
+          <include>WeatherTxtLabel2</include>
           <info>Window.Property(Current.UVIndex)</info>
-          <textcolor>white</textcolor>
-          <shadowcolor>black</shadowcolor>
         </control>
         <control type="label">
           <description>current Wind Value</description>
-          <posx>185</posx>
           <posy>430</posy>
-          <width>300</width>
-          <height>35</height>
-          <font>cirrus_20</font>
-          <align>left</align>
-          <aligny>center</aligny>
+          <include>WeatherTxtLabel2</include>
           <info>Window.Property(Current.Wind)</info>
-          <textcolor>white</textcolor>
-          <shadowcolor>black</shadowcolor>
         </control>
       </control>
       <control type="group">
@@ -275,98 +280,50 @@
           <posy>60</posy>
           <control type="label">
             <description>Day label</description>
-            <posx>40</posx>
-            <posy>10</posy>
-            <width>460</width>
-            <height>35</height>
-            <font>cirrus_24_Bold</font>
+            <include>WeatherDayLabel</include>
             <info>Window.Property(Day0.Title)</info>
-            <align>left</align>
-            <aligny>center</aligny>
-            <textcolor>white</textcolor>
-            <shadowcolor>black</shadowcolor>
           </control>
           <control type="image">
             <description>day icon</description>
-            <posx>360</posx>
-            <posy>15</posy>
-            <height>80</height>
-            <width>80</width>
+            <include>WeatherOutlookIcon</include>
             <info>Window.Property(Day0.OutlookIcon)</info>
             <aspectratio align="right">keep</aspectratio>
           </control>
           <control type="label">
             <description>high label</description>
             <posx>40</posx>
-            <posy>50</posy>
-            <height>20</height>
-            <font>cirrus_20</font>
-            <align>left</align>
-            <aligny>center</aligny>
+            <include>WeatherTxtLabel</include>
             <label>$LOCALIZE[393] :</label>
-            <textcolor>grey2</textcolor>
-            <shadowcolor>black</shadowcolor>
             <visible>Weather.IsFetched</visible>
           </control>
           <control type="label">
             <description>high value</description>
             <posx>110</posx>
-            <posy>50</posy>
-            <height>20</height>
             <label>$INFO[Window.Property(Day0.HighTemp)]$INFO[System.TemperatureUnits]</label>
-            <font>cirrus_20</font>
-            <align>left</align>
-            <aligny>center</aligny>
-            <textcolor>white</textcolor>
-            <shadowcolor>black</shadowcolor>
+            <include>WeatherTxtValue</include>
             <visible>!IsEmpty(Window.Property(Day0.HighTemp))</visible>
           </control>
           <control type="label">
             <description>low label</description>
             <posx>220</posx>
-            <posy>50</posy>
-            <height>20</height>
-            <font>cirrus_20</font>
-            <align>left</align>
-            <aligny>center</aligny>
+            <include>WeatherTxtLabel</include>
             <label>$LOCALIZE[391] :</label>
-            <textcolor>grey2</textcolor>
-            <shadowcolor>black</shadowcolor>
             <visible>Weather.IsFetched</visible>
           </control>
           <control type="label">
             <description>low value</description>
             <posx>290</posx>
-            <posy>50</posy>
-            <height>20</height>
             <label>$INFO[Window.Property(Day0.LowTemp)]$INFO[System.TemperatureUnits]</label>
-            <font>cirrus_20</font>
-            <align>left</align>
-            <aligny>center</aligny>
-            <textcolor>white</textcolor>
-            <shadowcolor>black</shadowcolor>
+            <include>WeatherTxtValue</include>
             <visible>!IsEmpty(Window.Property(Day0.LowTemp))</visible>
           </control>
           <control type="label">
             <description>conditions label</description>
-            <posx>40</posx>
-            <posy>80</posy>
             <width>320</width>
-            <height>20</height>
+            <include>WeatherTxtOutlook</include>
             <info>Window.Property(Day0.Outlook)</info>
-            <font>cirrus_20</font>
-            <align>left</align>
-            <aligny>center</aligny>
-            <textcolor>white</textcolor>
-            <shadowcolor>black</shadowcolor>
           </control>
-          <control type="image">
-            <posx>20</posx>
-            <posy>110</posy>
-            <width>460</width>
-            <height>4</height>
-            <texture>separator.png</texture>
-          </control>
+        <include>WeatherSeparator</include>
         </control>
         <control type="group">
           <description>day 1</description>
@@ -374,98 +331,50 @@
           <posy>170</posy>
            <control type="label">
             <description>Day label</description>
-            <posx>40</posx>
-            <posy>10</posy>
-            <width>460</width>
-            <height>35</height>
-            <font>cirrus_24_Bold</font>
+            <include>WeatherDayLabel</include>
             <info>Window.Property(Day1.Title)</info>
-            <align>left</align>
-            <aligny>center</aligny>
-            <textcolor>white</textcolor>
-            <shadowcolor>black</shadowcolor>
           </control>
           <control type="image">
             <description>day icon</description>
-            <posx>360</posx>
-            <posy>15</posy>
-            <height>80</height>
-            <width>80</width>
+            <include>WeatherOutlookIcon</include>
             <info>Window.Property(Day1.OutlookIcon)</info>
             <aspectratio align="right">keep</aspectratio>
           </control>
           <control type="label">
             <description>high label</description>
             <posx>40</posx>
-            <posy>50</posy>
-            <height>20</height>
-            <font>cirrus_20</font>
-            <align>left</align>
-            <aligny>center</aligny>
+            <include>WeatherTxtLabel</include>
             <label>$LOCALIZE[393] :</label>
-            <textcolor>grey2</textcolor>
-            <shadowcolor>black</shadowcolor>
             <visible>Weather.IsFetched</visible>
           </control>
           <control type="label">
             <description>high value</description>
             <posx>110</posx>
-            <posy>50</posy>
-            <height>20</height>
             <label>$INFO[Window.Property(Day1.HighTemp)]$INFO[System.TemperatureUnits]</label>
-            <font>cirrus_20</font>
-            <align>left</align>
-            <aligny>center</aligny>
-            <textcolor>white</textcolor>
-            <shadowcolor>black</shadowcolor>
+            <include>WeatherTxtValue</include>
             <visible>!IsEmpty(Window.Property(Day1.HighTemp))</visible>
           </control>
           <control type="label">
             <description>low label</description>
             <posx>220</posx>
-            <posy>50</posy>
-            <height>20</height>
-            <font>cirrus_20</font>
-            <align>left</align>
-            <aligny>center</aligny>
+            <include>WeatherTxtLabel</include>
             <label>$LOCALIZE[391] :</label>
-            <textcolor>grey2</textcolor>
-            <shadowcolor>black</shadowcolor>
             <visible>Weather.IsFetched</visible>
           </control>
           <control type="label">
             <description>low value</description>
             <posx>290</posx>
-            <posy>50</posy>
-            <height>20</height>
             <label>$INFO[Window.Property(Day1.LowTemp)]$INFO[System.TemperatureUnits]</label>
-            <font>cirrus_20</font>
-            <align>left</align>
-            <aligny>center</aligny>
-            <textcolor>white</textcolor>
-            <shadowcolor>black</shadowcolor>
+            <include>WeatherTxtValue</include>
             <visible>!IsEmpty(Window.Property(Day1.LowTemp))</visible>
           </control>
           <control type="label">
             <description>conditions label</description>
-            <posx>40</posx>
-            <posy>80</posy>
             <width>320</width>
-            <height>20</height>
             <info>Window.Property(Day1.Outlook)</info>
-            <font>cirrus_20</font>
-            <align>left</align>
-            <aligny>center</aligny>
-            <textcolor>white</textcolor>
-            <shadowcolor>black</shadowcolor>
+            <include>WeatherTxtOutlook</include>
           </control>
-          <control type="image">
-            <posx>20</posx>
-            <posy>120</posy>
-            <width>460</width>
-            <height>4</height>
-            <texture>separator.png</texture>
-          </control>
+        <include>WeatherSeparator</include>
         </control>
         <control type="group">
           <description>day 2</description>
@@ -473,98 +382,50 @@
           <posy>290</posy>
            <control type="label">
             <description>Day label</description>
-            <posx>40</posx>
-            <posy>10</posy>
-            <width>460</width>
-            <height>35</height>
-            <font>cirrus_24_Bold</font>
+            <include>WeatherDayLabel</include>
             <info>Window.Property(Day2.Title)</info>
-            <align>left</align>
-            <aligny>center</aligny>
-            <textcolor>white</textcolor>
-            <shadowcolor>black</shadowcolor>
           </control>
           <control type="image">
             <description>day icon</description>
-            <posx>360</posx>
-            <posy>15</posy>
-            <height>80</height>
-            <width>80</width>
+            <include>WeatherOutlookIcon</include>
             <info>Window.Property(Day2.OutlookIcon)</info>
             <aspectratio align="right">keep</aspectratio>
           </control>
           <control type="label">
             <description>high label</description>
             <posx>40</posx>
-            <posy>50</posy>
-            <height>20</height>
-            <font>cirrus_20</font>
-            <align>left</align>
-            <aligny>center</aligny>
+            <include>WeatherTxtLabel</include>
             <label>$LOCALIZE[393] :</label>
-            <textcolor>grey2</textcolor>
-            <shadowcolor>black</shadowcolor>
             <visible>Weather.IsFetched</visible>
           </control>
           <control type="label">
             <description>high value</description>
             <posx>110</posx>
-            <posy>50</posy>
-            <height>20</height>
+            <include>WeatherTxtValue</include> 
             <label>$INFO[Window.Property(Day2.HighTemp)]$INFO[System.TemperatureUnits]</label>
-            <font>cirrus_20</font>
-            <align>left</align>
-            <aligny>center</aligny>
-            <textcolor>white</textcolor>
-            <shadowcolor>black</shadowcolor>
-            <visible>!IsEmpty(Window.Property(Day2.HighTemp))</visible>
+             <visible>!IsEmpty(Window.Property(Day2.HighTemp))</visible>
           </control>
           <control type="label">
             <description>low label</description>
             <posx>220</posx>
-            <posy>50</posy>
-            <height>20</height>
-            <font>cirrus_20</font>
-            <align>left</align>
-            <aligny>center</aligny>
+            <include>WeatherTxtLabel</include>
             <label>$LOCALIZE[391] :</label>
-            <textcolor>grey2</textcolor>
-            <shadowcolor>black</shadowcolor>
             <visible>Weather.IsFetched</visible>
           </control>
           <control type="label">
             <description>low value</description>
             <posx>290</posx>
-            <posy>50</posy>
-            <height>20</height>
+            <include>WeatherTxtValue</include>
             <label>$INFO[Window.Property(Day2.LowTemp)]$INFO[System.TemperatureUnits]</label>
-            <font>cirrus_20</font>
-            <align>left</align>
-            <aligny>center</aligny>
-            <textcolor>white</textcolor>
-            <shadowcolor>black</shadowcolor>
             <visible>!IsEmpty(Window.Property(Day2.LowTemp))</visible>
           </control>
           <control type="label">
             <description>conditions label</description>
-            <posx>40</posx>
-            <posy>80</posy>
             <width>320</width>
-            <height>20</height>
+            <include>WeatherTxtOutlook</include>
             <info>Window.Property(Day2.Outlook)</info>
-            <font>cirrus_20</font>
-            <align>left</align>
-            <aligny>center</aligny>
-            <textcolor>white</textcolor>
-            <shadowcolor>black</shadowcolor>
           </control>
-          <control type="image">
-            <posx>20</posx>
-            <posy>120</posy>
-            <width>460</width>
-            <height>4</height>
-            <texture>separator.png</texture>
-          </control>
+        <include>WeatherSeparator</include>  
         </control>
         <control type="group">
           <description>day 3</description>
@@ -572,97 +433,56 @@
           <posy>410</posy>
            <control type="label">
             <description>Day label</description>
-            <posx>40</posx>
-            <posy>10</posy>
-            <width>460</width>
-            <height>35</height>
-            <font>cirrus_24_Bold</font>
+            <include>WeatherDayLabel</include>
             <info>Window.Property(Day3.Title)</info>
-            <align>left</align>
-            <aligny>center</aligny>
-            <textcolor>white</textcolor>
-            <shadowcolor>black</shadowcolor>
           </control>
           <control type="image">
             <description>day icon</description>
-            <posx>360</posx>
-            <posy>15</posy>
-            <height>80</height>
-            <width>80</width>
+            <include>WeatherOutlookIcon</include>
             <info>Window.Property(Day3.OutlookIcon)</info>
             <aspectratio align="right">keep</aspectratio>
           </control>
           <control type="label">
             <description>high label</description>
             <posx>40</posx>
-            <posy>50</posy>
-            <height>20</height>
-            <font>cirrus_20</font>
-            <align>left</align>
-            <aligny>center</aligny>
+            <include>WeatherTxtLabel</include>
             <label>$LOCALIZE[393] :</label>
-            <textcolor>grey2</textcolor>
-            <shadowcolor>black</shadowcolor>
             <visible>Weather.IsFetched</visible>
           </control>
           <control type="label">
             <description>high value</description>
             <posx>110</posx>
-            <posy>50</posy>
-            <height>20</height>
+            <include>WeatherTxtValue</include>
             <label>$INFO[Window.Property(Day3.HighTemp)]$INFO[System.TemperatureUnits]</label>
-            <font>cirrus_20</font>
-            <align>left</align>
-            <aligny>center</aligny>
-            <textcolor>white</textcolor>
-            <shadowcolor>black</shadowcolor>
             <visible>!IsEmpty(Window.Property(Day3.HighTemp))</visible>
           </control>
           <control type="label">
             <description>low label</description>
             <posx>220</posx>
-            <posy>50</posy>
-            <height>20</height>
-            <font>cirrus_20</font>
-            <align>left</align>
-            <aligny>center</aligny>
+            <include>WeatherTxtLabel</include>
             <label>$LOCALIZE[391] :</label>
-            <textcolor>grey2</textcolor>
-            <shadowcolor>black</shadowcolor>
             <visible>Weather.IsFetched</visible>
           </control>
           <control type="label">
             <description>low value</description>
             <posx>290</posx>
-            <posy>50</posy>
-            <height>20</height>
+            <include>WeatherTxtValue</include>
             <label>$INFO[Window.Property(Day3.LowTemp)]$INFO[System.TemperatureUnits]</label>
-            <font>cirrus_20</font>
-            <align>left</align>
-            <aligny>center</aligny>
-            <textcolor>white</textcolor>
-            <shadowcolor>black</shadowcolor>
             <visible>!IsEmpty(Window.Property(Day3.LowTemp))</visible>
           </control>
           <control type="label">
             <description>conditions label</description>
-            <posx>40</posx>
-            <posy>80</posy>
             <width>320</width>
-            <height>20</height>
+            <include>WeatherTxtOutlook</include>
             <info>Window.Property(Day3.Outlook)</info>
-            <font>cirrus_20</font>
-            <align>left</align>
-            <aligny>center</aligny>
-            <textcolor>white</textcolor>
-            <shadowcolor>black</shadowcolor>
           </control>
         </control>
       </control>
     </control>
 	</include>
 
-	<include name="weatherplus">
+	<!-- ====WEATHER PLUS === -->
+  <include name="weatherplus">
 		<control type="button" id="6000">
 			<description>fake button to steal focus</description>
 			<texturefocus>-</texturefocus>

@@ -291,6 +291,7 @@
     <height>50</height>
     <font>cirrus_40_Bold</font><!-- font12caps -->
     <textcolor>accent</textcolor>
+    <shadowcolor>black</shadowcolor>
     <scroll>false</scroll>
     <align>left</align>
     <aligny>center</aligny>
@@ -307,6 +308,23 @@
     <align>left</align>
     <aligny>center</aligny>
   </include>
+  
+  <include name="ScrollListLetter">     <!-- Mod Yo Han -->
+  	<control type="group">
+  		<posx>20</posx>
+  		<posy>50</posy>
+  		<visible>Container.Scrolling + [StringCompare(Container.SortMethod,$LOCALIZE[551]) | StringCompare(Container.SortMethod,$LOCALIZE[561]) | StringCompare(Container.SortMethod,$LOCALIZE[558]) | StringCompare(Container.SortMethod,$LOCALIZE[557]) | StringCompare(Container.SortMethod,$LOCALIZE[556])]</visible>
+  		<include>VisibleFadeEffect</include>
+  		<animation effect="slide" end="-510,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
+  		<animation effect="slide" start="-510,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+  		<control type="label">
+  			<include>WindowTitleCommonsSort</include>
+  			<posx>0</posx>
+  			<label>$INFO[ListItem.SortLetter]</label>
+  		</control>
+  	</control>
+  </include>	
+  
   <include name="ButtonCommonValues">
     <height>30</height>
     <width>250</width>
