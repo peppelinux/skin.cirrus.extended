@@ -156,14 +156,14 @@
                 </control>
                 <!-- ====== MOVIES SECTION ======== -->
                 <control type="group">
-                	  <animation type="WindowOpen" reversible="false">
-                    	  <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
-                    	  <effect type="fade" start="0" end="100" time="300" />
-                	  </animation>
-                	  <animation type="WindowClose" reversible="false">
-                    	  <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
-                    	  <effect type="fade" start="100" end="0" time="300" />
-                	  </animation>      
+                    <animation type="WindowOpen" reversible="false">
+                        <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
+                        <effect type="fade" start="0" end="100" time="300" />
+                    </animation>
+                    <animation type="WindowClose" reversible="false">
+                        <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+                        <effect type="fade" start="100" end="0" time="300" />
+                    </animation>      
                     <visible>[!container.content(tvshows) + !container.content(episodes) + !container.content(musicvideos)] + !Control.HasFocus(12)</visible>
                     <posy>50</posy>
                     <posx>20</posx>
@@ -478,14 +478,14 @@
                 </control>
                 <!-- ============= TV SHOWS ============= -->
                 <control type="group">
-          		      <animation type="WindowOpen" reversible="false">
-                  			<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
-                  			<effect type="fade" start="0" end="100" time="300" />
-          			    </animation>
-          			    <animation type="WindowClose" reversible="false">
-                  			<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
-                  			<effect type="fade" start="100" end="0" time="300" />
-              			</animation>      
+                    <animation type="WindowOpen" reversible="false">
+                        <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
+                        <effect type="fade" start="0" end="100" time="300" />
+                    </animation>
+                    <animation type="WindowClose" reversible="false">
+                        <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+                        <effect type="fade" start="100" end="0" time="300" />
+                    </animation>      
                     <visible>Container.Content(TVShows) + !Control.HasFocus(12)</visible>
                     <posy>50</posy>
                     <posx>20</posx>
@@ -497,7 +497,7 @@
                             <posy>545</posy>
                             <width>200</width>
                             <height>77</height>
-                            <texture>$INFO[ListItem.path]/$INFO[ListItem.title]/logo.png</texture>
+                            <texture>special://userdata/extras/tvfanarts/$INFO[ListItem.TVShowTitle]/logo.png</texture> 
                             <fadetime>100</fadetime>
                             <aspectratio scalediffuse="false">keep</aspectratio>
                         </control>
@@ -746,14 +746,14 @@
                 </control>
                 <!-- ============ EPISODES LEVEL ============ -->
                 <control type="group">
-              		  <animation type="WindowOpen" reversible="false">
-                  			<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
-                  			<effect type="fade" start="0" end="100" time="300" />
-              			</animation>
-              			<animation type="WindowClose" reversible="false">
-                  			<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
-                  			<effect type="fade" start="100" end="0" time="300" />
-              			</animation>      
+                    <animation type="WindowOpen" reversible="false">
+                        <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
+                        <effect type="fade" start="0" end="100" time="300" />
+                    </animation>
+                    <animation type="WindowClose" reversible="false">
+                        <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+                        <effect type="fade" start="100" end="0" time="300" />
+                    </animation>      
                     <visible>container.content(episodes) + !Control.HasFocus(12)</visible>
                     <posy>50</posy>
                     <posx>20</posx>
@@ -765,7 +765,7 @@
                             <posy>545</posy>
                             <width>200</width>
                             <height>77</height>
-                            <texture background="true">$INFO[ListItem.path]logo.png</texture>
+                            <texture>special://userdata/extras/tvfanarts/$INFO[ListItem.TVShowTitle]/logo.png</texture> 
                             <fadetime>100</fadetime>
                             <aspectratio scalediffuse="false">keep</aspectratio>
                         </control>
