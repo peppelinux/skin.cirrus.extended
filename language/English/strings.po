@@ -1114,10 +1114,6 @@ msgctxt "#41095"
 msgid "Show Path in Video Info Screen"
 msgstr ""
 
-msgctxt "#41096"
-msgid "Run Artwork Downloader (TV Shows)"
-msgstr ""
-
 #<string id="41097">Enable Slim OSD by Zombierobot</string>
 #New labels Settings (Home Items)
 #empty string with id 41097

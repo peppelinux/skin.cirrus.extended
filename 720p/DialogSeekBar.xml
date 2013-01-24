@@ -423,6 +423,7 @@
 					<width>200</width>
 					<height>112</height>
 					<texture fallback="blank.png">special://userdata/extras/tvfanarts/$INFO[ListItem.TVShowTitle]/clearart.png</texture>
+					<texture fallback="blank.png">$INFO[Player.FolderPath]../clearart.png</texture>
 					<aspectratio>keep</aspectratio>
 					<visible>Skin.HasSetting(clearart) + VideoPlayer.Content(episodes)</visible>
 				</control>
@@ -857,6 +858,7 @@
 				<height>200</height>
 				<align>right</align>
 				<texture background="true">special://userdata/extras/tvfanarts/$INFO[VideoPlayer.TVShowTitle]/clearart.png</texture>
+				 <texture background="true">$INFO[Player.FolderPath]/clearart.png</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>Skin.HasSetting(clearart) + VideoPlayer.Content(episodes)</visible>
 			</control>
