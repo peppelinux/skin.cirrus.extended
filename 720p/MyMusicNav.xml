@@ -93,8 +93,7 @@
 		<posy>0</posy>
 		<visible>Container.Content(MusicVideos)</visible>
 		<include>VisibleFadeEffect</include>
-		<animation effect="slide" end="-1300,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
-		<animation effect="slide" start="-1300,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+		<include>WindowOpenCloseAnimation</include>		
 		<control type="label">
 			<include>WindowTitleCommons</include>
 			<posx>0</posx>
@@ -109,8 +108,7 @@
 		<posy>0</posy>
 		<visible>Container.Content(Artists)</visible>
 		<include>VisibleFadeEffect</include>
-		<animation effect="slide" end="-1300,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
-		<animation effect="slide" start="-1300,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+		<include>WindowOpenCloseAnimation</include>	
 		<control type="label">
 			<include>WindowTitleCommons</include>
 			<posx>0</posx>
@@ -125,8 +123,7 @@
 		<posy>0</posy>
 		<visible>Container.Content(Songs)</visible>
 		<include>VisibleFadeEffect</include>
-		<animation effect="slide" end="-1300,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
-		<animation effect="slide" start="-1300,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+		<include>WindowOpenCloseAnimation</include>	
 		<control type="label">
 			<include>WindowTitleCommons</include>
 			<posx>0</posx>
@@ -141,8 +138,7 @@
 		<posy>0</posy>
 		<visible>Container.Content(Albums)</visible>
 		<include>VisibleFadeEffect</include>
-		<animation effect="slide" end="-1300,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
-		<animation effect="slide" start="-1300,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+		<include>WindowOpenCloseAnimation</include>	
 		<control type="label">
 			<include>WindowTitleCommons</include>
 			<posx>0</posx>
@@ -156,8 +152,7 @@
 		<posy>0</posy>
 		<visible>Container.Content(Genres)</visible>
 		<include>VisibleFadeEffect</include>
-		<animation effect="slide" end="-1300,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
-		<animation effect="slide" start="-1300,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+		<include>WindowOpenCloseAnimation</include>	
 		<control type="label">
 			<include>WindowTitleCommons</include>
 			<posx>0</posx>
@@ -171,8 +166,7 @@
 		<posy>0</posy>
 		<visible>Container.Content(Years)</visible>
 		<include>VisibleFadeEffect</include>
-		<animation effect="slide" end="-1300,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
-		<animation effect="slide" start="-1300,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+		<include>WindowOpenCloseAnimation</include>	
 		<control type="label">
 			<include>WindowTitleCommons</include>
 			<posx>0</posx>
@@ -186,8 +180,7 @@
 		<posy>0</posy>
 		<visible>Container.Content(Files)</visible>
 		<include>VisibleFadeEffect</include>
-		<animation effect="slide" end="-1300,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
-		<animation effect="slide" start="-1300,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+		<include>WindowOpenCloseAnimation</include>	
 		<control type="label">
 			<include>WindowTitleCommons</include>
 			<posx>0</posx>
