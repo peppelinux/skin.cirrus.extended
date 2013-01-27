@@ -4,5 +4,6 @@ Changelog: 3.0.0 (12.01.2013)
 - Reduced artwork filesize
 - Removal of double textstrings in language files
 - Color value "orange" replaced by "accent"
+- updated Weather section
 
 
