@@ -4,7 +4,7 @@
 		<!-- HOME MENU SUBMENUS HORIZONTAL -->
 		<control type="group" id="9001">
 			<posx>-250</posx>
-			<posy>300</posy>
+			<posy>299</posy>
 			
 			<control type="image"> <!-- background bar for horizontal submenus -->
 				<posx>0</posx>
