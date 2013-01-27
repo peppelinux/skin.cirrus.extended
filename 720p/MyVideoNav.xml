@@ -251,8 +251,7 @@
 		<posy>0</posy>
 		<visible>Container.Content(MusicVideos)</visible>
 		<include>VisibleFadeEffect</include>
-		<animation effect="slide" end="-1300,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
-		<animation effect="slide" start="-1300,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+		<include>WindowOpenCloseAnimation</include>	
 		<control type="label">
 			<include>WindowTitleCommons</include>
 			<posx>0</posx>
@@ -267,8 +266,7 @@
 		<posy>0</posy>
 		<visible>Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)</visible>
 		<include>VisibleFadeEffect</include>
-		<animation effect="slide" end="-1300,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
-		<animation effect="slide" start="-1300,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+		<include>WindowOpenCloseAnimation</include>	
 		<control type="label">
 			<include>WindowTitleCommons</include>
 			<posx>0</posx>
@@ -281,8 +279,7 @@
 		<posy>0</posy>
 		<visible>Container.Content(Movies)</visible>
 		<include>VisibleFadeEffect</include>
-		<animation effect="slide" end="-1300,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
-		<animation effect="slide" start="-1300,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+		<include>WindowOpenCloseAnimation</include>	
 		<control type="label">
 			<include>WindowTitleCommons</include>
 			<posx>0</posx>
@@ -295,8 +292,7 @@
 		<posy>0</posy>
 		<visible>Container.Content(Genres)</visible>
 		<include>VisibleFadeEffect</include>
-		<animation effect="slide" end="-1300,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
-		<animation effect="slide" start="-1300,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+		<include>WindowOpenCloseAnimation</include>	
 		<control type="label">
 			<include>WindowTitleCommons</include>
 			<posx>0</posx>
@@ -309,8 +305,7 @@
 		<posy>0</posy>
 		<visible>Container.Content(Years)</visible>
 		<include>VisibleFadeEffect</include>
-		<animation effect="slide" end="-1300,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
-		<animation effect="slide" start="-1300,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+		<include>WindowOpenCloseAnimation</include>	
 		<control type="label">
 			<include>WindowTitleCommons</include>
 			<posx>0</posx>
@@ -323,8 +318,7 @@
 		<posy>0</posy>
 		<visible>Container.Content(Actors)</visible>
 		<include>VisibleFadeEffect</include>
-		<animation effect="slide" end="-1300,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
-		<animation effect="slide" start="-1300,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+		<include>WindowOpenCloseAnimation</include>	
 		<control type="label">
 			<include>WindowTitleCommons</include>
 			<posx>0</posx>
@@ -337,8 +331,7 @@
 		<posy>0</posy>
 		<visible>Container.Content(Directors)</visible>
 		<include>VisibleFadeEffect</include>
-		<animation effect="slide" end="-1300,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
-		<animation effect="slide" start="-1300,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+		<include>WindowOpenCloseAnimation</include>	
 		<control type="label">
 			<include>WindowTitleCommons</include>
 			<posx>0</posx>
@@ -351,8 +344,7 @@
 		<posy>0</posy>
 		<visible>Container.Content(Addons)</visible>
 		<include>VisibleFadeEffect</include>
-		<animation effect="slide" end="-1300,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
-		<animation effect="slide" start="-1300,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+		<include>WindowOpenCloseAnimation</include>	
 		<control type="label">
 			<include>WindowTitleCommons</include>
 			<posx>0</posx>
@@ -365,8 +357,7 @@
 		<posy>0</posy>
 		<visible>Container.Content(Files)</visible>
 		<include>VisibleFadeEffect</include>
-		<animation effect="slide" end="-1300,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
-		<animation effect="slide" start="-1300,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+		<include>WindowOpenCloseAnimation</include>	
 		<control type="label">
 			<include>WindowTitleCommons</include>
 			<posx>0</posx>
@@ -775,18 +766,6 @@
 		</control>
     </control>
 	<!-- Mod Scroll List Letter -->
-	<control type="group">
-		<posx>20</posx>
-		<posy>50</posy>
-		<visible>Container.Scrolling + [StringCompare(Container.SortMethod,$LOCALIZE[551]) | StringCompare(Container.SortMethod,$LOCALIZE[561]) | StringCompare(Container.SortMethod,$LOCALIZE[558]) | StringCompare(Container.SortMethod,$LOCALIZE[557]) | StringCompare(Container.SortMethod,$LOCALIZE[556])]</visible>
-		<include>VisibleFadeEffect</include>
-		<animation effect="slide" end="-510,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
-		<animation effect="slide" start="-510,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
-		<control type="label">
-			<include>WindowTitleCommonsSort</include>
-			<posx>0</posx>
-			<label>$INFO[ListItem.SortLetter]</label>
-		</control>
-	</control>
+	<include>ScrollListLetter</include>
 </controls>
 </window>

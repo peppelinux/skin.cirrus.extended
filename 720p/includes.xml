@@ -53,7 +53,7 @@
   <include file="IncludesExtendedHomePlaying.xml" />	
   <include file="Includes_Next_Aired_TV_Guide.xml" />
   <include file="Includes_Home.xml" />
-  
+ 
 
   <constant name="FanartCrossfadeTime">200</constant>
   <constant name="IconCrossfadeTime">200</constant>
@@ -274,7 +274,10 @@
       <visible>Window.IsActive(MovieInformation) | Window.IsActive(MusicInformation) | Window.IsActive(SongInformation) | Window.IsActive(FileBrowser) | Window.IsActive(ScriptsDebugInfo) | Window.IsActive(PluginSettings) | Window.IsActive(ContentSettings) | Window.IsActive(SelectDialog) | Window.IsActive(FileStackingDialog) | Window.IsActive(MediaSource) | Window.IsActive(PictureInfo) | Window.IsActive(PlayerControls) | Window.IsActive(VirtualKeyboard) | Window.IsActive(NumericInput) | Window.IsActive(ProfileSettings) | Window.IsActive(LockSettings) | Window.IsActive(SmartPlaylistEditor) | Window.IsActive(SmartPlaylistRule) | Window.IsActive(script-XBMC_Lyrics-settings.xml) | Window.IsActive(script-RSS_Editor-rssEditor.xml) | Window.IsActive(script-RSS_Editor-setEditor.xml)</visible>
     </control>
   </include>
-
+  <include name="WindowOpenCloseAnimation">
+  	<animation effect="slide" end="-1300,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
+		<animation effect="slide" start="-1300,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+  </include>
   <include name="WindowTitleCommons">
     <posy>0</posy>
     <width>600</width>
@@ -291,10 +294,28 @@
     <height>50</height>
     <font>cirrus_40_Bold</font><!-- font12caps -->
     <textcolor>accent</textcolor>
+    <shadowcolor>black</shadowcolor>
     <scroll>false</scroll>
     <align>left</align>
     <aligny>center</aligny>
   </include>
+  
+  <include name="ScrollListLetter">     <!-- Mod Yo Han -->
+  	<control type="group">
+  		<posx>20</posx>
+  		<posy>50</posy>
+  		<visible>Container.Scrolling + [StringCompare(Container.SortMethod,$LOCALIZE[551]) | StringCompare(Container.SortMethod,$LOCALIZE[561]) | StringCompare(Container.SortMethod,$LOCALIZE[558]) | StringCompare(Container.SortMethod,$LOCALIZE[557]) | StringCompare(Container.SortMethod,$LOCALIZE[556])]</visible>
+  		<include>VisibleFadeEffect</include>
+  		<animation effect="slide" end="-510,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
+  		<animation effect="slide" start="-510,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+  		<control type="label">
+  			<include>WindowTitleCommonsSort</include>
+  			<posx>0</posx>
+  			<label>$INFO[ListItem.SortLetter]</label>
+  		</control>
+  	</control>
+  </include>	
+  
   <include name="ButtonCommonValues">
     <height>30</height>
     <width>250</width>

@@ -1,6 +1,6 @@
 <window id="2600">
 	<defaultcontrol always="true">6000</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
+
 	<controls>
 	  <!-- el_Paraguayo mod -->
             <control type="multiimage"><!-- weather fanart - weather plus -->
@@ -159,7 +159,7 @@
 					<onright>6000</onright>
 					<onup>101</onup>
 					<ondown>103</ondown>
-					<onfocus>Skin.SetString(WeatherPlus,2)</onfocus>
+          <onfocus>Skin.SetString(WeatherPlus,2)</onfocus>
 					<visible>StringCompare(Weather.Plugin,weather.weatherplus)</visible>
 				</control>
 				<control type="button" id="103">
@@ -217,11 +217,7 @@
 		</control>
 		<control type="group">
 			<include>ContentFade</include>
-			<control type="grouplist">
-				<include>Breadcrumbs</include>
-				<include>Breadcrumbs-Weather</include>
-			</control>
-			<include>clock</include>
+
 		</control>
 	</controls>
 </window>
