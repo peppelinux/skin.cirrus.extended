@@ -547,7 +547,7 @@
               <posx>120</posx>
               <width>533</width>
               <height>25</height>
-              <aligny>left</aligny>
+              
               <posy>60</posy>
               <label>[COLOR=accent]$LOCALIZE[31053]:[/COLOR] $INFO[Container(8000).ListItem.Property(Year)]</label>
               <font>cirrus_20</font>
@@ -557,7 +557,7 @@
               <posx>120</posx>
               <width>533</width>
               <height>25</height>
-              <aligny>left</aligny>
+              
               <posy>85</posy>
               <label>[COLOR=accent]$LOCALIZE[368]:[/COLOR] $INFO[Container(8000).ListItem.Property(Rating)]</label>
               <font>cirrus_20</font>
@@ -567,7 +567,7 @@
               <posx>120</posx>
               <width>533</width>
               <height>25</height>
-              <aligny>left</aligny>
+              
               <posy>110</posy>
               <label>[COLOR=accent]$LOCALIZE[31054]:[/COLOR] $INFO[Container(8000).ListItem.Property(RunningTime)]</label>
              <font>cirrus_20</font>
@@ -1372,7 +1372,7 @@
               <posx>120</posx>
               <width>533</width>
               <height>25</height>
-              <aligny>left</aligny>
+              
               <posy>60</posy>
               <label>[COLOR=accent]$LOCALIZE[31053]:[/COLOR] $INFO[Container(8006).ListItem.Property(Year)]</label>
               <font>cirrus_20</font>
@@ -1382,7 +1382,7 @@
               <posx>120</posx>
               <width>533</width>
               <height>25</height>
-              <aligny>left</aligny>
+              
               <posy>85</posy>
               <label>[COLOR=accent]$LOCALIZE[368]:[/COLOR] $INFO[Container(8006).ListItem.Property(Rating)]</label>
               <font>cirrus_20</font>
@@ -1392,7 +1392,7 @@
               <posx>120</posx>
               <width>533</width>
               <height>25</height>
-              <aligny>left</aligny>
+              
               <posy>110</posy>
               <label>[COLOR=accent]$LOCALIZE[31054]:[/COLOR] $INFO[Container(8006).ListItem.Property(RunningTime)]</label>
              <font>cirrus_20</font>
@@ -2035,7 +2035,7 @@
               <posx>120</posx>
               <width>533</width>
               <height>25</height>
-              <aligny>left</aligny>
+              
               <posy>60</posy>
               <label>[COLOR=accent]$LOCALIZE[31053]:[/COLOR] $INFO[Container(8007).ListItem.Property(Year)]</label>
               <font>cirrus_20</font>
@@ -2045,7 +2045,7 @@
               <posx>120</posx>
               <width>533</width>
               <height>25</height>
-              <aligny>left</aligny>
+              
               <posy>85</posy>
               <label>[COLOR=accent]$LOCALIZE[368]:[/COLOR] $INFO[Container(8007).ListItem.Property(Rating)]</label>
               <font>cirrus_20</font>
@@ -2055,7 +2055,7 @@
               <posx>120</posx>
               <width>533</width>
               <height>25</height>
-              <aligny>left</aligny>
+              
               <posy>110</posy>
               <label>[COLOR=accent]$LOCALIZE[31054]:[/COLOR] $INFO[Container(8007).ListItem.Property(RunningTime)]</label>
              <font>cirrus_20</font>
@@ -2698,7 +2698,7 @@
               <posx>120</posx>
               <width>533</width>
               <height>25</height>
-              <aligny>left</aligny>
+              
               <posy>60</posy>
               <label>[COLOR=accent]$LOCALIZE[31053]:[/COLOR] $INFO[Container(8008).ListItem.Property(Year)]</label>
               <font>cirrus_20</font>
@@ -2708,7 +2708,7 @@
               <posx>120</posx>
               <width>533</width>
               <height>25</height>
-              <aligny>left</aligny>
+              
               <posy>85</posy>
               <label>[COLOR=accent]$LOCALIZE[368]:[/COLOR] $INFO[Container(8008).ListItem.Property(Rating)]</label>
               <font>cirrus_20</font>
@@ -2718,7 +2718,7 @@
               <posx>120</posx>
               <width>533</width>
               <height>25</height>
-              <aligny>left</aligny>
+              
               <posy>110</posy>
               <label>[COLOR=accent]$LOCALIZE[31054]:[/COLOR] $INFO[Container(8008).ListItem.Property(RunningTime)]</label>
              <font>cirrus_20</font>
@@ -3801,7 +3801,7 @@
               <posx>28</posx>
               <width>533</width>
               <height>25</height>
-              <aligny>left</aligny>
+              
               <posy>8</posy>
               <label>[COLOR=accent]$LOCALIZE[31063]:[/COLOR] $INFO[Container(8001).ListItem.Property(EpisodeSeason)]</label>
 			  <font>cirrus_20</font>
@@ -3812,7 +3812,7 @@
               <posx>28</posx>
               <width>533</width>
               <height>25</height>
-              <aligny>left</aligny>
+              
               <posy>8</posy>
               <label>[COLOR=accent]$LOCALIZE[31063]:[/COLOR] $INFO[Container(8001).ListItem.Property(Season)]</label>
 			  <font>cirrus_20</font>
@@ -3823,7 +3823,7 @@
               <posx>28</posx>
               <width>533</width>
               <height>25</height>
-              <aligny>left</aligny>
+              
               <posy>34</posy>
               <label>[COLOR=accent]$LOCALIZE[31064]:[/COLOR] $INFO[Container(8001).ListItem.Property(EpisodeNumber)]</label>
 			  <font>cirrus_20</font>
@@ -3834,7 +3834,7 @@
               <posx>28</posx>
               <width>533</width>
               <height>25</height>
-              <aligny>left</aligny>
+              
               <posy>34</posy>
               <label>[COLOR=accent]$LOCALIZE[31064]:[/COLOR] $INFO[Container(8001).ListItem.Property(Episode)]</label>
 			  <font>cirrus_20</font>
@@ -4747,7 +4747,7 @@
               <posx>28</posx>
               <width>533</width>
               <height>25</height>
-              <aligny>left</aligny>
+              
               <posy>8</posy>
               <label>[COLOR=accent]$LOCALIZE[31063]:[/COLOR] $INFO[Container(8009).ListItem.Property(EpisodeSeason)]</label>
 			  <font>cirrus_20</font>
@@ -4758,7 +4758,7 @@
               <posx>28</posx>
               <width>533</width>
               <height>25</height>
-              <aligny>left</aligny>
+              
               <posy>34</posy>
               <label>[COLOR=accent]$LOCALIZE[31064]:[/COLOR] $INFO[Container(8009).ListItem.Property(EpisodeNumber)]</label>
 			  <font>cirrus_20</font>
@@ -5375,7 +5375,7 @@
               <posx>28</posx>
               <width>533</width>
               <height>25</height>
-              <aligny>left</aligny>
+              
               <posy>8</posy>
               <label>[COLOR=accent]$LOCALIZE[31063]:[/COLOR] $INFO[Container(8010).ListItem.Property(EpisodeSeason)]</label>
 			  <font>cirrus_20</font>
@@ -5386,7 +5386,7 @@
               <posx>28</posx>
               <width>533</width>
               <height>25</height>
-              <aligny>left</aligny>
+              
               <posy>34</posy>
               <label>[COLOR=accent]$LOCALIZE[31064]:[/COLOR] $INFO[Container(8010).ListItem.Property(EpisodeNumber)]</label>
 			  <font>cirrus_20</font>
@@ -6004,7 +6004,7 @@
               <posx>28</posx>
               <width>533</width>
               <height>25</height>
-              <aligny>left</aligny>
+              
               <posy>8</posy>
               <label>[COLOR=accent]$LOCALIZE[31063]:[/COLOR] $INFO[Container(8011).ListItem.Property(EpisodeSeason)]</label>
 			  <font>cirrus_20</font>
@@ -6015,7 +6015,7 @@
               <posx>28</posx>
               <width>533</width>
               <height>25</height>
-              <aligny>left</aligny>
+              
               <posy>34</posy>
               <label>[COLOR=accent]$LOCALIZE[31064]:[/COLOR] $INFO[Container(8011).ListItem.Property(EpisodeNumber)]</label>
 			  <font>cirrus_20</font>
@@ -6542,7 +6542,7 @@
 			  <posy>100</posy>
               <width>533</width>
               <height>25</height>
-              <aligny>left</aligny>
+              
               <font>cirrus_20</font>
 			  <textcolor>white</textcolor>
 			  <shadowcolor>black</shadowcolor>
@@ -6989,7 +6989,7 @@
 			  <posy>100</posy>
               <width>550</width>
               <height>150</height>
-              <aligny>left</aligny>
+              
               <font>cirrus_20</font>
 			  <textcolor>white</textcolor>
 			  <shadowcolor>black</shadowcolor>
