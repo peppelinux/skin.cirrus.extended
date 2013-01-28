@@ -42,7 +42,7 @@
 					<texturenofocus>OSDAudioNF.png</texturenofocus>
 					<onleft>700</onleft>
 					<onright>702</onright>
-					<onclick>ActivateWindow(124)</onclick>
+					<onclick>ActivateWindow(osdaudiosettings)</onclick>
 				</control>
 				<control type="button" id="702">
 					<posx>100</posx>

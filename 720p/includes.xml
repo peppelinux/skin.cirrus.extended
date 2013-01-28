@@ -65,14 +65,14 @@
       <width>1280</width>
       <height>720</height>
       <texture>special://skin/backgrounds/media-overlay.png</texture>
-      <visible>Player.HasVideo + !Skin.HasSetting(ShowBackgroundVideo)+ !SubString(Window(10025).Property(tvtunesIsAlive),True)</visible>
+      <visible>Player.HasVideo + !Skin.HasSetting(ShowBackgroundVideo)+ !SubString(Window(videos).Property(tvtunesIsAlive),True)</visible>
     </control>
     <control type="visualisation">
       <posx>0</posx>
       <posy>0</posy>
       <width>1280</width>
       <height>720</height>
-      <visible>Player.HasAudio + !Skin.HasSetting(ShowBackgroundVis)+ !SubString(Window(10025).Property(tvtunesIsAlive),True)</visible>
+      <visible>Player.HasAudio + !Skin.HasSetting(ShowBackgroundVis)+ !SubString(Window(videos).Property(tvtunesIsAlive),True)</visible>
     </control>
     <control type="videowindow">
       <posx>0</posx>
@@ -90,14 +90,14 @@
       <width>1280</width>
       <height>720</height>
       <texture>special://skin/backgrounds/media-overlay.png</texture>
-      <visible>Player.HasVideo + !SubString(Window(10025).Property(tvtunesIsAlive),True) + !Skin.HasSetting(ShowBackgroundVideoBrowser)</visible>
+      <visible>Player.HasVideo + !SubString(Window(videos).Property(tvtunesIsAlive),True) + !Skin.HasSetting(ShowBackgroundVideoBrowser)</visible>
     </control>
 	<control type="visualisation">
       <posx>0</posx>
       <posy>0</posy>
       <width>1280</width>
       <height>720</height>
-      <visible>Player.HasAudio + !SubString(Window(10025).Property(tvtunesIsAlive),True) + !Skin.HasSetting(ShowBackgroundVideoBrowser)</visible>
+      <visible>Player.HasAudio + !SubString(Window(videos).Property(tvtunesIsAlive),True) + !Skin.HasSetting(ShowBackgroundVideoBrowser)</visible>
     </control>
    <control type="videowindow">
       <posx>0</posx>
