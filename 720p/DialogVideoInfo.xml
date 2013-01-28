@@ -2,7 +2,7 @@
     <defaultcontrol always="true">8</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <controls>
-        <control type="button"id="7050">
+        <control type="button" id="7050">
             <texturefocus>-</texturefocus>
             <texturenofocus>-</texturenofocus>
             <onfocus>SendClick(movieinformation,5)</onfocus>
@@ -383,7 +383,7 @@
                         </control>
                     </control>
                     <!-- year, runtime, director, writer, cast (cast label only) -->
-                    <control type="list"id="49">
+                    <control type="list" id="49">
                         <posx>320</posx>
                         <posy>60</posy>
                         <width>600</width>
@@ -652,7 +652,7 @@
                         </control>
                         <!-- Changes End Butchabay MOD 1.2.0 -->
                     </control>
-                    <control type="list"id="49">
+                    <control type="list" id="49">
                         <posx>320</posx>
                         <posy>60</posy>
                         <width>800</width>
@@ -1253,7 +1253,7 @@
                         <include>ButtonVideoInfoCommonValues</include>
                         <label>13511</label>
                     </control>
-                    <control type="button"id="105">
+                    <control type="button" id="105">
                         <description>Get Cast Info</description>
                         <include>ButtonVideoInfoCommonValues</include>
                         <label>41286</label>
