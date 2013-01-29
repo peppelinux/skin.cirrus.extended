@@ -1276,7 +1276,7 @@
 				<font>cirrus_20</font>
 				<scroll>false</scroll>
 				<textcolor>white</textcolor>
-				<label fallback="-">[COLOR=grey]$LOCALIZE[243]:[/COLOR] $INFO[System.FPS]</label>
+				<label fallback="-">[COLOR=grey]$LOCALIZE[243]:[/COLOR] $INFO[System.FPS] fps</label>
 			</control>
 			<control type="label">
 				<posx>0</posx>
@@ -1336,41 +1336,26 @@
 			<control type="label">
 				<posx>0</posx>
 				<posy>140</posy>
-				<width>160</width>
+				<width>300</width>
 				<height>25</height>
 				<align>left</align>
 				<font>cirrus_20</font>
 				<textcolor>white</textcolor>
-				<wrapmultiline>true</wrapmultiline>
-				<label fallback="-">[COLOR=grey]$LOCALIZE[798]:[/COLOR]</label>
-			</control>
-			<control type="label">
-				<posx>150</posx>
-				<posy>140</posy>
-				<width>120</width>
-				<height>25</height>
-				<align>left</align>
-				<font>cirrus_20</font>
-				<textcolor>white</textcolor>
-				<scroll>true</scroll>
-				<scrollspeed>50</scrollspeed>
-				<scrollsuffix>-</scrollsuffix>
+				<wrapmultiline>false</wrapmultiline>
+				<label fallback="-">[COLOR=grey]$LOCALIZE[798]: [/COLOR] ONLINE</label>
 				<visible>System.InternetState</visible>
-				<label>ONLINE</label>
 			</control>
 			<control type="label">
-				<posx>150</posx>
+				<posx>0</posx>
 				<posy>140</posy>
-				<width>170</width>
+				<width>300</width>
 				<height>25</height>
 				<align>left</align>
 				<font>cirrus_20</font>
 				<textcolor>white</textcolor>
-				<scroll>true</scroll>
-				<scrollspeed>50</scrollspeed>
-				<scrollsuffix>-</scrollsuffix>
+				<wrapmultiline>false</wrapmultiline>
+				<label fallback="-">[COLOR=grey]$LOCALIZE[798]: [/COLOR] [COLOR red]OFFLINE[/COLOR]</label>
 				<visible>!System.InternetState</visible>
-				<label>[COLOR red]OFFLINE[/COLOR]</label>
 			</control>
 			<control type="image">
 				<posx>320</posx>

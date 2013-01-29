@@ -126,7 +126,7 @@
       <textcolor>grey2</textcolor>
       <focusedcolor>white</focusedcolor>
       <texturefocus border="5">listwhitegradient.png</texturefocus>
-      <texturenofocus border="5">menuitemNF.png</texturenofocus>
+      <texturenofocus border="5">MenuItemNF.png</texturenofocus>
       <pulseonselect>false</pulseonselect>
     </control>
     <control type="button" id="7">
@@ -149,7 +149,7 @@
       <textcolor>grey2</textcolor>
       <focusedcolor>white</focusedcolor>
       <texturefocus border="0,2,0,2" flipx="true">listwhitegradient.png</texturefocus>
-      <texturenofocus border="0,2,0,2">menuitemNF.png</texturenofocus>
+      <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
     </control>
     <control type="spincontrolex" id="9">
       <description>Default SpinControlex</description>
