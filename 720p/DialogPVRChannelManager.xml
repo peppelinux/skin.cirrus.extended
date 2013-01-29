@@ -638,7 +638,6 @@
 				<label></label>
 			</control>
 		</control>
-		<include>WindowTitleHomeButton</include>
 		<include>Clock</include>
 	</controls>
 </window>

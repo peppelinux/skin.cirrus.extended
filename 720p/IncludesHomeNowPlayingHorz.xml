@@ -63,7 +63,7 @@
         <posy>35</posy>
         <width>130</width>
         <height>130</height>
-        <aspectratio aligny="bottom">strech</aspectratio>
+        <aspectratio aligny="bottom">stretch</aspectratio>
         <texture>$INFO[MusicPlayer.Cover]</texture>
 		<bordertexture border="8">ThumbBorder.png</bordertexture>
 		<bordersize>8</bordersize>

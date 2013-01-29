@@ -1189,7 +1189,7 @@
 								<label>Start:</label>
 								<font>cirrus_20</font>
 								<align>left</align>
-								<aligny>left</aligny>
+								
 								<textcolor>accent</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<info>-</info>
@@ -1201,7 +1201,7 @@
 								<height>40</height>
 								<font>cirrus_20</font>
 								<align>left</align>
-								<aligny>left</aligny>
+								
 								<textcolor>grey</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<info>ListItem.StartTime</info>
@@ -1214,7 +1214,7 @@
 								<label>End:</label>
 								<font>cirrus_20</font>
 								<align>left</align>
-								<aligny>left</aligny>
+								
 								<textcolor>accent</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<info>-</info>
@@ -1226,7 +1226,7 @@
 								<height>40</height>
 								<font>cirrus_20</font>
 								<align>left</align>
-								<aligny>left</aligny>
+								
 								<textcolor>grey</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<info>ListItem.EndTime</info>
@@ -1239,7 +1239,7 @@
 								<label>Duration:</label>
 								<font>cirrus_20</font>
 								<align>left</align>
-								<aligny>left</aligny>
+								
 								<textcolor>accent</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<info>-</info>
@@ -1251,7 +1251,7 @@
 								<height>40</height>
 								<font>cirrus_20</font>
 								<align>left</align>
-								<aligny>left</aligny>
+								
 								<textcolor>grey</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<info>ListItem.Duration</info>
@@ -1264,7 +1264,7 @@
 								<label>Genre:</label>
 								<font>cirrus_20</font>
 								<align>left</align>
-								<aligny>left</aligny>
+								
 								<textcolor>accent</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<info>-</info>
@@ -1276,7 +1276,7 @@
 								<height>40</height>
 								<font>cirrus_20</font>
 								<align>left</align>
-								<aligny>left</aligny>
+								
 								<textcolor>grey</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<info>ListItem.Genre</info>
@@ -1291,7 +1291,7 @@
 						<shadowcolor>black</shadowcolor>
 						<scroll>true</scroll>
 						<align>left</align>
-						<aligny>left</aligny>
+						
 						<label>$INFO[ListItem.Title]</label>
 					</control>
 					<control type="textbox">
@@ -2991,7 +2991,6 @@
 				<label></label>
 			</control>
 		</control>
-		<include>WindowTitleHomeButton</include>
 		<include>Clock</include>
 	</controls>
 </window>
