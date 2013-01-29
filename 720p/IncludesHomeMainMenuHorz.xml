@@ -1,7 +1,7 @@
 <includes>
 	<include name="HomeMainMenuHorz">
 
-		<!-- Background for hoizontal menu -->
+		<!-- Background for horizontal menu -->
 		<control type="image">
 			<posx>0</posx>
 			<posy>423</posy>
@@ -13,7 +13,7 @@
 		</control>
 		<control type="image">
 			<posx>-100</posx>
-			<posy>420</posy>
+			<posy>423</posy>
 			<width>1480</width>
 			<height>20</height>
 			<texture>white-reflec1t.png</texture>
@@ -190,7 +190,7 @@
 					<texture background="true">$INFO[MusicPlayer.cover]</texture>
 				</control>
 			</control>
-		<!-- Background for low hoizontal menu -->
+		<!-- Background for low horizontal menu -->
 		<control type="image">
 			<posx>0</posx>
 			<posy>100r</posy>
@@ -202,7 +202,7 @@
 		</control>
 		<control type="image">
 			<posx>-100</posx>
-			<posy>103r</posy>
+			<posy>100r</posy>
 			<width>1480</width>
 			<height>20</height>
 			<texture>white-reflec1t.png</texture>
