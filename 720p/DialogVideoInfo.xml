@@ -2,7 +2,7 @@
     <defaultcontrol always="true">8</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <controls>
-        <control type="button"id="7050">
+        <control type="button" id="7050">
             <texturefocus>-</texturefocus>
             <texturenofocus>-</texturenofocus>
             <onfocus>SendClick(movieinformation,5)</onfocus>
@@ -67,14 +67,6 @@
                 <texture>black-back3.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <!--  <control type="image">
-        <posx>0</posx>
-        <posy>-20</posy>
-        <width>1280</width>
-        <height>750</height>
-        <texture>black-back3.png</texture>
-        <aspectratio>stretch</aspectratio>
-      </control> -->
             <control type="group">
                 <animation effect="fade" delay="400" start="0" end="100" time="200">WindowOpen</animation>
                 <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
@@ -154,6 +146,7 @@
                         </control>
                     </control>
                 </control>
+
                 <!-- ====== MOVIES SECTION ======== -->
                 <control type="group">
                 	  <animation type="WindowOpen" reversible="false">
@@ -383,7 +376,7 @@
                         </control>
                     </control>
                     <!-- year, runtime, director, writer, cast (cast label only) -->
-                    <control type="list"id="49">
+                    <control type="list" id="49">
                         <posx>320</posx>
                         <posy>60</posy>
                         <width>600</width>
@@ -652,7 +645,7 @@
                         </control>
                         <!-- Changes End Butchabay MOD 1.2.0 -->
                     </control>
-                    <control type="list"id="49">
+                    <control type="list" id="49">
                         <posx>320</posx>
                         <posy>60</posy>
                         <width>800</width>
@@ -1116,7 +1109,7 @@
                     <posy>410</posy>
                     <width>730</width>
                     <height>150</height>
-                    <font>cirrus_22</font>
+                    <font>cirrus_20</font>
                     <align>justify</align>
                     <textcolor>white</textcolor>
                     <pagecontrol>61</pagecontrol>
@@ -1253,7 +1246,7 @@
                         <include>ButtonVideoInfoCommonValues</include>
                         <label>13511</label>
                     </control>
-                    <control type="button"id="105">
+                    <control type="button" id="105">
                         <description>Get Cast Info</description>
                         <include>ButtonVideoInfoCommonValues</include>
                         <label>41286</label>

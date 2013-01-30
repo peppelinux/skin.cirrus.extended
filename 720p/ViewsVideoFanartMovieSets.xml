@@ -3,7 +3,8 @@
 <!-- ===================================================================================== -->
 <!-- ================================= FANART Movie Sets VIEW ID 766 ================================ -->
 <!-- ====================== Movies ===================== -->
-	<include name="ContainerMovieSets">
+	<!-- unused include for now
+  <include name="ContainerMovieSets">
 		<control type="list" id="7000">
 			<description>Container Movie Sets</description>
 			<hitrect x="0" y="0" w="0" h="0" />
@@ -20,6 +21,7 @@
 			<focusedlayout height="1" width="1" />
 		</control>
 	</include>
+	-->
 	<include name="FanartSlideMovieSets">
 			<control type="image"> <!-- bottom bar background -->
 			<posx>0</posx>

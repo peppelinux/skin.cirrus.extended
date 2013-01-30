@@ -580,6 +580,45 @@
 					<onclick>Skin.ToggleSetting(ShowBackgroundVideoBrowser)</onclick>
 					<selected>!Skin.HasSetting(ShowBackgroundVideoBrowser)</selected>
 				</control>
+				<!-- Debug-info-->
+        <control type="label" id="1200">
+					<width>750</width>
+					<height>45</height>
+					<font>cirrus_20</font>
+					<label>654</label>
+					<textcolor>accent</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+				</control>
+					<control type="radiobutton" id="1201">
+						<description>Enable Debug Grid</description>
+						<!--<include>MenuItemSettings</include>-->
+						<width>750</width>
+						<height>40</height>
+						<font>cirrus_20</font>
+						<textcolor>grey2</textcolor>
+					  <focusedcolor>white</focusedcolor>
+						<label>Enable Debug Grid</label>
+						<texturefocus flipx="true">listwhitegradient.png</texturefocus>
+					  <texturenofocus>menuitemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(DebugGrid)</onclick>
+						<selected>Skin.HasSetting(DebugGrid)</selected>
+					</control>
+					<control type="radiobutton" id="1202">
+						<description>Enable Debug Info</description>
+						<!--<include>MenuItemSettings</include>-->
+						<width>750</width>
+						<height>40</height>
+						<font>cirrus_20</font>
+						<textcolor>grey2</textcolor>
+					  <focusedcolor>white</focusedcolor>
+						<texturefocus flipx="true">listwhitegradient.png</texturefocus>
+					  <texturenofocus>menuitemNF.png</texturenofocus>
+						<label>Enable Debug Info</label>
+						<onclick>Skin.ToggleSetting(ShowDebugInfo)</onclick>
+						<selected>Skin.HasSetting(ShowDebugInfo)</selected>
+					</control>   				
 			</control>
 
 			<!-- HOME WINDOW SETTINGS -->
@@ -7156,7 +7195,7 @@
 						<texturenofocus>menuitemNF.png</texturenofocus>
 						<onclick>Skin.ToggleSetting(nopagecount)</onclick>
 						<selected>Skin.HasSetting(nopagecount)</selected>
-					</control> 
+					</control>
 				</control>
 			<!-- ENABLE DISABLE VIDEO VIEWS -->
 				<control type="group">
