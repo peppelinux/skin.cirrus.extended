@@ -192,8 +192,7 @@
 					<aligny>center</aligny>
 					<font>cirrus_20</font>
 					<scroll>true</scroll>
-					<visible>!Skin.HasSetting(poster) + !Skin.HasSetting(banner) + !Skin.HasSetting(widethumb)</visible>
-					<visible>!IsEmpty(ListItem.Thumb)</visible> 
+					<visible>[!Skin.HasSetting(poster) + !Skin.HasSetting(banner) + !Skin.HasSetting(widethumb)] + !IsEmpty(ListItem.Thumb) + Container.Content(TVShows)</visible> 
 				</control>
 				<control type="label">
 					<description>Episodes</description>
@@ -241,7 +240,7 @@
 					<visible>!Skin.HasSetting(banner) + !Skin.HasSetting(poster) + !Skin.HasSetting(widethumb)</visible>
 					<visible>!IsEmpty(ListItem.Thumb)</visible> 
 				</control>
-				<control type="label">
+ 				<control type="label">
 					<description>Genre</description>
 					<posx>0</posx>
 					<posy>65</posy>
@@ -252,8 +251,7 @@
 					<aligny>center</aligny>
 					<font>cirrus_20</font>
 					<scroll>true</scroll>
-					<visible>!Skin.HasSetting(banner) + !Skin.HasSetting(poster) + !Skin.HasSetting(widethumb)</visible>
-					<visible>!IsEmpty(ListItem.Thumb)</visible> 
+					<visible>[!Skin.HasSetting(banner) + !Skin.HasSetting(poster) + !Skin.HasSetting(widethumb)] + !IsEmpty(ListItem.Thumb) + Container.Content(tvshows)</visible> 
 				</control>
 				<control type="label">
 					<description>Episodes</description>
@@ -266,9 +264,7 @@
 					<aligny>center</aligny>
 					 <font>cirrus_24</font>
 					<scroll>true</scroll>
-					<visible>Container.Content(TVShows)</visible>
-					<visible>Skin.HasSetting(banner) + !Skin.HasSetting(poster)</visible>
-					<visible>!IsEmpty(ListItem.Thumb)</visible> 
+					<visible>Container.Content(TVShows) + [Skin.HasSetting(banner) + !Skin.HasSetting(poster)] + !IsEmpty(ListItem.Thumb)</visible> 
 				</control>
 				<control type="group">
 					<description>Nextaired</description>
@@ -326,11 +322,9 @@
 					<aligny>center</aligny>
 					<font>cirrus_20</font>
 					<scroll>true</scroll>
-					<visible>Container.Content(TVShows)</visible> 
-					<visible>Skin.HasSetting(poster) + !Skin.HasSetting(banner)</visible>
-					<visible>!IsEmpty(ListItem.Thumb)</visible> 
+					<visible>Container.Content(TVShows) + Skin.HasSetting(poster) + !Skin.HasSetting(banner) + !IsEmpty(ListItem.Thumb)</visible> 
 				</control>
-				<control type="label">
+ 				<control type="label">
 					<description>Genre</description>
 					<posx>240</posx>
 					<posy>70</posy>
@@ -341,8 +335,7 @@
 					<aligny>center</aligny>
 					<font>cirrus_20</font>
 					<scroll>true</scroll>
-					<visible>Container.Content(Movies)</visible> 
-					<visible>!IsEmpty(ListItem.Thumb)</visible> 
+					<visible>Container.Content(Movies) + !IsEmpty(ListItem.Thumb)</visible> 
 				</control>
 				<control type="label">
 					<description>Episodes</description>
@@ -428,8 +421,7 @@
 					<aligny>center</aligny>
 					<font>cirrus_20</font>
 					<scroll>true</scroll>
-					<visible>Skin.HasSetting(widethumb) + !Skin.HasSetting(banner) + !Skin.HasSetting(poster)</visible>
-					<visible>!IsEmpty(ListItem.Thumb)</visible> 
+					<visible>[Skin.HasSetting(widethumb) + !Skin.HasSetting(banner) + !Skin.HasSetting(poster)] + !IsEmpty(ListItem.Thumb)</visible> 
 				</control>
 				<control type="label">
 					<description>Episodes</description>
@@ -455,9 +447,7 @@
 					<texture>black-back.png</texture>
 					<bordertexture border="8">contentpanelvertical.png</bordertexture>
 					<bordersize>8</bordersize>
-					<visible>Container.Content(TVShows)</visible>
-					<visible>Skin.HasSetting(widethumb) + !Skin.HasSetting(banner) + !Skin.HasSetting(poster)</visible>
-					<visible>!IsEmpty(ListItem.Thumb)</visible> 
+					<visible>[Skin.HasSetting(widethumb) + !Skin.HasSetting(banner) + !Skin.HasSetting(poster)] + !IsEmpty(ListItem.Thumb) + Container.Content(tvshows)</visible> 
 				</control>
 				<control type="image"> 
 					<posx>-10</posx>
@@ -468,8 +458,7 @@
 					<fadetime>IconCrossfadeTime</fadetime>
 					<texture background="true" fallback="landscape fallback.png">$INFO[ListItem.Path]landscape.jpg</texture>
 					<bordersize>8</bordersize>
-					<visible>Skin.HasSetting(widethumb) + !Skin.HasSetting(banner) + !Skin.HasSetting(poster)</visible>
-					<visible>!IsEmpty(ListItem.Thumb)</visible> 
+					<visible>[Skin.HasSetting(widethumb) + !Skin.HasSetting(banner) + !Skin.HasSetting(poster)] + !IsEmpty(ListItem.Thumb) + Container.Content(tvshows)</visible>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -480,8 +469,7 @@
 					<texture>black-back.png</texture>
 					<bordertexture border="8">contentpanelvertical.png</bordertexture>
 					<bordersize>8</bordersize>
-					<visible>Skin.HasSetting(banner) + !Skin.HasSetting(poster)</visible>
-					<visible>!IsEmpty(ListItem.Thumb)</visible> 
+					<visible>[Skin.HasSetting(banner) + !Skin.HasSetting(poster)] + !IsEmpty(ListItem.Thumb) + Container.Content(tvshows)</visible> 
 					</control>
 				<control type="image">
 					<posx>0</posx>
@@ -493,11 +481,9 @@
 					<texture fallback="tvbanner.png" background="true">$INFO[ListItem.Path]banner.jpg</texture>
 					<texture fallback="tvbanner.png" background="true">$INFO[ListItem.Art(banner)]</texture>
 					<bordersize>8</bordersize>
-					<visible>Skin.HasSetting(banner) + !Skin.HasSetting(poster)</visible>
-					<visible>!IsEmpty(ListItem.Thumb)</visible> 
-					<visible>Skin.HasSetting(jpgsupport)</visible>
-					</control>
-					<control type="image">
+					<visible>[Skin.HasSetting(banner) + !Skin.HasSetting(poster)] + !IsEmpty(ListItem.Thumb) + Skin.HasSetting(jpgsupport) + Container.Content(tvshows)</visible>
+				</control>
+				<control type="image">
 					<posx>0</posx>
 					<posy>14</posy>
 					<width>514</width>
@@ -506,10 +492,8 @@
 					<fadetime>200</fadetime>
 					<texture background="true" fallback="tvbanner.png">$INFO[ListItem.Icon]</texture>
 					<bordersize>8</bordersize>
-					<visible>Skin.HasSetting(banner) + !Skin.HasSetting(poster)</visible>
-					<visible>!IsEmpty(ListItem.Thumb)</visible> 
-					<visible>!Skin.HasSetting(jpgsupport)</visible>
-					</control>
+					<visible>[Skin.HasSetting(banner) + !Skin.HasSetting(poster)] + !IsEmpty(ListItem.Thumb) + Skin.HasSetting(jpgsupport) + Container.Content(tvshows)</visible>
+				</control>
 				<control type="image">
 					<width>161</width>
 					<height>110</height>
