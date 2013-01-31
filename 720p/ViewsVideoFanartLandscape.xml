@@ -385,7 +385,7 @@
 					<height>303</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<fadetime>FanartCrossfadeTime</fadetime>
-					<texture fallback="splashm.png" background="true">$INFO[ListItem.Path]landscape.jpg</texture>
+					<texture fallback="splashm.png" background="true">$INFO[ListItem.Art(landscape)]</texture>
 					<bordersize>8</bordersize>
 					<visible>Skin.HasSetting(tvfanart)</visible>
 					<visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>
@@ -606,7 +606,7 @@
 					<posy>-20</posy> 
 					<width>470</width> 
 					<height>130</height> 
-					<texture background="true">$INFO[ListItem.path]logo.png</texture>
+					<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<aspectratio scalediffuse="false" aligny="center" align="left">keep</aspectratio> 
 				</control>
@@ -701,7 +701,7 @@
 					<height>303</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<fadetime>FanartCrossfadeTime</fadetime>
-					<texture fallback="splashm.png" background="true">$INFO[ListItem.Path]landscape.jpg</texture>
+					<texture fallback="splashm.png" background="true">$INFO[ListItem.Art(landscape)]</texture>
 					<bordersize>8</bordersize>
 					<visible>Skin.HasSetting(tvfanart)</visible>
 					<visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>

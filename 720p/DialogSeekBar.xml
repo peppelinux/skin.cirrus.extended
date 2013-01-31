@@ -422,7 +422,7 @@
 					<posy>263</posy> 
 					<width>200</width>
 					<height>112</height>
-					<texture fallback="blank.png">$INFO[Player.FolderPath]../clearart.png</texture>
+					<texture fallback="blank.png">$INFO[Player.Art(clearart)]</texture>
 					<aspectratio>keep</aspectratio>
 					<visible>Skin.HasSetting(clearart) + VideoPlayer.Content(episodes)</visible>
 				</control>

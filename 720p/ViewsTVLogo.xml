@@ -60,7 +60,7 @@
 						<width>220</width>
 						<height>145</height>
 						<aspectratio scalediffuse="false" aligny="center" align="center">keep</aspectratio> 
-						<texture background="true" fallback="fallback.png">$INFO[ListItem.path]logo.png</texture>
+						<texture background="true" fallback="fallback.png">$INFO[ListItem.Art(clearlogo)]</texture>
 						
 					</control>
 					<control type="image">
@@ -83,7 +83,7 @@
 						<width>220</width>
 						<height>145</height>
 						<aspectratio scalediffuse="false" aligny="center" align="center">keep</aspectratio> 
-						<texture background="true" fallback="fallback.png">$INFO[ListItem.path]logo.png</texture>
+						<texture background="true" fallback="fallback.png">$INFO[ListItem.Art(clearlogo)]</texture>
 					</control>
 					<control type="image">
 						<posx>70</posx>
@@ -513,7 +513,6 @@
 					<width>575</width>
 					<height>106</height>
 				    <aspectratio>stretch</aspectratio>
-					<texture background="true">$INFO[ListItem.Path]banner.jpg</texture>
 					<texture background="true">$INFO[ ListItem.Art(banner)]</texture>
 					<bordertexture border="8">contentpanelvertical.png</bordertexture>
 				    <bordersize>8</bordersize>
@@ -606,7 +605,7 @@
 					<width>540</width>
 					<height>303</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
-					<texture background="true">$INFO[ListItem.Path]landscape.jpg</texture>
+					<texture fallback="splashm.png" background="true">$INFO[ListItem.Art(landscape)]</texture>
 					<bordersize>8</bordersize>
 					<visible>Skin.HasSetting(tvfanart)</visible>
 					<visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>
