@@ -10,14 +10,14 @@
 		<animation effect="slide" time="200" tween="circle" easing="in" start="0,0" end="0,600">WindowClose</animation>
 		<posx>0</posx>
 			<posy>100</posy>
-				<visible>Control.IsVisible(52)</visible>
+				<visible>Control.IsVisible(52) + Control.HasFocus(52)</visible>
 				<control type="image"> <!-- bottom bar background -->
 				<posx>550</posx>
 				<posy>165</posy>
 				<width>180</width>
 				<height>180</height>
 				<aspectratio>stretch</aspectratio>
-				<texture>$INFO[ListItem.Path,,disc.png]</texture>
+				<texture>$INFO[ListItem.Art(discart)]</texture>
 				<visible>Skin.HasSetting(showmoviedvd)</visible>
 			</control>
 			</control>

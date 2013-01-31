@@ -14,6 +14,7 @@
             </animation>      
             <visible>Control.IsVisible(668)</visible>
             <include>VisibleFadeEffect</include>
+
             <control type="image">
                 <!-- bottom bar background -->
                 <posx>0</posx>
@@ -49,18 +50,14 @@
                 <bordertexture border="8">contentpanelvertical.png</bordertexture>
                 <bordersize>8</bordersize>
                 <aspectratio>stretch</aspectratio>
-                <visible>Skin.Hassetting(videowindowglobal)</visible>
-                <visible>Player.HasVideo</visible>
-                <visible>Control.IsVisible(668)</visible>
+                <visible>Skin.Hassetting(videowindowglobal) + Player.HasVideo + Control.IsVisible(668)</visible>
             </control>
             <control type="videowindow" id="8">
                 <posx>280</posx>
                 <posy>370</posy>
                 <width>362</width>
                 <height>180</height>
-                <visible>Skin.Hassetting(videowindowglobal)</visible>
-                <visible>Control.IsVisible(668)</visible>
-                <visible>!IsEmpty(ListItem.Thumb)</visible> 
+                <visible>Skin.Hassetting(videowindowglobal) + Control.IsVisible(668) + !IsEmpty(ListItem.Thumb)</visible> 
             </control> 
             <control type="label">
                 <description>Title label</description>
@@ -74,10 +71,7 @@
                 <font>cirrus_20</font>
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
-                <visible>Skin.HasSetting(videowindowglobal)</visible>
-                <visible>Player.HasVideo</visible>
-                <visible>Control.IsVisible(668)</visible>
-                <visible>!Skin.HasSetting(videonotitle)</visible>
+                <visible>Skin.HasSetting(videowindowglobal) + Player.HasVideo + Control.IsVisible(668) + !Skin.HasSetting(videonotitle)</visible>
             </control>
             <!-- list -->
             <control type="fixedlist" id="668">
@@ -154,9 +148,7 @@
                     <aligny>center</aligny>
                     <font>cirrus_24</font>
                     <scroll>true</scroll>
-                    <visible>Container.Content(TVShows)</visible>
-                    <visible>!Skin.HasSetting(poster) + !Skin.HasSetting(banner) + !Skin.HasSetting(widethumb)</visible>
-                    <visible>!IsEmpty(ListItem.Thumb)</visible> 
+                    <visible>Container.Content(TVShows) + !Skin.HasSetting(poster) + !Skin.HasSetting(banner) + !Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb)</visible> 
                 </control>	
                 <control type="label">
                     <description>Movie Title</description>
@@ -169,8 +161,7 @@
                     <aligny>center</aligny>
                     <font>cirrus_30</font>
                     <scroll>true</scroll>
-                    <visible>Container.Content(Movies)</visible>
-                    <visible>!IsEmpty(ListItem.Thumb)</visible> 
+                    <visible>Container.Content(Movies) + !IsEmpty(ListItem.Thumb)</visible> 
                 </control>
                 <control type="label">
                     <description>First Aired</description>
@@ -183,9 +174,7 @@
                     <aligny>center</aligny>
                     <font>cirrus_20</font>
                     <scroll>true</scroll>
-                    <visible>Container.Content(TVShows)</visible>
-                    <visible>!Skin.HasSetting(poster) + !Skin.HasSetting(banner) + !Skin.HasSetting(widethumb)</visible>
-                    <visible>!IsEmpty(ListItem.Thumb)</visible> 
+                    <visible>Container.Content(TVShows) + !Skin.HasSetting(poster) + !Skin.HasSetting(banner) + !Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb)</visible> 
                 </control>
                 <control type="label">
                     <description>Genre</description>
@@ -211,9 +200,7 @@
                     <aligny>center</aligny>
                     <font>cirrus_20</font>
                     <scroll>true</scroll>
-                    <visible>Container.Content(TVShows)</visible>
-                    <visible>!Skin.HasSetting(poster) + !Skin.HasSetting(banner) + !Skin.HasSetting(widethumb)</visible>
-                    <visible>!IsEmpty(ListItem.Thumb)</visible> 
+                    <visible>Container.Content(TVShows) + !Skin.HasSetting(poster) + !Skin.HasSetting(banner) + !Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb)</visible> 
                 </control>
 
                 <control type="group">
@@ -227,9 +214,7 @@
                     <aligny>center</aligny>
                     <font>cirrus_24</font>
                     <scroll>true</scroll>
-                    <visible>Container.Content(TVShows)</visible>
-                    <visible>!Skin.HasSetting(banner) + !Skin.HasSetting(poster) + !Skin.HasSetting(widethumb)</visible>
-                    <visible>!IsEmpty(ListItem.Thumb)</visible> 
+                    <visible>Container.Content(TVShows) + !Skin.HasSetting(banner) + !Skin.HasSetting(poster) + !Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb)</visible> 
                 </control>	
                 <control type="label">
                     <description>First Aired</description>
@@ -242,9 +227,7 @@
                     <aligny>center</aligny>
                     <font>cirrus_20</font>
                     <scroll>true</scroll>
-                    <visible>Container.Content(TVShows)</visible>
-                    <visible>!Skin.HasSetting(banner) + !Skin.HasSetting(poster) + !Skin.HasSetting(widethumb)</visible>
-                    <visible>!IsEmpty(ListItem.Thumb)</visible> 
+                    <visible>Container.Content(TVShows) + !Skin.HasSetting(banner) + !Skin.HasSetting(poster) + !Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb)</visible> 
                 </control>
                 <control type="label">
                     <description>Genre</description>
@@ -349,6 +332,25 @@
                     <font>cirrus_20</font>
                     <scroll>true</scroll>
                     <visible>Container.Content(TVShows) + Skin.HasSetting(poster) + !IsEmpty(ListItem.Thumb)</visible> 
+                </control>
+                <control type="group">
+                    <visible>!Container(668).OnNext + !Container(668).OnPrevious + Container.Content(movies)</visible>
+                    <animation effect="slide" start="0,0" end="0,-100" time="500" delay="2000" reversible="false">Visible</animation>
+                    <animation effect="slide" time="300" tween="circle" easing="out" start="0,0" end="0,0">WindowOpen</animation>
+                    <animation effect="slide" time="200" tween="circle" easing="in" start="0,500" end="0,600">WindowClose</animation>
+                    <posx>0</posx>
+                    <posy>100</posy>
+                    <visible>Control.IsVisible(668)</visible>
+                    <control type="image">
+                        <!-- bottom bar background -->
+                        <posx>0</posx>
+                        <posy>-350</posy>
+                        <width>220</width>
+                        <height>220</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture>$INFO[ListItem.Art(discart)]</texture>
+                        <visible>Skin.HasSetting(showmoviedvd)</visible>
+                    </control>
                 </control>
                 <control type="image">
                     <posx>-10</posx>
