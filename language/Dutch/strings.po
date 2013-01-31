@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: 2013-01-10 11:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Yo Han <yohan1@gmail.com>\n"
 "Language-Team: LANGUAGE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -555,7 +555,7 @@ msgstr "[B]SYSTEEMINSTELLINGEN CONFIGUREREN[/B][CR][CR]Configureer en kalibreer 
 
 msgctxt "#31407"
 msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Cirrus skin · Add and remove home menu items[CR]Change skin backgrounds"
-msgstr "[B]CONFIGUREER SKIN INSTELLINGEN[/B][CR][CR]Stel de Cirrus skin in · Voeg toe en verwijder beginscherm menu items[CR]Verander skin-achtergronden"
+msgstr "[B]CONFIGUREER SKIN INSTELLINGEN[/B][CR][CR]Stel de Cirrus skin in · Voeg toe en verwijder beginscherm menu-items[CR]Verander skin-achtergronden"
 
 msgctxt "#31408"
 msgid "[B]CONFIGURE ADD-ONS[/B][CR][CR]Manage your installed Add-ons · Browse for and install Add-ons from xbmc.org[CR]Modify Add-on settings"
@@ -612,6 +612,38 @@ msgstr "Kanalen groep"
 msgctxt "#31510"
 msgid "Timer Set"
 msgstr "Timer ingesteld"
+
+msgctxt "#31901"
+msgid "36 Hour Forecast"
+msgstr "Voorspelling 36 uur "
+
+msgctxt "#31902"
+msgid "Hourly Forecast"
+msgstr "Voorspelling per uur"
+
+msgctxt "#31903"
+msgid "Weekend Forecast"
+msgstr "Voorspelling weekend"
+
+msgctxt "#31904"
+msgid "10 Day Forecast"
+msgstr "Voorspelling 10 dagen "
+
+msgctxt "#31905"
+msgid "Forecast"
+msgstr "Voorspelling"
+
+msgctxt "#31908"
+msgid "Chance of Precipitation"
+msgstr "Kans op neerslag"
+
+msgctxt "#31909"
+msgid "Fetching forecast info..."
+msgstr "Weersvoorspelling ophalen..."
+
+msgctxt "#31910"
+msgid "Map & Alerts"
+msgstr "Kaart & Waarschuwingen"
 
 msgctxt "#40000"
 msgid "Fanart Poster"
@@ -683,11 +715,11 @@ msgstr "ClearArt inschakelen"
 
 msgctxt "#41010"
 msgid "Enable New Media Flags"
-msgstr "Gebruik nieuwe Mediavlaggen"
+msgstr "Gebruik nieuwe mediavlaggen"
 
 msgctxt "#41011"
 msgid "Enable Artist Slideshow Script on music visualitation screen"
-msgstr "Artiest Slideshow Script inschakelen voor muziekvisualisatie scherm"
+msgstr "Artiest Slideshow Script inschakelen voor muziekvisualisatiescherm"
 
 msgctxt "#41012"
 msgid "Enable Custom Background on music visualization screen"
@@ -715,11 +747,11 @@ msgstr "Schoon beginscherm (verwijder logo en knoppen)"
 
 msgctxt "#41018"
 msgid "Enable Horizontal Home menu"
-msgstr "Horizontaal Beginmenu inschakelen"
+msgstr "Horizontaal menu inschakelen"
 
 msgctxt "#41019"
 msgid "Lower Horizontal Home menu"
-msgstr "Horizontaal Beginmenu onderaan scherm"
+msgstr "Horizontaal menu onderaan scherm"
 
 msgctxt "#41020"
 msgid "Enable Animated Backgrounds"
@@ -903,7 +935,7 @@ msgstr "TV submenu"
 
 msgctxt "#41065"
 msgid "Add Custom Items to Home Screen"
-msgstr "Voeg Aangepaste Onderdelen Aan Het Beginscherm Toe"
+msgstr "Aangepaste onderdelen aan beginscherm toevoegen"
 
 msgctxt "#41066"
 msgid "Custom Favorite 1"
@@ -967,19 +999,19 @@ msgstr "Inschakelen/Uitschakelen Mods"
 
 msgctxt "#41081"
 msgid "Enable Banner"
-msgstr "Banner in weergave TV Rechtslijst inschakelen"
+msgstr "Banner in TV Rechtslijst inschakelen"
 
 msgctxt "#41082"
 msgid "Enable Poster"
-msgstr "Poster in weergave TV Rechtslijst inschakelen"
+msgstr "Poster in TV Rechtslijst inschakelen"
 
 msgctxt "#41083"
 msgid "Enable Widethumbs"
-msgstr "Widethumbs in weergave TV Rechtslijst inschakelen"
+msgstr "Widethumbs in TV Rechtslijst inschakelen"
 
 msgctxt "#41084"
 msgid "Enable Landscape"
-msgstr "Landscape.jpg in weergave TV Fanart inschakelen"
+msgstr "Landscape.jpg in TV Fanart inschakelen"
 
 msgctxt "#41085"
 msgid "Enable .jpg support for BannerView"
@@ -1003,11 +1035,11 @@ msgstr "Plotbeschrijving voor films in Rechtslijst,Coverflow,Fanart inschakelen"
 
 msgctxt "#41091"
 msgid "Enable IMDB Rating Number in RightlistView"
-msgstr "IMDB nummerscore in weergave Rechtslijst inschakelen"
+msgstr "IMDB nummerscore in Rechtslijst inschakelen"
 
 msgctxt "#41092"
 msgid "Set Path for Advanced Launcher Games Art"
-msgstr "Stel Pad voor Advanced Launcher Spellen Foto's In"
+msgstr "Pad voor Advanced Launcher Spellen Foto's instellen"
 
 msgctxt "#41093"
 msgid "- Set Path"
@@ -1019,7 +1051,7 @@ msgstr "Trailervlag verbergen"
 
 msgctxt "#41095"
 msgid "Show Path in Video Info Screen"
-msgstr "Toon Pad in Videoinfo Scherm"
+msgstr "Toon Pad in Videoinfo-scherm"
 
 msgctxt "#41096"
 msgid "Run Logo Downloader Script"
@@ -1167,11 +1199,11 @@ msgstr "Willekeurige Fanart-achtergronden"
 
 msgctxt "#41136"
 msgid "Hide Video Window Border"
-msgstr "Verberg rand videovenster"
+msgstr "Rand videovenster verbergen"
 
 msgctxt "#41137"
 msgid "Enable IMDB Rating Number in FanartView"
-msgstr "IMDB nummerscore in Fanart weergave inschakelen"
+msgstr "IMDB nummerscore in Fanart inschakelen"
 
 msgctxt "#41138"
 msgid "Artist fanart on home while playing music"
@@ -1187,7 +1219,7 @@ msgstr "Weer fanart locatie:"
 
 msgctxt "#41141"
 msgid "Enable Extended Now Playing (Overrides Clean Home Now Playing)"
-msgstr "Zet Uitgebreide Nu Speelt Aan (Overschrijft Schone Beginscherm Nu Speelt)"
+msgstr "Uitgebreide 'Nu Speelt' inschakelen (Overschrijft Schone Beginscherm Nu Speelt)"
 
 msgctxt "#41142"
 msgid "Disable Extended Now Playing Progress Bar"
@@ -1195,11 +1227,11 @@ msgstr "Uitgebreide 'Nu Speelt' voortgangsbalk uitschakelen"
 
 msgctxt "#41143"
 msgid "New MPAA Rating Flags"
-msgstr "Nieuwe MPAA vlaggen"
+msgstr "Nieuwe MPAA-vlaggen"
 
 msgctxt "#41144"
 msgid "Disable CDArt Spinning in Extended Now Playing"
-msgstr "Geanimeerde CDArt in Uitgebreide Nu Speelt uitschakelen"
+msgstr "Geanimeerde CDArt in uitgebreide 'Nu Speelt' uitschakelen"
 
 msgctxt "#41145"
 msgid "Disable Animated Weather Icons"
@@ -1211,7 +1243,7 @@ msgstr "Verberg achtergrond Weer Widget op beginscherm"
 
 msgctxt "#41147"
 msgid "Hide MPAA Flags"
-msgstr "Verberg MPAA Vlaggen"
+msgstr "Verberg MPAA-vlaggen"
 
 msgctxt "#41148"
 msgid "Trailer"
@@ -1219,7 +1251,7 @@ msgstr "Trailer"
 
 msgctxt "#41149"
 msgid "Show IMDB Rating Number in Video Info Screen"
-msgstr "Toon IMDB nummerscore in Videoinfo scherm"
+msgstr "Toon IMDB nummerscore in Videoinfo-scherm"
 
 msgctxt "#41150"
 msgid "Record"
@@ -1239,7 +1271,7 @@ msgstr "Teletekst"
 
 msgctxt "#41160"
 msgid "Disable Autoscroll in Extended Now Playing"
-msgstr "Autoscroll uitschakelen in Uitgebreide Nu Speelt"
+msgstr "Autoscroll uitschakelen in uitgebreide 'Nu Speelt'"
 
 msgctxt "#41161"
 msgid "Advanced Launcher Plugin"
@@ -1255,23 +1287,23 @@ msgstr "Stijl"
 
 msgctxt "#41164"
 msgid "Remove Cover Playing Media"
-msgstr "Verwijder Cover Afspelende Media"
+msgstr "Cover van afspelende media verbergen"
 
 msgctxt "#41165"
 msgid "Default CDArt Black XBMC"
-msgstr "Standaard CDArt zwarte XBMC"
+msgstr "Standaard zwarte XBMC CDArt"
 
 msgctxt "#41166"
 msgid "Default CDArt Black Cirrus Extended"
-msgstr "Standaard CDArt zwarte Uitgebreide Cirrus"
+msgstr "Standaard zwarte Cirrus Extended CDArt"
 
 msgctxt "#41167"
 msgid "Default CDArt White Cirrus Extended"
-msgstr "Standaard CDArt witte Uitgebreide Cirrus"
+msgstr "Standaard witte Cirrus Extended CDArt"
 
 msgctxt "#41168"
 msgid "Random Custom CDArts (disable Album CDArt)"
-msgstr "Willekeurig Aangepaste CDArts (zet Album CDArt uit)"
+msgstr "Willekeurige CDArts weergeven (zet album-CDArt uit)"
 
 msgctxt "#41169"
 msgid "Hide Breadcrumb Trails"
@@ -1279,11 +1311,11 @@ msgstr "Verberg breadcrumbpaden"
 
 msgctxt "#41170"
 msgid "Set Focus Offset of Main Menu (Range -2 to xx)"
-msgstr "Stel Focus Verschuiving In op Hoofdmenu (Bereik -2 to xx)"
+msgstr "Focus verschuiven (Bereik -2 tot xx)"
 
 msgctxt "#41171"
 msgid "Enable Custom Focus Offset of Main Menu on Startup"
-msgstr "Zet Aangepaste Focus Verschuiving in Hoofdmenu bij Opstarten Aan"
+msgstr "Verschuiving focus in menu inschakelen"
 
 msgctxt "#41172"
 msgid "HD Movies"
@@ -1291,11 +1323,11 @@ msgstr "HD Films"
 
 msgctxt "#41173"
 msgid "Hide Breadcrumb Trails TV Shows on Episode Level"
-msgstr "Verberg Breadcrumb paden TV Shows op Afleveringniveau"
+msgstr "Verberg breadcrumbpaden TV-series op afleveringniveau"
 
 msgctxt "#41174"
 msgid "Use Original Watched Overlay in Fanart View"
-msgstr "Gebruik Origineel Bekeken Symbool in Fanart Aanzicht"
+msgstr "Gebruik standaard bekeken-symbool in Fanart-weergave"
 
 msgctxt "#41175"
 msgid "Option to make use of Artist Clear Logos"
@@ -1311,15 +1343,15 @@ msgstr "Speelfilmgenres van N.O.W.A.L.L inschakelen"
 
 msgctxt "#41178"
 msgid "Enable Custom Random Fanart"
-msgstr " Aangepaste Willekeurige Fanart inschakelen"
+msgstr "Inschakelen aangepaste willekeurige Fanart"
 
 msgctxt "#41179"
 msgid "Enable Theme \"Light\" in Home Menu"
-msgstr "Thema \"Licht\" in hoofdmenu inschakelen"
+msgstr "\"Licht\" thema in hoofdmenu inschakelen"
 
 msgctxt "#41180"
 msgid "Hide Now Playing Title in Video Window"
-msgstr "Verberg Nu Speelt Titel in Video Venster"
+msgstr "Titel 'Nu Speelt' verbergen in videovenster"
 
 msgctxt "#41181"
 msgid "Random Genre"
@@ -1359,11 +1391,11 @@ msgstr "Zet Nieuwste Afleveringen Aan"
 
 msgctxt "#41190"
 msgid "Enable Latest Albums"
-msgstr "Nieuwste Albums inschakelen"
+msgstr "Nieuwste albums inschakelen"
 
 msgctxt "#41191"
 msgid "Enable Random Addons"
-msgstr "Willekeurige Add-ons inschakelen"
+msgstr "Willekeurige add-ons inschakelen"
 
 msgctxt "#41192"
 msgid "Enable Extra Fanart for Music"
@@ -1383,7 +1415,7 @@ msgstr "Film widget"
 
 msgctxt "#41196"
 msgid "TV Show Widget"
-msgstr "TV-Serie widget"
+msgstr "TV-serie widget"
 
 msgctxt "#41197"
 msgid "Music Widget"
@@ -1415,19 +1447,19 @@ msgstr "Zwarte achtergrond"
 
 msgctxt "#41204"
 msgid "Play Trailer Windowed"
-msgstr "Speel Trailer in Venstermodus af"
+msgstr "Trailer in Venster"
 
 msgctxt "#41205"
 msgid "Play Trailer Fullscreen"
-msgstr "Speel Trailer Schermvullend af"
+msgstr "Trailer in volledig scherm"
 
 msgctxt "#41206"
 msgid "Play Video Windowed"
-msgstr "Speel Video in Venstermodus af"
+msgstr "Video in venster afspelen"
 
 msgctxt "#41207"
 msgid "Play Video Fullscreen"
-msgstr "Speel Video Schermvullend af"
+msgstr "Video in volledig scherm afspelen"
 
 msgctxt "#41208"
 msgid "Cinema Experience"
@@ -1443,7 +1475,7 @@ msgstr "Achtergrond op beginscherm dimmen"
 
 msgctxt "#41211"
 msgid "Enable Music Playlist at Startup"
-msgstr "Zet Muziek Afspeellijst bij Opstarten Aan"
+msgstr "Zet Muziek Afspeellijst bij opstarten Aan"
 
 msgctxt "#41212"
 msgid "Set Music Playlist"
@@ -1451,7 +1483,7 @@ msgstr "Muziek-afspeellijst instellen"
 
 msgctxt "#41213"
 msgid "Enable Video Playlist at Startup"
-msgstr "Zet Video Afspeellijst bij Opstarten Aan"
+msgstr "Zet Video Afspeellijst bij opstarten Aan"
 
 msgctxt "#41214"
 msgid "Set Video Playlist"
@@ -1495,7 +1527,7 @@ msgstr "Seizoen thumb weergeven"
 
 msgctxt "#41224"
 msgid "Show TV Show Thumb"
-msgstr "TV Serie thumb weergeven"
+msgstr "TV-serie thumb weergeven"
 
 msgctxt "#41225"
 msgid "Show Episode Thumb"
@@ -1519,11 +1551,11 @@ msgstr "Kies:"
 
 msgctxt "#41230"
 msgid "Recently Added and Watchlist on Home"
-msgstr "'Onlangs toegevoegd' en Watchlist op Beginscherm"
+msgstr "'Onlangs toegevoegd' en 'Watchlist' op beginscherm"
 
 msgctxt "#41231"
 msgid "Alternative Recently Added and Watchlist on Home Layout"
-msgstr "Alternatieve 'Onlangs toegevoegd' en Watchlist op Beginscherm Indeling"
+msgstr "Alternatieve 'Onlangs toegevoegd' en Watchlist op beginscherm"
 
 msgctxt "#41232"
 msgid "NO MOVIES IN PROGRESS"
@@ -1591,7 +1623,7 @@ msgstr "Verwijder poster"
 
 msgctxt "#41248"
 msgid "Hide Small Window"
-msgstr "Verberg Klein Venster"
+msgstr "Verberg klein venster"
 
 msgctxt "#41249"
 msgid "Enable Now Playing Video Info"
@@ -1631,7 +1663,7 @@ msgstr "Zet Smalle OSD door Zombierobot in Muziek Vis Aan."
 
 msgctxt "#41259"
 msgid "Enable Slim Info"
-msgstr "Smalle Info en Pauzescherm inschakelen"
+msgstr "Smal info- en pauzescherm inschakelen"
 
 msgctxt "#41260"
 msgid "Directed By:"
@@ -1759,7 +1791,7 @@ msgstr "Extra info"
 
 msgctxt "#41294"
 msgid "Total Episodes"
-msgstr "Aantal afleveringen"
+msgstr "Aantal afl."
 
 msgctxt "#41295"
 msgid "Total Movies"
