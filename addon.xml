@@ -16,6 +16,7 @@
   <summary lang="en">skin created by crookas - modded by butchabay, malexx and more.</summary> 
   <description lang="en">mod based on cirrus</description>
   <disclaimer lang="en">no official skin use at your own risk.</disclaimer>
-  <platform>all</platform> 
+  <platform>all</platform>
+  <res width="1920" height="1080" aspect="16:9" default="true" folder="720p" /> 
   </extension>
 </addon>

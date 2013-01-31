@@ -59,6 +59,7 @@
           <posy>345</posy>
           <width>24</width>
           <height>24</height>
+          <!--<include>Animation_CommonFade</include>-->
           <texture>HomeHasSub.png</texture>
           <visible>!Control.HasFocus(150)</visible>
         </control>

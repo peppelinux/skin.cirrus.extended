@@ -67,14 +67,6 @@
                 <texture>black-back3.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <!--  <control type="image">
-        <posx>0</posx>
-        <posy>-20</posy>
-        <width>1280</width>
-        <height>750</height>
-        <texture>black-back3.png</texture>
-        <aspectratio>stretch</aspectratio>
-      </control> -->
             <control type="group">
                 <animation effect="fade" delay="400" start="0" end="100" time="200">WindowOpen</animation>
                 <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
@@ -154,6 +146,7 @@
                         </control>
                     </control>
                 </control>
+
                 <!-- ====== MOVIES SECTION ======== -->
                 <control type="group">
                     <animation type="WindowOpen" reversible="false">
@@ -1118,7 +1111,7 @@
                     <posy>410</posy>
                     <width>730</width>
                     <height>150</height>
-                    <font>cirrus_22</font>
+                    <font>cirrus_20</font>
                     <align>justify</align>
                     <textcolor>white</textcolor>
                     <pagecontrol>61</pagecontrol>
