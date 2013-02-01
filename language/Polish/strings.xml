@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--Language file translated with Team XBMC Translator-->
 <!--Date of translation: 12/06/2009-->
 <!--$Revision$-->
@@ -64,4 +64,15 @@
   <string id="31405">[B]KONFIGURUJ USTAWIENIA SIECI[/B][CR][CR]Setup control of XBMC via UPnP and HTTP · Configure file sharing[CR]Set internet access options</string>
   <string id="31406">[B]KONFIGURUJ USTAWIENIA SYSTEMU[/B][CR][CR]Setup and calibrate displays · Configure audio output · Setup remote controls[CR]Set power saving options · Enable debugging · Setup master lock</string>
   <string id="31407">[B]KONFIGURUJ USTAWIENIA SKÓRY[/B][CR][CR]Setup the Cirrus skin · Add and remove home menu items[CR]Change skin backgrounds</string>
+
+  <string id="31900">Mapy pogody</string>
+  <string id="31901">Pogoda na 36 godzin</string>
+  <string id="31902">Pogoda godzinna</string>
+  <string id="31903">Pogoda weekendowa</string>
+  <string id="31904">Pogoda na 10 dni</string>
+  <string id="31905">Pogoda</string>
+  <string id="31906">Mapy i wideo</string>
+  <string id="31907">Pogoda wideo [COLOR=grey2](na pełnym ekranie)[/COLOR]</string>
+  <string id="31908">Możliwość opadów</string>
+  <string id="31909">Prognozuję pogodę...</string>
 </strings>

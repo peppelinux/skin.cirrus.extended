@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--Translator: Alanwww1-->
 <!--Email: alanwww1@gmail.com-->
 <!--Date of translation: 15/01/2010-->
@@ -156,4 +156,17 @@
   <string id="31407">[B]SKIN BEÁLLÍTÁSOK[/B][CR][CR]A Cirrus skin beállítása · Sajátképernyő elemek hozzáadása/elvétele[CR]Skin hátterek megváltoztatása</string>
 
   <string id="31421">Válaszd ki az XBMC felhasználói profilod[CR]a belépéshez</string>
+
+  <!-- Időjárás kiegészítő  -->
+  <string id="31900">Időjárási térképek</string>
+  <string id="31901">36 órás előrejelzés</string>
+  <string id="31902">Előrejelzés óra bontással</string>
+  <string id="31903">Hétvégi előrejelzés</string>
+  <string id="31904">10 napos előrejelzés</string>
+  <string id="31905">Előrejelzés</string>
+  <string id="31906">Térképek &amp; Videó</string>
+  <string id="31907">Videó előrejelzés [COLOR=grey2](Teljesképernyős lejátszás)[/COLOR]</string>
+  <string id="31908">Csapadék esélye</string>
+  <string id="31909">Előrejelzési információ letöltése...</string>
+
 </strings>

@@ -399,4 +399,17 @@
   <string id="31508">Chaînes dans le groupe</string>
   <string id="31509">Groupe de chaînes</string>
   <string id="31510">Réglage de la minuterie</string>
+
+  <!-- Weather plugin -->
+  <string id="31900">Cartes Météo</string>
+  <string id="31901">Prévisions sur 36 Heures</string>
+  <string id="31902">Prévisions Heure par Heure</string>
+  <string id="31903">Prévisions pour le Weekend</string>
+  <string id="31904">Prévisions sur 10 Jours</string>
+  <string id="31905">Prévisions</string>
+  <string id="31906">Cartes &amp; Vidéo</string>
+  <string id="31907">Bulletin vidéo [COLOR=grey2](affichage en plein écran)[/COLOR]</string>
+  <string id="31908">Risque de pluie</string>
+  <string id="31909">Récupération des prévisions météo...</string>
+
 </strings>

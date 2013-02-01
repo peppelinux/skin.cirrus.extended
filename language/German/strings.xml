@@ -484,5 +484,16 @@
   <string id="31508">Kanäle in Gruppen</string>
   <string id="31509">Kanalgruppe</string>
   <string id="31510">Timer gesetzt</string>
+
+  <string id="31900">Wetterkarten</string>
+  <string id="31901">36 Stunden Prognose</string>
+  <string id="31902">Stündliche Prognose</string>
+  <string id="31903">Wochenend Prognose</string>
+  <string id="31904">10 Tage Prognose</string>
+  <string id="31905">Prognose</string>
+  <string id="31906">Karten &amp; Video</string>
+  <string id="31907">Video Prognose [COLOR=grey2](Vollbild Wiedergabe)[/COLOR]</string>
+  <string id="31908">Niederschlagswahrscheinlichkeit</string>
+  <string id="31909">Lade Wetterbericht...</string>
   
 </strings>

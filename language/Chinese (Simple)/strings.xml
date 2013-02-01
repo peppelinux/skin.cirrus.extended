@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--Language file translated by taxigps-->
 <strings>
   <!-- Misc labels -->
@@ -151,6 +151,17 @@
   <string id="31406">[B]设置系统参数[/B][CR][CR]设置和校正显示器 · 设置音频输出 · 设置摇控器 · 设置节电参数 · 启用调试 · 设置管理员和锁定</string>
   <string id="31407">[B]设置皮肤参数[/B][CR][CR]设置Cirrus皮肤 · 增加和删除主菜单项 · 修改皮肤背景</string>
 
-
   <string id="31421">选择您的用户配置文件[CR]登录并继续</string>
+  
+    <!-- Weather plugin -->
+  <string id="31900">气象图</string>
+  <string id="31901">36小时预报</string>
+  <string id="31902">每小时预报</string>
+  <string id="31903">一周预报</string>
+  <string id="31904">10日预报</string>
+  <string id="31905">天气预报</string>
+  <string id="31906">图像 &amp; 视频</string>
+  <string id="31907">视频预报 [COLOR=grey2]（全屏播放）[/COLOR]</string>
+  <string id="31908">降雨概率</string>
+  <string id="31909">获取天气信息...</string>
 </strings>
