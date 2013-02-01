@@ -389,7 +389,7 @@
                     <height>303</height>
                     <aspectratio>stretch</aspectratio>
                     <fadetime>FanartCrossfadeTime</fadetime>
-                    <texture fallback="splashm.png" background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+                    <texture fallback="splashm.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
                     <bordersize>8</bordersize>
                     <visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>
                     <visible>!Skin.HasSetting(Smallwindowhidden)</visible>
@@ -686,7 +686,7 @@
                     <height>303</height>
                     <aspectratio aligny="bottom">stretch</aspectratio>
                     <fadetime>FanartCrossfadeTime</fadetime>
-                    <texture fallback="splashm.png" background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+                    <texture fallback="splashm.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
                     <bordersize>8</bordersize>
                     <visible>!Skin.HasSetting(tvfanart)</visible>
                     <visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>
@@ -875,7 +875,7 @@
                     <height>303</height>
                     <aspectratio aligny="bottom">stretch</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
-                    <texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+                    <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
                     <bordersize>8</bordersize>
                     <visible>!Skin.HasSetting(seasonthumbs)</visible>
                     <visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>
@@ -888,7 +888,7 @@
                     <height>303</height>
                     <aspectratio aligny="bottom">stretch</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
-                    <texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+                    <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
                     <bordersize>8</bordersize>
                     <visible>Skin.HasSetting(seasonthumbs)</visible>
                     <visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>
@@ -1111,7 +1111,7 @@
                     <height>303</height>
                     <aspectratio aligny="bottom">stretch</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
-                    <texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+                    <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
                     <bordersize>8</bordersize>
                     <visible>Skin.HasSetting(episodethumbs)</visible>
                     <visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>

@@ -273,7 +273,7 @@
 					<height>303</height>
 					<aspectratio>stretch</aspectratio>
 					<fadetime>FanartCrossfadeTime</fadetime>
-					<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
 					<visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>
 					<bordersize>8</bordersize>
 				</control>

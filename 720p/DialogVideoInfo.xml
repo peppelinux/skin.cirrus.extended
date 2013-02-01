@@ -33,7 +33,7 @@
                 <width>1280</width>
                 <height>720</height>
                 <aspectratio>stretch</aspectratio>
-                <texture fallback="special://skin/backgrounds/videosfanart.jpg" background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+                <texture fallback="special://skin/backgrounds/videosfanart.jpg" background="true">$INFO[ListItem.Art(fanart)]</texture>
             </control>
             <control type="image">
                 <posx>0</posx>
@@ -81,9 +81,9 @@
                         <posy>0</posy>
                         <width>1280</width>
                         <height>720</height>
-                        <texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+                        <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
                         <aspectratio>stretch</aspectratio>
-                        <visible>!IsEmpty(Listitem.Property(Fanart_Image))</visible>
+                        <visible>!IsEmpty(ListItem.Art(fanart))</visible>
                     </control>
                     <control type="image">
                         <!-- bottom bar background -->
@@ -104,7 +104,7 @@
                         <texture>rightlistbackground.png</texture>
                     </control>
                     <control type="group">
-                        <visible>IsEmpty(Listitem.Property(Fanart_Image))</visible>
+                        <visible>IsEmpty(ListItem.Art(fanart))</visible>
                         <control type="image">
                             <description>No Fanart Back</description>
                             <posx>0</posx>
@@ -282,7 +282,7 @@
                             <posy>385</posy>
                             <width>405</width>
                             <height>227</height>
-                            <texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+                            <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
                             <bordertexture border="6">contentpanelvertical.png</bordertexture>
                             <bordersize>6</bordersize>
                             <aspectratio>stretch</aspectratio>
@@ -523,7 +523,7 @@
                             <posy>385</posy>
                             <width>405</width>
                             <height>227</height>
-                            <texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+                            <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
                             <bordertexture border="6">contentpanelvertical.png</bordertexture>
                             <bordersize>6</bordersize>
                             <aspectratio>stretch</aspectratio>
@@ -812,7 +812,7 @@
                             <width>405</width>
                             <height>227</height>
                             <texture background="true">
-                            $INFO[ListItem.Property(Fanart_Image)]</texture>
+                            $INFO[ListItem.Art(fanart)]</texture>
                             <bordertexture border="6">
                             contentpanelvertical.png</bordertexture>
                             <bordersize>6</bordersize>

@@ -18,7 +18,7 @@
                 <posy>0</posy>
                 <width>1280</width>
                 <height>720</height>
-                <texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+                <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
                 <include>global_kenburns_fanart</include>
                 <fadetime>FanartCrossfadeTime</fadetime>
                 <visible>!Skin.HasSetting(VideoLibraryMovieFanart) | Control.IsVisible(590) | Control.IsVisible(591) | Control.IsVisible(592) | Control.IsVisible(593) | Control.IsVisible(594) | Control.IsVisible(595)</visible>
@@ -70,7 +70,7 @@
                 <posy>0</posy>
                 <width>1280</width>
                 <height>720</height>
-                <texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+                <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
                 <fadetime>FanartCrossfadeTime</fadetime>
                 <include>global_kenburns_fanart</include>
                 <visible>!Skin.HasSetting(VideoLibraryTVFanart)</visible>
@@ -123,7 +123,7 @@
                 <posy>0</posy>
                 <width>1280</width>
                 <height>720</height>
-                <texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+                <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
                 <include>backgroundfade</include>
                 <fadetime>FanartCrossfadeTime</fadetime>
                 <include>global_kenburns_fanart</include>

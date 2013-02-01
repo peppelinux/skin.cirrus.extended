@@ -109,7 +109,7 @@
             <height>108</height>
             <aspectratio>stretch</aspectratio>
             <fadetime>FanartCrossfadeTime</fadetime>
-            <texture fallback="splashm.png" background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+            <texture fallback="splashm.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
             <bordersize>8</bordersize>
             <visible>!Container(721).OnNext + !Container(721).OnPrevious</visible>
             <animation effect="slide" start="0,-100" end="0,0" easing="out" tween="back" time="900" delay="900" reversible="false">Visible</animation>
