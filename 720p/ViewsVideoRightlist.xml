@@ -769,7 +769,7 @@
                     </control>
                     <control type="image">
                         <posx>8</posx>
-                        <posy>28</posy>
+                        <posy>23</posy>
                         <width>91</width>
                         <height>91</height>
                         <aspectratio>keep</aspectratio>

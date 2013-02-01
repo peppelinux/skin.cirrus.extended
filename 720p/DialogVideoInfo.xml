@@ -139,7 +139,7 @@
                             <height>380</height>
                             <font>cirrus_40_Bold</font>
                             <textcolor>white</textcolor>
-                            <shadowcolor></shadowcolor>
+                            <shadowcolor/>
                             <align>center</align>
                             <aligny>center</aligny>
                             <label>31311</label>
@@ -149,14 +149,14 @@
 
                 <!-- ====== MOVIES SECTION ======== -->
                 <control type="group">
-                	  <animation type="WindowOpen" reversible="false">
-                    	  <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
-                    	  <effect type="fade" start="0" end="100" time="300" />
-                	  </animation>
-                	  <animation type="WindowClose" reversible="false">
-                    	  <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
-                    	  <effect type="fade" start="100" end="0" time="300" />
-                	  </animation>      
+                    <animation type="WindowOpen" reversible="false">
+                        <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
+                        <effect type="fade" start="0" end="100" time="300" />
+                    </animation>
+                    <animation type="WindowClose" reversible="false">
+                        <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+                        <effect type="fade" start="100" end="0" time="300" />
+                    </animation>      
                     <visible>[!container.content(tvshows) + !container.content(episodes) + !container.content(musicvideos)] + !Control.HasFocus(12)</visible>
                     <posy>50</posy>
                     <posx>20</posx>
@@ -312,7 +312,7 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-                            <shadowcolor></shadowcolor>
+                            <shadowcolor/>
                         </control>
                         <control type="label">
                             <description>genre label</description>
@@ -325,7 +325,7 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>grey2</textcolor>
-                            <shadowcolor></shadowcolor>
+                            <shadowcolor/>
                         </control>
                         <!-- Changes Begin Butchaby MOD 1.2.0 -->
                         <control type="label">
@@ -351,7 +351,7 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-                            <shadowcolor></shadowcolor>
+                            <shadowcolor/>
                             <scroll>true</scroll>
                             <visible>Skin.HasSetting(pathininfo)</visible>
                         </control>
@@ -471,14 +471,14 @@
                 </control>
                 <!-- ============= TV SHOWS ============= -->
                 <control type="group">
-          		      <animation type="WindowOpen" reversible="false">
-                  			<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
-                  			<effect type="fade" start="0" end="100" time="300" />
-          			    </animation>
-          			    <animation type="WindowClose" reversible="false">
-                  			<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
-                  			<effect type="fade" start="100" end="0" time="300" />
-              			</animation>      
+                    <animation type="WindowOpen" reversible="false">
+                        <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
+                        <effect type="fade" start="0" end="100" time="300" />
+                    </animation>
+                    <animation type="WindowClose" reversible="false">
+                        <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+                        <effect type="fade" start="100" end="0" time="300" />
+                    </animation>      
                     <visible>Container.Content(TVShows) + !Control.HasFocus(12)</visible>
                     <posy>50</posy>
                     <posx>20</posx>
@@ -583,7 +583,7 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-                            <shadowcolor></shadowcolor>
+                            <shadowcolor/>
                         </control>
                         <control type="label">
                             <description>Genre label</description>
@@ -596,7 +596,7 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>grey2</textcolor>
-                            <shadowcolor></shadowcolor>
+                            <shadowcolor/>
                         </control>
                         <control type="label">
                             <visible>Skin.HasSetting(pathininfo)</visible>
@@ -621,7 +621,7 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-                            <shadowcolor></shadowcolor>
+                            <shadowcolor/>
                             <scroll>true</scroll>
                             <visible>Skin.HasSetting(pathininfo)</visible>
                         </control>
@@ -739,14 +739,14 @@
                 </control>
                 <!-- ============ EPISODES LEVEL ============ -->
                 <control type="group">
-              		  <animation type="WindowOpen" reversible="false">
-                  			<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
-                  			<effect type="fade" start="0" end="100" time="300" />
-              			</animation>
-              			<animation type="WindowClose" reversible="false">
-                  			<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
-                  			<effect type="fade" start="100" end="0" time="300" />
-              			</animation>      
+                    <animation type="WindowOpen" reversible="false">
+                        <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
+                        <effect type="fade" start="0" end="100" time="300" />
+                    </animation>
+                    <animation type="WindowClose" reversible="false">
+                        <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+                        <effect type="fade" start="100" end="0" time="300" />
+                    </animation>      
                     <visible>container.content(episodes) + !Control.HasFocus(12)</visible>
                     <posy>50</posy>
                     <posx>20</posx>
@@ -782,38 +782,6 @@
                             <include condition="Skin.HasSetting(newFlags)">VideoLangFlaggingConditionsAudiotrackOrange</include>
                             <include condition="Skin.HasSetting(newFlags)">AspectCodecFlaggingConditionsNew</include>
                         </control>
-                        <!-- <control type="grouplist">
-              <description>Media Codec Flagging Images</description>
-              <posx>688</posx>
-              <posy>552</posy>
-              <width>40</width>
-              <itemgap>10</itemgap>
-              <orientation>horizontal</orientation>
-              <include>VisibleFadeEffect</include> -->
-                        <!--  <include>VideoLangFlaggingConditions</include> -->
-                        <!-- <include>VideoSubLangFlaggingConditions</include> -->
-                        <!--   </control>
-             <control type="image">
-             <description>Volume Icon</description>
-              <posx>650</posx>
-              <posy>546</posy>
-              <width>40</width>
-              <height>35</height>
-              <aspectratio>keep</aspectratio>
-              <texture>VolumeIcon.png</texture>
-              <visible>Skin.HasSetting(showlanflag)</visible>
-              </control>
-              <control type="image">
-               <description>Audiotrack Flag</description>
-              <posx>688</posx>
-              <posy>552</posy>
-              <width>36</width>
-              <height>23</height>
-              <aspectratio>keep</aspectratio>
-              <texture>$INFO[ListItem.AudioLanguage,special://skin/extras/flagsaudiolanguage/,.gif]</texture>
-              <visible>!IsEmpty(ListItem.AudioLanguage)</visible>
-              <visible>Skin.HasSetting(showlanflag)</visible>
-              </control> -->
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -906,7 +874,7 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-                            <shadowcolor></shadowcolor>
+                            <shadowcolor/>
                         </control>
                         <control type="label">
                             <description>tv show label</description>
@@ -919,21 +887,8 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>grey2</textcolor>
-                            <shadowcolor></shadowcolor>
+                            <shadowcolor/>
                         </control>
-         <!-- <control type="label">
-              <description>tv show label</description>
-              <posx>150</posx>
-              <posy>45</posy>
-              <width>570</width>
-              <height>30</height>
-              <font>cirrus_20</font>
-              <label>$INFO[ListItem.SubtitleLanguage]</label>
-              <align>left</align>
-              <aligny>center</aligny>
-              <textcolor>grey2</textcolor>
-              <shadowcolor></shadowcolor>
-            </control> -->
                         <control type="label">
                             <visible>Skin.HasSetting(pathininfo)</visible>
                             <posx>125</posx>
@@ -957,7 +912,7 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-                            <shadowcolor></shadowcolor>
+                            <shadowcolor/>
                             <scroll>true</scroll>
                             <visible>Skin.HasSetting(pathininfo)</visible>
                         </control>
@@ -1221,11 +1176,9 @@
                         <label>208</label>
                         <ondown>ActivateWindow(1121)</ondown>
                         <alttexturefocus>button-focus.png</alttexturefocus>
-                        <alttexturenofocus>
-                        button-nofocus.png</alttexturenofocus>
+                        <alttexturenofocus>button-nofocus.png</alttexturenofocus>
                         <altlabel>1024</altlabel>
-                        <usealttexture>
-                        Container.Content(TVShows)</usealttexture>
+                        <usealttexture>Container.Content(TVShows)</usealttexture>
                     </control>
                     <control type="button" id="134">
                         <description>Wishlist</description>
@@ -1251,7 +1204,7 @@
                         <include>ButtonVideoInfoCommonValues</include>
                         <label>41286</label>
                         <onclick>Dialog.Close(MovieInformation)</onclick>
-                        <onclick>RunScript(script.metadata.actors,$INFO[Container(50).ListItem.Label])</onclick>
+                        <onclick>XBMC.RunScript(script.metadata.actors,$INFO[Container(50).ListItem.Label])</onclick>
                         <visible>System.HasAddon(script.metadata.actors)</visible>
                     </control>
                     <control type="button" id="106">
@@ -1291,16 +1244,16 @@
                         <include>ButtonVideoInfoCommonValues</include>
                         <label>41110</label>
                         <onclick>Dialog.Close(MovieInformation)</onclick>
-                        <onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
-                        <visible>Container.Content(TVShows) + System.HasAddon(script.artwork.downloader)</visible>
+                        <onclick condition="Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
+                        <visible>[Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)] + System.HasAddon(script.artwork.downloader)</visible>
                     </control>
                     <control type="button" id="131">
                         <description>Get Artwork TV Shows Extrafanart</description>
                         <include>ButtonVideoInfoCommonValues</include>
                         <label>41200</label>
                         <onclick>Dialog.Close(MovieInformation)</onclick>
-                        <onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=tvshow, dbid=$INFO[ListItem.DBID], extrafanart)</onclick>
-                        <visible>Container.Content(TVShows) + System.HasAddon(script.artwork.downloader)</visible>
+                        <onclick condition="Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=tvshow, dbid=$INFO[ListItem.DBID], extrafanart)</onclick>
+                        <visible>[Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)] + System.HasAddon(script.artwork.downloader)</visible>
                     </control>
                     <control type="button" id="132">
                         <description>Edit library</description>

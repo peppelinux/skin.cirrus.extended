@@ -448,7 +448,7 @@
 					</control>
 				<control type="image">
 					<posx>708</posx>
-					<posy>48</posy>
+					<posy>43</posy>
 					<width>91</width>
 					<height>91</height>
 					<aspectratio>keep</aspectratio>
