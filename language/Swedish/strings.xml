@@ -398,5 +398,16 @@
   <string id="31508">Kanaler i grupp</string>
   <string id="31509">Kanalgrupp</string>
   <string id="31510">Timer inställd</string>
-  
+
+  <string id="31900">Väderkartor</string>
+  <string id="31901">36-timmarsprognos</string>
+  <string id="31902">Timprognos</string>
+  <string id="31903">Helgprognos</string>
+  <string id="31904">10-dagarsprognos</string>
+  <string id="31905">Prognos</string>
+  <string id="31906">Karta &amp; video</string>
+  <string id="31907">Videoprognost [COLOR=grey2](Helskärmsuppspelning)[/COLOR]</string>
+  <string id="31908">Chans till nederbörd</string>
+  <string id="31909">Hämtar prognosinfo...</string>
+    
 </strings>

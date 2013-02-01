@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!--Translator: Özgür BASKIN (queeup)-->
 <!--Email: ozgur.baskin@gmail.com-->
 <!--Date of translation: 29/12/2009-->
@@ -154,4 +154,17 @@
   <string id="31407">[B]DIŞ GÖRÜNÜM AYARLARINI YAPILANDIR[/B][CR][CR]Cirrus dış görünümü ayarları · Ana menü ögelerini ekle ve kaldır[CR]Arayüz arkaplanlarını değiştir</string>
 
   <string id="31421">Oturum açıp devam etmek için[CR]XBMC kullanıcı profilinizi seçin</string>
+  
+  <!-- Weather plugin -->
+  <string id="31900">Hava Durumu Haritaları</string>
+  <string id="31901">36 Saatlik Hava Tahmini</string>
+  <string id="31902">Saatlik Hava Tahmini</string>
+  <string id="31903">Haftalık Hava Tahmini</string>
+  <string id="31904">10 Günlik Hava Tahmini</string>
+  <string id="31905">Hava Tahmini</string>
+  <string id="31906">Video ve Haritalar</string>
+  <string id="31907">Video Hava Tahmini [COLOR=grey2](Tam ekran oynatım)[/COLOR]</string>
+  <string id="31908">Chance of Precipitation</string>
+  <string id="31909">Hava tahmini bilgisi getiriliyor...</string>
+  
 </strings>

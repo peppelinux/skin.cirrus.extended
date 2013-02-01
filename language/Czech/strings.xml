@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--Translator: ezechiel1917-->
 <!--Date of translation: 30/11/2009-->
 <strings>
@@ -136,4 +136,17 @@
 
   <string id="31420">[B][COLOR=white]Nebyla zjištěna přítomnost optického disku v mechanice.[/COLOR][/B][CR][CR]Vložte prosím disk do mechaniky a opakujte akci znovu</string>
   <string id="31421">Uživatelské přihlášení[CR]Vyberte profil</string>
+
+  <!-- Weather plugin -->
+  <string id="31900">Mapy počasí</string>
+  <string id="31901">Předpověď na 36 hodin</string>
+  <string id="31902">Hodinová předpověď</string>
+  <string id="31903">Předpověď na víkend</string>
+  <string id="31904">Předpověď na 10 dní</string>
+  <string id="31905">Předpověď</string>
+  <string id="31906">Mapy a Video</string>
+  <string id="31907">Video předpověď [COLOR=grey2](Přehrávání na celé obrazovce)[/COLOR]</string>
+  <string id="31908">Pravděpodobnost srážek</string>
+  <string id="31909">Načítání informací o předpovědi...</string>
+  
 </strings>
