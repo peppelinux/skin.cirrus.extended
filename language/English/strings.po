@@ -75,6 +75,10 @@ msgctxt "#31025"
 msgid "Items"
 msgstr ""
 
+msgctxt "#31027"
+msgid "Location"
+msgstr ""
+
 #View Type labels
 
 msgctxt "#31029"
@@ -319,6 +323,12 @@ msgctxt "#31307"
 msgid "Hide Fanart"
 msgstr ""
 
+msgctxt "#31317"
+msgid "Set Fanart Path"
+msgstr ""
+
+
+
 msgctxt "#31309"
 msgid "Memory Used:"
 msgstr ""
@@ -534,7 +544,11 @@ msgctxt "#31910"
 msgid "Map & Alerts"
 msgstr ""
 
-#empty strings from id 31911 to 39999
+msgctxt "#31911"
+msgid "Animate Icons"
+msgstr ""
+
+#empty strings from id 31912 to 39999
 
 #. ViewsGamesFanart
 msgctxt "#40000"
