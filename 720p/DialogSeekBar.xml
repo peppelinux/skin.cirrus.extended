@@ -74,7 +74,6 @@
 				<height>240</height>
 				<fadetime>200</fadetime>
 				<animation effect="fade" time="900">VisibleChange</animation>
-				<texture fallback="blank.png">special://userdata/extras/tvfanarts/$INFO[VideoPlayer.TVShowTitle]/poster.jpg</texture>
 				<texture fallback="blank.png">$INFO[Player.Art(poster)]</texture>
 				<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 				<bordersize>6</bordersize>
@@ -422,8 +421,7 @@
 					<posy>263</posy> 
 					<width>200</width>
 					<height>112</height>
-					<texture fallback="blank.png">special://userdata/extras/tvfanarts/$INFO[ListItem.TVShowTitle]/clearart.png</texture>
-					<texture fallback="blank.png">$INFO[Player.FolderPath]../clearart.png</texture>
+					<texture fallback="blank.png">$INFO[Player.Art(clearart)]</texture>
 					<aspectratio>keep</aspectratio>
 					<visible>Skin.HasSetting(clearart) + VideoPlayer.Content(episodes)</visible>
 				</control>

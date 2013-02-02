@@ -117,9 +117,7 @@
 							<width>300</width>
 							<height>80</height>
 							<aspectratio scalediffuse="false" aligny="center" align="right">keep</aspectratio> 
-							<texture background="true" fallback="fallback.png">special://userdata/extras/tvfanarts/$INFO[ListItem.TVShowTitle]/logo.png</texture>
-							<texture background="true" fallback="fallback.png">special://userdata/extras/videofanarts/$INFO[ListItem.FolderName]/logo.png</texture>
-							<texture background="true" fallback="fallback.png">$INFO[ListItem.path]logo.png</texture>
+							<texture background="true" fallback="fallback.png">$INFO[ListItem.Art(clearlogo)]</texture>
 
 							<colordiffuse>888A8A8A</colordiffuse>							
 						</control>
@@ -136,9 +134,7 @@
 							<width>300</width>
 							<height>80</height>
 							<aspectratio scalediffuse="false" aligny="center" align="right">keep</aspectratio> 
-							<texture background="true" fallback="fallback.png">special://userdata/extras/tvfanarts/$INFO[ListItem.TVShowTitle]/logo.png</texture>
-							<texture background="true" fallback="fallback.png">special://userdata/extras/videofanarts/$INFO[ListItem.FolderName]/logo.png</texture>
-							<texture background="true" fallback="fallback.png">$INFO[ListItem.Path]logo.png</texture>
+							<texture background="true" fallback="fallback.png">$INFO[ListItem.Art(clearlogo)]</texture>
 
 					</control>
 					</control>
@@ -454,9 +450,7 @@
 					<height>141</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
-					<texture>special://userdata/extras/tvfanarts/$INFO[ListItem.TVShowTitle]/landscape.jpg</texture>
-					<texture>special://userdata/extras/videofanarts/$INFO[ListItem.FolderName]/landscape.jpg</texture>
-					<texture background="true" fallback="landscape fallback.png">$INFO[ListItem.Path]landscape.jpg</texture>
+					<texture background="true" fallback="landscape fallback.png">$INFO[ListItem.Art(landscape)]</texture>
 					<bordersize>8</bordersize>
                     <visible>Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb) + Container.Content(tvshows)</visible>
 				</control>
@@ -478,9 +472,6 @@
 					<height>95</height>
 					<aspectratio>stretch</aspectratio>
 					<fadetime>200</fadetime>
-					<texture fallback="tvbanner.png" background="true">$INFO[ListItem.Path]banner.jpg</texture>
-					<texture fallback="tvbanner.png" background="true">special://userdata/extras/tvfanarts/$INFO[ListItem.TVShowTitle]/banner.jpg</texture>
-					<texture>special://userdata/extras/videofanarts/$INFO[ListItem.FolderName]/banner.jpg</texture>
 					<texture fallback="tvbanner.png" background="true">$INFO[ListItem.Art(banner)]</texture>
 					<bordersize>8</bordersize>
                     <visible>Skin.HasSetting(banner) + !IsEmpty(ListItem.Thumb) + Skin.HasSetting(jpgsupport) + Container.Content(tvshows)</visible>
@@ -512,9 +503,7 @@
 					<posy>8</posy> 
 					<width>335</width> 
 					<height>130</height> 
-					<texture>special://userdata/extras/tvfanarts/$INFO[ListItem.TVShowTitle]/clearart.png</texture>
-					<texture>special://userdata/extras/videofanarts/$INFO[ListItem.FolderName]/clearart.png</texture>
-					<texture background="true">$INFO[ListItem.path]clearart.png</texture> 
+					<texture background="true">$INFO[ListItem.Art(clearart)]</texture> 
 
 					<fadetime>200</fadetime> 
 					<aspectratio scalediffuse="false">keep</aspectratio> 
