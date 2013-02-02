@@ -14,8 +14,7 @@
 <!-- Changes Begin Butchabay CEV2 2.05 -->
 	<!-- NORMAL BACKDROPS -->
     <control type="multiimage">
-		<visible>!Skin.HasSetting(homepageRandomFanart) + !Skin.HasSetting(Menu_RandomCustom1)</visible>
-		<!-- <visible>!Skin.HasSetting(homepageRandomFanart) + !Skin.HasSetting(customhomepageRandomFanart) + ![Skin.HasSetting(LibraryFanart) + Container(9000).Hasfocus(1) + Container(9000).Hasfocus(6) + Container(9000).Hasfocus(7) + Container(9000).Hasfocus(28) + Container(9000).Hasfocus(12)]</visible> -->
+		<visible>!Skin.HasSetting(Menu_RandomCustom1)</visible>
 		<posx>0</posx>
 		<posy>0</posy>
 		<width>1280</width>
@@ -29,7 +28,7 @@
         <animation effect="slide" end="40,0" delay="10000" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
     </control>
 	<!-- RANDOM FANART BACKDROPS -->
-    <control type="multiimage">
+    <!--<control type="multiimage">
 		<visible>Skin.HasSetting(homepageRandomFanart)</visible>
 		<posx>0</posx>
 		<posy>0</posy>
@@ -42,7 +41,7 @@
 		<animation effect="zoom" start="110" end="135" center="auto" time="15000" tween="cubic" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
         <animation effect="slide" end="-20,-20" delay="4000" time="8000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
         <animation effect="slide" end="40,0" delay="10000" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
-    </control>
+    </control>-->
 	 <control type="multiimage">
 		<visible>Skin.HasSetting(Menu_RandomCustom1)</visible>
 		<posx>0</posx>

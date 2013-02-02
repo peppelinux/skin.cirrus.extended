@@ -60,6 +60,7 @@
 						<width>220</width>
 						<height>145</height>
 						<aspectratio scalediffuse="false" aligny="center" align="center">keep</aspectratio> 
+
 						<texture background="true" fallback="fallback.png">$INFO[ListItem.Art(clearlogo)]</texture>
 						
 					</control>
@@ -83,6 +84,7 @@
 						<width>220</width>
 						<height>145</height>
 						<aspectratio scalediffuse="false" aligny="center" align="center">keep</aspectratio> 
+
 						<texture background="true" fallback="fallback.png">$INFO[ListItem.Art(clearlogo)]</texture>
 					</control>
 					<control type="image">
@@ -297,7 +299,8 @@
 					<height>303</height>
 					<aspectratio>stretch</aspectratio>
 					<fadetime>FanartCrossfadeTime</fadetime>
-					<texture fallback="splashm.png" background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+
+					<texture fallback="splashm.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
 					<bordersize>8</bordersize>
 					<visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>
 				</control>
@@ -309,6 +312,7 @@
 					<aspectratio>stretch</aspectratio>
 					<fadetime>FanartCrossfadeTime</fadetime>
 					<timeperimage>3000</timeperimage>
+
 					<imagepath background="true">special://userdata/extras/tvfanarts/$INFO[ListItem.TVShowTitle]/extrathumbs</imagepath>
 					<bordersize>8</bordersize>
 					<visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>
@@ -354,7 +358,8 @@
 					</control>
 				<control type="image">
 					<posx>708</posx>
-					<posy>48</posy>
+
+					<posy>43</posy>
 					<width>91</width>
 					<height>91</height>
 					<aspectratio>keep</aspectratio>
@@ -513,6 +518,7 @@
 					<width>575</width>
 					<height>106</height>
 				    <aspectratio>stretch</aspectratio>
+
 					<texture background="true">$INFO[ ListItem.Art(banner)]</texture>
 					<bordertexture border="8">contentpanelvertical.png</bordertexture>
 				    <bordersize>8</bordersize>
@@ -593,7 +599,8 @@
 					<width>540</width>
 					<height>303</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
-					<texture fallback="splashm.png" background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+
+					<texture fallback="splashm.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
 					<bordersize>8</bordersize>
 					<visible>!Skin.HasSetting(tvfanart)</visible>
 					<visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>
@@ -605,7 +612,8 @@
 					<width>540</width>
 					<height>303</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
-					<texture background="true">$INFO[ListItem.Art(landscape)]</texture>
+
+					<texture fallback="splashm.png" background="true">$INFO[ListItem.Art(landscape)]</texture>
 					<bordersize>8</bordersize>
 					<visible>Skin.HasSetting(tvfanart)</visible>
 					<visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>

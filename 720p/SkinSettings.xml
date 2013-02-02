@@ -734,19 +734,6 @@
 					<texturefocus flipx="true">listwhitegradient.png</texturefocus>
 					<texturenofocus>menuitemNF.png</texturenofocus>
 				</control>
-				<control type="radiobutton" id="1018">
-					<description>Random Fanart Backdrops</description>
-					<width>750</width>
-					<height>34</height>
-					<font>cirrus_20</font>
-					<textcolor>grey2</textcolor>
-					<focusedcolor>white</focusedcolor>
-					<label>$LOCALIZE[41108] $LOCALIZE[41135]</label>
-					<onclick>Skin.ToggleSetting(homepageRandomFanart)</onclick>
-					<selected>Skin.HasSetting(homepageRandomFanart)</selected>
-					<texturefocus flipx="true">listwhitegradient.png</texturefocus>
-					<texturenofocus>menuitemNF.png</texturenofocus>
-				</control>
 				<control type="radiobutton" id="1102">
 					<description>Custom Random Fanart Backdrops</description>
 					<width>750</width>
@@ -760,7 +747,6 @@
 					<selected>Skin.HasSetting(Menu_RandomCustom1)</selected>
 					<texturefocus flipx="true">listwhitegradient.png</texturefocus>
 					<texturenofocus>menuitemNF.png</texturenofocus>
-					<enable>!Skin.HasSetting(homepageRandomFanart)</enable>
 				</control>
 				<control type="button" id="1120">
 						<description>Custom Random Fanart Path</description>

@@ -3901,7 +3901,6 @@
     <visible>!Skin.HasSetting(higherosd) + Skin.HasSetting(lowerosd)</visible>
     <visible>!Window.IsVisible(2901)</visible>
 </control>
-<!-- TODO -->
 <control type="largeimage">
     <description>TV Show Image</description>
     <posx>1080</posx>
@@ -3918,8 +3917,7 @@
     <posy>580</posy> 
     <width>240</width>
     <height>134</height>
-    <!-- TODO -->
-    <texture>$INFO[Player.FolderPath]logo.png</texture>
+    <texture>$INFO[Player.Art(clearlogo)]</texture>
     <aspectratio>keep</aspectratio>
     <visible>VideoPlayer.Content(movies)</visible>
     <visible>!Skin.HasSetting(higherosd) + !Skin.HasSetting(lowerosd)</visible>
@@ -3930,8 +3928,7 @@
     <posy>580</posy> 
     <width>240</width>
     <height>134</height>
-    <!-- TODO -->
-    <texture>$INFO[Player.FolderPath]logo.png</texture>
+    <texture>$INFO[Player.Art(clearlogo)]</texture>
     <aspectratio>keep</aspectratio>
     <visible>VideoPlayer.Content(movies)</visible>
     <visible>Skin.HasSetting(higherosd) + !Skin.HasSetting(lowerosd)</visible>
@@ -3942,8 +3939,7 @@
     <posy>0</posy> 
     <width>240</width>
     <height>134</height>
-    <!-- TODO -->
-    <texture>$INFO[Player.FolderPath]logo.png</texture>
+    <texture>$INFO[Player.Art(clearlogo)]</texture>
     <aspectratio>keep</aspectratio>
     <visible>VideoPlayer.Content(movies)</visible>
     <visible>!Skin.HasSetting(higherosd) + Skin.HasSetting(lowerosd)</visible>

@@ -18,7 +18,8 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+
+                <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
 			<include>global_kenburns_fanart</include>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<visible>!Skin.HasSetting(VideoLibraryMovieFanart) | Control.IsVisible(590) | Control.IsVisible(591) | Control.IsVisible(592) | Control.IsVisible(593) | Control.IsVisible(594) | Control.IsVisible(595)</visible>
@@ -58,6 +59,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
+
 			<imagepath background="true">special://userdata/extras/videofanarts/$INFO[ListItem.FolderName]/extrafanart</imagepath>
 			<timeperimage>7000</timeperimage>
 			<randomize>false</randomize>
@@ -70,7 +72,8 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+
+                <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>global_kenburns_fanart</include>
 			<visible>!Skin.HasSetting(VideoLibraryTVFanart)</visible>
@@ -123,7 +126,8 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+
+                <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
 			<include>backgroundfade</include>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>global_kenburns_fanart</include>
@@ -159,7 +163,8 @@
         <posy>0</posy>
         <width>1280</width>
         <height>720</height>
-        <texture background="true">$INFO[ListItem.Path]$INFO[ListItem.Label,,/fanart.jpg]</texture>
+
+                <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
         <fadetime>FanartCrossfadeTime</fadetime>
 		<include>global_kenburns_fanart</include>
         <visible>!Skin.HasSetting(VideoLibraryTVFanart)</visible>
@@ -182,6 +187,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
+
 			<imagepath fallback="special://skin/backgrounds/tv_shows.jpg" background="true">special://userdata/extras/tvfanarts/$INFO[ListItem.TVShowTitle]/extrafanart</imagepath>
 			<timeperimage>7000</timeperimage>
 			<randomize>false</randomize>
@@ -194,6 +200,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
+
 			<imagepath fallback="special://skin/backgrounds/tv_shows.jpg" background="true">special://userdata/extras/tvfanarts/$INFO[ListItem.TVShowTitle]/extrafanart</imagepath>
 			<timeperimage>7000</timeperimage>
 			<randomize>false</randomize>
@@ -208,35 +215,64 @@
     <include>BehindDialogFadeOut</include>
     
 	
-	<include>CommonRootView</include> <!-- view id = 55 -->
-	<include>Fanart</include> <!-- view id = 508 -->
-	<include>Fanart_Games</include> <!-- view id = 590 -->
-	<include>Fanart_Games_Square</include> <!-- view id = 591 -->
-	<include>Fanart_Games_Wide</include> <!-- view id = 592 -->
-	<include>FanartSlide</include> <!-- view id = 666 -->
-	<include>MusicVideoInfoListView</include> <!-- view id = 511 -->
-	<include>RightListView</include> <!-- view id = 569 -->
-	<include>RightListView_Games</include> <!-- view id = 593 -->
-	<include>RightListView_Games_Square</include> <!-- view id = 594 -->
-	<include>RightListView_Games_Landscape</include> <!-- view id = 595 -->
-	<include>WallView</include> <!-- view id = 513 -->
-	<include>HalfWallView</include> <!-- view id = 514 -->
-    <include>HalfWallTV</include> <!-- view id = 560 -->
-	<include>BannerWallView</include><!-- view id = 519 -->
-    <include>VertBannerWall</include><!-- view id = 571 -->
-    <include>Bannerlist</include><!-- view id = 570 -->
-	<include>MovieCoverflow</include> <!-- view id 555 -->
-	<include>BigPosterView</include> <!-- view id 556 -->
-	<include>Compact</include> <!-- view id 515 -->
-	<include>LiveTVView1</include> <!-- view id 700 -->
-	<include>TV_Logo</include> <!-- view id 667 -->
-	<include>TVLogo_Rightlist</include>	<!-- view id 668 -->
-	<include>FanartLandscape</include>	<!-- view id 691 -->
-	<include>FanartSlideMovieSets</include> <!-- view id 766 -->
-	<include>Showcase</include> <!-- view id 52 -->
-	<include>Fanart2</include> <!-- view id = 720 -->
-	<include>ShowcaseMod</include> <!-- view id = 721 -->
-	<include>MusicWallView</include>   <!-- view id = 525-->
+        <include>CommonRootView</include>
+        <!-- view id = 55 -->
+        <include>Fanart</include>
+        <!-- view id = 508 -->
+        <include>Fanart_Games</include>
+        <!-- view id = 590 -->
+        <include>Fanart_Games_Square</include>
+        <!-- view id = 591 -->
+        <include>Fanart_Games_Wide</include>
+        <!-- view id = 592 -->
+        <include>FanartSlide</include>
+        <!-- view id = 666 -->
+        <include>MusicVideoInfoListView</include>
+        <!-- view id = 511 -->
+        <include>RightListView</include>
+        <!-- view id = 569 -->
+        <include>RightListView_Games</include>
+        <!-- view id = 593 -->
+        <include>RightListView_Games_Square</include>
+        <!-- view id = 594 -->
+        <include>RightListView_Games_Landscape</include>
+        <!-- view id = 595 -->
+        <include>WallView</include>
+        <!-- view id = 513 -->
+        <include>HalfWallView</include>
+        <!-- view id = 514 -->
+        <include>HalfWallTV</include>
+        <!-- view id = 560 -->
+        <include>BannerWallView</include>
+        <!-- view id = 519 -->
+        <include>VertBannerWall</include>
+        <!-- view id = 571 -->
+        <include>Bannerlist</include>
+        <!-- view id = 570 -->
+        <include>MovieCoverflow</include>
+        <!-- view id 555 -->
+        <include>BigPosterView</include>
+        <!-- view id 556 -->
+        <include>Compact</include>
+        <!-- view id 515 -->
+        <include>LiveTVView1</include>
+        <!-- view id 700 -->
+        <include>TV_Logo</include>
+        <!-- view id 667 -->
+        <include>TVLogo_Rightlist</include>
+        <!-- view id 668 -->
+        <include>FanartLandscape</include>
+        <!-- view id 691 -->
+        <include>FanartSlideMovieSets</include>
+        <!-- view id 766 -->
+        <include>Showcase</include>
+        <!-- view id 52 -->
+        <include>Fanart2</include>
+        <!-- view id = 720 -->
+        <include>ShowcaseMod</include>
+        <!-- view id = 721 -->
+        <include>MusicWallView</include>
+        <!-- view id = 525-->
 	<include>CommonPageCount</include>
 	
 	
@@ -648,7 +684,7 @@
 					<label>41081</label>
 					<onclick>Skin.ToggleSetting(banner)</onclick>
 					<selected>Skin.HasSetting(banner)</selected>
-					<visible>Container.Content(TVShows) + [!Container.Content(Seasons) + !Container.Content(Episodes) + !Container.Content(Movies) + Control.IsVisible(569) | Control.IsVisible(668) | Control.IsVisible(570)]</visible>
+
 					<enable>!Skin.HasSetting(poster) + !Skin.HasSetting(widethumb)</enable>
 				</control>
 				<control type="radiobutton" id="1028">
@@ -737,7 +773,7 @@
 					<label>41270</label>
 					<onclick>Skin.ToggleSetting(showmoviedvd)</onclick>
 					<selected>Skin.HasSetting(showmoviedvd)</selected>
-					<visible>!Container.Content(TVShows) + !Container.Content(Seasons) + [Container.Content(Movies) + Control.IsVisible(720) | Control.IsVisible(52) | Control.IsVisible(721)]</visible>
+
 				</control>
                 <control type="button" id="44">
                     <description>Download Artwork</description>

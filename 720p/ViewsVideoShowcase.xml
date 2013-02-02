@@ -10,14 +10,16 @@
 		<animation effect="slide" time="200" tween="circle" easing="in" start="0,0" end="0,600">WindowClose</animation>
 		<posx>0</posx>
 			<posy>100</posy>
-				<visible>Control.IsVisible(52)</visible>
+
+				<visible>Control.IsVisible(52) + Control.HasFocus(52)</visible>
 				<control type="image"> <!-- bottom bar background -->
 				<posx>550</posx>
 				<posy>165</posy>
 				<width>180</width>
 				<height>180</height>
 				<aspectratio>stretch</aspectratio>
-				<texture>$INFO[ListItem.Art(clearlogo)]</texture>
+
+				<texture>$INFO[ListItem.Art(discart)]</texture>
 				<visible>Skin.HasSetting(showmoviedvd)</visible>
 			</control>
 			</control>
@@ -275,6 +277,7 @@
 					<posy>550</posy>
 					<width>200</width>
 					<height>112</height>
+
 					<texture>$INFO[ListItem.Art(clearlogo)]</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<visible>Container.Content(Movies)</visible>
@@ -287,6 +290,7 @@
 					<posy>550</posy>
 					<width>200</width>
 					<height>112</height>
+
 					<texture>$INFO[ListItem.Art(clearlogo)]</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<visible>Container.Content(TVShows) | !Container.Content(Movies)</visible>
@@ -297,6 +301,7 @@
 					<posy>550</posy>
 					<width>200</width>
 					<height>112</height>
+
 					<texture>$INFO[ListItem.Art(clearlogo)]</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<visible>Container.Content(Movies)</visible>
@@ -309,6 +314,7 @@
 					<posy>550</posy>
 					<width>200</width>
 					<height>112</height>
+
 					<texture>$INFO[ListItem.Art(clearlogo)]</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<visible>Container.Content(Movies)</visible>

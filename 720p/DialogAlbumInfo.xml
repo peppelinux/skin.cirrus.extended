@@ -70,14 +70,14 @@
             <posy>20</posy>
             <width>675</width>
             <height>380</height>
-            <texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+            <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
             <bordertexture border="8">ThumbBorder.png</bordertexture>
 			<bordersize>6</bordersize>
             <aspectratio>stretch</aspectratio>
-            <visible>!IsEmpty(Listitem.Property(Fanart_Image))</visible>
+            <visible>!IsEmpty(ListItem.Art(fanart))</visible>
           </control>
           <control type="group">
-            <visible>IsEmpty(Listitem.Property(Fanart_Image))</visible>
+            <visible>IsEmpty(ListItem.Art(fanart))</visible>
             <control type="image">
               <description>No Fanart Back</description>
               <posx>-290</posx>

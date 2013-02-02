@@ -5,5 +5,11 @@ Changelog: 3.0.0 (12.01.2013)
 - Removal of double textstrings in language files
 - Color value "orange" replaced by "accent"
 - updated Weather section
+- 10 Day weather forecast
 
+- Discart support for Rightlist Logo view
+- fixed Discart animation on Showcase Views
+- fixed Recommended, Recently added Widget
+- fixed Genre display on Rightlist view
+- fixed acces to fanart to latest ListItem properties
 

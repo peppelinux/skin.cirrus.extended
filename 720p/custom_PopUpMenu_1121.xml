@@ -63,7 +63,7 @@
 			<posy>400</posy>
 			<width>250</width>
 			<height>140</height>
-			<texture fallback="splashm.png" background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+			<texture fallback="splashm.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
 			<bordersize>4</bordersize>
 			<visible>Container.Content(Movies)</visible>
 		</control>

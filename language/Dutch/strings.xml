@@ -500,4 +500,17 @@
   <string id="31508">Kanalen in Groep</string>
   <string id="31509">Kanalen Groep</string>
   <string id="31510">Timer Ingesteld</string>
+  
+    <!-- Weather plugin -->
+  <string id="31900">Weerkaarten</string>
+  <string id="31901">Voorspelling 36 uur </string>
+  <string id="31902">Voorspelling per uur</string>
+  <string id="31903">Voorspelling weekend</string>
+  <string id="31904">Voorspelling 10 dagen </string>
+  <string id="31905">Voorspelling</string>
+  <string id="31906">Kaarten en Video</string>
+  <string id="31907">Video voorspelling [COLOR=grey2](Volledig scherm Afspelen)[/COLOR]</string>
+  <string id="31908">Kans op neerslag</string>
+  <string id="31909">Weersvoorspelling ophalen...</string>
+  
 </strings>

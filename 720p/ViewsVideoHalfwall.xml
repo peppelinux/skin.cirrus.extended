@@ -73,7 +73,7 @@
 					</control>
 					<control type="image">
 						<posx>5</posx>
-						<posy>5</posy>
+						<posy>3</posy>
 						<width>91</width>
 						<height>91</height>
 						<texture>Overlayicons/TrailerOverlay.png</texture>
@@ -110,7 +110,7 @@
 					</control>
 					<control type="image">
 						<posx>5</posx>
-						<posy>5</posy>
+						<posy>3</posy>
 						<width>91</width>
 						<height>91</height>
 						<texture>Overlayicons/TrailerOverlay.png</texture>
@@ -273,7 +273,7 @@
 					<height>303</height>
 					<aspectratio>stretch</aspectratio>
 					<fadetime>FanartCrossfadeTime</fadetime>
-					<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
 					<visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>
 					<bordersize>8</bordersize>
 				</control>

@@ -6,7 +6,9 @@
 		<control type="group">
 			<visible>Control.IsVisible(570)</visible>
 			<include>VisibleFadeEffect</include>
-			<control type="image"> <!-- bottom bar background -->
+
+            <control type="image">
+                <!-- bottom bar background -->
 				<posx>0</posx>
 				<posy>155r</posy>
 				<width>1280</width>
@@ -14,7 +16,9 @@
 				<aspectratio>stretch</aspectratio>
  				<texture>rightlistbackground.png</texture>
 			</control>
-			<control type="image"> <!-- bottom bar background -->
+
+            <control type="image">
+                <!-- bottom bar background -->
 				<posx>0</posx>
 				<posy>50r</posy>
 				<width>1280</width>
@@ -23,7 +27,9 @@
  				<texture>rightlistbackground.png</texture>
 				<visible>Container.Content(Movies) | Container.Content(Episodes)</visible>
 			</control>
-			<control type="image"> <!-- Black gradient up the top -->
+
+            <control type="image">
+                <!-- Black gradient up the top -->
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1280</width>
@@ -31,7 +37,9 @@
 				<texture>blackgradientvert.png</texture>
 				<aspectratio>stretch</aspectratio>
 			</control>
-			<control type="image"> <!-- right gradient -->
+
+            <control type="image">
+                <!-- right gradient -->
 				<posx>700r</posx>
 				<posy>0</posy>
 				<width>700</width>
@@ -97,7 +105,9 @@
 				<preloaditems>2</preloaditems>
 				<visible>Container.Content(TVShows)</visible>
 				<itemlayout height="50" width="580">
-					<control type="group"> <!-- banner mod -->
+
+                    <control type="group">
+                        <!-- banner mod -->
 						<posx>0</posx>
 						<posy>0</posy>
 					</control>
@@ -134,20 +144,25 @@
 						<effect type="zoom" start="0" right="100" center="300,50" time="200" reversible="false"/>
 						<effect type="fade" start="0" end="100" time="100" reversible="false"/>
 						</animation>
-						<control type="image"> <!-- banner mod -->
+
+                        <control type="image">
+                            <!-- banner mod -->
 							<posx>0</posx>
 							<posy>7</posy>
 							<width>575</width>
 							<height>106</height>
 							<aspectratio>stretch</aspectratio>
 							<fadetime>200</fadetime>
+
 							<texture background="true" fallback="tvbanner.png">$INFO[ListItem.Art(banner)]</texture>
 							<bordertexture border="6">contentpanelvertical.png</bordertexture>
 						    <bordersize>6</bordersize>
 							<visible>Skin.HasSetting(jpgsupport)</visible>
 							<visible>!IsEmpty(ListItem.Thumb)</visible> 
 						</control>
-						<control type="image"> <!-- banner mod -->
+
+                        <control type="image">
+                            <!-- banner mod -->
 							<posx>0</posx>
 							<posy>7</posy>
 							<width>575</width>
@@ -244,8 +259,8 @@
 					<aligny>center</aligny>
 					<font>cirrus_24</font>
 					<scroll>true</scroll>
-					<visible>Skin.HasSetting(banner) + !Skin.HasSetting(poster) + !Skin.HasSetting(widethumb)</visible>
-					<visible>!IsEmpty(ListItem.Thumb)</visible> 
+
+                    <visible>Skin.HasSetting(banner) + !IsEmpty(ListItem.Thumb)</visible> 
 				</control>	
 				<control type="label">
 					<description>First Aired</description>
@@ -254,13 +269,13 @@
 					<width>440</width>
 					<height>25</height>
 					<label fallback="416">[COLOR=accent]$LOCALIZE[20416]: [/COLOR]$INFO[listitem.premiered]</label>
-					<visible>!IsEmpty(ListItem.Thumb)</visible> 
 					<align>left</align>
+
 					<aligny>center</aligny>
 					<font>cirrus_24</font>
 					<scroll>true</scroll>
-					<visible>Skin.HasSetting(banner) + !Skin.HasSetting(poster) + !Skin.HasSetting(widethumb)</visible>
-					<visible>!IsEmpty(ListItem.Thumb)</visible> 
+
+                    <visible>Skin.HasSetting(banner) + !IsEmpty(ListItem.Thumb)</visible> 
 				</control>
 				<control type="label">
 					<description>Genre</description>
@@ -271,10 +286,9 @@
 					<label fallback="416">[COLOR=accent]$LOCALIZE[515]: [/COLOR]$INFO[listitem.genre]</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>cirrus_21</font>
+                    <font>cirrus_24</font>
 					<scroll>true</scroll>
-					<visible>Skin.HasSetting(banner) + !Skin.HasSetting(poster) + !Skin.HasSetting(widethumb)</visible>
-					<visible>!IsEmpty(ListItem.Thumb)</visible> 
+                    <visible>Skin.HasSetting(banner) + !IsEmpty(ListItem.Thumb)</visible> 
 				</control>
 				<control type="label">
 					<description>Episodes</description>
@@ -287,8 +301,7 @@
 					<aligny>center</aligny>
 					<font>cirrus_24</font>
 					<scroll>true</scroll>
-					<visible>Skin.HasSetting(banner) + !Skin.HasSetting(poster) + !Skin.HasSetting(widethumb)</visible>
-					<visible>!IsEmpty(ListItem.Thumb)</visible> 
+                    <visible>Skin.HasSetting(banner) + !IsEmpty(ListItem.Thumb)</visible> 
 				</control>
 				<control type="group">
 					<description>Nextaired</description>
@@ -301,8 +314,7 @@
 					<aligny>center</aligny>
 					<font>cirrus_24</font>
 					<scroll>true</scroll>
-					<visible>Skin.HasSetting(poster) + !Skin.HasSetting(banner)</visible>
-					<visible>!IsEmpty(ListItem.Thumb)</visible> 
+                    <visible>Skin.HasSetting(poster) + !IsEmpty(ListItem.Thumb)</visible> 
 				</control>	
 				<control type="label">
 					<description>First Aired</description>
@@ -315,8 +327,7 @@
 					<aligny>center</aligny>
 					<font>cirrus_24</font>
 					<scroll>true</scroll>
-					<visible>Skin.HasSetting(poster) + !Skin.HasSetting(banner)</visible>
-					<visible>!IsEmpty(ListItem.Thumb)</visible> 
+                    <visible>Skin.HasSetting(poster) + !IsEmpty(ListItem.Thumb)</visible> 
 				</control>
 				<control type="label">
 					<description>Genre</description>
@@ -329,8 +340,7 @@
 					<aligny>center</aligny>
 					<font>cirrus_24</font>
 					<scroll>true</scroll>
-					<visible>Skin.HasSetting(poster) + !Skin.HasSetting(banner)</visible>
-					<visible>!IsEmpty(ListItem.Thumb)</visible> 
+                    <visible>Skin.HasSetting(poster) + !IsEmpty(ListItem.Thumb)</visible> 
 				</control>
 				<control type="label">
 					<description>Episodes</description>
@@ -343,12 +353,12 @@
 					<aligny>center</aligny>
 					<font>cirrus_24</font>
 					<scroll>true</scroll>
-					<visible>Skin.HasSetting(poster) + !Skin.HasSetting(banner)</visible>
-					<visible>!IsEmpty(ListItem.Thumb)</visible> 
+                    <visible>Skin.HasSetting(poster) + !IsEmpty(ListItem.Thumb)</visible> 
 				</control>
 				<!-- Poster update v1.1-->
 				<control type="group">
-					<visible>Skin.HasSetting(poster) + !Skin.HasSetting(banner)</visible>
+
+                    <visible>Skin.HasSetting(poster)</visible>
 					<control type="image">
 						<posx>-10</posx>
 						<posy>-230</posy>
@@ -381,8 +391,7 @@
 					<aligny>center</aligny>
 					<font>cirrus_24</font>
 					<scroll>true</scroll>
-					<visible>Skin.HasSetting(widethumb) + !Skin.HasSetting(banner) + !Skin.HasSetting(poster)</visible>
-					<visible>!IsEmpty(ListItem.Thumb)</visible> 
+                    <visible>Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb)</visible> 
 				</control>	
 				<control type="label">
 					<description>First Aired</description>
@@ -395,8 +404,7 @@
 					<aligny>center</aligny>
 					<font>cirrus_24</font>
 					<scroll>true</scroll>
-					<visible>Skin.HasSetting(widethumb) + !Skin.HasSetting(banner) + !Skin.HasSetting(poster)</visible>
-					<visible>!IsEmpty(ListItem.Thumb)</visible> 
+                    <visible>Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb)</visible> 
 				</control>
 				<control type="label">
 					<description>Genre</description>
@@ -409,8 +417,7 @@
 					<aligny>center</aligny>
 					<font>cirrus_24</font>
 					<scroll>true</scroll>
-					<visible>Skin.HasSetting(widethumb) + !Skin.HasSetting(banner) + !Skin.HasSetting(poster)</visible>
-					<visible>!IsEmpty(ListItem.Thumb)</visible> 
+                    <visible>Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb)</visible> 
 				</control>
 				<control type="label">
 					<description>Episodes</description>
@@ -423,8 +430,8 @@
 					<aligny>center</aligny>
 					<font>cirrus_24</font>
 					<scroll>true</scroll>
-					<visible>Skin.HasSetting(widethumb) + !Skin.HasSetting(banner) + !Skin.HasSetting(poster)</visible>
-					<visible>!IsEmpty(ListItem.Thumb)</visible> 
+
+                    <visible>Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb)</visible> 
 				</control>
 				<control type="image"> 
 					<posx>-10</posx>
@@ -435,8 +442,7 @@
 					<texture>black-back.png</texture>
 					<bordertexture border="8">contentpanelvertical.png</bordertexture>
 					<bordersize>8</bordersize>
-					<visible>Skin.HasSetting(widethumb) + !Skin.HasSetting(banner) + !Skin.HasSetting(poster)</visible>
-					<visible>!IsEmpty(ListItem.Thumb)</visible> 
+                    <visible>Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb)</visible> 
 				</control>
 				<control type="image"> 
 					<posx>-10</posx>
@@ -445,10 +451,10 @@
 					<height>141</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
-					<texture background="true" fallback="landscape fallback.png">$INFO[ListItem.Art(landscape)]</texture>
+
+                    <texture background="true" fallback="landscape fallback.png">$INFO[ListItem.Art(landscape)]</texture>
 					<bordersize>8</bordersize>
-					<visible>Skin.HasSetting(widethumb) + !Skin.HasSetting(banner) + !Skin.HasSetting(poster)</visible>
-					<visible>!IsEmpty(ListItem.Thumb)</visible> 
+                    <visible>Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb)</visible> 
 				</control>
 				<control type="image">
 					<width>161</width>
@@ -467,7 +473,8 @@
 					<posy>-10</posy> 
 					<width>335</width> 
 					<height>130</height> 
-					<texture>$INFO[ListItem.Art(clearlogo)]</texture> 
+
+                    <texture>$INFO[ListItem.Art(clearlogo)]</texture> 
 					<fadetime>100</fadetime> 
 					<aspectratio scalediffuse="false">keep</aspectratio> 
 					<visible>!IsEmpty(ListItem.Thumb)</visible> 

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <strings>
   <!-- Различные обозначения -->
   <string id="31000">Измените</string>
@@ -179,4 +179,17 @@
 <string id="31408">[B]НАСТРОЙКА ДОПОЛНЕНИЙ[/B][CR][CR]Управление установленными дополнениями · Установка дополнений с xbmc.org[CR]Изменение настроек дополнений</string>
 
   <string id="31421">Выберите ваш профиль пользователя XBMC[CR]чтобы войти в систему и продолжить.</string>
+
+  <!-- Weather plugin -->
+  <string id="31900">Карты погоды</string>
+  <string id="31901">Прогноз на 36 ч.</string>
+  <string id="31902">Ежечасный прогноз</string>
+  <string id="31903">Прогноз на выходные</string>
+  <string id="31904">Прогноз на 10 дней</string>
+  <string id="31905">Прогноз</string>
+  <string id="31906">Карты и видео</string>
+  <string id="31907">Видео-прогноз [COLOR=grey2](полный экран)[/COLOR]</string>
+  <string id="31908">Возможны осадки</string>
+  <string id="31909">Получение прогноза…</string>
+
 </strings>

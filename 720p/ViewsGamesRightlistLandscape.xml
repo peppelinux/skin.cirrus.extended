@@ -297,7 +297,7 @@
 					<height>144</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
-					<texture fallback="splashm.png" background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					<texture fallback="splashm.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
 					<bordersize>8</bordersize>
 					<visible>!Window.IsVisible(VideoFiles) + !Window.IsVisible(VideoLibrary)</visible>
 				</control>
@@ -308,7 +308,7 @@
 					<height>128</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
-					<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
 					<timeperimage>5000</timeperimage>
 					<imagepath background="true">$INFO[Skin.String(Menu_GameCustom1_Label)]/$INFO[ListItem.label]/extrathumb</imagepath>
 					<visible>!Window.IsVisible(VideoFiles) + !Window.IsVisible(VideoLibrary)</visible>

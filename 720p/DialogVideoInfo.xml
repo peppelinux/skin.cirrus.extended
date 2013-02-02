@@ -33,7 +33,7 @@
                 <width>1280</width>
                 <height>720</height>
                 <aspectratio>stretch</aspectratio>
-                <texture fallback="special://skin/backgrounds/videosfanart.jpg" background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+                <texture fallback="special://skin/backgrounds/videosfanart.jpg" background="true">$INFO[ListItem.Art(fanart)]</texture>
             </control>
             <control type="image">
                 <posx>0</posx>
@@ -81,9 +81,11 @@
                         <posy>0</posy>
                         <width>1280</width>
                         <height>720</height>
-                        <texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+
+                        <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
                         <aspectratio>stretch</aspectratio>
-                        <visible>!IsEmpty(Listitem.Property(Fanart_Image))</visible>
+
+                        <visible>!IsEmpty(ListItem.Art(fanart))</visible>
                     </control>
                     <control type="image">
                         <!-- bottom bar background -->
@@ -104,7 +106,8 @@
                         <texture>rightlistbackground.png</texture>
                     </control>
                     <control type="group">
-                        <visible>IsEmpty(Listitem.Property(Fanart_Image))</visible>
+
+                        <visible>IsEmpty(ListItem.Art(fanart))</visible>
                         <control type="image">
                             <description>No Fanart Back</description>
                             <posx>0</posx>
@@ -139,7 +142,7 @@
                             <height>380</height>
                             <font>cirrus_40_Bold</font>
                             <textcolor>white</textcolor>
-                            <shadowcolor></shadowcolor>
+                            <shadowcolor/>
                             <align>center</align>
                             <aligny>center</aligny>
                             <label>31311</label>
@@ -282,7 +285,8 @@
                             <posy>385</posy>
                             <width>405</width>
                             <height>227</height>
-                            <texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+
+                            <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
                             <bordertexture border="6">contentpanelvertical.png</bordertexture>
                             <bordersize>6</bordersize>
                             <aspectratio>stretch</aspectratio>
@@ -312,7 +316,7 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-                            <shadowcolor></shadowcolor>
+                            <shadowcolor/>
                         </control>
                         <control type="label">
                             <description>genre label</description>
@@ -325,7 +329,8 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>grey2</textcolor>
-                            <shadowcolor></shadowcolor>
+
+                            <shadowcolor/>
                         </control>
                         <!-- Changes Begin Butchaby MOD 1.2.0 -->
                         <control type="label">
@@ -351,7 +356,8 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-                            <shadowcolor></shadowcolor>
+
+                            <shadowcolor/>
                             <scroll>true</scroll>
                             <visible>Skin.HasSetting(pathininfo)</visible>
                         </control>
@@ -490,6 +496,7 @@
                             <posy>545</posy>
                             <width>200</width>
                             <height>77</height>
+
                             <texture>$INFO[ListItem.Art(clearlogo)]</texture>
                             <fadetime>100</fadetime>
                             <aspectratio scalediffuse="false">keep</aspectratio>
@@ -523,7 +530,8 @@
                             <posy>385</posy>
                             <width>405</width>
                             <height>227</height>
-                            <texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+
+                            <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
                             <bordertexture border="6">contentpanelvertical.png</bordertexture>
                             <bordersize>6</bordersize>
                             <aspectratio>stretch</aspectratio>
@@ -583,7 +591,8 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-                            <shadowcolor></shadowcolor>
+
+                            <shadowcolor/>
                         </control>
                         <control type="label">
                             <description>Genre label</description>
@@ -596,7 +605,8 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>grey2</textcolor>
-                            <shadowcolor></shadowcolor>
+
+                            <shadowcolor/>
                         </control>
                         <control type="label">
                             <visible>Skin.HasSetting(pathininfo)</visible>
@@ -621,7 +631,8 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-                            <shadowcolor></shadowcolor>
+
+                            <shadowcolor/>
                             <scroll>true</scroll>
                             <visible>Skin.HasSetting(pathininfo)</visible>
                         </control>
@@ -758,6 +769,7 @@
                             <posy>545</posy>
                             <width>200</width>
                             <height>77</height>
+
                             <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
                             <fadetime>100</fadetime>
                             <aspectratio scalediffuse="false">keep</aspectratio>
@@ -782,39 +794,7 @@
                             <include condition="Skin.HasSetting(newFlags)">VideoLangFlaggingConditionsAudiotrackOrange</include>
                             <include condition="Skin.HasSetting(newFlags)">AspectCodecFlaggingConditionsNew</include>
                         </control>
-                        <!-- <control type="grouplist">
-              <description>Media Codec Flagging Images</description>
-              <posx>688</posx>
-              <posy>552</posy>
-              <width>40</width>
-              <itemgap>10</itemgap>
-              <orientation>horizontal</orientation>
-              <include>VisibleFadeEffect</include> -->
-                        <!--  <include>VideoLangFlaggingConditions</include> -->
-                        <!-- <include>VideoSubLangFlaggingConditions</include> -->
-                        <!--   </control>
              <control type="image">
-             <description>Volume Icon</description>
-              <posx>650</posx>
-              <posy>546</posy>
-              <width>40</width>
-              <height>35</height>
-              <aspectratio>keep</aspectratio>
-              <texture>VolumeIcon.png</texture>
-              <visible>Skin.HasSetting(showlanflag)</visible>
-              </control>
-              <control type="image">
-               <description>Audiotrack Flag</description>
-              <posx>688</posx>
-              <posy>552</posy>
-              <width>36</width>
-              <height>23</height>
-              <aspectratio>keep</aspectratio>
-              <texture>$INFO[ListItem.AudioLanguage,special://skin/extras/flagsaudiolanguage/,.gif]</texture>
-              <visible>!IsEmpty(ListItem.AudioLanguage)</visible>
-              <visible>Skin.HasSetting(showlanflag)</visible>
-              </control> -->
-                        <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
                             <width>1</width>
@@ -844,7 +824,8 @@
                             <width>405</width>
                             <height>227</height>
                             <texture background="true">
-                            $INFO[ListItem.Property(Fanart_Image)]</texture>
+
+                            $INFO[ListItem.Art(fanart)]</texture>
                             <bordertexture border="6">
                             contentpanelvertical.png</bordertexture>
                             <bordersize>6</bordersize>
@@ -906,7 +887,8 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-                            <shadowcolor></shadowcolor>
+
+                            <shadowcolor/>
                         </control>
                         <control type="label">
                             <description>tv show label</description>
@@ -919,21 +901,9 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>grey2</textcolor>
-                            <shadowcolor></shadowcolor>
+
+                            <shadowcolor/>
                         </control>
-         <!-- <control type="label">
-              <description>tv show label</description>
-              <posx>150</posx>
-              <posy>45</posy>
-              <width>570</width>
-              <height>30</height>
-              <font>cirrus_20</font>
-              <label>$INFO[ListItem.SubtitleLanguage]</label>
-              <align>left</align>
-              <aligny>center</aligny>
-              <textcolor>grey2</textcolor>
-              <shadowcolor></shadowcolor>
-            </control> -->
                         <control type="label">
                             <visible>Skin.HasSetting(pathininfo)</visible>
                             <posx>125</posx>
@@ -957,7 +927,8 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-                            <shadowcolor></shadowcolor>
+
+                            <shadowcolor/>
                             <scroll>true</scroll>
                             <visible>Skin.HasSetting(pathininfo)</visible>
                         </control>
@@ -1221,11 +1192,9 @@
                         <label>208</label>
                         <ondown>ActivateWindow(1121)</ondown>
                         <alttexturefocus>button-focus.png</alttexturefocus>
-                        <alttexturenofocus>
-                        button-nofocus.png</alttexturenofocus>
+                        <alttexturenofocus>button-nofocus.png</alttexturenofocus>
                         <altlabel>1024</altlabel>
-                        <usealttexture>
-                        Container.Content(TVShows)</usealttexture>
+                        <usealttexture>Container.Content(TVShows)</usealttexture>
                     </control>
                     <control type="button" id="134">
                         <description>Wishlist</description>
@@ -1251,7 +1220,8 @@
                         <include>ButtonVideoInfoCommonValues</include>
                         <label>41286</label>
                         <onclick>Dialog.Close(MovieInformation)</onclick>
-                        <onclick>RunScript(script.metadata.actors,$INFO[Container(50).ListItem.Label])</onclick>
+
+                        <onclick>XBMC.RunScript(script.metadata.actors,$INFO[Container(50).ListItem.Label])</onclick>
                         <visible>System.HasAddon(script.metadata.actors)</visible>
                     </control>
                     <control type="button" id="106">
@@ -1291,16 +1261,18 @@
                         <include>ButtonVideoInfoCommonValues</include>
                         <label>41110</label>
                         <onclick>Dialog.Close(MovieInformation)</onclick>
-                        <onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
-                        <visible>Container.Content(TVShows) + System.HasAddon(script.artwork.downloader)</visible>
+
+                        <onclick condition="Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
+                        <visible>[Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)] + System.HasAddon(script.artwork.downloader)</visible>
                     </control>
                     <control type="button" id="131">
                         <description>Get Artwork TV Shows Extrafanart</description>
                         <include>ButtonVideoInfoCommonValues</include>
                         <label>41200</label>
                         <onclick>Dialog.Close(MovieInformation)</onclick>
-                        <onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=tvshow, dbid=$INFO[ListItem.DBID], extrafanart)</onclick>
-                        <visible>Container.Content(TVShows) + System.HasAddon(script.artwork.downloader)</visible>
+
+                        <onclick condition="Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=tvshow, dbid=$INFO[ListItem.DBID], extrafanart)</onclick>
+                        <visible>[Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)] + System.HasAddon(script.artwork.downloader)</visible>
                     </control>
                     <control type="button" id="132">
                         <description>Edit library</description>
