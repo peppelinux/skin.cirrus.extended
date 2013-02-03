@@ -1003,7 +1003,6 @@
     </control>
   </include>
   
-  
   <include name="Clock">
     <control type="group">
       <posx>0</posx><!-- 140r -->
@@ -1024,6 +1023,7 @@
       </control>
     </control>
   </include>
+  
   <include name="backgroundfade">
      <animation effect="fade" time="600">Visible</animation>
      <animation effect="fade" time="600">Hidden</animation>
@@ -1040,13 +1040,77 @@
     <animation effect="fade" time="300">Visible</animation>
     <animation effect="fade" time="300">Hidden</animation>
   </include>
-  <!-- Changes Begin Butchabay MOD 1.2.0 -->
-   <include name="global_kenburns_fanart">
-  <animation effect="zoom" start="110" end="135" center="auto" time="15000" tween="cubic" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg) + Skin.HasSetting(animation_bg_global)">Conditional</animation>
-  <animation effect="slide" end="-20,-20" delay="4000" time="8000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg) + Skin.HasSetting(animation_bg_global)">Conditional</animation>
-  <animation effect="slide" end="40,0" delay="10000" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg) + Skin.HasSetting(animation_bg_global)">Conditional</animation>
+
+  <include name="global_kenburns_fanart">   <!-- Change Butchabay MOD 1.2.0 -->
+    <animation effect="zoom" start="110" end="135" center="auto" time="15000" tween="cubic" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg) + Skin.HasSetting(animation_bg_global)">Conditional</animation>
+    <animation effect="slide" end="-20,-20" delay="4000" time="8000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg) + Skin.HasSetting(animation_bg_global)">Conditional</animation>
+    <animation effect="slide" end="40,0" delay="10000" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg) + Skin.HasSetting(animation_bg_global)">Conditional</animation>
 	</include>
-	<!-- Changes End Butchabay MOD 1.2.0 -->
+
+	<include name="MenuItemSettings">
+		<width>750</width>
+		<height>34</height>
+		<font>cirrus_20</font>
+		<textcolor>grey2</textcolor>
+		<focusedcolor>white</focusedcolor>
+		<texturefocus flipx="true">listwhitegradient.png</texturefocus>
+		<texturenofocus>menuitemNF.png</texturenofocus>
+	</include>
+
+	<include name="MenuTitleSettings">
+		<width>750</width>
+		<height>45</height>
+		<font>cirrus_20</font>
+		<textcolor>accent</textcolor>
+		<shadowcolor>black</shadowcolor>
+		<align>left</align>
+		<aligny>center</aligny>
+	</include>
+
+	<include name="MenuTitleSettingsHomebutton">
+		<width>600</width>
+		<height>40</height>
+		<font>cirrus_20</font>
+		<align>left</align>
+		<aligny>center</aligny>
+	</include>
+
+	<include name="MenuSettingsImagebutton">
+    <posy>0</posy>
+    <width>180</width>
+		<height>40</height>
+		<font>cirrus_20</font>
+		<textcolor>grey2</textcolor>
+		<focusedcolor>white</focusedcolor>
+		<align>center</align>
+		<texturenofocus border="5">button-nofocus.png</texturenofocus>
+		<texturefocus border="5">button-focus.png</texturefocus>
+		<onup>304</onup>
+		<ondown>304</ondown>
+	</include>
+
+  <include name="MenuSettingsImagebutton1">
+    <include>MenuSettingsImagebutton</include>
+    <posx>5</posx>
+		<label>31113</label>
+		<onleft>302</onleft>
+		<onright>301</onright>
+	</include>
+  <include name="MenuSettingsImagebutton2">
+    <include>MenuSettingsImagebutton</include>
+		<posx>190</posx>
+		<label>31114</label>
+		<onleft>300</onleft>
+		<onright>302</onright>
+	</include>
+  <include name="MenuSettingsImagebutton3">
+    <include>MenuSettingsImagebutton</include>
+    <posx>375</posx>
+		<label>571</label>
+		<onleft>301</onleft>
+		<onright>300</onright>
+	</include>
+
   <include name="WindowID">
 		<width>520</width>
 		<height>14</height>
