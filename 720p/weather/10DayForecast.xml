@@ -41,7 +41,7 @@
 						<posy>0</posy>
 						<width>100</width>
 						<height>120</height>
-						<font>font12</font>
+						<font>cirrus_30</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>center</align>
@@ -70,12 +70,12 @@
 						<fadetime>0</fadetime>
 						<visible>Skin.HasSetting(EnableAnimationWeather)</visible>
 					</control>
-					<control type="label">
+					<control type="label"> <!-- Precictions right top other days -->
 						<posx>590</posx>
 						<posy>0</posy>
 						<width>390</width>
 						<height>70</height>
-						<font>font12</font>
+						<font>cirrus_18</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>right</align>
@@ -87,7 +87,7 @@
 						<posy>80</posy>
 						<width>590</width>
 						<height>50</height>
-						<font>font12</font>
+						<font>cirrus_18</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>center</align>
@@ -118,7 +118,7 @@
 						<posy>0</posy>
 						<width>100</width>
 						<height>120</height>
-						<font>font12</font>
+						<font>cirrus_30</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>center</align>
@@ -147,12 +147,12 @@
 						<fadetime>0</fadetime>
 						<visible>Skin.HasSetting(EnableAnimationWeather)</visible>
 					</control>
-					<control type="label">
+					<control type="label"> <!-- Selected Precictions right top -->
 						<posx>590</posx>
 						<posy>0</posy>
 						<width>390</width>
 						<height>70</height>
-						<font>font12</font>
+						<font>cirrus_18</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>right</align>
@@ -164,7 +164,7 @@
 						<posy>80</posy>
 						<width>590</width>
 						<height>50</height>
-						<font>font12</font>
+						<font>cirrus_18</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>center</align>
