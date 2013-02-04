@@ -41,14 +41,19 @@ class Main:
         count = 0
         for self.doc in self.favourites:
             self.fav_path = self.doc.childNodes [ 0 ].nodeValue
+            print ("LOG FAVOURITE: %s" % self.fav_path)
             # add return 
-            if 'RunScript' not in self.fav_path: self.fav_path = self.fav_path.replace( ')', ',return)' )
+            if 'RunScript' not in self.fav_path: 
+                self.fav_path = self.fav_path.replace( ')', ',return)' )
+                self.fav_path = self.fav_path.replace('\\"),return)', '"), return' )
             if (sys.argv[ 1 ] == 'playlists=play'):
                 if 'playlists/music' in self.fav_path: self.fav_path = self.fav_path.replace( 'ActivateWindow(10502,', 'PlayMedia(' )
                 if 'playlists/video' in self.fav_path: self.fav_path = self.fav_path.replace( 'ActivateWindow(10025,', 'PlayMedia(' )
             print 'playlists :' + sys.argv[ 1 ]
             # set properties
             self.WINDOW.setProperty( "favourite.%d.path" % ( count + 1, ) , self.fav_path )
+            print ("LOG NEW FAVOURITE: %s" % self.fav_path)
+            print ("LOG NORM FAVOURITE: %s" % os.path.normcase(self.fav_path))
             self.WINDOW.setProperty( "favourite.%d.name" % ( count + 1, ) , self.doc.attributes [ 'name' ].nodeValue )
             try: self.WINDOW.setProperty( "favourite.%d.thumb" % ( count + 1, ) , self.doc.attributes [ 'thumb' ].nodeValue )
             except: pass
