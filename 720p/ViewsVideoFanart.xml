@@ -49,7 +49,7 @@
 				<onup>60</onup>
 				 <!-- ,1 VideoWindow ,0 Fullscreen -->
 				<ondown condition="Container.Content(Movies) | Container.Content(Episodes)">ActivateWindow(1121)</ondown>
-				<viewtype label="31029">fixedlist</viewtype>
+				<viewtype label="20445">fixedlist</viewtype>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime tween="quadratic" easing="out">300</scrolltime>
 				<focusposition>5</focusposition>
@@ -337,7 +337,7 @@
 					<height>30</height>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>41148</label>
+					<label>20410</label>
 					<font>cirrus_24</font>
 					<textcolor>accent</textcolor>
 					<visible>!IsEmpty(ListItem.Trailer) + Skin.HasSetting(trailerflag) | Player.HasVideo</visible>

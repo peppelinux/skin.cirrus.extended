@@ -78,7 +78,7 @@
 					<posy>-5</posy>
 					<width>40</width>
 					<height>40</height>
-					<label>41150</label>
+					<label>264</label>
 					<font>-</font>
 					<texturefocus>OSDRecord2.png</texturefocus>
 					<texturenofocus>OSDRecordNF2.png</texturenofocus>
@@ -94,7 +94,7 @@
 					<posy>-5</posy>
 					<width>40</width>
 					<height>40</height>
-					<label>41151</label>
+					<label>19043</label>
 					<font>-</font>
 					<textcolor>accent</textcolor>
 					<texturefocus>OSDRecord2.png</texturefocus>

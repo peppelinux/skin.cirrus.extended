@@ -214,7 +214,7 @@
 				<posx>0</posx>
 				<posy>280</posy>
 			    <onclick>Dialog.Close(1121)</onclick>
-                <label>41209</label>
+                <label>13012</label>
 				<include>ButtonCommonValues</include>
 				<onleft>9021</onleft>
 				<onright>9021</onright>

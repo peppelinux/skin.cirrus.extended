@@ -193,7 +193,7 @@
 					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Year,[COLOR=accent]$LOCALIZE[31053]:[/COLOR] ]</label>
+					<label>$INFO[ListItem.Year,[COLOR=accent]$LOCALIZE[562]:[/COLOR] ]</label>
 					<scrollout>false</scrollout>
 					<pauseatend>2000</pauseatend>
 					<visible>!ListItem.IsFolder</visible>
@@ -263,7 +263,7 @@
 					<height>30</height>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>41148</label>
+					<label>20410</label>
 					<font>cirrus_24</font>
 					<textcolor>accent</textcolor>
 					<visible>!IsEmpty(ListItem.Trailer) + Skin.HasSetting(trailerflag) | Player.HasVideo</visible>

@@ -71,7 +71,7 @@
 				<content>
 				  <!-- SearchSUBMENU Butchabay -->
 				  <item id="90100">
-						<label>31331</label>
+						<label>137</label>
 						<onclick>ActivateWindow(Videos,Root)</onclick>
 						<onclick>SendClick(8)</onclick>
 					</item>
@@ -92,7 +92,7 @@
 						<onclick>ActivateWindow(Videos,Files,return)</onclick>
 					</item>
 					<item id="90105">
-						<label>41254</label>
+						<label>20108</label>
 						<onclick>ActivateWindow(Videos,Root)</onclick>
 					</item>
 					<item id="90106">
@@ -150,7 +150,7 @@
 				<content>
 				<!-- SearchSUBMENU Butchabay -->
 				    <item id="90110">
-						<label>31331</label>
+						<label>137</label>
 						<onclick>ActivateWindow(MusicLibrary)</onclick>
 						<onclick>SendClick(8)</onclick>
 					</item>
@@ -444,7 +444,7 @@
 				
 				    <!-- SearchSUBMENU Butchabay -->
 				    <item id="901620">
-						<label>31331</label>
+						<label>137</label>
 						<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
 						<onclick>SendClick(8)</onclick>
 					</item>
@@ -647,7 +647,7 @@
 				
 				     <!-- SearchSUBMENU Butchabay -->
 				 <item id="901900">
-						<label>31331</label>
+						<label>137</label>
 						<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
 						<onclick>SendClick(8)</onclick>
 					</item>

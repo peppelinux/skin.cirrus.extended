@@ -417,7 +417,7 @@
 			<onright>57</onright>
 			<onup>60</onup>
 			<ondown>ActivateWindow(1121)</ondown>
-			<viewtype label="41121">list</viewtype>
+			<viewtype label="33031">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<orientation>horizontal</orientation>
 			<scrolltime>250</scrolltime>

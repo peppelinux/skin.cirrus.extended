@@ -168,7 +168,7 @@
 				<posy>215</posy>
 				<width>320</width>
 				<height>30</height>
-				<label>$INFO[ListItem.Year,[COLOR=accent]$LOCALIZE[31053]:[/COLOR] ]</label>
+				<label>$INFO[ListItem.Year,[COLOR=accent]$LOCALIZE[562]:[/COLOR] ]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>cirrus_24</font>
@@ -214,7 +214,7 @@
 				<posy>275</posy>
 				<width>320</width>
 				<height>30</height>
-				<label>$INFO[ListItem.Director,[COLOR=accent]$LOCALIZE[31066]:[/COLOR] ]</label>
+				<label>$INFO[ListItem.Director,[COLOR=accent]$LOCALIZE[20339]:[/COLOR] ]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>cirrus_24</font>

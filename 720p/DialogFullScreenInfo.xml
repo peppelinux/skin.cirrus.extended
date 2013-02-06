@@ -473,7 +473,7 @@
             <posy>110</posy>
             <width>550</width>
             <height>30</height>
-            <label>[COLOR=accent]$LOCALIZE[31063][/COLOR] $INFO[VideoPlayer.Season]  [COLOR=accent]$LOCALIZE[31064][/COLOR] $INFO[VideoPlayer.Episode]</label>
+            <label>[COLOR=accent]$LOCALIZE[20373][/COLOR] $INFO[VideoPlayer.Season]  [COLOR=accent]$LOCALIZE[20359][/COLOR] $INFO[VideoPlayer.Episode]</label>
             <align>left</align>
             <aligny>center</aligny>
             <scroll>true</scroll>
@@ -488,7 +488,7 @@
             <posy>35</posy>
             <width>780</width>
             <height>30</height>
-            <label>[COLOR=accent]$LOCALIZE[31063][/COLOR] $INFO[VideoPlayer.Season]  [COLOR=accent]$LOCALIZE[31064][/COLOR] $INFO[VideoPlayer.Episode]</label>
+            <label>[COLOR=accent]$LOCALIZE[20373][/COLOR] $INFO[VideoPlayer.Season]  [COLOR=accent]$LOCALIZE[20359][/COLOR] $INFO[VideoPlayer.Episode]</label>
             <align>center</align>
             <aligny>center</aligny>
             <scroll>true</scroll>
@@ -1246,7 +1246,7 @@
         <posy>110</posy>
         <width>550</width>
         <height>30</height>
-        <label>[COLOR=accent]$LOCALIZE[31063][/COLOR] $INFO[VideoPlayer.Season]  [COLOR=accent]$LOCALIZE[31064][/COLOR] $INFO[VideoPlayer.Episode]</label>
+        <label>[COLOR=accent]$LOCALIZE[20373][/COLOR] $INFO[VideoPlayer.Season]  [COLOR=accent]$LOCALIZE[20359][/COLOR] $INFO[VideoPlayer.Episode]</label>
         <align>left</align>
         <aligny>center</aligny>
         <scroll>true</scroll>
@@ -1261,7 +1261,7 @@
         <posy>35</posy>
         <width>780</width>
         <height>30</height>
-        <label>[COLOR=accent]$LOCALIZE[31063][/COLOR] $INFO[VideoPlayer.Season]  [COLOR=accent]$LOCALIZE[31064][/COLOR] $INFO[VideoPlayer.Episode]</label>
+        <label>[COLOR=accent]$LOCALIZE[20373][/COLOR] $INFO[VideoPlayer.Season]  [COLOR=accent]$LOCALIZE[20359][/COLOR] $INFO[VideoPlayer.Episode]</label>
         <align>center</align>
         <aligny>center</aligny>
         <scroll>true</scroll>
@@ -2019,7 +2019,7 @@
         <posy>110</posy>
         <width>550</width>
         <height>30</height>
-        <label>[COLOR=accent]$LOCALIZE[31063][/COLOR] $INFO[VideoPlayer.Season]  [COLOR=accent]$LOCALIZE[31064][/COLOR] $INFO[VideoPlayer.Episode]</label>
+        <label>[COLOR=accent]$LOCALIZE[20373][/COLOR] $INFO[VideoPlayer.Season]  [COLOR=accent]$LOCALIZE[20359][/COLOR] $INFO[VideoPlayer.Episode]</label>
         <align>left</align>
         <aligny>center</aligny>
         <scroll>true</scroll>
@@ -2034,7 +2034,7 @@
         <posy>35</posy>
         <width>780</width>
         <height>30</height>
-        <label>[COLOR=accent]$LOCALIZE[31063][/COLOR] $INFO[VideoPlayer.Season]  [COLOR=accent]$LOCALIZE[31064][/COLOR] $INFO[VideoPlayer.Episode]</label>
+        <label>[COLOR=accent]$LOCALIZE[20373][/COLOR] $INFO[VideoPlayer.Season]  [COLOR=accent]$LOCALIZE[20359][/COLOR] $INFO[VideoPlayer.Episode]</label>
         <align>center</align>
         <aligny>center</aligny>
         <scroll>true</scroll>
@@ -2795,7 +2795,7 @@
         <posy>110</posy>
         <width>550</width>
         <height>30</height>
-        <label>[COLOR=accent]$LOCALIZE[31063][/COLOR] $INFO[VideoPlayer.Season]  [COLOR=accent]$LOCALIZE[31064][/COLOR] $INFO[VideoPlayer.Episode]</label>
+        <label>[COLOR=accent]$LOCALIZE[20373][/COLOR] $INFO[VideoPlayer.Season]  [COLOR=accent]$LOCALIZE[20359][/COLOR] $INFO[VideoPlayer.Episode]</label>
         <align>left</align>
         <aligny>center</aligny>
         <scroll>true</scroll>
@@ -2810,7 +2810,7 @@
         <posy>35</posy>
         <width>780</width>
         <height>30</height>
-        <label>[COLOR=accent]$LOCALIZE[31063][/COLOR] $INFO[VideoPlayer.Season]  [COLOR=accent]$LOCALIZE[31064][/COLOR] $INFO[VideoPlayer.Episode]</label>
+        <label>[COLOR=accent]$LOCALIZE[20373][/COLOR] $INFO[VideoPlayer.Season]  [COLOR=accent]$LOCALIZE[20359][/COLOR] $INFO[VideoPlayer.Episode]</label>
         <align>center</align>
         <aligny>center</aligny>
         <scroll>true</scroll>
@@ -3569,7 +3569,7 @@
         <posy>110</posy>
         <width>550</width>
         <height>30</height>
-        <label>[COLOR=accent]$LOCALIZE[31063][/COLOR] $INFO[VideoPlayer.Season]  [COLOR=accent]$LOCALIZE[31064][/COLOR] $INFO[VideoPlayer.Episode]</label>
+        <label>[COLOR=accent]$LOCALIZE[20373][/COLOR] $INFO[VideoPlayer.Season]  [COLOR=accent]$LOCALIZE[20359][/COLOR] $INFO[VideoPlayer.Episode]</label>
         <align>left</align>
         <aligny>center</aligny>
         <scroll>true</scroll>
@@ -3584,7 +3584,7 @@
         <posy>35</posy>
         <width>780</width>
         <height>30</height>
-        <label>[COLOR=accent]$LOCALIZE[31063][/COLOR] $INFO[VideoPlayer.Season]  [COLOR=accent]$LOCALIZE[31064][/COLOR] $INFO[VideoPlayer.Episode]</label>
+        <label>[COLOR=accent]$LOCALIZE[20373][/COLOR] $INFO[VideoPlayer.Season]  [COLOR=accent]$LOCALIZE[20359][/COLOR] $INFO[VideoPlayer.Episode]</label>
         <align>center</align>
         <aligny>center</aligny>
         <scroll>true</scroll>

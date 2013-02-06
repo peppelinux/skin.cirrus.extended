@@ -339,7 +339,7 @@
                             <posy>265</posy>
                             <width>50</width>
                             <height>30</height>
-                            <label>41128</label>
+                            <label>15311</label>
                             <align>right</align>
                             <aligny>center</aligny>
                             <textcolor>accent</textcolor>
@@ -614,7 +614,7 @@
                             <posy>265</posy>
                             <width>50</width>
                             <height>30</height>
-                            <label>41128</label>
+                            <label>15311</label>
                             <align>right</align>
                             <aligny>center</aligny>
                             <textcolor>accent</textcolor>
@@ -736,7 +736,7 @@
                                 <onclick>-</onclick>
                             </item>
                             <item>
-                                <label>41128</label>
+                                <label>15311</label>
                                 <label2>$INFO[ListItem.path]</label2>
                                 <onclick>-</onclick>
                             </item>
@@ -910,7 +910,7 @@
                             <posy>265</posy>
                             <width>50</width>
                             <height>30</height>
-                            <label>41128</label>
+                            <label>15311</label>
                             <align>right</align>
                             <aligny>center</aligny>
                             <textcolor>accent</textcolor>

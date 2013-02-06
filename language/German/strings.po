@@ -33,14 +33,6 @@ msgctxt "#31000"
 msgid "Change Your"
 msgstr "Ändere deine"
 
-msgctxt "#31001"
-msgid "Love"
-msgstr "Liebe"
-
-msgctxt "#31002"
-msgid "Hate"
-msgstr "Hass"
-
 msgctxt "#31003"
 msgid "Power Options"
 msgstr "Energieoptionen"
@@ -81,49 +73,17 @@ msgctxt "#31026"
 msgid "Misc Options"
 msgstr "Verschiedene Optionen"
 
-msgctxt "#31027"
-msgid "Location"
-msgstr "Ort"
-
-msgctxt "#31028"
-msgid "Poster Wrap"
-msgstr "Poster Wrap"
-
-msgctxt "#31029"
-msgid "Fanart"
-msgstr "Fanart"
-
-msgctxt "#31030"
-msgid "Full list"
-msgstr "Full List"
-
 msgctxt "#31031"
 msgid "Pic Thumbs"
 msgstr "Picture Thumbs"
-
-msgctxt "#31032"
-msgid "Image Wrap"
-msgstr "Image Wrap"
 
 msgctxt "#31040"
 msgid "Now Playing"
 msgstr "Jetzt läuft"
 
-msgctxt "#31042"
-msgid "PLAYING"
-msgstr "WIEDERGABE"
-
 msgctxt "#31043"
 msgid "PAUSED"
 msgstr "PAUSE"
-
-msgctxt "#31044"
-msgid "FAST FORWARD"
-msgstr "VORSPULEN"
-
-msgctxt "#31045"
-msgid "REWIND"
-msgstr "ZURÜCKSPULEN"
 
 msgctxt "#31046"
 msgid "Audio Properties"
@@ -140,18 +100,6 @@ msgstr "Visualisierungs-Einstellungen"
 msgctxt "#31049"
 msgid "End Time"
 msgstr "Endet um"
-
-msgctxt "#31050"
-msgid "Start Time"
-msgstr "Angefangen um"
-
-msgctxt "#31052"
-msgid "Imdb"
-msgstr "Imdb"
-
-msgctxt "#31053"
-msgid "Year"
-msgstr "Jahr"
 
 msgctxt "#31054"
 msgid "Running Time"
@@ -177,10 +125,6 @@ msgctxt "#31059"
 msgid "Current playlist"
 msgstr "Aktuelle Playliste"
 
-msgctxt "#31060"
-msgid "This file is stacked, select the part you want to play from."
-msgstr "Die Datei ist gestapelt, wähle den zu startenden Teil"
-
 msgctxt "#31061"
 msgid "Current Selected"
 msgstr "Aktuell markiert"
@@ -189,37 +133,15 @@ msgctxt "#31062"
 msgid "Next Episode:"
 msgstr "Nächste Folge:"
 
-msgctxt "#31063"
-msgid "Season"
-msgstr "Staffel"
-
-msgctxt "#31064"
-msgid "Episode"
-msgstr "Folge"
-
-msgctxt "#31065"
-msgid "Rating"
-msgstr "Bewertung"
-
-msgctxt "#31066"
-msgid "Director"
-msgstr "Regisseur"
-
 msgctxt "#31101"
 msgid "Home screen options"
 msgstr "Hauptmenü-Optionen"
 
-msgctxt "#31102"
-msgid "Background"
-msgstr "Hintergrund"
 
-msgctxt "#31103"
-msgid "Show \"Paused\" in picture slide show"
-msgstr "Zeige \"Pause\" in Diashow"
 
-msgctxt "#31104"
-msgid "Play Trailers in a window [COLOR=grey3](Video Information Dialog Only)[/COLOR]"
-msgstr "Zeige Trailer im Fenster [COLOR=grey3](nur im Video-Informationsdialog)[/COLOR]"
+
+
+Pause\" in Diashow"
 
 msgctxt "#31105"
 msgid "Show media titles in background scanner"
@@ -245,10 +167,6 @@ msgctxt "#31111"
 msgid "Hide"
 msgstr "Verstecke"
 
-msgctxt "#31112"
-msgid "Options"
-msgstr "Optionen"
-
 msgctxt "#31113"
 msgid "Single Image"
 msgstr "Einzelnes Bild"
@@ -256,26 +174,6 @@ msgstr "Einzelnes Bild"
 msgctxt "#31114"
 msgid "Multi Image"
 msgstr "Mehrere Bilder"
-
-msgctxt "#31115"
-msgid "Customizer"
-msgstr "Benutzerdefiniert"
-
-msgctxt "#31116"
-msgid "Addon Scripts"
-msgstr "Addon Skripte"
-
-msgctxt "#31117"
-msgid "Show Recently added Videos"
-msgstr "Zeige kürzlich hinzugefügte Videos"
-
-msgctxt "#31118"
-msgid "Home Page Submenu"
-msgstr "Hauptmenü-Untermenü"
-
-msgctxt "#31119"
-msgid "Enable Custom Script Button"
-msgstr "Aktiviere Benutzerdefinierte-Skript-Taste"
 
 msgctxt "#31120"
 msgid "BUTTON LABEL"
@@ -285,13 +183,11 @@ msgctxt "#31121"
 msgid "PATH TO SCRIPT"
 msgstr "PFAD ZUM SKRIPT"
 
-msgctxt "#31122"
-msgid "Weather Page"
-msgstr "Wetterseite"
 
-msgctxt "#31123"
-msgid "Use \"Posters\" instead of \"Banners\" for TV Shows"
-msgstr "Zeige \"Poster\" anstatt \"Banner\" für TV-Serien"
+
+
+
+Poster\" anstatt \"Banner\" für TV-Serien"
 
 msgctxt "#31124"
 msgid "Show Background \"Now Playing\" Video"
@@ -321,14 +217,6 @@ msgctxt "#31130"
 msgid "PATH TO SUBTITLE SCRIPT"
 msgstr "PFAD ZUM UNTERTITEL-SKRIPT"
 
-msgctxt "#31140"
-msgid "Music OSD"
-msgstr "Music-OSD"
-
-msgctxt "#31141"
-msgid "Video OSD"
-msgstr "Video-OSD"
-
 msgctxt "#31185"
 msgid "Listed Shows"
 msgstr "Angezeigte Serien"
@@ -341,25 +229,9 @@ msgctxt "#31187"
 msgid "TV Guide"
 msgstr "TV-Guide"
 
-msgctxt "#31200"
-msgid "Shortcuts"
-msgstr "Verknüpfungen"
-
-msgctxt "#31201"
-msgid "Categories"
-msgstr "Kategorien"
-
-msgctxt "#31202"
-msgid "Show Cast"
-msgstr "Zeige Schauspieler"
-
 msgctxt "#31203"
 msgid "Choose Your Song"
 msgstr "Wähle Lied"
-
-msgctxt "#31204"
-msgid "Section Links"
-msgstr "Sparten Links"
 
 msgctxt "#31205"
 msgid "Lyrics Source"
@@ -377,37 +249,13 @@ msgctxt "#31252"
 msgid "TWC Script"
 msgstr "TWC-Skript"
 
-msgctxt "#31300"
-msgid "Current Temp"
-msgstr "Aktuelle Temperatur"
-
 msgctxt "#31301"
 msgid "Last Updated"
 msgstr "Letztes Update"
 
-msgctxt "#31302"
-msgid "Menu"
-msgstr "Menü"
-
-msgctxt "#31304"
-msgid "Picture"
-msgstr "Bild"
-
-msgctxt "#31305"
-msgid "No Disc Media Detected"
-msgstr "Keine Disk gefunden"
-
-msgctxt "#31306"
-msgid "Eject"
-msgstr "Auswerfen"
-
 msgctxt "#31307"
 msgid "Hide Fanart"
 msgstr "Verstecke Fanart"
-
-msgctxt "#31308"
-msgid "Movie Details"
-msgstr "Film-Details"
 
 msgctxt "#31309"
 msgid "Memory Used:"
@@ -433,17 +281,9 @@ msgctxt "#31314"
 msgid "Content Scanning Options"
 msgstr "Optionen zum Scannen des Inhaltes"
 
-msgctxt "#31315"
-msgid "Basic"
-msgstr "Basis"
-
 msgctxt "#31317"
 msgid "Set Fanart Path"
 msgstr "Wähle Fanart-Pfad"
-
-msgctxt "#31318"
-msgid "Small Fanart"
-msgstr "Kleines Fanart"
 
 msgctxt "#31319"
 msgid "Selected Profile"
@@ -456,10 +296,6 @@ msgstr "Letzter Login"
 msgctxt "#31321"
 msgid "Karaoke Song Selector"
 msgstr "Karaoke Lied Auswahl"
-
-msgctxt "#31322"
-msgid "Aired"
-msgstr "Erstausstrahlung"
 
 msgctxt "#31323"
 msgid "Latest Movies"
@@ -477,10 +313,6 @@ msgctxt "#31326"
 msgid "Created"
 msgstr "Erstellt"
 
-msgctxt "#31327"
-msgid "Resolution"
-msgstr "Auflösung"
-
 msgctxt "#31328"
 msgid "Recently Added"
 msgstr "Kürzlich hinzugefügt"
@@ -488,14 +320,6 @@ msgstr "Kürzlich hinzugefügt"
 msgctxt "#31329"
 msgid "[B]Timer set![/B] [COLOR=grey2] - System auto shutdown in[/COLOR]"
 msgstr "[B]Timer gesetzt![/B] [COLOR=grey2] - System fährt herunter in[/COLOR]"
-
-msgctxt "#31330"
-msgid "Click button to play[CR][CR]Movie trailer"
-msgstr "Betätige Taste für Wiedergabe[CR][CR]Film-Trailer"
-
-msgctxt "#31331"
-msgid "Search"
-msgstr "Suche"
 
 msgctxt "#31351"
 msgid "Pause"
@@ -521,53 +345,9 @@ msgctxt "#31356"
 msgid "Download Subtitles"
 msgstr "Heruntergeladene Untertitel"
 
-msgctxt "#31358"
-msgid "Current Time"
-msgstr "Jetzige Zeit"
-
-msgctxt "#31400"
-msgid "[B]CONFIGURE APPEARANCE SETTINGS[/B][CR][CR]Change the skin · Set language and region · Change file listing options[CR]Set up a screensaver"
-msgstr "[B][B]KONFIGURIERE DARSTELLUNG[/B][CR][CR]Ändere den Skin · Wähle Sprache und Region · Ändere die Dateianzeige[CR]Wähle deinen Blidschirmschoner"
-
-msgctxt "#31401"
-msgid "[B]CONFIGURE VIDEO SETTINGS[/B][CR][CR]Manage your video library · Set video playback options · Change video listing options[CR]Set subtitle fonts"
-msgstr "[B]KONFIGURIERE VIDEO-EINSTELLUNGEN[/B][CR][CR]Manage deine Video-Datenbank · Wähle Video-Wiedergabe Optionen · Ändere die Video-Darstellung[CR]Wähle die Untertitel-Schrift"
-
-msgctxt "#31402"
-msgid "[B]CONFIGURE MUSIC SETTINGS[/B][CR][CR]Manage your music library · Set music playback options · Change music listing options[CR]Setup song submission · Set karaoke options"
-msgstr "[B]KONFIGURIERE MUSIK-EINSTELLUNGEN[/B][CR][CR]Manage deine Musik-Datenbank · Wähle Musik-Wiedergabe Optionen · Ändere die Musik-Darstellung[CR]Konfiguriere die Lied Submission · Wähle Karaoke Optionen"
-
-msgctxt "#31403"
-msgid "[B]CONFIGURE PICTURE SETTINGS[/B][CR][CR]Set picture listing options · Configure slideshows"
-msgstr "[B]KONFIGURIERE BILDER-EINSTELLUNGEN[/B][CR][CR]Ändere die Bilder-Darstellung · Konfiguriere Diashows"
-
-msgctxt "#31404"
-msgid "[B]CONFIGURE WEATHER SETTINGS[/B][CR][CR]Set three cities to collect weather information"
-msgstr "[B]KONFIGURIERE WETTER-EINSTELLUNGEN[/B][CR][CR]Wähle drei Städte für die Wetterdaten"
-
-msgctxt "#31405"
-msgid "[B]CONFIGURE NETWORK SETTINGS[/B][CR][CR]Setup control of XBMC via UPnP and HTTP · Configure file sharing[CR]Set internet access options"
-msgstr "[B]KONFIGURIERE NETZWERK-EINSTELLUNGEN[/B][CR][CR]Konfiguriere Remote via UPnp und HTTP · Konfiguriere Netzwerkfreigaben[CR]Internetzugang konfigurieren"
-
-msgctxt "#31406"
-msgid "[B]CONFIGURE SYSTEM SETTINGS[/B][CR][CR]Setup and calibrate displays · Configure audio output · Setup remote controls[CR]Set power saving options · Enable debugging · Setup master lock"
-msgstr "[B]KONFIGURIERE SYSTEM-EINSTELLUNGEN[/B][CR][CR]Kalibriere deinen Display · Setze deine Sound-Einstellungen · Fernbedienung konfigurieren[CR]Energieoptionen · Aktiviere Debugging · Benutzerrechte setzen"
-
-msgctxt "#31407"
-msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Cirrus skin · Add and remove home menu items[CR]Change skin backgrounds"
-msgstr "[B]KONFIGURIERE SKIN-EINSTELLUNGEN[/B][CR][CR]Konfiguriere Cirrus · Hinzufügen und Entfernen von Hauptmenü-Items[CR]Erstelle Verknüpfungen zu Medienquellen und Addons"
-
-msgctxt "#31409"
-msgid "[B]CONFIGURE TV SETTINGS[/B][CR][CR]Change fullscreen info · Manage EPG data settings"
-msgstr "[B]KONFIGURIERE TV-EINSTELLUNGEN[/B][CR][CR]Ändere die Vollbild-Anzeige · Manage dein EPG"
-
 msgctxt "#31421"
 msgid "Select your XBMC user Profile to login and continue"
 msgstr "Wähle dein XBMC User-Profil[CR]zum einloggen und fahre fort"
-
-msgctxt "#31500"
-msgid "Recording Timers"
-msgstr "Aufnahme-Timer"
 
 msgctxt "#31501"
 msgid "Scheduled Time"
@@ -600,10 +380,6 @@ msgstr "Ungruppierte[CR]Kanäle"
 msgctxt "#31508"
 msgid "Channels in Group"
 msgstr "Kanäle in Gruppen"
-
-msgctxt "#31509"
-msgid "Channel Group"
-msgstr "Kanalgruppe"
 
 msgctxt "#31510"
 msgid "Timer Set"
@@ -673,25 +449,13 @@ msgctxt "#41000"
 msgid "Custom Menu"
 msgstr "Verändere Menü"
 
-msgctxt "#41001"
-msgid "Change Submenues"
-msgstr "Verändere Untermenüs"
-
 msgctxt "#41002"
 msgid "Custom Home"
 msgstr "Hauptmenü"
 
-msgctxt "#41003"
-msgid "Home Menu Items"
-msgstr "Hauptmenüeinträge"
-
 msgctxt "#41004"
 msgid "Extended Mod"
 msgstr "Erweiterter Mod"
-
-msgctxt "#41005"
-msgid "Mod Buttons"
-msgstr "Mod Tasten"
 
 msgctxt "#41006"
 msgid "Enable Kiosk Mode (disable slideout menu)"
@@ -757,25 +521,13 @@ msgctxt "#41021"
 msgid "Global Animated Backgrounds"
 msgstr "Global animierte Hintergründe"
 
-msgctxt "#41022"
-msgid "Power"
-msgstr "Power"
-
 msgctxt "#41023"
 msgid "Play Disc"
 msgstr "Disk wiedergeben"
 
-msgctxt "#41024"
-msgid "Favourites"
-msgstr "Favoriten"
-
 msgctxt "#41025"
 msgid "Music Visualisation"
 msgstr "Musik-Visualisierung"
-
-msgctxt "#41026"
-msgid "Games"
-msgstr "Spiele"
 
 msgctxt "#41027"
 msgid "Addon Submenu"
@@ -1049,10 +801,6 @@ msgctxt "#41095"
 msgid "Show Path in Video Info Screen"
 msgstr "Zeige Pfad in der Video-Info Anzeige"
 
-msgctxt "#41096"
-msgid "Run Logo Downloader Script"
-msgstr "Starte Logo-Downloader-Script"
-
 msgctxt "#41098"
 msgid "Addons"
 msgstr "Addons"
@@ -1061,33 +809,13 @@ msgctxt "#41101"
 msgid "View Options"
 msgstr "Ansicht Optionen"
 
-msgctxt "#41102"
-msgid "Movies"
-msgstr "Filme"
-
 msgctxt "#41103"
 msgid "TV Shows"
 msgstr "TV-Serien"
 
-msgctxt "#41104"
-msgid "Music"
-msgstr "Musik"
-
-msgctxt "#41105"
-msgid "Video Plugins"
-msgstr "Video-Addons"
-
 msgctxt "#41107"
 msgid "Enable/Disable Views"
 msgstr "Ansichten Ein/Aus"
-
-msgctxt "#41108"
-msgid "Enable"
-msgstr "Schalte Ein"
-
-msgctxt "#41109"
-msgid "Disable"
-msgstr "Schalte Aus"
 
 msgctxt "#41110"
 msgid "Get Artwork"
@@ -1133,10 +861,6 @@ msgctxt "#41120"
 msgid "Compact"
 msgstr "Compact"
 
-msgctxt "#41121"
-msgid "Coverflow"
-msgstr "Coverflow"
-
 msgctxt "#41122"
 msgid "Fanart Slide"
 msgstr "Fanart Slide"
@@ -1160,38 +884,6 @@ msgstr "Wall"
 msgctxt "#41127"
 msgid "Edit Library"
 msgstr "Editiere Datenbank"
-
-msgctxt "#41128"
-msgid "Path:"
-msgstr "Pfad:"
-
-msgctxt "#41129"
-msgid "Total"
-msgstr "Total"
-
-msgctxt "#41130"
-msgid "Watched"
-msgstr "Gesehen"
-
-msgctxt "#41131"
-msgid "Unwatched"
-msgstr "Ungesehen"
-
-msgctxt "#41132"
-msgid "Featured Music"
-msgstr "beteiligte Musik"
-
-msgctxt "#41133"
-msgid "Featured Songs"
-msgstr "beteiligte Titel"
-
-msgctxt "#41134"
-msgid "Settings"
-msgstr "Einstellungen"
-
-msgctxt "#41135"
-msgid "Random Fanart Backdrops"
-msgstr "Zufällige Fanart Backdrops"
 
 msgctxt "#41136"
 msgid "Hide Video Window Border"
@@ -1241,21 +933,9 @@ msgctxt "#41147"
 msgid "Hide MPAA Flags"
 msgstr "Verstecke MPAA Kennzeichnung"
 
-msgctxt "#41148"
-msgid "Trailer"
-msgstr "Trailer"
-
 msgctxt "#41149"
 msgid "Show IMDB Rating Number in Video Info Screen"
 msgstr "Zeige IMDB Ratingnummer in der Video-Info Ansicht"
-
-msgctxt "#41150"
-msgid "Record"
-msgstr "Aufnahme"
-
-msgctxt "#41151"
-msgid "Recording"
-msgstr "Aufnahme läuft"
 
 msgctxt "#41152"
 msgid "Channel List"
@@ -1280,14 +960,6 @@ msgstr "Sonstiges"
 msgctxt "#41163"
 msgid "Style"
 msgstr "Stil"
-
-msgctxt "#41164"
-msgid "Remove Cover Playing Media"
-msgstr "Verstecke Hüllen während der Medienwiedergabe"
-
-msgctxt "#41165"
-msgid "Default CDArt Black XBMC"
-msgstr "Standard CDArt schwarz XBMC"
 
 msgctxt "#41166"
 msgid "Default CDArt Black Cirrus Extended"
@@ -1316,10 +988,6 @@ msgstr "Aktiviere benutzerdefinierten Focus Offset im Hauptmenü beim Starten"
 msgctxt "#41172"
 msgid "HD Movies"
 msgstr "HD-Filme"
-
-msgctxt "#41173"
-msgid "Hide Breadcrumb Trails TV Shows on Episode Level"
-msgstr "Verstecke Breadcrumb Trails TV-Serien auf Folgenebene"
 
 msgctxt "#41174"
 msgid "Use Original Watched Overlay in Fanart View"
@@ -1401,10 +1069,6 @@ msgctxt "#41193"
 msgid "Creator"
 msgstr "Urheber"
 
-msgctxt "#41194"
-msgid "Summary"
-msgstr "Zusammenfassung"
-
 msgctxt "#41195"
 msgid "Movie Widget"
 msgstr "Film Widget"
@@ -1461,10 +1125,6 @@ msgctxt "#41208"
 msgid "Cinema Experience"
 msgstr "Cinema Experience"
 
-msgctxt "#41209"
-msgid "Exit"
-msgstr "Exit"
-
 msgctxt "#41210"
 msgid "Dim Background on Home"
 msgstr "Verdunkle Hintergrund im Hauptmenü"
@@ -1496,10 +1156,6 @@ msgstr "Wähle Video oder Playliste"
 msgctxt "#41217"
 msgid "Original Cirrus Clock"
 msgstr "Originale Cirrus Uhr"
-
-msgctxt "#41218"
-msgid "Remove Weather"
-msgstr "Entferne Wetter"
 
 msgctxt "#41219"
 msgid "Currently Watching"
@@ -1553,10 +1209,6 @@ msgctxt "#41231"
 msgid "Alternative Recently Added and Watchlist on Home Layout"
 msgstr "Alternativ kürzlich hinzugefügt und Watchlist in der Hauptmenü Ansicht"
 
-msgctxt "#41232"
-msgid "NO MOVIES IN PROGRESS"
-msgstr "KEINE LAUFENDE FILME"
-
 msgctxt "#41233"
 msgid "Enable Movies in Progress"
 msgstr "Aktiviere laufende Filme"
@@ -1572,10 +1224,6 @@ msgstr "Verstecke Ausgabe im Pause-Modus"
 msgctxt "#41236"
 msgid "Get Info"
 msgstr "Erhalte Spiele-Info"
-
-msgctxt "#41237"
-msgid "Start"
-msgstr "Starte Spiel"
 
 msgctxt "#41238"
 msgid "Watch Trailer"
@@ -1601,10 +1249,6 @@ msgctxt "#41243"
 msgid "Hide Plot on Info Fullscreen"
 msgstr "Verstecke Ausgabe auf Info-Vollbild"
 
-msgctxt "#41244"
-msgid "Data Provider"
-msgstr "Daten Anbieter"
-
 msgctxt "#41245"
 msgid "Show Cases"
 msgstr "Zeige Hüllen"
@@ -1629,17 +1273,9 @@ msgctxt "#41250"
 msgid "Release Years"
 msgstr "Erscheinungsjahre"
 
-msgctxt "#41251"
-msgid "Status"
-msgstr "Status"
-
 msgctxt "#41253"
 msgid "Enable TV Tunes"
 msgstr "Aktiviere TV-Tunes"
-
-msgctxt "#41254"
-msgid "Root"
-msgstr "Root"
 
 msgctxt "#41255"
 msgid "Music Addons"
@@ -1648,10 +1284,6 @@ msgstr "Musik-Addons"
 msgctxt "#41256"
 msgid "Concerts"
 msgstr "Konzerte"
-
-msgctxt "#41257"
-msgid "Current"
-msgstr "Aktuell"
 
 msgctxt "#41258"
 msgid "Enable Slim OSD by Zombierobot in Music Vis."
@@ -1719,10 +1351,6 @@ msgstr ""
 
 msgctxt "#41276"
 msgid "Hide Common Page Count"
-msgstr ""
-
-msgctxt "#41277"
-msgid "Hide Breadcrumb Trails and Clock"
 msgstr ""
 
 msgctxt "#41279"

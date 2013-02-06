@@ -648,7 +648,7 @@
 					<visible>Skin.HasSetting(Menu_Custom8)</visible>
 				</item>	
 			<item id="21">
-					<label>41024</label>
+					<label>1036</label>
 					<onclick>ActivateWindow(Favourites)</onclick>
 					<icon>special://skin/backgrounds/favourite.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Favourites_Folder)]</thumb>
@@ -656,7 +656,7 @@
 				</item>	
 			<item id="22">
 					<description>Games</description>
-					<label>41026</label>
+					<label>15016</label>
 					<onclick>ActivateWindow(Programs,plugin://plugin.program.advanced.launcher,return)</onclick>
 					<icon>special://skin/backgrounds/games.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Games_Folder)]</thumb>
@@ -708,7 +708,7 @@
 					<visible>!Skin.HasSetting(HomeMenuNoSettingsButton)</visible>
 				</item>
 				<item id="26">
-					<label>41022</label>
+					<label>33060</label>
 					<onclick>ActivateWindow(ShutdownMenu)</onclick>
 					<!-- onclick>SetFocus(9001)</onclick -->
 					<icon>special://skin/backgrounds/shutdown.jpg</icon>

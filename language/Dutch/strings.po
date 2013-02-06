@@ -33,14 +33,6 @@ msgctxt "#31000"
 msgid "Change Your"
 msgstr "Aanpassen"
 
-msgctxt "#31001"
-msgid "Love"
-msgstr "Liefde"
-
-msgctxt "#31002"
-msgid "Hate"
-msgstr "Haat"
-
 msgctxt "#31003"
 msgid "Power Options"
 msgstr "Energiebeheer"
@@ -81,49 +73,17 @@ msgctxt "#31026"
 msgid "Misc Options"
 msgstr "Diverse opties"
 
-msgctxt "#31027"
-msgid "Location"
-msgstr "Locatie"
-
-msgctxt "#31028"
-msgid "Poster Wrap"
-msgstr "Poster Wrap"
-
-msgctxt "#31029"
-msgid "Fanart"
-msgstr "Fanart"
-
-msgctxt "#31030"
-msgid "Full list"
-msgstr "Volle lijst"
-
 msgctxt "#31031"
 msgid "Pic Thumbs"
 msgstr "Foto miniaturen"
-
-msgctxt "#31032"
-msgid "Image Wrap"
-msgstr "Image Wrap"
 
 msgctxt "#31040"
 msgid "Now Playing"
 msgstr "Nu speelt"
 
-msgctxt "#31042"
-msgid "PLAYING"
-msgstr "AFSPELEN"
-
 msgctxt "#31043"
 msgid "PAUSED"
 msgstr "PAUZE"
-
-msgctxt "#31044"
-msgid "FAST FORWARD"
-msgstr "VOORUITSPOELEN"
-
-msgctxt "#31045"
-msgid "REWIND"
-msgstr "TERUGSPOELEN"
 
 msgctxt "#31046"
 msgid "Audio Properties"
@@ -140,18 +100,6 @@ msgstr "Visualisatiestijl"
 msgctxt "#31049"
 msgid "End Time"
 msgstr "Eindtijd"
-
-msgctxt "#31050"
-msgid "Start Time"
-msgstr "Starttijd"
-
-msgctxt "#31052"
-msgid "Imdb"
-msgstr "IMDB"
-
-msgctxt "#31053"
-msgid "Year"
-msgstr "Jaar"
 
 msgctxt "#31054"
 msgid "Running Time"
@@ -177,10 +125,6 @@ msgctxt "#31059"
 msgid "Current playlist"
 msgstr "Huidige Afspeellijst"
 
-msgctxt "#31060"
-msgid "This file is stacked, select the part you want to play from."
-msgstr "Dit bestand bestaat uit meerdere delen, selecteer het deel dat u wilt afspelen."
-
 msgctxt "#31061"
 msgid "Current Selected"
 msgstr "Nu geselecteerd"
@@ -189,37 +133,15 @@ msgctxt "#31062"
 msgid "Next Episode:"
 msgstr "Volgende aflevering:"
 
-msgctxt "#31063"
-msgid "Season"
-msgstr "Seizoen"
-
-msgctxt "#31064"
-msgid "Episode"
-msgstr "Aflevering"
-
-msgctxt "#31065"
-msgid "Rating"
-msgstr "Score"
-
-msgctxt "#31066"
-msgid "Director"
-msgstr "Regisseur"
-
 msgctxt "#31101"
 msgid "Home screen options"
 msgstr "Beginschermopties"
 
-msgctxt "#31102"
-msgid "Background"
-msgstr "Achtergronden"
 
-msgctxt "#31103"
-msgid "Show \"Paused\" in picture slide show"
-msgstr "Toon \"Pauze\" in diavoorstelling"
 
-msgctxt "#31104"
-msgid "Play Trailers in a window [COLOR=grey3](Video Information Dialog Only)[/COLOR]"
-msgstr "Speel Trailers af in een venster [COLOR=grey3](Alleen in het Video-informatie dialoogvenster)[/COLOR]"
+
+
+Pauze\" in diavoorstelling"
 
 msgctxt "#31105"
 msgid "Show media titles in background scanner"
@@ -245,10 +167,6 @@ msgctxt "#31111"
 msgid "Hide"
 msgstr "Verberg"
 
-msgctxt "#31112"
-msgid "Options"
-msgstr "Opties"
-
 msgctxt "#31113"
 msgid "Single Image"
 msgstr "Enkele foto"
@@ -256,26 +174,6 @@ msgstr "Enkele foto"
 msgctxt "#31114"
 msgid "Multi Image"
 msgstr "Meerdere foto's"
-
-msgctxt "#31115"
-msgid "Customizer"
-msgstr "Aanpassen"
-
-msgctxt "#31116"
-msgid "Addon Scripts"
-msgstr "Add-on scripts"
-
-msgctxt "#31117"
-msgid "Show Recently added Videos"
-msgstr "Onlangs toegevoegde video's weergeven"
-
-msgctxt "#31118"
-msgid "Home Page Submenu"
-msgstr "Beginscherm submenu"
-
-msgctxt "#31119"
-msgid "Enable Custom Script Button"
-msgstr "Zet Aangepaste Script Knop Aan"
 
 msgctxt "#31120"
 msgid "BUTTON LABEL"
@@ -285,13 +183,11 @@ msgctxt "#31121"
 msgid "PATH TO SCRIPT"
 msgstr "Pad naar script"
 
-msgctxt "#31122"
-msgid "Weather Page"
-msgstr "Weerpagina"
 
-msgctxt "#31123"
-msgid "Use \"Posters\" instead of \"Banners\" for TV Shows"
-msgstr "Gebruik \"Posters\" in plaats van \"Banners\" voor TV-Series"
+
+
+
+Posters\" in plaats van \"Banners\" voor TV-Series"
 
 msgctxt "#31124"
 msgid "Show Background \"Now Playing\" Video"
@@ -321,14 +217,6 @@ msgctxt "#31130"
 msgid "PATH TO SUBTITLE SCRIPT"
 msgstr "Pad naar ondertitel-script"
 
-msgctxt "#31140"
-msgid "Music OSD"
-msgstr "Muziek-OSD"
-
-msgctxt "#31141"
-msgid "Video OSD"
-msgstr "Video-OSD"
-
 msgctxt "#31185"
 msgid "Listed Shows"
 msgstr "Vermelde Shows"
@@ -341,25 +229,9 @@ msgctxt "#31187"
 msgid "TV Guide"
 msgstr "TV Gids"
 
-msgctxt "#31200"
-msgid "Shortcuts"
-msgstr "Snelkoppelingen"
-
-msgctxt "#31201"
-msgid "Categories"
-msgstr "CategorieÃ«n"
-
-msgctxt "#31202"
-msgid "Show Cast"
-msgstr "Toon Cast"
-
 msgctxt "#31203"
 msgid "Choose Your Song"
 msgstr "Kies uw nummer"
-
-msgctxt "#31204"
-msgid "Section Links"
-msgstr "Afdeling Koppelingen"
 
 msgctxt "#31205"
 msgid "Lyrics Source"
@@ -377,37 +249,13 @@ msgctxt "#31252"
 msgid "TWC Script"
 msgstr "TWC Script"
 
-msgctxt "#31300"
-msgid "Current Temp"
-msgstr "Huidige temperatuur"
-
 msgctxt "#31301"
 msgid "Last Updated"
 msgstr "Laatst bijgewerkt"
 
-msgctxt "#31302"
-msgid "Menu"
-msgstr "Menu"
-
-msgctxt "#31304"
-msgid "Picture"
-msgstr "Foto"
-
-msgctxt "#31305"
-msgid "No Disc Media Detected"
-msgstr "Geen Disc Media Gevonden"
-
-msgctxt "#31306"
-msgid "Eject"
-msgstr "Uitwerpen"
-
 msgctxt "#31307"
 msgid "Hide Fanart"
 msgstr "Fanart verbergen"
-
-msgctxt "#31308"
-msgid "Movie Details"
-msgstr "Filmdetails"
 
 msgctxt "#31309"
 msgid "Memory Used:"
@@ -433,17 +281,9 @@ msgctxt "#31314"
 msgid "Content Scanning Options"
 msgstr "Opties inhoudsscanner"
 
-msgctxt "#31315"
-msgid "Basic"
-msgstr "Basis"
-
 msgctxt "#31317"
 msgid "Set Fanart Path"
 msgstr "Fanartpad opgeven"
-
-msgctxt "#31318"
-msgid "Small Fanart"
-msgstr "Kleinere fanart"
 
 msgctxt "#31319"
 msgid "Selected Profile"
@@ -456,10 +296,6 @@ msgstr "Laatst ingelogd op"
 msgctxt "#31321"
 msgid "Karaoke Song Selector"
 msgstr "Nummerkeuze karaoke"
-
-msgctxt "#31322"
-msgid "Aired"
-msgstr "Uitgezonden"
 
 msgctxt "#31323"
 msgid "Latest Movies"
@@ -477,10 +313,6 @@ msgctxt "#31326"
 msgid "Created"
 msgstr "Gemaakt"
 
-msgctxt "#31327"
-msgid "Resolution"
-msgstr "Resolutie"
-
 msgctxt "#31328"
 msgid "Recently Added"
 msgstr "Onlangs toegevoegd"
@@ -488,14 +320,6 @@ msgstr "Onlangs toegevoegd"
 msgctxt "#31329"
 msgid "[B]Timer set![/B] [COLOR=grey2] - System auto shutdown in[/COLOR]"
 msgstr "[B]Timer ingesteld![/B] [COLOR=grey2] - Systeem schakelt automatisch uit in[/COLOR]"
-
-msgctxt "#31330"
-msgid "Click button to play[CR][CR]Movie trailer"
-msgstr "Klik op de knop om af te spelen[CR][CR]Filmtrailer"
-
-msgctxt "#31331"
-msgid "Search"
-msgstr "Zoeken"
 
 msgctxt "#31351"
 msgid "Pause"
@@ -521,57 +345,9 @@ msgctxt "#31356"
 msgid "Download Subtitles"
 msgstr "Ondertitels downloaden"
 
-msgctxt "#31358"
-msgid "Current Time"
-msgstr "Huidige Tijd"
-
-msgctxt "#31400"
-msgid "[B]CONFIGURE APPEARANCE SETTINGS[/B][CR][CR]Change the skin · Set language and region · Change file listing options[CR]Set up a screensaver"
-msgstr "[B]INSTELLINGEN UITERLIJK CONFIGUREREN[/B][CR][CR]Wijzig skin · Stel taal en regio in · Configureer bestandslijstopties en schermbeveiliging"
-
-msgctxt "#31401"
-msgid "[B]CONFIGURE VIDEO SETTINGS[/B][CR][CR]Manage your video library · Set video playback options · Change video listing options[CR]Set subtitle fonts"
-msgstr "[B]VIDEO-INSTELLINGEN CONFIGUREREN[/B][CR][CR]Beheer uw videobibliotheek · Configureer videoafspeelopties en -bestandslijstsopties · Stel lettertype in voor ondertitels"
-
-msgctxt "#31402"
-msgid "[B]CONFIGURE MUSIC SETTINGS[/B][CR][CR]Manage your music library · Set music playback options · Change music listing options[CR]Setup song submission · Set karaoke options"
-msgstr "[B]MUZIEKINSTELLINGEN CONFIGUREREN[/B][CR][CR]Beheer uw muziekbibliotheek · Configureer muziekafspeelopties en -bestandslijstopties · Configureer nummer indienen · Configureer karaokeopties"
-
-msgctxt "#31403"
-msgid "[B]CONFIGURE PICTURE SETTINGS[/B][CR][CR]Set picture listing options · Configure slideshows"
-msgstr "[B]FOTO-INSTELLINGEN CONFIGUREREN[/B][CR][CR]Configureer fotobestandslijstopties en diavoorstelling."
-
-msgctxt "#31404"
-msgid "[B]CONFIGURE WEATHER SETTINGS[/B][CR][CR]Set three cities to collect weather information"
-msgstr "[B]WEERINSTELLINGEN CONFIGUREREN[/B][CR][CR]Geef drie locaties op voor weersverwachtingen."
-
-msgctxt "#31405"
-msgid "[B]CONFIGURE NETWORK SETTINGS[/B][CR][CR]Setup control of XBMC via UPnP and HTTP · Configure file sharing[CR]Set internet access options"
-msgstr "[B]CONFIGUREER SERVICE-INSTELLINGEN[/B][CR][CR]Stel XBMC-beheer in via UPnP en HTTP · Configureer bestandsdeling[CR]Stel internettoegangsopties in"
-
-msgctxt "#31406"
-msgid "[B]CONFIGURE SYSTEM SETTINGS[/B][CR][CR]Setup and calibrate displays · Configure audio output · Setup remote controls[CR]Set power saving options · Enable debugging · Setup master lock"
-msgstr "[B]SYSTEEMINSTELLINGEN CONFIGUREREN[/B][CR][CR]Configureer en kalibreer schermgeluidsuitgang · Configureer invoerapparaten en energiebeheeropties · Schakel debugging in · Configureer vergrendelopties"
-
-msgctxt "#31407"
-msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Cirrus skin · Add and remove home menu items[CR]Change skin backgrounds"
-msgstr "[B]CONFIGUREER SKIN INSTELLINGEN[/B][CR][CR]Stel de Cirrus skin in · Voeg toe en verwijder beginscherm menu-items[CR]Verander skin-achtergronden"
-
-msgctxt "#31408"
-msgid "[B]CONFIGURE ADD-ONS[/B][CR][CR]Manage your installed Add-ons · Browse for and install Add-ons from xbmc.org[CR]Modify Add-on settings"
-msgstr "[B]ADD-ONS CONFIGUREREN[/B][CR][CR]Beheer uw geïnstalleerde add-ons · Zoek en installeer add-ons via xbmc.org · Wijzig add-oninstellingen"
-
-msgctxt "#31409"
-msgid "[B]CONFIGURE TV SETTINGS[/B][CR][CR]Change fullscreen info · Manage EPG data settings"
-msgstr "[[B]CONFIGUREER TV INSTELLINGEN[/B][CR][CR]Verander volledig scherm info  · Beheer EPG data instellingen"
-
 msgctxt "#31421"
 msgid "Select your XBMC user Profile to login and continue"
 msgstr "Selecteer uw XBMC-gebruikersprofiel[CR]om in te loggen"
-
-msgctxt "#31500"
-msgid "Recording Timers"
-msgstr "Geplande opnames"
 
 msgctxt "#31501"
 msgid "Scheduled Time"
@@ -604,10 +380,6 @@ msgstr "Ongegroepeerde[CR]kanalen"
 msgctxt "#31508"
 msgid "Channels in Group"
 msgstr "Kanalen in groep"
-
-msgctxt "#31509"
-msgid "Channel Group"
-msgstr "Kanalen groep"
 
 msgctxt "#31510"
 msgid "Timer Set"
@@ -677,25 +449,13 @@ msgctxt "#41000"
 msgid "Custom Menu"
 msgstr "Aangepast menu"
 
-msgctxt "#41001"
-msgid "Change Submenues"
-msgstr "Verander submenu's"
-
 msgctxt "#41002"
 msgid "Custom Home"
 msgstr "Aangepast beginscherm"
 
-msgctxt "#41003"
-msgid "Home Menu Items"
-msgstr "Menuonderdelen"
-
 msgctxt "#41004"
 msgid "Extended Mod"
 msgstr "Uitgebreide mod"
-
-msgctxt "#41005"
-msgid "Mod Buttons"
-msgstr "Knoppen aanpassen"
 
 msgctxt "#41006"
 msgid "Enable Kiosk Mode (disable slideout menu)"
@@ -761,25 +521,13 @@ msgctxt "#41021"
 msgid "Global Animated Backgrounds"
 msgstr "Globaal geanimeerde achtergronden"
 
-msgctxt "#41022"
-msgid "Power"
-msgstr "Power"
-
 msgctxt "#41023"
 msgid "Play Disc"
 msgstr "Disc afspelen"
 
-msgctxt "#41024"
-msgid "Favourites"
-msgstr "Favorieten"
-
 msgctxt "#41025"
 msgid "Music Visualisation"
 msgstr "Muziekvisualisatie"
-
-msgctxt "#41026"
-msgid "Games"
-msgstr "Spellen"
 
 msgctxt "#41027"
 msgid "Addon Submenu"
@@ -1053,10 +801,6 @@ msgctxt "#41095"
 msgid "Show Path in Video Info Screen"
 msgstr "Toon Pad in Videoinfo-scherm"
 
-msgctxt "#41096"
-msgid "Run Logo Downloader Script"
-msgstr "Logo Downloader-script uitvoeren"
-
 msgctxt "#41098"
 msgid "Addons"
 msgstr "Add-ons"
@@ -1065,33 +809,13 @@ msgctxt "#41101"
 msgid "View Options"
 msgstr "Opties weergaven"
 
-msgctxt "#41102"
-msgid "Movies"
-msgstr "Films"
-
 msgctxt "#41103"
 msgid "TV Shows"
 msgstr "TV-Series"
 
-msgctxt "#41104"
-msgid "Music"
-msgstr "Muziek"
-
-msgctxt "#41105"
-msgid "Video Plugins"
-msgstr "Video plugins"
-
 msgctxt "#41107"
 msgid "Enable/Disable Views"
 msgstr "Weergaven in-/uitschakelen"
-
-msgctxt "#41108"
-msgid "Enable"
-msgstr "Inschakelen"
-
-msgctxt "#41109"
-msgid "Disable"
-msgstr "Uitschakelen"
 
 msgctxt "#41110"
 msgid "Get Artwork"
@@ -1137,10 +861,6 @@ msgctxt "#41120"
 msgid "Compact"
 msgstr "Compact"
 
-msgctxt "#41121"
-msgid "Coverflow"
-msgstr "Coverflow"
-
 msgctxt "#41122"
 msgid "Fanart Slide"
 msgstr "Fanart Glijden"
@@ -1164,38 +884,6 @@ msgstr "Muur"
 msgctxt "#41127"
 msgid "Edit Library"
 msgstr "Bibliotheek bewerken"
-
-msgctxt "#41128"
-msgid "Path:"
-msgstr "Pad:"
-
-msgctxt "#41129"
-msgid "Total"
-msgstr "Totaal"
-
-msgctxt "#41130"
-msgid "Watched"
-msgstr "Bekeken"
-
-msgctxt "#41131"
-msgid "Unwatched"
-msgstr "Niet-bekeken"
-
-msgctxt "#41132"
-msgid "Featured Music"
-msgstr "Aanbevolen muziek"
-
-msgctxt "#41133"
-msgid "Featured Songs"
-msgstr "Aanbevolen nummers"
-
-msgctxt "#41134"
-msgid "Settings"
-msgstr "Instellingen"
-
-msgctxt "#41135"
-msgid "Random Fanart Backdrops"
-msgstr "Willekeurige Fanart-achtergronden"
 
 msgctxt "#41136"
 msgid "Hide Video Window Border"
@@ -1245,21 +933,9 @@ msgctxt "#41147"
 msgid "Hide MPAA Flags"
 msgstr "Verberg MPAA-vlaggen"
 
-msgctxt "#41148"
-msgid "Trailer"
-msgstr "Trailer"
-
 msgctxt "#41149"
 msgid "Show IMDB Rating Number in Video Info Screen"
 msgstr "Toon IMDB nummerscore in Videoinfo-scherm"
-
-msgctxt "#41150"
-msgid "Record"
-msgstr "Opnemen"
-
-msgctxt "#41151"
-msgid "Recording"
-msgstr "Opname"
 
 msgctxt "#41152"
 msgid "Channel List"
@@ -1284,14 +960,6 @@ msgstr "Diverse"
 msgctxt "#41163"
 msgid "Style"
 msgstr "Stijl"
-
-msgctxt "#41164"
-msgid "Remove Cover Playing Media"
-msgstr "Cover van afspelende media verbergen"
-
-msgctxt "#41165"
-msgid "Default CDArt Black XBMC"
-msgstr "Standaard zwarte XBMC CDArt"
 
 msgctxt "#41166"
 msgid "Default CDArt Black Cirrus Extended"
@@ -1320,10 +988,6 @@ msgstr "Verschuiving focus in menu inschakelen"
 msgctxt "#41172"
 msgid "HD Movies"
 msgstr "HD Films"
-
-msgctxt "#41173"
-msgid "Hide Breadcrumb Trails TV Shows on Episode Level"
-msgstr "Verberg breadcrumbpaden TV-series op afleveringniveau"
 
 msgctxt "#41174"
 msgid "Use Original Watched Overlay in Fanart View"
@@ -1405,10 +1069,6 @@ msgctxt "#41193"
 msgid "Creator"
 msgstr "Schepper"
 
-msgctxt "#41194"
-msgid "Summary"
-msgstr "Samenvatting"
-
 msgctxt "#41195"
 msgid "Movie Widget"
 msgstr "Film widget"
@@ -1465,10 +1125,6 @@ msgctxt "#41208"
 msgid "Cinema Experience"
 msgstr "Cinema Experience"
 
-msgctxt "#41209"
-msgid "Exit"
-msgstr "Exit"
-
 msgctxt "#41210"
 msgid "Dim Background on Home"
 msgstr "Achtergrond op beginscherm dimmen"
@@ -1500,10 +1156,6 @@ msgstr "Video of afspeellijst instellen"
 msgctxt "#41217"
 msgid "Original Cirrus Clock"
 msgstr "Originele Cirrus-klok"
-
-msgctxt "#41218"
-msgid "Remove Weather"
-msgstr "Verwijder Weer"
 
 msgctxt "#41219"
 msgid "Currently Watching"
@@ -1557,10 +1209,6 @@ msgctxt "#41231"
 msgid "Alternative Recently Added and Watchlist on Home Layout"
 msgstr "Alternatieve 'Onlangs toegevoegd' en Watchlist op beginscherm"
 
-msgctxt "#41232"
-msgid "NO MOVIES IN PROGRESS"
-msgstr "GEEN SPEELFILMS LOPEND"
-
 msgctxt "#41233"
 msgid "Enable Movies in Progress"
 msgstr "Zet Lopende Speelfilms Aan"
@@ -1576,10 +1224,6 @@ msgstr "Verberg plot bij pause"
 msgctxt "#41236"
 msgid "Get Info"
 msgstr "Spelinfo ophalen"
-
-msgctxt "#41237"
-msgid "Start"
-msgstr "Start spel"
 
 msgctxt "#41238"
 msgid "Watch Trailer"
@@ -1605,10 +1249,6 @@ msgctxt "#41243"
 msgid "Hide Plot on Info Fullscreen"
 msgstr "Verberg plot bij schermvullende Info"
 
-msgctxt "#41244"
-msgid "Data Provider"
-msgstr "Bron:"
-
 msgctxt "#41245"
 msgid "Show Cases"
 msgstr "Toon hoezen"
@@ -1633,17 +1273,9 @@ msgctxt "#41250"
 msgid "Release Years"
 msgstr "Introductie Jaren"
 
-msgctxt "#41251"
-msgid "Status"
-msgstr "Status"
-
 msgctxt "#41253"
 msgid "Enable TV Tunes"
 msgstr "TV Tunes inschakelen"
-
-msgctxt "#41254"
-msgid "Root"
-msgstr "Root"
 
 msgctxt "#41255"
 msgid "Music Addons"
@@ -1652,10 +1284,6 @@ msgstr "Muziek add-ons"
 msgctxt "#41256"
 msgid "Concerts"
 msgstr "Concerten"
-
-msgctxt "#41257"
-msgid "Current"
-msgstr "Huidige"
 
 msgctxt "#41258"
 msgid "Enable Slim OSD by Zombierobot in Music Vis."
@@ -1724,10 +1352,6 @@ msgstr "Afspellijst onlangs toegevoegde TV-series"
 msgctxt "#41276"
 msgid "Hide Common Page Count"
 msgstr "Paginanummering verbergen"
-
-msgctxt "#41277"
-msgid "Hide Breadcrumb Trails and Clock"
-msgstr ""
 
 msgctxt "#41279"
 msgid "Enable Latest Custom Movie Playlist1"
