@@ -59,8 +59,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-
-			<imagepath background="true">special://userdata/extras/videofanarts/$INFO[ListItem.FolderName]/extrafanart</imagepath>
+            <imagepath background="true">$INFO[ListItem.Path]/extrafanart</imagepath>
 			<timeperimage>7000</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>FanartCrossfadeTime</fadetime>
@@ -187,8 +186,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-
-			<imagepath fallback="special://skin/backgrounds/tv_shows.jpg" background="true">special://userdata/extras/tvfanarts/$INFO[ListItem.TVShowTitle]/extrafanart</imagepath>
+            <imagepath fallback="special://skin/backgrounds/tv_shows.jpg" background="true">$INFO[ListItem.Path]/extrafanart</imagepath>
 			<timeperimage>7000</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>FanartCrossfadeTime</fadetime>
@@ -200,8 +198,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-
-			<imagepath fallback="special://skin/backgrounds/tv_shows.jpg" background="true">special://userdata/extras/tvfanarts/$INFO[ListItem.TVShowTitle]/extrafanart</imagepath>
+            <imagepath fallback="special://skin/backgrounds/tv_shows.jpg" background="true">$INFO[ListItem.Path]../extrafanart</imagepath>
 			<timeperimage>7000</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>FanartCrossfadeTime</fadetime>

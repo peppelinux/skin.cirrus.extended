@@ -855,7 +855,6 @@
 				<width>356</width>
 				<height>200</height>
 				<align>right</align>
-				<texture background="true">special://userdata/extras/tvfanarts/$INFO[VideoPlayer.TVShowTitle]/clearart.png</texture>
 				 <texture background="true">$INFO[Player.FolderPath]/clearart.png</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>Skin.HasSetting(clearart) + VideoPlayer.Content(episodes)</visible>
