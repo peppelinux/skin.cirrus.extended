@@ -8,14 +8,15 @@ msgstr ""
 "Project-Id-Version: XBMC-Addons\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: 2013-01-10 11:35+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE\n"
+"PO-Revision-Date: 2013-02-06 18:09+0100\n"
+"Last-Translator: Gyarmati Roland <roland.gyarmati@gmail.com>\n"
+"Language-Team: Hungarian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Poedit-Language: Hungarian\n"
 
 msgctxt "Addon Summary"
 msgid "skin created by crookas - modded by butchabay, malexx and more."
@@ -43,7 +44,7 @@ msgstr "Dolgozom..."
 
 msgctxt "#31005"
 msgid "Hide INFO"
-msgstr "INFO ELREJTÉSE"
+msgstr "INFO Elrejtése"
 
 msgctxt "#31007"
 msgid "Video Addons"
@@ -103,7 +104,7 @@ msgstr "Befejezés időpontja"
 
 msgctxt "#31054"
 msgid "Running Time"
-msgstr ""
+msgstr "Időtartam"
 
 msgctxt "#31055"
 msgid "Open playlist"
@@ -131,17 +132,11 @@ msgstr "Jelenleg kiválasztott"
 
 msgctxt "#31062"
 msgid "Next Episode:"
-msgstr ""
+msgstr "Következő epizód:"
 
 msgctxt "#31101"
 msgid "Home screen options"
 msgstr "Sajátképernyő lehetőségek"
-
-
-
-
-
-Megállítva\" a diavetítés közben"
 
 msgctxt "#31105"
 msgid "Show media titles in background scanner"
@@ -183,12 +178,6 @@ msgctxt "#31121"
 msgid "PATH TO SCRIPT"
 msgstr "SZKRIPT ÚTVONALA"
 
-
-
-
-
-Poszterek\" használata \"Bannerek\" helyett a TV műsoroknál"
-
 msgctxt "#31124"
 msgid "Show Background \"Now Playing\" Video"
 msgstr "A háttérben a játszott videó megjelenítése"
@@ -227,7 +216,7 @@ msgstr ""
 
 msgctxt "#31187"
 msgid "TV Guide"
-msgstr ""
+msgstr "TV Műsor kalauz"
 
 msgctxt "#31203"
 msgid "Choose Your Song"
@@ -523,7 +512,7 @@ msgstr ""
 
 msgctxt "#41023"
 msgid "Play Disc"
-msgstr ""
+msgstr "Lemez lejátszása"
 
 msgctxt "#41025"
 msgid "Music Visualisation"
@@ -803,15 +792,15 @@ msgstr ""
 
 msgctxt "#41098"
 msgid "Addons"
-msgstr ""
+msgstr "Kiegészítők"
 
 msgctxt "#41101"
 msgid "View Options"
-msgstr ""
+msgstr "Nézet beállítások"
 
 msgctxt "#41103"
 msgid "TV Shows"
-msgstr ""
+msgstr "Sorozatok"
 
 msgctxt "#41107"
 msgid "Enable/Disable Views"
@@ -819,7 +808,7 @@ msgstr ""
 
 msgctxt "#41110"
 msgid "Get Artwork"
-msgstr ""
+msgstr "Grafika beszerzése"
 
 msgctxt "#41111"
 msgid "Rightlist Logo"
@@ -959,7 +948,7 @@ msgstr ""
 
 msgctxt "#41163"
 msgid "Style"
-msgstr ""
+msgstr "Stílus"
 
 msgctxt "#41166"
 msgid "Default CDArt Black Cirrus Extended"
@@ -987,7 +976,7 @@ msgstr ""
 
 msgctxt "#41172"
 msgid "HD Movies"
-msgstr ""
+msgstr "HD Filmek"
 
 msgctxt "#41174"
 msgid "Use Original Watched Overlay in Fanart View"
@@ -1027,7 +1016,7 @@ msgstr ""
 
 msgctxt "#41183"
 msgid "Movie Sets"
-msgstr ""
+msgstr "Filmgyűjtemények"
 
 msgctxt "#41184"
 msgid "Horizontal Layout"
@@ -1035,7 +1024,7 @@ msgstr ""
 
 msgctxt "#41185"
 msgid "Global Search"
-msgstr ""
+msgstr "Szöveg keresése"
 
 msgctxt "#41186"
 msgid "Latest Albums"
@@ -1091,7 +1080,7 @@ msgstr ""
 
 msgctxt "#41200"
 msgid "Get Extrafanart"
-msgstr ""
+msgstr "Extrafanart beszerzése"
 
 msgctxt "#41201"
 msgid "Hide Extrathumbs"
@@ -1099,11 +1088,11 @@ msgstr ""
 
 msgctxt "#41202"
 msgid "Dim Background"
-msgstr ""
+msgstr "Háttér sötétítése"
 
 msgctxt "#41203"
 msgid "Black Background"
-msgstr ""
+msgstr "Fekete háttér"
 
 msgctxt "#41204"
 msgid "Play Trailer Windowed"
@@ -1199,7 +1188,7 @@ msgstr ""
 
 msgctxt "#41229"
 msgid "Choose:"
-msgstr ""
+msgstr "Választás:"
 
 msgctxt "#41230"
 msgid "Recently Added and Watchlist on Home"
@@ -1227,7 +1216,7 @@ msgstr ""
 
 msgctxt "#41238"
 msgid "Watch Trailer"
-msgstr ""
+msgstr "Filmelőzetes lejátszása"
 
 msgctxt "#41239"
 msgid "Next Tracks:"
@@ -1235,11 +1224,11 @@ msgstr ""
 
 msgctxt "#41240"
 msgid "Playback Options"
-msgstr ""
+msgstr "Lejátszás opciók"
 
 msgctxt "#41241"
 msgid "Time and Weather"
-msgstr ""
+msgstr "Pontos idő és időjárás"
 
 msgctxt "#41242"
 msgid "Video Window"
@@ -1295,7 +1284,7 @@ msgstr ""
 
 msgctxt "#41260"
 msgid "Directed By:"
-msgstr ""
+msgstr "Rendezte:"
 
 msgctxt "#41261"
 msgid "Hide Info on Pause"
@@ -1339,7 +1328,7 @@ msgstr ""
 
 msgctxt "#41271"
 msgid "Total Seasons:"
-msgstr ""
+msgstr " Összes évad:"
 
 msgctxt "#41273"
 msgid "Latest Movie Playlists"
@@ -1427,20 +1416,21 @@ msgstr ""
 
 msgctxt "#41297"
 msgid "Total Artists"
-msgstr ""
+msgstr "Minden előadó"
 
 msgctxt "#41298"
 msgid "Total Albums"
-msgstr ""
+msgstr "Minden album"
 
 msgctxt "#41299"
 msgid "Total Songs"
-msgstr ""
+msgstr "Minden zeneszám"
 
 msgctxt "#41300"
 msgid "Watch Later"
-msgstr ""
+msgstr "Lejátszás később"
 
 msgctxt "#41301"
 msgid "Listen Later"
-msgstr ""
+msgstr "Meghallgatás később"
+
