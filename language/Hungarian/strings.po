@@ -33,14 +33,6 @@ msgctxt "#31000"
 msgid "Change Your"
 msgstr "Választható"
 
-msgctxt "#31001"
-msgid "Love"
-msgstr "Szeretem"
-
-msgctxt "#31002"
-msgid "Hate"
-msgstr "Utálom"
-
 msgctxt "#31003"
 msgid "Power Options"
 msgstr "Kikapcsolási lehetőségek"
@@ -81,49 +73,17 @@ msgctxt "#31026"
 msgid "Misc Options"
 msgstr "Egyéb opciók"
 
-msgctxt "#31027"
-msgid "Location"
-msgstr "Fekvés"
-
-msgctxt "#31028"
-msgid "Poster Wrap"
-msgstr "Poszter"
-
-msgctxt "#31029"
-msgid "Fanart"
-msgstr "Fanart"
-
-msgctxt "#31030"
-msgid "Full list"
-msgstr "Full lista"
-
 msgctxt "#31031"
 msgid "Pic Thumbs"
 msgstr "Kép Bélyeg"
-
-msgctxt "#31032"
-msgid "Image Wrap"
-msgstr "Képborító"
 
 msgctxt "#31040"
 msgid "Now Playing"
 msgstr "Most játszott"
 
-msgctxt "#31042"
-msgid "PLAYING"
-msgstr "LEJÁTSZÁS"
-
 msgctxt "#31043"
 msgid "PAUSED"
 msgstr "MEGÁLLÍTVA"
-
-msgctxt "#31044"
-msgid "FAST FORWARD"
-msgstr "ELŐRETEKERÉS"
-
-msgctxt "#31045"
-msgid "REWIND"
-msgstr "VISSZATEKERÉS"
 
 msgctxt "#31046"
 msgid "Audio Properties"
@@ -140,18 +100,6 @@ msgstr "Vizualizáció altípus"
 msgctxt "#31049"
 msgid "End Time"
 msgstr "Befejezés időpontja"
-
-msgctxt "#31050"
-msgid "Start Time"
-msgstr ""
-
-msgctxt "#31052"
-msgid "Imdb"
-msgstr ""
-
-msgctxt "#31053"
-msgid "Year"
-msgstr ""
 
 msgctxt "#31054"
 msgid "Running Time"
@@ -177,10 +125,6 @@ msgctxt "#31059"
 msgid "Current playlist"
 msgstr "Jelenlegi játszáslista"
 
-msgctxt "#31060"
-msgid "This file is stacked, select the part you want to play from."
-msgstr "Ez a fájl egyesített. Válaszd a részt, amelyiket játszani akarod."
-
 msgctxt "#31061"
 msgid "Current Selected"
 msgstr "Jelenleg kiválasztott"
@@ -189,37 +133,15 @@ msgctxt "#31062"
 msgid "Next Episode:"
 msgstr ""
 
-msgctxt "#31063"
-msgid "Season"
-msgstr ""
-
-msgctxt "#31064"
-msgid "Episode"
-msgstr ""
-
-msgctxt "#31065"
-msgid "Rating"
-msgstr ""
-
-msgctxt "#31066"
-msgid "Director"
-msgstr ""
-
 msgctxt "#31101"
 msgid "Home screen options"
 msgstr "Sajátképernyő lehetőségek"
 
-msgctxt "#31102"
-msgid "Background"
-msgstr "Háttér"
 
-msgctxt "#31103"
-msgid "Show \"Paused\" in picture slide show"
-msgstr "Mutasd \"Megállítva\" a diavetítés közben"
 
-msgctxt "#31104"
-msgid "Play Trailers in a window [COLOR=grey3](Video Information Dialog Only)[/COLOR]"
-msgstr "Bemutatók játszása egy ablakban [COLOR=grey3](Csak a videó információs ablakban)[/COLOR]"
+
+
+Megállítva\" a diavetítés közben"
 
 msgctxt "#31105"
 msgid "Show media titles in background scanner"
@@ -245,10 +167,6 @@ msgctxt "#31111"
 msgid "Hide"
 msgstr "Elrejt"
 
-msgctxt "#31112"
-msgid "Options"
-msgstr "Lehetőségek"
-
 msgctxt "#31113"
 msgid "Single Image"
 msgstr "Egyetlen Kép"
@@ -261,22 +179,6 @@ msgctxt "#31115"
 msgid "Customizer"
 msgstr "Testreszabás"
 
-msgctxt "#31116"
-msgid "Addon Scripts"
-msgstr "Szkriptgombok"
-
-msgctxt "#31117"
-msgid "Show Recently added Videos"
-msgstr "Nemrég hozzáadott videók mutatása"
-
-msgctxt "#31118"
-msgid "Home Page Submenu"
-msgstr "Sajátképernyő almenü"
-
-msgctxt "#31119"
-msgid "Enable Custom Script Button"
-msgstr "Egyedi szkriptgomb engedélyezése"
-
 msgctxt "#31120"
 msgid "BUTTON LABEL"
 msgstr "GOMB FELIRAT"
@@ -285,13 +187,11 @@ msgctxt "#31121"
 msgid "PATH TO SCRIPT"
 msgstr "SZKRIPT ÚTVONALA"
 
-msgctxt "#31122"
-msgid "Weather Page"
-msgstr "Időjárás oldal"
 
-msgctxt "#31123"
-msgid "Use \"Posters\" instead of \"Banners\" for TV Shows"
-msgstr "\"Poszterek\" használata \"Bannerek\" helyett a TV műsoroknál"
+
+
+
+Poszterek\" használata \"Bannerek\" helyett a TV műsoroknál"
 
 msgctxt "#31124"
 msgid "Show Background \"Now Playing\" Video"
@@ -321,14 +221,6 @@ msgctxt "#31130"
 msgid "PATH TO SUBTITLE SCRIPT"
 msgstr "FELIRAT-SZKRIPT ÚTVONALA"
 
-msgctxt "#31140"
-msgid "Music OSD"
-msgstr "Zene OSD"
-
-msgctxt "#31141"
-msgid "Video OSD"
-msgstr "Videó OSD"
-
 msgctxt "#31185"
 msgid "Listed Shows"
 msgstr ""
@@ -341,25 +233,9 @@ msgctxt "#31187"
 msgid "TV Guide"
 msgstr ""
 
-msgctxt "#31200"
-msgid "Shortcuts"
-msgstr "Létrehozása"
-
-msgctxt "#31201"
-msgid "Categories"
-msgstr "Kategóriák"
-
-msgctxt "#31202"
-msgid "Show Cast"
-msgstr "Szereposztás mutatása"
-
 msgctxt "#31203"
 msgid "Choose Your Song"
 msgstr "Válaszd a dalodat"
-
-msgctxt "#31204"
-msgid "Section Links"
-msgstr "Szekció linkek"
 
 msgctxt "#31205"
 msgid "Lyrics Source"
@@ -377,37 +253,13 @@ msgctxt "#31252"
 msgid "TWC Script"
 msgstr "TWC Szkript"
 
-msgctxt "#31300"
-msgid "Current Temp"
-msgstr "Hőmérséklet most"
-
 msgctxt "#31301"
 msgid "Last Updated"
 msgstr "Utoljára frissítve"
 
-msgctxt "#31302"
-msgid "Menu"
-msgstr "Menü"
-
-msgctxt "#31304"
-msgid "Picture"
-msgstr "Kép"
-
-msgctxt "#31305"
-msgid "No Disc Media Detected"
-msgstr "Lemez média nem található"
-
-msgctxt "#31306"
-msgid "Eject"
-msgstr "Nyitás"
-
 msgctxt "#31307"
 msgid "Hide Fanart"
 msgstr "Fanart elrejtése"
-
-msgctxt "#31308"
-msgid "Movie Details"
-msgstr "Film részletek"
 
 msgctxt "#31309"
 msgid "Memory Used:"
@@ -433,17 +285,9 @@ msgctxt "#31314"
 msgid "Content Scanning Options"
 msgstr "Tartalomkeresési lehetőségek"
 
-msgctxt "#31315"
-msgid "Basic"
-msgstr "Alap"
-
 msgctxt "#31317"
 msgid "Set Fanart Path"
 msgstr "Fanart útvonal"
-
-msgctxt "#31318"
-msgid "Small Fanart"
-msgstr "Kis fanart"
 
 msgctxt "#31319"
 msgid "Selected Profile"
@@ -456,10 +300,6 @@ msgstr "Utoljára bejelentkezve"
 msgctxt "#31321"
 msgid "Karaoke Song Selector"
 msgstr "Karaoke dal választó"
-
-msgctxt "#31322"
-msgid "Aired"
-msgstr "Játszva"
 
 msgctxt "#31323"
 msgid "Latest Movies"
@@ -477,10 +317,6 @@ msgctxt "#31326"
 msgid "Created"
 msgstr "Létrehozva"
 
-msgctxt "#31327"
-msgid "Resolution"
-msgstr "Felbontás"
-
 msgctxt "#31328"
 msgid "Recently Added"
 msgstr "Nemrég hozzáadva"
@@ -488,14 +324,6 @@ msgstr "Nemrég hozzáadva"
 msgctxt "#31329"
 msgid "[B]Timer set![/B] [COLOR=grey2] - System auto shutdown in[/COLOR]"
 msgstr "[B]Időzítő beállítva![/B] [COLOR=grey2] - Automatikus leállítás[/COLOR]"
-
-msgctxt "#31330"
-msgid "Click button to play[CR][CR]Movie trailer"
-msgstr "Nyomj a filmbemutató[CR][CR]Lejátszásához"
-
-msgctxt "#31331"
-msgid "Search"
-msgstr ""
 
 msgctxt "#31351"
 msgid "Pause"
@@ -520,10 +348,6 @@ msgstr "Film menü"
 msgctxt "#31356"
 msgid "Download Subtitles"
 msgstr "Felirat Letöltése"
-
-msgctxt "#31358"
-msgid "Current Time"
-msgstr ""
 
 msgctxt "#31400"
 msgid "[B]CONFIGURE APPEARANCE SETTINGS[/B][CR][CR]Change the skin · Set language and region · Change file listing options[CR]Set up a screensaver"
@@ -553,10 +377,6 @@ msgctxt "#31406"
 msgid "[B]CONFIGURE SYSTEM SETTINGS[/B][CR][CR]Setup and calibrate displays · Configure audio output · Setup remote controls[CR]Set power saving options · Enable debugging · Setup master lock"
 msgstr "[B]RENDSZERBEÁLLÍTÁSOK[/B][CR][CR]Kijelzők beállítása, kalibrálása · Hangkimenet konfigurálása · Távkapcsoló beállítása[CR]Energiagazdálkodási lehetőségek beállítása · Debug bekapcsolása · Mesterzár felállítása"
 
-msgctxt "#31407"
-msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Cirrus skin · Add and remove home menu items[CR]Change skin backgrounds"
-msgstr "[B]SKIN BEÁLLÍTÁSOK[/B][CR][CR]A Cirrus skin beállítása · Sajátképernyő elemek hozzáadása/elvétele[CR]Skin hátterek megváltoztatása"
-
 msgctxt "#31409"
 msgid "[B]CONFIGURE TV SETTINGS[/B][CR][CR]Change fullscreen info · Manage EPG data settings"
 msgstr ""
@@ -564,10 +384,6 @@ msgstr ""
 msgctxt "#31421"
 msgid "Select your XBMC user Profile to login and continue"
 msgstr "Válaszd ki az XBMC felhasználói profilod[CR]a belépéshez"
-
-msgctxt "#31500"
-msgid "Recording Timers"
-msgstr ""
 
 msgctxt "#31501"
 msgid "Scheduled Time"
@@ -599,10 +415,6 @@ msgstr ""
 
 msgctxt "#31508"
 msgid "Channels in Group"
-msgstr ""
-
-msgctxt "#31509"
-msgid "Channel Group"
 msgstr ""
 
 msgctxt "#31510"
@@ -757,24 +569,12 @@ msgctxt "#41021"
 msgid "Global Animated Backgrounds"
 msgstr ""
 
-msgctxt "#41022"
-msgid "Power"
-msgstr ""
-
 msgctxt "#41023"
 msgid "Play Disc"
 msgstr ""
 
-msgctxt "#41024"
-msgid "Favourites"
-msgstr ""
-
 msgctxt "#41025"
 msgid "Music Visualisation"
-msgstr ""
-
-msgctxt "#41026"
-msgid "Games"
 msgstr ""
 
 msgctxt "#41027"
@@ -1049,10 +849,6 @@ msgctxt "#41095"
 msgid "Show Path in Video Info Screen"
 msgstr ""
 
-msgctxt "#41096"
-msgid "Run Logo Downloader Script"
-msgstr ""
-
 msgctxt "#41098"
 msgid "Addons"
 msgstr ""
@@ -1061,32 +857,12 @@ msgctxt "#41101"
 msgid "View Options"
 msgstr ""
 
-msgctxt "#41102"
-msgid "Movies"
-msgstr ""
-
 msgctxt "#41103"
 msgid "TV Shows"
 msgstr ""
 
-msgctxt "#41104"
-msgid "Music"
-msgstr ""
-
-msgctxt "#41105"
-msgid "Video Plugins"
-msgstr ""
-
 msgctxt "#41107"
 msgid "Enable/Disable Views"
-msgstr ""
-
-msgctxt "#41108"
-msgid "Enable"
-msgstr ""
-
-msgctxt "#41109"
-msgid "Disable"
 msgstr ""
 
 msgctxt "#41110"
@@ -1133,10 +909,6 @@ msgctxt "#41120"
 msgid "Compact"
 msgstr ""
 
-msgctxt "#41121"
-msgid "Coverflow"
-msgstr ""
-
 msgctxt "#41122"
 msgid "Fanart Slide"
 msgstr ""
@@ -1155,42 +927,6 @@ msgstr ""
 
 msgctxt "#41126"
 msgid "Wall"
-msgstr ""
-
-msgctxt "#41127"
-msgid "Edit Library"
-msgstr ""
-
-msgctxt "#41128"
-msgid "Path:"
-msgstr ""
-
-msgctxt "#41129"
-msgid "Total"
-msgstr ""
-
-msgctxt "#41130"
-msgid "Watched"
-msgstr ""
-
-msgctxt "#41131"
-msgid "Unwatched"
-msgstr ""
-
-msgctxt "#41132"
-msgid "Featured Music"
-msgstr ""
-
-msgctxt "#41133"
-msgid "Featured Songs"
-msgstr ""
-
-msgctxt "#41134"
-msgid "Settings"
-msgstr ""
-
-msgctxt "#41135"
-msgid "Random Fanart Backdrops"
 msgstr ""
 
 msgctxt "#41136"
@@ -1241,20 +977,8 @@ msgctxt "#41147"
 msgid "Hide MPAA Flags"
 msgstr ""
 
-msgctxt "#41148"
-msgid "Trailer"
-msgstr ""
-
 msgctxt "#41149"
 msgid "Show IMDB Rating Number in Video Info Screen"
-msgstr ""
-
-msgctxt "#41150"
-msgid "Record"
-msgstr ""
-
-msgctxt "#41151"
-msgid "Recording"
 msgstr ""
 
 msgctxt "#41152"
@@ -1279,14 +1003,6 @@ msgstr ""
 
 msgctxt "#41163"
 msgid "Style"
-msgstr ""
-
-msgctxt "#41164"
-msgid "Remove Cover Playing Media"
-msgstr ""
-
-msgctxt "#41165"
-msgid "Default CDArt Black XBMC"
 msgstr ""
 
 msgctxt "#41166"
@@ -1315,10 +1031,6 @@ msgstr ""
 
 msgctxt "#41172"
 msgid "HD Movies"
-msgstr ""
-
-msgctxt "#41173"
-msgid "Hide Breadcrumb Trails TV Shows on Episode Level"
 msgstr ""
 
 msgctxt "#41174"
@@ -1401,10 +1113,6 @@ msgctxt "#41193"
 msgid "Creator"
 msgstr ""
 
-msgctxt "#41194"
-msgid "Summary"
-msgstr ""
-
 msgctxt "#41195"
 msgid "Movie Widget"
 msgstr ""
@@ -1461,10 +1169,6 @@ msgctxt "#41208"
 msgid "Cinema Experience"
 msgstr ""
 
-msgctxt "#41209"
-msgid "Exit"
-msgstr ""
-
 msgctxt "#41210"
 msgid "Dim Background on Home"
 msgstr ""
@@ -1495,10 +1199,6 @@ msgstr ""
 
 msgctxt "#41217"
 msgid "Original Cirrus Clock"
-msgstr ""
-
-msgctxt "#41218"
-msgid "Remove Weather"
 msgstr ""
 
 msgctxt "#41219"
@@ -1553,10 +1253,6 @@ msgctxt "#41231"
 msgid "Alternative Recently Added and Watchlist on Home Layout"
 msgstr ""
 
-msgctxt "#41232"
-msgid "NO MOVIES IN PROGRESS"
-msgstr ""
-
 msgctxt "#41233"
 msgid "Enable Movies in Progress"
 msgstr ""
@@ -1571,10 +1267,6 @@ msgstr ""
 
 msgctxt "#41236"
 msgid "Get Info"
-msgstr ""
-
-msgctxt "#41237"
-msgid "Start"
 msgstr ""
 
 msgctxt "#41238"
@@ -1601,10 +1293,6 @@ msgctxt "#41243"
 msgid "Hide Plot on Info Fullscreen"
 msgstr ""
 
-msgctxt "#41244"
-msgid "Data Provider"
-msgstr ""
-
 msgctxt "#41245"
 msgid "Show Cases"
 msgstr ""
@@ -1629,16 +1317,8 @@ msgctxt "#41250"
 msgid "Release Years"
 msgstr ""
 
-msgctxt "#41251"
-msgid "Status"
-msgstr ""
-
 msgctxt "#41253"
 msgid "Enable TV Tunes"
-msgstr ""
-
-msgctxt "#41254"
-msgid "Root"
 msgstr ""
 
 msgctxt "#41255"
@@ -1647,10 +1327,6 @@ msgstr ""
 
 msgctxt "#41256"
 msgid "Concerts"
-msgstr ""
-
-msgctxt "#41257"
-msgid "Current"
 msgstr ""
 
 msgctxt "#41258"
@@ -1719,10 +1395,6 @@ msgstr ""
 
 msgctxt "#41276"
 msgid "Hide Common Page Count"
-msgstr ""
-
-msgctxt "#41277"
-msgid "Hide Breadcrumb Trails and Clock"
 msgstr ""
 
 msgctxt "#41279"

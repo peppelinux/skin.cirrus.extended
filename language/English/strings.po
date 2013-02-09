@@ -75,11 +75,11 @@ msgctxt "#31025"
 msgid "Items"
 msgstr ""
 
-#View Type labels
-
-msgctxt "#31029"
-msgid "Fanart"
+msgctxt "#31026"
+msgid "Misc Options"
 msgstr ""
+
+#View Type labels
 
 msgctxt "#31031"
 msgid "Pic Thumbs"
@@ -116,10 +116,6 @@ msgstr ""
 
 #empty string with id 31051
 
-msgctxt "#31053"
-msgid "Year"
-msgstr ""
-
 msgctxt "#31054"
 msgid "Running Time"
 msgstr ""
@@ -144,10 +140,6 @@ msgctxt "#31059"
 msgid "Current playlist"
 msgstr ""
 
-msgctxt "#31060"
-msgid "This file is stacked, select the part you want to play from."
-msgstr ""
-
 msgctxt "#31061"
 msgid "Current Selected"
 msgstr ""
@@ -158,31 +150,20 @@ msgstr ""
 
 #Skin Settings labels
 
-msgctxt "#31063"
-msgid "Season"
-msgstr ""
 
-msgctxt "#31064"
-msgid "Episode"
-msgstr ""
 
-msgctxt "#31066"
-msgid "Director"
-msgstr ""
+
+
+
+
+
+
 
 #Playlist Editor labels
 #empty strings from id 31067 to 31100
 
 msgctxt "#31101"
 msgid "Home screen options"
-msgstr ""
-
-msgctxt "#31102"
-msgid "Background"
-msgstr ""
-
-msgctxt "#31103"
-msgid "Show \"Paused\" in picture slide show"
 msgstr ""
 
 msgctxt "#31105"
@@ -209,10 +190,6 @@ msgstr ""
 
 msgctxt "#31111"
 msgid "Hide"
-msgstr ""
-
-msgctxt "#31112"
-msgid "Options"
 msgstr ""
 
 msgctxt "#31113"
@@ -319,6 +296,9 @@ msgctxt "#31307"
 msgid "Hide Fanart"
 msgstr ""
 
+msgctxt "#31317"
+msgid "Set Fanart Path"
+msgstr ""
 msgctxt "#31309"
 msgid "Memory Used:"
 msgstr ""
@@ -371,10 +351,6 @@ msgctxt "#31326"
 msgid "Created"
 msgstr ""
 
-msgctxt "#31327"
-msgid "Resolution"
-msgstr ""
-
 msgctxt "#31328"
 msgid "Recently Added"
 msgstr ""
@@ -383,9 +359,8 @@ msgctxt "#31329"
 msgid "[B]Timer set![/B] [COLOR=grey2] - System auto shutdown in[/COLOR]"
 msgstr ""
 
-msgctxt "#31331"
-msgid "Search"
-msgstr ""
+
+
 
 #Video and Music OSD Labels
 #empty strings from id 31332 to 31350
@@ -454,6 +429,7 @@ msgstr ""
 #empty strings from id 31410 to 31420
 
 #. v2.08
+
 msgctxt "#31421"
 msgid "Select your XBMC user Profile to login and continue"
 msgstr ""
@@ -534,39 +510,48 @@ msgctxt "#31910"
 msgid "Map & Alerts"
 msgstr ""
 
-#empty strings from id 31911 to 39999
+msgctxt "#31911"
+msgid "Animate Icons"
+msgstr ""
 
 #. ViewsGamesFanart
+
 msgctxt "#40000"
 msgid "Fanart Poster"
 msgstr ""
 
 #. ViewsGamesFanartSquare
+
 msgctxt "#40001"
 msgid "Fanart Square"
 msgstr ""
 
 #. ViewsGamesFanartWide
+
 msgctxt "#40002"
 msgid "Fanart Wide"
 msgstr ""
 
 #. ViewsGamesRightlist
+
 msgctxt "#40003"
 msgid "Rightlist"
 msgstr ""
 
 #. ViewsGamesRightlist
+
 msgctxt "#40004"
 msgid "Rightlist Square"
 msgstr ""
 
 #. ViewsGamesRightlistLandscape
+
 msgctxt "#40005"
 msgid "Rightlist Landscape"
 msgstr ""
 
 #. ViewsTVLogoRightlist
+
 msgctxt "#40006"
 msgid "Rightlist Logo"
 msgstr ""
@@ -667,25 +652,16 @@ msgstr ""
 
 #New labels Settings (Background Customizer)
 
-msgctxt "#41022"
-msgid "Power"
-msgstr ""
-
 msgctxt "#41023"
 msgid "Play Disc"
-msgstr ""
-
-msgctxt "#41024"
-msgid "Favourites"
 msgstr ""
 
 msgctxt "#41025"
 msgid "Music Visualisation"
 msgstr ""
 
-msgctxt "#41026"
-msgid "Games"
-msgstr ""
+
+
 
 #New labels Settings (Addons Submenus)
 
@@ -916,26 +892,31 @@ msgstr ""
 #New labels Settings (Custom MOD Items)
 
 #. v2.08
+
 msgctxt "#41080"
 msgid "Enable/Disable Mods"
 msgstr ""
 
 #. v2.08
+
 msgctxt "#41081"
 msgid "Enable Banner"
 msgstr ""
 
 #. v2.08
+
 msgctxt "#41082"
 msgid "Enable Poster"
 msgstr ""
 
 #. v2.08
+
 msgctxt "#41083"
 msgid "Enable Widethumbs"
 msgstr ""
 
 #. v2.08
+
 msgctxt "#41084"
 msgid "Enable Landscape"
 msgstr ""
@@ -955,6 +936,7 @@ msgstr ""
 #empty string with id 41088
 
 #. v2.08
+
 msgctxt "#41089"
 msgid "Enable Season Thumb"
 msgstr ""
@@ -997,27 +979,22 @@ msgctxt "#41101"
 msgid "View Options"
 msgstr ""
 
-msgctxt "#41102"
-msgid "Movies"
-msgstr ""
-
 msgctxt "#41103"
 msgid "TV Shows"
-msgstr ""
-
-msgctxt "#41104"
-msgid "Music"
 msgstr ""
 
 msgctxt "#41107"
 msgid "Enable/Disable Views"
 msgstr ""
 
-msgctxt "#41108"
-msgid "Enable"
+msgctxt "#41110"
+msgid "Get Artwork"
 msgstr ""
 
+
+
 #. ViewsGamesLogoRightlist
+
 msgctxt "#41111"
 msgid "Rightlist Logo"
 msgstr ""
@@ -1059,55 +1036,48 @@ msgid "Compact"
 msgstr ""
 
 #. Movie Coverflow
-msgctxt "#41121"
-msgid "Coverflow"
-msgstr ""
 
 msgctxt "#41122"
 msgid "Fanart Slide"
 msgstr ""
 
 #. Movie Halfwall
+
 msgctxt "#41123"
 msgid "Half Wall"
 msgstr ""
 
 #. TV Halfwall
+
 msgctxt "#41124"
 msgid "Half Wall"
 msgstr ""
 
 #. TV Bannerwall Vertical
+
 msgctxt "#41125"
 msgid "Banner Wall2"
 msgstr ""
 
 #. Movie Wall
+
 msgctxt "#41126"
 msgid "Wall"
 msgstr ""
 
-msgctxt "#41129"
-msgid "Total"
+msgctxt "#41127"
+msgid "Edit Library"
 msgstr ""
 
-msgctxt "#41130"
-msgid "Watched"
-msgstr ""
 
-msgctxt "#41131"
-msgid "Unwatched"
-msgstr ""
+
+
+
+
+
+
 
 #New labels Misc.  Cirrus Extended v2 *** NEW V2.03
-
-msgctxt "#41134"
-msgid "Settings"
-msgstr ""
-
-msgctxt "#41135"
-msgid "Random Fanart Backdrops"
-msgstr ""
 
 msgctxt "#41136"
 msgid "Hide Video Window Border"
@@ -1140,6 +1110,7 @@ msgstr ""
 #New labels Misc.  Cirrus Extended v2 *** NEW V2.04
 
 #. v2.08
+
 msgctxt "#41143"
 msgid "New MPAA Rating Flags"
 msgstr ""
@@ -1160,20 +1131,8 @@ msgctxt "#41147"
 msgid "Hide MPAA Flags"
 msgstr ""
 
-msgctxt "#41148"
-msgid "Trailer"
-msgstr ""
-
 msgctxt "#41149"
 msgid "Show IMDB Rating Number in Video Info Screen"
-msgstr ""
-
-msgctxt "#41150"
-msgid "Record"
-msgstr ""
-
-msgctxt "#41151"
-msgid "Recording"
 msgstr ""
 
 msgctxt "#41152"
@@ -1313,10 +1272,6 @@ msgctxt "#41193"
 msgid "Creator"
 msgstr ""
 
-msgctxt "#41194"
-msgid "Summary"
-msgstr ""
-
 msgctxt "#41195"
 msgid "Movie Widget"
 msgstr ""
@@ -1338,6 +1293,9 @@ msgid "Status Widget"
 msgstr ""
 
 #New labels Misc.  Cirrus Extended v2 *** NEW V2.07
+msgctxt "#41200"
+msgid "Get Extrafanart"
+msgstr ""
 
 msgctxt "#41201"
 msgid "Hide Extrathumbs"
@@ -1369,10 +1327,6 @@ msgstr ""
 
 msgctxt "#41208"
 msgid "Cinema Experience"
-msgstr ""
-
-msgctxt "#41209"
-msgid "Exit"
 msgstr ""
 
 msgctxt "#41210"
@@ -1472,14 +1426,12 @@ msgid "Hide Plot on Pause"
 msgstr ""
 
 #. V2.08
+
 msgctxt "#41236"
 msgid "Get Info"
 msgstr ""
 
 #. V2.08
-msgctxt "#41237"
-msgid "Start"
-msgstr ""
 
 msgctxt "#41238"
 msgid "Watch Trailer"
@@ -1503,10 +1455,6 @@ msgstr ""
 
 msgctxt "#41243"
 msgid "Hide Plot on Info Fullscreen"
-msgstr ""
-
-msgctxt "#41244"
-msgid "Data Provider"
 msgstr ""
 
 msgctxt "#41245"
@@ -1537,10 +1485,6 @@ msgctxt "#41253"
 msgid "Enable TV Tunes"
 msgstr ""
 
-msgctxt "#41254"
-msgid "Root"
-msgstr ""
-
 msgctxt "#41255"
 msgid "Music Addons"
 msgstr ""
@@ -1554,6 +1498,7 @@ msgid "Enable Slim OSD by Zombierobot in Music Vis."
 msgstr ""
 
 #. V2.08
+
 msgctxt "#41259"
 msgid "Enable Slim Info"
 msgstr ""
@@ -1651,6 +1596,13 @@ msgctxt "#41284"
 msgid "Enable Latest Custom TV Playlist3"
 msgstr ""
 
+msgctxt "#41285"
+msgid "Press left and enter for Actor Info"
+msgstr ""
+
+msgctxt "#41286"
+msgid "Actor Info"
+msgstr ""
 msgctxt "#41287"
 msgid "Latest TV Shows Playlist1 Widget"
 msgstr ""
