@@ -526,7 +526,7 @@
 						<onclick>ActivateWindow(videos,videodb://1/7/,return)</onclick>
 						<visible>!Skin.HasSetting(hidemovievideofiles)</visible>
 					</item>
-					<!-- -------------------------------------------- -->
+					<!-- ###################################### -->
 					<item id="90165">
 						<label>652</label>
 						<onclick>ActivateWindow(VideoLibrary,MovieYears,return)</onclick>
@@ -922,7 +922,7 @@
 						<onclick>ActivateWindow(videos,videodb://1/7/,return)</onclick>
 						<visible>!Skin.HasSetting(hidemovievideofiles)</visible>
 					</item>
-					<!-- -------------------------------------------- -->
+					<!-- ################################### -->
 					<item id="94165">
 						<label>652</label>
 						<onclick>ActivateWindow(VideoLibrary,MovieYears,return)</onclick>
@@ -1135,7 +1135,7 @@
 						<onclick>ActivateWindow(videos,videodb://1/7/,return)</onclick>
 						<visible>!Skin.HasSetting(hidemovievideofiles)</visible>
 					</item>
-					<!-- -------------------------------------------- -->
+					<!-- #################################### -->
 					<item id="95165">
 						<label>652</label>
 						<onclick>ActivateWindow(VideoLibrary,MovieYears,return)</onclick>
@@ -1348,7 +1348,7 @@
 						<onclick>ActivateWindow(videos,videodb://1/7/,return)</onclick>
 						<visible>!Skin.HasSetting(hidemovievideofiles)</visible>
 					</item>
-					<!-- -------------------------------------------- -->
+					<!-- ######################################## -->
 					<item id="96165">
 						<label>652</label>
 						<onclick>ActivateWindow(VideoLibrary,MovieYears,return)</onclick>
