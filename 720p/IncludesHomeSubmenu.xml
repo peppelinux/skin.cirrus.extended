@@ -12,10 +12,10 @@
 			<animation effect="slide" end="0,-204" time="300" condition="Container(9000).Row(1)">conditional</animation>
 			<animation effect="slide" end="0,-102" time="300" condition="Container(9000).Row(2)">conditional</animation>
 			<animation effect="slide" end="0,102" time="300" condition="Container(9000).Row(4)">conditional</animation>
-			<animation effect="slide" end="0,204" time="300" condition="Container(9000).Row(5)">conditional</animation> -->
+			<animation effect="slide" end="0,204" time="300" condition="Container(9000).Row(5)">conditional</animation>
 
 			<!-- VIDEOS SUBMENU -->
-			<control type="wraplist" id="9010">
+			<control type="fixedlist" id="9010">
 			<hitrect x="50" y="50" w="330" h="620" />
 			<posx>-230</posx>
 			<posy>550</posy>
@@ -29,33 +29,33 @@
 			<focusposition>1</focusposition>
 			<movement>1</movement>
 			<visible>Container(9000).HasFocus(12)</visible>
-             <itemlayout height="70" width="1000">
+             <itemlayout height="50" width="1000">
 				<control type="label">
 					<posx>40</posx>
 					<posy>21</posy>
 					<width>900</width>
-					<height>40</height>
-					<font>cirrus_50</font>
-					<textcolor>grey3</textcolor>
+					<height>45</height>
+					<font>cirrus_40</font>
+					<textcolor>grey</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
 				</control>	
 				</itemlayout>
-				<focusedlayout height="70" width="1000">
+				<focusedlayout height="45" width="1000">
 				<control type="image">
 				<posx>-400</posx>
-				<posy>5</posy>
+				<posy>21</posy>
 				<width>900</width>
-				<height>70</height>
+				<height>45</height>
 				<texture flipx="true">recentlyaddeddiffuse.png</texture>
-					</control> -->
+				</control>
 					<control type="label">
 					<posx>40</posx>
 					<posy>21</posy>
-					<width>380</width>
-					<height>40</height>
-					<font>cirrus_50</font>
+					<width>900</width>
+					<height>45</height>
+					<font>cirrus_40</font>
 					<textcolor>black</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -65,32 +65,39 @@
 			<content>
 				<!-- SearchSUBMENU Butchabay -->
 				   <item id="90100">
-						<label>137</label>
+						<label>$LOCALIZE[31331]</label>
 						<onclick>ActivateWindow(Videos,Root)</onclick>
 						<onclick>SendClick(8)</onclick>
 					</item>
+					<item id="90169">
+						<label>$LOCALIZE[653]</label>
+						<onclick>UpdateLibrary(Video)</onclick>
+						<visible>!Skin.HasSetting(hidemovieupdate)</visible>
+					</item>
+					<item id="90105">
+						<label>$LOCALIZE[41254]</label>
+						<onclick>ActivateWindow(Videos,Root)</onclick>
+					</item>
+					<item id="90104">
+						<label>$LOCALIZE[744]</label>
+						<onclick>ActivateWindow(Videos,Files,return)</onclick>
+					</item>
 					<item id="90101">
-						<label>342</label>
+						<label>$LOCALIZE[342]</label>
 						<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
 					</item>
 					<item id="90102">
-						<label>20343</label>
+						<label>$LOCALIZE[20343]</label>
 						<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
 					</item>
+					<!--
 					<item id="90103">
 						<label>20389</label>
 						<onclick>ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
 					</item>
-					<item id="90104">
-						<label>744</label>
-						<onclick>ActivateWindow(Videos,Files,return)</onclick>
-					</item>
-					<item id="90105">
-						<label>20108</label>
-						<onclick>ActivateWindow(Videos,Root)</onclick>
-					</item>
+					-->
 					<item id="90106">
-						<label>31007</label>
+						<label>$LOCALIZE[31007]</label>
                         <onclick>SetProperty(DontRunTVShowScripts,True,Home)</onclick>
                         <onclick>ActivateWindow(Videos,Addons,return)</onclick>
 					</item>
@@ -99,7 +106,7 @@
 
 
 			<!-- MUSIC SUBMENU -->
-			<control type="wraplist" id="9010">
+			<control type="fixedlist" id="9010">
 			<hitrect x="50" y="50" w="330" h="620" />
 			<posx>-230</posx>
 			<posy>550</posy>
@@ -112,34 +119,34 @@
 			<scrolltime tween="quadratic" easing="out">300</scrolltime>
 			<focusposition>1</focusposition>
 			<movement>1</movement>
-			<visible>Container(9000).HasFocus(14)</visible>
-            <itemlayout height="70" width="1000">
+			<visible>Container(9000).HasFocus(14) | Container(9000).HasFocus(15)</visible>
+            <itemlayout height="50" width="1000">
 				<control type="label">
 					<posx>40</posx>
 					<posy>21</posy>
 					<width>900</width>
-					<height>40</height>
-					<font>cirrus_50</font>
-					<textcolor>grey3</textcolor>
+					<height>45</height>
+					<font>cirrus_40</font>
+					<textcolor>grey</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
 				</control>	
 				</itemlayout>
-				<focusedlayout height="70" width="1000">
+				<focusedlayout height="45" width="1000">
 				<control type="image">
 				<posx>-400</posx>
-				<posy>5</posy>
+				<posy>21</posy>
 				<width>900</width>
-				<height>70</height>
+				<height>45</height>
 				<texture flipx="true">recentlyaddeddiffuse.png</texture>
-					</control> -->
+					</control>
 					<control type="label">
 					<posx>40</posx>
 					<posy>21</posy>
-					<width>380</width>
-					<height>40</height>
-					<font>cirrus_50</font>
+					<width>900</width>
+					<height>45</height>
+					<font>cirrus_40</font>
 					<textcolor>black</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -147,10 +154,10 @@
 				</control>
 			</focusedlayout>
 			<content>
-		      <!-- SearchSUBMENU Butchabay -->
-          <item id="90110">
-						<label>137</label>
-						<onclick>ActivateWindow(MusicLibrary,root)</onclick>
+		        <!-- SearchSUBMENU Butchabay -->
+                 <item id="90110">
+						<label>31331</label>
+						<onclick>ActivateWindow(MusicLibrary)</onclick>
 						<onclick>SendClick(8)</onclick>
 					</item>
 					<item id="90111">
@@ -171,7 +178,7 @@
 					</item>
 					<item id="90115">
 						<label>14022</label>
-						<onclick>ActivateWindow(MusicLibrary,root)</onclick>
+						<onclick>ActivateWindow(MusicLibrary)</onclick>
 					</item>
 					<item id="90116">
 						<label>653</label>
@@ -185,7 +192,7 @@
 			</control>
 
 			<!-- SETTINGS SUBMENU -->
-		<control type="wraplist" id="9010">
+			<control type="fixedlist" id="9010">
 			<hitrect x="50" y="50" w="330" h="620" />
 			<posx>-230</posx>
 			<posy>550</posy>
@@ -199,33 +206,33 @@
 			<focusposition>1</focusposition>
 			<movement>1</movement>
 			<visible>Container(9000).HasFocus(25)</visible>
-      <itemlayout height="70" width="1000">
+            <itemlayout height="50" width="1000">
 				<control type="label">
 					<posx>40</posx>
 					<posy>21</posy>
 					<width>900</width>
-					<height>40</height>
-					<font>cirrus_50</font>
-					<textcolor>grey3</textcolor>
+					<height>45</height>
+					<font>cirrus_40</font>
+					<textcolor>grey</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
 				</control>	
 				</itemlayout>
-				<focusedlayout height="70" width="1000">
+				<focusedlayout height="45" width="1000">
 				<control type="image">
 				<posx>-400</posx>
-				<posy>5</posy>
+				<posy>21</posy>
 				<width>900</width>
-				<height>70</height>
+				<height>45</height>
 				<texture flipx="true">recentlyaddeddiffuse.png</texture>
-					</control> -->
+					</control>
 					<control type="label">
 					<posx>40</posx>
 					<posy>21</posy>
-					<width>380</width>
-					<height>40</height>
-					<font>cirrus_50</font>
+					<width>900</width>
+					<height>45</height>
+					<font>cirrus_40</font>
 					<textcolor>black</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -271,8 +278,9 @@
 				</item>
 				</content>
 			</control>
+			
 			<!-- Addon Submenu -->
-			<control type="wraplist" id="9010">
+			<control type="fixedlist" id="9010">
 			<hitrect x="50" y="50" w="330" h="620" />
 			<posx>-230</posx>
 			<posy>550</posy>
@@ -285,42 +293,58 @@
 			<scrolltime tween="quadratic" easing="out">300</scrolltime>
 			<focusposition>1</focusposition>
 			<movement>1</movement>
-			<visible>Container(9000).HasFocus(18) + [[Skin.HasSetting(HomeScriptButton1) + !IsEmpty(Skin.String(HomeScriptButton1_label))] | [Skin.HasSetting(HomeScriptButton2) + !IsEmpty(Skin.String(HomeScriptButton2_label))] | [Skin.HasSetting(HomeScriptButton3) + !IsEmpty(Skin.String(HomeScriptButton3_label))] | [Skin.HasSetting(HomeScriptButton4) + !IsEmpty(Skin.String(HomeScriptButton4_label))] | [Skin.HasSetting(HomeScriptButton5) + !IsEmpty(Skin.String(HomeScriptButton5_label))] | [Skin.HasSetting(HomeScriptButton6) + !IsEmpty(Skin.String(HomeScriptButton6_label))]]</visible>
-       <itemlayout height="70" width="1000">
+			<visible>Container(9000).HasFocus(18)</visible>
+            <itemlayout height="50" width="1000">
 				<control type="label">
 					<posx>40</posx>
 					<posy>21</posy>
 					<width>900</width>
-					<height>40</height>
-					<font>cirrus_50</font>
-					<textcolor>grey3</textcolor>
+					<height>45</height>
+					<font>cirrus_40</font>
+					<textcolor>grey</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
 				</control>	
 				</itemlayout>
-				<focusedlayout height="70" width="1000">
+				<focusedlayout height="45" width="1000">
 				<control type="image">
 				<posx>-400</posx>
-				<posy>5</posy>
+				<posy>21</posy>
 				<width>900</width>
-				<height>70</height>
+				<height>45</height>
 				<texture flipx="true">recentlyaddeddiffuse.png</texture>
-					</control> -->
+					</control>
 					<control type="label">
 					<posx>40</posx>
 					<posy>21</posy>
-					<width>380</width>
-					<height>40</height>
-					<font>cirrus_50</font>
+					<width>900</width>
+					<height>45</height>
+					<font>cirrus_40</font>
 					<textcolor>black</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</focusedlayout>
-			<content>
-				<item id="90151"> <!--Addon Mod-->
+			<content><!--Addon Mod-->
+					<item id="90788">
+						<description>Program-Addons</description>
+						<label>41098</label>
+						<onclick>ActivateWindow(Programs,Addons,return)</onclick>
+					</item>
+					<item id="90776">
+						<description>Video-Addons</description>
+						<label>31007</label>
+                        <onclick>SetProperty(DontRunTVShowScripts,True,Home)</onclick>
+                        <onclick>ActivateWindow(Videos,Addons,return)</onclick>
+					</item>
+					<item id="90787">
+						<description>Music-Addons</description>
+						<label>41255</label>
+						<onclick>ActivateWindow(MusicFiles,$LOCALIZE[1038])</onclick>
+					</item>
+				<item id="90151">
 						<description>Button1</description>
 						<label>$INFO[Skin.String(HomeScriptButton1_label)]</label>
 						<onclick>Setfocus(9000)</onclick>
@@ -401,7 +425,7 @@
 			</control>
 
 			<!-- MOVIES SUBMENU -->
-			<control type="wraplist" id="9010">
+			<control type="fixedlist" id="9010">
 			<hitrect x="50" y="50" w="330" h="620" />
 			<posx>-230</posx>
 			<posy>550</posy>
@@ -415,33 +439,33 @@
 			<focusposition>1</focusposition>
 			<movement>1</movement>
 			<visible>Container(9000).HasFocus(1)</visible>
-       <itemlayout height="70" width="1000">
+            <itemlayout height="50" width="1000">
 				<control type="label">
 					<posx>40</posx>
 					<posy>21</posy>
 					<width>900</width>
-					<height>40</height>
-					<font>cirrus_50</font>
-					<textcolor>grey3</textcolor>
+					<height>45</height>
+					<font>cirrus_40</font>
+					<textcolor>grey</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
 				</control>	
 				</itemlayout>
-				<focusedlayout height="70" width="1000">
+				<focusedlayout height="45" width="1000">
 				<control type="image">
 				<posx>-400</posx>
-				<posy>5</posy>
+				<posy>21</posy>
 				<width>900</width>
-				<height>70</height>
+				<height>45</height>
 				<texture flipx="true">recentlyaddeddiffuse.png</texture>
-					</control> -->
+					</control>
 					<control type="label">
 					<posx>40</posx>
 					<posy>21</posy>
-					<width>380</width>
-					<height>40</height>
-					<font>cirrus_50</font>
+					<width>900</width>
+					<height>45</height>
+					<font>cirrus_40</font>
 					<textcolor>black</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -452,16 +476,20 @@
 				<!-- Attention changed ID From Here Butchabay 1.2.4 -->
 				
 				<!-- SearchSUBMENU Butchabay -->
-				 <item id="901620">
-						<label>137</label>
+					<item id="901620">
+						<label>31331</label>
 						<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
 						<onclick>SendClick(8)</onclick>
 					</item>
-				
-					<item id="90162">
-						<label>1219</label>
-						<onclick>ActivateWindow(Videos,Files,return)</onclick>
-						<visible>!Skin.HasSetting(hidemovievideofiles)</visible>
+					<item id="90169">
+						<label>653</label>
+						<onclick>UpdateLibrary(Video)</onclick>
+						<visible>!Skin.HasSetting(hidemovieupdate)</visible>
+					</item>
+					<item id="90166">
+						<label>31328</label>
+						<onclick>ActivateWindow(VideoLibrary,RecentlyAddedMovies,return)</onclick>
+						<visible>!Skin.HasSetting(hidemovierecently)</visible>
 					</item>
 					<item id="90163">
 						<label>369</label>
@@ -473,15 +501,36 @@
 						<onclick>ActivateWindow(VideoLibrary,MovieGenres,return)</onclick>
 						<visible>!Skin.HasSetting(hidemoviegenre)</visible>
 					</item>
+					<item id="90775">
+						<label>41254</label>
+						<onclick>ActivateWindow(Videos,Root)</onclick>
+					</item>
+					<item id="90162">
+						<label>1219</label>
+						<onclick>ActivateWindow(Videos,Files,return)</onclick>
+						<visible>!Skin.HasSetting(hidemovievideofiles)</visible>
+					</item>
+					<!-- Custom Favourites Movies Butchabay END 1.2.4 -->
+					<item id="90185">
+						<label>41181</label>
+						<onclick>RunScript(script.randommovie, filtergenre=True)</onclick>
+						<visible>System.HasAddon(script.randommovie)</visible>
+					</item>
+					<item id="90186">
+						<label>41182</label>
+						<onclick>RunScript(script.randommovie)</onclick>
+						<visible>System.HasAddon(script.randommovie)</visible>
+					</item>
+					<item id="90187">
+						<label>41183</label>
+						<onclick>ActivateWindow(videos,videodb://1/7/,return)</onclick>
+						<visible>!Skin.HasSetting(hidemovievideofiles)</visible>
+					</item>
+					<!-- -------------------------------------------- -->
 					<item id="90165">
 						<label>652</label>
 						<onclick>ActivateWindow(VideoLibrary,MovieYears,return)</onclick>
 						<visible>!Skin.HasSetting(hidemovieyears)</visible>
-					</item>
-					<item id="90166">
-						<label>31328</label>
-						<onclick>ActivateWindow(VideoLibrary,RecentlyAddedMovies,return)</onclick>
-						<visible>!Skin.HasSetting(hidemovierecently)</visible>
 					</item>
 					<item id="90167">
 						<label>344</label>
@@ -492,11 +541,6 @@
 						<label>20348</label>
 						<onclick>ActivateWindow(VideoLibrary,MovieDirectors,return)</onclick>
 						<visible>!Skin.HasSetting(hidemoviedirector)</visible>
-					</item>
-					<item id="90169">
-						<label>653</label>
-						<onclick>UpdateLibrary(Video)</onclick>
-						<visible>!Skin.HasSetting(hidemovieupdate)</visible>
 					</item>
 					<item id="90170">
 						<label>31007</label>
@@ -590,28 +634,12 @@
 						<onclick>$INFO[Skin.String(Menu_Custom24_Path)]</onclick>
 						<visible>Skin.HasSetting(MovieButton24) + !IsEmpty(Skin.String(MovieButton24_label))</visible>
 					</item>
-					<!-- Custom Favourites Movies Butchabay END 1.2.4 -->
-					<item id="90185">
-						<label>41181</label>
-						<onclick>RunScript(script.randommovie, filtergenre=True)</onclick>
-						<visible>System.HasAddon(script.randommovie)</visible>
-					</item>
-					 <item id="90186">
-						<label>41182</label>
-						<onclick>RunScript(script.randommovie)</onclick>
-						<visible>System.HasAddon(script.randommovie)</visible>
-					 </item>
-					 <item id="90187">
-						<label>41183</label>
-						<onclick>ActivateWindow(Videos,MovieSets,return)</onclick>
-						<visible>!Skin.HasSetting(hidemovievideofiles)</visible>
-					</item>
 				</content>
 			</control>
  
  
 			<!-- TV SHOWS SUBMENU -->
-			<control type="wraplist" id="9010">
+			<control type="fixedlist" id="9010">
 			<hitrect x="50" y="50" w="330" h="620" />
 			<posx>-230</posx>
 			<posy>550</posy>
@@ -625,33 +653,33 @@
 			<focusposition>1</focusposition>
 			<movement>1</movement>
 			<visible>Container(9000).HasFocus(7)</visible>
-      <itemlayout height="70" width="1000">
+            <itemlayout height="50" width="1000">
 				<control type="label">
 					<posx>40</posx>
 					<posy>21</posy>
 					<width>900</width>
-					<height>40</height>
-					<font>cirrus_50</font>
-					<textcolor>grey3</textcolor>
+					<height>45</height>
+					<font>cirrus_40</font>
+					<textcolor>grey</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
 				</control>	
 				</itemlayout>
-				<focusedlayout height="70" width="1000">
+				<focusedlayout height="45" width="1000">
 				<control type="image">
 				<posx>-400</posx>
-				<posy>5</posy>
+				<posy>21</posy>
 				<width>900</width>
-				<height>70</height>
+				<height>45</height>
 				<texture flipx="true">recentlyaddeddiffuse.png</texture>
-					</control> -->
+					</control>
 					<control type="label">
 					<posx>40</posx>
 					<posy>21</posy>
-					<width>380</width>
-					<height>40</height>
-					<font>cirrus_50</font>
+					<width>900</width>
+					<height>45</height>
+					<font>cirrus_40</font>
 					<textcolor>black</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -662,7 +690,7 @@
 			
 				<!-- ATTENTION CHANGED ID BUTCHABAY FROM HERE 1.2.4 -->
 				 <item id="901900">
-						<label>137</label>
+						<label>31331</label>
 						<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
 						<onclick>SendClick(8)</onclick>
 					</item>
@@ -750,6 +778,7 @@
 						<onclick>$INFO[Skin.String(HomeTVButton3_Path)]</onclick>
 						<visible>Skin.HasSetting(HomeTVButton3) + !IsEmpty(Skin.String(HomeTVButton3_label))</visible>
 					</item>
+					<!-- TO HERE BUTCHABAY 1.2.4 -->
 					<!-- Custom Favourites TV Shows Butchabay 1.2.4 -->
 					<item id="90205">
 					    <label>$INFO[Skin.String(HomeTVbutton25_label)]</label>
@@ -788,7 +817,1262 @@
 						<visible>Library.HasContent(TVShows) + System.HasAddon(script.tv.show.next.aired)</visible>
 					</item>
 				</content>
+				<!-- SearchSUBMENU Butchabay -->
 				</control>
+
+		<!-- MOVIES Custom Playlist 1 -->
+		<control type="fixedlist" id="9010">
+			<hitrect x="50" y="50" w="330" h="620" />
+			<posx>-230</posx>
+			<posy>550</posy>
+			<width>1000</width>
+			<height>350</height>
+			<onleft>9000</onleft>
+			<onright>8006</onright>
+			<onup>9010</onup>
+			<ondown>9010</ondown>
+			<scrolltime tween="quadratic" easing="out">300</scrolltime>
+			<focusposition>1</focusposition>
+			<movement>1</movement>
+			<visible>Container(9000).HasFocus(3)</visible>
+            <itemlayout height="50" width="1000">
+				<control type="label">
+					<posx>40</posx>
+					<posy>21</posy>
+					<width>900</width>
+					<height>45</height>
+					<font>cirrus_40</font>
+					<textcolor>grey</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>	
+				</itemlayout>
+				<focusedlayout height="45" width="1000">
+				<control type="image">
+				<posx>-400</posx>
+				<posy>21</posy>
+				<width>900</width>
+				<height>45</height>
+				<texture flipx="true">recentlyaddeddiffuse.png</texture>
+					</control>
+					<control type="label">
+					<posx>40</posx>
+					<posy>21</posy>
+					<width>900</width>
+					<height>45</height>
+					<font>cirrus_40</font>
+					<textcolor>black</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+			</focusedlayout>
+			<content>
+				<!-- Attention changed ID From Here Butchabay 1.2.4 -->
+				
+				<!-- SearchSUBMENU Butchabay -->
+					<item id="941620">
+						<label>31331</label>
+						<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
+						<onclick>SendClick(8)</onclick>
+					</item>
+					<item id="94169">
+						<label>653</label>
+						<onclick>UpdateLibrary(Video)</onclick>
+						<visible>!Skin.HasSetting(hidemovieupdate)</visible>
+					</item>
+					<item id="94166">
+						<label>31328</label>
+						<onclick>ActivateWindow(VideoLibrary,RecentlyAddedMovies,return)</onclick>
+						<visible>!Skin.HasSetting(hidemovierecently)</visible>
+					</item>
+					<item id="94163">
+						<label>369</label>
+						<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
+						<visible>!Skin.HasSetting(hidemovietitle)</visible>
+					</item>
+					<item id="94164">
+						<label>135</label>
+						<onclick>ActivateWindow(VideoLibrary,MovieGenres,return)</onclick>
+						<visible>!Skin.HasSetting(hidemoviegenre)</visible>
+					</item>
+					<item id="94775">
+						<label>41254</label>
+						<onclick>ActivateWindow(Videos,Root)</onclick>
+					</item>
+					<item id="94162">
+						<label>1219</label>
+						<onclick>ActivateWindow(Videos,Files,return)</onclick>
+						<visible>!Skin.HasSetting(hidemovievideofiles)</visible>
+					</item>
+					<!-- Custom Favourites Movies Butchabay END 1.2.4 -->
+					<item id="94185">
+						<label>41181</label>
+						<onclick>RunScript(script.randommovie, filtergenre=True)</onclick>
+						<visible>System.HasAddon(script.randommovie)</visible>
+					</item>
+					<item id="94186">
+						<label>41182</label>
+						<onclick>RunScript(script.randommovie)</onclick>
+						<visible>System.HasAddon(script.randommovie)</visible>
+					</item>
+					<item id="94187">
+						<label>41183</label>
+						<onclick>ActivateWindow(videos,videodb://1/7/,return)</onclick>
+						<visible>!Skin.HasSetting(hidemovievideofiles)</visible>
+					</item>
+					<!-- -------------------------------------------- -->
+					<item id="94165">
+						<label>652</label>
+						<onclick>ActivateWindow(VideoLibrary,MovieYears,return)</onclick>
+						<visible>!Skin.HasSetting(hidemovieyears)</visible>
+					</item>
+					<item id="94167">
+						<label>344</label>
+						<onclick>ActivateWindow(VideoLibrary,MovieActors,return)</onclick>
+						<visible>!Skin.HasSetting(hidemovieactor)</visible>
+					</item>
+					<item id="94168">
+						<label>20348</label>
+						<onclick>ActivateWindow(VideoLibrary,MovieDirectors,return)</onclick>
+						<visible>!Skin.HasSetting(hidemoviedirector)</visible>
+					</item>
+					<item id="94170">
+						<label>31007</label>
+						<onclick>SetProperty(DontRunTVShowScripts,True,Home)</onclick>
+                        <onclick>ActivateWindow(Videos,Addons,return)</onclick>
+						<visible>!Skin.HasSetting(hidemovievideoaddon)</visible>
+					</item>
+					<item id="94171">
+						<label>$INFO[Skin.String(movieplaylistButton1_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(movieplaylistButton1_Path)]</onclick>
+						<visible>Skin.HasSetting(movieplaylistButton1) + !IsEmpty(Skin.String(movieplaylistButton1_label))</visible>
+					</item>
+					<item id="94172">
+						<label>$INFO[Skin.String(movieplaylistButton2_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(movieplaylistButton2_Path)]</onclick>
+						<visible>Skin.HasSetting(movieplaylistButton2) + !IsEmpty(Skin.String(movieplaylistButton2_label))</visible>
+					</item>
+					<item id="94173">
+						<label>$INFO[Skin.String(movieplaylistButton3_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(movieplaylistButton3_Path)]</onclick>
+						<visible>Skin.HasSetting(movieplaylistButton3) + !IsEmpty(Skin.String(movieplaylistButton3_label))</visible>
+					</item>
+					<item id="94174">
+						<label>$INFO[Skin.String(movieplaylistButton4_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(movieplaylistButton4_Path)]</onclick>
+						<visible>Skin.HasSetting(movieplaylistButton4) + !IsEmpty(Skin.String(movieplaylistButton4_label))</visible>
+					</item>
+					<item id="94175">
+						<label>$INFO[Skin.String(movieplaylistButton5_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(movieplaylistButton5_Path)]</onclick>
+						<visible>Skin.HasSetting(movieplaylistButton5) + !IsEmpty(Skin.String(movieplaylistButton5_label))</visible>
+					</item>
+					<item id="94176">
+						<label>$INFO[Skin.String(movieplaylistButton6_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(movieplaylistButton6_Path)]</onclick>
+						<visible>Skin.HasSetting(movieplaylistButton6) + !IsEmpty(Skin.String(movieplaylistButton6_label))</visible>
+					</item>
+					<item id="94177"> 
+						<label>$INFO[Skin.String(MovieScriptButton1_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(MovieScriptButton1_Path)]</onclick>
+						<visible>Skin.HasSetting(MovieScriptButton1) + !IsEmpty(Skin.String(MovieScriptButton1_label))</visible>
+					</item>
+					<item id="94178"> 
+						<label>$INFO[Skin.String(MovieScriptButton2_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(MovieScriptButton2_Path)]</onclick>
+						<visible>Skin.HasSetting(MovieScriptButton2) + !IsEmpty(Skin.String(MovieScriptButton2_label))</visible>
+					</item>
+					<item id="94179"> 
+						<label>$INFO[Skin.String(MovieScriptButton3_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(MovieScriptButton3_Path)]</onclick>
+						<visible>Skin.HasSetting(MovieScriptButton3) + !IsEmpty(Skin.String(MovieScriptButton3_label))</visible>
+					</item>
+					<!-- TO HERE Butchabay 1.2.4 -->
+					<!-- Custom Favourites Movies Butchabay 1.2.4 -->
+					<item id="94180">
+						<label>$INFO[Skin.String(MovieButton20_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom20_Path)]</onclick>
+						<visible>Skin.HasSetting(MovieButton20) + !IsEmpty(Skin.String(MovieButton20_label))</visible>
+					</item>
+					<item id="94181">
+						<label>$INFO[Skin.String(MovieButton21_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom21_Path)]</onclick>
+						<visible>Skin.HasSetting(MovieButton21) + !IsEmpty(Skin.String(MovieButton21_label))</visible>
+					</item>
+					<item id="94182">
+						<label>$INFO[Skin.String(MovieButton22_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom22_Path)]</onclick>
+						<visible>Skin.HasSetting(MovieButton22) + !IsEmpty(Skin.String(MovieButton22_label))</visible>
+					</item>
+					<item id="94183">
+						<label>$INFO[Skin.String(MovieButton23_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom23_Path)]</onclick>
+						<visible>Skin.HasSetting(MovieButton23) + !IsEmpty(Skin.String(MovieButton23_label))</visible>
+					</item>
+					<item id="94184">
+						<label>$INFO[Skin.String(MovieButton24_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom24_Path)]</onclick>
+						<visible>Skin.HasSetting(MovieButton24) + !IsEmpty(Skin.String(MovieButton24_label))</visible>
+					</item>
+				</content>
+			</control>
+
+		<!-- MOVIES Custom Playlist 2 -->
+			<control type="fixedlist" id="9010">
+			<hitrect x="50" y="50" w="330" h="620" />
+			<posx>-230</posx>
+			<posy>550</posy>
+			<width>1000</width>
+			<height>350</height>
+			<onleft>9000</onleft>
+			<onright>8007</onright>
+			<onup>9010</onup>
+			<ondown>9010</ondown>
+			<scrolltime tween="quadratic" easing="out">300</scrolltime>
+			<focusposition>1</focusposition>
+			<movement>1</movement>
+			<visible>Container(9000).HasFocus(4)</visible>
+            <itemlayout height="50" width="1000">
+				<control type="label">
+					<posx>40</posx>
+					<posy>21</posy>
+					<width>900</width>
+					<height>45</height>
+					<font>cirrus_40</font>
+					<textcolor>grey</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>	
+				</itemlayout>
+				<focusedlayout height="45" width="1000">
+				<control type="image">
+				<posx>-400</posx>
+				<posy>21</posy>
+				<width>900</width>
+				<height>45</height>
+				<texture flipx="true">recentlyaddeddiffuse.png</texture>
+					</control>
+					<control type="label">
+					<posx>40</posx>
+					<posy>21</posy>
+					<width>900</width>
+					<height>45</height>
+					<font>cirrus_40</font>
+					<textcolor>black</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+			</focusedlayout>
+			<content>
+				<!-- Attention changed ID From Here Butchabay 1.2.4 -->
+				
+				<!-- SearchSUBMENU Butchabay -->
+					<item id="951620">
+						<label>31331</label>
+						<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
+						<onclick>SendClick(8)</onclick>
+					</item>
+					<item id="95169">
+						<label>653</label>
+						<onclick>UpdateLibrary(Video)</onclick>
+						<visible>!Skin.HasSetting(hidemovieupdate)</visible>
+					</item>
+					<item id="95166">
+						<label>31328</label>
+						<onclick>ActivateWindow(VideoLibrary,RecentlyAddedMovies,return)</onclick>
+						<visible>!Skin.HasSetting(hidemovierecently)</visible>
+					</item>
+					<item id="95163">
+						<label>369</label>
+						<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
+						<visible>!Skin.HasSetting(hidemovietitle)</visible>
+					</item>
+					<item id="95164">
+						<label>135</label>
+						<onclick>ActivateWindow(VideoLibrary,MovieGenres,return)</onclick>
+						<visible>!Skin.HasSetting(hidemoviegenre)</visible>
+					</item>
+					<item id="95775">
+						<label>41254</label>
+						<onclick>ActivateWindow(Videos,Root)</onclick>
+					</item>
+					<item id="95162">
+						<label>1219</label>
+						<onclick>ActivateWindow(Videos,Files,return)</onclick>
+						<visible>!Skin.HasSetting(hidemovievideofiles)</visible>
+					</item>
+					<!-- Custom Favourites Movies Butchabay END 1.2.4 -->
+					<item id="95185">
+						<label>41181</label>
+						<onclick>RunScript(script.randommovie, filtergenre=True)</onclick>
+						<visible>System.HasAddon(script.randommovie)</visible>
+					</item>
+					<item id="95186">
+						<label>41182</label>
+						<onclick>RunScript(script.randommovie)</onclick>
+						<visible>System.HasAddon(script.randommovie)</visible>
+					</item>
+					<item id="95187">
+						<label>41183</label>
+						<onclick>ActivateWindow(videos,videodb://1/7/,return)</onclick>
+						<visible>!Skin.HasSetting(hidemovievideofiles)</visible>
+					</item>
+					<!-- -------------------------------------------- -->
+					<item id="95165">
+						<label>652</label>
+						<onclick>ActivateWindow(VideoLibrary,MovieYears,return)</onclick>
+						<visible>!Skin.HasSetting(hidemovieyears)</visible>
+					</item>
+					<item id="95167">
+						<label>344</label>
+						<onclick>ActivateWindow(VideoLibrary,MovieActors,return)</onclick>
+						<visible>!Skin.HasSetting(hidemovieactor)</visible>
+					</item>
+					<item id="95168">
+						<label>20348</label>
+						<onclick>ActivateWindow(VideoLibrary,MovieDirectors,return)</onclick>
+						<visible>!Skin.HasSetting(hidemoviedirector)</visible>
+					</item>
+					<item id="95170">
+						<label>31007</label>
+						<onclick>SetProperty(DontRunTVShowScripts,True,Home)</onclick>
+                        <onclick>ActivateWindow(Videos,Addons,return)</onclick>
+						<visible>!Skin.HasSetting(hidemovievideoaddon)</visible>
+					</item>
+					<item id="95171">
+						<label>$INFO[Skin.String(movieplaylistButton1_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(movieplaylistButton1_Path)]</onclick>
+						<visible>Skin.HasSetting(movieplaylistButton1) + !IsEmpty(Skin.String(movieplaylistButton1_label))</visible>
+					</item>
+					<item id="95172">
+						<label>$INFO[Skin.String(movieplaylistButton2_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(movieplaylistButton2_Path)]</onclick>
+						<visible>Skin.HasSetting(movieplaylistButton2) + !IsEmpty(Skin.String(movieplaylistButton2_label))</visible>
+					</item>
+					<item id="95173">
+						<label>$INFO[Skin.String(movieplaylistButton3_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(movieplaylistButton3_Path)]</onclick>
+						<visible>Skin.HasSetting(movieplaylistButton3) + !IsEmpty(Skin.String(movieplaylistButton3_label))</visible>
+					</item>
+					<item id="95174">
+						<label>$INFO[Skin.String(movieplaylistButton4_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(movieplaylistButton4_Path)]</onclick>
+						<visible>Skin.HasSetting(movieplaylistButton4) + !IsEmpty(Skin.String(movieplaylistButton4_label))</visible>
+					</item>
+					<item id="95175">
+						<label>$INFO[Skin.String(movieplaylistButton5_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(movieplaylistButton5_Path)]</onclick>
+						<visible>Skin.HasSetting(movieplaylistButton5) + !IsEmpty(Skin.String(movieplaylistButton5_label))</visible>
+					</item>
+					<item id="95176">
+						<label>$INFO[Skin.String(movieplaylistButton6_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(movieplaylistButton6_Path)]</onclick>
+						<visible>Skin.HasSetting(movieplaylistButton6) + !IsEmpty(Skin.String(movieplaylistButton6_label))</visible>
+					</item>
+					<item id="95177"> 
+						<label>$INFO[Skin.String(MovieScriptButton1_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(MovieScriptButton1_Path)]</onclick>
+						<visible>Skin.HasSetting(MovieScriptButton1) + !IsEmpty(Skin.String(MovieScriptButton1_label))</visible>
+					</item>
+					<item id="95178"> 
+						<label>$INFO[Skin.String(MovieScriptButton2_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(MovieScriptButton2_Path)]</onclick>
+						<visible>Skin.HasSetting(MovieScriptButton2) + !IsEmpty(Skin.String(MovieScriptButton2_label))</visible>
+					</item>
+					<item id="95179"> 
+						<label>$INFO[Skin.String(MovieScriptButton3_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(MovieScriptButton3_Path)]</onclick>
+						<visible>Skin.HasSetting(MovieScriptButton3) + !IsEmpty(Skin.String(MovieScriptButton3_label))</visible>
+					</item>
+					<!-- TO HERE Butchabay 1.2.4 -->
+					<!-- Custom Favourites Movies Butchabay 1.2.4 -->
+					<item id="95180">
+						<label>$INFO[Skin.String(MovieButton20_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom20_Path)]</onclick>
+						<visible>Skin.HasSetting(MovieButton20) + !IsEmpty(Skin.String(MovieButton20_label))</visible>
+					</item>
+					<item id="95181">
+						<label>$INFO[Skin.String(MovieButton21_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom21_Path)]</onclick>
+						<visible>Skin.HasSetting(MovieButton21) + !IsEmpty(Skin.String(MovieButton21_label))</visible>
+					</item>
+					<item id="95182">
+						<label>$INFO[Skin.String(MovieButton22_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom22_Path)]</onclick>
+						<visible>Skin.HasSetting(MovieButton22) + !IsEmpty(Skin.String(MovieButton22_label))</visible>
+					</item>
+					<item id="95183">
+						<label>$INFO[Skin.String(MovieButton23_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom23_Path)]</onclick>
+						<visible>Skin.HasSetting(MovieButton23) + !IsEmpty(Skin.String(MovieButton23_label))</visible>
+					</item>
+					<item id="95184">
+						<label>$INFO[Skin.String(MovieButton24_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom24_Path)]</onclick>
+						<visible>Skin.HasSetting(MovieButton24) + !IsEmpty(Skin.String(MovieButton24_label))</visible>
+					</item>
+				</content>
+			</control>
+		
+		<!-- MOVIES Custom Playlist 3 -->
+			<control type="fixedlist" id="9010">
+			<hitrect x="50" y="50" w="330" h="620" />
+			<posx>-230</posx>
+			<posy>550</posy>
+			<width>1000</width>
+			<height>350</height>
+			<onleft>9000</onleft>
+			<onright>8008</onright>
+			<onup>9010</onup>
+			<ondown>9010</ondown>
+			<scrolltime tween="quadratic" easing="out">300</scrolltime>
+			<focusposition>1</focusposition>
+			<movement>1</movement>
+			<visible>Container(9000).HasFocus(5)</visible>
+            <itemlayout height="50" width="1000">
+				<control type="label">
+					<posx>40</posx>
+					<posy>21</posy>
+					<width>900</width>
+					<height>45</height>
+					<font>cirrus_40</font>
+					<textcolor>grey</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>	
+				</itemlayout>
+				<focusedlayout height="45" width="1000">
+				<control type="image">
+				<posx>-400</posx>
+				<posy>21</posy>
+				<width>900</width>
+				<height>45</height>
+				<texture flipx="true">recentlyaddeddiffuse.png</texture>
+					</control>
+					<control type="label">
+					<posx>40</posx>
+					<posy>21</posy>
+					<width>900</width>
+					<height>45</height>
+					<font>cirrus_40</font>
+					<textcolor>black</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+			</focusedlayout>
+			<content>
+				<!-- Attention changed ID From Here Butchabay 1.2.4 -->
+				
+				<!-- SearchSUBMENU Butchabay -->
+					<item id="961620">
+						<label>31331</label>
+						<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
+						<onclick>SendClick(8)</onclick>
+					</item>
+					<item id="96169">
+						<label>653</label>
+						<onclick>UpdateLibrary(Video)</onclick>
+						<visible>!Skin.HasSetting(hidemovieupdate)</visible>
+					</item>
+					<item id="96166">
+						<label>31328</label>
+						<onclick>ActivateWindow(VideoLibrary,RecentlyAddedMovies,return)</onclick>
+						<visible>!Skin.HasSetting(hidemovierecently)</visible>
+					</item>
+					<item id="96163">
+						<label>369</label>
+						<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
+						<visible>!Skin.HasSetting(hidemovietitle)</visible>
+					</item>
+					<item id="96164">
+						<label>135</label>
+						<onclick>ActivateWindow(VideoLibrary,MovieGenres,return)</onclick>
+						<visible>!Skin.HasSetting(hidemoviegenre)</visible>
+					</item>
+					<item id="96775">
+						<label>41254</label>
+						<onclick>ActivateWindow(Videos,Root)</onclick>
+					</item>
+					<item id="96162">
+						<label>1219</label>
+						<onclick>ActivateWindow(Videos,Files,return)</onclick>
+						<visible>!Skin.HasSetting(hidemovievideofiles)</visible>
+					</item>
+					<!-- Custom Favourites Movies Butchabay END 1.2.4 -->
+					<item id="96185">
+						<label>41181</label>
+						<onclick>RunScript(script.randommovie, filtergenre=True)</onclick>
+						<visible>System.HasAddon(script.randommovie)</visible>
+					</item>
+					<item id="96186">
+						<label>41182</label>
+						<onclick>RunScript(script.randommovie)</onclick>
+						<visible>System.HasAddon(script.randommovie)</visible>
+					</item>
+					<item id="96187">
+						<label>41183</label>
+						<onclick>ActivateWindow(videos,videodb://1/7/,return)</onclick>
+						<visible>!Skin.HasSetting(hidemovievideofiles)</visible>
+					</item>
+					<!-- -------------------------------------------- -->
+					<item id="96165">
+						<label>652</label>
+						<onclick>ActivateWindow(VideoLibrary,MovieYears,return)</onclick>
+						<visible>!Skin.HasSetting(hidemovieyears)</visible>
+					</item>
+					<item id="96167">
+						<label>344</label>
+						<onclick>ActivateWindow(VideoLibrary,MovieActors,return)</onclick>
+						<visible>!Skin.HasSetting(hidemovieactor)</visible>
+					</item>
+					<item id="96168">
+						<label>20348</label>
+						<onclick>ActivateWindow(VideoLibrary,MovieDirectors,return)</onclick>
+						<visible>!Skin.HasSetting(hidemoviedirector)</visible>
+					</item>
+					<item id="96170">
+						<label>31007</label>
+						<onclick>SetProperty(DontRunTVShowScripts,True,Home)</onclick>
+                        <onclick>ActivateWindow(Videos,Addons,return)</onclick>
+						<visible>!Skin.HasSetting(hidemovievideoaddon)</visible>
+					</item>
+					<item id="96171">
+						<label>$INFO[Skin.String(movieplaylistButton1_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(movieplaylistButton1_Path)]</onclick>
+						<visible>Skin.HasSetting(movieplaylistButton1) + !IsEmpty(Skin.String(movieplaylistButton1_label))</visible>
+					</item>
+					<item id="96172">
+						<label>$INFO[Skin.String(movieplaylistButton2_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(movieplaylistButton2_Path)]</onclick>
+						<visible>Skin.HasSetting(movieplaylistButton2) + !IsEmpty(Skin.String(movieplaylistButton2_label))</visible>
+					</item>
+					<item id="96173">
+						<label>$INFO[Skin.String(movieplaylistButton3_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(movieplaylistButton3_Path)]</onclick>
+						<visible>Skin.HasSetting(movieplaylistButton3) + !IsEmpty(Skin.String(movieplaylistButton3_label))</visible>
+					</item>
+					<item id="96174">
+						<label>$INFO[Skin.String(movieplaylistButton4_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(movieplaylistButton4_Path)]</onclick>
+						<visible>Skin.HasSetting(movieplaylistButton4) + !IsEmpty(Skin.String(movieplaylistButton4_label))</visible>
+					</item>
+					<item id="96175">
+						<label>$INFO[Skin.String(movieplaylistButton5_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(movieplaylistButton5_Path)]</onclick>
+						<visible>Skin.HasSetting(movieplaylistButton5) + !IsEmpty(Skin.String(movieplaylistButton5_label))</visible>
+					</item>
+					<item id="96176">
+						<label>$INFO[Skin.String(movieplaylistButton6_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(movieplaylistButton6_Path)]</onclick>
+						<visible>Skin.HasSetting(movieplaylistButton6) + !IsEmpty(Skin.String(movieplaylistButton6_label))</visible>
+					</item>
+					<item id="96177"> 
+						<label>$INFO[Skin.String(MovieScriptButton1_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(MovieScriptButton1_Path)]</onclick>
+						<visible>Skin.HasSetting(MovieScriptButton1) + !IsEmpty(Skin.String(MovieScriptButton1_label))</visible>
+					</item>
+					<item id="96178"> 
+						<label>$INFO[Skin.String(MovieScriptButton2_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(MovieScriptButton2_Path)]</onclick>
+						<visible>Skin.HasSetting(MovieScriptButton2) + !IsEmpty(Skin.String(MovieScriptButton2_label))</visible>
+					</item>
+					<item id="96179"> 
+						<label>$INFO[Skin.String(MovieScriptButton3_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(MovieScriptButton3_Path)]</onclick>
+						<visible>Skin.HasSetting(MovieScriptButton3) + !IsEmpty(Skin.String(MovieScriptButton3_label))</visible>
+					</item>
+					<!-- TO HERE Butchabay 1.2.4 -->
+					<!-- Custom Favourites Movies Butchabay 1.2.4 -->
+					<item id="96180">
+						<label>$INFO[Skin.String(MovieButton20_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom20_Path)]</onclick>
+						<visible>Skin.HasSetting(MovieButton20) + !IsEmpty(Skin.String(MovieButton20_label))</visible>
+					</item>
+					<item id="96181">
+						<label>$INFO[Skin.String(MovieButton21_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom21_Path)]</onclick>
+						<visible>Skin.HasSetting(MovieButton21) + !IsEmpty(Skin.String(MovieButton21_label))</visible>
+					</item>
+					<item id="96182">
+						<label>$INFO[Skin.String(MovieButton22_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom22_Path)]</onclick>
+						<visible>Skin.HasSetting(MovieButton22) + !IsEmpty(Skin.String(MovieButton22_label))</visible>
+					</item>
+					<item id="96183">
+						<label>$INFO[Skin.String(MovieButton23_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom23_Path)]</onclick>
+						<visible>Skin.HasSetting(MovieButton23) + !IsEmpty(Skin.String(MovieButton23_label))</visible>
+					</item>
+					<item id="96184">
+						<label>$INFO[Skin.String(MovieButton24_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom24_Path)]</onclick>
+						<visible>Skin.HasSetting(MovieButton24) + !IsEmpty(Skin.String(MovieButton24_label))</visible>
+					</item>
+				</content>
+			</control>
+		
+		<!-- TV-Serien Custom Playlist 4 -->		
+		<control type="fixedlist" id="9010">
+			<hitrect x="50" y="50" w="330" h="620" />
+			<posx>-230</posx>
+			<posy>550</posy>
+			<width>1000</width>
+			<height>350</height>
+			<onleft>9000</onleft>
+			<onright>8009</onright>
+			<onup>9010</onup>
+			<ondown>9010</ondown>
+			<scrolltime tween="quadratic" easing="out">300</scrolltime>
+			<focusposition>1</focusposition>
+			<movement>1</movement>
+			<visible>Container(9000).HasFocus(9)</visible>
+            <itemlayout height="50" width="1000">
+				<control type="label">
+					<posx>40</posx>
+					<posy>21</posy>
+					<width>900</width>
+					<height>45</height>
+					<font>cirrus_40</font>
+					<textcolor>grey</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>	
+				</itemlayout>
+				<focusedlayout height="45" width="1000">
+				<control type="image">
+				<posx>-400</posx>
+				<posy>21</posy>
+				<width>900</width>
+				<height>45</height>
+				<texture flipx="true">recentlyaddeddiffuse.png</texture>
+					</control>
+					<control type="label">
+					<posx>40</posx>
+					<posy>21</posy>
+					<width>900</width>
+					<height>45</height>
+					<font>cirrus_40</font>
+					<textcolor>black</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+			</focusedlayout>
+			<content>
+			
+				<!-- ATTENTION CHANGED ID BUTCHABAY FROM HERE 1.2.4 -->
+				 <item id="931900">
+						<label>31331</label>
+						<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
+						<onclick>SendClick(8)</onclick>
+					</item>
+					<item id="93190">
+						<label>369</label>
+						<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
+						<visible>!Skin.HasSetting(hidetvtitle)</visible>
+					</item>
+					<item id="93191">
+						<label>135</label>
+						<onclick>ActivateWindow(VideoLibrary,TVShowGenres,return)</onclick>
+						<visible>!Skin.HasSetting(hidetvgenre)</visible>
+					</item>
+					<item id="93192">
+						<label>652</label>
+						<onclick>ActivateWindow(VideoLibrary,TVShowYears,return)</onclick>
+						<visible>!Skin.HasSetting(hidetvyears)</visible>
+					</item>
+					<item id="93193">
+						<label>344</label>
+						<onclick>ActivateWindow(VideoLibrary,TVShowActors,return)</onclick>
+						<visible>!Skin.HasSetting(hidetvactor)</visible>
+					</item>
+					<item id="93194">
+						<label>31328</label>
+						<onclick>ActivateWindow(VideoLibrary,RecentlyAddedEpisodes,return)</onclick>
+						<visible>!Skin.HasSetting(hidetvrecently)</visible>	
+					</item>
+					<item id="93195">
+						<label>653</label>
+						<onclick>UpdateLibrary(Video)</onclick>
+						<visible>!Skin.HasSetting(hidetvupdate)</visible>
+					</item>
+					<item id="93196">
+						<label>$INFO[Skin.String(tvplaylistButton1_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(tvplaylistButton1_Path)]</onclick>
+						<visible>Skin.HasSetting(tvplaylistButton1) + !IsEmpty(Skin.String(tvplaylistButton1_label))</visible>
+					</item>
+					<item id="93197">
+						<label>$INFO[Skin.String(tvplaylistButton2_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(tvplaylistButton2_Path)]</onclick>
+						<visible>Skin.HasSetting(tvplaylistButton2) + !IsEmpty(Skin.String(tvplaylistButton2_label))</visible>
+					</item>
+					<item id="93198">
+						<label>$INFO[Skin.String(tvplaylistButton3_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(tvplaylistButton3_Path)]</onclick>
+						<visible>Skin.HasSetting(tvplaylistButton3) + !IsEmpty(Skin.String(tvplaylistButton3_label))</visible>
+					</item>
+					<item id="93199">
+						<label>$INFO[Skin.String(tvplaylistButton4_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(tvplaylistButton4_Path)]</onclick>
+						<visible>Skin.HasSetting(tvplaylistButton4) + !IsEmpty(Skin.String(tvplaylistButton4_label))</visible>
+					</item>
+					<item id="93200">
+						<label>$INFO[Skin.String(tvplaylistButton5_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(tvplaylistButton5_Path)]</onclick>
+						<visible>Skin.HasSetting(tvplaylistButton5) + !IsEmpty(Skin.String(tvplaylistButton5_label))</visible>
+					</item>
+					<item id="93201">
+						<label>$INFO[Skin.String(tvplaylistButton6_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(tvplaylistButton6_Path)]</onclick>
+						<visible>Skin.HasSetting(tvplaylistButton6) + !IsEmpty(Skin.String(tvplaylistButton6_label))</visible>
+					</item>
+					<item id="93202">
+						<label>$INFO[Skin.String(HomeTVButton1_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(HomeTVButton1_Path)]</onclick>
+						<visible>Skin.HasSetting(HomeTVButton1) + !IsEmpty(Skin.String(HomeTVButton1_label))</visible>
+					</item>
+					<item id="93203">
+						<label>$INFO[Skin.String(HomeTVButton2_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(HomeTVButton2_Path)]</onclick>
+						<visible>Skin.HasSetting(HomeTVButton2) + !IsEmpty(Skin.String(HomeTVButton2_label))</visible>
+					</item>
+					<item id="93204">
+						<label>$INFO[Skin.String(HomeTVButton3_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(HomeTVButton3_Path)]</onclick>
+						<visible>Skin.HasSetting(HomeTVButton3) + !IsEmpty(Skin.String(HomeTVButton3_label))</visible>
+					</item>
+					<!-- TO HERE BUTCHABAY 1.2.4 -->
+					<!-- Custom Favourites TV Shows Butchabay 1.2.4 -->
+					<item id="93205">
+					    <label>$INFO[Skin.String(HomeTVbutton25_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom25_Path)]</onclick>
+						<visible>Skin.HasSetting(HomeTVbutton25) + !IsEmpty(Skin.String(HomeTVbutton25_label))</visible>
+					</item>
+					<item id="93206">
+					    <label>$INFO[Skin.String(HomeTVbutton26_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom26_Path)]</onclick>
+						<visible>Skin.HasSetting(HomeTVbutton26) + !IsEmpty(Skin.String(HomeTVbutton26_label))</visible>
+					</item>
+					<item id="93207">
+					    <label>$INFO[Skin.String(HomeTVbutton27_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom27_Path)]</onclick>
+						<visible>Skin.HasSetting(HomeTVbutton27) + !IsEmpty(Skin.String(HomeTVbutton27_label))</visible>
+					</item>
+					<item id="93208">
+					    <label>$INFO[Skin.String(HomeTVbutton28_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom28_Path)]</onclick>
+						<visible>Skin.HasSetting(HomeTVbutton28) + !IsEmpty(Skin.String(HomeTVbutton28_label))</visible>
+					</item>
+					<item id="93209">
+					    <label>$INFO[Skin.String(HomeTVbutton29_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom29_Path)]</onclick>
+						<visible>Skin.HasSetting(HomeTVbutton29) + !IsEmpty(Skin.String(HomeTVbutton29_label))</visible>
+					</item>
+					<!-- Custom Favourites TV Shows Butchabay END 1.2.4 -->
+					<item id="93210">
+					    <label>31187</label>
+						<onclick>RunScript(script.tv.show.next.aired)</onclick>
+						<visible>Library.HasContent(TVShows) + System.HasAddon(script.tv.show.next.aired)</visible>
+					</item>
+				</content>
+				<!-- SearchSUBMENU Butchabay -->
+				</control>
+		
+		<!-- TV-Serien Custom Playlist 5 -->
+		<control type="fixedlist" id="9010">
+			<hitrect x="50" y="50" w="330" h="620" />
+			<posx>-230</posx>
+			<posy>550</posy>
+			<width>1000</width>
+			<height>350</height>
+			<onleft>9000</onleft>
+			<onright>8010</onright>
+			<onup>9010</onup>
+			<ondown>9010</ondown>
+			<scrolltime tween="quadratic" easing="out">300</scrolltime>
+			<focusposition>1</focusposition>
+			<movement>1</movement>
+			<visible>Container(9000).HasFocus(10)</visible>
+            <itemlayout height="50" width="1000">
+				<control type="label">
+					<posx>40</posx>
+					<posy>21</posy>
+					<width>900</width>
+					<height>45</height>
+					<font>cirrus_40</font>
+					<textcolor>grey</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>	
+				</itemlayout>
+				<focusedlayout height="45" width="1000">
+				<control type="image">
+				<posx>-400</posx>
+				<posy>21</posy>
+				<width>900</width>
+				<height>45</height>
+				<texture flipx="true">recentlyaddeddiffuse.png</texture>
+					</control>
+					<control type="label">
+					<posx>40</posx>
+					<posy>21</posy>
+					<width>900</width>
+					<height>45</height>
+					<font>cirrus_40</font>
+					<textcolor>black</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+			</focusedlayout>
+			<content>
+			
+				<!-- ATTENTION CHANGED ID BUTCHABAY FROM HERE 1.2.4 -->
+				 <item id="921900">
+						<label>31331</label>
+						<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
+						<onclick>SendClick(8)</onclick>
+					</item>
+					<item id="92190">
+						<label>369</label>
+						<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
+						<visible>!Skin.HasSetting(hidetvtitle)</visible>
+					</item>
+					<item id="92191">
+						<label>135</label>
+						<onclick>ActivateWindow(VideoLibrary,TVShowGenres,return)</onclick>
+						<visible>!Skin.HasSetting(hidetvgenre)</visible>
+					</item>
+					<item id="92192">
+						<label>652</label>
+						<onclick>ActivateWindow(VideoLibrary,TVShowYears,return)</onclick>
+						<visible>!Skin.HasSetting(hidetvyears)</visible>
+					</item>
+					<item id="92193">
+						<label>344</label>
+						<onclick>ActivateWindow(VideoLibrary,TVShowActors,return)</onclick>
+						<visible>!Skin.HasSetting(hidetvactor)</visible>
+					</item>
+					<item id="92194">
+						<label>31328</label>
+						<onclick>ActivateWindow(VideoLibrary,RecentlyAddedEpisodes,return)</onclick>
+						<visible>!Skin.HasSetting(hidetvrecently)</visible>	
+					</item>
+					<item id="92195">
+						<label>653</label>
+						<onclick>UpdateLibrary(Video)</onclick>
+						<visible>!Skin.HasSetting(hidetvupdate)</visible>
+					</item>
+					<item id="92196">
+						<label>$INFO[Skin.String(tvplaylistButton1_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(tvplaylistButton1_Path)]</onclick>
+						<visible>Skin.HasSetting(tvplaylistButton1) + !IsEmpty(Skin.String(tvplaylistButton1_label))</visible>
+					</item>
+					<item id="92197">
+						<label>$INFO[Skin.String(tvplaylistButton2_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(tvplaylistButton2_Path)]</onclick>
+						<visible>Skin.HasSetting(tvplaylistButton2) + !IsEmpty(Skin.String(tvplaylistButton2_label))</visible>
+					</item>
+					<item id="92198">
+						<label>$INFO[Skin.String(tvplaylistButton3_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(tvplaylistButton3_Path)]</onclick>
+						<visible>Skin.HasSetting(tvplaylistButton3) + !IsEmpty(Skin.String(tvplaylistButton3_label))</visible>
+					</item>
+					<item id="92199">
+						<label>$INFO[Skin.String(tvplaylistButton4_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(tvplaylistButton4_Path)]</onclick>
+						<visible>Skin.HasSetting(tvplaylistButton4) + !IsEmpty(Skin.String(tvplaylistButton4_label))</visible>
+					</item>
+					<item id="92200">
+						<label>$INFO[Skin.String(tvplaylistButton5_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(tvplaylistButton5_Path)]</onclick>
+						<visible>Skin.HasSetting(tvplaylistButton5) + !IsEmpty(Skin.String(tvplaylistButton5_label))</visible>
+					</item>
+					<item id="92201">
+						<label>$INFO[Skin.String(tvplaylistButton6_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(tvplaylistButton6_Path)]</onclick>
+						<visible>Skin.HasSetting(tvplaylistButton6) + !IsEmpty(Skin.String(tvplaylistButton6_label))</visible>
+					</item>
+					<item id="92202">
+						<label>$INFO[Skin.String(HomeTVButton1_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(HomeTVButton1_Path)]</onclick>
+						<visible>Skin.HasSetting(HomeTVButton1) + !IsEmpty(Skin.String(HomeTVButton1_label))</visible>
+					</item>
+					<item id="92203">
+						<label>$INFO[Skin.String(HomeTVButton2_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(HomeTVButton2_Path)]</onclick>
+						<visible>Skin.HasSetting(HomeTVButton2) + !IsEmpty(Skin.String(HomeTVButton2_label))</visible>
+					</item>
+					<item id="92204">
+						<label>$INFO[Skin.String(HomeTVButton3_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(HomeTVButton3_Path)]</onclick>
+						<visible>Skin.HasSetting(HomeTVButton3) + !IsEmpty(Skin.String(HomeTVButton3_label))</visible>
+					</item>
+					<!-- TO HERE BUTCHABAY 1.2.4 -->
+					<!-- Custom Favourites TV Shows Butchabay 1.2.4 -->
+					<item id="92205">
+					    <label>$INFO[Skin.String(HomeTVbutton25_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom25_Path)]</onclick>
+						<visible>Skin.HasSetting(HomeTVbutton25) + !IsEmpty(Skin.String(HomeTVbutton25_label))</visible>
+					</item>
+					<item id="92206">
+					    <label>$INFO[Skin.String(HomeTVbutton26_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom26_Path)]</onclick>
+						<visible>Skin.HasSetting(HomeTVbutton26) + !IsEmpty(Skin.String(HomeTVbutton26_label))</visible>
+					</item>
+					<item id="92207">
+					    <label>$INFO[Skin.String(HomeTVbutton27_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom27_Path)]</onclick>
+						<visible>Skin.HasSetting(HomeTVbutton27) + !IsEmpty(Skin.String(HomeTVbutton27_label))</visible>
+					</item>
+					<item id="92208">
+					    <label>$INFO[Skin.String(HomeTVbutton28_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom28_Path)]</onclick>
+						<visible>Skin.HasSetting(HomeTVbutton28) + !IsEmpty(Skin.String(HomeTVbutton28_label))</visible>
+					</item>
+					<item id="92209">
+					    <label>$INFO[Skin.String(HomeTVbutton29_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom29_Path)]</onclick>
+						<visible>Skin.HasSetting(HomeTVbutton29) + !IsEmpty(Skin.String(HomeTVbutton29_label))</visible>
+					</item>
+					<!-- Custom Favourites TV Shows Butchabay END 1.2.4 -->
+					<item id="92210">
+					    <label>31187</label>
+						<onclick>RunScript(script.tv.show.next.aired)</onclick>
+						<visible>Library.HasContent(TVShows) + System.HasAddon(script.tv.show.next.aired)</visible>
+					</item>
+				</content>
+				<!-- SearchSUBMENU Butchabay -->
+				</control>
+		
+		<!-- TV-Serien Custom Playlist 6 -->
+		<control type="fixedlist" id="9010">
+			<hitrect x="50" y="50" w="330" h="620" />
+			<posx>-230</posx>
+			<posy>550</posy>
+			<width>1000</width>
+			<height>350</height>
+			<onleft>9000</onleft>
+			<onright>8011</onright>
+			<onup>9010</onup>
+			<ondown>9010</ondown>
+			<scrolltime tween="quadratic" easing="out">300</scrolltime>
+			<focusposition>1</focusposition>
+			<movement>1</movement>
+			<visible>Container(9000).HasFocus(11)</visible>
+            <itemlayout height="50" width="1000">
+				<control type="label">
+					<posx>40</posx>
+					<posy>21</posy>
+					<width>900</width>
+					<height>45</height>
+					<font>cirrus_40</font>
+					<textcolor>grey</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>	
+				</itemlayout>
+				<focusedlayout height="45" width="1000">
+				<control type="image">
+				<posx>-400</posx>
+				<posy>21</posy>
+				<width>900</width>
+				<height>45</height>
+				<texture flipx="true">recentlyaddeddiffuse.png</texture>
+					</control>
+					<control type="label">
+					<posx>40</posx>
+					<posy>21</posy>
+					<width>900</width>
+					<height>45</height>
+					<font>cirrus_40</font>
+					<textcolor>black</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+			</focusedlayout>
+			<content>
+			
+				<!-- ATTENTION CHANGED ID BUTCHABAY FROM HERE 1.2.4 -->
+					<item id="911900">
+						<label>31331</label>
+						<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
+						<onclick>SendClick(8)</onclick>
+					</item>
+					<item id="91190">
+						<label>369</label>
+						<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
+						<visible>!Skin.HasSetting(hidetvtitle)</visible>
+					</item>
+					<item id="91191">
+						<label>135</label>
+						<onclick>ActivateWindow(VideoLibrary,TVShowGenres,return)</onclick>
+						<visible>!Skin.HasSetting(hidetvgenre)</visible>
+					</item>
+					<item id="91192">
+						<label>652</label>
+						<onclick>ActivateWindow(VideoLibrary,TVShowYears,return)</onclick>
+						<visible>!Skin.HasSetting(hidetvyears)</visible>
+					</item>
+					<item id="91193">
+						<label>344</label>
+						<onclick>ActivateWindow(VideoLibrary,TVShowActors,return)</onclick>
+						<visible>!Skin.HasSetting(hidetvactor)</visible>
+					</item>
+					<item id="91194">
+						<label>31328</label>
+						<onclick>ActivateWindow(VideoLibrary,RecentlyAddedEpisodes,return)</onclick>
+						<visible>!Skin.HasSetting(hidetvrecently)</visible>	
+					</item>
+					<item id="91195">
+						<label>653</label>
+						<onclick>UpdateLibrary(Video)</onclick>
+						<visible>!Skin.HasSetting(hidetvupdate)</visible>
+					</item>
+					<item id="91196">
+						<label>$INFO[Skin.String(tvplaylistButton1_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(tvplaylistButton1_Path)]</onclick>
+						<visible>Skin.HasSetting(tvplaylistButton1) + !IsEmpty(Skin.String(tvplaylistButton1_label))</visible>
+					</item>
+					<item id="91197">
+						<label>$INFO[Skin.String(tvplaylistButton2_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(tvplaylistButton2_Path)]</onclick>
+						<visible>Skin.HasSetting(tvplaylistButton2) + !IsEmpty(Skin.String(tvplaylistButton2_label))</visible>
+					</item>
+					<item id="91198">
+						<label>$INFO[Skin.String(tvplaylistButton3_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(tvplaylistButton3_Path)]</onclick>
+						<visible>Skin.HasSetting(tvplaylistButton3) + !IsEmpty(Skin.String(tvplaylistButton3_label))</visible>
+					</item>
+					<item id="91199">
+						<label>$INFO[Skin.String(tvplaylistButton4_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(tvplaylistButton4_Path)]</onclick>
+						<visible>Skin.HasSetting(tvplaylistButton4) + !IsEmpty(Skin.String(tvplaylistButton4_label))</visible>
+					</item>
+					<item id="91200">
+						<label>$INFO[Skin.String(tvplaylistButton5_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(tvplaylistButton5_Path)]</onclick>
+						<visible>Skin.HasSetting(tvplaylistButton5) + !IsEmpty(Skin.String(tvplaylistButton5_label))</visible>
+					</item>
+					<item id="91201">
+						<label>$INFO[Skin.String(tvplaylistButton6_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(tvplaylistButton6_Path)]</onclick>
+						<visible>Skin.HasSetting(tvplaylistButton6) + !IsEmpty(Skin.String(tvplaylistButton6_label))</visible>
+					</item>
+					<item id="91202">
+						<label>$INFO[Skin.String(HomeTVButton1_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(HomeTVButton1_Path)]</onclick>
+						<visible>Skin.HasSetting(HomeTVButton1) + !IsEmpty(Skin.String(HomeTVButton1_label))</visible>
+					</item>
+					<item id="91203">
+						<label>$INFO[Skin.String(HomeTVButton2_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(HomeTVButton2_Path)]</onclick>
+						<visible>Skin.HasSetting(HomeTVButton2) + !IsEmpty(Skin.String(HomeTVButton2_label))</visible>
+					</item>
+					<item id="91204">
+						<label>$INFO[Skin.String(HomeTVButton3_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(HomeTVButton3_Path)]</onclick>
+						<visible>Skin.HasSetting(HomeTVButton3) + !IsEmpty(Skin.String(HomeTVButton3_label))</visible>
+					</item>
+					<!-- TO HERE BUTCHABAY 1.2.4 -->
+					<!-- Custom Favourites TV Shows Butchabay 1.2.4 -->
+					<item id="91205">
+					    <label>$INFO[Skin.String(HomeTVbutton25_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom25_Path)]</onclick>
+						<visible>Skin.HasSetting(HomeTVbutton25) + !IsEmpty(Skin.String(HomeTVbutton25_label))</visible>
+					</item>
+					<item id="91206">
+					    <label>$INFO[Skin.String(HomeTVbutton26_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom26_Path)]</onclick>
+						<visible>Skin.HasSetting(HomeTVbutton26) + !IsEmpty(Skin.String(HomeTVbutton26_label))</visible>
+					</item>
+					<item id="91207">
+					    <label>$INFO[Skin.String(HomeTVbutton27_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom27_Path)]</onclick>
+						<visible>Skin.HasSetting(HomeTVbutton27) + !IsEmpty(Skin.String(HomeTVbutton27_label))</visible>
+					</item>
+					<item id="91208">
+					    <label>$INFO[Skin.String(HomeTVbutton28_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom28_Path)]</onclick>
+						<visible>Skin.HasSetting(HomeTVbutton28) + !IsEmpty(Skin.String(HomeTVbutton28_label))</visible>
+					</item>
+					<item id="91209">
+					    <label>$INFO[Skin.String(HomeTVbutton29_label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(Menu_Custom29_Path)]</onclick>
+						<visible>Skin.HasSetting(HomeTVbutton29) + !IsEmpty(Skin.String(HomeTVbutton29_label))</visible>
+					</item>
+					<!-- Custom Favourites TV Shows Butchabay END 1.2.4 -->
+					<item id="91210">
+					    <label>31187</label>
+						<onclick>RunScript(script.tv.show.next.aired)</onclick>
+						<visible>Library.HasContent(TVShows) + System.HasAddon(script.tv.show.next.aired)</visible>
+					</item>
+				</content>
+				<!-- SearchSUBMENU Butchabay -->
+				</control>
+				
+		<!-- Power SUBMENU -->
+			<control type="fixedlist" id="9010">
+			<hitrect x="50" y="50" w="330" h="620" />
+			<posx>-230</posx>
+			<posy>550</posy>
+			<width>1000</width>
+			<height>350</height>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+			<onup>9010</onup>
+			<ondown>9010</ondown>
+			<scrolltime tween="quadratic" easing="out">300</scrolltime>
+			<focusposition>1</focusposition>
+			<movement>1</movement>
+			<visible>Container(9000).HasFocus(26)</visible>
+            <itemlayout height="50" width="1000">
+				<control type="label">
+					<posx>40</posx>
+					<posy>21</posy>
+					<width>900</width>
+					<height>45</height>
+					<font>cirrus_40</font>
+					<textcolor>grey</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>	
+				</itemlayout>
+				<focusedlayout height="45" width="1000">
+				<control type="image">
+				<posx>-400</posx>
+				<posy>21</posy>
+				<width>900</width>
+				<height>45</height>
+				<texture flipx="true">recentlyaddeddiffuse.png</texture>
+					</control>
+					<control type="label">
+					<posx>40</posx>
+					<posy>21</posy>
+					<width>900</width>
+					<height>45</height>
+					<font>cirrus_40</font>
+					<textcolor>black</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+			</focusedlayout>
+			<content>
+				<item id="92641">
+					<label>$LOCALIZE[13016]</label>
+					<onclick>XBMC.Shutdown()</onclick>
+				</item>
+				<item id="92642">
+					<label>$LOCALIZE[13013]</label>
+					<onclick>XBMC.Reset()</onclick>
+				</item>
+				<item id="92643">
+					<label>$LOCALIZE[13011]</label>
+					<onclick>XBMC.Suspend()</onclick>
+				</item>
+				<item id="92644">
+					<label>$LOCALIZE[13012] XBMC</label>
+					<onclick>xbmc.runscript(special://home/addons/script.desktop/quit.py)</onclick>
+				</item>
+				</content>
+			</control>		
+				
 		</control>
 
 	</include>
