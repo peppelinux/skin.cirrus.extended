@@ -137,12 +137,6 @@ msgctxt "#31101"
 msgid "Home screen options"
 msgstr "Giriş ekranı seçenekleri"
 
-
-
-
-
-DURAKLATILDI\"yı göster"
-
 msgctxt "#31105"
 msgid "Show media titles in background scanner"
 msgstr "Ortam başlıklarını arkaplan tarayıcısında göster"
@@ -186,12 +180,6 @@ msgstr "TUŞ ETİKETİ"
 msgctxt "#31121"
 msgid "PATH TO SCRIPT"
 msgstr "BETİK YOLU"
-
-
-
-
-
-Afiş\" yerine \"Poster\" kullan"
 
 msgctxt "#31124"
 msgid "Show Background \"Now Playing\" Video"

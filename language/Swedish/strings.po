@@ -149,12 +149,6 @@ msgctxt "#31101"
 msgid "Home screen options"
 msgstr "Hemskärmsalternativ"
 
-
-
-
-
-Pausad\" i bildspel"
-
 msgctxt "#31105"
 msgid "Show media titles in background scanner"
 msgstr "Visa mediatitlar i bakgrundsscannern"

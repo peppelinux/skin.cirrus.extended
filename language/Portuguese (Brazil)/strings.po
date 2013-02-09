@@ -137,12 +137,6 @@ msgctxt "#31101"
 msgid "Home screen options"
 msgstr "Opções da tela principal (home)"
 
-
-
-
-
-Pausado\" em exibição de imagens (slideshow)"
-
 msgctxt "#31105"
 msgid "Show media titles in background scanner"
 msgstr "Exibir títulos de mídia em busca secudária"
@@ -186,12 +180,6 @@ msgstr "RÓTULO DE BOTÃO"
 msgctxt "#31121"
 msgid "PATH TO SCRIPT"
 msgstr "CAMINHO PARA O SCRIPT"
-
-
-
-
-
-Pôsters\" ao invés de \"Faixas\" para Seriados"
 
 msgctxt "#31124"
 msgid "Show Background \"Now Playing\" Video"

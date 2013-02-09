@@ -141,12 +141,6 @@ msgctxt "#31101"
 msgid "Home screen options"
 msgstr "Настройки главного экрана"
 
-
-
-
-
-Пауза\" в режиме слайдшоу"
-
 msgctxt "#31105"
 msgid "Show media titles in background scanner"
 msgstr "Показывать наименования во время фонового сканирования"
@@ -190,12 +184,6 @@ msgstr "НАЗВАНИЕ КНОПКИ"
 msgctxt "#31121"
 msgid "PATH TO SCRIPT"
 msgstr "ПУТЬ ДО СКРИПТА"
-
-
-
-
-
-Постеры\" вместо \"Баннеров\" для TV шоу"
 
 msgctxt "#31124"
 msgid "Show Background \"Now Playing\" Video"

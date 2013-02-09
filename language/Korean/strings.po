@@ -137,12 +137,6 @@ msgctxt "#31101"
 msgid "Home screen options"
 msgstr "홈 화면 옵션"
 
-
-
-
-
-일시중지됨\" 보이기"
-
 msgctxt "#31105"
 msgid "Show media titles in background scanner"
 msgstr "백그라운드 스캐너에 미디어 제목 보이기"
@@ -190,12 +184,6 @@ msgstr "버튼 라벨"
 msgctxt "#31121"
 msgid "PATH TO SCRIPT"
 msgstr "스크립트 경로"
-
-
-
-
-
-배너\" 대신 \"포스터\" 사용"
 
 msgctxt "#31124"
 msgid "Show Background \"Now Playing\" Video"

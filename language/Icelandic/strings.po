@@ -137,12 +137,6 @@ msgctxt "#31101"
 msgid "Home screen options"
 msgstr "Stillingar heimaskjás"
 
-
-
-
-
-Í bið\" í myndasýningu"
-
 msgctxt "#31105"
 msgid "Show media titles in background scanner"
 msgstr "Sýna myndatitla í bakgrunnsleit"
@@ -186,12 +180,6 @@ msgstr "HNAPPAHEITI"
 msgctxt "#31121"
 msgid "PATH TO SCRIPT"
 msgstr "SLÓÐ Á SKRIFTU"
-
-
-
-
-
-Veggspjöld\" í staðinn fyrir \"Borða\" fyrir sjónvarpsþætti"
 
 msgctxt "#31124"
 msgid "Show Background \"Now Playing\" Video"

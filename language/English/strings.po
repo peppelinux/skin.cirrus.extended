@@ -156,9 +156,6 @@ msgstr ""
 
 
 
-
-
-
 #Playlist Editor labels
 #empty strings from id 31067 to 31100
 
@@ -358,7 +355,6 @@ msgstr ""
 msgctxt "#31329"
 msgid "[B]Timer set![/B] [COLOR=grey2] - System auto shutdown in[/COLOR]"
 msgstr ""
-
 
 
 
@@ -659,7 +655,6 @@ msgstr ""
 msgctxt "#41025"
 msgid "Music Visualisation"
 msgstr ""
-
 
 
 
@@ -992,7 +987,6 @@ msgid "Get Artwork"
 msgstr ""
 
 
-
 #. ViewsGamesLogoRightlist
 
 msgctxt "#41111"
@@ -1068,9 +1062,6 @@ msgstr ""
 msgctxt "#41127"
 msgid "Edit Library"
 msgstr ""
-
-
-
 
 
 

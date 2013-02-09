@@ -141,12 +141,6 @@ msgctxt "#31101"
 msgid "Home screen options"
 msgstr "Opcje ekranu głównego"
 
-
-
-
-
-Pauza\" podczas pokazu slajdów"
-
 msgctxt "#31105"
 msgid "Show media titles in background scanner"
 msgstr "Wyświetlaj tytuły podczas skanowania w tle"
@@ -182,12 +176,6 @@ msgstr ""
 msgctxt "#31115"
 msgid "Customizer"
 msgstr ""
-
-
-
-
-
-Ostatnio dodane\""
 
 msgctxt "#31120"
 msgid "BUTTON LABEL"

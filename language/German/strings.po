@@ -137,12 +137,6 @@ msgctxt "#31101"
 msgid "Home screen options"
 msgstr "Hauptmenü-Optionen"
 
-
-
-
-
-Pause\" in Diashow"
-
 msgctxt "#31105"
 msgid "Show media titles in background scanner"
 msgstr "Zeige Titel beim Hintergrundscan"
@@ -186,12 +180,6 @@ msgstr "TASTEN BEZEICHNUNG"
 msgctxt "#31121"
 msgid "PATH TO SCRIPT"
 msgstr "PFAD ZUM SKRIPT"
-
-
-
-
-
-Poster\" anstatt \"Banner\" für TV-Serien"
 
 msgctxt "#31124"
 msgid "Show Background \"Now Playing\" Video"

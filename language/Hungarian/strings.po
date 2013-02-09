@@ -137,12 +137,6 @@ msgctxt "#31101"
 msgid "Home screen options"
 msgstr "Sajátképernyő lehetőségek"
 
-
-
-
-
-Megállítva\" a diavetítés közben"
-
 msgctxt "#31105"
 msgid "Show media titles in background scanner"
 msgstr "Médiacímek mutatása a háttérszkenner futása alatt"
@@ -186,12 +180,6 @@ msgstr "GOMB FELIRAT"
 msgctxt "#31121"
 msgid "PATH TO SCRIPT"
 msgstr "SZKRIPT ÚTVONALA"
-
-
-
-
-
-Poszterek\" használata \"Bannerek\" helyett a TV műsoroknál"
 
 msgctxt "#31124"
 msgid "Show Background \"Now Playing\" Video"

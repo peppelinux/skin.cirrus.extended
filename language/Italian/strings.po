@@ -137,12 +137,6 @@ msgctxt "#31101"
 msgid "Home screen options"
 msgstr "Opzioni Home"
 
-
-
-
-
-In Pausa\" nello slideshow di immagini"
-
 msgctxt "#31105"
 msgid "Show media titles in background scanner"
 msgstr "Mostra i titoli dei media durante la scansione"
@@ -186,12 +180,6 @@ msgstr "Etichetta pulsante"
 msgctxt "#31121"
 msgid "PATH TO SCRIPT"
 msgstr "Percorso dello script"
-
-
-
-
-
-Posters\" invece dei \"Banners\" per le Serie TV"
 
 msgctxt "#31124"
 msgid "Show Background \"Now Playing\" Video"
@@ -848,9 +836,6 @@ msgstr "Nascondi Trailer Flag"
 msgctxt "#41095"
 msgid "Show Path in Video Info Screen"
 msgstr "Mostra percorso dei media nella schermata Video Info"
-
-
-Logo Downloader\""
 
 msgctxt "#41098"
 msgid "Addons"

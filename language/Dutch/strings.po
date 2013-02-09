@@ -137,12 +137,6 @@ msgctxt "#31101"
 msgid "Home screen options"
 msgstr "Beginschermopties"
 
-
-
-
-
-Pauze\" in diavoorstelling"
-
 msgctxt "#31105"
 msgid "Show media titles in background scanner"
 msgstr "Toon mediatitels in achtergrondscanner"
@@ -186,12 +180,6 @@ msgstr "Label knop"
 msgctxt "#31121"
 msgid "PATH TO SCRIPT"
 msgstr "Pad naar script"
-
-
-
-
-
-Posters\" in plaats van \"Banners\" voor TV-Series"
 
 msgctxt "#31124"
 msgid "Show Background \"Now Playing\" Video"

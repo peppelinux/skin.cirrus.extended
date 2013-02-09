@@ -125,9 +125,6 @@ msgctxt "#31059"
 msgid "Current playlist"
 msgstr "Lista de Reproducción Actual"
 
-
-apilado\", selecciona la parte que quieres reproducir."
-
 msgctxt "#31061"
 msgid "Current Selected"
 msgstr "Actualmente Seleccionado"
@@ -139,12 +136,6 @@ msgstr "Próximo Episodio"
 msgctxt "#31101"
 msgid "Home screen options"
 msgstr "Opciones de Pantalla de Inicio"
-
-
-
-
-
-Pausa\" en la presentación de diapositivas"
 
 msgctxt "#31105"
 msgid "Show media titles in background scanner"
@@ -189,12 +180,6 @@ msgstr "ETIQUETA DEL BOTÓN"
 msgctxt "#31121"
 msgid "PATH TO SCRIPT"
 msgstr "RUTA DEL SCRIPT"
-
-
-
-
-
-Posters\" en lugar de  \"Banners\" para las Series"
 
 msgctxt "#31124"
 msgid "Show Background \"Now Playing\" Video"

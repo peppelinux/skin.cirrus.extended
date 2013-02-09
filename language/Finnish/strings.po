@@ -137,12 +137,6 @@ msgctxt "#31101"
 msgid "Home screen options"
 msgstr "Päävalikon asetukset"
 
-
-
-
-
-Tauko\" kuvaesityksessä"
-
 msgctxt "#31105"
 msgid "Show media titles in background scanner"
 msgstr "Näytä median nimet taustahaussa"
@@ -186,12 +180,6 @@ msgstr "Painikkeen teksti"
 msgctxt "#31121"
 msgid "PATH TO SCRIPT"
 msgstr "Skriptin polku"
-
-
-
-
-
-Juliste\"-näkymää"
 
 msgctxt "#31124"
 msgid "Show Background \"Now Playing\" Video"

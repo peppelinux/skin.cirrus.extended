@@ -137,12 +137,6 @@ msgctxt "#31101"
 msgid "Home screen options"
 msgstr "Indstillinger til hovedsiden"
 
-
-
-
-
-PAUSE\" i  billedserier"
-
 msgctxt "#31105"
 msgid "Show media titles in background scanner"
 msgstr "Vis medietitler i baggrundsscanneren"

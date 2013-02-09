@@ -137,12 +137,6 @@ msgctxt "#31101"
 msgid "Home screen options"
 msgstr "Options de l'écran d'accueil"
 
-
-
-
-
-Pause\" dans diaporama d'images"
-
 msgctxt "#31105"
 msgid "Show media titles in background scanner"
 msgstr "Afficher les titres des médias en tâche de fond lors du scan de médiathèque"
@@ -186,12 +180,6 @@ msgstr "ETIQUETTE DU BOUTON"
 msgctxt "#31121"
 msgid "PATH TO SCRIPT"
 msgstr "CHEMIN DU SCRIPT"
-
-
-
-
-
-Affiches\" aux \"Bannières\" pour les émissions TV"
 
 msgctxt "#31124"
 msgid "Show Background \"Now Playing\" Video"
