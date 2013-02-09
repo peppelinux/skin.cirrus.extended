@@ -3778,7 +3778,7 @@
 						<include>MenuItemSettings</include>
 						<label>$LOCALIZE[24022] $LOCALIZE[40003]</label>
 						<onclick>Skin.ToggleSetting(rightlist_view)</onclick>
-						<selected>!Skin.HasSetting(rightlist_view)</selected>
+						<selected>Skin.HasSetting(rightlist_view)</selected>
 					</control> 
 					<control type="radiobutton" id="1046">
 						<description>Wall</description>
