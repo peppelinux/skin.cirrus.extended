@@ -33,6 +33,14 @@ msgctxt "#31000"
 msgid "Change Your"
 msgstr "修改您的"
 
+msgctxt "#31001"
+msgid "Love"
+msgstr "喜欢"
+
+msgctxt "#31002"
+msgid "Hate"
+msgstr "讨厌"
+
 msgctxt "#31003"
 msgid "Power Options"
 msgstr "电源选项"
@@ -73,17 +81,49 @@ msgctxt "#31026"
 msgid "Misc Options"
 msgstr "其他选项"
 
+msgctxt "#31027"
+msgid "Location"
+msgstr "所在地"
+
+msgctxt "#31028"
+msgid "Poster Wrap"
+msgstr "海报卷动"
+
+msgctxt "#31029"
+msgid "Fanart"
+msgstr "同人画"
+
+msgctxt "#31030"
+msgid "Full list"
+msgstr "完整列表"
+
 msgctxt "#31031"
 msgid "Pic Thumbs"
 msgstr "图片缩略图"
+
+msgctxt "#31032"
+msgid "Image Wrap"
+msgstr "图片卷动"
 
 msgctxt "#31040"
 msgid "Now Playing"
 msgstr "正在播放"
 
+msgctxt "#31042"
+msgid "PLAYING"
+msgstr "播放"
+
 msgctxt "#31043"
 msgid "PAUSED"
 msgstr "暂停"
+
+msgctxt "#31044"
+msgid "FAST FORWARD"
+msgstr "快进"
+
+msgctxt "#31045"
+msgid "REWIND"
+msgstr "回退"
 
 msgctxt "#31046"
 msgid "Audio Properties"
@@ -100,6 +140,18 @@ msgstr "可视化效果设置"
 msgctxt "#31049"
 msgid "End Time"
 msgstr "结束时间"
+
+msgctxt "#31050"
+msgid "Start Time"
+msgstr ""
+
+msgctxt "#31052"
+msgid "Imdb"
+msgstr ""
+
+msgctxt "#31053"
+msgid "Year"
+msgstr ""
 
 msgctxt "#31054"
 msgid "Running Time"
@@ -125,6 +177,10 @@ msgctxt "#31059"
 msgid "Current playlist"
 msgstr "当前播放列表"
 
+msgctxt "#31060"
+msgid "This file is stacked, select the part you want to play from."
+msgstr "这是一个堆叠文件，请选择要播放的片段。"
+
 msgctxt "#31061"
 msgid "Current Selected"
 msgstr "当前选择"
@@ -133,9 +189,33 @@ msgctxt "#31062"
 msgid "Next Episode:"
 msgstr ""
 
+msgctxt "#31063"
+msgid "Season"
+msgstr ""
+
+msgctxt "#31064"
+msgid "Episode"
+msgstr ""
+
+msgctxt "#31065"
+msgid "Rating"
+msgstr ""
+
+msgctxt "#31066"
+msgid "Director"
+msgstr ""
+
 msgctxt "#31101"
 msgid "Home screen options"
 msgstr "主界面选项"
+
+msgctxt "#31102"
+msgid "Background"
+msgstr "背景"
+
+msgctxt "#31103"
+msgid "Show \"Paused\" in picture slide show"
+msgstr "图片幻灯片播放时显示“暂停”状态"
 
 msgctxt "#31104"
 msgid "Play Trailers in a window [COLOR=grey3](Video Information Dialog Only)[/COLOR]"
@@ -165,6 +245,10 @@ msgctxt "#31111"
 msgid "Hide"
 msgstr "隐藏"
 
+msgctxt "#31112"
+msgid "Options"
+msgstr "选项"
+
 msgctxt "#31113"
 msgid "Single Image"
 msgstr "单个图片"
@@ -173,9 +257,25 @@ msgctxt "#31114"
 msgid "Multi Image"
 msgstr "多个图片"
 
+msgctxt "#31115"
+msgid "Customizer"
+msgstr "自定义"
+
+msgctxt "#31116"
+msgid "Addon Scripts"
+msgstr "附加脚本"
+
 msgctxt "#31117"
 msgid "Show Recently added Videos"
 msgstr "显示最新加入视频"
+
+msgctxt "#31118"
+msgid "Home Page Submenu"
+msgstr "主页面子菜单"
+
+msgctxt "#31119"
+msgid "Enable Custom Script Button"
+msgstr "启用自定义脚本按钮"
 
 msgctxt "#31120"
 msgid "BUTTON LABEL"
@@ -184,6 +284,10 @@ msgstr "按钮标签"
 msgctxt "#31121"
 msgid "PATH TO SCRIPT"
 msgstr "脚本目录"
+
+msgctxt "#31122"
+msgid "Weather Page"
+msgstr "天气页面"
 
 msgctxt "#31123"
 msgid "Use \"Posters\" instead of \"Banners\" for TV Shows"
@@ -217,6 +321,14 @@ msgctxt "#31130"
 msgid "PATH TO SUBTITLE SCRIPT"
 msgstr "字幕脚本目录"
 
+msgctxt "#31140"
+msgid "Music OSD"
+msgstr "音乐OSD"
+
+msgctxt "#31141"
+msgid "Video OSD"
+msgstr "视频OSD"
+
 msgctxt "#31185"
 msgid "Listed Shows"
 msgstr ""
@@ -229,9 +341,25 @@ msgctxt "#31187"
 msgid "TV Guide"
 msgstr ""
 
+msgctxt "#31200"
+msgid "Shortcuts"
+msgstr "快捷方式"
+
+msgctxt "#31201"
+msgid "Categories"
+msgstr "分类"
+
+msgctxt "#31202"
+msgid "Show Cast"
+msgstr "显示演员表"
+
 msgctxt "#31203"
 msgid "Choose Your Song"
 msgstr "选择歌曲"
+
+msgctxt "#31204"
+msgid "Section Links"
+msgstr "区块链接"
 
 msgctxt "#31205"
 msgid "Lyrics Source"
@@ -249,17 +377,37 @@ msgctxt "#31252"
 msgid "TWC Script"
 msgstr "天气频道脚本"
 
+msgctxt "#31300"
+msgid "Current Temp"
+msgstr "当前温度"
+
 msgctxt "#31301"
 msgid "Last Updated"
 msgstr "最近修改"
+
+msgctxt "#31302"
+msgid "Menu"
+msgstr "菜单"
+
+msgctxt "#31304"
+msgid "Picture"
+msgstr "图片"
 
 msgctxt "#31305"
 msgid "No Disc Media Detected"
 msgstr "未检测到光盘"
 
+msgctxt "#31306"
+msgid "Eject"
+msgstr "弹出"
+
 msgctxt "#31307"
 msgid "Hide Fanart"
 msgstr "隐藏同人画"
+
+msgctxt "#31308"
+msgid "Movie Details"
+msgstr "电影详细资料"
 
 msgctxt "#31309"
 msgid "Memory Used:"
@@ -285,9 +433,17 @@ msgctxt "#31314"
 msgid "Content Scanning Options"
 msgstr "内容扫描选项"
 
+msgctxt "#31315"
+msgid "Basic"
+msgstr "基本信息"
+
 msgctxt "#31317"
 msgid "Set Fanart Path"
 msgstr "设置同人画目录"
+
+msgctxt "#31318"
+msgid "Small Fanart"
+msgstr "小同人画"
 
 msgctxt "#31319"
 msgid "Selected Profile"
@@ -300,6 +456,10 @@ msgstr "最近登录"
 msgctxt "#31321"
 msgid "Karaoke Song Selector"
 msgstr "卡拉OK歌曲选择器"
+
+msgctxt "#31322"
+msgid "Aired"
+msgstr "首播"
 
 msgctxt "#31323"
 msgid "Latest Movies"
@@ -317,6 +477,10 @@ msgctxt "#31326"
 msgid "Created"
 msgstr "创建"
 
+msgctxt "#31327"
+msgid "Resolution"
+msgstr "分辨率"
+
 msgctxt "#31328"
 msgid "Recently Added"
 msgstr "最新增加"
@@ -324,6 +488,14 @@ msgstr "最新增加"
 msgctxt "#31329"
 msgid "[B]Timer set![/B] [COLOR=grey2] - System auto shutdown in[/COLOR]"
 msgstr "[B]时钟设置！[/B] [COLOR=grey2] - 系统自动关闭于[/COLOR]"
+
+msgctxt "#31330"
+msgid "Click button to play[CR][CR]Movie trailer"
+msgstr "点此按钮播放预告片"
+
+msgctxt "#31331"
+msgid "Search"
+msgstr ""
 
 msgctxt "#31351"
 msgid "Pause"
@@ -349,13 +521,53 @@ msgctxt "#31356"
 msgid "Download Subtitles"
 msgstr "下载字幕"
 
+msgctxt "#31358"
+msgid "Current Time"
+msgstr ""
+
+msgctxt "#31400"
+msgid "[B]CONFIGURE APPEARANCE SETTINGS[/B][CR][CR]Change the skin · Set language and region · Change file listing options[CR]Set up a screensaver"
+msgstr "[B]设置用户界面[/B][CR][CR]变换皮肤 · 设置语言和区域 · 修改文件列表参数 · 设置屏幕保护"
+
+msgctxt "#31401"
+msgid "[B]CONFIGURE VIDEO SETTINGS[/B][CR][CR]Manage your video library · Set video playback options · Change video listing options[CR]Set subtitle fonts"
+msgstr "[B]设置视频参数[/B][CR][CR]管理视频资料库 · 设置视频播放参数 · 修改视频列表参数 · 设置字幕字体"
+
+msgctxt "#31402"
+msgid "[B]CONFIGURE MUSIC SETTINGS[/B][CR][CR]Manage your music library · Set music playback options · Change music listing options[CR]Setup song submission · Set karaoke options"
+msgstr "[B]设置音乐参数[/B][CR][CR]管理音乐资料库 · 设置音乐播放参数 · 修改音乐列表参数 · 设置音乐提交 · 设置卡拉OK选项"
+
+msgctxt "#31403"
+msgid "[B]CONFIGURE PICTURE SETTINGS[/B][CR][CR]Set picture listing options · Configure slideshows"
+msgstr "[B]设置图片参数[/B][CR][CR]设置图片列表参数 · 设置幻灯片播放"
+
+msgctxt "#31404"
+msgid "[B]CONFIGURE WEATHER SETTINGS[/B][CR][CR]Set three cities to collect weather information"
+msgstr "[B]设置天气预报[/B][CR][CR]设置三个获取天气信息的城市"
+
 msgctxt "#31405"
 msgid "[B]CONFIGURE NETWORK SETTINGS[/B][CR][CR]Setup control of XBMC via UPnP and HTTP · Configure file sharing[CR]Set internet access options"
 msgstr "[B]设置网络参数[/B][CR][CR]设置通过UPnP和HTTP控制XBMC · 设置文件共享 · 设置互联网访问参数"
 
+msgctxt "#31406"
+msgid "[B]CONFIGURE SYSTEM SETTINGS[/B][CR][CR]Setup and calibrate displays · Configure audio output · Setup remote controls[CR]Set power saving options · Enable debugging · Setup master lock"
+msgstr "[B]设置系统参数[/B][CR][CR]设置和校正显示器 · 设置音频输出 · 设置摇控器 · 设置节电参数 · 启用调试 · 设置管理员和锁定"
+
+msgctxt "#31407"
+msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Cirrus skin · Add and remove home menu items[CR]Change skin backgrounds"
+msgstr "[B]设置皮肤参数[/B][CR][CR]设置Cirrus皮肤 · 增加和删除主菜单项 · 修改皮肤背景"
+
+msgctxt "#31409"
+msgid "[B]CONFIGURE TV SETTINGS[/B][CR][CR]Change fullscreen info · Manage EPG data settings"
+msgstr ""
+
 msgctxt "#31421"
 msgid "Select your XBMC user Profile to login and continue"
 msgstr "选择您的用户配置文件[CR]登录并继续"
+
+msgctxt "#31500"
+msgid "Recording Timers"
+msgstr ""
 
 msgctxt "#31501"
 msgid "Scheduled Time"
@@ -387,6 +599,10 @@ msgstr ""
 
 msgctxt "#31508"
 msgid "Channels in Group"
+msgstr ""
+
+msgctxt "#31509"
+msgid "Channel Group"
 msgstr ""
 
 msgctxt "#31510"
@@ -464,12 +680,24 @@ msgctxt "#41000"
 msgid "Custom Menu"
 msgstr ""
 
+msgctxt "#41001"
+msgid "Change Submenues"
+msgstr ""
+
 msgctxt "#41002"
 msgid "Custom Home"
 msgstr ""
 
+msgctxt "#41003"
+msgid "Home Menu Items"
+msgstr ""
+
 msgctxt "#41004"
 msgid "Extended Mod"
+msgstr ""
+
+msgctxt "#41005"
+msgid "Mod Buttons"
 msgstr ""
 
 msgctxt "#41006"
@@ -536,12 +764,24 @@ msgctxt "#41021"
 msgid "Global Animated Backgrounds"
 msgstr ""
 
+msgctxt "#41022"
+msgid "Power"
+msgstr ""
+
 msgctxt "#41023"
 msgid "Play Disc"
 msgstr ""
 
+msgctxt "#41024"
+msgid "Favourites"
+msgstr ""
+
 msgctxt "#41025"
 msgid "Music Visualisation"
+msgstr ""
+
+msgctxt "#41026"
+msgid "Games"
 msgstr ""
 
 msgctxt "#41027"
@@ -816,6 +1056,10 @@ msgctxt "#41095"
 msgid "Show Path in Video Info Screen"
 msgstr ""
 
+msgctxt "#41096"
+msgid "Run Logo Downloader Script"
+msgstr ""
+
 msgctxt "#41098"
 msgid "Addons"
 msgstr ""
@@ -824,12 +1068,32 @@ msgctxt "#41101"
 msgid "View Options"
 msgstr ""
 
+msgctxt "#41102"
+msgid "Movies"
+msgstr ""
+
 msgctxt "#41103"
 msgid "TV Shows"
 msgstr ""
 
+msgctxt "#41104"
+msgid "Music"
+msgstr ""
+
+msgctxt "#41105"
+msgid "Video Plugins"
+msgstr ""
+
 msgctxt "#41107"
 msgid "Enable/Disable Views"
+msgstr ""
+
+msgctxt "#41108"
+msgid "Enable"
+msgstr ""
+
+msgctxt "#41109"
+msgid "Disable"
 msgstr ""
 
 msgctxt "#41110"
@@ -876,6 +1140,10 @@ msgctxt "#41120"
 msgid "Compact"
 msgstr ""
 
+msgctxt "#41121"
+msgid "Coverflow"
+msgstr ""
+
 msgctxt "#41122"
 msgid "Fanart Slide"
 msgstr ""
@@ -898,6 +1166,38 @@ msgstr ""
 
 msgctxt "#41127"
 msgid "Edit Library"
+msgstr ""
+
+msgctxt "#41128"
+msgid "Path:"
+msgstr ""
+
+msgctxt "#41129"
+msgid "Total"
+msgstr ""
+
+msgctxt "#41130"
+msgid "Watched"
+msgstr ""
+
+msgctxt "#41131"
+msgid "Unwatched"
+msgstr ""
+
+msgctxt "#41132"
+msgid "Featured Music"
+msgstr ""
+
+msgctxt "#41133"
+msgid "Featured Songs"
+msgstr ""
+
+msgctxt "#41134"
+msgid "Settings"
+msgstr ""
+
+msgctxt "#41135"
+msgid "Random Fanart Backdrops"
 msgstr ""
 
 msgctxt "#41136"
@@ -948,8 +1248,20 @@ msgctxt "#41147"
 msgid "Hide MPAA Flags"
 msgstr ""
 
+msgctxt "#41148"
+msgid "Trailer"
+msgstr ""
+
 msgctxt "#41149"
 msgid "Show IMDB Rating Number in Video Info Screen"
+msgstr ""
+
+msgctxt "#41150"
+msgid "Record"
+msgstr ""
+
+msgctxt "#41151"
+msgid "Recording"
 msgstr ""
 
 msgctxt "#41152"
@@ -974,6 +1286,14 @@ msgstr ""
 
 msgctxt "#41163"
 msgid "Style"
+msgstr ""
+
+msgctxt "#41164"
+msgid "Remove Cover Playing Media"
+msgstr ""
+
+msgctxt "#41165"
+msgid "Default CDArt Black XBMC"
 msgstr ""
 
 msgctxt "#41166"
@@ -1002,6 +1322,10 @@ msgstr ""
 
 msgctxt "#41172"
 msgid "HD Movies"
+msgstr ""
+
+msgctxt "#41173"
+msgid "Hide Breadcrumb Trails TV Shows on Episode Level"
 msgstr ""
 
 msgctxt "#41174"
@@ -1084,6 +1408,10 @@ msgctxt "#41193"
 msgid "Creator"
 msgstr ""
 
+msgctxt "#41194"
+msgid "Summary"
+msgstr ""
+
 msgctxt "#41195"
 msgid "Movie Widget"
 msgstr ""
@@ -1140,6 +1468,10 @@ msgctxt "#41208"
 msgid "Cinema Experience"
 msgstr ""
 
+msgctxt "#41209"
+msgid "Exit"
+msgstr ""
+
 msgctxt "#41210"
 msgid "Dim Background on Home"
 msgstr ""
@@ -1170,6 +1502,10 @@ msgstr ""
 
 msgctxt "#41217"
 msgid "Original Cirrus Clock"
+msgstr ""
+
+msgctxt "#41218"
+msgid "Remove Weather"
 msgstr ""
 
 msgctxt "#41219"
@@ -1224,6 +1560,10 @@ msgctxt "#41231"
 msgid "Alternative Recently Added and Watchlist on Home Layout"
 msgstr ""
 
+msgctxt "#41232"
+msgid "NO MOVIES IN PROGRESS"
+msgstr ""
+
 msgctxt "#41233"
 msgid "Enable Movies in Progress"
 msgstr ""
@@ -1238,6 +1578,10 @@ msgstr ""
 
 msgctxt "#41236"
 msgid "Get Info"
+msgstr ""
+
+msgctxt "#41237"
+msgid "Start"
 msgstr ""
 
 msgctxt "#41238"
@@ -1264,6 +1608,10 @@ msgctxt "#41243"
 msgid "Hide Plot on Info Fullscreen"
 msgstr ""
 
+msgctxt "#41244"
+msgid "Data Provider"
+msgstr ""
+
 msgctxt "#41245"
 msgid "Show Cases"
 msgstr ""
@@ -1288,8 +1636,16 @@ msgctxt "#41250"
 msgid "Release Years"
 msgstr ""
 
+msgctxt "#41251"
+msgid "Status"
+msgstr ""
+
 msgctxt "#41253"
 msgid "Enable TV Tunes"
+msgstr ""
+
+msgctxt "#41254"
+msgid "Root"
 msgstr ""
 
 msgctxt "#41255"
@@ -1298,6 +1654,10 @@ msgstr ""
 
 msgctxt "#41256"
 msgid "Concerts"
+msgstr ""
+
+msgctxt "#41257"
+msgid "Current"
 msgstr ""
 
 msgctxt "#41258"
@@ -1366,6 +1726,10 @@ msgstr ""
 
 msgctxt "#41276"
 msgid "Hide Common Page Count"
+msgstr ""
+
+msgctxt "#41277"
+msgid "Hide Breadcrumb Trails and Clock"
 msgstr ""
 
 msgctxt "#41279"
