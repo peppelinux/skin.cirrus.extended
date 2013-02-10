@@ -1345,7 +1345,7 @@
 					</item>
 					<item id="96187">
 						<label>41183</label>
-						<onclick>ActivateWindow(video,videodb://1/7/,return)</onclick>
+						<onclick>ActivateWindow(videos,videodb://1/7/,return)</onclick>
 						<visible>!Skin.HasSetting(hidemovievideofiles)</visible>
 					</item>
 					<!-- ######################################## -->
