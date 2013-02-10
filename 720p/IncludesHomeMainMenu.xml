@@ -209,7 +209,7 @@
 					<label>$INFO[Skin.String(Menu_Custom4_Label)]</label>
 					<icon>special://skin/backgrounds/custom.jpg</icon>
 					<thumb>$INFO[Skin.String(Menu_Custom4_Folder)]</thumb>
-					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(Menu_Custom4_Path)],return)</onclick>
+					<onclick>XBMC.ActivateWindow(videos,$INFO[Skin.String(Menu_Custom4_Path)],return)</onclick>
 					<visible>Skin.HasSetting(Menu_Custom4)</visible>
 				</item>
 				<item id="4">
@@ -217,7 +217,7 @@
 					<label>$INFO[Skin.String(Menu_Custom5_Label)]</label>
 					<icon>special://skin/backgrounds/custom.jpg</icon>
 					<thumb>$INFO[Skin.String(Menu_Custom5_Folder)]</thumb>
-					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(Menu_Custom5_Path)],return)</onclick>
+					<onclick>XBMC.ActivateWindow(videos,$INFO[Skin.String(Menu_Custom5_Path)],return)</onclick>
 					<visible>Skin.HasSetting(Menu_Custom5)</visible>
 				</item>
 				<item id="5">
@@ -225,7 +225,7 @@
 					<label>$INFO[Skin.String(Menu_Custom6_Label)]</label>
 					<icon>special://skin/backgrounds/custom.jpg</icon>
 					<thumb>$INFO[Skin.String(Menu_Custom6_Folder)]</thumb>
-					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(Menu_Custom6_Path)],return)</onclick>
+					<onclick>XBMC.ActivateWindow(videos,$INFO[Skin.String(Menu_Custom6_Path)],return)</onclick>
 					<visible>Skin.HasSetting(Menu_Custom6)</visible>
 				</item>
 				<item id="6">
@@ -233,7 +233,7 @@
 					<label>41172</label>
 					<icon>special://skin/backgrounds/hdmovies.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_HDMovies_Folder)]</thumb>
-					<onclick>XBMC.ActivateWindow(10025,special://skin/playlists/HDMovies.xsp,return)</onclick>
+					<onclick>XBMC.ActivateWindow(videos,special://skin/playlists/HDMovies.xsp,return)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoHDMoviesButton)</visible>
 				</item>
 				<item id="7">
@@ -263,7 +263,7 @@
 					<label>$INFO[Skin.String(Menu_Custom9_Label)]</label>
 					<icon>special://skin/backgrounds/custom.jpg</icon>
 					<thumb>$INFO[Skin.String(Menu_Custom9_Folder)]</thumb>
-					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(Menu_Custom9_Path)],return)</onclick>
+					<onclick>XBMC.ActivateWindow(videos,$INFO[Skin.String(Menu_Custom9_Path)],return)</onclick>
 					<visible>Skin.HasSetting(Menu_Custom9)</visible>
 				</item>
 				<item id="10">
@@ -271,7 +271,7 @@
 					<label>$INFO[Skin.String(Menu_Custom10_Label)]</label>
 					<icon>special://skin/backgrounds/custom.jpg</icon>
 					<thumb>$INFO[Skin.String(Menu_Custom10_Folder)]</thumb>
-					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(Menu_Custom10_Path)],return)</onclick>
+					<onclick>XBMC.ActivateWindow(videos,$INFO[Skin.String(Menu_Custom10_Path)],return)</onclick>
 					<visible>Skin.HasSetting(Menu_Custom10)</visible>
 				</item>
 				<item id="11">
@@ -279,7 +279,7 @@
 					<label>$INFO[Skin.String(Menu_Custom11_Label)]</label>
 					<icon>special://skin/backgrounds/custom.jpg</icon>
 					<thumb>$INFO[Skin.String(Menu_Custom11_Folder)]</thumb>
-					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(Menu_Custom11_Path)],return)</onclick>
+					<onclick>XBMC.ActivateWindow(videos,$INFO[Skin.String(Menu_Custom11_Path)],return)</onclick>
 					<visible>Skin.HasSetting(Menu_Custom11)</visible>
 				</item>	
 			<!-- PVR Butchabay -->
@@ -302,10 +302,7 @@
 				<item id="14">
 					<label>2</label>
 					<onclick>ActivateWindow(Music)</onclick>
-					<!-- 
-					<onclick>ActivateWindow(MusicLibrary, root)</onclick>
-					<onclick>ActivateWindow(Music,smb://xbmc:test@PLUTO/Musik/,return)</onclick> 
-					-->
+
 					<icon>special://skin/backgrounds/musicfanart.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</thumb>
 					<visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
@@ -323,7 +320,7 @@
 					<label>$INFO[Skin.String(Menu_Custom12_Label)]</label>
 					<icon>special://skin/backgrounds/custom.jpg</icon>
 					<thumb>$INFO[Skin.String(Menu_Custom12_Folder)]</thumb>
-					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(Menu_Custom12_Path)],return)</onclick>
+					<onclick>XBMC.ActivateWindow(videos,$INFO[Skin.String(Menu_Custom12_Path)],return)</onclick>
 					<visible>Skin.HasSetting(Menu_Custom12)</visible>
 				</item>
 				<item id="17">
@@ -331,7 +328,7 @@
 					<label>$INFO[Skin.String(Menu_Custom13_Label)]</label>
 					<icon>special://skin/backgrounds/custom.jpg</icon>
 					<thumb>$INFO[Skin.String(Menu_Custom13_Folder)]</thumb>
-					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(Menu_Custom13_Path)],return)</onclick>
+					<onclick>XBMC.ActivateWindow(videos,$INFO[Skin.String(Menu_Custom13_Path)],return)</onclick>
 					<visible>Skin.HasSetting(Menu_Custom13)</visible>
 				</item>	
 				<item id="18">
@@ -359,7 +356,7 @@
 					<visible>Skin.HasSetting(Menu_Custom8)</visible>
 				</item>	
 				<item id="21">
-					<label>41024</label>
+					<label>1036</label>
 					<onclick>ActivateWindow(Favourites)</onclick>
 					<icon>special://skin/backgrounds/favourite.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Favourites_Folder)]</thumb>
@@ -367,7 +364,7 @@
 				</item>	
 				<item id="22">
 					<description>Games</description>
-					<label>41026</label>
+					<label>15016</label>
 					<onclick>ActivateWindow(Programs,plugin://plugin.program.advanced.launcher)</onclick>
 					<icon>special://skin/backgrounds/games.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Games_Folder)]</thumb>
