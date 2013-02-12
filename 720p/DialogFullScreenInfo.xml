@@ -54,7 +54,7 @@
             <colordiffuse>FFFFFFFF</colordiffuse>
             <visible>VideoPlayer.Content(Movies)</visible>
             <visible>!Skin.HasSetting(slimosd)</visible>
-        </control>	
+        </control>
         <control type="image">
             <!-- STARS TV-->
             <description>IMDB rating</description>
@@ -66,7 +66,7 @@
             <colordiffuse>FFFFFFFF</colordiffuse>
             <visible>VideoPlayer.Content(Episodes)</visible>
             <visible>!Skin.HasSetting(slimosd)</visible>
-        </control>							
+        </control>
         <control type="image">
             <description>TV Show Poster cover image</description>
             <posx>244</posx>
@@ -75,7 +75,7 @@
             <height>240</height>
             <fadetime>200</fadetime>
             <animation effect="fade" time="900">VisibleChange</animation>
-            <texture fallback="blank.png">Player.Art(poster)</texture>
+            <texture fallback="blank.png">$INFO[Player.Art(tvshow.poster)]</texture>
             <bordertexture border="6">ContentPanelvertical.png</bordertexture>
             <bordersize>6</bordersize>
             <aspectratio aligny="bottom">stretch</aspectratio>
@@ -646,7 +646,7 @@
             <visible>!VideoPlayer.Content(Files)</visible>
             <visible>!Skin.HasSetting(slimosd)</visible>
             <visible>!Skin.HasSetting(noplotonfullscreeninfo)</visible>
-        </control>	
+        </control>
         <control type="label">
             <description>Player Times</description>
             <posx>-100</posx>
@@ -826,7 +826,7 @@
     <colordiffuse>FFFFFFFF</colordiffuse>
     <visible>VideoPlayer.Content(Movies)</visible>
     <visible>!Skin.HasSetting(slimosd)</visible>
-</control>	
+</control>
 <control type="image">
     <!-- STARS TV-->
     <description>IMDB rating</description>
@@ -838,7 +838,7 @@
     <colordiffuse>FFFFFFFF</colordiffuse>
     <visible>VideoPlayer.Content(Episodes)</visible>
     <visible>!Skin.HasSetting(slimosd)</visible>
-</control>							
+</control>
 <control type="image">
     <description>TV Show Poster cover image</description>
     <posx>244</posx>
@@ -847,7 +847,7 @@
     <height>240</height>
     <fadetime>200</fadetime>
     <animation effect="fade" time="900">VisibleChange</animation>
-    <texture fallback="blank.png">$INFO[Player.Art(poster)]</texture>
+    <texture fallback="blank.png">$INFO[Player.Art(tvshow.poster)]</texture>
     <bordertexture border="6">ContentPanelvertical.png</bordertexture>
     <bordersize>6</bordersize>
     <aspectratio aligny="bottom">stretch</aspectratio>
@@ -1419,7 +1419,7 @@
         <visible>!VideoPlayer.Content(Files)</visible>
         <visible>!Skin.HasSetting(slimosd)</visible>
         <visible>!Skin.HasSetting(noplotonfullscreeninfo)</visible>
-    </control>	
+    </control>
     <control type="label">
         <description>Player Times</description>
         <posx>-100</posx>
@@ -1599,7 +1599,7 @@
     <colordiffuse>FFFFFFFF</colordiffuse>
     <visible>VideoPlayer.Content(Movies)</visible>
     <visible>!Skin.HasSetting(slimosd)</visible>
-</control>	
+</control>
 <control type="image">
     <!-- STARS TV-->
     <description>IMDB rating</description>
@@ -1611,7 +1611,7 @@
     <colordiffuse>FFFFFFFF</colordiffuse>
     <visible>VideoPlayer.Content(Episodes)</visible>
     <visible>!Skin.HasSetting(slimosd)</visible>
-</control>							
+</control>
 <control type="image">
     <description>TV Show Poster cover image</description>
     <posx>244</posx>
@@ -1620,7 +1620,7 @@
     <height>240</height>
     <fadetime>200</fadetime>
     <animation effect="fade" time="900">VisibleChange</animation>
-    <texture fallback="blank.png">$INFO[Player.Art(poster)]</texture>
+    <texture fallback="blank.png">$INFO[Player.Art(tvshow.poster)]</texture>
     <bordertexture border="6">ContentPanelvertical.png</bordertexture>
     <bordersize>6</bordersize>
     <aspectratio aligny="bottom">stretch</aspectratio>
@@ -2192,7 +2192,7 @@
         <visible>!VideoPlayer.Content(Files)</visible>
         <visible>!Skin.HasSetting(slimosd)</visible>
         <visible>!Skin.HasSetting(noplotonfullscreeninfo)</visible>
-    </control>	
+    </control>
     <control type="label">
         <description>Player Times</description>
         <posx>-100</posx>
@@ -2373,7 +2373,7 @@
     <colordiffuse>FFFFFFFF</colordiffuse>
     <visible>VideoPlayer.Content(Movies)</visible>
     <visible>!Skin.HasSetting(slimosd)</visible>
-</control>	
+</control>
 <control type="image">
     <!-- STARS TV-->
     <description>IMDB rating</description>
@@ -2385,7 +2385,7 @@
     <colordiffuse>FFFFFFFF</colordiffuse>
     <visible>VideoPlayer.Content(Episodes)</visible>
     <visible>!Skin.HasSetting(slimosd)</visible>
-</control>							
+</control>
 <control type="image">
     <description>TV Show Poster cover image</description>
     <posx>244</posx>
@@ -2394,7 +2394,7 @@
     <height>240</height>
     <fadetime>200</fadetime>
     <animation effect="fade" time="900">VisibleChange</animation>
-    <texture fallback="blank.png">$INFO[Player.Art(poster)]</texture>
+    <texture fallback="blank.png">$INFO[Player.Art(tvshow.poster)]</texture>
     <bordertexture border="6">ContentPanelvertical.png</bordertexture>
     <bordersize>6</bordersize>
     <aspectratio aligny="bottom">stretch</aspectratio>
@@ -2968,7 +2968,7 @@
         <visible>!VideoPlayer.Content(Files)</visible>
         <visible>!Skin.HasSetting(slimosd)</visible>
         <visible>!Skin.HasSetting(noplotonfullscreeninfo)</visible>
-    </control>	
+    </control>
     <control type="label">
         <description>Player Times</description>
         <posx>-100</posx>
@@ -3149,7 +3149,7 @@
     <colordiffuse>FFFFFFFF</colordiffuse>
     <visible>VideoPlayer.Content(Movies)</visible>
     <visible>!Skin.HasSetting(slimosd)</visible>
-</control>	
+</control>
 <control type="image">
     <!-- STARS TV-->
     <description>IMDB rating</description>
@@ -3161,7 +3161,7 @@
     <colordiffuse>FFFFFFFF</colordiffuse>
     <visible>VideoPlayer.Content(Episodes)</visible>
     <visible>!Skin.HasSetting(slimosd)</visible>
-</control>							
+</control>
 <control type="image">
     <description>TV Show Poster cover image</description>
     <posx>244</posx>
@@ -3170,7 +3170,7 @@
     <height>240</height>
     <fadetime>200</fadetime>
     <animation effect="fade" time="900">VisibleChange</animation>
-    <texture fallback="blank.png">$INFO[Player.Art(poster)]</texture>
+    <texture fallback="blank.png">$INFO[Player.Art(tvshow.poster)]</texture>
     <bordertexture border="6">ContentPanelvertical.png</bordertexture>
     <bordersize>6</bordersize>
     <aspectratio aligny="bottom">stretch</aspectratio>
@@ -3742,7 +3742,7 @@
         <visible>!VideoPlayer.Content(Files)</visible>
         <visible>!Skin.HasSetting(slimosd)</visible>
         <visible>!Skin.HasSetting(noplotonfullscreeninfo)</visible>
-    </control>	
+    </control>
     <control type="label">
         <description>Player Times</description>
         <posx>-100</posx>
@@ -3907,7 +3907,7 @@
     <posy>608</posy> 
     <width>200</width>
     <height>112</height>
-    <texture fallback="blank.png">$INFO[Player.Art(clearart)]</texture>
+    <texture fallback="blank.png">$INFO[Player.Art(tvshow.clearart)]</texture>
     <aspectratio>keep</aspectratio>
     <visible>Skin.HasSetting(clearart) + VideoPlayer.Content(episodes)</visible>
 </control>
