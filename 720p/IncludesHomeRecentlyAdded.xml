@@ -4890,7 +4890,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.Art(fanart))]</property>
@@ -4903,7 +4903,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.Art(fanart))]</property>
@@ -4916,7 +4916,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu4.3.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu4.3.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu4.3.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu4.3.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu4.3.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.3.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu4.3.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.3.Art(fanart))]</property>
@@ -4929,7 +4929,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu4.4.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu4.4.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu4.4.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu4.4.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu4.4.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.4.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu4.4.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.4.Art(fanart))]</property>
@@ -4942,7 +4942,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu4.5.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu4.5.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu4.5.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu4.5.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu4.5.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.5.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu4.5.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.5.Art(fanart))]</property>
@@ -4955,7 +4955,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu4.6.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu4.6.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu4.6.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu4.6.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu4.6.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.6.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu4.6.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.6.Art(fanart))]</property>
@@ -4968,7 +4968,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu4.7.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu4.7.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu4.7.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu4.7.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu4.7.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.7.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu4.7.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.7.Art(fanart))]</property>
@@ -4981,7 +4981,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu4.8.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu4.8.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu4.8.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu4.8.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu4.8.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.8.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu4.8.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.8.Art(fanart))]</property>
@@ -4994,7 +4994,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu4.9.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu4.9.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu4.9.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu4.9.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu4.9.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.9.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu4.9.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.9.Art(fanart))]</property>
@@ -5007,7 +5007,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu4.10.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu4.10.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu4.10.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu4.10.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu4.10.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.10.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu4.10.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.10.Art(fanart))]</property>
@@ -5518,7 +5518,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu5.1.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu5.1.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu5.1.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu5.1.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu5.1.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.1.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu5.1.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.1.Art(fanart))]</property>
@@ -5531,7 +5531,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu5.2.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu5.2.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu5.2.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu5.2.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu5.2.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.2.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu5.2.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.2.Art(fanart))]</property>
@@ -5544,7 +5544,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu5.3.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu5.3.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu5.3.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu5.3.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu5.3.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.3.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu5.3.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.3.Art(fanart))]</property>
@@ -5557,7 +5557,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu5.4.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu5.4.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu5.4.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu5.4.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu5.4.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.4.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu5.4.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.4.Art(fanart))]</property>
@@ -5570,7 +5570,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu5.5.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu5.5.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu5.5.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu5.5.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu5.5.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.5.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu5.5.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.5.Art(fanart))]</property>
@@ -5583,7 +5583,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu5.6.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu5.6.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu5.6.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu5.6.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu5.6.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.6.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu5.6.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.6.Art(fanart))]</property>
@@ -5596,7 +5596,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu5.7.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu5.7.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu5.7.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu5.7.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu5.7.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.7.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu5.7.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.7.Art(fanart))]</property>
@@ -5609,7 +5609,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu5.8.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu5.8.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu5.8.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu5.8.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu5.8.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.8.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu5.8.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.8.Art(fanart))]</property>
@@ -5622,7 +5622,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu5.9.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu5.9.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu5.9.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu5.9.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu5.9.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.9.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu5.9.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.9.Art(fanart))]</property>
@@ -5635,7 +5635,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu5.10.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu5.10.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu5.10.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu5.10.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu5.10.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.10.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu5.10.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.10.Art(fanart))]</property>
@@ -6147,7 +6147,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu6.1.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu6.1.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu6.1.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu6.1.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu6.1.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.1.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu6.1.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.1.Art(fanart))]</property>
@@ -6160,7 +6160,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu6.2.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu6.2.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu6.2.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu6.2.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu6.2.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.2.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu6.2.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.2.Art(fanart))]</property>
@@ -6173,7 +6173,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu6.3.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu6.3.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu6.3.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu6.3.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu6.3.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.3.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu6.3.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.3.Art(fanart))]</property>
@@ -6186,7 +6186,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu6.4.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu6.4.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu6.4.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu6.4.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu6.4.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.4.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu6.4.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.4.Art(fanart))]</property>
@@ -6199,7 +6199,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu6.5.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu6.5.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu6.5.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu6.5.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu6.5.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.5.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu6.5.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.5.Art(fanart))]</property>
@@ -6212,7 +6212,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu6.6.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu6.6.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu6.6.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu6.6.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu6.6.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.6.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu6.6.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.6.Art(fanart))]</property>
@@ -6225,7 +6225,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu6.7.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu6.7.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu6.7.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu6.7.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu6.7.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.7.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu6.7.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.7.Art(fanart))]</property>
@@ -6238,7 +6238,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu6.8.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu6.8.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu6.8.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu6.8.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu6.8.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.8.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu6.8.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.8.Art(fanart))]</property>
@@ -6251,7 +6251,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu6.9.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu6.9.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu6.9.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu6.9.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu6.9.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.9.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu6.9.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.9.Art(fanart))]</property>
@@ -6264,7 +6264,7 @@
                                 <label2>$INFO[Window.Property(PlaylistLastEpisodeMenu6.10.TvshowTitle)]</label2>
                                 <onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu6.10.Play)]</onclick>
                                 <icon>$INFO[Window.Property(PlaylistLastEpisodeMenu6.10.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu6.10.Art(poster))]</thumb>
+                                <thumb>$INFO[Window.Property(PlaylistLastEpisodeMenu6.10.Art(thumb))]</thumb>
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.10.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu6.10.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.10.Art(fanart))]</property>
