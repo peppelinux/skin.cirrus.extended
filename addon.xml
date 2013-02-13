@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.cirrus.extended.v3" name="Cirrus Extended V3" version="3.0.30" provider-name="butchabay-Paradix-YoHan">
+<addon id="skin.cirrus.extended.v3" name="Cirrus Extended V3" version="3.0.35" provider-name="butchabay-Paradix-YoHan">
   <requires>
 	<import addon="xbmc.gui" version="4.0.0"/>
 	<import addon="service.skin.widgets" version="0.0.2"/>
