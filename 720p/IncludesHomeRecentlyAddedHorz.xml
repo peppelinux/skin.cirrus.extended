@@ -1051,7 +1051,7 @@
             <align>left</align>
             <viewtype label="535">list</viewtype>
             <orientation>horizontal</orientation>
-            <focusposition>2</focusposition>
+            <focusposition>0</focusposition>
             <pagecontrol>-</pagecontrol>
             <scrolltime>200</scrolltime>
             <preloaditems>3</preloaditems>
