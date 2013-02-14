@@ -69,7 +69,6 @@
     <include file="ViewsAddonBrowser.xml" />
     <include file="Custom_Debug_Overlay.xml"/>
     <!-- Debug Info-->
-    <!--<include file="IncludesWeather.xml" />  -->   		      <!-- WeatherPlus 1.2.3 by Branlr --> 
     <include file="ViewsLiveTV.xml" />
     <!-- Added for PVR Butchabay  view700-->
     <include file="IncludesExtendedHomePlaying.xml" />	
