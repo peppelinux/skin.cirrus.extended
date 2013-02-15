@@ -714,6 +714,10 @@
 						<onclick>ActivateWindow(VideoLibrary,TVShowActors,return)</onclick>
 						<visible>!Skin.HasSetting(hidetvactor)</visible>
 					</item>
+                    <item id="90211">
+                        <label>575</label>
+                        <onclick>ActivateWindow(Videos,library://video/inprogressshows.xml,return)</onclick>
+                    </item>
 					<item id="90194">
 						<label>31328</label>
 						<onclick>ActivateWindow(VideoLibrary,RecentlyAddedEpisodes,return)</onclick>
