@@ -51,7 +51,7 @@
 				<posy>360</posy>
 				<width>385</width>
 				<height>200</height>
-				<texture>DialogBackground.png</texture>
+				<texture>dialogbackground.png</texture>
 				<bordertexture border="8">ThumbBorder.png</bordertexture>
 				<bordersize>12</bordersize>
 				<colordiffuse>888A8A8A</colordiffuse>

@@ -33,7 +33,7 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>720</height>
-				<texture border="20">DialogBackground.png</texture>
+				<texture border="20">dialogbackground.png</texture>
 			</control>
 			<control type="button">
 				<description>Close Window button</description>
@@ -180,7 +180,7 @@
 				<posy>0</posy>
 				<width>790</width>
 				<height>720</height>
-				<texture border="5">DialogBackground.png</texture>
+				<texture border="5">dialogbackground.png</texture>
 			</control>
 			<control type="label">
 				<description>header label</description>

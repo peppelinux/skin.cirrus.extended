@@ -213,7 +213,7 @@
 					<height>303</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<fadetime>FanartCrossfadeTime</fadetime>
-					<texture>DialogBackground.png</texture>
+					<texture>dialogbackground.png</texture>
 					<bordertexture border="8">ThumbBorder.png</bordertexture>
 					<bordersize>12</bordersize>
 					<colordiffuse>888A8A8A</colordiffuse>

@@ -10,7 +10,7 @@
 			       <width>1290</width>
 			       <height>605</height>
 			       <colordiffuse>DDFFFFFF</colordiffuse>
-			       <texture border="20">DialogBackground.png</texture>
+			       <texture border="20">dialogbackground.png</texture>
 		       </control>
 		<control type="group">
 			<visible>!Control.IsVisible(11) + !Control.IsVisible(12)</visible>
