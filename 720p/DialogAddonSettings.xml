@@ -111,7 +111,7 @@
 				<height>40</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturenofocus border="5">MenuItemNF.png</texturenofocus>
+				<texturenofocus border="5">menuitemNF.png</texturenofocus>
 				<texturefocus border="5">button-focus.png</texturefocus>
 				<font>font12_title</font>
 				<label>186</label>
@@ -128,7 +128,7 @@
 				<height>40</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturenofocus border="5">MenuItemNF.png</texturenofocus>
+				<texturenofocus border="5">menuitemNF.png</texturenofocus>
 				<texturefocus border="5">button-focus.png</texturefocus>
 				<font>font12_title</font>
 				<label>222</label>
@@ -145,7 +145,7 @@
 				<height>40</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturenofocus border="5">MenuItemNF.png</texturenofocus>
+				<texturenofocus border="5">menuitemNF.png</texturenofocus>
 				<texturefocus border="5">button-focus.png</texturefocus>
 				<font>font12_title</font>
 				<label>409</label>
@@ -166,8 +166,8 @@
 			<font>font13_title</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
-			<texturefocus border="5">MenuItemFO.png</texturefocus>
-			<texturenofocus border="5">MenuItemNF.png</texturenofocus>
+			<texturefocus border="5">menuitemFO.png</texturefocus>
+			<texturenofocus border="5">menuitemNF.png</texturenofocus>
 			<pulseonselect>false</pulseonselect>
 		</control>
 		<control type="button" id="3">
@@ -176,8 +176,8 @@
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
-			<texturefocus border="0,2,0,2">MenuItemFO.png</texturefocus>
-			<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+			<texturefocus border="0,2,0,2">menuitemFO.png</texturefocus>
+			<texturenofocus border="0,2,0,2">menuitemNF.png</texturenofocus>
 		</control>
 		<control type="radiobutton" id="4">
 			<description>Default RadioButton</description>
@@ -185,16 +185,16 @@
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
-			<texturefocus border="0,2,0,2">MenuItemFO.png</texturefocus>
-			<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+			<texturefocus border="0,2,0,2">menuitemFO.png</texturefocus>
+			<texturenofocus border="0,2,0,2">menuitemNF.png</texturenofocus>
 		</control>
 		<control type="spincontrolex" id="5">
 			<description>Default spincontrolex</description>
 			<height>40</height>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
-			<texturefocus border="0,2,0,2">MenuItemFO.png</texturefocus>
-			<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+			<texturefocus border="0,2,0,2">menuitemFO.png</texturefocus>
+			<texturenofocus border="0,2,0,2">menuitemNF.png</texturenofocus>
 			<font>font13</font>
 			<aligny>center</aligny>
 			<reverse>yes</reverse>
@@ -219,8 +219,8 @@
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
-			<texturefocus border="0,2,0,2">MenuItemFO.png</texturefocus>
-			<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+			<texturefocus border="0,2,0,2">menuitemFO.png</texturefocus>
+			<texturenofocus border="0,2,0,2">menuitemNF.png</texturenofocus>
 		</control>
 	</controls>
 </window>

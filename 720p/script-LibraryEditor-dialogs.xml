@@ -95,7 +95,7 @@
 						<posy>0</posy>
 						<width>550</width>
 						<height>41</height>
-						<texture border="0,2,0,2">default/MenuItemNF.png</texture>
+						<texture border="0,2,0,2">default/menuitemNF.png</texture>
 					</control>
 					<control type="label">
 						<posx>20</posx>
@@ -280,7 +280,7 @@
 					<textcolor>white</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<align>center</align>
-					<texturenofocus border="5">default/MenuItemNF.png</texturenofocus>
+					<texturenofocus border="5">default/menuitemNF.png</texturenofocus>
 					<texturefocus border="5">default/button-focus.png</texturefocus>
 					<onleft>6</onleft>
 					<onright>6</onright>
@@ -298,7 +298,7 @@
 					<textcolor>white</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<align>center</align>
-					<texturenofocus border="5">default/MenuItemNF.png</texturenofocus>
+					<texturenofocus border="5">default/menuitemNF.png</texturenofocus>
 					<texturefocus border="5">default/button-focus.png</texturefocus>
 					<onleft>5</onleft>
 					<onright>5</onright>
