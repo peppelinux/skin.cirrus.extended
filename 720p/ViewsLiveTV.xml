@@ -22,7 +22,7 @@
 						<posy>0</posy>
 						<width>760</width>
 						<height>41</height>
-						<texture border="0,2,0,2">MenuItemNF.png</texture>
+						<texture border="0,2,0,2">menuitemNF.png</texture>
 					</control>
 					<control type="label">
 						<posx>10</posx>
@@ -55,7 +55,7 @@
 						<posy>0</posy>
 						<width>760</width>
 						<height>41</height>
-						<texture border="0,2,0,2">MenuItemNF.png</texture>
+						<texture border="0,2,0,2">menuitemNF.png</texture>
 						<visible>!Control.HasFocus(560)</visible>
 						<include>VisibleFadeEffect</include>
 					</control>
@@ -64,7 +64,7 @@
 						<posy>0</posy>
 						<width>760</width>
 						<height>41</height>
-						<texture border="0,2,0,2">MenuItemFO.png</texture>
+						<texture border="0,2,0,2">menuitemFO.png</texture>
 						<visible>Control.HasFocus(560)</visible>
 						<include>VisibleFadeEffect</include>
 					</control>
