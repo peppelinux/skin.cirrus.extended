@@ -69,7 +69,7 @@
                         <width>380</width>
                         <height>25</height>
                         <font>cirrus_24</font>
-                        <textcolor>grey3</textcolor>
+                        <textcolor>grey2</textcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
@@ -80,7 +80,7 @@
                         <width>870</width>
                         <height>25</height>
                         <font>cirrus_20</font>
-                        <textcolor>grey2</textcolor>
+                        <textcolor>grey3</textcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label2]</label>

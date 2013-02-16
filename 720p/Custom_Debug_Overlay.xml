@@ -110,7 +110,13 @@
 				<visible>Window.IsVisible(Settings.xml)</visible>
 			</control>
 
-			<control type="label">
+		  <control type="label">
+				<include>WindowID</include>
+				<label>Skinsettings.xml</label>
+				<visible>Window.IsVisible(Skinsettings.xml)</visible>
+			</control>
+      
+      <control type="label">
 				<include>WindowID</include>
 				<label>SettingsCategory.xml</label>
 				<visible>Window.IsVisible(SettingsCategory.xml)</visible>
