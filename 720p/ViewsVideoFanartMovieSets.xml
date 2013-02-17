@@ -80,7 +80,7 @@
 						<aspectratio>stretch</aspectratio>
 						<fadetime>IconCrossfadeTime</fadetime>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<bordertexture border="8">contentpanelvertical.png</bordertexture>
+						<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 						<bordersize>8</bordersize>
 				</control>
 					<control type="image">
@@ -103,7 +103,7 @@
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<animation reversible="false" effect="zoom" start="2,16,110,160" end="-8,0,130,180" time="200">focus</animation>
 						<animation reversible="false" effect="zoom" end="2,16,110,160" start="-8,0,130,180" time="200">unfocus</animation>
-						<bordertexture border="8">contentpanelvertical.png</bordertexture>
+						<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 						<bordersize>8</bordersize>
 					</control>
 					<control type="image">
@@ -176,7 +176,7 @@
 				<width>86</width>
 				<height>122</height>
 				<aspectratio>stretch</aspectratio>
-				<bordertexture border="6">contentpanelvertical.png</bordertexture>
+				<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 				<bordersize>6</bordersize>
 				<texture background="true">$INFO[Container(7000).ListItem.Property(movie.1.icon)]</texture>
 			</control>
@@ -186,7 +186,7 @@
 				<width>86</width>
 				<height>122</height>
 				<aspectratio>stretch</aspectratio>
-				<bordertexture border="6">contentpanelvertical.png</bordertexture>
+				<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 				<bordersize>6</bordersize>
 				<texture background="true">$INFO[Container(7000).ListItem.Property(movie.2.icon)]</texture>
 			</control>
@@ -196,7 +196,7 @@
 				<width>86</width>
 				<height>122</height>
 				<aspectratio>stretch</aspectratio>
-				<bordertexture border="6">contentpanelvertical.png</bordertexture>
+				<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 				<bordersize>6</bordersize>
 				<texture background="true">$INFO[Container(7000).ListItem.Property(movie.3.icon)]</texture>
 			</control>
@@ -206,7 +206,7 @@
 				<width>86</width>
 				<height>122</height>
 				<aspectratio>stretch</aspectratio>
-				<bordertexture border="6">contentpanelvertical.png</bordertexture>
+				<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 				<bordersize>6</bordersize>
 				<texture background="true">$INFO[Container(7000).ListItem.Property(movie.4.icon)]</texture>
 			</control>
@@ -216,7 +216,7 @@
 				<width>86</width>
 				<height>122</height>
 				<aspectratio>stretch</aspectratio>
-				<bordertexture border="6">contentpanelvertical.png</bordertexture>
+				<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 				<bordersize>6</bordersize>
 				<texture background="true">$INFO[Container(7000).ListItem.Property(movie.5.icon)]</texture>
 			</control>
@@ -226,7 +226,7 @@
 				<width>86</width>
 				<height>122</height>
 				<aspectratio>stretch</aspectratio>
-				<bordertexture border="6">contentpanelvertical.png</bordertexture>
+				<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 				<bordersize>6</bordersize>
 				<texture background="true">$INFO[Container(7000).ListItem.Property(movie.6.icon)]</texture>
 			</control>
@@ -236,7 +236,7 @@
 				<width>86</width>
 				<height>122</height>
 				<aspectratio>stretch</aspectratio>
-				<bordertexture border="6">contentpanelvertical.png</bordertexture>
+				<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 				<bordersize>6</bordersize>
 				<texture background="true">$INFO[Container(7000).ListItem.Property(movie.7.icon)]</texture>
 			</control>
@@ -246,7 +246,7 @@
 				<width>86</width>
 				<height>122</height>
 				<aspectratio>stretch</aspectratio>
-				<bordertexture border="6">contentpanelvertical.png</bordertexture>
+				<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 				<bordersize>6</bordersize>
 				<texture background="true">$INFO[Container(7000).ListItem.Property(movie.8.icon)]</texture>
 			</control>
@@ -256,7 +256,7 @@
 				<width>86</width>
 				<height>122</height>
 				<aspectratio>stretch</aspectratio>
-				<bordertexture border="6">contentpanelvertical.png</bordertexture>
+				<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 				<bordersize>6</bordersize>
 				<texture background="true">$INFO[Container(7000).ListItem.Property(movie.9.icon)]</texture>
 			</control>
@@ -266,7 +266,7 @@
 				<width>86</width>
 				<height>122</height>
 				<aspectratio>stretch</aspectratio>
-				<bordertexture border="6">contentpanelvertical.png</bordertexture>
+				<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 				<bordersize>6</bordersize>
 				<texture background="true">$INFO[Container(7000).ListItem.Property(movie.10.icon)]</texture>
 			</control>
@@ -276,7 +276,7 @@
 				<width>86</width>
 				<height>122</height>
 				<aspectratio>stretch</aspectratio>
-				<bordertexture border="6">contentpanelvertical.png</bordertexture>
+				<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 				<bordersize>6</bordersize>
 				<texture background="true">$INFO[Container(7000).ListItem.Property(movie.11.icon)]</texture>
 			</control>
@@ -286,7 +286,7 @@
 				<width>86</width>
 				<height>122</height>
 				<aspectratio>stretch</aspectratio>
-				<bordertexture border="6">contentpanelvertical.png</bordertexture>
+				<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 				<bordersize>6</bordersize>
 				<texture background="true">$INFO[Container(7000).ListItem.Property(movie.12.icon)]</texture>
 			</control>

@@ -47,7 +47,7 @@
         <width>385</width>
         <height>200</height>
 		<texture>black-back.png</texture>
-		<bordertexture border="8">contentpanelvertical.png</bordertexture>
+		<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 		<bordersize>8</bordersize>
         <aspectratio>stretch</aspectratio>
                 <visible>Skin.Hassetting(videowindowglobal) + Player.HasVideo + Control.IsVisible(668)</visible>
@@ -368,7 +368,7 @@
 						<fadetime>IconCrossfadeTime</fadetime>
 						<texture>$INFO[ListItem.Icon]</texture>
 						<visible>Container.Content(Movies)</visible>
-					    <bordertexture border="8">contentpanelvertical.png</bordertexture>
+					    <bordertexture border="8">ContentPanelvertical.png</bordertexture>
 				        <bordersize>8</bordersize>
 					</control>
 				<!-- Poster update v1.1-->
@@ -383,7 +383,7 @@
 						<fadetime>IconCrossfadeTime</fadetime>
 						<texture>$INFO[ListItem.Icon]</texture>
 						<visible>Container.Content(TVShows)</visible>
-					    <bordertexture border="8">contentpanelvertical.png</bordertexture>
+					    <bordertexture border="8">ContentPanelvertical.png</bordertexture>
 				        <bordersize>8</bordersize>
 					</control>
 				</control>
@@ -446,7 +446,7 @@
 					<height>141</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<texture>black-back.png</texture>
-					<bordertexture border="8">contentpanelvertical.png</bordertexture>
+					<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 					<bordersize>8</bordersize>
                     <visible>Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb) + Container.Content(tvshows)</visible> 
 				</control>
@@ -469,7 +469,7 @@
 					<height>95</height>
 					<aspectratio>stretch</aspectratio>
 					<texture>black-back.png</texture>
-					<bordertexture border="8">contentpanelvertical.png</bordertexture>
+					<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 					<bordersize>8</bordersize>
                     <visible>Skin.HasSetting(banner) + !IsEmpty(ListItem.Thumb) + Container.Content(tvshows)</visible> 
 					</control>

@@ -187,7 +187,7 @@
               <aspectratio>stretch</aspectratio>
               <fadetime>IconCrossfadeTime</fadetime>
               <texture background="true">$INFO[ListItem.Icon]</texture>
-			  <bordertexture border="8">contentpanelvertical.png</bordertexture>
+			  <bordertexture border="8">ContentPanelvertical.png</bordertexture>
 			  <bordersize>8</bordersize>
             </control>
 	    <control type="image"> <!-- STUDIO FLAG -->
@@ -221,7 +221,7 @@
             <width>405</width>
             <height>227</height>
 	    <texture background="true">$INFO[ListItem.Art(fanart)]</texture>	
-		<bordertexture border="6">contentpanelvertical.png</bordertexture>
+		<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 		<bordersize>6</bordersize>
             <aspectratio>stretch</aspectratio>
 	    <visible>!Player.HasVideo | Skin.HasSetting(Use_Startup_DreamVideo)</visible>

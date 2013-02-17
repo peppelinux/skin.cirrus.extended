@@ -150,7 +150,7 @@
 							<aspectratio>stretch</aspectratio>
 							<fadetime>200</fadetime>
 							<texture background="true">$INFO[Listitem.Icon]</texture>
-							<bordertexture border="6">contentpanelvertical.png</bordertexture>
+							<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 							<bordersize>6</bordersize>
 						</control>
 					</control>		
@@ -170,7 +170,7 @@
 							<aspectratio>stretch</aspectratio>
 							<fadetime>200</fadetime>
 							<texture>black-back.png</texture>
-					        <bordertexture border="6">contentpanelvertical.png</bordertexture>
+					        <bordertexture border="6">ContentPanelvertical.png</bordertexture>
 					        <bordersize>6</bordersize>
 						</control>
 						<control type="image">

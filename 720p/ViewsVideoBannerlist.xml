@@ -155,7 +155,7 @@
 							<fadetime>200</fadetime>
 
 							<texture background="true" fallback="tvbanner.png">$INFO[ListItem.Art(banner)]</texture>
-							<bordertexture border="6">contentpanelvertical.png</bordertexture>
+							<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 						    <bordersize>6</bordersize>
 							<visible>Skin.HasSetting(jpgsupport)</visible>
 							<visible>!IsEmpty(ListItem.Thumb)</visible> 
@@ -170,7 +170,7 @@
 							<aspectratio>stretch</aspectratio>
 							<fadetime>200</fadetime>
 							<texture background="true" fallback="tvbanner.png">$INFO[ListItem.Icon]</texture>
-							<bordertexture border="6">contentpanelvertical.png</bordertexture>
+							<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 						    <bordersize>6</bordersize>
 							<visible>!Skin.HasSetting(jpgsupport)</visible>
 							<visible>!IsEmpty(ListItem.Thumb)</visible> 
@@ -366,7 +366,7 @@
 						<height>360</height>
 						<aspectratio aligny="bottom">stretch</aspectratio>
 						<texture>black-back.png</texture>
-		                <bordertexture border="8">contentpanelvertical.png</bordertexture>
+		                <bordertexture border="8">ContentPanelvertical.png</bordertexture>
 		                <bordersize>8</bordersize>
                     </control>
 					<control type="image">
@@ -440,7 +440,7 @@
 					<height>141</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<texture>black-back.png</texture>
-					<bordertexture border="8">contentpanelvertical.png</bordertexture>
+					<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 					<bordersize>8</bordersize>
                     <visible>Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb)</visible> 
 				</control>

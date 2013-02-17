@@ -51,7 +51,7 @@
 							<height>160</height>
 							<aspectratio>stretch</aspectratio>
 							<texture background="true">$INFO[Listitem.Icon]</texture>
-							<bordertexture border="6">contentpanelvertical.png</bordertexture>
+							<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 						<bordersize>6</bordersize>
 						</control>
 						<control type="image">
@@ -77,7 +77,7 @@
 							<height>160</height>
 							<aspectratio>stretch</aspectratio>
 							<texture>black-back.png</texture>
-					        <bordertexture>contentpanelvertical.png</bordertexture>
+					        <bordertexture>ContentPanelvertical.png</bordertexture>
 					        <bordersize>6</bordersize>
 						</control>
 						<control type="image">

@@ -187,7 +187,7 @@
 							<aspectratio scalediffuse="false" aligny="center" align="right">keep</aspectratio> 
 							<fadetime>200</fadetime>
 							<texture>$INFO[MusicPlayer.Property(fanart_image)]</texture>
-							<bordertexture border="6">contentpanelvertical.png</bordertexture>
+							<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 		                    <bordersize>6</bordersize>
 					</control>
 			</control>	
