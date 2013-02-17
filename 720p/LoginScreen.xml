@@ -32,7 +32,7 @@
 			<posy>120</posy>
 			<width>1280</width>
 			<height>530</height>
-			<texture border="20">contentpanel.png</texture>
+			<texture border="20">ContentPanel.png</texture>
 			<aspectratio>stretch</aspectratio>
 		  </control>
       <control type="label">
