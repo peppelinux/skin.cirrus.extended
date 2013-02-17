@@ -183,7 +183,7 @@
                             <aspectratio>stretch</aspectratio>
                             <fadetime>IconCrossfadeTime</fadetime>
                             <texture background="true">$INFO[ListItem.Icon]</texture>
-                            <bordertexture border="8">contentpanelvertical.png</bordertexture>
+                            <bordertexture border="8">ContentPanelvertical.png</bordertexture>
                             <bordersize>8</bordersize>
                         </control>
                         <control type="grouplist">
@@ -287,7 +287,7 @@
                             <height>227</height>
 
                             <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-                            <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                            <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                             <bordersize>6</bordersize>
                             <aspectratio>stretch</aspectratio>
                             <visible>!Player.HasVideo | Skin.HasSetting(Use_Startup_DreamVideo)</visible>
@@ -532,7 +532,7 @@
                             <height>227</height>
 
                             <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-                            <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                            <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                             <bordersize>6</bordersize>
                             <aspectratio>stretch</aspectratio>
                             <visible>!Player.HasVideo | Skin.HasSetting(Use_Startup_DreamVideo)</visible>
@@ -552,7 +552,7 @@
                             <aspectratio>stretch</aspectratio>
                             <fadetime>IconCrossfadeTime</fadetime>
                             <texture background="true">$INFO[ListItem.Icon]</texture>
-                            <bordertexture border="8">contentpanelvertical.png</bordertexture>
+                            <bordertexture border="8">ContentPanelvertical.png</bordertexture>
                             <bordersize>8</bordersize>
                         </control>
                         <control type="image">
@@ -827,7 +827,7 @@
 
                             $INFO[ListItem.Art(fanart)]</texture>
                             <bordertexture border="6">
-                            contentpanelvertical.png</bordertexture>
+                            ContentPanelvertical.png</bordertexture>
                             <bordersize>6</bordersize>
                             <aspectratio>stretch</aspectratio>
                             <visible>!Player.HasVideo | Skin.HasSetting(Use_Startup_DreamVideo)</visible>
@@ -847,7 +847,7 @@
                             <aspectratio>stretch</aspectratio>
                             <fadetime>IconCrossfadeTime</fadetime>
                             <texture background="true">$INFO[ListItem.Icon]</texture>
-                            <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                            <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                             <bordersize>6</bordersize>
                             <visible>!Control.HasFocus(50)</visible>
                         </control>
@@ -1098,7 +1098,7 @@
                         <width>220</width>
                         <height>330</height>
                         <texture>$INFO[Container(50).Listitem.Icon]</texture>
-                        <bordertexture border="8">contentpanelvertical.png</bordertexture>
+                        <bordertexture border="8">ContentPanelvertical.png</bordertexture>
                         <bordersize>8</bordersize>
                         <aspectratio>stretch</aspectratio>
                         <visible>Control.HasFocus(50)</visible>

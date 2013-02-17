@@ -88,7 +88,7 @@
 						<height>175</height>
 						<aspectratio>stretch</aspectratio>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<bordertexture border="6">contentpanelvertical.png</bordertexture>
+						<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 						<bordersize>6</bordersize>
 				</control>
 				<control type="image">
@@ -98,7 +98,7 @@
 						<height>175</height>
 						<aspectratio>stretch</aspectratio>
 						<texture background="true" flipy="true">$INFO[ListItem.Icon]</texture>
-						<bordertexture border="6">contentpanelvertical.png</bordertexture>
+						<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 						<bordersize>6</bordersize>
 						<colordiffuse>ff444444</colordiffuse>
 				</control>
@@ -126,7 +126,7 @@
 						<height>190</height>
 						<aspectratio>stretch</aspectratio>
 						<texture>black-back.png</texture>
-					    <bordertexture>contentpanelvertical.png</bordertexture>
+					    <bordertexture>ContentPanelvertical.png</bordertexture>
 					    <bordersize>6</bordersize>
 					</control>
 
@@ -139,7 +139,7 @@
 						<aspectratio>stretch</aspectratio>
 						<texture>black-back.png</texture>
 						<texture background="true" flipy="true">$INFO[ListItem.Icon]</texture>
-					    <bordertexture>contentpanelvertical.png</bordertexture>
+					    <bordertexture>ContentPanelvertical.png</bordertexture>
 					    <bordersize>6</bordersize>
 						<colordiffuse>ff444444</colordiffuse>
 					</control>
@@ -200,7 +200,7 @@
 						<height>130</height>
 						<aspectratio>stretch</aspectratio>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<bordertexture border="6">contentpanelvertical.png</bordertexture>
+						<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 						<bordersize>6</bordersize>
 				</control>
 				</control>
@@ -214,7 +214,7 @@
 						<height>130</height>
 						<aspectratio>stretch</aspectratio>
 						<texture background="true" flipy="true">$INFO[ListItem.Icon]</texture>
-						<bordertexture border="6">contentpanelvertical.png</bordertexture>
+						<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 						<bordersize>6</bordersize>
 						<colordiffuse>ff444444</colordiffuse>
 				</control>
@@ -243,7 +243,7 @@
 						<height>112</height>
 						<aspectratio>stretch</aspectratio>
 						<texture>black-back.png</texture>
-						<bordertexture border="6">contentpanelvertical.png</bordertexture>
+						<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 						<bordersize>6</bordersize>
 					</control>
 					<control type="image">
@@ -253,7 +253,7 @@
 						<height>112</height>
 						<aspectratio>stretch</aspectratio>
 						<texture>black-back.png</texture>
-						<bordertexture border="6">contentpanelvertical.png</bordertexture>
+						<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 						<texture background="true" flipy="true">$INFO[ListItem.Icon]</texture>
 						<bordersize>6</bordersize>
 						<colordiffuse>ff444444</colordiffuse>
@@ -410,7 +410,7 @@
 					<height>195</height>
 					<aspectratio>stretch</aspectratio>
 					<texture>black-back.png</texture>
-					<bordertexture border="8">contentpanelvertical.png</bordertexture>
+					<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 					<bordersize>8</bordersize>
 					<visible>!IsEmpty(ListItem.Thumb)</visible> 
 				</control>
@@ -473,7 +473,7 @@
 					<height>195</height>
 					<aspectratio>stretch</aspectratio>
 					<texture>black-back.png</texture>
-					<bordertexture border="8">contentpanelvertical.png</bordertexture>
+					<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 					<bordersize>8</bordersize>
 					<visible>!IsEmpty(ListItem.Thumb)</visible>
 				</control>
@@ -523,7 +523,7 @@
 					<height>195</height>
 					<aspectratio>stretch</aspectratio>
 					<texture>black-back.png</texture>
-					<bordertexture border="8">contentpanelvertical.png</bordertexture>
+					<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 					<bordersize>8</bordersize>
 					<visible>Control.IsVisible(720) + Container.Content(Sets)</visible> 
 				</control>
@@ -665,7 +665,7 @@
 				<width>86</width>
 				<height>122</height>
 				<aspectratio>stretch</aspectratio>
-				<bordertexture border="6">contentpanelvertical.png</bordertexture>
+				<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 				<bordersize>6</bordersize>
 				<texture background="true">$INFO[Container(7000).ListItem.Property(movie.1.icon)]</texture>
 				<visible>!Container(7000).OnNext + !Container(7000).OnPrevious + Container.Content(movies)</visible>
@@ -680,7 +680,7 @@
 				<width>86</width>
 				<height>122</height>
 				<aspectratio>stretch</aspectratio>
-				<bordertexture border="6">contentpanelvertical.png</bordertexture>
+				<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 				<bordersize>6</bordersize>
 				<texture background="true">$INFO[Container(7000).ListItem.Property(movie.2.icon)]</texture>
 				<visible>!Container(7000).OnNext + !Container(7000).OnPrevious + Container.Content(movies)</visible>
@@ -695,7 +695,7 @@
 				<width>86</width>
 				<height>122</height>
 				<aspectratio>stretch</aspectratio>
-				<bordertexture border="6">contentpanelvertical.png</bordertexture>
+				<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 				<bordersize>6</bordersize>
 				<texture background="true">$INFO[Container(7000).ListItem.Property(movie.3.icon)]</texture>
 				<visible>!Container(7000).OnNext + !Container(7000).OnPrevious + Container.Content(movies)</visible>
@@ -710,7 +710,7 @@
 				<width>86</width>
 				<height>122</height>
 				<aspectratio>stretch</aspectratio>
-				<bordertexture border="6">contentpanelvertical.png</bordertexture>
+				<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 				<bordersize>6</bordersize>
 				<texture background="true">$INFO[Container(7000).ListItem.Property(movie.4.icon)]</texture>
 				<visible>!Container(7000).OnNext + !Container(7000).OnPrevious + Container.Content(movies)</visible>
@@ -725,7 +725,7 @@
 				<width>86</width>
 				<height>122</height>
 				<aspectratio>stretch</aspectratio>
-				<bordertexture border="6">contentpanelvertical.png</bordertexture>
+				<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 				<bordersize>6</bordersize>
 				<texture background="true">$INFO[Container(7000).ListItem.Property(movie.5.icon)]</texture>
 				<visible>!Container(7000).OnNext + !Container(7000).OnPrevious + Container.Content(movies)</visible>
@@ -740,7 +740,7 @@
 				<width>86</width>
 				<height>122</height>
 				<aspectratio>stretch</aspectratio>
-				<bordertexture border="6">contentpanelvertical.png</bordertexture>
+				<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 				<bordersize>6</bordersize>
 				<texture background="true">$INFO[Container(7000).ListItem.Property(movie.6.icon)]</texture>
 				<visible>!Container(7000).OnNext + !Container(7000).OnPrevious + Container.Content(movies)</visible>
@@ -755,7 +755,7 @@
 				<width>86</width>
 				<height>122</height>
 				<aspectratio>stretch</aspectratio>
-				<bordertexture border="6">contentpanelvertical.png</bordertexture>
+				<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 				<bordersize>6</bordersize>
 				<texture background="true">$INFO[Container(7000).ListItem.Property(movie.7.icon)]</texture>
 				<visible>!Container(7000).OnNext + !Container(7000).OnPrevious + Container.Content(movies)</visible>
@@ -770,7 +770,7 @@
 				<width>300</width>
 				<height>180</height>
 				<aspectratio>stretch</aspectratio>
-				<bordertexture border="6">contentpanelvertical.png</bordertexture>
+				<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 				<bordersize>6</bordersize>
 				<texture background="true">$INFO[Container(7000).ListItem.Property(ExtraFanart)]</texture>
 				<visible>!Container(7000).OnNext + !Container(7000).OnPrevious + Container.Content(movies)</visible>
@@ -894,7 +894,7 @@
 					<height>195</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<texture>black-back.png</texture>
-					<bordertexture border="8">contentpanelvertical.png</bordertexture>
+					<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 					<bordersize>8</bordersize>
 					<visible>!IsEmpty(ListItem.Thumb)</visible> 
 				</control>
@@ -1059,7 +1059,7 @@
 					<height>168</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<texture>black-back.png</texture>
-					<bordertexture border="8">contentpanelvertical.png</bordertexture>
+					<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 					<bordersize>8</bordersize>
 					<visible>!Player.HasVideo | !Skin.HasSetting(videowindownoborder) | !Skin.HasSetting(videowindowglobal)</visible>
 					<visible>!Skin.HasSetting(SmallwindowhiddenTV)</visible>
@@ -1330,7 +1330,7 @@
 					<height>168</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<texture>black-back.png</texture>
-					<bordertexture border="8">contentpanelvertical.png</bordertexture>
+					<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 					<bordersize>8</bordersize>
 					<visible>!Skin.HasSetting(SmallwindowhiddenTV)</visible>
 					<visible>!Player.HasVideo | !Skin.HasSetting(videowindownoborder) | !Skin.HasSetting(videowindowglobal)</visible>

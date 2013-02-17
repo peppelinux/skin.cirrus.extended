@@ -594,7 +594,7 @@
                         <width>153</width>
                         <height>230</height>
                         <texture>black-back.png</texture>
-                        <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                        <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                         <bordersize>6</bordersize>
                         <aspectratio scalediffuse="false">stretch</aspectratio>
                         <fadetime>400</fadetime>
@@ -1419,7 +1419,7 @@
                         <width>153</width>
                         <height>230</height>
                         <texture>black-back.png</texture>
-                        <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                        <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                         <bordersize>6</bordersize>
                         <aspectratio scalediffuse="false">stretch</aspectratio>
                         <fadetime>400</fadetime>
@@ -2082,7 +2082,7 @@
                         <width>153</width>
                         <height>230</height>
                         <texture>black-back.png</texture>
-                        <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                        <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                         <bordersize>6</bordersize>
                         <aspectratio scalediffuse="false">stretch</aspectratio>
                         <fadetime>400</fadetime>
@@ -2745,7 +2745,7 @@
                         <width>153</width>
                         <height>230</height>
                         <texture>black-back.png</texture>
-                        <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                        <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                         <bordersize>6</bordersize>
                         <aspectratio scalediffuse="false">stretch</aspectratio>
                         <fadetime>400</fadetime>
@@ -3857,7 +3857,7 @@
                     </control>
                     <control type="image">
                         <texture>black-back.png</texture>
-                        <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                        <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                         <bordersize>6</bordersize>
                         <aspectratio scalediffuse="false">scale</aspectratio>
                         <posx>0</posx>
@@ -3880,7 +3880,7 @@
                     </control>
                     <control type="image">
                         <texture>black-back.png</texture>
-                        <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                        <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                         <bordersize>6</bordersize>
                         <aspectratio scalediffuse="false">scale</aspectratio>
                         <posx>0</posx>
@@ -3909,7 +3909,7 @@
                         <width>153</width>
                         <height>230</height>
                         <texture>black-back.png</texture>
-                        <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                        <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                         <bordersize>6</bordersize>
                         <aspectratio scalediffuse="false">stretch</aspectratio>
                         <fadetime>400</fadetime>
@@ -3935,7 +3935,7 @@
             <width>153</width>
             <height>230</height>
            <texture>black-back.png</texture>
-			<bordertexture border="6">contentpanelvertical.png</bordertexture>
+			<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 			<bordersize>6</bordersize>
             <aspectratio scalediffuse="false">stretch</aspectratio>
 			<fadetime>400</fadetime>
@@ -4781,7 +4781,7 @@
                     </control>
                     <control type="image">
                         <texture>black-back.png</texture>
-                        <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                        <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                         <bordersize>6</bordersize>
                         <aspectratio scalediffuse="false">scale</aspectratio>
                         <posx>0</posx>
@@ -5409,7 +5409,7 @@
                     </control>
                     <control type="image">
                         <texture>black-back.png</texture>
-                        <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                        <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                         <bordersize>6</bordersize>
                         <aspectratio scalediffuse="false">scale</aspectratio>
                         <posx>0</posx>
@@ -6038,7 +6038,7 @@
                     </control>
                     <control type="image">
                         <texture>black-back.png</texture>
-                        <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                        <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                         <bordersize>6</bordersize>
                         <aspectratio scalediffuse="false">scale</aspectratio>
                         <posx>0</posx>
@@ -6412,7 +6412,7 @@
                     </control>
                     <control type="image">
                         <texture>black-back.png</texture>
-                        <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                        <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                         <bordersize>6</bordersize>
                         <aspectratio scalediffuse="false">stretch</aspectratio>
                         <posx>58</posx>
@@ -6552,7 +6552,7 @@
                     </control>
                     <control type="image">
                         <texture>black-back.png</texture>
-                        <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                        <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                         <bordersize>6</bordersize>
                         <aspectratio scalediffuse="false">scale</aspectratio>
                         <posx>35</posx>
@@ -6903,7 +6903,7 @@
                     </control>
                     <control type="image">
                         <texture>black-back.png</texture>
-                        <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                        <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                         <bordersize>6</bordersize>
                         <aspectratio scalediffuse="false">stretch</aspectratio>
                         <posx>58</posx>
@@ -7003,7 +7003,7 @@
                         <height>222</height>
                         <width>222</width>
                         <texture>black-back.png</texture>
-                        <bordertexture border="8">contentpanelvertical.png</bordertexture>
+                        <bordertexture border="8">ContentPanelvertical.png</bordertexture>
                         <bordersize>8</bordersize>
                         <aspectratio scalediffuse="false">scale</aspectratio>
                         <fadetime>400</fadetime>

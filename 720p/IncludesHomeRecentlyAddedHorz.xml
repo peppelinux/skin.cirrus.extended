@@ -109,7 +109,7 @@
                     <height>160</height>
                     <texture background="true">$INFO[ListItem.ActualIcon]</texture>
                     <aspectratio>stretch</aspectratio>
-                    <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                    <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
                     <visible>!Skin.HasSetting(moviesinprogress)</visible>
                 </control>
@@ -120,7 +120,7 @@
                     <height>160</height>
                     <texture background="true">$INFO[ListItem.Thumb]</texture>
                     <aspectratio>stretch</aspectratio>
-                    <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                    <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
                     <visible>Skin.HasSetting(moviesinprogress)</visible>
                 </control>
@@ -134,7 +134,7 @@
                     <texture background="true">$INFO[ListItem.ActualIcon]</texture>
                     <animation reversible="false" effect="zoom" start="2,16,110,160" end="-12,-8,138,200" time="200">focus</animation>
                     <animation reversible="false" effect="zoom" end="2,16,110,160" start="-12,-8,138,200" time="200">unfocus</animation>
-                    <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                    <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
                     <aspectratio>stretch</aspectratio>
                     <visible>!Skin.HasSetting(moviesinprogress)</visible>
@@ -147,7 +147,7 @@
                     <texture background="true">$INFO[ListItem.Thumb]</texture>
                     <animation reversible="false" effect="zoom" start="2,16,110,160" end="-12,-8,138,200" time="200">focus</animation>
                     <animation reversible="false" effect="zoom" end="2,16,110,160" start="-12,-8,138,200" time="200">unfocus</animation>
-                    <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                    <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
                     <aspectratio>stretch</aspectratio>
                     <visible>Skin.HasSetting(moviesinprogress)</visible>
@@ -473,7 +473,7 @@
                     <height>160</height>
                     <texture background="true">$INFO[ListItem.ActualIcon]</texture>
                     <aspectratio>stretch</aspectratio>
-                    <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                    <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
                 </control>
             </itemlayout>
@@ -486,7 +486,7 @@
                     <texture background="true">$INFO[ListItem.ActualIcon]</texture>
                     <animation reversible="false" effect="zoom" start="2,16,110,160" end="-12,-8,138,200" time="200">focus</animation>
                     <animation reversible="false" effect="zoom" end="2,16,110,160" start="-12,-8,138,200" time="200">unfocus</animation>
-                    <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                    <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
                     <aspectratio>stretch</aspectratio>
                 </control>
@@ -660,7 +660,7 @@
                     <height>160</height>
                     <texture background="true">$INFO[ListItem.ActualIcon]</texture>
                     <aspectratio>stretch</aspectratio>
-                    <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                    <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
                 </control>
             </itemlayout>
@@ -673,7 +673,7 @@
                     <texture background="true">$INFO[ListItem.ActualIcon]</texture>
                     <animation reversible="false" effect="zoom" start="2,16,110,160" end="-12,-8,138,200" time="200">focus</animation>
                     <animation reversible="false" effect="zoom" end="2,16,110,160" start="-12,-8,138,200" time="200">unfocus</animation>
-                    <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                    <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
                     <aspectratio>stretch</aspectratio>
                 </control>
@@ -847,7 +847,7 @@
                     <height>160</height>
                     <texture background="true">$INFO[ListItem.ActualIcon]</texture>
                     <aspectratio>stretch</aspectratio>
-                    <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                    <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
                 </control>
             </itemlayout>
@@ -860,7 +860,7 @@
                     <texture background="true">$INFO[ListItem.ActualIcon]</texture>
                     <animation reversible="false" effect="zoom" start="2,16,110,160" end="-12,-8,138,200" time="200">focus</animation>
                     <animation reversible="false" effect="zoom" end="2,16,110,160" start="-12,-8,138,200" time="200">unfocus</animation>
-                    <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                    <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
                     <aspectratio>stretch</aspectratio>
                 </control>
@@ -1062,7 +1062,7 @@
                     <width>240</width>
                     <height>134</height>
                     <texture background="true">$INFO[ListItem.ActualIcon]</texture>
-                    <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                    <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
                     <aspectratio>stretch</aspectratio>
                 </control>
@@ -1076,7 +1076,7 @@
                     <fadetime>IconCrossfadeTime</fadetime>
                     <aspectratio>stretch</aspectratio>
                     <texture background="true">$INFO[ListItem.ActualIcon]</texture>
-                    <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                    <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
                     <animation reversible="false" effect="zoom" start="20,15,240,134" end="12,6,260,156" time="200">focus</animation>
                     <animation reversible="false" effect="zoom" end="20,15,240,134" start="12,6,260,156" time="200">unfocus</animation>
@@ -1430,7 +1430,7 @@
                     <width>240</width>
                     <height>134</height>
                     <texture background="true">$INFO[ListItem.ActualIcon]</texture>
-                    <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                    <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
                     <aspectratio>stretch</aspectratio>
                 </control>
@@ -1444,7 +1444,7 @@
                     <fadetime>IconCrossfadeTime</fadetime>
                     <aspectratio>stretch</aspectratio>
                     <texture background="true">$INFO[ListItem.ActualIcon]</texture>
-                    <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                    <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
                     <animation reversible="false" effect="zoom" start="20,15,240,134" end="12,6,260,156" time="200">focus</animation>
                     <animation reversible="false" effect="zoom" end="20,15,240,134" start="12,6,260,156" time="200">unfocus</animation>
@@ -1598,7 +1598,7 @@
                     <width>240</width>
                     <height>134</height>
                     <texture background="true">$INFO[ListItem.ActualIcon]</texture>
-                    <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                    <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
                     <aspectratio>stretch</aspectratio>
                 </control>
@@ -1612,7 +1612,7 @@
                     <fadetime>IconCrossfadeTime</fadetime>
                     <aspectratio>stretch</aspectratio>
                     <texture background="true">$INFO[ListItem.ActualIcon]</texture>
-                    <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                    <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
                     <animation reversible="false" effect="zoom" start="20,15,240,134" end="12,6,260,156" time="200">focus</animation>
                     <animation reversible="false" effect="zoom" end="20,15,240,134" start="12,6,260,156" time="200">unfocus</animation>
@@ -1766,7 +1766,7 @@
                     <width>240</width>
                     <height>134</height>
                     <texture background="true">$INFO[ListItem.ActualIcon]</texture>
-                    <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                    <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
                     <aspectratio>stretch</aspectratio>
                 </control>
@@ -1780,7 +1780,7 @@
                     <fadetime>IconCrossfadeTime</fadetime>
                     <aspectratio>stretch</aspectratio>
                     <texture background="true">$INFO[ListItem.ActualIcon]</texture>
-                    <bordertexture border="6">contentpanelvertical.png</bordertexture>
+                    <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
                     <animation reversible="false" effect="zoom" start="20,15,240,134" end="12,6,260,156" time="200">focus</animation>
                     <animation reversible="false" effect="zoom" end="20,15,240,134" start="12,6,260,156" time="200">unfocus</animation>
@@ -1936,7 +1936,7 @@
                     <width>160</width>
                     <height>160</height>
                     <texture background="true">$INFO[ListItem.ActualIcon]</texture>
-                    <bordertexture border="8">contentpanelvertical.png</bordertexture>
+                    <bordertexture border="8">ContentPanelvertical.png</bordertexture>
                     <bordersize>8</bordersize>
                     <aspectratio>stretch</aspectratio>
                 </control>
@@ -1950,7 +1950,7 @@
                     <aspectratio>stretch</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true">$INFO[ListItem.ActualIcon]</texture>
-                    <bordertexture border="8">contentpanelvertical.png</bordertexture>
+                    <bordertexture border="8">ContentPanelvertical.png</bordertexture>
                     <bordersize>8</bordersize>
                     <animation reversible="false" effect="zoom" start="-2,16,160,160" end="-12,4,180,180" time="200">focus</animation>
                     <animation reversible="false" effect="zoom" end="-2,16,160,160" start="-12,4,180,180" time="200">unfocus</animation>
@@ -2135,7 +2135,7 @@
                     <width>160</width>
                     <height>160</height>
                     <texture background="true">$INFO[ListItem.ActualIcon]</texture>
-                    <bordertexture border="8">contentpanelvertical.png</bordertexture>
+                    <bordertexture border="8">ContentPanelvertical.png</bordertexture>
                     <bordersize>8</bordersize>
                     <aspectratio>stretch</aspectratio>
                 </control>
@@ -2149,7 +2149,7 @@
                     <aspectratio>stretch</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true">$INFO[ListItem.ActualIcon]</texture>
-                    <bordertexture border="8">contentpanelvertical.png</bordertexture>
+                    <bordertexture border="8">ContentPanelvertical.png</bordertexture>
                     <bordersize>8</bordersize>
                     <animation reversible="false" effect="zoom" start="-2,16,160,160" end="-12,4,180,180" time="200">focus</animation>
                     <animation reversible="false" effect="zoom" end="-2,16,160,160" start="-12,4,180,180" time="200">unfocus</animation>

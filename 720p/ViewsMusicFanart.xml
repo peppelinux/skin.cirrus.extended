@@ -68,7 +68,7 @@
 						<aspectratio>stretch</aspectratio>
 						<fadetime>200</fadetime>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<bordertexture border="6">contentpanelvertical.png</bordertexture>
+						<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 						<bordersize>6</bordersize>
 						 <visible>!Container.Content(Genres)</visible>
 					</control>
@@ -80,7 +80,7 @@
             <height>160</height>
             <aspectratio>stretch</aspectratio>
             <texture fallback="special://skin/extras/musicgenres/default.png">special://skin/extras/musicgenres/$INFO[ListItem.Label].png</texture>
-			<bordertexture border="6">contentpanelvertical.png</bordertexture>
+			<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 			<bordersize>6</bordersize>
 			 <visible>Container.Content(Genres) + Window.IsVisible(MusicLibrary)</visible>
           </control>
@@ -93,7 +93,7 @@
 						<height>160</height>
 						<aspectratio>stretch</aspectratio>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<bordertexture border="6">contentpanelvertical.png</bordertexture>
+						<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 						<bordersize>6</bordersize>
 						<animation reversible="false" effect="zoom" start="-2,16,160,160" end="-12,4,180,180" time="200">focus</animation>
 						<animation reversible="false" effect="zoom" end="-2,16,160,160" start="-12,4,180,180" time="200">unfocus</animation>
@@ -107,7 +107,7 @@
             <height>160</height>
             <aspectratio>stretch</aspectratio>
             <texture fallback="special://skin/extras/musicgenres/default.png">special://skin/extras/musicgenres/$INFO[ListItem.Label].png</texture>
-			<bordertexture border="6">contentpanelvertical.png</bordertexture>
+			<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 			<bordersize>6</bordersize>
 			<animation reversible="false" effect="zoom" start="-2,16,160,160" end="-12,4,180,180" time="200">focus</animation>
 		    <animation reversible="false" effect="zoom" end="-2,16,160,160" start="-12,4,180,180" time="200">unfocus</animation>

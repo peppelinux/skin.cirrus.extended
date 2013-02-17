@@ -54,7 +54,7 @@
         <width>385</width>
         <height>200</height>
 		<texture>black-back.png</texture>
-		<bordertexture border="8">contentpanelvertical.png</bordertexture>
+		<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 		<bordersize>8</bordersize>
         <aspectratio>stretch</aspectratio>
 		<visible>Skin.Hassetting(videowindowglobal)</visible>
@@ -209,7 +209,7 @@
 						<aspectratio aligny="bottom">stretch</aspectratio>
 						<fadetime>IconCrossfadeTime</fadetime>
 						<texture>black-back.png</texture>
-						<bordertexture border="8">contentpanelvertical.png</bordertexture>
+						<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 						<bordersize>8</bordersize>
 						<visible>!Container.Content(Genres)</visible>
 					</control>
@@ -327,7 +327,7 @@
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<texture>black-back.png</texture>
-					<bordertexture border="8">contentpanelvertical.png</bordertexture>
+					<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 					<bordersize>8</bordersize>
 					<visible>!Window.IsVisible(VideoFiles) + !Window.IsVisible(VideoLibrary)</visible>
 				</control>

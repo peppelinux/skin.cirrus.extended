@@ -288,7 +288,7 @@
 					<height>303</height>
 					<aspectratio>stretch</aspectratio>
 					<texture>black-back.png</texture>
-					<bordertexture border="8">contentpanelvertical.png</bordertexture>
+					<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 					<bordersize>8</bordersize>
 					<visible>!IsEmpty(ListItem.Thumb)</visible> 
 				</control>
@@ -519,7 +519,7 @@
 				    <aspectratio>stretch</aspectratio>
 
 					<texture background="true">$INFO[ ListItem.Art(banner)]</texture>
-					<bordertexture border="8">contentpanelvertical.png</bordertexture>
+					<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 				    <bordersize>8</bordersize>
 				</control>
 				<control type="group">
@@ -588,7 +588,7 @@
 					<height>303</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<texture>black-back.png</texture>
-				    <bordertexture border="8">contentpanelvertical.png</bordertexture>
+				    <bordertexture border="8">ContentPanelvertical.png</bordertexture>
 				    <bordersize>8</bordersize>
 					<visible>!IsEmpty(ListItem.Thumb)</visible> 
 				</control>
