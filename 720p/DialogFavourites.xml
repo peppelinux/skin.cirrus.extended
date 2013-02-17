@@ -14,7 +14,7 @@
         <posy>-5</posy>
         <width>950</width>
         <height>730</height>
-       <texture flipx="true" border="5">DialogBackground.png</texture>
+       <texture flipx="true" border="5">dialogbackground.png</texture>
 		<aspectratio>stretch</aspectratio>
       </control>
       <control type="image">

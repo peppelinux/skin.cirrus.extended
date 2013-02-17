@@ -679,7 +679,7 @@
 					<height>31</height>
 					<aspectratio>keep</aspectratio>
 					<fadetime>FanartCrossfadeTime</fadetime>
-					<texture>Overlayicons/Trailer.png</texture>
+					<texture>Overlayicons/trailer.png</texture>
 					<visible>!IsEmpty(ListItem.Trailer) + Skin.HasSetting(trailerflag)</visible>
 				</control>
 			<control type="image">

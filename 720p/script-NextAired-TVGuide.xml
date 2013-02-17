@@ -31,7 +31,7 @@
                 <posy>0</posy>
                 <width>260</width>
                 <height>720</height>
-                <texture border="0,0,10,0">DialogBackground.png</texture>
+                <texture border="0,0,10,0">dialogbackground.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">

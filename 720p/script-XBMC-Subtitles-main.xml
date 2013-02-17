@@ -18,7 +18,7 @@
           <posy>120</posy>
           <width>881</width>
           <height>501</height>
-          <texture>contentpanel.png</texture>
+          <texture>ContentPanel.png</texture>
         </control>
         <control type="label">
           <description>Header Label</description>
