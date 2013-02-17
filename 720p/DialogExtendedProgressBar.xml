@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <window>
     <defaultcontrol></defaultcontrol>
     <onunload condition="!IsEmpty(Skin.String(SmartPlaylist1.Call))">$INFO[Skin.String(SmartPlaylist1.Call)]</onunload>
