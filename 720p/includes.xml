@@ -70,7 +70,6 @@
     <include file="ViewsLiveTV.xml" />
     <!-- Added for PVR Butchabay  view700-->
     <include file="IncludesExtendedHomePlaying.xml" />	
-    <include file="Includes_Next_Aired_TV_Guide.xml" />
     <include file="Includes_Home.xml" />
     <!-- Weather -->
     <include file="weather\10DayForecast.xml" />

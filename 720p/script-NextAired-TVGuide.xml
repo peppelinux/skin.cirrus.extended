@@ -1,16 +1,18 @@
 <window>
-    <defaultcontrol always="true">999</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
     <controls>
         <control type="group">
-            <posx>-250</posx>
             <visible>!Skin.HasSetting(kiosk)</visible>
+
             <animation effect="slide" start="0,0" end="280,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | ControlGroup(9001).HasFocus | Control.HasFocus(8999)">Conditional</animation>
             <animation effect="slide" start="0,0" end="-380,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | ControlGroup(9001).HasFocus">WindowClose</animation>
+            <animation effect="slide" start="-380,0" end="0,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus">WindowOpen</animation>
+
             <control type="button" id="8999">
                 <description>Fake button for mouse control</description>
-                <posx>0</posx>
+                <posx>-260</posx>
                 <posy>0</posy>
-                <width>250</width>
+                <width>265</width>
                 <height>720</height>
                 <label>-</label>
                 <font>-</font>
@@ -18,58 +20,48 @@
                 <texturefocus>-</texturefocus>
                 <visible>true</visible>
             </control>
-            <control type="button" id="9001">
-                <posx>250</posx>
-                <posy>260</posy>
-                <width>42</width>
-                <height>128</height>
-                <font>-</font>
-            </control>
+
+            <!-- Menu background panel -->
             <control type="image">
-                <posx>0</posx>
+                <posx>-820</posx>
                 <posy>0</posy>
-                <width>260</width>
+                <width>820</width>
                 <height>720</height>
-                <texture border="0,0,10,0">dialogbackground.png</texture>
+                <texture border="5">dialogbackground.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
-                <description>LOGO</description>
-                <posx>15</posx>
-                <posy>50</posy>
-                <width>220</width>
-                <height>220</height>
-                <aspectratio>keep</aspectratio>
+                <posx>-820</posx>
+                <posy>0</posy>
+                <width>820</width>
+                <height>720</height>
+                <texture border="5">dialogbackground.png</texture>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
+                <posx>-250</posx>
+                <posy>650</posy>
+                <width>160</width>
+                <height>40</height>
                 <texture>xbmc_logo_white.png</texture>
             </control>
+
             <control type="grouplist" id="9000">
-                <posx>0</posx>
-                <posy>275</posy>
-                <width>250</width>
-                <height>480</height>
+                <posx>-260</posx>
+                <posy>150</posy>
                 <onleft>9002</onleft>
                 <onright>9002</onright>
-                <itemgap>0</itemgap>
                 <control type="label">
-                    <width>250</width>
-                    <height>35</height>
-                    <font>font12caps</font>
                     <label>33063</label>
-                    <textcolor>blue</textcolor>
                     <align>center</align>
+                    <textcolor>accent</textcolor>
                     <aligny>center</aligny>
                 </control>
                 <control type="button" id="8">
                     <description>Settings</description>
                     <include>ButtonCommonValues</include>
-                    <textwidth>235</textwidth>
-                    <height>40</height>
-                    <width>250</width>
-                    <textoffsetx>10</textoffsetx>
-                    <textwidth>200</textwidth>
                     <align>center</align>
                     <aligny>center</aligny>
-                    <font>font13</font>
                     <pulseonselect>false</pulseonselect>
                     <label>5</label>
                 </control>
@@ -100,7 +92,7 @@
             <randomize>true</randomize>
             <fadetime>2000</fadetime>
             <include condition="Skin.HasSetting(animation_bg_global)">global_kenburns_fanart</include>
-            <visible>![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+            <visible>![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)] + StringCompare(Window(Home).Property(TVGuide.BackgroundFanart),1)</visible>
         </control>
         <control type="image">
             <posx>0</posx>
@@ -112,7 +104,7 @@
             <fadetime>FanartCrossfadeTime</fadetime>
             <include>VisibleFadeEffect</include>
             <include condition="Skin.HasSetting(animation_bg_global)">global_kenburns_fanart</include>
-            <visible>Control.HasFocus(200)</visible>
+            <visible>Control.HasFocus(200) + StringCompare(Window(Home).Property(TVGuide.BackgroundFanart),1)</visible>
         </control>
         <control type="image">
             <posx>0</posx>
@@ -124,7 +116,7 @@
             <fadetime>FanartCrossfadeTime</fadetime>
             <include>VisibleFadeEffect</include>
             <include condition="Skin.HasSetting(animation_bg_global)">global_kenburns_fanart</include>
-            <visible>Control.HasFocus(201)</visible>
+            <visible>Control.HasFocus(201) + StringCompare(Window(Home).Property(TVGuide.BackgroundFanart),1)</visible>
         </control>
         <control type="image">
             <posx>0</posx>
@@ -136,7 +128,7 @@
             <fadetime>FanartCrossfadeTime</fadetime>
             <include>VisibleFadeEffect</include>
             <include condition="Skin.HasSetting(animation_bg_global)">global_kenburns_fanart</include>
-            <visible>Control.HasFocus(202)</visible>
+            <visible>Control.HasFocus(202) + StringCompare(Window(Home).Property(TVGuide.BackgroundFanart),1)</visible>
         </control>
         <control type="image">
             <posx>0</posx>
@@ -148,7 +140,7 @@
             <fadetime>FanartCrossfadeTime</fadetime>
             <include>VisibleFadeEffect</include>
             <include condition="Skin.HasSetting(animation_bg_global)">global_kenburns_fanart</include>
-            <visible>Control.HasFocus(203)</visible>
+            <visible>Control.HasFocus(203) + StringCompare(Window(Home).Property(TVGuide.BackgroundFanart),1)</visible>
         </control>
         <control type="image">
             <posx>0</posx>
@@ -160,7 +152,7 @@
             <fadetime>FanartCrossfadeTime</fadetime>
             <include>VisibleFadeEffect</include>
             <include condition="Skin.HasSetting(animation_bg_global)">global_kenburns_fanart</include>
-            <visible>Control.HasFocus(204)</visible>
+            <visible>Control.HasFocus(204) + StringCompare(Window(Home).Property(TVGuide.BackgroundFanart),1)</visible>
         </control>
         <control type="image">
             <posx>0</posx>
@@ -172,7 +164,7 @@
             <fadetime>FanartCrossfadeTime</fadetime>
             <include>VisibleFadeEffect</include>
             <include condition="Skin.HasSetting(animation_bg_global)">global_kenburns_fanart</include>
-            <visible>Control.HasFocus(205)</visible>
+            <visible>Control.HasFocus(205) + StringCompare(Window(Home).Property(TVGuide.BackgroundFanart),1)</visible>
         </control>
         <control type="image">
             <posx>0</posx>
@@ -184,7 +176,7 @@
             <fadetime>FanartCrossfadeTime</fadetime>
             <include>VisibleFadeEffect</include>
             <include condition="Skin.HasSetting(animation_bg_global)">global_kenburns_fanart</include>
-            <visible>Control.HasFocus(206)</visible>
+            <visible>Control.HasFocus(206) + StringCompare(Window(Home).Property(TVGuide.BackgroundFanart),1)</visible>
         </control>
         <control type="image">
             <posx>0</posx>
@@ -252,7 +244,7 @@
                             <width>160</width>
                             <height>40</height>
                             <texture background="true" fallback="tvbanner.png">$INFO[ListItem.Property(Art(banner))]</texture>
-                            <visible>Skin.HasSetting(jpgsupport)</visible>
+                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                         </control>
                         <control type="label">
                             <posx>84</posx>
@@ -278,7 +270,7 @@
                             <width>160</width>
                             <height>40</height>
                             <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
-                            <visible>!Skin.HasSetting(jpgsupport)</visible>
+                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                         </control>
                         <control type="image">
                             <posx>168</posx>
@@ -305,7 +297,7 @@
                             <width>160</width>
                             <height>40</height>
                             <texture background="true" fallback="tvbanner.png">$INFO[ListItem.Property(Art(banner))]</texture>
-                            <visible>Skin.HasSetting(jpgsupport)</visible>
+                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                         </control>
                         <control type="label">
                             <posx>84</posx>
@@ -331,7 +323,7 @@
                             <width>160</width>
                             <height>40</height>
                             <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
-                            <visible>!Skin.HasSetting(jpgsupport)</visible>
+                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                         </control>
                         <control type="image">
                             <posx>168</posx>
@@ -400,7 +392,7 @@
                             <width>160</width>
                             <height>40</height>
                             <texture background="true" fallback="tvbanner.png">$INFO[ListItem.Property(Art(banner))]</texture>
-                            <visible>Skin.HasSetting(jpgsupport)</visible>
+                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                         </control>
                         <control type="label">
                             <posx>84</posx>
@@ -426,7 +418,7 @@
                             <width>160</width>
                             <height>40</height>
                             <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
-                            <visible>!Skin.HasSetting(jpgsupport)</visible>
+                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                         </control>
                         <control type="image">
                             <posx>168</posx>
@@ -453,7 +445,7 @@
                             <width>160</width>
                             <height>40</height>
                             <texture background="true" fallback="tvbanner.png">$INFO[ListItem.Property(Art(banner))]</texture>
-                            <visible>Skin.HasSetting(jpgsupport)</visible>
+                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                         </control>
                         <control type="label">
                             <posx>84</posx>
@@ -479,7 +471,7 @@
                             <width>160</width>
                             <height>40</height>
                             <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
-                            <visible>!Skin.HasSetting(jpgsupport)</visible>
+                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                         </control>
                         <control type="image">
                             <posx>168</posx>
@@ -548,7 +540,7 @@
                             <width>160</width>
                             <height>40</height>
                             <texture background="true" fallback="tvbanner.png">$INFO[ListItem.Property(Art(banner))]</texture>
-                            <visible>Skin.HasSetting(jpgsupport)</visible>
+                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                         </control>
                         <control type="label">
                             <posx>84</posx>
@@ -574,7 +566,7 @@
                             <width>160</width>
                             <height>40</height>
                             <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
-                            <visible>!Skin.HasSetting(jpgsupport)</visible>
+                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                         </control>
                         <control type="image">
                             <posx>168</posx>
@@ -601,7 +593,7 @@
                             <width>160</width>
                             <height>40</height>
                             <texture background="true" fallback="tvbanner.png">$INFO[ListItem.Property(Art(banner))]</texture>
-                            <visible>Skin.HasSetting(jpgsupport)</visible>
+                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                         </control>
                         <control type="label">
                             <posx>84</posx>
@@ -627,7 +619,7 @@
                             <width>160</width>
                             <height>40</height>
                             <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
-                            <visible>!Skin.HasSetting(jpgsupport)</visible>
+                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                         </control>
                         <control type="image">
                             <posx>168</posx>
@@ -696,7 +688,7 @@
                             <width>160</width>
                             <height>40</height>
                             <texture background="true" fallback="tvbanner.png">$INFO[ListItem.Property(Art(banner))]</texture>
-                            <visible>Skin.HasSetting(jpgsupport)</visible>
+                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                         </control>
                         <control type="label">
                             <posx>84</posx>
@@ -722,7 +714,7 @@
                             <width>160</width>
                             <height>40</height>
                             <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
-                            <visible>!Skin.HasSetting(jpgsupport)</visible>
+                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                         </control>
                         <control type="image">
                             <posx>168</posx>
@@ -749,7 +741,7 @@
                             <width>160</width>
                             <height>40</height>
                             <texture background="true" fallback="tvbanner.png">$INFO[ListItem.Property(Art(banner))]</texture>
-                            <visible>Skin.HasSetting(jpgsupport)</visible>
+                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                         </control>
                         <control type="label">
                             <posx>84</posx>
@@ -775,7 +767,7 @@
                             <width>160</width>
                             <height>40</height>
                             <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
-                            <visible>!Skin.HasSetting(jpgsupport)</visible>
+                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                         </control>
                         <control type="image">
                             <posx>168</posx>
@@ -844,7 +836,7 @@
                             <width>160</width>
                             <height>40</height>
                             <texture background="true" fallback="tvbanner.png">$INFO[ListItem.Property(Art(banner))]</texture>
-                            <visible>Skin.HasSetting(jpgsupport)</visible>
+                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                         </control>
                         <control type="label">
                             <posx>84</posx>
@@ -870,7 +862,7 @@
                             <width>160</width>
                             <height>40</height>
                             <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
-                            <visible>!Skin.HasSetting(jpgsupport)</visible>
+                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                         </control>
                         <control type="image">
                             <posx>168</posx>
@@ -897,7 +889,7 @@
                             <width>160</width>
                             <height>40</height>
                             <texture background="true" fallback="tvbanner.png">$INFO[ListItem.Property(Art(banner))]</texture>
-                            <visible>Skin.HasSetting(jpgsupport)</visible>
+                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                         </control>
                         <control type="label">
                             <posx>84</posx>
@@ -923,7 +915,7 @@
                             <width>160</width>
                             <height>40</height>
                             <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
-                            <visible>!Skin.HasSetting(jpgsupport)</visible>
+                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                         </control>
                         <control type="image">
                             <posx>168</posx>
@@ -992,7 +984,7 @@
                             <width>160</width>
                             <height>40</height>
                             <texture background="true" fallback="tvbanner.png">$INFO[ListItem.Property(Art(banner))]</texture>
-                            <visible>Skin.HasSetting(jpgsupport)</visible>
+                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                         </control>
                         <control type="label">
                             <posx>84</posx>
@@ -1018,7 +1010,7 @@
                             <width>160</width>
                             <height>40</height>
                             <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
-                            <visible>!Skin.HasSetting(jpgsupport)</visible>
+                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                         </control>
                         <control type="image">
                             <posx>168</posx>
@@ -1045,7 +1037,7 @@
                             <width>160</width>
                             <height>40</height>
                             <texture background="true" fallback="tvbanner.png">$INFO[ListItem.Property(Art(banner))]</texture>
-                            <visible>Skin.HasSetting(jpgsupport)</visible>
+                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                         </control>
                         <control type="label">
                             <posx>84</posx>
@@ -1071,7 +1063,7 @@
                             <width>160</width>
                             <height>40</height>
                             <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
-                            <visible>!Skin.HasSetting(jpgsupport)</visible>
+                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                         </control>
                         <control type="image">
                             <posx>168</posx>
@@ -1140,7 +1132,7 @@
                             <width>160</width>
                             <height>40</height>
                             <texture background="true" fallback="tvbanner.png">$INFO[ListItem.Property(Art(banner))]</texture>
-                            <visible>Skin.HasSetting(jpgsupport)</visible>
+                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                         </control>
                         <control type="label">
                             <posx>84</posx>
@@ -1166,7 +1158,7 @@
                             <width>160</width>
                             <height>40</height>
                             <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
-                            <visible>!Skin.HasSetting(jpgsupport)</visible>
+                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                         </control>
                         <control type="image">
                             <posx>168</posx>
@@ -1193,7 +1185,7 @@
                             <width>160</width>
                             <height>40</height>
                             <texture background="true" fallback="tvbanner.png">$INFO[ListItem.Property(Art(banner))]</texture>
-                            <visible>Skin.HasSetting(jpgsupport)</visible>
+                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                         </control>
                         <control type="label">
                             <posx>84</posx>
@@ -1219,7 +1211,7 @@
                             <width>160</width>
                             <height>40</height>
                             <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
-                            <visible>!Skin.HasSetting(jpgsupport)</visible>
+                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                         </control>
                         <control type="image">
                             <posx>168</posx>
@@ -1474,7 +1466,7 @@
                     <texture>$INFO[Container(201).ListItem.Property(Network),special://skin/extras/flagging/studios/,.png]</texture>
                 </control>
             </control>
-                        <control type="group">
+            <control type="group">
                 <visible>Control.HasFocus(202) + StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                 <control type="label">
                     <posx>2</posx>
