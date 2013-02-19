@@ -31,21 +31,12 @@
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
-                <posx>-820</posx>
-                <posy>0</posy>
-                <width>820</width>
-                <height>720</height>
-                <texture border="5">dialogbackground.png</texture>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
                 <posx>-250</posx>
                 <posy>650</posy>
                 <width>160</width>
                 <height>40</height>
                 <texture>xbmc_logo_white.png</texture>
             </control>
-
             <control type="grouplist" id="9000">
                 <posx>-260</posx>
                 <posy>150</posy>
