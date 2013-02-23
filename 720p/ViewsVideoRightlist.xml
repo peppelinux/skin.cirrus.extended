@@ -77,7 +77,7 @@
         <width>385</width>
         <height>200</height>
 		<texture>black-back.png</texture>
-		<bordertexture border="8">contentpanelvertical.png</bordertexture>
+		<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 		<bordersize>8</bordersize>
         <aspectratio>stretch</aspectratio>
                 <visible>Skin.Hassetting(videowindowglobal) + Player.HasVideo + !Skin.Hassetting(videowindownoborder) + Control.IsVisible(569)</visible>
@@ -402,7 +402,7 @@
 					<height>141</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<texture>black-back.png</texture>
-					<bordertexture border="8">contentpanelvertical.png</bordertexture>
+					<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 					<bordersize>8</bordersize>
                     <visible>Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb)</visible> 
 				</control>
@@ -448,7 +448,7 @@
 					<height>95</height>
 					<aspectratio>stretch</aspectratio>
 					<texture>black-back.png</texture>
-					<bordertexture border="8">contentpanelvertical.png</bordertexture>
+					<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 					<bordersize>8</bordersize>
                     <visible>Skin.HasSetting(banner) + !IsEmpty(ListItem.Thumb)</visible> 
 					</control>
@@ -512,7 +512,7 @@
 						<height>360</height>
 						<aspectratio aligny="bottom">stretch</aspectratio>
 						<texture>black-back.png</texture>
-		                <bordertexture border="8">contentpanelvertical.png</bordertexture>
+		                <bordertexture border="8">ContentPanelvertical.png</bordertexture>
 		                <bordersize>8</bordersize>
                     </control>
 					<control type="image">
@@ -544,7 +544,7 @@
 						<height>360</height>
 						<aspectratio aligny="bottom">stretch</aspectratio>
 						<texture>black-back.png</texture>
-						<bordertexture border="8">contentpanelvertical.png</bordertexture>
+						<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 						<bordersize>8</bordersize>
 					</control>
 					<control type="image">
@@ -666,7 +666,7 @@
 					<height>128</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<texture>black-back.png</texture>
-		            <bordertexture border="8">contentpanelvertical.png</bordertexture>
+		            <bordertexture border="8">ContentPanelvertical.png</bordertexture>
 		            <bordersize>8</bordersize>
 		            <visible>!IsEmpty(ListItem.Thumb)</visible> 
                 </control>
@@ -761,7 +761,7 @@
 						<height>360</height>
 						<aspectratio aligny="bottom">stretch</aspectratio>
 						<texture>black-back.png</texture>
-						<bordertexture border="8">contentpanelvertical.png</bordertexture>
+						<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 						<bordersize>8</bordersize>
 					</control>
 					<control type="image">
@@ -1216,7 +1216,7 @@
 					<height>31</height>
 					<aspectratio>keep</aspectratio>
 					<fadetime>FanartCrossfadeTime</fadetime>
-					<texture>Overlayicons/Trailer.png</texture>
+					<texture>Overlayicons/trailer.png</texture>
 
                     <visible>[!IsEmpty(ListItem.Trailer) | Skin.HasSetting(trailerflag)] + [Skin.HasSetting(showCases) | Skin.HasSetting(showClearCases) | Skin.HasSetting(posterlessRightList)]</visible>
 				</control>

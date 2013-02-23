@@ -1,4 +1,3 @@
-
 <includes>
 <!-- ===================================================================================== -->
 <!-- ================================= FANART VIEW ID 666 ================================ -->
@@ -62,7 +61,7 @@
 						<aspectratio>stretch</aspectratio>
 						<fadetime>IconCrossfadeTime</fadetime>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<bordertexture border="8">contentpanelvertical.png</bordertexture>
+						<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 						<bordersize>8</bordersize>
 				</control>
 					<control type="image">
@@ -85,7 +84,7 @@
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<animation reversible="false" effect="zoom" start="2,16,110,160" end="-8,0,130,180" time="300">focus</animation>
 						<animation reversible="false" effect="zoom" end="2,16,110,160" start="-8,0,130,180" time="300">unfocus</animation>
-						<bordertexture border="8">contentpanelvertical.png</bordertexture>
+						<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 						<bordersize>8</bordersize>
 					</control>
 					<control type="image">
@@ -305,7 +304,7 @@
 					<height>303</height>
 					<aspectratio>stretch</aspectratio>
 					<texture>black-back.png</texture>
-					<bordertexture border="8">contentpanelvertical.png</bordertexture>
+					<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 					<bordersize>8</bordersize>
 					<visible>!Skin.HasSetting(Smallwindowhidden)</visible>
 					<visible>!Player.HasVideo | !Skin.HasSetting(videowindownoborder) | !Skin.HasSetting(videowindowglobal)</visible>

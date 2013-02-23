@@ -61,7 +61,7 @@
 						<aspectratio>stretch</aspectratio>
 						<fadetime>200</fadetime>
 						<texture background="true">$INFO[Listitem.Icon]</texture> 
-						<bordertexture border="8">contentpanelvertical.png</bordertexture>
+						<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 						<bordersize>8</bordersize>
 					</control>
 					<control type="image">
@@ -98,7 +98,7 @@
 						<aspectratio>stretch</aspectratio>
 						<fadetime>200</fadetime>
 						<texture background="true">$INFO[Listitem.Icon]</texture> 
-						<bordertexture border="8">contentpanelvertical.png</bordertexture>
+						<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 						<bordersize>8</bordersize>
 					</control>
 					<control type="image">
@@ -261,7 +261,7 @@
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<fadetime>FanartCrossfadeTime</fadetime>
 					<texture>black-back.png</texture>
-					<bordertexture border="8">contentpanelvertical.png</bordertexture>
+					<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 					<bordersize>8</bordersize>
 					<visible>!Player.HasVideo | !Skin.HasSetting(videowindownoborder) | !Skin.HasSetting(videowindowglobal)</visible>
 					<visible>!IsEmpty(ListItem.Thumb)</visible> 
@@ -293,7 +293,7 @@
 					<posy>20</posy>
 					<width>385</width>
 					<height>200</height>
-					<texture>DialogBackground.png</texture>
+					<texture>dialogbackground.png</texture>
 					<bordertexture border="8">ThumbBorder.png</bordertexture>
 					<bordersize>4</bordersize>
 					<aspectratio>stretch</aspectratio>

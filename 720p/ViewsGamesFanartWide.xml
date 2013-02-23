@@ -69,7 +69,7 @@
 			<height>160</height>
 			<aspectratio>stretch</aspectratio>
 			<texture background="true">$INFO[ListItem.Icon]</texture>
-			<bordertexture border="6">contentpanelvertical.png</bordertexture>
+			<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 			<bordersize>6</bordersize>
 				</control>
 				</itemlayout>
@@ -82,7 +82,7 @@
 						<aspectratio>stretch</aspectratio>
 						<fadetime>IconCrossfadeTime</fadetime>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<bordertexture border="6">contentpanelvertical.png</bordertexture>
+						<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 			            <bordersize>6</bordersize>
 						<animation reversible="false" effect="zoom" start="20,15,240,160" end="10,6,260,180" time="200">focus</animation>
 						<animation reversible="false" effect="zoom" end="20,15,240,160" start="10,6,260,180" time="200">unfocus</animation>
@@ -219,7 +219,7 @@
 					<height>303</height>
 					<aspectratio>stretch</aspectratio>
 					<texture>black-back.png</texture>
-					<bordertexture border="8">contentpanelvertical.png</bordertexture>
+					<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 					<bordersize>8</bordersize>
 		  <visible>!Player.HasVideo | !Skin.HasSetting(videowindownoborder) | !Skin.HasSetting(videowindowglobal)</visible>
 		</control>

@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window type="dialog" id="50">
 	<zorder>2</zorder>
@@ -111,7 +110,13 @@
 				<visible>Window.IsVisible(Settings.xml)</visible>
 			</control>
 
-			<control type="label">
+		  <control type="label">
+				<include>WindowID</include>
+				<label>Skinsettings.xml</label>
+				<visible>Window.IsVisible(Skinsettings.xml)</visible>
+			</control>
+      
+      <control type="label">
 				<include>WindowID</include>
 				<label>SettingsCategory.xml</label>
 				<visible>Window.IsVisible(SettingsCategory.xml)</visible>

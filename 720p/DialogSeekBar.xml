@@ -17,7 +17,8 @@
 				<width>824</width>
 				<height>300</height>
 				<aspectratio>stretch</aspectratio>
- 				<texture>contentpanel.png</texture>
+
+                <texture>ContentPanel.png</texture>
 				<visible>!VideoPlayer.Content(Files)</visible>
 				<visible>!Skin.HasSetting(slimseek)</visible>
 			</control>
@@ -27,7 +28,8 @@
 				<width>824</width>
 				<height>190</height>
 				<aspectratio>stretch</aspectratio>
- 				<texture>contentpanel.png</texture>
+
+                <texture>ContentPanel.png</texture>
 				<visible>VideoPlayer.Content(Files) | Skin.HasSetting(slimseek)</visible>
 			</control>
 			<control type="image">

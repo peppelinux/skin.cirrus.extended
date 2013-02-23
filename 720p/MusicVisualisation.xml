@@ -785,7 +785,7 @@
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<texture>$INFO[MusicPlayer.cover]</texture>
-					<bordertexture border="6">contentpanelvertical.png</bordertexture>
+					<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 					<bordersize>6</bordersize>
 				</control>
 			</control>

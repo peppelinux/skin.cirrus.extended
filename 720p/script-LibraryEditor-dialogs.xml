@@ -26,7 +26,7 @@
 				<posy>0</posy>
 				<width>610</width>
 				<height>650</height>
-				<texture border="40">DialogBackground.png</texture>
+				<texture border="40">dialogbackground.png</texture>
 				<animation effect="zoom" start="100" end="0,0,610,615" condition="stringcompare(container(3).NumItems,12)">Conditional</animation>
 				<animation effect="zoom" start="100" end="0,0,610,575" condition="stringcompare(container(3).NumItems,11)">Conditional</animation>
 				<animation effect="zoom" start="100" end="0,0,610,535" condition="stringcompare(container(3).NumItems,10)">Conditional</animation>
@@ -95,7 +95,7 @@
 						<posy>0</posy>
 						<width>550</width>
 						<height>41</height>
-						<texture border="0,2,0,2">default/MenuItemNF.png</texture>
+						<texture border="0,2,0,2">default/menuitemNF.png</texture>
 					</control>
 					<control type="label">
 						<posx>20</posx>
@@ -280,7 +280,7 @@
 					<textcolor>white</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<align>center</align>
-					<texturenofocus border="5">default/MenuItemNF.png</texturenofocus>
+					<texturenofocus border="5">default/menuitemNF.png</texturenofocus>
 					<texturefocus border="5">default/button-focus.png</texturefocus>
 					<onleft>6</onleft>
 					<onright>6</onright>
@@ -298,7 +298,7 @@
 					<textcolor>white</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<align>center</align>
-					<texturenofocus border="5">default/MenuItemNF.png</texturenofocus>
+					<texturenofocus border="5">default/menuitemNF.png</texturenofocus>
 					<texturefocus border="5">default/button-focus.png</texturefocus>
 					<onleft>5</onleft>
 					<onright>5</onright>

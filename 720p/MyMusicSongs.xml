@@ -54,14 +54,14 @@
 			<posy>0</posy>
 			<width>820</width>
 			<height>720</height>
-			<texture border="5">DialogBackground.png</texture>
+			<texture border="5">dialogbackground.png</texture>
 		</control>
 		<control type="image">
 			<posx>-820</posx>
 			<posy>0</posy>
 			<width>820</width>
 			<height>720</height>
-			<texture border="5">DialogBackground.png</texture>
+			<texture border="5">dialogbackground.png</texture>
 		</control>
 		<control type="image">
 			<posx>-250</posx>

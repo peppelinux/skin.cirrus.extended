@@ -49,7 +49,7 @@
 				<focusedcolor>white</focusedcolor>
 				<align>right</align>
 				<aligny>center</aligny>
-				<texturenofocus border="5">MenuItemNF.png</texturenofocus>
+				<texturenofocus border="5">menuitemNF.png</texturenofocus>
 				<texturefocus border="5">listwhitegradient.png</texturefocus>
 				<onleft>60</onleft>
 				<onright>7</onright>
@@ -69,7 +69,7 @@
 				<focusedcolor>white</focusedcolor>
 				<align>right</align>
 				<aligny>center</aligny>
-				<texturenofocus border="5">MenuItemNF.png</texturenofocus>
+				<texturenofocus border="5">menuitemNF.png</texturenofocus>
 				<texturefocus border="5">listwhitegradient.png</texturefocus>
 				<onleft>60</onleft>
 				<onright>7</onright>
@@ -89,7 +89,7 @@
 				<focusedcolor>white</focusedcolor>
 				<align>right</align>
 				<aligny>center</aligny>
-				<texturenofocus border="5">MenuItemNF.png</texturenofocus>
+				<texturenofocus border="5">menuitemNF.png</texturenofocus>
 				<texturefocus border="5">listwhitegradient.png</texturefocus>
 				<onleft>60</onleft>
 				<onright>7</onright>
@@ -122,7 +122,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<texturefocus flipx="true">listwhitegradient.png</texturefocus>
-				<texturenofocus border="5">MenuItemNF.png</texturenofocus>
+				<texturenofocus border="5">menuitemNF.png</texturenofocus>
 				<pulseonselect>no</pulseonselect>
 				<label>19074</label>
 				<onleft>4</onleft>
@@ -140,7 +140,7 @@
 				<textcolor>grey2</textcolor>
 				<focusedcolor>white</focusedcolor>
 				<texturefocus flipx="true">listwhitegradient.png</texturefocus>
-				<texturenofocus border="5">MenuItemNF.png</texturenofocus>
+				<texturenofocus border="5">menuitemNF.png</texturenofocus>
 				<label>19201</label>
 				<onright>20</onright>
 				<onleft>4</onleft>
@@ -157,7 +157,7 @@
 				<textcolor>grey2</textcolor>
 				<focusedcolor>white</focusedcolor>
 				<texturefocus flipx="true">listwhitegradient.png</texturefocus>
-				<texturenofocus border="5">MenuItemNF.png</texturenofocus>
+				<texturenofocus border="5">menuitemNF.png</texturenofocus>
 				<label>19202</label>
 				<onleft>4</onleft>
 				<onright>20</onright>
@@ -183,7 +183,7 @@
 				<textcolor>grey2</textcolor>
 				<focusedcolor>white</focusedcolor>
 				<texturefocus flipx="true">listwhitegradient.png</texturefocus>
-				<texturenofocus border="5">MenuItemNF.png</texturenofocus>
+				<texturenofocus border="5">menuitemNF.png</texturenofocus>
 				<label>19207</label>
 				<onright>20</onright>
 				<onleft>4</onleft>
@@ -202,7 +202,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<texturefocus flipx="true">listwhitegradient.png</texturefocus>
-				<texturenofocus border="5">MenuItemNF.png</texturenofocus>
+				<texturenofocus border="5">menuitemNF.png</texturenofocus>
 				<pulseonselect>no</pulseonselect>
 				<label>19206</label>
 				<onleft>4</onleft>
@@ -220,7 +220,7 @@
 				<textcolor>grey2</textcolor>
 				<focusedcolor>white</focusedcolor>
 				<texturefocus flipx="true">listwhitegradient.png</texturefocus>
-				<texturenofocus border="5">MenuItemNF.png</texturenofocus>
+				<texturenofocus border="5">menuitemNF.png</texturenofocus>
 				<label>19200</label>
 				<onright>20</onright>
 				<onleft>4</onleft>
@@ -237,7 +237,7 @@
 				<textcolor>grey2</textcolor>
 				<focusedcolor>white</focusedcolor>
 				<texturefocus flipx="true">listwhitegradient.png</texturefocus>
-				<texturenofocus border="5">MenuItemNF.png</texturenofocus>
+				<texturenofocus border="5">menuitemNF.png</texturenofocus>
 				<align>center</align>
 				<label>19205</label>
 				<onleft>4</onleft>
@@ -256,7 +256,7 @@
 				<focusedcolor>white</focusedcolor>
 				<visible>IsEmpty(Window.Property(IsRadio))</visible>
 				<texturefocus flipx="true">listwhitegradient.png</texturefocus>
-				<texturenofocus border="5">MenuItemNF.png</texturenofocus>
+				<texturenofocus border="5">menuitemNF.png</texturenofocus>
 				<align>center</align>
 				<label>19024</label>
 				<onleft>30</onleft>
@@ -275,7 +275,7 @@
 				<focusedcolor>white</focusedcolor>
 				<visible>!IsEmpty(Window.Property(IsRadio))</visible>
 				<texturefocus flipx="true">listwhitegradient.png</texturefocus>
-				<texturenofocus border="5">MenuItemNF.png</texturenofocus>
+				<texturenofocus border="5">menuitemNF.png</texturenofocus>
 				<align>center</align>
 				<label>19023</label>
 				<onleft>30</onleft>
@@ -293,7 +293,7 @@
 				<textcolor>grey2</textcolor>
 				<focusedcolor>white</focusedcolor>
 				<texturefocus flipx="true">listwhitegradient.png</texturefocus>
-				<texturenofocus border="5">MenuItemNF.png</texturenofocus>
+				<texturenofocus border="5">menuitemNF.png</texturenofocus>
 				<align>center</align>
 				<label>19203</label>
 				<onleft>4</onleft>
@@ -311,7 +311,7 @@
 				<textcolor>grey2</textcolor>
 				<focusedcolor>white</focusedcolor>
 				<texturefocus flipx="true">listwhitegradient.png</texturefocus>
-				<texturenofocus border="5">MenuItemNF.png</texturenofocus>
+				<texturenofocus border="5">menuitemNF.png</texturenofocus>
 				<align>center</align>
 				<label>19211</label>
 				<onleft>4</onleft>
@@ -329,7 +329,7 @@
 				<textcolor>grey2</textcolor>
 				<focusedcolor>white</focusedcolor>
 				<texturefocus flipx="true">listwhitegradient.png</texturefocus>
-				<texturenofocus border="5">MenuItemNF.png</texturenofocus>
+				<texturenofocus border="5">menuitemNF.png</texturenofocus>
 				<align>center</align>
 				<label>19204</label>
 				<onleft>4</onleft>
@@ -361,7 +361,7 @@
             <posy>0</posy>
             <width>350</width>
             <height>40</height>
-            <texture border="5">MenuItemNF.png</texture>
+            <texture border="5">menuitemNF.png</texture>
           </control>
           <control type="image">
             <posx>0</posx>
@@ -445,7 +445,7 @@
             <posy>0</posy>
             <width>350</width>
             <height>60</height>
-            <texture border="5">MenuItemNF.png</texture>
+            <texture border="5">menuitemNF.png</texture>
             <visible>!Control.HasFocus(20)</visible>
             <include>VisibleFadeEffect</include>
           </control>
@@ -454,7 +454,7 @@
             <posy>0</posy>
             <width>350</width>
             <height>60</height>
-            <texture border="5">MenuItemFO.png</texture>
+            <texture border="5">menuitemFO.png</texture>
             <visible>Control.HasFocus(20)</visible>
             <include>VisibleFadeEffect</include>
           </control>

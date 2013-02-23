@@ -1,17 +1,39 @@
 <includes>
-
-
-	<include name="NextAired">
-		<control type="group">
-			<control type="label">
-			 <font>cirrus_24</font>
-		<!-- 	NextAired.%d.ShowTitle > NextAired.%d.Label
+    <include name="NextAired">
+        <control type="group">
+            <control type="label">
+                <font>cirrus_24</font>
+                <!-- 	NextAired.%d.ShowTitle > NextAired.%d.Label
             NextAired.%d.Thumb > NextAired.%d.Thumb
             NextAired.%d.Showpath > NextAired.%d.Path  -->
-				<label>[COLOR=accent]$LOCALIZE[31062] [/COLOR][COLOR=ffffffff]$INFO[Window(Home).Property(NextAired.NextDate)][/COLOR]</label>
-				<visible>!IsEmpty(Window(Home).Property(NextAired.Label))+!IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
-			</control>
-			
-		</control>
-	</include>
+                <label>[COLOR=accent]$LOCALIZE[31062] [/COLOR][COLOR=ffffffff]$INFO[Window(Home).Property(NextAired.NextDate)][/COLOR]</label>
+                <visible>!IsEmpty(Window(Home).Property(NextAired.Label))+!IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
+            </control>
+
+        </control>
+    </include>
+    <includes>
+    <include name="NextAiredMonday">
+        <onfocus>SetFocus(200)</onfocus>
+    </include>
+    <include name="NextAiredTuesday">
+        <onfocus>SetFocus(201)</onfocus>
+    </include>
+    <include name="NextAiredWednesday">
+        <onfocus>SetFocus(202)</onfocus>
+    </include>
+    <include name="NextAiredThursday">
+        <onfocus>SetFocus(203)</onfocus>
+    </include>
+    <include name="NextAiredFriday">
+        <onfocus>SetFocus(204)</onfocus>
+    </include>
+    <include name="NextAiredSaturday">
+        <onfocus>SetFocus(205)</onfocus>
+    </include>
+    <include name="NextAiredSunday">
+        <onfocus>SetFocus(206)</onfocus>
+    </include>
+</includes>
+
 </includes>

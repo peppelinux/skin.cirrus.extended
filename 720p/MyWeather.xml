@@ -300,14 +300,14 @@
                             <posy>0</posy>
                             <width>600</width>
                             <height>136</height>
-                            <texture border="0,5,0,5">MenuItemNF.png</texture>
+                            <texture border="0,5,0,5">menuitemNF.png</texture>
                         </control>
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
                             <width>600</width>
                             <height>136</height>
-                            <texture border="0,5,0,5">MenuItemNF.png</texture>
+                            <texture border="0,5,0,5">menuitemNF.png</texture>
                         </control>
                         <control type="label">
                             <posx>300</posx>
@@ -377,7 +377,7 @@
                             <posy>0</posy>
                             <width>600</width>
                             <height>136</height>
-                            <texture border="0,2,0,2">MenuItemNF.png</texture>
+                            <texture border="0,2,0,2">menuitemNF.png</texture>
                             <visible>!Control.HasFocus(50)</visible>
                             <include>VisibleFadeEffect</include>
                         </control>
@@ -386,7 +386,7 @@
                             <posy>0</posy>
                             <width>600</width>
                             <height>136</height>
-                            <texture border="0,2,0,2">MenuItemNF.png</texture>
+                            <texture border="0,2,0,2">menuitemNF.png</texture>
                             <visible>!Control.HasFocus(50)</visible>
                             <include>VisibleFadeEffect</include>
                         </control>
@@ -648,7 +648,7 @@
                 <posy>0</posy>
                 <width>820</width>
                 <height>720</height>
-                <texture border="5">DialogBackground.png</texture>
+                <texture border="5">dialogbackground.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
@@ -656,7 +656,7 @@
                 <posy>0</posy>
                 <width>820</width>
                 <height>720</height>
-                <texture border="5">DialogBackground.png</texture>
+                <texture border="5">dialogbackground.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">

@@ -28,15 +28,15 @@
             </control>
             <control type="image">
                 <posx>0</posx>
-                <posy>0</posy>
+                <posy>1</posy>
                 <width>1280</width>
-                <height>720</height>
+                <height>638</height>
                 <texture>blackgradient.png</texture>
             </control>
             <control type="image">
                 <description>LOGO</description>
                 <posx>100</posx>
-                <posy>30</posy>
+                <posy>20</posy>
                 <width>160</width>
                 <height>40</height>
                 <texture>xbmc_logo_white.png</texture>
@@ -48,7 +48,7 @@
                 <posy>80</posy>
                 <width>260</width>
                 <height>500</height>
-                <onleft>9010</onleft>
+                <onleft>9000</onleft>
                 <onright>9010</onright>
                 <onup>9000</onup>
                 <ondown>9000</ondown>
@@ -69,7 +69,7 @@
                         <width>380</width>
                         <height>25</height>
                         <font>cirrus_24</font>
-                        <textcolor>grey3</textcolor>
+                        <textcolor>grey2</textcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
@@ -80,7 +80,7 @@
                         <width>870</width>
                         <height>25</height>
                         <font>cirrus_20</font>
-                        <textcolor>grey2</textcolor>
+                        <textcolor>grey3</textcolor>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label2]</label>
@@ -161,7 +161,7 @@
                 <posx>268</posx>
                 <posy>1</posy>
                 <width>802</width>
-                <height>636</height>
+                <height>638</height>
                 <texture border="5">homesubbackground.png</texture>
             </control>
             <control type="label">
@@ -188,9 +188,9 @@
                     <width>750</width>
                     <height>550</height>
                     <itemgap>-1</itemgap>
-                    <pagecontrol>-</pagecontrol>
+                    <pagecontrol>60</pagecontrol>
                     <onleft>9000</onleft>
-                    <onright>9000</onright>
+                    <onright>60</onright>
                     <onup>9001</onup>
                     <ondown>9001</ondown>
                     <control type="label" id="100">
@@ -418,6 +418,22 @@
                     <selected>Skin.HasSetting(ShowDebugInfo)</selected>
                 </control>   				
             </control>
+            <control type="scrollbar" id="60">
+                <posx>1060</posx>
+                <posy>-5</posy>
+                <width>25</width>
+                <height>652</height>
+                <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+                <texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+                <texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+                <textureslidernib>ScrollBarNib.png</textureslidernib>
+                <textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+                <onleft>9001</onleft>
+                <onright>9001</onright>
+                <showonepage>false</showonepage>
+                <orientation>vertical</orientation>
+                <visible>Container(9000).Hasfocus(1)</visible>
+            </control>            
 
             <!-- HOME WINDOW SETTINGS -->
             <control type="grouplist" id="9002">
@@ -1144,19 +1160,18 @@
                 <selected>Skin.HasSetting(HomeMenuNoGlobalSearchButton)</selected>
             </control>
         </control>
-
         <control type="scrollbar" id="60">
             <posx>1060</posx>
             <posy>-5</posy>
             <width>25</width>
-            <height>650</height>
+            <height>652</height>
             <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
             <texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
             <texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
             <textureslidernib>ScrollBarNib.png</textureslidernib>
             <textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
             <onleft>9002</onleft>
-            <onright>9000</onright>
+            <onright>9002</onright>
             <showonepage>false</showonepage>
             <orientation>vertical</orientation>
             <visible>Container(9000).Hasfocus(2)</visible>
@@ -2155,9 +2170,9 @@
                 <width>750</width>
                 <height>550</height>
                 <itemgap>-1</itemgap>
-                <pagecontrol>61</pagecontrol>
+                <pagecontrol>60</pagecontrol>
                 <onleft>9000</onleft>
-                <onright>61</onright>
+                <onright>60</onright>
                 <onup>9004</onup>
                 <ondown>9004</ondown>
                 <!-- ADDON Submenu Mod -->
@@ -3140,6 +3155,23 @@
                     <visible>Skin.HasSetting(HomeTVbutton29) + Skin.HasSetting(TVItems)</visible>
                 </control>
             </control>
+            
+        <control type="scrollbar" id="60">
+            <posx>1060</posx>
+            <posy>-5</posy>
+            <width>25</width>
+            <height>652</height>
+            <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+            <texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+            <texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+            <textureslidernib>ScrollBarNib.png</textureslidernib>
+            <textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+            <onleft>9004</onleft>
+            <onright>9004</onright>
+            <showonepage>false</showonepage>
+            <orientation>vertical</orientation>
+            <visible>Container(9000).Hasfocus(4)</visible>
+        </control>            
         </control>
 
         <!-- CUSTOM HOME ITEMS -->		
@@ -3502,9 +3534,9 @@
                 <width>750</width>
                 <height>530</height>
                 <itemgap>-1</itemgap>
-                <pagecontrol>61</pagecontrol>
+                <pagecontrol>60</pagecontrol>
                 <onleft>9000</onleft>
-                <onright>61</onright>
+                <onright>60</onright>
                 <onup>9006</onup>
                 <ondown>9006</ondown>
                 <control type="label" id="1088">
@@ -3749,8 +3781,24 @@
                     <onclick>Skin.ToggleSetting(nopagecount)</onclick>
                     <selected>Skin.HasSetting(nopagecount)</selected>
                 </control>
+               
             </control>
-
+                <control type="scrollbar" id="60">
+                    <posx>1060</posx>
+                    <posy>-5</posy>
+                    <width>25</width>
+                    <height>652</height>
+                    <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+                    <texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+                    <texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+                    <textureslidernib>ScrollBarNib.png</textureslidernib>
+                    <textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+                    <onleft>9006</onleft>
+                    <onright>9006</onright>
+                    <showonepage>false</showonepage>
+                    <orientation>vertical</orientation>
+                    <visible>Container(9000).Hasfocus(6)</visible>
+                </control>   
             <!-- ENABLE DISABLE VIDEO VIEWS -->
             <control type="group">
                 <control type="grouplist" id="9007">
@@ -3760,9 +3808,9 @@
                     <width>750</width>
                     <height>550</height>
                     <itemgap>-1</itemgap>
-                    <pagecontrol>61</pagecontrol>
+                    <pagecontrol>60</pagecontrol>
                     <onleft>9000</onleft>
-                    <onright>61</onright>
+                    <onright>60</onright>
                     <onup>9007</onup>
                     <ondown>9007</ondown>
                     <control type="label" id="1089">
@@ -3879,22 +3927,22 @@
             </control>
         </control>
 
-        <control type="scrollbar" id="61">
+        <control type="scrollbar" id="60">
             <posx>1060</posx>
-            <posy>60</posy>
+            <posy>-5</posy>
             <width>25</width>
-            <height>530</height>
+            <height>652</height>
             <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
             <texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
             <texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
             <textureslidernib>ScrollBarNib.png</textureslidernib>
             <textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
-            <onleft>9004</onleft>
-            <onright>9000</onright>
+            <onleft>9007</onleft>
+            <onright>9007</onright>
             <showonepage>false</showonepage>
             <orientation>vertical</orientation>
-            <visible>Container(9000).Hasfocus(4)</visible>
-        </control>
+            <visible>Container(9000).Hasfocus(7)</visible>
+        </control>  
     </control>
 </control>
 <include>BehindDialogFadeOut</include>

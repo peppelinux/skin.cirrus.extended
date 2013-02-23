@@ -342,7 +342,7 @@
 			       <width>320</width>
 			       <height>135</height>
 			       <colordiffuse>DDFFFFFF</colordiffuse>
-			       <texture border="20">DialogBackground.png</texture>
+			       <texture border="20">dialogbackground.png</texture>
 		       </control>
 		       <control type="group">
 			       <visible>!PVR.IsRecording + PVR.HasTimer</visible>
@@ -483,7 +483,7 @@
         <width>540</width>
         <height>303</height>
 		<texture>black-back.png</texture>
-		<bordertexture border="8">contentpanelvertical.png</bordertexture>
+		<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 		<bordersize>8</bordersize>
         <aspectratio>stretch</aspectratio>
 		<align>center</align>

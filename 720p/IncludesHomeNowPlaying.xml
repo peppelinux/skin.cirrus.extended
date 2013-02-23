@@ -24,7 +24,7 @@
         <height>110</height>
         <aspectratio aligny="bottom">stretch</aspectratio>
         <texture>$INFO[MusicPlayer.Cover]</texture>
-		<bordertexture border="6">contentpanelvertical.png</bordertexture>
+		<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 		<bordersize>6</bordersize>
 		<visible>!Skin.HasSetting(cleannowplaying)</visible>
 		<visible>!Skin.HasSetting(cdartonhome)</visible>
@@ -50,7 +50,7 @@
 		<fadetime>200</fadetime>
 		<fadetime>IconCrossfadeTime</fadetime>
 		<texture>black-back.png</texture>
-		<bordertexture border="8">contentpanelvertical.png</bordertexture>
+		<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 		<bordersize>8</bordersize>
 		<visible>!Skin.HasSetting(cleannowplaying)</visible>
 		<visible>Skin.HasSetting(ExtraFanMusic)</visible>
@@ -228,7 +228,7 @@
 			       <width>320</width>
 			       <height>135</height>
 			       <colordiffuse>DDFFFFFF</colordiffuse>
-			      <texture border="20">DialogBackground.png</texture>
+			      <texture border="20">dialogbackground.png</texture>
 		       </control>
 		       <control type="group">
 			       <visible>!PVR.IsRecording + PVR.HasTimer</visible>

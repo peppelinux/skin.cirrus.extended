@@ -10,7 +10,7 @@
 			       <width>1290</width>
 			       <height>605</height>
 			       <colordiffuse>DDFFFFFF</colordiffuse>
-			       <texture border="20">DialogBackground.png</texture>
+			       <texture border="20">dialogbackground.png</texture>
 		       </control>
 		<control type="group">
 			<visible>!Control.IsVisible(11) + !Control.IsVisible(12)</visible>
@@ -213,7 +213,7 @@
 								<posy>0</posy>
 								<width>1100</width>
 								<height>41</height>
-								<texture border="5">MenuItemNF.png</texture>
+								<texture border="5">menuitemNF.png</texture>
 							</control>
 							<control type="label">
 								<posx>150</posx>
@@ -288,7 +288,7 @@
 								<posy>0</posy>
 								<width>1100</width>
 								<height>41</height>
-								<texture border="5">MenuItemNF.png</texture>
+								<texture border="5">menuitemNF.png</texture>
 							</control>
 							<control type="image">
 								<posx>0</posx>
@@ -504,7 +504,7 @@
 								<posy>0</posy>
 								<width>1100</width>
 								<height>41</height>
-								<texture border="5">MenuItemNF.png</texture>
+								<texture border="5">menuitemNF.png</texture>
 							</control>
 							<control type="image">
 								<posx>0</posx>
@@ -614,7 +614,7 @@
 								<posy>0</posy>
 								<width>1100</width>
 								<height>41</height>
-								<texture border="5">MenuItemNF.png</texture>
+								<texture border="5">menuitemNF.png</texture>
 							</control>
 							<control type="image">
 								<posx>0</posx>
@@ -1595,7 +1595,7 @@
 							<posy>0</posy>
 							<width>390</width>
 							<height>61</height>
-							<texture border="2">MenuItemNF.png</texture>
+							<texture border="2">menuitemNF.png</texture>
 							<include>VisibleFadeEffect</include>
 						</control>
 						<control type="label">
@@ -1662,7 +1662,7 @@
 							<posy>0</posy>
 							<width>390</width>
 							<height>61</height>
-							<texture border="2">MenuItemNF.png</texture>
+							<texture border="2">menuitemNF.png</texture>
 							<visible>!Control.HasFocus(11)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
@@ -1671,7 +1671,7 @@
 							<posy>0</posy>
 							<width>390</width>
 							<height>61</height>
-							<texture border="2">MenuItemFO.png</texture>
+							<texture border="2">menuitemFO.png</texture>
 							<visible>Control.HasFocus(11)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
@@ -1821,7 +1821,7 @@
 							<posy>0</posy>
 							<width>390</width>
 							<height>61</height>
-							<texture border="2">MenuItemNF.png</texture>
+							<texture border="2">menuitemNF.png</texture>
 							<include>VisibleFadeEffect</include>
 						</control>
 						<control type="label">
@@ -1888,7 +1888,7 @@
 							<posy>0</posy>
 							<width>390</width>
 							<height>61</height>
-							<texture border="2">MenuItemNF.png</texture>
+							<texture border="2">menuitemNF.png</texture>
 							<visible>!Control.HasFocus(12)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
@@ -1897,7 +1897,7 @@
 							<posy>0</posy>
 							<width>390</width>
 							<height>61</height>
-							<texture border="2">MenuItemFO.png</texture>
+							<texture border="2">menuitemFO.png</texture>
 							<visible>Control.HasFocus(12)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
@@ -2016,7 +2016,7 @@
 							<posy>0</posy>
 							<width>700</width>
 							<height>41</height>
-							<texture border="2">MenuItemNF.png</texture>
+							<texture border="2">menuitemNF.png</texture>
 							<include>VisibleFadeEffect</include>
 						</control>
 						<control type="image">
@@ -2057,7 +2057,7 @@
 							<posy>0</posy>
 							<width>700</width>
 							<height>41</height>
-							<texture border="2">MenuItemFO.png</texture>
+							<texture border="2">menuitemFO.png</texture>
 							<visible>Control.HasFocus(13)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
@@ -2066,7 +2066,7 @@
 							<posy>0</posy>
 							<width>700</width>
 							<height>41</height>
-							<texture border="2">MenuItemNF.png</texture>
+							<texture border="2">menuitemNF.png</texture>
 							<include>VisibleFadeEffect</include>
 							<visible>!Control.HasFocus(13)</visible>
 						</control>
@@ -2268,7 +2268,7 @@
 								<posy>0</posy>
 								<width>1100</width>
 								<height>41</height>
-								<texture border="5">MenuItemNF.png</texture>
+								<texture border="5">menuitemNF.png</texture>
 							</control>
 							<control type="image">
 								<posx>0</posx>
@@ -2326,7 +2326,7 @@
 								<posy>0</posy>
 								<width>1100</width>
 								<height>41</height>
-								<texture border="5">MenuItemNF.png</texture>
+								<texture border="5">menuitemNF.png</texture>
 							</control>
 							<control type="image">
 								<posx>0</posx>
@@ -2542,7 +2542,7 @@
 								<posy>0</posy>
 								<width>1100</width>
 								<height>41</height>
-								<texture border="5">MenuItemNF.png</texture>
+								<texture border="5">menuitemNF.png</texture>
 							</control>
 							<control type="image">
 								<posx>300</posx>
@@ -2652,7 +2652,7 @@
 								<posy>0</posy>
 								<width>1100</width>
 								<height>41</height>
-								<texture border="5">MenuItemNF.png</texture>
+								<texture border="5">menuitemNF.png</texture>
 							</control>
 							<control type="image">
 								<posx>300</posx>

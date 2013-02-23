@@ -178,7 +178,7 @@
           <aspectratio aligny="center">keep</aspectratio>
           <fadetime>IconCrossfadeTime</fadetime>
           <texture background="true">$INFO[ListItem.Icon]</texture>
-		    <bordertexture border="8">contentpanelvertical.png</bordertexture>
+		    <bordertexture border="8">ContentPanelvertical.png</bordertexture>
 			  <bordersize>8</bordersize>
 		  <visible>!Container.Content(Genres)</visible>
         </control>

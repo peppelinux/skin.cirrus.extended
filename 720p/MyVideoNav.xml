@@ -420,7 +420,7 @@
                 <posy>0</posy>
                 <width>820</width>
                 <height>720</height>
-                <texture border="5">DialogBackground.png</texture>
+                <texture border="5">dialogbackground.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
@@ -428,7 +428,7 @@
                 <posy>0</posy>
                 <width>820</width>
                 <height>720</height>
-                <texture border="5">DialogBackground.png</texture>
+                <texture border="5">dialogbackground.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
