@@ -510,7 +510,7 @@
                     <icon>special://skin/backgrounds/hdmovies.jpg</icon>
                     <thumb>$INFO[Skin.String(Home_Custom_Back_HDMovies_Folder)]</thumb>
                     <onclick>XBMC.ActivateWindow(videos,special://skin/playlists/HDMovies.xsp,return)</onclick>
-                    <visible>!Skin.HasSetting(HomeMenuNoHDMoviesButton)</visible>
+                    <visible>!Skin.HasSetting(HomeMenuNoHDMoviesButton) + Library.HasContent(Movies)</visible>
                 </item>
                 <item id="7">
                     <label>41103</label>
