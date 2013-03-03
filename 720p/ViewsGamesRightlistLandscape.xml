@@ -150,7 +150,7 @@
 						<posy>8</posy>
 						<width>445</width>
 						<height>25</height>
-						<label>[COLOR=white]$INFO[ListItem.premiered][/COLOR] $INFO[ListItem.Label,][COLOR=white]$INFO[ListItem.Property(Addon.Version),  (,)][/COLOR]</label>
+						<label>[COLOR=white]$INFO[ListItem.Year][/COLOR] $INFO[ListItem.Label,][COLOR=white]$INFO[ListItem.Property(Addon.Version),  (,)][/COLOR]</label>
 						<align>right</align>
 						<aligny>center</aligny>
 						<font>cirrus_30_Bold</font>

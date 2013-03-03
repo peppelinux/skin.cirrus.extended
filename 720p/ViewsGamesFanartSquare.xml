@@ -157,7 +157,7 @@
           <scroll>true</scroll>
           <align>left</align>
           <aligny>center</aligny>
-          <label>[COLOR=accent]$INFO[ListItem.premiered][/COLOR] $INFO[ListItem.Label]</label>
+          <label>[COLOR=accent]$INFO[ListItem.Year][/COLOR] $INFO[ListItem.Label]</label>
           <visible>Skin.HasSetting(View591HideInfo) | Window.IsVisible(VideoFiles) | Container.Content(genres)</visible>
         </control>
       </control>
@@ -259,7 +259,7 @@
           <scroll>true</scroll>
           <align>left</align>
           <aligny>center</aligny>
-          <label>[COLOR=accent][/COLOR]$INFO[ListItem.Studio, ]$INFO[ListItem.Premiered,  (,)]</label>
+          <label>[COLOR=accent][/COLOR]$INFO[ListItem.Studio, ]$INFO[ListItem.Year,  (,)]</label>
           <scrollout>false</scrollout>
           <pauseatend>2000</pauseatend>
           
