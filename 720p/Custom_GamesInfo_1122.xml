@@ -347,7 +347,7 @@
             <content>
               <item>
                 <label>$LOCALIZE[562]:</label>
-                <label2>$INFO[ListItem.Premiered]</label2>
+                <label2>$INFO[ListItem.Year]</label2>
                 <onclick>-</onclick>
               </item>
               <item>
