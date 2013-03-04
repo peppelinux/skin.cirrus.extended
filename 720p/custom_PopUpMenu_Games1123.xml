@@ -77,7 +77,7 @@
 				<include>ButtonCommonValues</include>
 				<description>Trailer Windowed</description>
                 <onclick>Dialog.Close(1123)</onclick>
-                <onclick>XBMC.PlayMedia($INFO[Skin.String(Menu_GameCustom1_Label)]/$INFO[ListItem.label]/trailer.mp4,1)</onclick>
+                <onclick>XBMC.PlayMedia($INFO[Skin.String(Menu_GameCustom1_Label)]/$INFO[ListItem.trailer],1)</onclick>
                 <label>41204</label>
 				<onleft>9021</onleft>
 				<onright>9021</onright>
@@ -90,10 +90,10 @@
 				<posy>40</posy>
 				<include>ButtonCommonValues</include>
 				<description>TrailerFullscreen</description>
-                <onclick>Dialog.Close(1123)</onclick>
+        <onclick>Dialog.Close(1123)</onclick>
 				<onclick>Dialog.Close(1122)</onclick>
-                <onclick>XBMC.PlayMedia($INFO[Skin.String(Menu_GameCustom1_Label)]/$INFO[ListItem.label]/trailer.mp4)</onclick>
-                <label>41205</label>
+        <onclick>XBMC.PlayMedia($INFO[Skin.String(Menu_GameCustom1_Label)]/$INFO[ListItem.trailer],1)</onclick>
+        <label>41205</label>
 				<onleft>9021</onleft>
 				<onright>9021</onright>
 				<onup>2</onup>
