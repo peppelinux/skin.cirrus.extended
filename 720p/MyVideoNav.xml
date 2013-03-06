@@ -533,6 +533,11 @@
                         <label>587</label>
                         <onclick>Filter</onclick>
                     </control>
+                    <control type="radiobutton" id="7">
+                        <description>Stack Toggle</description>
+                        <include>ButtonCommonValues</include>
+                        <label>346</label>
+                    </control>
                     <control type="radiobutton" id="17">
                         <description>Flatten</description>
                         <include>ButtonCommonValues</include>
@@ -753,6 +758,7 @@
                         <label>41270</label>
                         <onclick>Skin.ToggleSetting(showmoviedvd)</onclick>
                         <selected>Skin.HasSetting(showmoviedvd)</selected>
+                        <visible>Control.IsVisible(668) | Control.IsVisible(720) | Control.IsVisible(52) | Control.IsVisible(721)</visible>
                     </control>
                     <control type="button" id="44">
                         <description>Download Artwork</description>
