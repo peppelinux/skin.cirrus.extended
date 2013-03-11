@@ -1274,14 +1274,14 @@
                         <onclick condition="Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=tvshow, dbid=$INFO[ListItem.DBID], extrafanart)</onclick>
                         <visible>[Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)] + System.HasAddon(script.artwork.downloader)</visible>
                     </control>
-                    <!--<control type="button" id="132">
+                    <control type="button" id="132">
                         <description>Edit library</description>
-                        <visible>Container.content(movies) + System.HasAddon(script.library.editor)</visible>
+                        <visible>Container.content(movies) + System.HasAddon(script.libraryeditor)</visible>
                         <include>ButtonVideoInfoCommonValues</include>
-                        <onclick>XBMC.RunScript(script.library.editor)</onclick>
+                        <onclick>XBMC.RunScript(script.libraryeditor, DBID=$INFO[ListItem.DBID])</onclick>
                         <label>41127</label>
                     </control>
-                    <control type="button" id="133">
+                    <!--<control type="button" id="133">
                         <description>Edit Library</description>
                         <visible>Container.content(episodes) | container.content(TVShows) | container.content(seasons)</visible>
                         <visible>System.HasAddon(script.library.editor)</visible>
