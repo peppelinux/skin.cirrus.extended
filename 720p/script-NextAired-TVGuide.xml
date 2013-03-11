@@ -2107,7 +2107,7 @@
                 <align>left</align>
                 <aligny>center</aligny>
             </control>
-            
+
             <control type="grouplist" id="9000">
                 <posx>-260</posx>
                 <posy>70</posy>
