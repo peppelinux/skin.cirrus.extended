@@ -1,13 +1,13 @@
 <window id="0">
     <defaultcontrol always="true">9000</defaultcontrol>
     <onload>ClearProperty(DontRunTVShowScripts,Home)</onload>
-    <onload condition="System.HasAddon(script.randomandlastitems) + [Skin.HasSetting(nomoviewidgetplaylistmovie) | Skin.HasSetting(latestmoviesplaylist1)]">XBMC.RunScript(script.randomandlastitems,type=Movie,unwatched=True,limit=10,method=Last,playlist=$INFO[Skin.String(Menu_Custom4_Path)],menu=Menu1)</onload>
-    <onload condition="System.HasAddon(script.randomandlastitems) + [Skin.HasSetting(nomoviewidgetplaylistmovie) | Skin.HasSetting(latestmoviesplaylist2)]">XBMC.RunScript(script.randomandlastitems,type=Movie,unwatched=True,limit=10,method=Last,playlist=$INFO[Skin.String(Menu_Custom5_Path)],menu=Menu2)</onload>
-    <onload condition="System.HasAddon(script.randomandlastitems) + [Skin.HasSetting(nomoviewidgetplaylistmovie) | Skin.HasSetting(latestmoviesplaylist3)]">XBMC.RunScript(script.randomandlastitems,type=Movie,unwatched=True,limit=10,method=Last,playlist=$INFO[Skin.String(Menu_Custom6_Path)],menu=Menu3)</onload>
+    <onload condition="System.HasAddon(script.randomandlastitems) + Skin.HasSetting(nomoviewidgetplaylistmovie) + Skin.HasSetting(Menu_Custom4) + !IsEmpty(Skin.String(Menu_Custom4_Path))">XBMC.RunScript(script.randomandlastitems,type=Movie,unwatched=True,limit=10,method=Last,playlist=$INFO[Skin.String(Menu_Custom4_Path)],menu=Menu1)</onload>
+    <onload condition="System.HasAddon(script.randomandlastitems) + Skin.HasSetting(nomoviewidgetplaylistmovie) + Skin.HasSetting(Menu_Custom5) + !IsEmpty(Skin.String(Menu_Custom5_Path))">XBMC.RunScript(script.randomandlastitems,type=Movie,unwatched=True,limit=10,method=Last,playlist=$INFO[Skin.String(Menu_Custom5_Path)],menu=Menu2)</onload>
+    <onload condition="System.HasAddon(script.randomandlastitems) + Skin.HasSetting(nomoviewidgetplaylistmovie) + Skin.HasSetting(Menu_Custom6) + !IsEmpty(Skin.String(Menu_Custom6_Path))">XBMC.RunScript(script.randomandlastitems,type=Movie,unwatched=True,limit=10,method=Last,playlist=$INFO[Skin.String(Menu_Custom6_Path)],menu=Menu3)</onload>
 
-    <onload condition="System.HasAddon(script.randomandlastitems) + [Skin.HasSetting(notvwidgetplaylisttv) | Skin.HasSetting(latestepisodesplaylist1)]">XBMC.RunScript(script.randomandlastitems,type=Episode,unwatched=True,limit=10,method=Last,playlist=$INFO[Skin.String(Menu_Custom9_Path)],menu=Menu4)</onload>
-    <onload condition="System.HasAddon(script.randomandlastitems) + [Skin.HasSetting(notvwidgetplaylisttv) | Skin.HasSetting(latestepisodesplaylist2)]">XBMC.RunScript(script.randomandlastitems,type=Episode,unwatched=True,limit=10,method=Last,playlist=$INFO[Skin.String(Menu_Custom10_Path)],menu=Menu5)</onload>
-    <onload condition="System.HasAddon(script.randomandlastitems) + [Skin.HasSetting(notvwidgetplaylisttv) | Skin.HasSetting(latestepisodesplaylist3)]">XBMC.RunScript(script.randomandlastitems,type=Episode,unwatched=True,limit=10,method=Last,playlist=$INFO[Skin.String(Menu_Custom11_Path)],menu=Menu6)</onload>
+    <onload condition="System.HasAddon(script.randomandlastitems) + Skin.HasSetting(notvwidgetplaylisttv) + Skin.HasSetting(Menu_Custom9) + !IsEmpty(Skin.String(Menu_Custom9_Path))">XBMC.RunScript(script.randomandlastitems,type=Episode,unwatched=True,limit=10,method=Last,playlist=$INFO[Skin.String(Menu_Custom9_Path)],menu=Menu4)</onload>
+    <onload condition="System.HasAddon(script.randomandlastitems) + Skin.HasSetting(notvwidgetplaylisttv) + Skin.HasSetting(Menu_Custom10) + !IsEmpty(Skin.String(Menu_Custom10_Path))">XBMC.RunScript(script.randomandlastitems,type=Episode,unwatched=True,limit=10,method=Last,playlist=$INFO[Skin.String(Menu_Custom10_Path)],menu=Menu5)</onload>
+    <onload condition="System.HasAddon(script.randomandlastitems) + Skin.HasSetting(notvwidgetplaylisttv) + Skin.HasSetting(Menu_Custom11) + !IsEmpty(Skin.String(Menu_Custom11_Path))">XBMC.RunScript(script.randomandlastitems,type=Episode,unwatched=True,limit=10,method=Last,playlist=$INFO[Skin.String(Menu_Custom11_Path)],menu=Menu6)</onload>
     <allowoverlay>yes</allowoverlay>  
     <controls>
 
@@ -29,19 +29,19 @@
         </control>
         <!-- RANDOM FANART BACKDROPS -->
         <!--<control type="multiimage">
-		<visible>Skin.HasSetting(homepageRandomFanart)</visible>
-		<posx>0</posx>
-		<posy>0</posy>
-		<width>1280</width>
-		<height>720</height>
-		<imagepath background="true">special://profile/Thumbnails/Video/Fanart</imagepath>
-		<timeperimage>8000</timeperimage>
-		<randomize>true</randomize>
-		<fadetime>500</fadetime>
-		<animation effect="zoom" start="110" end="135" center="auto" time="15000" tween="cubic" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
-        <animation effect="slide" end="-20,-20" delay="4000" time="8000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
-        <animation effect="slide" end="40,0" delay="10000" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
-    </control>-->
+            <visible>Skin.HasSetting(homepageRandomFanart)</visible>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1280</width>
+            <height>720</height>
+            <imagepath background="true">special://profile/Thumbnails/Video/Fanart</imagepath>
+            <timeperimage>8000</timeperimage>
+            <randomize>true</randomize>
+            <fadetime>500</fadetime>
+            <animation effect="zoom" start="110" end="135" center="auto" time="15000" tween="cubic" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
+            <animation effect="slide" end="-20,-20" delay="4000" time="8000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
+            <animation effect="slide" end="40,0" delay="10000" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
+        </control>-->
         <control type="multiimage">
             <visible>Skin.HasSetting(Menu_RandomCustom1)</visible>
             <posx>0</posx>

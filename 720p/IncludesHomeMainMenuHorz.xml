@@ -486,7 +486,7 @@
                     <icon>special://skin/backgrounds/custom.jpg</icon>
                     <thumb>$INFO[Skin.String(Menu_Custom4_Folder)]</thumb>
                     <onclick>XBMC.ActivateWindow(videos,$INFO[Skin.String(Menu_Custom4_Path)],return)</onclick>
-                    <visible>Skin.HasSetting(Menu_Custom4)</visible>
+                    <visible>Skin.HasSetting(Menu_Custom4) + !IsEmpty(Skin.String(Menu_Custom4_Path))</visible>
                 </item>
                 <item id="4">
                     <description>Custom Playlist 2</description>
@@ -494,7 +494,7 @@
                     <icon>special://skin/backgrounds/custom.jpg</icon>
                     <thumb>$INFO[Skin.String(Menu_Custom5_Folder)]</thumb>
                     <onclick>XBMC.ActivateWindow(videos,$INFO[Skin.String(Menu_Custom5_Path)],return)</onclick>
-                    <visible>Skin.HasSetting(Menu_Custom5)</visible>
+                    <visible>Skin.HasSetting(Menu_Custom5) + !IsEmpty(Skin.String(Menu_Custom5_Path))</visible>
                 </item>
                 <item id="5">
                     <description>Custom Playlist 3</description>
@@ -502,7 +502,7 @@
                     <icon>special://skin/backgrounds/custom.jpg</icon>
                     <thumb>$INFO[Skin.String(Menu_Custom6_Folder)]</thumb>
                     <onclick>XBMC.ActivateWindow(videos,$INFO[Skin.String(Menu_Custom6_Path)],return)</onclick>
-                    <visible>Skin.HasSetting(Menu_Custom6)</visible>
+                    <visible>Skin.HasSetting(Menu_Custom6) + !IsEmpty(Skin.String(Menu_Custom6_Path))</visible>
                 </item>
                 <item id="6">
                     <description>HD Movies</description>
@@ -540,7 +540,7 @@
                     <icon>special://skin/backgrounds/custom.jpg</icon>
                     <thumb>$INFO[Skin.String(Menu_Custom9_Folder)]</thumb>
                     <onclick>XBMC.ActivateWindow(videos,$INFO[Skin.String(Menu_Custom9_Path)],return)</onclick>
-                    <visible>Skin.HasSetting(Menu_Custom9)</visible>
+                    <visible>Skin.HasSetting(Menu_Custom9) + !IsEmpty(Skin.String(Menu_Custom9_Path))</visible>
                 </item>
                 <item id="10">
                     <description>Custom Playlist 5</description>
@@ -548,7 +548,7 @@
                     <icon>special://skin/backgrounds/custom.jpg</icon>
                     <thumb>$INFO[Skin.String(Menu_Custom10_Folder)]</thumb>
                     <onclick>XBMC.ActivateWindow(videos,$INFO[Skin.String(Menu_Custom10_Path)],return)</onclick>
-                    <visible>Skin.HasSetting(Menu_Custom10)</visible>
+                    <visible>Skin.HasSetting(Menu_Custom10) + !IsEmpty(Skin.String(Menu_Custom10_Path))</visible>
                 </item>
                 <item id="11">
                     <description>Custom Playlist 6</description>
@@ -556,7 +556,7 @@
                     <icon>special://skin/backgrounds/custom.jpg</icon>
                     <thumb>$INFO[Skin.String(Menu_Custom11_Folder)]</thumb>
                     <onclick>XBMC.ActivateWindow(videos,$INFO[Skin.String(Menu_Custom11_Path)],return)</onclick>
-                    <visible>Skin.HasSetting(Menu_Custom11)</visible>
+                    <visible>Skin.HasSetting(Menu_Custom11) + !IsEmpty(Skin.String(Menu_Custom11_Path))</visible>
                 </item>	
                 <item id="12">
                     <label>3</label>
