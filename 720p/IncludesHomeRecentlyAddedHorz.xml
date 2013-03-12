@@ -98,7 +98,7 @@
             <align>left</align>
             <viewtype label="535">list</viewtype>
             <orientation>horizontal</orientation>
-            <focusposition>3</focusposition>
+            <focusposition>0</focusposition>
             <pagecontrol>-</pagecontrol>
             <scrolltime>0</scrolltime>
             <itemlayout width="120" height="200">
@@ -462,7 +462,7 @@
             <align>left</align>
             <viewtype label="535">list</viewtype>
             <orientation>horizontal</orientation>
-            <focusposition>3</focusposition>
+            <focusposition>0</focusposition>
             <pagecontrol>-</pagecontrol>
             <scrolltime>0</scrolltime>
             <itemlayout width="120" height="200">
@@ -649,7 +649,7 @@
             <align>left</align>
             <viewtype label="535">list</viewtype>
             <orientation>horizontal</orientation>
-            <focusposition>3</focusposition>
+            <focusposition>0</focusposition>
             <pagecontrol>-</pagecontrol>
             <scrolltime>0</scrolltime>
             <itemlayout width="120" height="200">
@@ -836,7 +836,7 @@
             <align>left</align>
             <viewtype label="535">list</viewtype>
             <orientation>horizontal</orientation>
-            <focusposition>3</focusposition>
+            <focusposition>0</focusposition>
             <pagecontrol>-</pagecontrol>
             <scrolltime>0</scrolltime>
             <itemlayout width="120" height="200">
@@ -1206,7 +1206,6 @@
                     <property name="Season">$INFO[Window(Home).Property(RecommendedEpisode.1.Season)]</property>
                     <property name="Fanart">$INFO[Window(Home).Property(RecommendedEpisode.1.Art(tvshow.fanart))]</property>
                     <property name="TvshowThumb">$INFO[Window(Home).Property(RecommendedEpisode.1.Art(tvshow.poster))]</property>
-                    <!--<property name="SeasonThumb">$INFO[Window(Home).Property(RecommendedEpisode.1.SeasonThumb)]</property>-->
                     <visible>Skin.HasSetting(watchlisttvhorizontal)</visible>
                     <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.1.Title))</visible>
                 </item>
@@ -1223,7 +1222,6 @@
                     <property name="Season">$INFO[Window(Home).Property(RecommendedEpisode.2.Season)]</property>
                     <property name="Fanart">$INFO[Window(Home).Property(RecommendedEpisode.2.Art(tvshow.fanart))]</property>
                     <property name="TvshowThumb">$INFO[Window(Home).Property(RecommendedEpisode.2.Art(tvshow.poster))]</property>
-                    <!--<property name="SeasonThumb">$INFO[Window(Home).Property(RecommendedEpisode.2.SeasonThumb)]</property>-->
                     <visible>Skin.HasSetting(watchlisttvhorizontal)</visible>
                     <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.2.Title))</visible>
                 </item>
@@ -1240,7 +1238,6 @@
                     <property name="Season">$INFO[Window(Home).Property(RecommendedEpisode.3.Season)]</property>
                     <property name="Fanart">$INFO[Window(Home).Property(RecommendedEpisode.3.Art(tvshow.fanart))]</property>
                     <property name="TvshowThumb">$INFO[Window(Home).Property(RecommendedEpisode.3.Art(tvshow.poster))]</property>
-                    <!--<property name="SeasonThumb">$INFO[Window(Home).Property(RecommendedEpisode.3.SeasonThumb)]</property>-->
                     <visible>Skin.HasSetting(watchlisttvhorizontal)</visible>
                     <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.3.Title))</visible>
                 </item>
@@ -1257,7 +1254,6 @@
                     <property name="Season">$INFO[Window(Home).Property(RecommendedEpisode.4.Season)]</property>
                     <property name="Fanart">$INFO[Window(Home).Property(RecommendedEpisode.4.Art(tvshow.fanart))]</property>
                     <property name="TvshowThumb">$INFO[Window(Home).Property(RecommendedEpisode.4.Art(tvshow.poster))]</property>
-                    <!--<property name="SeasonThumb">$INFO[Window(Home).Property(RecommendedEpisode.4.SeasonThumb)]</property>-->
                     <visible>Skin.HasSetting(watchlisttvhorizontal)</visible>
                     <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.4.Title))</visible>
                 </item>
@@ -1274,7 +1270,6 @@
                     <property name="Season">$INFO[Window(Home).Property(RecommendedEpisode.5.Season)]</property>
                     <property name="Fanart">$INFO[Window(Home).Property(RecommendedEpisode.5.Art(tvshow.fanart))]</property>
                     <property name="TvshowThumb">$INFO[Window(Home).Property(RecommendedEpisode.5.Art(tvshow.poster))]</property>
-                    <!--<property name="SeasonThumb">$INFO[Window(Home).Property(RecommendedEpisode.5.SeasonThumb)]</property>-->
                     <visible>Skin.HasSetting(watchlisttvhorizontal)</visible>
                     <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.5.Title))</visible>
                 </item>
@@ -1291,7 +1286,6 @@
                     <property name="Season">$INFO[Window(Home).Property(RecommendedEpisode.6.Season)]</property>
                     <property name="Fanart">$INFO[Window(Home).Property(RecommendedEpisode.6.Art(tvshow.fanart))]</property>
                     <property name="TvshowThumb">$INFO[Window(Home).Property(RecommendedEpisode.6.Art(tvshow.poster))]</property>
-                    <!--<property name="SeasonThumb">$INFO[Window(Home).Property(RecommendedEpisode.6.SeasonThumb)]</property>-->
                     <visible>Skin.HasSetting(watchlisttvhorizontal)</visible>
                     <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.6.Title))</visible>
                 </item>
@@ -1308,7 +1302,6 @@
                     <property name="Season">$INFO[Window(Home).Property(RecommendedEpisode.7.Season)]</property>
                     <property name="Fanart">$INFO[Window(Home).Property(RecommendedEpisode.7.Art(tvshow.fanart))]</property>
                     <property name="TvshowThumb">$INFO[Window(Home).Property(RecommendedEpisode.7.Art(tvshow.poster))]</property>
-                    <!--<property name="SeasonThumb">$INFO[Window(Home).Property(RecommendedEpisode.7.SeasonThumb)]</property>-->
                     <visible>Skin.HasSetting(watchlisttvhorizontal)</visible>
                     <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.7.Title))</visible>
                 </item>
@@ -1325,7 +1318,6 @@
                     <property name="Season">$INFO[Window(Home).Property(RecommendedEpisode.8.Season)]</property>
                     <property name="Fanart">$INFO[Window(Home).Property(RecommendedEpisode.8.Art(tvshow.fanart))]</property>
                     <property name="TvshowThumb">$INFO[Window(Home).Property(RecommendedEpisode.8.Art(tvshow.poster))]</property>
-                    <!--<property name="SeasonThumb">$INFO[Window(Home).Property(RecommendedEpisode.8.SeasonThumb)]</property>-->
                     <visible>Skin.HasSetting(watchlisttvhorizontal)</visible>
                     <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.8.Title))</visible>
                 </item>
@@ -1342,7 +1334,6 @@
                     <property name="Season">$INFO[Window(Home).Property(RecommendedEpisode.9.Season)]</property>
                     <property name="Fanart">$INFO[Window(Home).Property(RecommendedEpisode.9.Art(tvshow.fanart))]</property>
                     <property name="TvshowThumb">$INFO[Window(Home).Property(RecommendedEpisode.9.Art(tvshow.poster))]</property>
-                    <!--<property name="SeasonThumb">$INFO[Window(Home).Property(RecommendedEpisode.9.SeasonThumb)]</property>-->
                     <visible>Skin.HasSetting(watchlisttvhorizontal)</visible>
                     <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.9.Title))</visible>
                 </item>
@@ -1359,7 +1350,6 @@
                     <property name="Season">$INFO[Window(Home).Property(RecommendedEpisode.10.Season)]</property>
                     <property name="Fanart">$INFO[Window(Home).Property(RecommendedEpisode.10.Art(tvshow.fanart))]</property>
                     <property name="TvshowThumb">$INFO[Window(Home).Property(RecommendedEpisode.10.Art(tvshow.poster))]</property>
-                    <!--<property name="SeasonThumb">$INFO[Window(Home).Property(RecommendedEpisode.10.SeasonThumb)]</property>-->
                     <visible>Skin.HasSetting(watchlisttvhorizontal)</visible>
                     <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.10.Title))</visible>
                 </item>
@@ -1419,7 +1409,7 @@
             <align>left</align>
             <viewtype label="535">list</viewtype>
             <orientation>horizontal</orientation>
-            <focusposition>2</focusposition>
+            <focusposition>0</focusposition>
             <pagecontrol>-</pagecontrol>
             <scrolltime>200</scrolltime>
             <preloaditems>3</preloaditems>
@@ -1587,7 +1577,7 @@
             <align>left</align>
             <viewtype label="535">list</viewtype>
             <orientation>horizontal</orientation>
-            <focusposition>2</focusposition>
+            <focusposition>0</focusposition>
             <pagecontrol>-</pagecontrol>
             <scrolltime>200</scrolltime>
             <preloaditems>3</preloaditems>
@@ -1755,7 +1745,7 @@
             <align>left</align>
             <viewtype label="535">list</viewtype>
             <orientation>horizontal</orientation>
-            <focusposition>2</focusposition>
+            <focusposition>0</focusposition>
             <pagecontrol>-</pagecontrol>
             <scrolltime>200</scrolltime>
             <preloaditems>3</preloaditems>
@@ -1926,7 +1916,7 @@
             <align>left</align>
             <viewtype label="535">list</viewtype>
             <orientation>horizontal</orientation>
-            <focusposition>3</focusposition>
+            <focusposition>0</focusposition>
             <pagecontrol>-</pagecontrol>
             <scrolltime>200</scrolltime>
             <itemlayout width="180" height="200">
@@ -2125,7 +2115,7 @@
             <viewtype label="535">list</viewtype>
             <orientation>horizontal</orientation>
             <preloaditems>2</preloaditems>
-            <focusposition>3</focusposition>
+            <focusposition>0</focusposition>
             <pagecontrol>-</pagecontrol>
             <scrolltime>200</scrolltime>
             <itemlayout width="180" height="200">
