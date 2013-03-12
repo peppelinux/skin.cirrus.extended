@@ -550,6 +550,15 @@
                     <onclick>Skin.ToggleSetting(homepageHideRecentlyAdded)</onclick>
                     <selected>Skin.HasSetting(homepageHideRecentlyAdded)</selected>
                 </control>
+                <control type="radiobutton" id="1199">
+                    <description>Show TV Show Logo in Recent/Recommended List</description>
+                    <include>MenuItemSettings</include>
+                    <label>31041</label>
+                    <onclick>Skin.ToggleSetting(logoinshowwidget)</onclick>
+                    <selected>Skin.HasSetting(logoinshowwidget)</selected>
+                    <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</enable>
+                    <visible>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</visible>
+                </control>
                 <control type="radiobutton" id="1131">
                     <description>Show Watchlist Movie info</description>
                     <include>MenuItemSettings</include>
@@ -558,6 +567,7 @@
                     <onclick>Skin.Reset(nomoviewidget)</onclick>
                     <selected>Skin.HasSetting(watchlistmovies)</selected>
                     <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(watchlistmovieswidget) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</enable>
+                    <visible>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(watchlistmovieswidget) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</visible>
                 </control>
                 <control type="radiobutton" id="1126">
                     <description>Show Watchlist TV info</description>
@@ -567,6 +577,7 @@
                     <onclick>Skin.Reset(notvshowwidget)</onclick>
                     <selected>Skin.HasSetting(watchlisttv)</selected>
                     <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(nowatchlisttvshowwidget) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</enable>
+                    <visible>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(nowatchlisttvshowwidget) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</visible>
                 </control>
                 <control type="label" id="1134">
                     <description>Select Thumb</description>
@@ -580,6 +591,7 @@
                     <label>41225</label>
                     <onclick>Skin.ToggleSetting(episodethumb)</onclick>
                     <selected>Skin.HasSetting(episodethumb)</selected>
+                    <visible>Skin.HasSetting(watchlisttv) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</visible>
                     <enable>Skin.HasSetting(watchlisttv) + !Skin.HasSetting(tvshowthumb) + !Skin.HasSetting(seasonthumb) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</enable>
                 </control>
                 <control type="radiobutton" id="1129">
@@ -588,6 +600,7 @@
                     <label>41224</label>
                     <onclick>Skin.ToggleSetting(tvshowthumb)</onclick>
                     <selected>Skin.HasSetting(tvshowthumb)</selected>
+                    <visible>Skin.HasSetting(watchlisttv) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</visible>
                     <enable>Skin.HasSetting(watchlisttv) + !Skin.HasSetting(episodethumb) + !Skin.HasSetting(seasonthumb) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</enable>
                 </control>
                 <control type="radiobutton" id="1130">
@@ -596,6 +609,7 @@
                     <label>41223</label>
                     <onclick>Skin.ToggleSetting(seasonthumb)</onclick>
                     <selected>Skin.HasSetting(seasonthumb)</selected>
+                    <visible>Skin.HasSetting(watchlisttv) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</visible>
                     <enable>Skin.HasSetting(watchlisttv) + !Skin.HasSetting(episodethumb) + !Skin.HasSetting(tvshowthumb) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</enable>
                 </control>
                 <control type="label" id="1135">
@@ -740,6 +754,7 @@
                     <onclick>Skin.Reset(tvshowthumb)</onclick>
                     <onclick>Skin.Reset(seasonthumb)</onclick>
                     <onclick>Skin.Reset(notvshowwidget)</onclick>
+                    <onclick>Skin.Reset(logoinshowwidget)</onclick>
                     <onclick>Skin.Reset(notvwidgetplaylisttv)</onclick>
                     <onclick>Skin.Reset(nowatchlisttvshowwidget)</onclick>
                     <onclick>Skin.Reset(watchlistmovieswidget)</onclick>

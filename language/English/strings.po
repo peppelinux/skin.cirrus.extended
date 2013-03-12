@@ -92,7 +92,9 @@ msgctxt "#31040"
 msgid "Now Playing"
 msgstr ""
 
-#empty string with id 31041
+msgctxt "#31041"
+msgid "Enable clearlogo for TV Shows"
+msgstr ""
 
 msgctxt "#31043"
 msgid "PAUSED"
