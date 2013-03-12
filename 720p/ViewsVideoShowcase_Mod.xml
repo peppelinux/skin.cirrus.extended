@@ -148,6 +148,7 @@
 			<aspectratio>stretch</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 
+
 			<imagepath background="true">special://userdata/extras/videofanarts/$INFO[ListItem.FolderName]/extrathumbs/thumb2.jpg]</imagepath>
 			<bordersize>8</bordersize>
 			<visible>!Container(721).OnNext + !Container(721).OnPrevious</visible>
@@ -165,6 +166,7 @@
 			<height>93</height>
 			<aspectratio>stretch</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
+
 
 			<imagepath background="true">special://userdata/extras/videofanarts/$INFO[ListItem.FolderName]/extrathumbs/thumb3.jpg]</imagepath>
 			<bordersize>8</bordersize>
@@ -1183,6 +1185,7 @@
 					<height>110</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
+
 
 					<texture background="true">special://userdata/extras/tvfanarts/$INFO[ListItem.TVShowTitle]/$INFO[ListItem.Season,season,-landscape.jpg]</texture>
 					<bordersize>8</bordersize>

@@ -13,7 +13,9 @@
 			<effect type="fade" start="100" end="0" time="300" />
 			</animation>      
 			<visible>Control.IsVisible(514)</visible>
-			<control type="image"> <!-- darken the background a bit -->
+
+            <control type="image">
+                <!-- darken the background a bit -->
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>660</width>
@@ -21,7 +23,9 @@
 				<aspectratio>stretch</aspectratio>
  				<texture>black-back.png</texture>
 			</control>
-			<control type="image"> <!-- right panel behind the wall -->
+
+            <control type="image">
+                <!-- right panel behind the wall -->
 				<posx>620r</posx>
 				<posy>0</posy>
 				<width>620</width>
@@ -118,7 +122,9 @@
 					</control>
 				</focusedlayout>
 			</control>
-			<control type="group"> <!-- Labels -->
+
+            <control type="group">
+                <!-- Labels -->
 				<posx>20</posx>
 				<posy>120</posy>
 				<visible>Container.Content(Movies)</visible>
@@ -240,7 +246,9 @@
 				<visible>!Skin.HasSetting(noMPAAStudioFlags)</visible>
 				<visible>!ListItem.IsFolder</visible>
 			</control>
-			<control type="group"> <!-- Fanart and media flags -->
+
+            <control type="group">
+                <!-- Fanart and media flags -->
 				<posx>10</posx>
 				<posy>330</posy>
 				<width>640</width>
@@ -285,6 +293,7 @@
 					<aspectratio>stretch</aspectratio>
 					<fadetime>FanartCrossfadeTime</fadetime>
 					<timeperimage>3000</timeperimage>
+
 					<imagepath background="true">special://userdata/extras/videofanarts/$INFO[ListItem.FolderName]/extrathumbs</imagepath>
 					<visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>
 				</control>

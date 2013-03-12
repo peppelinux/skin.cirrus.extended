@@ -3,7 +3,8 @@
 <!-- ================================= FANART VIEW ID 667================================ -->
 <!-- ====================== TV Shows Logo  ===================== -->
 	<include name="TV_Logo">
-			<control type="image"> <!-- bottom bar background -->
+        <control type="image">
+            <!-- bottom bar background -->
 			<posx>0</posx>
 			<posy>180r</posy>
 			<width>1280</width>
@@ -12,7 +13,8 @@
 			<texture>rightlistbackground.png</texture>
 			<visible>Control.IsVisible(667)</visible>
 		</control>
-		<control type="image"> <!-- bottom bar background -->
+        <control type="image">
+            <!-- bottom bar background -->
 			<posx>0</posx>
 			<posy>231r</posy>
 			<width>1280</width>
@@ -44,7 +46,8 @@
 				<onleft>667</onleft>
 				<onright>667</onright>
 				<onup>60</onup>
-				<ondown>2</ondown>   <!-- ,1 VideoWindow ,0 Fullscreen -->
+                <ondown>2</ondown>
+                <!-- ,1 VideoWindow ,0 Fullscreen -->
 				<viewtype label="41116">wrap</viewtype>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime tween="quadratic" easing="out">300</scrolltime>
@@ -213,7 +216,9 @@
 					<visible>!ListItem.IsFolder</visible>
 				</control>
 				
-				<control type="image"> <!-- Top250IMDB Mod 1.2 -->
+
+                <control type="image">
+                    <!-- Top250IMDB Mod 1.2 -->
 					<posx>220</posx>
 					<posy>87</posy>
 					<width>88</width>
@@ -224,7 +229,9 @@
 					<visible>!IsEmpty(ListItem.Top250)</visible>
 					<colordiffuse>accent</colordiffuse>
 				</control>
-					<control type="label"> <!-- Top250IMDB Mod 1.2 -->
+
+                <control type="label">
+                    <!-- Top250IMDB Mod 1.2 -->
 						<description>top250</description>
 						<posx>80</posx>
 						<posy>86</posy>
@@ -251,7 +258,9 @@
 					<visible>!IsEmpty(ListItem.Trailer) + Skin.HasSetting(trailerflag) | Player.HasVideo</visible>
 					<visible>!ListItem.IsFolder</visible>
 				</control>
-				<control type="textbox"> <!-- Plotoutline Mod -->
+
+                <control type="textbox">
+                    <!-- Plotoutline Mod -->
 					<description>Movie Plot</description>
 					<posx>-60</posx>
 					<posy>130</posy>
@@ -311,6 +320,7 @@
 					<aspectratio>stretch</aspectratio>
 					<fadetime>FanartCrossfadeTime</fadetime>
 					<timeperimage>3000</timeperimage>
+
 
 					<imagepath background="true">special://userdata/extras/tvfanarts/$INFO[ListItem.TVShowTitle]/extrathumbs</imagepath>
 					<bordersize>8</bordersize>

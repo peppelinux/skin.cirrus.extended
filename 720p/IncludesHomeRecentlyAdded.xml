@@ -3300,18 +3300,6 @@
                 <animation effect="slide" time="0" tween="cubic" easing="inout" end="0,-150" condition="Skin.HasSetting(lowermainmenu) | Skin.HasSetting(Lockhomemenulow)">Conditional</animation>
                 <animation effect="slide" start="0,430" end="0,0" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + !Skin.HasSetting(HomeMenuNoMoviesButton) + Control.HasFocus(8001)">Conditional</animation>
             </control>
-            <!--   <control type="image">
-              <posx>300</posx>
-              <posy>71</posy>
-              <width>1</width>
-              <height>240</height>
-              <aspectratio>stretch</aspectratio>
-              <texture>separator_vertical.png</texture>
-			  <visible>Control.HasFocus(8001)</visible>
-        <animation effect="slide" time="0" tween="cubic" easing="inout" end="0,-150" condition="Skin.HasSetting(lowermainmenu) | Skin.HasSetting(Lockhomemenulow)">Conditional</animation>
-        <animation effect="slide" start="0,430" end="0,0" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + !Skin.HasSetting(HomeMenuNoMoviesButton) + Control.HasFocus(8001)">Conditional</animation>
-		<visible>!Skin.HasSetting(episodethumb)</visible>
-      </control> -->
             <control type="image">
                 <posx>985</posx>
                 <posy>71</posy>
@@ -3812,7 +3800,6 @@
                             <posx>28</posx>
                             <width>533</width>
                             <height>25</height>
-
                             <posy>8</posy>
                             <label>[COLOR=accent]$LOCALIZE[20373]:[/COLOR] $INFO[Container(8001).ListItem.Property(Season)]</label>
                             <font>cirrus_20</font>
@@ -3823,7 +3810,6 @@
                             <posx>28</posx>
                             <width>533</width>
                             <height>25</height>
-
                             <posy>34</posy>
                             <label>[COLOR=accent]$LOCALIZE[20359]:[/COLOR] $INFO[Container(8001).ListItem.Property(EpisodeNumber)]</label>
                             <font>cirrus_20</font>
@@ -3834,7 +3820,6 @@
                             <posx>28</posx>
                             <width>533</width>
                             <height>25</height>
-
                             <posy>34</posy>
                             <label>[COLOR=accent]$LOCALIZE[20359]:[/COLOR] $INFO[Container(8001).ListItem.Property(Episode)]</label>
                             <font>cirrus_20</font>
@@ -3853,6 +3838,16 @@
                             <shadowcolor>black</shadowcolor>
                             <label>$INFO[Container(8001).ListItem.Property(Plot)]</label>
                             <autoscroll delay="5000" time="3000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+                        </control>
+                        <control type="image">
+                            <description>Show clearlogo</description>
+                            <posx>380</posx> 
+                            <posy>-65</posy>
+                            <width>250</width> 
+                            <height>170</height> 
+                            <texture background="true">$INFO[Container(8001).ListItem.Property(Clearlogo)]</texture> 
+                            <aspectratio scalediffuse="false">keep</aspectratio>
+                            <visible>Skin.HasSetting(logoinshowwidget)</visible>
                         </control>
                     </control>
                     <control type="image">
@@ -3929,40 +3924,11 @@
                         <visible>Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
                         <visible>Skin.HasSetting(tvshowthumb)</visible>
                     </control>
-                    <!--<control type="image">
-			<posx>70</posx>
-            <posy>25</posy>
-            <width>153</width>
-            <height>230</height>
-           <texture>black-back.png</texture>
-			<bordertexture border="6">ContentPanelvertical.png</bordertexture>
-			<bordersize>6</bordersize>
-            <aspectratio scalediffuse="false">stretch</aspectratio>
-			<fadetime>400</fadetime>
-			<visible>Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
-			<visible>Skin.HasSetting(seasonthumb)</visible>
-          </control>-->
-                    <!--<control type="image">
-			<posx>70</posx>
-            <posy>25</posy>
-            <description>Main Icon</description>
-            <width>153</width>
-            <height>230</height>
-            <texture background="true" fallback="DefaultVideo.png">$INFO[Container(8001).ListItem.Property(SeasonThumb)]</texture>
-			<bordersize>8</bordersize>
-            <aspectratio scalediffuse="false">stretch</aspectratio>
-			<fadetime>400</fadetime>
-		    <visible>Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
-			<visible>Skin.HasSetting(seasonthumb)</visible>
-          </control>-->
                 </control>
                 <control type="group">
                     <animation effect="slide" start="0,0" end="-380,0" time="500" easing="inout" tween="cubic" condition="Control.HasFocus(8001)">Conditional</animation>
                     <posx>342</posx>
                     <posy>-22</posy>
-                    <!-- Slide Picture Background -->
-
-                    <!-- Last Played Lable -->
                     <control type="label">
                         <description>Title label</description>
                         <posx>21</posx>
@@ -3980,7 +3946,6 @@
                         <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
                         <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
                     </control>
-
                     <control type="list" id="8001">
                         <posx>0</posx>
                         <posy>5</posy>
@@ -4076,6 +4041,7 @@
                                 <property name="Plot">$INFO[Window(Home).Property(RecentEpisode.1.Plot)]</property>
                                 <property name="Rating">$INFO[Window(Home).Property(RecentEpisode.1.Rating)]</property>
                                 <property name="Fanart">$INFO[Window(Home).Property(RecentEpisode.1.Art(tvshow.fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window(Home).Property(RecentEpisode.1.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window(Home).Property(RecentEpisode.1.EpisodeSeasonNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window(Home).Property(RecentEpisode.1.Season)]</property>
                                 <!--<property name="EpisodeNumberWidget">$INFO[Window(Home).Property(RecentEpisode.1.EpisodeNo)]</property>-->
@@ -4091,6 +4057,7 @@
                                 <property name="Plot">$INFO[Window(Home).Property(RecentEpisode.2.Plot)]</property>
                                 <property name="Rating">$INFO[Window(Home).Property(RecentEpisode.2.Rating)]</property>
                                 <property name="Fanart">$INFO[Window(Home).Property(RecentEpisode.2.Art(tvshow.fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window(Home).Property(RecentEpisode.2.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window(Home).Property(RecentEpisode.2.EpisodeSeasonNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window(Home).Property(RecentEpisode.2.Season)]</property>
                                 <!--<property name="EpisodeNumberWidget">$INFO[Window(Home).Property(RecentEpisode.2.EpisodeNo)]</property>-->
@@ -4106,6 +4073,7 @@
                                 <property name="Plot">$INFO[Window(Home).Property(RecentEpisode.3.Plot)]</property>
                                 <property name="Rating">$INFO[Window(Home).Property(RecentEpisode.3.Rating)]</property>
                                 <property name="Fanart">$INFO[Window(Home).Property(RecentEpisode.3.Art(tvshow.fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window(Home).Property(RecentEpisode.3.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window(Home).Property(RecentEpisode.3.EpisodeSeasonNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window(Home).Property(RecentEpisode.3.Season)]</property>
                                 <!--<property name="EpisodeNumberWidget">$INFO[Window(Home).Property(RecentEpisode.3.EpisodeNo)]</property>-->
@@ -4121,6 +4089,7 @@
                                 <property name="Plot">$INFO[Window(Home).Property(RecentEpisode.4.Plot)]</property>
                                 <property name="Rating">$INFO[Window(Home).Property(RecentEpisode.4.Rating)]</property>
                                 <property name="Fanart">$INFO[Window(Home).Property(RecentEpisode.4.Art(tvshow.fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window(Home).Property(RecentEpisode.4.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window(Home).Property(RecentEpisode.4.EpisodeSeasonNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window(Home).Property(RecentEpisode.4.Season)]</property>
                                 <!--<property name="EpisodeNumberWidget">$INFO[Window(Home).Property(RecentEpisode.4.EpisodeNo)]</property>-->
@@ -4136,6 +4105,7 @@
                                 <property name="Plot">$INFO[Window(Home).Property(RecentEpisode.5.Plot)]</property>
                                 <property name="Rating">$INFO[Window(Home).Property(RecentEpisode.5.Rating)]</property>
                                 <property name="Fanart">$INFO[Window(Home).Property(RecentEpisode.5.Art(tvshow.fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window(Home).Property(RecentEpisode.5.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window(Home).Property(RecentEpisode.5.EpisodeSeasonNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window(Home).Property(RecentEpisode.5.Season)]</property>
                                 <!--<property name="EpisodeNumberWidget">$INFO[Window(Home).Property(RecentEpisode.5.EpisodeNo)]</property>-->
@@ -4151,6 +4121,7 @@
                                 <property name="Plot">$INFO[Window(Home).Property(RecentEpisode.6.Plot)]</property>
                                 <property name="Rating">$INFO[Window(Home).Property(RecentEpisode.6.Rating)]</property>
                                 <property name="Fanart">$INFO[Window(Home).Property(RecentEpisode.6.Art(tvshow.fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window(Home).Property(RecentEpisode.6.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window(Home).Property(RecentEpisode.6.EpisodeSeasonNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window(Home).Property(RecentEpisode.6.Season)]</property>
                                 <!--<property name="EpisodeNumberWidget">$INFO[Window(Home).Property(RecentEpisode.6.EpisodeNo)]</property>-->
@@ -4166,6 +4137,7 @@
                                 <property name="Plot">$INFO[Window(Home).Property(RecentEpisode.7.Plot)]</property>
                                 <property name="Rating">$INFO[Window(Home).Property(RecentEpisode.7.Rating)]</property>
                                 <property name="Fanart">$INFO[Window(Home).Property(RecentEpisode.7.Art(tvshow.fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window(Home).Property(RecentEpisode.7.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window(Home).Property(RecentEpisode.7.EpisodeSeasonNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window(Home).Property(RecentEpisode.7.Season)]</property>
                                 <!--<property name="EpisodeNumberWidget">$INFO[Window(Home).Property(RecentEpisode.7.EpisodeNo)]</property>-->
@@ -4181,6 +4153,7 @@
                                 <property name="Plot">$INFO[Window(Home).Property(RecentEpisode.8.Plot)]</property>
                                 <property name="Rating">$INFO[Window(Home).Property(RecentEpisode.8.Rating)]</property>
                                 <property name="Fanart">$INFO[Window(Home).Property(RecentEpisode.8.Art(tvshow.fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window(Home).Property(RecentEpisode.8.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window(Home).Property(RecentEpisode.8.EpisodeSeasonNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window(Home).Property(RecentEpisode.8.Season)]</property>
                                 <!--<property name="EpisodeNumberWidget">$INFO[Window(Home).Property(RecentEpisode.8.EpisodeNo)]</property>-->
@@ -4196,6 +4169,7 @@
                                 <property name="Plot">$INFO[Window(Home).Property(RecentEpisode.9.Plot)]</property>
                                 <property name="Rating">$INFO[Window(Home).Property(RecentEpisode.9.Rating)]</property>
                                 <property name="Fanart">$INFO[Window(Home).Property(RecentEpisode.9.Art(tvshow.fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window(Home).Property(RecentEpisode.9.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window(Home).Property(RecentEpisode.9.EpisodeSeasonNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window(Home).Property(RecentEpisode.9.Season)]</property>
                                 <!--<property name="EpisodeNumberWidget">$INFO[Window(Home).Property(RecentEpisode.9.EpisodeNo)]</property>-->
@@ -4211,6 +4185,7 @@
                                 <property name="Plot">$INFO[Window(Home).Property(RecentEpisode.10.Plot)]</property>
                                 <property name="Rating">$INFO[Window(Home).Property(RecentEpisode.10.Rating)]</property>
                                 <property name="Fanart">$INFO[Window(Home).Property(RecentEpisode.10.Art(tvshow.fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window(Home).Property(RecentEpisode.10.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window(Home).Property(RecentEpisode.10.EpisodeSeasonNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window(Home).Property(RecentEpisode.10.Season)]</property>
                                 <!--<property name="EpisodeNumberWidget">$INFO[Window(Home).Property(RecentEpisode.10.EpisodeNo)]</property>-->
@@ -4229,8 +4204,8 @@
                                 <property name="Episode">$INFO[Window(Home).Property(RecommendedEpisode.1.Episode)]</property>
                                 <property name="Season">$INFO[Window(Home).Property(RecommendedEpisode.1.Season)]</property>
                                 <property name="Fanart">$INFO[Window(Home).Property(RecommendedEpisode.1.Art(tvshow.fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window(Home).Property(RecommendedEpisode.1.Art(tvshow.clearlogo))]</property>
                                 <property name="TvshowThumb">$INFO[Window(Home).Property(RecommendedEpisode.1.Art(tvshow.poster))]</property>
-                                <!--<property name="SeasonThumb">$INFO[Window(Home).Property(RecommendedEpisode.1.SeasonThumb)]</property>-->
                                 <visible>Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
                                 <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.1.Title))</visible>
                             </item>
@@ -4246,8 +4221,8 @@
                                 <property name="Episode">$INFO[Window(Home).Property(RecommendedEpisode.2.Episode)]</property>
                                 <property name="Season">$INFO[Window(Home).Property(RecommendedEpisode.2.Season)]</property>
                                 <property name="Fanart">$INFO[Window(Home).Property(RecommendedEpisode.2.Art(tvshow.fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window(Home).Property(RecommendedEpisode.2.Art(tvshow.clearlogo))]</property>
                                 <property name="TvshowThumb">$INFO[Window(Home).Property(RecommendedEpisode.2.Art(tvshow.poster))]</property>
-                                <!--<property name="SeasonThumb">$INFO[Window(Home).Property(RecommendedEpisode.2.SeasonThumb)]</property>-->
                                 <visible>Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
                                 <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.2.Title))</visible>
                             </item>
@@ -4263,8 +4238,8 @@
                                 <property name="Episode">$INFO[Window(Home).Property(RecommendedEpisode.3.Episode)]</property>
                                 <property name="Season">$INFO[Window(Home).Property(RecommendedEpisode.3.Season)]</property>
                                 <property name="Fanart">$INFO[Window(Home).Property(RecommendedEpisode.3.Art(tvshow.fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window(Home).Property(RecommendedEpisode.3.Art(tvshow.clearlogo))]</property>
                                 <property name="TvshowThumb">$INFO[Window(Home).Property(RecommendedEpisode.3.Art(tvshow.poster))]</property>
-                                <!--<property name="SeasonThumb">$INFO[Window(Home).Property(RecommendedEpisode.3.SeasonThumb)]</property>-->
                                 <visible>Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
                                 <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.3.Title))</visible>
                             </item>
@@ -4280,8 +4255,8 @@
                                 <property name="Episode">$INFO[Window(Home).Property(RecommendedEpisode.4.Episode)]</property>
                                 <property name="Season">$INFO[Window(Home).Property(RecommendedEpisode.4.Season)]</property>
                                 <property name="Fanart">$INFO[Window(Home).Property(RecommendedEpisode.4.Art(tvshow.fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window(Home).Property(RecommendedEpisode.4.Art(tvshow.clearlogo))]</property>
                                 <property name="TvshowThumb">$INFO[Window(Home).Property(RecommendedEpisode.4.Art(tvshow.poster))]</property>
-                                <!--<property name="SeasonThumb">$INFO[Window(Home).Property(RecommendedEpisode.4.SeasonThumb)]</property>-->
                                 <visible>Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
                                 <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.4.Title))</visible>
                             </item>
@@ -4297,8 +4272,8 @@
                                 <property name="Episode">$INFO[Window(Home).Property(RecommendedEpisode.5.Episode)]</property>
                                 <property name="Season">$INFO[Window(Home).Property(RecommendedEpisode.5.Season)]</property>
                                 <property name="Fanart">$INFO[Window(Home).Property(RecommendedEpisode.5.Art(tvshow.fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window(Home).Property(RecommendedEpisode.5.Art(tvshow.clearlogo))]</property>
                                 <property name="TvshowThumb">$INFO[Window(Home).Property(RecommendedEpisode.5.Art(tvshow.poster))]</property>
-                                <!--<property name="SeasonThumb">$INFO[Window(Home).Property(RecommendedEpisode.5.SeasonThumb)]</property>-->
                                 <visible>Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
                                 <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.5.Title))</visible>
                             </item>
@@ -4314,8 +4289,8 @@
                                 <property name="Episode">$INFO[Window(Home).Property(RecommendedEpisode.6.Episode)]</property>
                                 <property name="Season">$INFO[Window(Home).Property(RecommendedEpisode.6.Season)]</property>
                                 <property name="Fanart">$INFO[Window(Home).Property(RecommendedEpisode.6.Art(tvshow.fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window(Home).Property(RecommendedEpisode.6.Art(tvshow.clearlogo))]</property>
                                 <property name="TvshowThumb">$INFO[Window(Home).Property(RecommendedEpisode.6.Art(tvshow.poster))]</property>
-                                <!--<property name="SeasonThumb">$INFO[Window(Home).Property(RecommendedEpisode.6.SeasonThumb)]</property>-->
                                 <visible>Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
                                 <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.6.Title))</visible>
                             </item>
@@ -4331,8 +4306,8 @@
                                 <property name="Episode">$INFO[Window(Home).Property(RecommendedEpisode.7.Episode)]</property>
                                 <property name="Season">$INFO[Window(Home).Property(RecommendedEpisode.7.Season)]</property>
                                 <property name="Fanart">$INFO[Window(Home).Property(RecommendedEpisode.7.Art(tvshow.fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window(Home).Property(RecommendedEpisode.7.Art(tvshow.clearlogo))]</property>
                                 <property name="TvshowThumb">$INFO[Window(Home).Property(RecommendedEpisode.7.Art(tvshow.poster))]</property>
-                                <!--<property name="SeasonThumb">$INFO[Window(Home).Property(RecommendedEpisode.7.SeasonThumb)]</property>-->
                                 <visible>Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
                                 <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.7.Title))</visible>
                             </item>
@@ -4348,8 +4323,8 @@
                                 <property name="Episode">$INFO[Window(Home).Property(RecommendedEpisode.8.Episode)]</property>
                                 <property name="Season">$INFO[Window(Home).Property(RecommendedEpisode.8.Season)]</property>
                                 <property name="Fanart">$INFO[Window(Home).Property(RecommendedEpisode.8.Art(tvshow.fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window(Home).Property(RecommendedEpisode.8.Art(tvshow.clearlogo))]</property>
                                 <property name="TvshowThumb">$INFO[Window(Home).Property(RecommendedEpisode.8.Art(tvshow.poster))]</property>
-                                <!--<property name="SeasonThumb">$INFO[Window(Home).Property(RecommendedEpisode.8.SeasonThumb)]</property>-->
                                 <visible>Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
                                 <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.8.Title))</visible>
                             </item>
@@ -4365,8 +4340,8 @@
                                 <property name="Episode">$INFO[Window(Home).Property(RecommendedEpisode.9.Episode)]</property>
                                 <property name="Season">$INFO[Window(Home).Property(RecommendedEpisode.9.Season)]</property>
                                 <property name="Fanart">$INFO[Window(Home).Property(RecommendedEpisode.9.Art(tvshow.fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window(Home).Property(RecommendedEpisode.9.Art(tvshow.clearlogo))]</property>
                                 <property name="TvshowThumb">$INFO[Window(Home).Property(RecommendedEpisode.9.Art(tvshow.poster))]</property>
-                                <!--<property name="SeasonThumb">$INFO[Window(Home).Property(RecommendedEpisode.9.SeasonThumb)]</property>-->
                                 <visible>Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
                                 <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.9.Title))</visible>
                             </item>
@@ -4382,8 +4357,8 @@
                                 <property name="Episode">$INFO[Window(Home).Property(RecommendedEpisode.10.Episode)]</property>
                                 <property name="Season">$INFO[Window(Home).Property(RecommendedEpisode.10.Season)]</property>
                                 <property name="Fanart">$INFO[Window(Home).Property(RecommendedEpisode.10.Art(tvshow.fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window(Home).Property(RecommendedEpisode.10.Art(tvshow.clearlogo))]</property>
                                 <property name="TvshowThumb">$INFO[Window(Home).Property(RecommendedEpisode.10.Art(tvshow.poster))]</property>
-                                <!--<property name="SeasonThumb">$INFO[Window(Home).Property(RecommendedEpisode.10.SeasonThumb)]</property>-->
                                 <visible>Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
                                 <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.10.Title))</visible>
                             </item>
@@ -4778,6 +4753,16 @@
                             <label>$INFO[Container(8009).ListItem.Property(Plot)]</label>
                             <autoscroll delay="5000" time="3000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
                         </control>
+                        <control type="image">
+                            <description>Show clearlogo</description>
+                            <posx>350</posx> 
+                            <posy>-60</posy> 
+                            <width>200</width> 
+                            <height>150</height> 
+                            <texture background="true">$INFO[Container(8009).ListItem.Property(Clearlogo)]</texture> 
+                            <aspectratio scalediffuse="false">keep</aspectratio>
+                            <visible>Skin.HasSetting(logoinshowwidget)</visible>
+                        </control>
                     </control>
                     <control type="image">
                         <texture>black-back.png</texture>
@@ -4894,6 +4879,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.Episode)]</property>
@@ -4907,6 +4893,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.Episode)]</property>
@@ -4920,6 +4907,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.3.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu4.3.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.3.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu4.3.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu4.3.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu4.3.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu4.3.Episode)]</property>
@@ -4933,6 +4921,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.4.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu4.4.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.4.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu4.4.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu4.4.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu4.4.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu4.4.Episode)]</property>
@@ -4946,6 +4935,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.5.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu4.5.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.5.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu4.5.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu4.5.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu4.5.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu4.5.Episode)]</property>
@@ -4959,6 +4949,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.6.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu4.6.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.6.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu4.6.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu4.6.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu4.6.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu4.6.Episode)]</property>
@@ -4972,6 +4963,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.7.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu4.7.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.7.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu4.7.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu4.7.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu4.7.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu4.7.Episode)]</property>
@@ -4985,6 +4977,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.8.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu4.8.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.8.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu4.8.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu4.8.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu4.8.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu4.8.Episode)]</property>
@@ -4998,6 +4991,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.9.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu4.9.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.9.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu4.9.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu4.9.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu4.9.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu4.9.Episode)]</property>
@@ -5011,6 +5005,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.10.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu4.10.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.10.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu4.10.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu4.10.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu4.10.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu4.10.Episode)]</property>
@@ -5406,6 +5401,16 @@
                             <label>$INFO[Container(8010).ListItem.Property(Plot)]</label>
                             <autoscroll delay="5000" time="3000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
                         </control>
+                        <control type="image">
+                            <description>Show clearlogo</description>
+                            <posx>350</posx> 
+                            <posy>-60</posy> 
+                            <width>200</width> 
+                            <height>150</height> 
+                            <texture background="true">$INFO[Container(8010).ListItem.Property(Clearlogo)]</texture> 
+                            <aspectratio scalediffuse="false">keep</aspectratio>
+                            <visible>Skin.HasSetting(logoinshowwidget)</visible>
+                        </control>
                     </control>
                     <control type="image">
                         <texture>black-back.png</texture>
@@ -5522,6 +5527,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.1.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu5.1.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.1.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu5.1.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu5.1.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu5.1.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu5.1.Episode)]</property>
@@ -5535,6 +5541,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.2.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu5.2.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.2.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu5.2.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu5.2.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu5.2.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu5.2.Episode)]</property>
@@ -5548,6 +5555,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.3.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu5.3.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.3.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu5.3.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu5.3.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu5.3.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu5.3.Episode)]</property>
@@ -5561,6 +5569,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.4.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu5.4.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.4.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu5.4.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu5.4.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu5.4.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu5.4.Episode)]</property>
@@ -5574,6 +5583,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.5.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu5.5.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.5.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu5.5.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu5.5.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu5.5.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu5.5.Episode)]</property>
@@ -5587,6 +5597,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.6.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu5.6.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.6.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu5.6.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu5.6.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu5.6.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu5.6.Episode)]</property>
@@ -5600,6 +5611,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.7.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu5.7.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.7.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu5.7.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu5.7.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu5.7.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu5.7.Episode)]</property>
@@ -5613,6 +5625,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.8.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu5.8.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.8.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu5.8.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu5.8.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu5.8.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu5.8.Episode)]</property>
@@ -5626,6 +5639,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.9.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu5.9.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.9.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu5.9.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu5.9.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu5.9.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu5.9.Episode)]</property>
@@ -5639,6 +5653,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.10.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu5.10.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.10.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu5.10.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu5.10.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu5.10.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu5.10.Episode)]</property>
@@ -6035,6 +6050,16 @@
                             <label>$INFO[Container(8011).ListItem.Property(Plot)]</label>
                             <autoscroll delay="5000" time="3000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
                         </control>
+                        <control type="image">
+                            <description>Show clearlogo</description>
+                            <posx>350</posx> 
+                            <posy>-60</posy> 
+                            <width>200</width> 
+                            <height>150</height> 
+                            <texture background="true">$INFO[Container(8011).ListItem.Property(Clearlogo)]</texture> 
+                            <aspectratio scalediffuse="false">keep</aspectratio>
+                            <visible>Skin.HasSetting(logoinshowwidget)</visible>
+                        </control>
                     </control>
                     <control type="image">
                         <texture>black-back.png</texture>
@@ -6151,6 +6176,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.1.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu6.1.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.1.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu6.1.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu6.1.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu6.1.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu6.1.Episode)]</property>
@@ -6164,6 +6190,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.2.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu6.2.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.2.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu6.2.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu6.2.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu6.2.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu6.2.Episode)]</property>
@@ -6177,6 +6204,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.3.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu6.3.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.3.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu6.3.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu6.3.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu6.3.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu6.3.Episode)]</property>
@@ -6190,6 +6218,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.4.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu6.4.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.4.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu6.4.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu6.4.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu6.4.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu6.4.Episode)]</property>
@@ -6203,6 +6232,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.5.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu6.5.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.5.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu6.5.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu6.5.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu6.5.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu6.5.Episode)]</property>
@@ -6216,6 +6246,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.6.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu6.6.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.6.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu6.6.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu6.6.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu6.6.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu6.6.Episode)]</property>
@@ -6229,6 +6260,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.7.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu6.7.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.7.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu6.7.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu6.7.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu6.7.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu6.7.Episode)]</property>
@@ -6242,6 +6274,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.8.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu6.8.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.8.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu6.8.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu6.8.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu6.8.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu6.8.Episode)]</property>
@@ -6255,6 +6288,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.9.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu6.9.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.9.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu6.9.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu6.9.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu6.9.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu6.9.Episode)]</property>
@@ -6268,6 +6302,7 @@
                                 <property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.10.Plot)]</property>
                                 <property name="Rating">$INFO[Window.Property(PlaylistLastEpisodeMenu6.10.Rating)]</property>
                                 <property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.10.Art(fanart))]</property>
+                                <property name="Clearlogo">$INFO[Window.Property(PlaylistLastEpisodeMenu6.10.Art(tvshow.clearlogo))]</property>
                                 <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu6.10.EpisodeNo)]</property>
                                 <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu6.10.Season)]</property>
                                 <property name="EpisodeNumber">$INFO[Window.Property(PlaylistLastEpisodeMenu6.10.Episode)]</property>

@@ -1,5 +1,5 @@
 <window>
-    <defaultcontrol></defaultcontrol>
+    <defaultcontrol/>
     <onunload condition="!IsEmpty(Skin.String(SmartPlaylist1.Call))">$INFO[Skin.String(SmartPlaylist1.Call)]</onunload>
     <onunload condition="!IsEmpty(Skin.String(SmartPlaylist2.Call))">$INFO[Skin.String(SmartPlaylist2.Call)]</onunload>
     <onunload condition="!IsEmpty(Skin.String(SmartPlaylist3.Call))">$INFO[Skin.String(SmartPlaylist3.Call)]</onunload>
@@ -14,15 +14,15 @@
     <onunload condition="!IsEmpty(Skin.String(SmartPlaylist12.Call))">$INFO[Skin.String(SmartPlaylist12.Call)]</onunload>
     <controls>
         <control type="group">
-                <posx>350</posx>
-                <posy>240</posy>
-             <control type="image">
-                  <posx>60</posx>
-                  <posy>0</posy>
-                  <width>450</width>
-                  <height>136</height>
-                  <texture>InfoMessagePanel3.png</texture>
-                  <visible>!VideoPlayer.IsFullscreen</visible>
+            <posx>350</posx>
+            <posy>240</posy>
+            <control type="image">
+                <posx>60</posx>
+                <posy>0</posy>
+                <width>450</width>
+                <height>136</height>
+                <texture>InfoMessagePanel3.png</texture>
+                <visible>!VideoPlayer.IsFullscreen</visible>
             </control>            
             <control type="group">
                 <width>764</width>
@@ -43,8 +43,8 @@
                     <posy>85</posy>
                     <posx>80</posx>
                     <width>400</width>
-		                <height>27.5</height>
-		                <colordiffuse>FFe5e5e5</colordiffuse>
+                    <height>27.5</height>
+                    <colordiffuse>FFe5e5e5</colordiffuse>
                 </control>
             </control>
         </control>
