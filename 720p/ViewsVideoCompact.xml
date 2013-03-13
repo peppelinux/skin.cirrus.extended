@@ -315,7 +315,7 @@
                 </control>
                 <control type="image">
                     <posx>296</posx>
-                    <posy>45</posy>
+                    <posy>40</posy>
                     <width>91</width>
                     <height>91</height>
                     <aspectratio>keep</aspectratio>

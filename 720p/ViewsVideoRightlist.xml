@@ -156,10 +156,19 @@
                     </control>
                     <control type="image">
                         <posx>20r</posx>
-                        <posy>2</posy>
+                        <posy>0</posy>
                         <width>30</width>
                         <height>40</height>
                         <texture>$INFO[ListItem.Overlay]</texture>
+                    </control>
+                    <control type="image">
+                        <posx>20r</posx>
+                        <posy>0</posy>
+                        <width>30</width>
+                        <height>40</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture>OverlayWatching.png</texture>
+                        <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, )</visible>
                     </control>
                 </itemlayout>
                 <focusedlayout height="70" width="580">
@@ -229,7 +238,16 @@
                         <width>30</width>
                         <height>40</height>
                         <texture>$INFO[ListItem.Overlay]</texture>
-                    </control>					
+                    </control>
+                    <control type="image">
+                        <posx>20r</posx>
+                        <posy>15</posy>
+                        <width>30</width>
+                        <height>40</height>
+                        <texture>OverlayWatching.png</texture>
+                        <aspectratio>keep</aspectratio>
+                        <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, )</visible>
+                    </control>
                 </focusedlayout>
             </control>
             <!-- RIGHTLIST BOTTOM INFO TV SHOWS LEVEL -->

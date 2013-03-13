@@ -75,6 +75,15 @@
                         <aspectratio>keep</aspectratio>
                         <texture>$INFO[ListItem.Overlay]</texture>
                     </control>
+                    <control type="image">
+						<posx>70</posx>
+						<posy>140</posy>
+						<width>35</width>
+						<height>35</height>
+						<aspectratio>keep</aspectratio>
+                        <texture>OverlayWatching.png</texture>
+                        <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, )</visible>
+					</control>
                 </itemlayout>
                 <focusedlayout condition="Container.Content(Movies)" height="310" width="120">
                     <control type="image">
@@ -98,6 +107,15 @@
                         <aspectratio>keep</aspectratio>
                         <texture>$INFO[ListItem.Overlay]</texture>
                     </control>
+                    <control type="image">
+						<posx>72</posx>
+						<posy>140</posy>
+						<width>35</width>
+						<height>35</height>
+						<aspectratio>keep</aspectratio>
+                        <texture>OverlayWatching.png</texture>
+                        <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, )</visible>
+					</control>
                 </focusedlayout>
             </control>
             <!-- INFO OFF MOVIES -->
@@ -120,7 +138,6 @@
                     <label>$INFO[ListItem.Label]</label>
                 </control>
             </control>
-
             <control type="scrollbar" id="60">
                 <posx>-10</posx>
                 <posy>-70</posy>
@@ -232,7 +249,6 @@
                     <visible>!SubString(ListItem.Duration,mins)</visible>
                     <visible>!ListItem.IsFolder</visible>
                 </control>
-
                 <control type="image">
                     <!-- Top250IMDB Mod 1.2 -->
                     <posx>220</posx>
@@ -257,7 +273,6 @@
                     <aligny>center</aligny>
                     <font>cirrus_38_Bold</font>
                     <textcolor>white</textcolor>
-
                 </control>
                 <control type="label">
                     <description>Trailer Label while movie is playing</description>
@@ -362,7 +377,6 @@
                     <aligny>center</aligny>
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
-
                     <visible>Skin.HasSetting(videowindowglobal)</visible>
                     <visible>Player.HasVideo</visible>
                     <visible>Control.IsVisible(666)</visible>
@@ -370,7 +384,7 @@
                 </control>
                 <control type="image">
                     <posx>1142</posx>
-                    <posy>48</posy>
+                    <posy>43</posy>
                     <width>91</width>
                     <height>91</height>
                     <aspectratio>keep</aspectratio>
@@ -509,5 +523,3 @@
         </control>
     </include>
 </includes>
-
-

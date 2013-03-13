@@ -82,6 +82,16 @@
                         <texture>$INFO[ListItem.Overlay]</texture>
                         <visible>Player.HasVideo | Skin.HasSetting(originalwatched)</visible>
                     </control>
+                    <control type="image">
+                        <posx>-280</posx>
+                        <posy>110</posy>
+                        <width>35</width>
+                        <height>35</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture>OverlayWatching.png</texture>
+                        <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, )</visible>
+                        <visible>Player.HasVideo | Skin.HasSetting(originalwatched)</visible>
+                    </control>
                 </itemlayout>
                 <focusedlayout condition="Container.Content(Movies) | Container.Content(TVShows)" height="112" width="200">
                     <control type="group">
@@ -127,6 +137,16 @@
                             <height>20</height>
                             <aspectratio>keep</aspectratio>
                             <texture>$INFO[ListItem.Overlay]</texture>
+                            <visible>Player.HasVideo | Skin.HasSetting(originalwatched)</visible>
+                        </control>
+                        <control type="image">
+                            <posx>170</posx>
+                            <posy>95</posy>
+                            <width>20</width>
+                            <height>20</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture>OverlayWatching.png</texture>
+                            <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, )</visible>
                             <visible>Player.HasVideo | Skin.HasSetting(originalwatched)</visible>
                         </control>
                     </control>
@@ -440,7 +460,7 @@
                 </control>
                 <control type="image">
                     <posx>1142</posx>
-                    <posy>48</posy>
+                    <posy>43</posy>
                     <width>91</width>
                     <height>91</height>
                     <aspectratio>keep</aspectratio>
@@ -739,7 +759,7 @@
                 </control>
                 <control type="image">
                     <posx>1141</posx>
-                    <posy>48</posy>
+                    <posy>43</posy>
                     <width>91</width>
                     <height>91</height>
                     <aspectratio>keep</aspectratio>
@@ -751,7 +771,7 @@
                 </control>
                 <control type="image">
                     <posx>794</posx>
-                    <posy>54</posy>
+                    <posy>43</posy>
                     <width>91</width>
                     <height>91</height>
                     <aspectratio>keep</aspectratio>

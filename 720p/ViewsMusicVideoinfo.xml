@@ -56,6 +56,15 @@
                         <height>16</height>
                         <texture>$INFO[ListItem.Overlay]</texture>
                     </control>
+                    <control type="image">
+                        <posx>735</posx>
+                        <posy>14</posy>
+                        <width>20</width>
+                        <height>16</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture>OverlayWatching.png</texture>
+                        <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, )</visible>
+                    </control>
                 </itemlayout>
                 <focusedlayout height="40" width="760">
                     <control type="image">
@@ -106,6 +115,15 @@
                         <width>20</width>
                         <height>16</height>
                         <texture>$INFO[ListItem.Overlay]</texture>
+                    </control>
+                    <control type="image">
+                        <posx>735</posx>
+                        <posy>14</posy>
+                        <width>20</width>
+                        <height>16</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture>OverlayWatching.png</texture>
+                        <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, )</visible>
                     </control>
                 </focusedlayout>
             </control>

@@ -171,7 +171,7 @@
                     </control>
                     <control type="image">
                         <posx>109</posx>
-                        <posy>92</posy>
+                        <posy>90</posy>
                         <width>35</width>
                         <height>35</height>
                         <aspectratio>keep</aspectratio>
@@ -245,6 +245,16 @@
                             <texture>$INFO[ListItem.Overlay]</texture>
                             <visible>Skin.HasSetting(showBigposterCases)</visible>
                         </control>
+                        <control type="image">
+                            <posx>110</posx>
+                            <posy>270</posy>
+                            <width>35</width>
+                            <height>35</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture>OverlayWatching.png</texture>
+                            <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, )</visible>
+                            <visible>Skin.HasSetting(showBigposterCases)</visible>
+                        </control>
                     </control>
                     <control type="group">
                         <!-- LITTLE CLEAR DVD CASES IN LIST -->
@@ -302,6 +312,16 @@
                             <texture>$INFO[ListItem.Overlay]</texture>
                             <visible>Skin.HasSetting(showBigposterClearCases)</visible>
                         </control>
+                        <control type="image">
+                            <posx>115</posx>
+                            <posy>270</posy>
+                            <width>35</width>
+                            <height>35</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture>OverlayWatching.png</texture>
+                            <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, )</visible>
+                            <visible>Skin.HasSetting(showBigposterClearCases)</visible>
+                        </control>
                     </control>
                 </itemlayout>
                 <focusedlayout height="220" width="160">
@@ -329,7 +349,7 @@
                     </control>
                     <control type="image">
                         <posx>291</posx>
-                        <posy>28</posy>
+                        <posy>23</posy>
                         <width>91</width>
                         <height>91</height>
                         <aspectratio>keep</aspectratio>
@@ -409,6 +429,16 @@
                         <visible>Skin.HasSetting(showBigposterCases)</visible>
                     </control>
                     <control type="image">
+                        <posx>335</posx>
+                        <posy>555</posy>
+                        <width>41</width>
+                        <height>41</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture>OverlayWatching.png</texture>
+                        <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, )</visible>
+                        <visible>Skin.HasSetting(showBigposterCases)</visible>
+                    </control>
+                    <control type="image">
                         <posx>15</posx>
                         <posy>540</posy>
                         <width>80</width>
@@ -480,6 +510,16 @@
                         <height>41</height>
                         <aspectratio>keep</aspectratio>
                         <texture>$INFO[ListItem.Overlay]</texture>
+                        <visible>Skin.HasSetting(showBigposterClearCases)</visible>
+                    </control>
+                    <control type="image">
+                        <posx>320</posx>
+                        <posy>540</posy>
+                        <width>41</width>
+                        <height>41</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture>OverlayWatching.png</texture>
+                        <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, )</visible>
                         <visible>Skin.HasSetting(showBigposterClearCases)</visible>
                     </control>
                     <control type="image">
@@ -619,8 +659,6 @@
                         <visible allowhiddenfocus="true">ControlGroup(8240).HasFocus</visible>
                     </control>
                 </control>
-
-
                 <!-- Changes Begin Butchabay MOD 1.2.0 -->
                 <control type="image">
                     <width>240</width>

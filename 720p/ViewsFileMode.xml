@@ -97,6 +97,15 @@
                         <texture>$INFO[ListItem.Overlay]</texture>
                         <visible>Window.IsVisible(VideoLibrary) | Window.IsVisible(VideoFiles)</visible>
                     </control>
+                    <control type="image">
+                        <posx>580</posx>
+                        <posy>14</posy>
+                        <width>20</width>
+                        <height>16</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture>OverlayWatching.png</texture>
+                        <visible>[Window.IsVisible(VideoLibrary) | Window.IsVisible(VideoFiles)] + ListItem.IsResumable + StringCompare(ListItem.PlayCount, )</visible>
+                    </control>
                 </itemlayout>
                 <focusedlayout height="40" width="580">
                     <control type="image">
@@ -147,6 +156,15 @@
                         <height>16</height>
                         <texture>$INFO[ListItem.Overlay]</texture>
                         <visible>Window.IsVisible(VideoLibrary) | Window.IsVisible(VideoFiles)</visible>
+                    </control>
+                    <control type="image">
+                        <posx>580</posx>
+                        <posy>14</posy>
+                        <width>20</width>
+                        <height>16</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture>OverlayWatching.png</texture>
+                        <visible>[Window.IsVisible(VideoLibrary) | Window.IsVisible(VideoFiles)] + ListItem.IsResumable + StringCompare(ListItem.PlayCount, )</visible>
                     </control>
                 </focusedlayout>
             </control>
