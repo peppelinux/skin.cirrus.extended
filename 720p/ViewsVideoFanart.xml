@@ -933,7 +933,7 @@
                     <height>303</height>
                     <aspectratio aligny="bottom">stretch</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
-                    <texture background="true">$INFO[ListItem.Path]$INFO[ListItem.Season,season,-landscape.jpg]</texture>
+                    <texture background="true">$INFO[ListItem.Art(season.landscape)]</texture>
                     <bordersize>8</bordersize>
                     <visible>Skin.HasSetting(seasonthumbs)</visible>
                     <visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>
@@ -1166,7 +1166,7 @@
                     <height>303</height>
                     <aspectratio aligny="bottom">stretch</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
-                    <texture background="true">$INFO[ListItem.Path]$INFO[ListItem.Season,../season,-landscape.jpg]</texture>
+                    <texture background="true">$INFO[ListItem.Art(season.landscape)]</texture>
                     <bordersize>8</bordersize>
                     <visible>Skin.HasSetting(episodethumbs)</visible>
                     <visible>!Skin.HasSetting(SmallwindowhiddenTV)</visible>

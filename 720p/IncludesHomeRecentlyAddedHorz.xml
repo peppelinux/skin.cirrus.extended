@@ -462,7 +462,7 @@
             <align>left</align>
             <viewtype label="535">list</viewtype>
             <orientation>horizontal</orientation>
-            <focusposition>0</focusposition>
+            <focusposition>1</focusposition>
             <pagecontrol>-</pagecontrol>
             <scrolltime>0</scrolltime>
             <itemlayout width="120" height="200">
