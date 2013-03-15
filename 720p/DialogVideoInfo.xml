@@ -347,7 +347,7 @@
                         </control>
                         <control type="label">
                             <description>Path:</description>
-                            <posx>210</posx>
+                            <posx>245</posx>
                             <posy>265</posy>
                             <width>615</width>
                             <height>30</height>
@@ -401,7 +401,7 @@
                                 <info>ListItem.Label</info>
                             </control>
                             <control type="label">
-                                <posx>290</posx>
+                                <posx>325</posx>
                                 <posy>0</posy>
                                 <width>565</width>
                                 <height>30</height>
@@ -427,7 +427,7 @@
                                 <info>ListItem.Label</info>
                             </control>
                             <control type="label">
-                                <posx>290</posx>
+                                <posx>325</posx>
                                 <posy>0</posy>
                                 <width>565</width>
                                 <height>80</height>
@@ -622,7 +622,7 @@
                         </control>
                         <control type="label">
                             <description>Path:</description>
-                            <posx>210</posx>
+                            <posx>245</posx>
                             <posy>265</posy>
                             <width>605</width>
                             <height>30</height>
@@ -681,7 +681,7 @@
                                 <info>ListItem.Label</info>
                             </control>
                             <control type="label">
-                                <posx>290</posx>
+                                <posx>325</posx>
                                 <posy>0</posy>
                                 <width>750</width>
                                 <height>30</height>
@@ -707,7 +707,7 @@
                                 <info>ListItem.Label</info>
                             </control>
                             <control type="label">
-                                <posx>290</posx>
+                                <posx>325</posx>
                                 <posy>0</posy>
                                 <width>750</width>
                                 <height>30</height>
@@ -918,7 +918,7 @@
                         </control>
                         <control type="label">
                             <description>Path:</description>
-                            <posx>210</posx>
+                            <posx>245</posx>
                             <posy>265</posy>
                             <width>610</width>
                             <height>30</height>
@@ -1004,7 +1004,7 @@
                                 <info>ListItem.Label</info>
                             </control>
                             <control type="label">
-                                <posx>290</posx>
+                                <posx>325</posx>
                                 <posy>0</posy>
                                 <width>565</width>
                                 <height>30</height>
@@ -1030,7 +1030,7 @@
                                 <info>ListItem.Label</info>
                             </control>
                             <control type="label">
-                                <posx>290</posx>
+                                <posx>325</posx>
                                 <posy>0</posy>
                                 <width>565</width>
                                 <height>30</height>
@@ -1045,8 +1045,7 @@
                         <content>
                             <item>
                                 <label>$LOCALIZE[20359]</label>
-                                <label2>$LOCALIZE[20373] $INFO[ListItem.Season], $LOCALIZE[20359]
-                                $INFO[ListItem.Episode]</label2>
+                                <label2>$LOCALIZE[20373] $INFO[ListItem.Season], $LOCALIZE[20359] $INFO[ListItem.Episode]</label2>
                                 <onclick>-</onclick>
                             </item>
                             <item>
@@ -1107,8 +1106,8 @@
                 <!-- CAST PANEL -->
                 <control type="panel" id="50">
                     <visible>!Control.HasFocus(12)</visible>
-                    <posx>620</posx>
-                    <posy>230</posy>
+                    <posx>655</posx>
+                    <posy>232</posy>
                     <width>450</width>
                     <height>65</height>
                     <onleft>105</onleft>
