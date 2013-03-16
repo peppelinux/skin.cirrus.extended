@@ -1,11 +1,7 @@
 <window id="3000">
-
     <defaultcontrol always="true">8</defaultcontrol>
-
     <allowoverlay>no</allowoverlay>
-
     <controls>
-
         <control type="group">
             <visible>![Window.IsVisible(FileBrowser) | Window.IsVisible(script-Actors-Browser.xml) | [Window.IsVisible(DialogSelect.xml) + StringCompare(Window.Property(actorsselect),1)]]</visible>
             <animation effect="slide" start="1280,0" end="0,0" time="600" tween="quadratic" easing="out">WindowOpen</animation>
@@ -58,7 +54,6 @@
                 <texture>black-back3.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
-
             <control type="image">
                 <!--fanart-->
                 <description>background image</description>
@@ -72,9 +67,7 @@
                 <bordersize>8</bordersize>
                 <visible>!ControlGroup(2500).HasFocus</visible>
             </control> 
-
             <control type="group">
-
                 <control type="label">
                     <!--name-->
                     <description>header label</description>
@@ -86,13 +79,11 @@
                     <label>$INFO[ListItem.Title]</label>
                     <scroll>true</scroll>
                 </control>
-
                 <control type="group">
                     <!--actor info-->
                     <visible>!ControlGroup(2500).HasFocus</visible>
                     <posx>672</posx>
                     <posy>120</posy>
-
                     <control type="label">
                         <!--also known as-->
                         <posx>178</posx>
@@ -104,7 +95,6 @@
                         <label>$INFO[ListItem.Property(AlsoKnownAs)]</label>
                         <textcolor>accent</textcolor>
                     </control>	
-
                     <control type="label">
                         <!--known movies label-->
                         <posx>0</posx>
@@ -138,7 +128,6 @@
                         <textcolor>accent</textcolor>
                         <label>$ADDON[script.metadata.actors 32013]: [COLOR=white]$INFO[ListItem.Property(Deathday)]$INFO[ListItem.Property(DeathageLong), (,)][/COLOR]</label>
                     </control>
-
                     <control type="label">
                         <!--bith place label-->
                         <posx>0</posx>
@@ -162,7 +151,6 @@
                         <label>$ADDON[script.metadata.actors 32015]: [COLOR=white]$INFO[ListItem.Property(Adult)][/COLOR]</label>
                     </control>			
                 </control>	
-
                 <control type="textbox" id="400">
                     <!--plot-->
                     <description>Plot</description>
@@ -175,19 +163,17 @@
                     <pagecontrol>60</pagecontrol>
                     <label>$INFO[ListItem.Plot]</label>
                     <autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-                    <textcolor>accent</textcolor>
+                    <textcolor>white</textcolor>
                     <visible>!Control.IsVisible(150)</visible>
                     <animation effect="fade" start="0" end="100" time="500" delay="500">WindowOpen</animation>
                     <animation effect="fade" start="100" end="0" time="500">WindowClose</animation>
                 </control>
-
                 <control type="group">
                     <!--actor image-->
                     <posx>232.5</posx>
                     <posy>52.5</posy>
                     <animation effect="fade" time="300">Visible</animation>
                     <animation effect="fade" time="300">Hidden</animation> 
-
                     <control type="image">
                         <!--thumb-->
                         <description>actor thumb</description>
@@ -200,9 +186,7 @@
                         <bordertexture border="8">ContentPanelvertical.png</bordertexture>
                         <bordersize>8</bordersize>
                     </control>
-
                 </control>
-
                 <control type="wraplist" id="150">
                     <!--filmography focused-->
                     <posx>680</posx>
@@ -213,7 +197,7 @@
                     <onright>150</onright>
                     <onback>9000</onback>
                     <onup>9000</onup>
-                    <ondown>9000</ondown>				
+                    <ondown>9000</ondown>
                     <viewtype label="list">wraplist</viewtype>
                     <pagecontrol>-</pagecontrol>
                     <focusposition>0</focusposition>
@@ -222,9 +206,7 @@
                     <preloaditems>2</preloaditems>
                     <animation effect="fade" start="0" end="100" time="500" delay="500">WindowOpen</animation>
                     <animation effect="fade" start="100" end="0" time="500">WindowClose</animation>
-
                     <itemlayout height="210" width="140">
-
                         <control type="image" id="501"> 
                             <description>Movie Cover</description>
                             <posx>0</posx>
@@ -293,12 +275,11 @@
                     <align>left</align>
                     <aligny>center</aligny>
                     <font>cirrus_24_Bold</font>
-                    <textcolor>accent</textcolor>
+                    <textcolor>white</textcolor>
                     <scrollspeed>30</scrollspeed>
                     <label>$INFO[Container(150).Listitem.Label]</label>
                     <visible>Control.IsVisible(150)</visible>
                 </control>
-
                 <control type="list" id="50">
                     <description>container actor properties</description>
                     <posx>0</posx>
@@ -314,7 +295,6 @@
                     <itemlayout height="1" width="1" />
                     <focusedlayout height="1" width="1" />
                 </control>
-
                 <control type="group" id="2500">
                     <!--thumb selection-->
                     <visible>ControlGroup(2500).HasFocus</visible>
@@ -322,7 +302,6 @@
                     <posy>120</posy>
                     <animation effect="fade" time="300">Visible</animation>
                     <animation effect="fade" time="300">Hidden</animation>
-
                     <control type="wraplist" id="250">
                         <posx>50</posx>
                         <posy>0</posy>
@@ -367,11 +346,8 @@
                                     <bordersize>8</bordersize>
                                 </control>	
                             </control>	
-
                         </focusedlayout>
-
                     </control>
-
                     <control type="label">
                         <posx>45</posx>
                         <posy>230</posy>
@@ -385,9 +361,7 @@
                         <animation effect="fade" time="300">Visible</animation>
                         <animation effect="fade" time="300">Hidden</animation>
                     </control>
-
                 </control>
-
                 <control type="grouplist" id="9000">
                     <!--buttons-->
                     <posx>20</posx>
@@ -403,65 +377,49 @@
                     <align>center</align>
                     <aligny>top</aligny>
                     <scrolltime>0</scrolltime>
-
                     <control type="button" id="8">
                         <description>browse to Show</description>
                         <include>ButtonVideoInfoCommonValues</include>
                         <label>1024</label>
                     </control>
-
                     <control type="button" id="5">
                         <description>Filmography/Biography</description>
                         <include>ButtonVideoInfoCommonValues</include>
                         <label>$ADDON[script.metadata.actors 32010]</label>
                         <!-- <onclick>Set.Focus(150)</onclick> -->
                     </control>
-
                     <control type="button" id="6">
                         <description>Refresh</description>
                         <include>ButtonVideoInfoCommonValues</include>
                         <label>184</label>
                     </control>
-
                     <control type="button" id="10">
                         <description>Get Thumb</description>
                         <include>ButtonVideoInfoCommonValues</include>
                         <label>13405</label>
                         <onclick>SetFocus(250)</onclick>
                     </control>
-
                     <control type="button" id="20">
                         <description>Get Fanart</description>
                         <include>ButtonVideoInfoCommonValues</include>
                         <label>20413</label>
                     </control>
-
                     <control type="button" id="11">
                         <description>edit (require tmdb account)</description>
                         <include>ButtonVideoInfoCommonValues</include>
                         <label>20067</label>
                     </control>
-
                     <control type="button" id="25">
                         <description>addon settings</description>
                         <include>ButtonVideoInfoCommonValues</include>
                         <label>24002</label>
                     </control>
-
                 </control>
-
             </control>
-
             <control type="group"> 
                 <posx>0</posx>
                 <posy>520</posy>
-
-
-
             </control>	
-
         </control>
-
     </controls>
-
 </window>
