@@ -96,6 +96,10 @@ msgctxt "#31041"
 msgid "Enable clearlogo for TV Shows"
 msgstr ""
 
+msgctxt "#31042"
+msgid "Disable \"Watching\" icon when watched"
+msgstr ""
+
 msgctxt "#31043"
 msgid "PAUSED"
 msgstr ""

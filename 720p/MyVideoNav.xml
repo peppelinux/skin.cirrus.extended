@@ -520,6 +520,13 @@
                         <include>ButtonCommonValues</include>
                         <label>20367</label>
                     </control>
+                    <control type="radiobutton" id="2062">
+                        <description>In progress icon behaviour</description>
+                        <include>ButtonCommonValues</include>
+                        <label>31042</label>
+                        <onclick>Skin.ToggleSetting(DisableInProgress)</onclick>
+                        <selected>Skin.HasSetting(DisableInProgress)</selected>
+                    </control>
                     <control type="radiobutton" id="19">
                         <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
                         <description>Filter</description>

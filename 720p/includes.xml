@@ -1,5 +1,6 @@
 <includes>
     <include file="defaults.xml" />
+    <include file="Variables.xml" />
     <include file="ViewsVideoCoverflow.xml" />
     <include file="ViewsVideoBannerwall.xml" />
     <include file="ViewsVideoVertBannerwall.xml" />

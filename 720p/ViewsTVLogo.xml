@@ -70,16 +70,8 @@
                         <width>35</width>
                         <height>35</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
-                    </control>
-                    <control type="image">
-                        <posx>197</posx>
-                        <posy>140</posy>
-                        <width>35</width>
-                        <height>35</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>OverlayWatching.png</texture>
-                        <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, )</visible>
+                        <texture>$VAR[overlayIcon]</texture>
+                        <visible>Skin.HasSetting(originalwatched)</visible>
                     </control>
                 </itemlayout>
                 <focusedlayout condition="Container.Content(Movies) | Container.Content(TVShows)" height="200" width="350">
@@ -101,16 +93,8 @@
                             <width>35</width>
                             <height>35</height>
                             <aspectratio>keep</aspectratio>
-                            <texture>$INFO[ListItem.Overlay]</texture>
-                        </control>
-                        <control type="image">
-                            <posx>197</posx>
-                            <posy>140</posy>
-                            <width>35</width>
-                            <height>35</height>
-                            <aspectratio>keep</aspectratio>
-                            <texture>OverlayWatching.png</texture>
-                            <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, )</visible>
+                            <texture>$VAR[overlayIcon]</texture>
+                            <visible>Skin.HasSetting(originalwatched)</visible>
                         </control>
                     </control>
                 </focusedlayout>

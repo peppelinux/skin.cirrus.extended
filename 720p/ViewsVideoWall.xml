@@ -61,16 +61,7 @@
                             <posy>115</posy>
                             <width>30</width>
                             <height>40</height>
-                            <texture>$INFO[ListItem.Overlay]</texture>
-                        </control>
-                        <control type="image">
-                            <posx>70</posx>
-                            <posy>115</posy>
-                            <width>30</width>
-                            <height>40</height>
-                            <aspectratio>keep</aspectratio>
-                            <texture>OverlayWatching.png</texture>
-                            <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, )</visible>
+                            <texture>$VAR[overlayIcon]</texture>
                         </control>
                     </control>
                 </itemlayout>
@@ -106,16 +97,7 @@
                             <posy>115</posy>
                             <width>30</width>
                             <height>40</height>
-                            <texture>$INFO[ListItem.Overlay]</texture>
-                        </control>
-                        <control type="image">
-                            <posx>70</posx>
-                            <posy>115</posy>
-                            <width>30</width>
-                            <height>40</height>
-                            <aspectratio>keep</aspectratio>
-                            <texture>OverlayWatching.png</texture>
-                            <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, )</visible>
+                            <texture>$VAR[overlayIcon]</texture>
                         </control>
                     </control>
                 </focusedlayout>

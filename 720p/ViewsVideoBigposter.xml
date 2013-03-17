@@ -242,17 +242,7 @@
                             <width>35</width>
                             <height>35</height>
                             <aspectratio>keep</aspectratio>
-                            <texture>$INFO[ListItem.Overlay]</texture>
-                            <visible>Skin.HasSetting(showBigposterCases)</visible>
-                        </control>
-                        <control type="image">
-                            <posx>110</posx>
-                            <posy>270</posy>
-                            <width>35</width>
-                            <height>35</height>
-                            <aspectratio>keep</aspectratio>
-                            <texture>OverlayWatching.png</texture>
-                            <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, )</visible>
+                            <texture>$VAR[overlayIcon]</texture>
                             <visible>Skin.HasSetting(showBigposterCases)</visible>
                         </control>
                     </control>
@@ -309,17 +299,7 @@
                             <width>35</width>
                             <height>35</height>
                             <aspectratio>keep</aspectratio>
-                            <texture>$INFO[ListItem.Overlay]</texture>
-                            <visible>Skin.HasSetting(showBigposterClearCases)</visible>
-                        </control>
-                        <control type="image">
-                            <posx>115</posx>
-                            <posy>270</posy>
-                            <width>35</width>
-                            <height>35</height>
-                            <aspectratio>keep</aspectratio>
-                            <texture>OverlayWatching.png</texture>
-                            <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, )</visible>
+                            <texture>$VAR[overlayIcon]</texture>
                             <visible>Skin.HasSetting(showBigposterClearCases)</visible>
                         </control>
                     </control>
@@ -425,17 +405,7 @@
                         <width>41</width>
                         <height>41</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
-                        <visible>Skin.HasSetting(showBigposterCases)</visible>
-                    </control>
-                    <control type="image">
-                        <posx>335</posx>
-                        <posy>555</posy>
-                        <width>41</width>
-                        <height>41</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>OverlayWatching.png</texture>
-                        <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, )</visible>
+                        <texture>$VAR[overlayIcon]</texture>
                         <visible>Skin.HasSetting(showBigposterCases)</visible>
                     </control>
                     <control type="image">
@@ -509,17 +479,7 @@
                         <width>41</width>
                         <height>41</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
-                        <visible>Skin.HasSetting(showBigposterClearCases)</visible>
-                    </control>
-                    <control type="image">
-                        <posx>320</posx>
-                        <posy>540</posy>
-                        <width>41</width>
-                        <height>41</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>OverlayWatching.png</texture>
-                        <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, )</visible>
+                        <texture>$VAR[overlayIcon]</texture>
                         <visible>Skin.HasSetting(showBigposterClearCases)</visible>
                     </control>
                     <control type="image">

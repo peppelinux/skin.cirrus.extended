@@ -1,0 +1,7 @@
+<includes>
+    <!-- Overlay variable -->
+    <variable name="overlayIcon">
+        <value condition="[[!ListItem.IsResumable + !StringCompare(ListItem.PlayCount, )] | [ListItem.IsResumable + !StringCompare(ListItem.PlayCount, ) + Skin.HasSetting(DisableInProgress)]]">$INFO[ListItem.Overlay]</value>
+        <value condition="ListItem.IsResumable + [[!Skin.HasSetting(DisableInProgress) + !StringCompare(ListItem.PlayCount, )] | [Skin.HasSetting(DisableInProgress) + StringCompare(ListItem.PlayCount, )] | [!Skin.HasSetting(DisableInProgress) + StringCompare(ListItem.PlayCount, )]]">OverlayWatching.png</value>
+    </variable>
+</includes>

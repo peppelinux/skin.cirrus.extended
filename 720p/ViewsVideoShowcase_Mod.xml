@@ -318,18 +318,8 @@
                             <width>35</width>
                             <height>35</height>
                             <aspectratio>keep</aspectratio>
-                            <texture>$INFO[ListItem.Overlay]</texture>
+                            <texture>$VAR[overlayIcon]</texture>
                             <visible>!Skin.HasSetting(Smallwindowhidden)</visible>
-                        </control>
-                        <control type="image">
-                            <!-- Gesehen großes Cover -->
-                            <posx>85</posx>
-                            <posy>285</posy>
-                            <width>35</width>
-                            <height>35</height>
-                            <aspectratio>keep</aspectratio>
-                            <texture>OverlayWatching.png</texture>
-                            <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, ) + !Skin.HasSetting(Smallwindowhidden)</visible>
                         </control>
                     </control>
                 </focusedlayout>
@@ -370,17 +360,8 @@
                         <width>35</width>
                         <height>35</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <texture>$VAR[overlayIcon]</texture>
                         <visible>Skin.HasSetting(originalwatched)</visible>
-                    </control>
-                    <control type="image">
-                        <posx>280</posx>
-                        <posy>110</posy>
-                        <width>35</width>
-                        <height>35</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>OverlayWatching.png</texture>
-                        <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, ) + Skin.HasSetting(originalwatched)</visible>
                     </control>
                 </itemlayout>
                 <focusedlayout condition="Container.Content(Episodes)" height="112" width="200">
@@ -437,17 +418,8 @@
                             <width>20</width>
                             <height>20</height>
                             <aspectratio>keep</aspectratio>
-                            <texture>$INFO[ListItem.Overlay]</texture>
+                            <texture>$VAR[overlayIcon]</texture>
                             <visible>Skin.HasSetting(originalwatched)</visible>
-                        </control>
-                        <control type="image">
-                            <posx>170</posx>
-                            <posy>250</posy>
-                            <width>20</width>
-                            <height>20</height>
-                            <aspectratio>keep</aspectratio>
-                            <texture>OverlayWatching.png</texture>
-                            <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, ) + Skin.HasSetting(originalwatched)</visible>
                         </control>
                     </control>
                 </focusedlayout>

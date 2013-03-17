@@ -78,16 +78,7 @@
                         <width>35</width>
                         <height>35</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
-                    </control>
-                    <control type="image">
-                        <posx>110</posx>
-                        <posy>200</posy>
-                        <width>35</width>
-                        <height>35</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>OverlayWatching.png</texture>
-                        <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, )</visible>
+                        <texture>$VAR[overlayIcon]</texture>
                     </control>
                 </focusedlayout>
             </control>

@@ -72,17 +72,7 @@
                         <width>35</width>
                         <height>35</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
-                        <visible>Player.HasVideo | Skin.HasSetting(originalwatched)</visible>
-                    </control>
-                    <control type="image">
-                        <posx>75</posx>
-                        <posy>145</posy>
-                        <width>35</width>
-                        <height>35</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>OverlayWatching.png</texture>
-                        <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, )</visible>
+                        <texture>$VAR[overlayIcon]</texture>
                         <visible>Player.HasVideo | Skin.HasSetting(originalwatched)</visible>
                     </control>
                 </itemlayout>
@@ -118,17 +108,7 @@
                             <width>35</width>
                             <height>35</height>
                             <aspectratio>keep</aspectratio>
-                            <texture>$INFO[ListItem.Overlay]</texture>
-                            <visible>Player.HasVideo | Skin.HasSetting(originalwatched)</visible>
-                        </control>
-                        <control type="image">
-                            <posx>75</posx>
-                            <posy>145</posy>
-                            <width>35</width>
-                            <height>35</height>
-                            <aspectratio>keep</aspectratio>
-                            <texture>OverlayWatching.png</texture>
-                            <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, )</visible>
+                            <texture>$VAR[overlayIcon]</texture>
                             <visible>Player.HasVideo | Skin.HasSetting(originalwatched)</visible>
                         </control>
                     </control>
@@ -155,17 +135,7 @@
                         <width>35</width>
                         <height>35</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
-                        <visible>Player.HasVideo | Skin.HasSetting(originalwatched)</visible>
-                    </control>
-                    <control type="image">
-                        <posx>-280</posx>
-                        <posy>110</posy>
-                        <width>35</width>
-                        <height>35</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>OverlayWatching.png</texture>
-                        <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, )</visible>
+                        <texture>$VAR[overlayIcon]</texture>
                         <visible>Player.HasVideo | Skin.HasSetting(originalwatched)</visible>
                     </control>
                 </itemlayout>
@@ -201,17 +171,7 @@
                             <width>20</width>
                             <height>20</height>
                             <aspectratio>keep</aspectratio>
-                            <texture>$INFO[ListItem.Overlay]</texture>
-                            <visible>Player.HasVideo | Skin.HasSetting(originalwatched)</visible>
-                        </control>
-                        <control type="image">
-                            <posx>170</posx>
-                            <posy>95</posy>
-                            <width>20</width>
-                            <height>20</height>
-                            <aspectratio>keep</aspectratio>
-                            <texture>OverlayWatching.png</texture>
-                            <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, )</visible>
+                            <texture>$VAR[overlayIcon]</texture>
                             <visible>Player.HasVideo | Skin.HasSetting(originalwatched)</visible>
                         </control>
                     </control>

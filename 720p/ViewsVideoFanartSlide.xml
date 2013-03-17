@@ -73,17 +73,8 @@
                         <width>35</width>
                         <height>35</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <texture>$VAR[overlayIcon]</texture>
                     </control>
-                    <control type="image">
-						<posx>70</posx>
-						<posy>140</posy>
-						<width>35</width>
-						<height>35</height>
-						<aspectratio>keep</aspectratio>
-                        <texture>OverlayWatching.png</texture>
-                        <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, )</visible>
-					</control>
                 </itemlayout>
                 <focusedlayout condition="Container.Content(Movies)" height="310" width="120">
                     <control type="image">
@@ -105,17 +96,8 @@
                         <width>35</width>
                         <height>35</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <texture>$VAR[overlayIcon]</texture>
                     </control>
-                    <control type="image">
-						<posx>72</posx>
-						<posy>140</posy>
-						<width>35</width>
-						<height>35</height>
-						<aspectratio>keep</aspectratio>
-                        <texture>OverlayWatching.png</texture>
-                        <visible>Window.IsVisible(Videos) + ListItem.IsResumable + StringCompare(ListItem.PlayCount, )</visible>
-					</control>
                 </focusedlayout>
             </control>
             <!-- INFO OFF MOVIES -->
