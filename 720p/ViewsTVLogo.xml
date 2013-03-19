@@ -62,17 +62,16 @@
 						<width>220</width>
 						<height>145</height>
 						<aspectratio scalediffuse="false" aligny="center" align="center">keep</aspectratio> 
-
 						<texture background="true" fallback="fallback.png">$INFO[ListItem.Art(clearlogo)]</texture>
-						
 					</control>
 					<control type="image">
-						<posx>70</posx>
+                        <posx>197</posx>
 						<posy>140</posy>
 						<width>35</width>
 						<height>35</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Overlay]</texture>
+                        <texture>$VAR[overlayIcon]</texture>
+                        <visible>Skin.HasSetting(originalwatched)</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout condition="Container.Content(Movies) | Container.Content(TVShows)" height="200" width="350">
@@ -86,16 +85,16 @@
 						<width>220</width>
 						<height>145</height>
 						<aspectratio scalediffuse="false" aligny="center" align="center">keep</aspectratio> 
-
 						<texture background="true" fallback="fallback.png">$INFO[ListItem.Art(clearlogo)]</texture>
 					</control>
 					<control type="image">
-						<posx>70</posx>
+                            <posx>197</posx>
 						<posy>140</posy>
 						<width>35</width>
 						<height>35</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Overlay]</texture>
+                            <texture>$VAR[overlayIcon]</texture>
+                            <visible>Skin.HasSetting(originalwatched)</visible>
 					</control>
 				</control>
 				</focusedlayout>
@@ -215,7 +214,6 @@
 					<visible>!SubString(ListItem.Duration,mins)</visible>
 					<visible>!ListItem.IsFolder</visible>
 				</control>
-				
 
                 <control type="image">
                     <!-- Top250IMDB Mod 1.2 -->
@@ -242,7 +240,6 @@
 						<aligny>center</aligny>
 						<font>cirrus_38_Bold</font>
 						<textcolor>white</textcolor>
-						
 					</control>
 					<control type="label">
 					<description>Trailer Label while movie is playing</description>
@@ -307,7 +304,6 @@
 					<height>303</height>
 					<aspectratio>stretch</aspectratio>
 					<fadetime>FanartCrossfadeTime</fadetime>
-
 					<texture fallback="splashm.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
 					<bordersize>8</bordersize>
 					<visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>
@@ -320,6 +316,7 @@
 					<aspectratio>stretch</aspectratio>
 					<fadetime>FanartCrossfadeTime</fadetime>
 					<timeperimage>3000</timeperimage>
+
 
 
 					<imagepath background="true">special://userdata/extras/tvfanarts/$INFO[ListItem.TVShowTitle]/extrathumbs</imagepath>
@@ -348,7 +345,6 @@
 					<aligny>center</aligny>
 					<font>cirrus_20</font>
 					<textcolor>white</textcolor>
-					
 					<visible>Skin.HasSetting(videowindowglobal)</visible>
 					<visible>Player.HasVideo</visible>
 					<visible>Control.IsVisible(667)</visible>
@@ -356,7 +352,7 @@
 				</control>
 				<control type="image">
 						<posx>1142</posx>
-						<posy>48</posy>
+                    <posy>43</posy>
 						<width>91</width>
 						<height>91</height>
 						<aspectratio>keep</aspectratio>
@@ -367,7 +363,6 @@
 					</control>
 				<control type="image">
 					<posx>708</posx>
-
 					<posy>43</posy>
 					<width>91</width>
 					<height>91</height>
@@ -498,8 +493,6 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			</control>
-			
-			
 			<!-- Fanart Slide Mod 1.2.2 -->
 			<!-- WHEN INFO IS NOT HIDDEN TV SHOWS -->
 		<!-- Update 1.1 Next Aired + Alignment Correction -->
@@ -527,7 +520,6 @@
 					<width>575</width>
 					<height>106</height>
 				    <aspectratio>stretch</aspectratio>
-
 					<texture background="true">$INFO[ ListItem.Art(banner)]</texture>
 					<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 				    <bordersize>8</bordersize>
@@ -608,7 +600,6 @@
 					<width>540</width>
 					<height>303</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
-
 					<texture fallback="splashm.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
 					<bordersize>8</bordersize>
 					<visible>!Skin.HasSetting(tvfanart)</visible>
@@ -621,7 +612,6 @@
 					<width>540</width>
 					<height>303</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
-
 					<texture fallback="splashm.png" background="true">$INFO[ListItem.Art(landscape)]</texture>
 					<bordersize>8</bordersize>
 					<visible>Skin.HasSetting(tvfanart)</visible>
@@ -656,7 +646,7 @@
 				</control>
 					<control type="image">
 						<posx>1141</posx>
-						<posy>48</posy>
+                    <posy>43</posy>
 						<width>91</width>
 						<height>91</height>
 						<aspectratio>keep</aspectratio>
@@ -686,9 +676,6 @@
 			  <visible>Skin.HasSetting(studios)</visible>
 			</control>
 			</control>
-				
 	</control>
 	</include>
 </includes>
-
-

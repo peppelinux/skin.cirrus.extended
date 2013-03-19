@@ -141,7 +141,7 @@
                         <posy>2</posy>
                         <width>30</width>
                         <height>40</height>
-                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <texture>$VAR[overlayIcon]</texture>
                     </control>
                 </itemlayout>
                 <focusedlayout height="70" width="580">
@@ -196,7 +196,7 @@
                         <posy>2</posy>
                         <width>30</width>
                         <height>40</height>
-                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <texture>$VAR[overlayIcon]</texture>
                     </control>
                 </focusedlayout>
             </control>

@@ -67,7 +67,7 @@
                         <width>35</width>
                         <height>35</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <texture>$VAR[overlayIcon]</texture>
                     </control>
                     <control type="image">
                         <posx>55</posx>
@@ -96,7 +96,7 @@
                         <width>35</width>
                         <height>35</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <texture>$VAR[overlayIcon]</texture>
                     </control>
                 </focusedlayout>cusedlayout>
         </control>

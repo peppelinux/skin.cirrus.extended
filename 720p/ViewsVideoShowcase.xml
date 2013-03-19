@@ -10,7 +10,6 @@
             <animation effect="slide" time="200" tween="circle" easing="in" start="0,0" end="0,600">WindowClose</animation>
             <posx>0</posx>
             <posy>100</posy>
-
             <visible>Control.IsVisible(52) + Control.HasFocus(52)</visible>
             <control type="image">
                 <!-- bottom bar background -->
@@ -19,7 +18,6 @@
                 <width>180</width>
                 <height>180</height>
                 <aspectratio>stretch</aspectratio>
-
                 <texture>$INFO[ListItem.Art(discart)]</texture>
                 <visible>Skin.HasSetting(showmoviedvd)</visible>
             </control>
@@ -32,13 +30,11 @@
             <animation effect="slide" time="200" tween="circle" easing="in" start="0,0" end="0,500">WindowClose</animation>
             <animation effect="slide" time="200" tween="circle" easing="in" start="0,0" end="0,500">Hidden</animation>
             <visible>Control.IsVisible(52)</visible>
-            <visible>Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows)</visible>
-            <!-- <visible allowhiddenfocus="true">!Window.IsVisible(2004) + ![Window.IsVisible(MyPics.xml)</visible> -->
-            <!-- <include>HideWhenLowerDialogActive</include> -->
+            <visible>Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Episodes)</visible>
             <control type="fixedlist" id="52">
                 <viewtype label="Showcase">list</viewtype>
                 <pagecontrol>60</pagecontrol>
-                <visible>Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows)</visible>
+                <!--<visible>Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows)</visible>-->
                 <posx>-55</posx>
                 <posy>-150</posy>
                 <width>1660</width>
@@ -48,7 +44,7 @@
                 <ondown condition="Container.Content(Movies) | Container.Content(Episodes)">ActivateWindow(1121)</ondown>
                 <orientation>horizontal</orientation>
                 <focusposition>8</focusposition>
-                <itemlayout condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows)" width="80" height="240">
+                <itemlayout width="80" height="240">
                     <control type="image">
                         <posy>30</posy>
                         <width>130</width>
@@ -59,30 +55,7 @@
                         <animation effect="rotate" time="0" delay="0" start="0" end="-15" condition="true">Conditional</animation>
                     </control>
                 </itemlayout>
-                <itemlayout condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows)" width="80" height="240">
-                    <control type="image">
-                        <posy>30</posy>
-                        <width>360</width>
-                        <height>240</height>
-                        <texture background="true">$INFO[ListItem.Icon]</texture>
-                        <bordertexture border="6">ContentPanelvertical.png</bordertexture>
-                        <bordersize>6</bordersize>
-                        <animation effect="rotate" time="0" delay="0" start="0" end="-45" condition="true">Conditional</animation>
-                    </control>
-                </itemlayout>
-                <itemlayout condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows)" width="80" height="240">
-                    <control type="image">
-                        <posy>30</posy>
-                        <width>220</width>
-                        <height>240</height>
-                        <texture background="true">$INFO[ListItem.Icon]</texture>
-                        <bordertexture border="6">ContentPanelvertical.png</bordertexture>
-                        <bordersize>6</bordersize>
-                        <animation effect="rotate" time="0" delay="0" start="0" end="-30" condition="true">Conditional</animation>
-                    </control>
-                </itemlayout>
-                <focusedlayout condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows)" width="170" height="240">
-
+                <focusedlayout width="170" height="240">
                     <control type="image">
                         <posy>30</posy>
                         <width>130</width>
@@ -99,79 +72,15 @@
                             <effect type="rotate" start="0" end="-15" time="100" delay="0"/>
                         </animation>
                     </control>
-                </focusedlayout>
-                <focusedlayout condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows)" width="170" height="240">
                     <control type="image">
-                        <posy>30</posy>
-                        <width>360</width>
-                        <height>240</height>
-                        <texture background="true">$INFO[ListItem.Icon]</texture>
-                        <bordertexture border="6">ContentPanelvertical.png</bordertexture>
-                        <bordersize>6</bordersize>
-                        <animation type="focus" reversible="false">
-                            <effect type="zoom" tween="quadratic" end="-230,-40,540,360" time="200" delay="100"/>
-                            <effect type="rotate" start="-45" end="0" time="200" delay="100"/>
-                        </animation>
-                        <animation type="unfocus" reversible="false">
-                            <effect type="zoom" tween="quadratic" start="-230,-40,540,360" end="0,0,360,240" time="100" delay="50"/>
-                            <effect type="rotate" start="0" end="-45" time="100" delay="50"/>
-                        </animation>
+                        <posx>110</posx>
+                        <posy>200</posy>
+                        <width>35</width>
+                        <height>35</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture>$VAR[overlayIcon]</texture>
                     </control>
                 </focusedlayout>
-                <focusedlayout condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows)" width="170" height="240">
-                    <control type="image">
-                        <posy>30</posy>
-                        <width>220</width>
-                        <height>240</height>
-                        <texture background="true">$INFO[ListItem.Icon]</texture>
-                        <bordertexture border="6">ContentPanelvertical.png</bordertexture>
-                        <bordersize>6</bordersize>
-                        <animation type="focus" reversible="false">
-                            <effect type="zoom" tween="quadratic" end="-100,-44,352,384" time="200" delay="100"/>
-                            <effect type="rotate" start="-30" end="0" time="200" delay="100"/>
-                        </animation>
-                        <animation type="unfocus" reversible="false">
-                            <effect type="zoom" tween="quadratic" start="-100,-44,352,384" end="0,0,220,240" time="100" delay="50"/>
-                            <effect type="rotate" start="0" end="-30" time="100" delay="50"/>
-                        </animation>
-                    </control>
-                </focusedlayout>
-                <focusedlayout condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows)" width="170" height="240">
-                    <control type="image">
-                        <posy>30</posy>
-                        <width>130</width>
-                        <height>240</height>
-                        <texture background="true">$INFO[ListItem.Icon]</texture>
-                        <bordertexture border="6">ContentPanelvertical.png</bordertexture>
-                        <bordersize>6</bordersize>
-                        <animation type="focus" reversible="false">
-                            <effect type="zoom" tween="quadratic" end="-46,-60,220,391" time="200" delay="100"/>
-                            <effect type="rotate" start="-15" end="0" time="200" delay="100"/>
-                        </animation>
-                        <animation type="unfocus" reversible="false">
-                            <effect type="zoom" tween="quadratic" start="-46,-60,220,391" end="0,0,130,240" time="100" delay="0"/>
-                            <effect type="rotate" start="0" end="-15" time="100" delay="0"/>
-                        </animation>
-                    </control>
-                </focusedlayout>
-            </control>
-        </control>
-        <control type="group">
-            <posx>0</posx>
-            <posy>0</posy>
-            <animation effect="slide" time="300" tween="circle" easing="out" start="0,500" end="0,0">WindowOpen</animation>
-            <animation effect="slide" time="300" tween="circle" easing="out" start="0,500" end="0,0">Visible</animation>
-            <animation effect="slide" time="200" tween="circle" easing="in" start="0,0" end="0,500">WindowClose</animation>
-            <animation effect="slide" time="200" tween="circle" easing="in" start="0,0" end="0,500">Hidden</animation>
-            <visible>Control.IsVisible(52)</visible>
-            <visible>Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows)</visible>
-            <control type="image">
-                <posx>690</posx>
-                <posy>485</posy>
-                <width>35</width>
-                <height>35</height>
-                <aspectratio>keep</aspectratio>
-                <texture>$INFO[ListItem.Overlay]</texture>
             </control>
         </control>
         <control type="group">
@@ -317,7 +226,6 @@
                 <posy>550</posy>
                 <width>200</width>
                 <height>112</height>
-
                 <texture>$INFO[ListItem.Art(clearlogo)]</texture>
                 <aspectratio align="center" aligny="center">keep</aspectratio>
                 <visible>Container.Content(Movies)</visible>

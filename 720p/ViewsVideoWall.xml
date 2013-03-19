@@ -61,9 +61,9 @@
                             <posy>115</posy>
                             <width>30</width>
                             <height>40</height>
-                            <texture>$INFO[ListItem.Overlay]</texture>
+                            <texture>$VAR[overlayIcon]</texture>
                         </control>
-                    </control>		
+                    </control>
                 </itemlayout>
                 <focusedlayout height="190" width="124">
                     <control type="group">
@@ -97,11 +97,11 @@
                             <posy>115</posy>
                             <width>30</width>
                             <height>40</height>
-                            <texture>$INFO[ListItem.Overlay]</texture>
+                            <texture>$VAR[overlayIcon]</texture>
                         </control>
-                    </control>	
+                    </control>
                 </focusedlayout>
-            </control>		
+            </control>
             <!-- Movie info down thebottom -->	
             <control type="group">
                 <posx>20</posx>

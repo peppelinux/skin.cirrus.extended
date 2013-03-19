@@ -156,10 +156,10 @@
                     </control>
                     <control type="image">
                         <posx>20r</posx>
-                        <posy>2</posy>
+                        <posy>0</posy>
                         <width>30</width>
                         <height>40</height>
-                        <texture>$INFO[ListItem.Overlay]</texture>
+                        <texture>$VAR[overlayIcon]</texture>
                     </control>
                 </itemlayout>
                 <focusedlayout height="70" width="580">
@@ -228,8 +228,8 @@
                         <posy>15</posy>
                         <width>30</width>
                         <height>40</height>
-                        <texture>$INFO[ListItem.Overlay]</texture>
-                    </control>					
+                        <texture>$VAR[overlayIcon]</texture>
+                    </control>
                 </focusedlayout>
             </control>
             <!-- RIGHTLIST BOTTOM INFO TV SHOWS LEVEL -->
@@ -526,7 +526,6 @@
                         <bordersize>8</bordersize>
                     </control>
                 </control>
-
             </control>
             <!-- RIGHTLIST BOTTOM INFO SEASONS LEVEL -->
             <control type="group">
@@ -788,7 +787,7 @@
                 </control>
                 <!-- Blueray and DVD cover images if turned on -->
                 <control type="group">
-                    <visible>!Skin.HasSetting(posterlessRightList) + [Skin.HasSetting(showCases) + !Skin.HasSetting(showClearCases)]</visible>
+                    <visible>!Skin.HasSetting(posterlessRightList) + [Skin.HasSetting(showCases) | Skin.HasSetting(showClearCases)]</visible>
                     <posx>0</posx>
                     <posy>0</posy>
                     <control type="image">
@@ -799,57 +798,8 @@
                         <aspectratio aligny="bottom">stretch</aspectratio>
                         <fadetime>IconCrossfadeTime</fadetime>
                         <texture background="true">$INFO[ListItem.Icon]</texture>
+                        <visible>Skin.HasSetting(showCases) + !Skin.HasSetting(showClearCases)</visible>
                     </control>
-                    <control type="image">
-                        <!-- DVD Case -->
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>240</width>
-                        <height>360</height>
-                        <aspectratio aligny="bottom">stretch</aspectratio>
-                        <fadetime>IconCrossfadeTime</fadetime>
-                        <texture>special://skin/extras/flagging/cases/dvd.png</texture>
-                        <visible>![stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080) | stringcompare(ListItem.VideoResolution,540)]</visible>
-                    </control>
-                    <control type="image">
-                        <!-- Bluray Case -->
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>240</width>
-                        <height>360</height>
-                        <aspectratio aligny="bottom">stretch</aspectratio>
-                        <fadetime>IconCrossfadeTime</fadetime>
-                        <texture>special://skin/extras/flagging/cases/bluray.png</texture>
-                        <visible>[stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !substring(listitem.filename,3D) + !stringcompare(ListItem.VideoResolution,540)</visible>
-                    </control>
-                    <control type="image">
-                        <!-- Bluray 3D Case -->
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>240</width>
-                        <height>360</height>
-                        <aspectratio aligny="bottom">stretch</aspectratio>
-                        <fadetime>IconCrossfadeTime</fadetime>
-                        <texture>special://skin/extras/flagging/cases/3dbluraycase3.png</texture>
-                        <visible>[stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + substring(listitem.filename,3D) + !stringcompare(ListItem.VideoResolution,540)</visible>
-                    </control>
-                    <control type="image">
-                        <!-- HDDVD Case -->
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>240</width>
-                        <height>360</height>
-                        <aspectratio aligny="bottom">stretch</aspectratio>
-                        <fadetime>IconCrossfadeTime</fadetime>
-                        <texture>special://skin/extras/flagging/cases/hddvd.png</texture>
-                        <visible>stringcompare(ListItem.VideoResolution,540)</visible>
-                    </control>
-                </control>
-                <!-- Blueray and DVD CLEAR cover images if turned on -->
-                <control type="group">
-                    <visible>!Skin.HasSetting(posterlessRightList) + [Skin.HasSetting(showCases) + Skin.HasSetting(showClearCases)]</visible>
-                    <posx>0</posx>
-                    <posy>0</posy>
                     <control type="image">
                         <posx>33</posx>
                         <posy>13</posy>
@@ -858,50 +808,16 @@
                         <aspectratio aligny="bottom">stretch</aspectratio>
                         <fadetime>IconCrossfadeTime</fadetime>
                         <texture background="true">$INFO[ListItem.Icon]</texture>
+                        <visible>Skin.HasSetting(showClearCases)</visible>
                     </control>
                     <control type="image">
-                        <!-- DVD Clear Case -->
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>240</width>
                         <height>360</height>
                         <aspectratio aligny="bottom">stretch</aspectratio>
                         <fadetime>IconCrossfadeTime</fadetime>
-                        <texture>special://skin/extras/flagging/cases/dvd-clear.png</texture>
-                        <visible>![stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080) | stringcompare(ListItem.VideoResolution,540)]</visible>
-                    </control>
-                    <control type="image">
-                        <!-- Bluray Clear Case -->
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>240</width>
-                        <height>360</height>
-                        <aspectratio aligny="bottom">stretch</aspectratio>
-                        <fadetime>IconCrossfadeTime</fadetime>
-                        <texture>special://skin/extras/flagging/cases/bluray-clear.png</texture>
-                        <visible>[stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !substring(listitem.filename,3D) + !stringcompare(ListItem.VideoResolution,540)</visible>
-                    </control>
-                    <control type="image">
-                        <!-- Bluray 3D Clear Case -->
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>240</width>
-                        <height>360</height>
-                        <aspectratio aligny="bottom">stretch</aspectratio>
-                        <fadetime>IconCrossfadeTime</fadetime>
-                        <texture>special://skin/extras/flagging/cases/3dbluray-clear.png</texture>
-                        <visible>[stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + substring(listitem.filename,3D) + !stringcompare(ListItem.VideoResolution,540)</visible>
-                    </control>
-                    <control type="image">
-                        <!-- HDDVD Clear Case -->
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>240</width>
-                        <height>360</height>
-                        <aspectratio aligny="bottom">stretch</aspectratio>
-                        <fadetime>IconCrossfadeTime</fadetime>
-                        <texture>special://skin/extras/flagging/cases/hddvd-clear.png</texture>
-                        <visible>stringcompare(ListItem.VideoResolution,540)</visible>
+                        <texture>$VAR[mediaCases]</texture>
                     </control>
                 </control>
                 <control type="group">
@@ -1217,7 +1133,6 @@
                     <aspectratio>keep</aspectratio>
                     <fadetime>FanartCrossfadeTime</fadetime>
                     <texture>Overlayicons/trailer.png</texture>
-
                     <visible>[!IsEmpty(ListItem.Trailer) | Skin.HasSetting(trailerflag)] + [Skin.HasSetting(showCases) | Skin.HasSetting(showClearCases) | Skin.HasSetting(posterlessRightList)]</visible>
                 </control>
                 <control type="grouplist">

@@ -3,7 +3,6 @@
 <!-- ================================= FANART VIEW ID 508 ================================ -->
 <!-- ====================== Movies, TV Shows, Seasons, Episodes only ===================== -->
 	<include name="Fanart">
-
         <control type="image">
             <!-- darken the background a bit -->
 			<posx>0</posx>
@@ -14,7 +13,6 @@
  			<texture>black-back3.png</texture>
 			<visible>Skin.HasSetting(VideoLibraryDimFanart) + !Control.IsVisible(55)</visible>
 			</control>
-
         <control type="image">
             <!-- bottom bar background -->
 			<posx>0</posx>
@@ -74,7 +72,7 @@
 						<width>35</width>
 						<height>35</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Overlay]</texture>
+                        <texture>$VAR[overlayIcon]</texture>
 						<visible>Player.HasVideo | Skin.HasSetting(originalwatched)</visible>
 						</control>
 				</itemlayout>
@@ -110,7 +108,7 @@
 						<width>35</width>
 						<height>35</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Overlay]</texture>
+                            <texture>$VAR[overlayIcon]</texture>
 						<visible>Player.HasVideo | Skin.HasSetting(originalwatched)</visible>
 						</control>
 						</control>
@@ -137,7 +135,7 @@
 						<width>35</width>
 						<height>35</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Overlay]</texture>
+                        <texture>$VAR[overlayIcon]</texture>
 						<visible>Player.HasVideo | Skin.HasSetting(originalwatched)</visible>
 					</control>
 				</itemlayout>
@@ -173,13 +171,12 @@
 						<width>20</width>
 						<height>20</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Overlay]</texture>
+                            <texture>$VAR[overlayIcon]</texture>
 						<visible>Player.HasVideo | Skin.HasSetting(originalwatched)</visible>
 					</control>
 					</control>
 				</focusedlayout>
 			</control>
-
 			<control type="scrollbar" id="60">
 				<posx>-10</posx>
 				<posy>-20</posy>
@@ -195,7 +192,6 @@
 				<visible allowhiddenfocus="true">Control.IsVisible(508) + Control.HasFocus(60)</visible>
 			</control>
 			</control>
-	
 		<!-- WHEN INFO IS NOT HIDDEN MOVIES -->
 		<control type="group">
 			<animation type="WindowOpen" reversible="false">
@@ -258,7 +254,6 @@
 					<height>30</height>
 					<font>cirrus_24</font>
 					<textcolor>white</textcolor>
-					
 					<scroll>false</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -274,7 +269,6 @@
 					<height>30</height>
 					<font>cirrus_24</font>
 					<textcolor>white</textcolor>
-					
 					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -300,8 +294,6 @@
 					<visible>!SubString(ListItem.Duration,mins)</visible>
 					<visible>!ListItem.IsFolder</visible>
 				</control>
-				
-
                 <control type="image">
                     <!-- Top250IMDB Mod 1.2 -->
 					<posx>220</posx>
@@ -314,7 +306,6 @@
 					<visible>!IsEmpty(ListItem.Top250)</visible>
 					<colordiffuse>accent</colordiffuse>
 				</control>
-
                 <control type="label">
                     <!-- Top250IMDB Mod 1.2 -->
 						<description>top250</description>
@@ -327,7 +318,6 @@
 						<aligny>center</aligny>
 						<font>cirrus_38_Bold</font>
 						<textcolor>white</textcolor>
-						
 					</control>
 					<control type="label">
 					<description>Trailer Label while movie is playing</description>
@@ -343,7 +333,6 @@
 					<visible>!IsEmpty(ListItem.Trailer) + Skin.HasSetting(trailerflag) | Player.HasVideo</visible>
 					<visible>!ListItem.IsFolder</visible>
 				</control>
-
                 <control type="textbox">
                     <!-- Plotoutline Mod -->
 					<description>Movie Plot</description>
@@ -394,7 +383,6 @@
 					<height>303</height>
 					<aspectratio>stretch</aspectratio>
 					<fadetime>FanartCrossfadeTime</fadetime>
-
                     <texture fallback="splashm.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
 					<bordersize>8</bordersize>
 					<visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>
@@ -408,6 +396,7 @@
 					<aspectratio>stretch</aspectratio>
 					<fadetime>FanartCrossfadeTime</fadetime>
 					<timeperimage>3000</timeperimage>
+
 
 
 					<imagepath background="true">special://userdata/extras/videofanarts/$INFO[ListItem.FolderName]/extrathumbs</imagepath>
@@ -436,7 +425,6 @@
 					<aligny>center</aligny>
 					<font>cirrus_20</font>
 					<textcolor>white</textcolor>
-					
 					<visible>Skin.HasSetting(videowindowglobal)</visible>
 					<visible>Player.HasVideo</visible>
 					<visible>Control.IsVisible(508)</visible>
@@ -444,7 +432,7 @@
 				</control>
 				<control type="image">
 						<posx>1142</posx>
-						<posy>48</posy>
+                    <posy>43</posy>
 						<width>91</width>
 						<height>91</height>
 						<aspectratio>keep</aspectratio>
@@ -456,7 +444,6 @@
 					</control>
 				<control type="image">
 					<posx>708</posx>
-
                     <posy>43</posy>
 					<width>91</width>
 					<height>91</height>
@@ -614,7 +601,6 @@
 					<posy>-20</posy> 
 					<width>470</width> 
 					<height>130</height> 
-
                     <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<aspectratio scalediffuse="false" aligny="center" align="left">keep</aspectratio> 
@@ -696,7 +682,6 @@
 					<height>303</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<fadetime>FanartCrossfadeTime</fadetime>
-
                     <texture fallback="splashm.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
 					<bordersize>8</bordersize>
 					<visible>!Skin.HasSetting(tvfanart)</visible>
@@ -711,7 +696,6 @@
 					<height>303</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<fadetime>FanartCrossfadeTime</fadetime>
-
                     <texture fallback="splashm.png" background="true">$INFO[ListItem.Art(landscape)]</texture>
 					<bordersize>8</bordersize>
 					<visible>Skin.HasSetting(tvfanart)</visible>
@@ -746,7 +730,7 @@
 				</control>
 					<control type="image">
 						<posx>1141</posx>
-						<posy>48</posy>
+                    <posy>43</posy>
 						<width>91</width>
 						<height>91</height>
 						<aspectratio>keep</aspectratio>
@@ -758,7 +742,7 @@
 					</control>
 				<control type="image">
 					<posx>794</posx>
-					<posy>54</posy>
+                    <posy>43</posy>
 					<width>91</width>
 					<height>91</height>
 					<aspectratio>keep</aspectratio>
@@ -820,7 +804,6 @@
 					<posy>-20</posy> 
 					<width>470</width> 
 					<height>130</height> 
-
                     <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<aspectratio scalediffuse="false" aligny="center" align="left">keep</aspectratio> 
@@ -835,7 +818,6 @@
 					<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 				    <bordersize>8</bordersize>
 				</control>
-
                 <control type="fadelabel">
                     <!-- title only visible if logo doesnt exits -->
 					<posx>-50</posx>
@@ -844,7 +826,6 @@
 					<height>30</height>
 					<font>cirrus_30</font>
 					<textcolor>white</textcolor>
-					
 					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -881,7 +862,6 @@
 					<visible>!Skin.HasSetting(SmallwindowhiddenTV)</visible>
 					<visible>!IsEmpty(ListItem.Thumb)</visible> 
 				</control>
-
                 <control type="image">
                     <!-- seasonthumb mod -->
 					<posx>700</posx>
@@ -890,7 +870,6 @@
 					<height>303</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
-
                     <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
 					<bordersize>8</bordersize>
 					<visible>!Skin.HasSetting(seasonthumbs)</visible>
@@ -904,7 +883,6 @@
 					<height>303</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
-
                     <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
 					<bordersize>8</bordersize>
 					<visible>Skin.HasSetting(seasonthumbs)</visible>
@@ -944,7 +922,6 @@
 					<aligny>center</aligny>
 					<font>cirrus_20</font>
 					<textcolor>white</textcolor>
-					
 					<visible>Skin.HasSetting(videowindowglobal)</visible>
 					<visible>Player.HasVideo</visible>
 					<visible>Control.IsVisible(508)</visible>
@@ -953,7 +930,7 @@
 				</control>
 				<control type="image">
 						<posx>1141</posx>
-						<posy>48</posy>
+                    <posy>43</posy>
 						<width>91</width>
 						<height>91</height>
 						<aspectratio>keep</aspectratio>
@@ -967,7 +944,7 @@
 					</control>
 				<control type="image">
 					<posx>714</posx>
-					<posy>54</posy>
+                    <posy>43</posy>
 					<width>91</width>
 					<height>91</height>
 					<aspectratio>keep</aspectratio>
@@ -1000,7 +977,6 @@
 			  <texture diffuse="maskflags.png">$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
 			</control>
 		</control>
-		
 		<!-- WHEN INFO IS NOT HIDDEN EPISODES -->
 		<control type="group">
 			<posx>0</posx>
@@ -1027,7 +1003,6 @@
 				<posx>80</posx>
 				<posy>20</posy>
 				<visible>Container.Content(Episodes)</visible>
-				
 				<control type="fadelabel">
 					<posx>-60</posx>
 					<posy>135</posy>
@@ -1088,7 +1063,6 @@
 					<posy>-20</posy> 
 					<width>470</width> 
 					<height>130</height> 
-
                     <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture> 
 					<fadetime>IconCrossfadeTime</fadetime>
 					<aspectratio scalediffuse="false" aligny="center" align="left">keep</aspectratio> 
@@ -1100,7 +1074,6 @@
 					<posy>-20</posy> 
 					<width>470</width> 
 					<height>130</height> 
-
                     <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture> 
 					<fadetime>IconCrossfadeTime</fadetime>
 					<aspectratio scalediffuse="false" aligny="center" align="left">keep</aspectratio> 
@@ -1122,7 +1095,6 @@
 					<visible>!Player.HasVideo | !Skin.HasSetting(videowindownoborder) | !Skin.HasSetting(videowindowglobal)</visible>
 					<visible>!IsEmpty(ListItem.Thumb)</visible> 
 				</control>
-
                 <control type="image">
                     <!-- episodethumb mod -->
 					<posx>700</posx>
@@ -1131,7 +1103,6 @@
 					<height>303</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
-
                     <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
 					<bordersize>8</bordersize>
 					<visible>Skin.HasSetting(episodethumbs)</visible>
@@ -1158,7 +1129,7 @@
 					<height>303</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
-					<texture background="true">$INFO[ListItem.Path]$INFO[ListItem.Season,../season,-landscape.jpg]</texture>
+                    <texture background="true">$INFO[ListItem.Path]$INFO[ListItem.Season,season,-landscape.jpg]</texture>
 					<bordersize>8</bordersize>
 					<visible>Skin.HasSetting(episodethumbs)</visible>
 					<visible>!Skin.HasSetting(SmallwindowhiddenTV)</visible>
@@ -1183,7 +1154,6 @@
 					<aligny>center</aligny>
 					<font>cirrus_20</font>
 					<textcolor>white</textcolor>
-					
 					<visible>Skin.HasSetting(videowindowglobal)</visible>
 					<visible>Player.HasVideo</visible>
 					<visible>Control.IsVisible(508)</visible>
@@ -1191,7 +1161,7 @@
 				</control>
 				<control type="image">
 						<posx>1141</posx>
-						<posy>48</posy>
+                    <posy>43</posy>
 						<width>91</width>
 						<height>91</height>
 						<aspectratio>keep</aspectratio>
@@ -1205,7 +1175,7 @@
 					</control>
 				<control type="image">
 					<posx>714</posx>
-					<posy>54</posy>
+                    <posy>43</posy>
 					<width>91</width>
 					<height>91</height>
 					<aspectratio>keep</aspectratio>
@@ -1233,6 +1203,5 @@
 				</control>
 			</control>
 		</control>
-		
 	</include>
 </includes>
