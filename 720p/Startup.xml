@@ -44,7 +44,7 @@
             <font>cirrus_24_Bold</font>
             <textcolor>accent</textcolor>
             <align>center</align>
-            <label>LOADING</label>
+            <label>[UPPERCASE]$LOCALIZE[31006][/UPPERCASE]</label>
         </control>
         <control type="button" id="10">
             <description>trigger</description>

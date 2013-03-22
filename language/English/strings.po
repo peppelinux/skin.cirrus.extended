@@ -47,7 +47,9 @@ msgctxt "#31005"
 msgid "Hide INFO"
 msgstr ""
 
-#empty string with id 31006
+msgctxt "#31006"
+msgid "Loading"
+msgstr ""
 
 msgctxt "#31007"
 msgid "Video Addons"
