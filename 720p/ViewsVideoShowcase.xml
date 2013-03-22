@@ -34,7 +34,7 @@
             <control type="fixedlist" id="52">
                 <viewtype label="Showcase">list</viewtype>
                 <pagecontrol>60</pagecontrol>
-                <!--<visible>Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows)</visible>-->
+                <visible>Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows)</visible>
                 <posx>-55</posx>
                 <posy>-150</posy>
                 <width>1660</width>

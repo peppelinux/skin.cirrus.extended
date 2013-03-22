@@ -161,9 +161,9 @@
                     <control type="image">
                         <visible>Skin.HasSetting(showBigposterCases) + !Skin.HasSetting(showBigposterClearCases)</visible>
                         <posx>267</posx>
-                        <posy>325</posy>
+                        <posy>335</posy>
                         <width>148</width>
-                        <height>230</height>
+                        <height>220</height>
                         <aspectratio>stretch</aspectratio>
                         <fadetime>IconCrossfadeTime</fadetime>
                         <texture background="true">$INFO[ListItem.Icon]</texture>
