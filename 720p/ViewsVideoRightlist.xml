@@ -14,7 +14,6 @@
             </animation>      
             <visible>Control.IsVisible(569)</visible>
             <include>VisibleFadeEffect</include>
-
             <control type="image">
                 <!-- bottom bar background -->
                 <posx>0</posx>
@@ -100,7 +99,6 @@
                 <aligny>center</aligny>
                 <font>cirrus_20</font>
                 <textcolor>white</textcolor>
-
                 <visible>[Skin.HasSetting(videowindowglobal) + Player.HasVideo + Control.IsVisible(569)] + !Skin.HasSetting(videonotitle)</visible>
             </control>
             <!-- START OF ACTUAL LIST -->
@@ -130,7 +128,6 @@
                 <pagecontrol>60</pagecontrol>
                 <scrolltime>200</scrolltime>
                 <visible>Container.Content(tvshows) | Window.IsVisible(VideoFiles) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(movies)</visible>
-
                 <!-- SLIM LAYOUT -->
                 <itemlayout height="40" width="580">
                     <control type="image">
@@ -392,7 +389,6 @@
                     <aligny>center</aligny>
                     <font>cirrus_24</font>
                     <scroll>true</scroll>
-
                     <visible>Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb)</visible> 
                 </control>
                 <control type="image"> 
@@ -413,7 +409,6 @@
                     <height>141</height>
                     <aspectratio aligny="bottom">stretch</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
-
                     <texture background="true" fallback="landscape fallback.png">$INFO[ListItem.Art(landscape)]</texture>
                     <bordersize>8</bordersize>
                     <visible>Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb)</visible> 
@@ -435,7 +430,6 @@
                     <width>335</width> 
                     <height>130</height> 
                     <fadetime>200</fadetime>
-
                     <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture> 
                     <aspectratio scalediffuse="false">keep</aspectratio> 
                     <visible>!IsEmpty(ListItem.Thumb)</visible> 
@@ -459,7 +453,6 @@
                     <height>95</height>
                     <aspectratio>stretch</aspectratio>
                     <fadetime>200</fadetime>
-
                     <texture fallback="tvbanner.png" background="true">$INFO[ListItem.Art(banner)]</texture>
                     <bordersize>8</bordersize>
                     <visible>Skin.HasSetting(banner) + !IsEmpty(ListItem.Thumb) + Skin.HasSetting(jpgsupport)</visible>
@@ -501,7 +494,6 @@
                     <scroll>true</scroll>
                     <visible>Skin.HasSetting(banner) + !IsEmpty(ListItem.Thumb)</visible> 
                 </control>	
-
                 <!-- Poster update v1.1-->
                 <control type="group">
                     <visible>Skin.HasSetting(poster)</visible>
@@ -571,7 +563,6 @@
                         <aligny>center</aligny>
                         <font>cirrus_30</font>
                         <textcolor>white</textcolor>
-
                         <visible>!IsEmpty(ListItem.Thumb)</visible> 
                     </control>
                     <control type="label">
@@ -598,7 +589,6 @@
                         <visible>!IsEmpty(ListItem.Thumb)</visible> 
                     </control>
                 </control>
-
                 <control type="group">
                     <visible>!Skin.HasSetting(posterlessRightList)</visible>
                     <posx>0</posx>
@@ -613,7 +603,6 @@
                         <aligny>center</aligny>
                         <font>cirrus_30</font>
                         <textcolor>white</textcolor>
-
                         <visible>!IsEmpty(ListItem.Thumb)</visible> 
                     </control>
                     <control type="label">
@@ -639,15 +628,13 @@
                         <texture>$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
                     </control>
                 </control>
-
                 <!-- TV SHOW LOGO -->
                 <control type="largeimage" id="7915"> 
                     <posx>370r</posx> 
                     <posy>220</posy> 
                     <width>283</width> 
                     <height>110</height> 
-
-                    <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
+                    <texture background="true">$INFO[ListItem.Art(tvshow.clearlogo)]</texture>
                     <fadetime>200</fadetime> 
                     <aspectratio scalediffuse="false">keep</aspectratio> 
                     <visible>!IsEmpty(ListItem.Thumb)</visible> 
@@ -691,7 +678,6 @@
                     <aligny>center</aligny>
                     <font>cirrus_30</font>
                     <textcolor>white</textcolor>
-
                 </control>
                 <control type="textbox">
                     <description>Plot for TVShows</description>
@@ -726,8 +712,7 @@
                     <posy>35</posy> 
                     <width>268</width> 
                     <height>80</height> 
-
-                    <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture> 
+                    <texture background="true">$INFO[ListItem.Art(tvshow.clearlogo)]</texture> 
                     <fadetime>200</fadetime> 
                     <aspectratio scalediffuse="false">keep</aspectratio> 
                     <visible>!substring(listitem.path,season) + !IsEmpty(ListItem.Thumb)</visible> 
@@ -737,8 +722,7 @@
                     <posy>35</posy> 
                     <width>268</width> 
                     <height>80</height> 
-
-                    <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture> 
+                    <texture background="true">$INFO[ListItem.Art(tvshow.clearlogo)]</texture> 
                     <fadetime>200</fadetime> 
                     <aspectratio scalediffuse="false">keep</aspectratio> 
                     <visible>!IsEmpty(ListItem.Thumb)</visible> 
@@ -775,7 +759,6 @@
                     </control>
                     <control type="image">
                         <posx>8</posx>
-
                         <posy>23</posy>
                         <width>91</width>
                         <height>91</height>
@@ -879,7 +862,6 @@
                         <autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
                         <visible>!Skin.HasSetting(plotoutline) + [Skin.HasSetting(newMPAAFlags) + !Skin.HasSetting(noMPAAStudioFlags)]</visible>
                     </control>
-
                     <control type="textbox">
                         <!-- CUSTOM mod plotoutline -->
                         <description>plotoutline</description>
@@ -906,7 +888,6 @@
                         <aligny>top</aligny>
                         <font>cirrus_18</font>
                         <textcolor>white</textcolor>
-
                         <autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
                         <visible>Skin.HasSetting(plotoutline) + Skin.HasSetting(noMPAAStudioFlags)</visible>
                     </control>
@@ -935,7 +916,6 @@
                         <aligny>center</aligny>
                         <font>cirrus_26</font>
                         <textcolor>accent</textcolor>
-
                     </control>
                     <control type="label">
                         <description>Runtime label</description>
@@ -963,7 +943,6 @@
                         <textcolor>white</textcolor>
                         <visible>SubString(ListItem.Duration,mins) + !ListItem.IsFolder</visible>
                     </control>
-
                     <control type="image">
                         <!-- Top250IMDB Mod 1.2 -->
                         <posx>190</posx>
@@ -988,7 +967,6 @@
                         <aligny>center</aligny>
                         <font>cirrus_38_Bold</font>
                         <textcolor>white</textcolor>
-
                     </control>
                 </control>
                 <control type="group">
@@ -1060,7 +1038,6 @@
                         <aligny>center</aligny>
                         <font>cirrus_35</font>
                         <textcolor>accent</textcolor>
-
                     </control>
                     <control type="label">
                         <description>Runtime label</description>
@@ -1112,7 +1089,6 @@
                         <aligny>center</aligny>
                         <font>cirrus_38_Bold</font>
                         <textcolor>white</textcolor>
-
                     </control>
                 </control>
                 <control type="image">
@@ -1145,7 +1121,6 @@
                     <itemgap>0</itemgap>
                     <orientation>horizontal</orientation>
                     <include>VideoMPAAFlaggingConditions</include>
-
                     <visible>!Skin.HasSetting(noMPAAStudioFlags) + !Skin.HasSetting(NewMPAAFlags) + !ListItem.IsFolder</visible>
                 </control>
                 <control type="grouplist">
@@ -1158,7 +1133,6 @@
                     <itemgap>0</itemgap>
                     <orientation>horizontal</orientation>
                     <include>NewVideoMPAAFlaggingConditions</include>
-
                     <visible>!Skin.HasSetting(noMPAAStudioFlags) + Skin.HasSetting(NewMPAAFlags) + !ListItem.IsFolder</visible>
                 </control>
                 <control type="grouplist">

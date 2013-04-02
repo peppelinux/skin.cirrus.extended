@@ -991,7 +991,7 @@
                     <posy>-20</posy> 
                     <width>280</width> 
                     <height>120</height> 
-                    <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
+                    <texture background="true">$INFO[ListItem.Art(tvshow.clearlogo)]</texture>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <aspectratio scalediffuse="false" aligny="center" align="left">keep</aspectratio> 
                     <visible>!Container(720).OnNext + !Container(720).OnPrevious + Container.Content(Seasons)</visible>
@@ -1036,7 +1036,7 @@
                     <height>168</height>
                     <aspectratio aligny="bottom">stretch</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
-                    <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+                    <texture background="true">$INFO[ListItem.Art(tvshow.fanart)]</texture>
                     <bordersize>8</bordersize>
                     <visible>!Skin.HasSetting(seasonthumbs)</visible>
                     <visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>
@@ -1048,11 +1048,11 @@
                     <height>168</height>
                     <aspectratio aligny="bottom">stretch</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
-                    <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+                    <texture background="true">$INFO[ListItem.Art(tvshow.fanart)]</texture>
                     <bordersize>8</bordersize>
                     <visible>Skin.HasSetting(seasonthumbs)</visible>
                     <visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>
-                </control>						
+                </control>
                 <control type="image">
                     <posx>890</posx>
                     <posy>150</posy>
@@ -1258,7 +1258,7 @@
                     <posy>-20</posy> 
                     <width>280</width> 
                     <height>120</height> 
-                    <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture> 
+                    <texture background="true">$INFO[ListItem.Art(tvshow.clearlogo)]</texture> 
                     <fadetime>IconCrossfadeTime</fadetime>
                     <aspectratio scalediffuse="false" aligny="center" align="left">keep</aspectratio> 
                     <visible>!substring(listitem.path,season)</visible> 
@@ -1269,7 +1269,7 @@
                     <posy>-20</posy> 
                     <width>280</width> 
                     <height>120</height> 
-                    <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture> 
+                    <texture background="true">$INFO[ListItem.Art(tvshow.clearlogo)]</texture> 
                     <fadetime>IconCrossfadeTime</fadetime>
                     <aspectratio scalediffuse="false" aligny="center" align="left">keep</aspectratio> 
                     <visible>!IsEmpty(ListItem.Thumb)</visible> 
@@ -1298,7 +1298,7 @@
                     <height>168</height>
                     <aspectratio aligny="bottom">stretch</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
-                    <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+                    <texture background="true">$INFO[ListItem.Art(tvshow.fanart)]</texture>
                     <bordersize>8</bordersize>
                     <visible>Skin.HasSetting(episodethumbs)</visible>
                     <visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>

@@ -801,7 +801,7 @@
                     <posy>-20</posy> 
                     <width>470</width> 
                     <height>130</height> 
-                    <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
+                    <texture background="true">$INFO[ListItem.Art(tvshow.clearlogo)]</texture>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <aspectratio scalediffuse="false" aligny="center" align="left">keep</aspectratio> 
                 </control>
@@ -1060,7 +1060,7 @@
                     <posy>-20</posy> 
                     <width>470</width> 
                     <height>130</height> 
-                    <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture> 
+                    <texture background="true">$INFO[ListItem.Art(tvshow.clearlogo)]</texture> 
                     <fadetime>IconCrossfadeTime</fadetime>
                     <aspectratio scalediffuse="false" aligny="center" align="left">keep</aspectratio> 
                     <visible>!substring(listitem.path,season)</visible> 
@@ -1071,7 +1071,7 @@
                     <posy>-20</posy> 
                     <width>470</width> 
                     <height>130</height> 
-                    <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture> 
+                    <texture background="true">$INFO[ListItem.Art(tvshow.clearlogo)]</texture> 
                     <fadetime>IconCrossfadeTime</fadetime>
                     <aspectratio scalediffuse="false" aligny="center" align="left">keep</aspectratio> 
                     <visible>!IsEmpty(ListItem.Thumb)</visible> 
@@ -1100,7 +1100,7 @@
                     <height>303</height>
                     <aspectratio aligny="bottom">stretch</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
-                    <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+                    <texture background="true">$INFO[ListItem.Art(tvshow.fanart)]</texture>
                     <bordersize>8</bordersize>
                     <visible>Skin.HasSetting(episodethumbs)</visible>
                     <visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>
