@@ -1,6 +1,6 @@
 <window>
     <defaultcontrol/>
-    <visible>!Window.IsActive(startup)</visible>
+    <!-- <visible>!Window.IsActive(startup)</visible> -->
     <onunload condition="!IsEmpty(Skin.String(SmartPlaylist1.Call))">$INFO[Skin.String(SmartPlaylist1.Call)]</onunload>
     <onunload condition="!IsEmpty(Skin.String(SmartPlaylist2.Call))">$INFO[Skin.String(SmartPlaylist2.Call)]</onunload>
     <onunload condition="!IsEmpty(Skin.String(SmartPlaylist3.Call))">$INFO[Skin.String(SmartPlaylist3.Call)]</onunload>
