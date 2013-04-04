@@ -81,10 +81,8 @@
                         <posy>0</posy>
                         <width>1280</width>
                         <height>720</height>
-
                         <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
                         <aspectratio>stretch</aspectratio>
-
                         <visible>!IsEmpty(ListItem.Art(fanart))</visible>
                     </control>
                     <control type="image">
@@ -106,7 +104,6 @@
                         <texture>rightlistbackground.png</texture>
                     </control>
                     <control type="group">
-
                         <visible>IsEmpty(ListItem.Art(fanart))</visible>
                         <control type="image">
                             <description>No Fanart Back</description>
@@ -149,7 +146,6 @@
                         </control>
                     </control>
                 </control>
-
                 <!-- ====== MOVIES SECTION ======== -->
                 <control type="group">
                     <animation type="WindowOpen" reversible="false">
@@ -285,7 +281,6 @@
                             <posy>385</posy>
                             <width>405</width>
                             <height>227</height>
-
                             <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
                             <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                             <bordersize>6</bordersize>
@@ -329,7 +324,6 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>grey2</textcolor>
-
                             <shadowcolor/>
                         </control>
                         <!-- Changes Begin Butchaby MOD 1.2.0 -->
@@ -356,7 +350,6 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-
                             <shadowcolor/>
                             <scroll>true</scroll>
                             <visible>Skin.HasSetting(pathininfo)</visible>
@@ -496,7 +489,6 @@
                             <posy>545</posy>
                             <width>200</width>
                             <height>77</height>
-
                             <texture>$INFO[ListItem.Art(clearlogo)]</texture>
                             <fadetime>100</fadetime>
                             <aspectratio scalediffuse="false">keep</aspectratio>
@@ -530,7 +522,6 @@
                             <posy>385</posy>
                             <width>405</width>
                             <height>227</height>
-
                             <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
                             <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                             <bordersize>6</bordersize>
@@ -591,7 +582,6 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-
                             <shadowcolor/>
                         </control>
                         <control type="label">
@@ -605,7 +595,6 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>grey2</textcolor>
-
                             <shadowcolor/>
                         </control>
                         <control type="label">
@@ -631,7 +620,6 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-
                             <shadowcolor/>
                             <scroll>true</scroll>
                             <visible>Skin.HasSetting(pathininfo)</visible>
@@ -769,8 +757,7 @@
                             <posy>545</posy>
                             <width>200</width>
                             <height>77</height>
-
-                            <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
+                            <texture background="true">$INFO[ListItem.Art(tvshow.clearlogo)]</texture>
                             <fadetime>100</fadetime>
                             <aspectratio scalediffuse="false">keep</aspectratio>
                         </control>
@@ -823,11 +810,8 @@
                             <posy>385</posy>
                             <width>405</width>
                             <height>227</height>
-                            <texture background="true">
-
-                            $INFO[ListItem.Art(fanart)]</texture>
-                            <bordertexture border="6">
-                            ContentPanelvertical.png</bordertexture>
+                            <texture background="true">$INFO[ListItem.Art(tvshow.fanart)]</texture>
+                            <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                             <bordersize>6</bordersize>
                             <aspectratio>stretch</aspectratio>
                             <visible>!Player.HasVideo | Skin.HasSetting(Use_Startup_DreamVideo)</visible>
@@ -887,7 +871,6 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-
                             <shadowcolor/>
                         </control>
                         <control type="label">
@@ -901,7 +884,6 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>grey2</textcolor>
-
                             <shadowcolor/>
                         </control>
                         <control type="label">
@@ -927,7 +909,6 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-
                             <shadowcolor/>
                             <scroll>true</scroll>
                             <visible>Skin.HasSetting(pathininfo)</visible>
@@ -1219,7 +1200,6 @@
                         <include>ButtonVideoInfoCommonValues</include>
                         <label>41286</label>
                         <onclick>Dialog.Close(MovieInformation)</onclick>
-
                         <onclick>XBMC.RunScript(script.metadata.actors,$INFO[Container(50).ListItem.Label])</onclick>
                         <visible>System.HasAddon(script.metadata.actors)</visible>
                     </control>
@@ -1260,7 +1240,6 @@
                         <include>ButtonVideoInfoCommonValues</include>
                         <label>41110</label>
                         <onclick>Dialog.Close(MovieInformation)</onclick>
-
                         <onclick condition="Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
                         <visible>[Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)] + System.HasAddon(script.artwork.downloader)</visible>
                     </control>
@@ -1269,7 +1248,6 @@
                         <include>ButtonVideoInfoCommonValues</include>
                         <label>41200</label>
                         <onclick>Dialog.Close(MovieInformation)</onclick>
-
                         <onclick condition="Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=tvshow, dbid=$INFO[ListItem.DBID], extrafanart)</onclick>
                         <visible>[Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)] + System.HasAddon(script.artwork.downloader)</visible>
                     </control>

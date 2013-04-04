@@ -5,7 +5,6 @@
             <animation effect="slide" start="0,-145" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
             <animation effect="slide" start="0,0" end="0,-145" time="300" delay="150" tween="quadratic" easing="out">WindowClose</animation>
             <animation effect="slide" start="0,0" end="0,-145" time="300" tween="quadratic" easing="out" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide)">Conditional</animation>
-
             <control type="image">
                 <!-- background -->
                 <posx>0</posx>
@@ -31,6 +30,7 @@
                     <texturenofocus>OSDBookMarksNF.png</texturenofocus>
                     <onleft>605</onleft>
                     <onright>701</onright>
+                    <ondown>500</ondown>
                     <onclick>ActivateWindow(125)</onclick>
                 </control>
                 <control type="button" id="701">
@@ -44,6 +44,7 @@
                     <texturenofocus>OSDAudioNF.png</texturenofocus>
                     <onleft>700</onleft>
                     <onright>702</onright>
+                    <ondown>500</ondown>
                     <onclick>ActivateWindow(osdaudiosettings)</onclick>
                 </control>
                 <control type="button" id="702">
@@ -57,6 +58,7 @@
                     <texturenofocus>OSDVideoNF.png</texturenofocus>
                     <onleft>701</onleft>
                     <onright>703</onright>
+                    <ondown>500</ondown>
                     <onclick>ActivateWindow(123)</onclick>
                 </control>
                 <control type="button" id="703">
@@ -70,6 +72,7 @@
                     <texturenofocus>OSDSubtitlesNF.png</texturenofocus>
                     <onleft>702</onleft>
                     <onright>704</onright>
+                    <ondown>500</ondown>
                     <onclick>Close</onclick>
                     <onclick>XBMC.RunScript($INFO[Skin.String(SubtitleScript_Path)])</onclick>
                     <enable>Skin.HasSetting(SubtitleDownload_Enable) + !IsEmpty(Skin.String(SubtitleScript_Path))</enable>
@@ -86,6 +89,7 @@
                     <texturenofocus>OSDRecordNF2.png</texturenofocus>
                     <onleft>703</onleft>
                     <onright>705</onright>
+                    <ondown>500</ondown>
                     <onclick>XBMC.PlayerControl(record)</onclick>
                     <enable>Player.CanRecord</enable>
                     <animation effect="fade" start="100" end="50" time="100" condition="!Player.CanRecord">Conditional</animation>
@@ -103,6 +107,7 @@
                     <texturenofocus>OSDRecordNF2.png</texturenofocus>
                     <onleft>703</onleft>
                     <onright>705</onright>
+                    <ondown>500</ondown>
                     <onclick>XBMC.PlayerControl(record)</onclick>
                     <enable>Player.CanRecord</enable>
                     <animation effect="fade" start="100" end="50" time="100" condition="!Player.CanRecord">Conditional</animation>
@@ -119,6 +124,7 @@
                     <texturenofocus>OSDChannelListNF.png</texturenofocus>
                     <onleft>704</onleft>
                     <onright>706</onright>
+                    <ondown>500</ondown>
                     <onclick>ActivateWindow(PVROSDChannels)</onclick>
                     <onclick>Dialog.Close(VideoOSD)</onclick>
                     <visible>VideoPlayer.Content(LiveTV)</visible>
@@ -134,6 +140,7 @@
                     <texturenofocus>OSDepgNF.png</texturenofocus>
                     <onleft>705</onleft>
                     <onright>707</onright>
+                    <ondown>500</ondown>
                     <onclick>ActivateWindow(PVROSDGuide)</onclick>
                     <visible>VideoPlayer.Content(LiveTV)</visible>
                 </control>
@@ -148,6 +155,7 @@
                     <texturenofocus>OSDTeleTextNF.png</texturenofocus>
                     <onleft>706</onleft>
                     <onright>600</onright>
+                    <ondown>500</ondown>
                     <onclick>ActivateWindow(Teletext)</onclick>
                     <visible>VideoPlayer.Content(LiveTV)</visible>
                 </control>
@@ -167,6 +175,7 @@
                     <texturenofocus>OSDPrevTrackNF.png</texturenofocus>
                     <onleft>707</onleft>
                     <onright>601</onright>
+                    <ondown>500</ondown>
                     <onclick>PlayerControl(Previous)</onclick>
                 </control>
                 <control type="button" id="601">
@@ -180,6 +189,7 @@
                     <texturenofocus>OSDRewindNF.png</texturenofocus>
                     <onleft>600</onleft>
                     <onright>602</onright>
+                    <ondown>500</ondown>
                     <onclick>PlayerControl(Rewind)</onclick>
                 </control>
                 <control type="togglebutton" id="602">
@@ -197,6 +207,7 @@
                     <alttexturenofocus>OSDPlayNF.png</alttexturenofocus>
                     <onleft>601</onleft>
                     <onright>603</onright>
+                    <ondown>500</ondown>
                     <onclick>PlayerControl(Play)</onclick>
                 </control>
                 <control type="button" id="603">
@@ -210,6 +221,7 @@
                     <texturenofocus>OSDStopNF.png</texturenofocus>
                     <onleft>602</onleft>
                     <onright>604</onright>
+                    <ondown>500</ondown>
                     <onclick>PlayerControl(Stop)</onclick>
                 </control>
                 <control type="button" id="604">
@@ -223,6 +235,7 @@
                     <texturenofocus>OSDForwardNF.png</texturenofocus>
                     <onleft>603</onleft>
                     <onright>605</onright>
+                    <ondown>500</ondown>
                     <onclick>PlayerControl(Forward)</onclick>
                 </control>
                 <control type="button" id="605">
@@ -236,6 +249,7 @@
                     <texturenofocus>OSDNextTrackNF.png</texturenofocus>
                     <onleft>604</onleft>
                     <onright>606</onright>
+                    <ondown>500</ondown>
                     <onclick>PlayerControl(Next)</onclick>
                 </control>
                 <control type="button" id="606">
@@ -249,6 +263,7 @@
                     <texturenofocus>OSDDvdNF.png</texturenofocus>
                     <onleft>605</onleft>
                     <onright>700</onright>
+                    <ondown>500</ondown>
                     <onclick>PlayerControl(ShowVideoMenu)</onclick>
                     <enable>VideoPlayer.HasMenu</enable>
                     <animation effect="fade" start="100" end="50" time="100" condition="!VideoPlayer.HasMenu">Conditional</animation>
@@ -262,7 +277,6 @@
                     <colordiffuse>66FFFFFF</colordiffuse>
                     <texture>separator2.png</texture>
                 </control>
-
             </control>
             <control type="label">
                 <posx>20</posx>
@@ -278,15 +292,15 @@
                 <shadowcolor>black</shadowcolor>
             </control>
             <control type="label">
-                <posx>440</posx>
-                <posy>65</posy>
-                <width>400</width>
-                <height>25</height>
+                <posx>450</posx>
+                <posy>62</posy>
+                <width>380</width>
+                <height>20</height>
                 <label>$INFO[System.CurrentControl]</label>
                 <scroll>true</scroll>
                 <align>center</align>
                 <aligny>center</aligny>
-                <font>cirrus_20</font>
+                <font>cirrus_18</font>
                 <textcolor>grey</textcolor>
                 <shadowcolor>black</shadowcolor>
             </control>
@@ -302,6 +316,27 @@
                 <font>cirrus_20</font>
                 <textcolor>grey</textcolor>
                 <shadowcolor>black</shadowcolor>
+            </control>
+            <control type="progress">
+                <description>Progressbar</description>
+                <posx>440</posx>
+                <posy>82</posy>
+                <width>400</width>
+                <height>12</height>
+                <info>Player.Progress</info>
+            </control>
+            <control type="slider" id="500">
+                <description>Seek Slider</description>
+                <posx>440</posx>
+                <posy>82</posy>
+                <width>400</width>
+                <height>12</height>
+                <action>seek</action>
+                <ondown>602</ondown>
+                <onup>602</onup>
+                <texturesliderbar>seekslider.png</texturesliderbar>
+                <textureslidernib>osd_seeknf.png</textureslidernib>
+                <textureslidernibfocus>osd_seek.png</textureslidernibfocus>
             </control>
             <include>Clock</include>
         </control>
