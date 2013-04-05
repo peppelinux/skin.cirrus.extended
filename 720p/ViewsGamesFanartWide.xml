@@ -47,7 +47,7 @@
             <posx>0</posx>
             <posy>530</posy>
             <control type="fixedlist" id="592">
-                <visible>substring(container.folderpath,plugin://plugin.program.advanced.launcher) | Window.IsVisible(VideoFiles) | Window.IsVisible(VideoLibrary) + !Container.Content(Genres) + !Container.Content(Movies) + !Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Episodes)</visible>
+                <visible>substring(container.folderpath,plugin://plugin.program.advanced.launcher) | Window.IsVisible(VideoFiles) | Window.IsVisible(VideoLibrary) + !Container.Content(Genres) + !Container.Content(Movies) + !Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container.Content(sets)</visible>
                 <posx>-7</posx>
                 <posy>0</posy>
                 <width>1300</width>

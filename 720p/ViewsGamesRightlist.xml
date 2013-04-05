@@ -111,7 +111,7 @@
                 <viewtype label="40003">list</viewtype>
                 <pagecontrol>60</pagecontrol>
                 <scrolltime>200</scrolltime>
-                <visible>substring(container.folderpath,plugin://plugin.program.advanced.launcher) | Window.IsVisible(VideoFiles) | Container.Content(genres) | Window.IsVisible(VideoLibrary) + !Container.Content(Movies) + !Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Episodes)</visible>
+                <visible>substring(container.folderpath,plugin://plugin.program.advanced.launcher) | Window.IsVisible(VideoFiles) | Container.Content(genres) | Window.IsVisible(VideoLibrary) + !Container.Content(Movies) + !Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container.Content(sets)</visible>
                 <!-- NORMAL LAYOUT -->
                 <!-- SLIM LAYOUT GAMES -->
                 <itemlayout height="40" width="580">
