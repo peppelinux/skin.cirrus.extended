@@ -1221,4 +1221,37 @@
         <animation effect="slide" start="-1280,0" end="0,0" time="500" tween="quadratic" easing="out">WindowOpen</animation>
         <animation effect="slide" start="0,0" end="-1280,0" time="500" tween="quadratic" easing="in">WindowClose</animation>
     </include>
+
+    <!-- Fanart backgrounds -->
+    <include name="FanartFadeLabels">
+        <control type="fadelabel" id="4750">
+            <pauseatend>8000</pauseatend>
+            <width>11479</width>
+            <height>118</height>
+            <font>font10</font>
+            <textcolor>00FFFFFF</textcolor>
+            <label>$INFO[Window(Home).Property(Detail.Movie.1.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(Detail.Movie.2.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(Detail.Movie.3.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(Detail.Movie.4.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(Detail.Movie.5.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(Detail.Movie.6.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(Detail.Movie.7.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(Detail.Movie.8.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(Detail.Movie.9.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(Detail.Movie.10.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(Detail.Movie.11.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(Detail.Movie.12.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(Detail.Movie.13.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(Detail.Movie.14.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(Detail.Movie.15.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(Detail.Movie.16.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(Detail.Movie.17.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(Detail.Movie.18.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(Detail.Movie.19.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(Detail.Movie.20.Art(fanart))]</label>
+            <visible>[Container.Content(tags) | Container.Content(directors) | Container.Content(actors) | Container.Content(genres) | Container.Content(studios) | Container.Content(countries) | Container.Content(years) | Container.Content(sets) | SubString(ListItem.Path,videodb://1/7/,left)]</visible>
+            <visible>!Stringcompare(ListItem.Label,..)</visible>
+        </control>
+    </include>
 </includes>

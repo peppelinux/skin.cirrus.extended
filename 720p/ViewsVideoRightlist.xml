@@ -22,26 +22,6 @@
                 <height>700</height>
                 <aspectratio>stretch</aspectratio>
                 <texture>rightlistbackground.png</texture>
-                <visible>Container.Content(tvshows)</visible>
-            </control>
-            <control type="image">
-                <!-- bottom bar background -->
-                <posx>0</posx>
-                <posy>155r</posy>
-                <width>1280</width>
-                <height>700</height>
-                <aspectratio>stretch</aspectratio>
-                <texture>rightlistbackground.png</texture>
-                <visible>Container.Content(Seasons)</visible>
-            </control>
-            <control type="image">
-                <!-- bottom bar background -->
-                <posx>0</posx>
-                <posy>155r</posy>
-                <width>1280</width>
-                <height>700</height>
-                <aspectratio>stretch</aspectratio>
-                <texture>rightlistbackground.png</texture>
             </control>
             <control type="image">
                 <!-- bottom bar background -->
@@ -51,7 +31,7 @@
                 <height>700</height>
                 <aspectratio>stretch</aspectratio>
                 <texture>rightlistbackground.png</texture>
-                <visible>Container.Content(movies) | Container.Content(Episodes)</visible>
+                <visible>Container.Content(movies) | Container.Content(Episodes) | Container.Content(sets)</visible>
             </control>
             <control type="image">
                 <!-- Black gradient up the top -->
@@ -127,7 +107,7 @@
                 <viewtype label="40003">list</viewtype>
                 <pagecontrol>60</pagecontrol>
                 <scrolltime>200</scrolltime>
-                <visible>Container.Content(tvshows) | Window.IsVisible(VideoFiles) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(movies)</visible>
+                <visible>Container.Content(tvshows) | Window.IsVisible(VideoFiles) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(movies) | Container.Content(sets)</visible>
                 <!-- SLIM LAYOUT -->
                 <itemlayout height="40" width="580">
                     <control type="image">
@@ -144,7 +124,7 @@
                         <posy>8</posy>
                         <width>445</width>
                         <height>25</height>
-                        <label>$INFO[listitem.Label]</label>
+                        <label>$INFO[ListItem.Label]</label>
                         <align>right</align>
                         <aligny>center</aligny>
                         <font>cirrus_24</font>
@@ -179,7 +159,7 @@
                         <font>cirrus_24_Bold</font>
                         <textcolor>black</textcolor>
                         <scroll>false</scroll>
-                        <visible>Container.Content(tvshows) | Container.Content(Episodes) | Container.Content(movies)</visible>
+                        <visible>Container.Content(tvshows) | Container.Content(Episodes) | Container.Content(movies) | Container.Content(sets)</visible>
                     </control>
                     <control type="label">
                         <description>Title</description>
@@ -204,8 +184,8 @@
                         <color>accent</color>
                         <texture>$INFO[Listitem.StarRating]</texture>
                         <colordiffuse>black</colordiffuse>
-                        <visible>!Skin.HasSetting(imdbnr) + Container.Content(tvshows) | !Skin.HasSetting(imdbnr) + Container.Content(Episodes) | !Skin.HasSetting(imdbnr) + Container.Content(movies)</visible>
-                        <visible>!ListItem.IsFolder</visible>
+                        <visible>!Skin.HasSetting(imdbnr) + Container.Content(tvshows) | !Skin.HasSetting(imdbnr) + Container.Content(Episodes) | !Skin.HasSetting(imdbnr) + Container.Content(movies) | !Skin.HasSetting(imdbnr) + Container.Content(sets)</visible>
+                        <visible>[!ListItem.IsFolder | SubString(ListItem.Path,videodb://1/7/,left)]</visible>
                     </control>
                     <control type="label">
                         <description>Rating value</description>
@@ -216,9 +196,9 @@
                         <textcolor>black</textcolor>
                         <font>cirrus_18_Bold</font>
                         <align>left</align>
-                        <label>Rating $INFO[Listitem.Rating]</label>
+                        <label>Rating $INFO[ListItem.Rating]</label>
                         <colordiffuse>black</colordiffuse>
-                        <visible>[Skin.HasSetting(imdbnr) + Container.Content(tvshows) | Skin.HasSetting(imdbnr) + Container.Content(Episodes) | Skin.HasSetting(imdbnr) + Container.Content(movies)] + !ListItem.IsFolder</visible>
+                        <visible>Skin.HasSetting(imdbnr) + [Container.Content(tvshows) | Container.Content(Episodes) | Container.Content(movies) | Container.Content(sets)] + [!ListItem.IsFolder | SubString(ListItem.Path,videodb://1/7/,left)]</visible>
                     </control>
                     <control type="image">
                         <posx>20r</posx>
@@ -286,7 +266,7 @@
                     <font>cirrus_24</font>
                     <scroll>true</scroll>
                     <visible>[!Skin.HasSetting(poster) + !Skin.HasSetting(banner) + !Skin.HasSetting(widethumb)] + !IsEmpty(ListItem.Thumb)</visible> 
-                </control>				
+                </control>
                 <control type="group">
                     <description>Nextaired</description>
                     <posx>160</posx>
@@ -299,7 +279,7 @@
                     <font>cirrus_24</font>
                     <scroll>true</scroll>
                     <visible>Skin.HasSetting(poster) + !IsEmpty(ListItem.Thumb)</visible> 
-                </control>	
+                </control>
                 <control type="label">
                     <description>First Aired</description>
                     <posx>240</posx>
@@ -732,7 +712,7 @@
             <control type="group">
                 <posx>20</posx>
                 <posy>360</posy>
-                <visible>Container.Content(movies)</visible>
+                <visible>Container.Content(movies) | Container.Content(sets)</visible>
                 <control type="group">
                     <visible>!Skin.HasSetting(posterlessRightList) + !Skin.HasSetting(showCases)</visible>
                     <posx>0</posx>
@@ -813,7 +793,7 @@
                         <posy>0</posy>
                         <width>1000</width>
                         <height>25</height>
-                        <label>$INFO[ListItem.Genre,[COLOR=accent]$LOCALIZE[515]:[/COLOR] ]</label>
+                        <label>$VAR[ListItemGenre]</label>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>cirrus_24</font>
@@ -826,7 +806,7 @@
                         <posy>32</posy>
                         <width>700</width>
                         <height>61</height>
-                        <label>$INFO[ListItem.Plot]</label>
+                        <label>$VAR[ListItemPlot]</label>
                         <align>justify</align>
                         <aligny>top</aligny>
                         <font>cirrus_18</font>
@@ -840,7 +820,7 @@
                         <posy>32</posy>
                         <width>990</width>
                         <height>61</height>
-                        <label>$INFO[ListItem.Plot]</label>
+                        <label>$VAR[ListItemPlot]</label>
                         <align>justify</align>
                         <aligny>top</aligny>
                         <font>cirrus_18</font>
@@ -854,7 +834,7 @@
                         <posy>32</posy>
                         <width>850</width>
                         <height>61</height>
-                        <label>$INFO[ListItem.Plot]</label>
+                        <label>$VAR[ListItemPlot]</label>
                         <align>justify</align>
                         <aligny>top</aligny>
                         <font>cirrus_18</font>
@@ -869,7 +849,7 @@
                         <posy>32</posy>
                         <width>700</width>
                         <height>61</height>
-                        <label>$INFO[ListItem.PlotOutline]</label>
+                        <label>$VAR[ListItemPlotOutline]</label>
                         <align>justify</align>
                         <aligny>top</aligny>
                         <font>cirrus_18</font>
@@ -883,7 +863,7 @@
                         <posy>32</posy>
                         <width>990</width>
                         <height>61</height>
-                        <label>$INFO[ListItem.PlotOutline]</label>
+                        <label>$VAR[ListItemPlotOutline]</label>
                         <align>justify</align>
                         <aligny>top</aligny>
                         <font>cirrus_18</font>
@@ -897,7 +877,7 @@
                         <posy>32</posy>
                         <width>850</width>
                         <height>61</height>
-                        <label>$INFO[ListItem.PlotOutline]</label>
+                        <label>$VAR[ListItemPlotOutline]</label>
                         <align>justify</align>
                         <aligny>top</aligny>
                         <font>cirrus_18</font>
@@ -911,7 +891,7 @@
                         <posy>110</posy>
                         <width>320</width>
                         <height>30</height>
-                        <label>$INFO[ListItem.Year]</label>
+                        <label>$VAR[ListItemYear]</label>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>cirrus_26</font>
@@ -923,25 +903,11 @@
                         <posy>110</posy>
                         <width>320</width>
                         <height>30</height>
-                        <label>$INFO[ListItem.Duration] mins</label>
+                        <label>$VAR[ListItemRuntime]</label>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>cirrus_26</font>
                         <textcolor>white</textcolor>
-                        <visible>!IsEmpty(ListItem.Duration) + !ListItem.IsFolder</visible>
-                    </control>
-                    <control type="label">
-                        <description>Runtime label</description>
-                        <posx>70</posx>
-                        <posy>110</posy>
-                        <width>320</width>
-                        <height>30</height>
-                        <label>$INFO[ListItem.Duration]</label>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <font>cirrus_26</font>
-                        <textcolor>white</textcolor>
-                        <visible>SubString(ListItem.Duration,mins) + !ListItem.IsFolder</visible>
                     </control>
                     <control type="image">
                         <!-- Top250IMDB Mod 1.2 -->
@@ -979,7 +945,7 @@
                         <posy>0</posy>
                         <width>1000</width>
                         <height>25</height>
-                        <label>$INFO[ListItem.Genre,[COLOR=accent]$LOCALIZE[515]:[/COLOR] ]</label>
+                        <label>$VAR[ListItemGenre]</label>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>cirrus_24</font>
@@ -991,7 +957,7 @@
                         <posy>32</posy>
                         <width>1090</width>
                         <height>61</height>
-                        <label>$INFO[ListItem.Plot]</label>
+                        <label>$VAR[ListItemPlot]</label>
                         <align>justify</align>
                         <aligny>top</aligny>
                         <font>cirrus_18</font>
@@ -1005,7 +971,7 @@
                         <posy>32</posy>
                         <width>1230</width>
                         <height>61</height>
-                        <label>$INFO[ListItem.Plot]</label>
+                        <label>$VAR[ListItemPlot]</label>
                         <align>justify</align>
                         <aligny>top</aligny>
                         <font>cirrus_18</font>
@@ -1019,7 +985,7 @@
                         <posy>32</posy>
                         <width>950</width>
                         <height>61</height>
-                        <label>$INFO[ListItem.Plot]</label>
+                        <label>$VAR[ListItemPlot]</label>
                         <align>justify</align>
                         <aligny>top</aligny>
                         <font>cirrus_18</font>
@@ -1045,25 +1011,11 @@
                         <posy>110</posy>
                         <width>320</width>
                         <height>30</height>
-                        <label>$INFO[ListItem.Duration] mins</label>
+                        <label>$VAR[ListItemRuntime]</label>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>cirrus_35</font>
                         <textcolor>white</textcolor>
-                        <visible>!SubString(ListItem.Duration,mins) + !ListItem.IsFolder</visible>
-                    </control>
-                    <control type="label">
-                        <description>Runtime label</description>
-                        <posx>80</posx>
-                        <posy>110</posy>
-                        <width>320</width>
-                        <height>30</height>
-                        <label>$INFO[ListItem.Duration]</label>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <font>cirrus_35</font>
-                        <textcolor>white</textcolor>
-                        <visible>SubString(ListItem.Duration,mins) + !ListItem.IsFolder</visible>
                     </control>
                     <control type="image">
                         <!-- Top250IMDB Mod 1.2 -->
@@ -1099,7 +1051,7 @@
                     <aspectratio>keep</aspectratio>
                     <align>center</align>
                     <aligny>bottom</aligny>
-                    <texture diffuse="maskflags.png">$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
+                    <texture diffuse="maskflags.png">$VAR[ListItemStudio]</texture>
                 </control>
                 <control type="image">
                     <posx>680</posx>
