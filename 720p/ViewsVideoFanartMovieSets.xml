@@ -2,25 +2,6 @@
     <!-- ===================================================================================== -->
     <!-- ================================= FANART Movie Sets VIEW ID 766 ================================ -->
     <!-- ====================== Movies ===================== -->
-    <!-- unused include for now
-  <include name="ContainerMovieSets">
-		<control type="list" id="7000">
-			<description>Container Movie Sets</description>
-			<hitrect x="0" y="0" w="0" h="0" />
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1</width>
-			<height>1</height>
-			<onleft>-</onleft>
-			<onright>-</onright>
-			<onup>-</onup>
-			<ondown>-</ondown>
-			<pagecontrol>-</pagecontrol>
-			<itemlayout height="1" width="1" />
-			<focusedlayout height="1" width="1" />
-		</control>
-	</include>
-	-->
     <include name="FanartSlideMovieSets">
         <control type="image">
             <!-- bottom bar background -->
@@ -56,7 +37,7 @@
             <posx>0</posx>
             <posy>530</posy>
             <control type="wraplist" id="766">
-                <visible>Window.IsVisible(VideoFiles) | Window.IsVisible(VideoLibrary) + Container.Content(Movies) + !Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Episodes)</visible>
+                <visible>Window.IsVisible(VideoFiles) | Window.IsVisible(VideoLibrary) + Container.Content(Sets) + !Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Episodes)</visible>
                 <posx>-20</posx>
                 <posy>0</posy>
                 <width>1320</width>
@@ -64,8 +45,6 @@
                 <onleft>766</onleft>
                 <onright>766</onright>
                 <onup>60</onup>
-                <ondown>ActivateWindow(1121)</ondown>
-                <!-- ,1 VideoWindow ,0 Fullscreen -->
                 <viewtype label="Movie Sets Fanart">wraplist</viewtype>
                 <pagecontrol>60</pagecontrol>
                 <scrolltime>200</scrolltime>
@@ -180,7 +159,7 @@
                     <aspectratio>stretch</aspectratio>
                     <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
-                    <texture background="true">$INFO[Container(7000).ListItem.Property(movie.1.icon)]</texture>
+                    <texture background="true">$INFO[Window(home).Property(Set.Movie.1.Art(poster))]</texture>
                 </control>
                 <control type="image">
                     <posx>55</posx>
@@ -190,7 +169,7 @@
                     <aspectratio>stretch</aspectratio>
                     <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
-                    <texture background="true">$INFO[Container(7000).ListItem.Property(movie.2.icon)]</texture>
+                    <texture background="true">$INFO[Window(home).Property(Set.Movie.2.Art(poster))]</texture>
                 </control>
                 <control type="image">
                     <posx>165</posx>
@@ -200,7 +179,7 @@
                     <aspectratio>stretch</aspectratio>
                     <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
-                    <texture background="true">$INFO[Container(7000).ListItem.Property(movie.3.icon)]</texture>
+                    <texture background="true">$INFO[Window(home).Property(Set.Movie.3.Art(poster))]</texture>
                 </control>
                 <control type="image">
                     <posx>275</posx>
@@ -210,7 +189,7 @@
                     <aspectratio>stretch</aspectratio>
                     <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
-                    <texture background="true">$INFO[Container(7000).ListItem.Property(movie.4.icon)]</texture>
+                    <texture background="true">$INFO[Window(home).Property(Set.Movie.4.Art(poster))]</texture>
                 </control>
                 <control type="image">
                     <posx>-55</posx>
@@ -220,7 +199,7 @@
                     <aspectratio>stretch</aspectratio>
                     <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
-                    <texture background="true">$INFO[Container(7000).ListItem.Property(movie.5.icon)]</texture>
+                    <texture background="true">$INFO[Window(home).Property(Set.Movie.5.Art(poster))]</texture>
                 </control>
                 <control type="image">
                     <posx>55</posx>
@@ -230,7 +209,7 @@
                     <aspectratio>stretch</aspectratio>
                     <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
-                    <texture background="true">$INFO[Container(7000).ListItem.Property(movie.6.icon)]</texture>
+                    <texture background="true">$INFO[Window(home).Property(Set.Movie.6.Art(poster))]</texture>
                 </control>
                 <control type="image">
                     <posx>165</posx>
@@ -240,7 +219,7 @@
                     <aspectratio>stretch</aspectratio>
                     <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
-                    <texture background="true">$INFO[Container(7000).ListItem.Property(movie.7.icon)]</texture>
+                    <texture background="true">$INFO[Window(home).Property(Set.Movie.7.Art(poster))]</texture>
                 </control>
                 <control type="image">
                     <posx>275</posx>
@@ -250,7 +229,7 @@
                     <aspectratio>stretch</aspectratio>
                     <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
-                    <texture background="true">$INFO[Container(7000).ListItem.Property(movie.8.icon)]</texture>
+                    <texture background="true">$INFO[Window(home).Property(Set.Movie.8.Art(poster))]</texture>
                 </control>
                 <control type="image">
                     <posx>-55</posx>
@@ -260,7 +239,7 @@
                     <aspectratio>stretch</aspectratio>
                     <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
-                    <texture background="true">$INFO[Container(7000).ListItem.Property(movie.9.icon)]</texture>
+                    <texture background="true">$INFO[Window(home).Property(Set.Movie.9.Art(poster))]</texture>
                 </control>
                 <control type="image">
                     <posx>55</posx>
@@ -270,7 +249,7 @@
                     <aspectratio>stretch</aspectratio>
                     <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
-                    <texture background="true">$INFO[Container(7000).ListItem.Property(movie.10.icon)]</texture>
+                    <texture background="true">$INFO[Window(home).Property(Set.Movie.10.Art(poster))]</texture>
                 </control>
                 <control type="image">
                     <posx>165</posx>
@@ -280,7 +259,7 @@
                     <aspectratio>stretch</aspectratio>
                     <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
-                    <texture background="true">$INFO[Container(7000).ListItem.Property(movie.11.icon)]</texture>
+                    <texture background="true">$INFO[Window(home).Property(Set.Movie.11.Art(poster))]</texture>
                 </control>
                 <control type="image">
                     <posx>275</posx>
@@ -290,7 +269,7 @@
                     <aspectratio>stretch</aspectratio>
                     <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
-                    <texture background="true">$INFO[Container(7000).ListItem.Property(movie.12.icon)]</texture>
+                    <texture background="true">$INFO[Window(home).Property(Set.Movie.12.Art(poster))]</texture>
                 </control>
                 <control type="image">
                     <posx>388</posx>
@@ -318,177 +297,93 @@
                     <scroll>false</scroll>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <label>$INFO[ListItem.Genre]$INFO[Container(7000).ListItem.Genre,[COLOR=accent]$LOCALIZE[515]:[/COLOR] ]</label>
+                    <label>$VAR[ListItemGenre]</label>
                     <scrollout>false</scrollout>
                     <pauseatend>2000</pauseatend>
-                </control> -->
-            <control type="label">
-                <posx>415</posx>
-                <posy>30</posy>
-                <width>750</width>
-                <height>30</height>
-                <font>cirrus_24</font>
-                <textcolor>white</textcolor>
-                <scroll>false</scroll>
-                <align>left</align>
-                <aligny>center</aligny>
-                <label>$INFO[ListItem.Year]$INFO[Container(7000).ListItem.Property(Years),[COLOR=accent]$LOCALIZE[41250]:[/COLOR] ]</label>
-                <scrollout>false</scrollout>
-                <pauseatend>2000</pauseatend>
-            </control>
-
-            <control type="label">
-                <posx>415</posx>
-                <posy>60</posy>
-                <width>470</width>
-                <height>30</height>
-                <font>cirrus_24</font>
-                <textcolor>white</textcolor>
-                <scroll>true</scroll>
-                <align>left</align>
-                <aligny>center</aligny>
-                <label>$INFO[ListItem.Episode]$INFO[Container(7000).ListItem.Property(TotalMovies),[COLOR=accent]$LOCALIZE[41295]:[/COLOR] ]</label>
-                <scrollout>false</scrollout>
-                <pauseatend>2000</pauseatend>
-            </control>
-            <control type="label">
-                <posx>600</posx>
-                <posy>60</posy>
-                <width>470</width>
-                <height>30</height>
-                <font>cirrus_24</font>
-                <textcolor>grey2</textcolor>
-                <scroll>true</scroll>
-                <align>left</align>
-                <aligny>center</aligny>
-                <label>$INFO[ListItem.Property(WatchedEpisodes),, $LOCALIZE[16102]]$INFO[Container(7000).ListItem.Property(WatchedMovies),, $LOCALIZE[16102]]   $INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101]]$INFO[Container(7000).ListItem.Property(UnWatchedMovies),, $LOCALIZE[16101]]</label>
-                <scrollout>false</scrollout>
-                <pauseatend>2000</pauseatend>
-            </control>
-            <control type="image">
-                <posx>415</posx>
-                <posy>100</posy>
-                <width>790</width>
-                <height>1</height>
-                <aspectratio>stretch</aspectratio>
-                <texture>separator.png</texture>
-            </control>
-            <control type="image">
-                <posx>415</posx>
-                <posy>100</posy>
-                <width>790</width>
-                <height>1</height>
-                <aspectratio>stretch</aspectratio>
-                <texture>separator.png</texture>
-            </control>
-            <control type="textbox">
-                <description>Plot</description>
-                <posx>415</posx>
-                <posy>120</posy>
-                <width>750</width>
-                <height>170</height>
-                <font>cirrus_22</font>
-                <align>justify</align>
-                <textcolor>white</textcolor>
-                <label>$INFO[Container(7000).ListItem.Plot]</label>
-                <autoscroll time="3000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+                </control>
+                <control type="label">
+                    <posx>415</posx>
+                    <posy>30</posy>
+                    <width>750</width>
+                    <height>30</height>
+                    <font>cirrus_24</font>
+                    <textcolor>white</textcolor>
+                    <scroll>false</scroll>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <label>$VAR[ListItemYear]</label>
+                    <scrollout>false</scrollout>
+                    <pauseatend>2000</pauseatend>
+                </control>
+                <control type="label">
+                    <posx>415</posx>
+                    <posy>60</posy>
+                    <width>470</width>
+                    <height>30</height>
+                    <font>cirrus_24</font>
+                    <textcolor>white</textcolor>
+                    <scroll>true</scroll>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <label>$INFO[ListItem.Rating,[COLOR=accent]$LOCALIZE[563]: [/COLOR]]</label>
+                    <scrollout>false</scrollout>
+                    <pauseatend>2000</pauseatend>
+                </control>
+                <control type="label">
+                    <posx>415</posx>
+                    <posy>90</posy>
+                    <width>470</width>
+                    <height>30</height>
+                    <font>cirrus_24</font>
+                    <textcolor>white</textcolor>
+                    <scroll>true</scroll>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <label>$VAR[ListItemRuntime]</label>
+                    <scrollout>false</scrollout>
+                    <pauseatend>2000</pauseatend>
+                </control>
+                <control type="image">
+                    <posx>415</posx>
+                    <posy>130</posy>
+                    <width>790</width>
+                    <height>1</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture>separator.png</texture>
+                </control>
+                <control type="image">
+                    <posx>415</posx>
+                    <posy>130</posy>
+                    <width>790</width>
+                    <height>1</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture>separator.png</texture>
+                </control>
+                <control type="textbox">
+                    <description>Plot</description>
+                    <posx>415</posx>
+                    <posy>150</posy>
+                    <width>750</width>
+                    <height>170</height>
+                    <font>cirrus_22</font>
+                    <align>justify</align>
+                    <textcolor>white</textcolor>
+                    <label>$VAR[ListItemPlot]</label>
+                    <autoscroll time="3000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+                </control>
+                <control type="image">
+                    <width>240</width>
+                    <height>50</height>
+                    <posx>480</posx>
+                    <posy>330</posy>
+                    <aspectratio>keep</aspectratio>
+                    <align>center</align>
+                    <aligny>bottom</aligny>
+                    <texture diffuse="maskflags.png">$VAR[ListItemStudio]</texture>
+                </control>
             </control>
         </control>
-        <control type="group">
-            <posx>-60</posx>
-            <!-- <control type="image">
-					<posx>700</posx>
-					<posy>40</posy>
-					<width>540</width>
-					<height>303</height>
-					<aspectratio>stretch</aspectratio>
-					<texture>backtexture.png</texture>
-					<bordertexture border="8">backtexture.png</bordertexture>
-					<bordersize>8</bordersize>
-					<visible>!Skin.HasSetting(Smallwindowhidden)</visible>
-					<visible>!Player.HasVideo | !Skin.HasSetting(videowindownoborder) | !Skin.HasSetting(videowindowglobal)</visible>
-					<visible>!IsEmpty(ListItem.Thumb)</visible> 
-				</control>
-				<control type="image">
-				    <posx>700</posx>
-					<posy>40</posy>
-					<width>540</width>
-					<height>303</height>
-					<aspectratio>stretch</aspectratio>
-					<fadetime>FanartCrossfadeTime</fadetime>
-					<texture fallback="splashm.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
-					<bordersize>8</bordersize>
-					<visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>
-					<visible>!Skin.HasSetting(Smallwindowhidden)</visible>
-				</control>
-				<control type="multiimage">
-					<posx>708</posx>
-					<posy>48</posy>
-					<width>524</width>
-					<height>287</height>
-					<aspectratio>stretch</aspectratio>
-					<fadetime>FanartCrossfadeTime</fadetime>
-					<timeperimage>3000</timeperimage>
-					<imagepath background="true">$INFO[ListItem.Path]\extrathumbs</imagepath>
-					<bordersize>8</bordersize>
-					<visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>
-					<visible>!Skin.HasSetting(Smallwindowhidden)</visible>
-					<visible>!Skin.HasSetting(VideoLibraryMovieExtrathumbs)</visible>
-				</control>
-				<control type="videowindow" id="8">
-					<posx>714</posx>
-					<posy>56</posy>
-					<width>513</width>
-					<height>270</height>
-					<align>right</align>
-					<visible>Skin.Hassetting(videowindowglobal)</visible>
-					<visible>Control.IsVisible(766)</visible>
-				</control> 
-				<control type="label">
-					<description>Title label</description>
-					<posx>810</posx>
-					<posy>275</posy>
-					<height>30</height>
-					<width>330</width>
-					<label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year,[COLOR=accent] (,)[/COLOR]]</label>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>cirrus_20</font>
-					<textcolor>white</textcolor>
-					
-					<visible>Skin.HasSetting(videowindowglobal)</visible>
-					<visible>Player.HasVideo</visible>
-					<visible>Control.IsVisible(766)</visible>
-					<visible>!Skin.HasSetting(videonotitle)</visible>
-				</control>
-				<control type="image">
-						<posx>1142</posx>
-						<posy>48</posy>
-						<width>91</width>
-						<height>91</height>
-						<aspectratio>keep</aspectratio>
-						<fadetime>FanartCrossfadeTime</fadetime>
-						<texture>Overlayicons/$INFO[ListItem.Overlay]</texture>
-					    <visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>
-					    <visible>!Skin.HasSetting(Smallwindowhidden)</visible>
-					    <visible>!Skin.HasSetting(originalwatched)</visible>
-					</control>
-				<control type="image">
-					<posx>708</posx>
-					<posy>48</posy>
-					<width>91</width>
-					<height>91</height>
-					<aspectratio>keep</aspectratio>
-					<fadetime>FanartCrossfadeTime</fadetime>
-					<texture>Overlayicons/TrailerOverlay.png</texture>
-					<visible>!IsEmpty(ListItem.Trailer) + !Skin.HasSetting(trailerflag)</visible>
-					<visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>
-					<visible>!Skin.HasSetting(Smallwindowhidden)</visible>
-				</control> -->
-            <!-- Changes Ending -->
-        </control>
-    </control>
-</include>
+    </include>
 </includes>
 
 

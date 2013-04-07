@@ -29,6 +29,7 @@
         <value>$INFO[ListItem.PlotOutline]</value>
     </variable>
     <variable name="ListItemRuntime">
+        <value condition="System.HasAddon(script.extendedinfo) + SubString(ListItem.Path,videodb://1/7/,left) + Control.IsVisible(766)">$INFO[Window(home).Property(Set.Movies.Runtime),[COLOR=accent]$LOCALIZE[2050]: [/COLOR], $LOCALIZE[12391]]</value>
         <value condition="System.HasAddon(script.extendedinfo) + SubString(ListItem.Path,videodb://1/7/,left)">$INFO[Window(home).Property(Set.Movies.Runtime),, $LOCALIZE[12391]]</value>
         <value>$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
     </variable>
@@ -37,7 +38,7 @@
         <value>$INFO[ListItem.Studio,special://skin/extras/flagging/studios/,.png]</value>
     </variable>
     <variable name="ListItemYear">
-        <!-- <value condition="System.HasAddon(script.extendedinfo) + SubString(ListItem.Path,videodb://1/7/,left)">$INFO[Window(home).Property(Set.Movies.Years)]</value> -->
+        <value condition="System.HasAddon(script.extendedinfo) + SubString(ListItem.Path,videodb://1/7/,left) + Control.IsVisible(766)">$INFO[Window(home).Property(Set.Movies.Years),[COLOR=accent]$LOCALIZE[41250]:[/COLOR] ]</value>
         <value>$INFO[ListItem.Year]</value>
     </variable>
     <variable name="FanartBackgrounds">
