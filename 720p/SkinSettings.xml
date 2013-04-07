@@ -199,6 +199,12 @@
                     </control>
                     <control type="radiobutton" id="784">
                         <include>MenuItemSettings</include>
+                        <label>$LOCALIZE[31001]</label>
+                        <onclick>Skin.ToggleSetting(EnableStartupAnimation)</onclick>
+                        <selected>Skin.HasSetting(EnableStartupAnimation)</selected>
+                    </control>
+                    <control type="radiobutton" id="784">
+                        <include>MenuItemSettings</include>
                         <label>$LOCALIZE[31126]</label>
                         <onclick>Skin.ToggleSetting(LyricScript_Enable)</onclick>
                         <selected>Skin.HasSetting(LyricScript_Enable)</selected>
