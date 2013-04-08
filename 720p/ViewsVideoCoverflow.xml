@@ -625,28 +625,12 @@
                     <posy>110</posy>
                     <width>320</width>
                     <height>30</height>
-                    <label>$INFO[ListItem.Duration] mins</label>
+                    <label>$INFO[ListItem.Duration] $LOCALIZE[12391]</label>
                     <align>left</align>
                     <aligny>center</aligny>
                     <font>cirrus_35</font>
                     <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
-                    <visible>!SubString(ListItem.Duration,mins)</visible>
-                    <visible>!ListItem.IsFolder</visible>
-                </control>
-                <control type="label">
-                    <description>Runtime label</description>
-                    <posx>80</posx>
-                    <posy>110</posy>
-                    <width>320</width>
-                    <height>30</height>
-                    <label>$INFO[ListItem.Duration]</label>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <font>cirrus_35</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <visible>SubString(ListItem.Duration,mins)</visible>
                     <visible>!ListItem.IsFolder</visible>
                 </control>
                 <control type="image">

@@ -243,35 +243,15 @@
                     <height>30</height>
                     <font>cirrus_24</font>
                     <textcolor>white</textcolor>
-
                     <scroll>true</scroll>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <label>[COLOR=accent]$INFO[ListItem.Year][/COLOR] $INFO[ListItem.Duration]</label>
+                    <label>[COLOR=accent]$INFO[ListItem.Year][/COLOR] $INFO[ListItem.Duration] $LOCALIZE[12391]</label>
                     <scrollout>false</scrollout>
                     <pauseatend>2000</pauseatend>
-                    <visible>SubString(ListItem.Duration,mins)</visible>
                     <visible>Container.Content(Movies)</visible>
                     <visible>!ListItem.IsFolder</visible>
                 </control>
-                <control type="fadelabel">
-                    <posx>-60</posx>
-                    <posy>90</posy>
-                    <width>470</width>
-                    <height>30</height>
-                    <font>cirrus_24</font>
-                    <textcolor>white</textcolor>
-                    <scroll>true</scroll>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <label>[COLOR=accent]$INFO[ListItem.Year][/COLOR] $INFO[ListItem.Duration] mins</label>
-                    <scrollout>false</scrollout>
-                    <pauseatend>2000</pauseatend>
-                    <visible>!SubString(ListItem.Duration,mins)</visible>
-                    <visible>Container.Content(Movies)</visible>
-                    <visible>!ListItem.IsFolder</visible> 
-                </control>
-
                 <control type="image">
                     <!-- Top250IMDB Mod 1.2 -->
                     <posx>220</posx>
