@@ -284,7 +284,7 @@
             <visible>!Skin.HasSetting(slimseek)</visible>
         </control>
         <control type="label">
-            <posx>-25</posx>
+            <posx>-100</posx>
             <posy>190</posy>
             <width>300</width>
             <height>30</height>
@@ -427,7 +427,7 @@
             <visible>Skin.HasSetting(slimseek)</visible>
         </control>
         <control type="label">
-            <posx>0</posx>
+            <posx>-100</posx>
             <posy>75</posy>
             <width>530</width>
             <height>30</height>
