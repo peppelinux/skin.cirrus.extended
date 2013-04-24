@@ -181,6 +181,7 @@
                             <texture background="true">$INFO[ListItem.Icon]</texture>
                             <bordertexture border="8">ContentPanelvertical.png</bordertexture>
                             <bordersize>8</bordersize>
+                            <visible>!Control.HasFocus(50)</visible>
                         </control>
                         <control type="grouplist">
                             <description>Media Codec Flagging Images</description>
@@ -538,6 +539,7 @@
                             <texture background="true">$INFO[ListItem.Icon]</texture>
                             <bordertexture border="8">ContentPanelvertical.png</bordertexture>
                             <bordersize>8</bordersize>
+                            <visible>!Control.HasFocus(50)</visible>
                         </control>
                         <control type="image">
                             <!-- STUDIO FLAG -->
