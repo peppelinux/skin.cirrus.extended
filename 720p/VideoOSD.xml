@@ -17,7 +17,7 @@
             </control>
             <!-- SETTINGS GROUP (Bookmarks audio video) -->
             <control type="group" id="200">
-                <posx>750</posx>
+                <posx>720</posx>
                 <posy>20</posy>
                 <control type="button" id="700">
                     <posx>0</posx>
@@ -162,7 +162,7 @@
             </control>
             <!-- GROUP FOR PLAYER CONTROLS -->
             <control type="group" id="100">
-                <posx>400</posx>
+                <posx>370</posx>
                 <posy>20</posy>
                 <control type="button" id="600">
                     <posx>0</posx>

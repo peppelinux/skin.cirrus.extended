@@ -181,6 +181,7 @@
                             <texture background="true">$INFO[ListItem.Icon]</texture>
                             <bordertexture border="8">ContentPanelvertical.png</bordertexture>
                             <bordersize>8</bordersize>
+                            <visible>!Control.HasFocus(50)</visible>
                         </control>
                         <control type="grouplist">
                             <description>Media Codec Flagging Images</description>
@@ -440,15 +441,8 @@
                             </item>
                             <item>
                                 <label>$LOCALIZE[2050]:</label>
-                                <label2>$INFO[ListItem.Duration]</label2>
-                                <onclick>-</onclick>
-                                <visible>SubString(ListItem.Duration,mins)</visible>
-                            </item>
-                            <item>
-                                <label>$LOCALIZE[2050]:</label>
                                 <label2>$INFO[ListItem.Duration] $LOCALIZE[12391]</label2>
                                 <onclick>-</onclick>
-                                <visible>!SubString(ListItem.Duration,mins)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[20339]:</label>
@@ -545,6 +539,7 @@
                             <texture background="true">$INFO[ListItem.Icon]</texture>
                             <bordertexture border="8">ContentPanelvertical.png</bordertexture>
                             <bordersize>8</bordersize>
+                            <visible>!Control.HasFocus(50)</visible>
                         </control>
                         <control type="image">
                             <!-- STUDIO FLAG -->

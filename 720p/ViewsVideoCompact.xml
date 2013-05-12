@@ -184,29 +184,12 @@
                     <posy>245</posy>
                     <width>320</width>
                     <height>30</height>
-                    <label>$INFO[ListItem.Duration,[COLOR=accent]$LOCALIZE[31054]:[/COLOR] ] mins</label>
+                    <label>$INFO[ListItem.Duration,[COLOR=accent]$LOCALIZE[31054]:[/COLOR] ] $LOCALIZE[12391]</label>
                     <align>left</align>
                     <aligny>center</aligny>
                     <font>cirrus_24</font>
                     <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
-                    <visible>!SubString(ListItem.Duration,mins)</visible>
-                    <visible>!ListItem.IsFolder</visible>
-                    <visible>!Skin.HasSetting(videowindowglobal) | !Player.HasVideo</visible>
-                </control>
-                <control type="label">
-                    <description>Runtime label</description>
-                    <posx>15</posx>
-                    <posy>245</posy>
-                    <width>320</width>
-                    <height>30</height>
-                    <label>$INFO[ListItem.Duration,[COLOR=accent]$LOCALIZE[31054]:[/COLOR] ]</label>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <font>cirrus_24</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <visible>SubString(ListItem.Duration,mins)</visible>
                     <visible>!ListItem.IsFolder</visible>
                     <visible>!Skin.HasSetting(videowindowglobal) | !Player.HasVideo</visible>
                 </control>
@@ -222,10 +205,8 @@
                     <font>cirrus_24</font>
                     <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
-                    <visible>SubString(ListItem.Duration,mins)</visible>
                     <visible>!Skin.HasSetting(videowindowglobal) | !Player.HasVideo</visible>
                     <visible>!ListItem.IsFolder</visible>
-
                 </control>
                 <control type="textbox">
                     <!-- CUSTOM mod plotoutline -->

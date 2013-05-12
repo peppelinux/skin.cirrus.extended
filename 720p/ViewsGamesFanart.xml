@@ -35,7 +35,7 @@
             <posx>0</posx>
             <posy>510</posy>
             <control type="wraplist" id="590">
-                <visible>substring(container.folderpath,plugin://plugin.program.advanced.launcher) | Window.IsVisible(VideoFiles) | Window.IsVisible(VideoLibrary) + !Container.Content(Movies) + !Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Episodes)</visible>
+                <visible>substring(container.folderpath,plugin://plugin.program.advanced.launcher) | Window.IsVisible(VideoFiles) | Window.IsVisible(VideoLibrary) + !Container.Content(Movies) + !Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container.Content(Sets)</visible>
                 <posx>-20</posx>
                 <posy>-10</posy>
                 <width>1300</width>

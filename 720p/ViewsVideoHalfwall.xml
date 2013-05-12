@@ -166,10 +166,9 @@
                     <scroll>true</scroll>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <label>[COLOR=accent]$INFO[ListItem.Year][/COLOR] $INFO[ListItem.Duration]</label>
+                    <label>[COLOR=accent]$INFO[ListItem.Year][/COLOR] $INFO[ListItem.Duration] $LOCALIZE[12391]</label>
                     <scrollout>false</scrollout>
                     <pauseatend>2000</pauseatend>
-                    <visible>SubString(ListItem.Duration,mins)</visible>
                     <visible>!ListItem.IsFolder</visible>
                 </control>
                 <control type="label">
@@ -185,23 +184,6 @@
                     <textcolor>accent</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <visible>!IsEmpty(ListItem.Trailer) + Skin.HasSetting(trailerflag)</visible>
-                    <visible>!ListItem.IsFolder</visible>
-                </control>
-                <control type="fadelabel">
-                    <posx>0</posx>
-                    <posy>80</posy>
-                    <width>220</width>
-                    <height>30</height>
-                    <font>cirrus_30</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <scroll>true</scroll>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <label>[COLOR=accent]$INFO[ListItem.Year][/COLOR] $INFO[ListItem.Duration] mins</label>
-                    <scrollout>false</scrollout>
-                    <pauseatend>2000</pauseatend>
-                    <visible>!SubString(ListItem.Duration,mins)</visible>
                     <visible>!ListItem.IsFolder</visible>
                 </control>
                 <control type="textbox">

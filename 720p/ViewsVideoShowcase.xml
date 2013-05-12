@@ -335,14 +335,14 @@
                 <control type="fadelabel">
                     <posx>648</posx>
                     <posy>682</posy>
-                    <width>100</width>
+                    <width>130</width>
                     <height>30</height>
                     <font>cirrus_28</font>
                     <textcolor>white</textcolor>
                     <scroll>true</scroll>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <label>$INFO[ListItem.Duration] min</label>
+                    <label>$INFO[ListItem.Duration] $LOCALIZE[12391]</label>
                     <scrollout>false</scrollout>
                 </control>
                 <control type="image">

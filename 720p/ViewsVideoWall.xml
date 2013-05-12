@@ -116,28 +116,12 @@
                         <posy>55</posy>
                         <width>320</width>
                         <height>25</height>
-                        <label>[COLOR=accent]$INFO[ListItem.Year]  [/COLOR]$INFO[ListItem.Duration]</label>
+                        <label>[COLOR=accent]$INFO[ListItem.Year]  [/COLOR]$INFO[ListItem.Duration] $LOCALIZE[12391]</label>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>cirrus_24</font>
                         <textcolor>white</textcolor>
                         <shadowcolor>black</shadowcolor>
-                        <visible>SubString(ListItem.Duration,mins)</visible>
-                        <visible>!ListItem.IsFolder</visible>
-                    </control>
-                    <control type="label">
-                        <description>Year and duration Label</description>
-                        <posx>0</posx>
-                        <posy>55</posy>
-                        <width>320</width>
-                        <height>25</height>
-                        <label>[COLOR=accent]$INFO[ListItem.Year]  [/COLOR]$INFO[ListItem.Duration] mins</label>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <font>cirrus_24</font>
-                        <textcolor>white</textcolor>
-                        <shadowcolor>black</shadowcolor>
-                        <visible>!SubString(ListItem.Duration,mins)</visible>
                         <visible>!ListItem.IsFolder</visible>
                     </control>
                     <control type="label">

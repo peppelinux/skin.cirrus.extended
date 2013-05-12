@@ -585,7 +585,7 @@
             <visible>Skin.HasSetting(slimosd)</visible>
         </control>
         <control type="label">
-            <posx>0</posx>
+            <posx>-100</posx>
             <posy>75</posy>
             <width>530</width>
             <height>30</height>
