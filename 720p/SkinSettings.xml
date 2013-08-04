@@ -197,7 +197,7 @@
                         <include>MenuTitleSettings</include>
                         <label>31106</label>
                     </control>
-                    <control type="radiobutton" id="784">
+                    <control type="radiobutton" id="783">
                         <include>MenuItemSettings</include>
                         <label>$LOCALIZE[31001]</label>
                         <onclick>Skin.ToggleSetting(EnableStartupAnimation)</onclick>
@@ -3593,13 +3593,6 @@
                     <label>41009</label>
                     <onclick>Skin.ToggleSetting(clearart)</onclick>
                     <selected>Skin.HasSetting(clearart)</selected>
-                </control>
-                <control type="radiobutton" id="1030">
-                    <description>Enable jpg for TV Banner</description>
-                    <include>MenuItemSettings</include>
-                    <label>41085</label>
-                    <onclick>Skin.ToggleSetting(jpgsupport)</onclick>
-                    <selected>Skin.HasSetting(jpgsupport)</selected>
                 </control>
                 <control type="radiobutton" id="1032">
                     <description>Enable ExtraFanart TV</description>

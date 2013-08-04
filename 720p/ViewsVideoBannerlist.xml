@@ -6,7 +6,6 @@
         <control type="group">
             <visible>Control.IsVisible(570)</visible>
             <include>VisibleFadeEffect</include>
-
             <control type="image">
                 <!-- bottom bar background -->
                 <posx>0</posx>
@@ -16,7 +15,6 @@
                 <aspectratio>stretch</aspectratio>
                 <texture>rightlistbackground.png</texture>
             </control>
-
             <control type="image">
                 <!-- bottom bar background -->
                 <posx>0</posx>
@@ -27,7 +25,6 @@
                 <texture>rightlistbackground.png</texture>
                 <visible>Container.Content(Movies) | Container.Content(Episodes)</visible>
             </control>
-
             <control type="image">
                 <!-- Black gradient up the top -->
                 <posx>0</posx>
@@ -37,7 +34,6 @@
                 <texture>blackgradientvert.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
-
             <control type="image">
                 <!-- right gradient -->
                 <posx>700r</posx>
@@ -105,7 +101,6 @@
                 <preloaditems>2</preloaditems>
                 <visible>Container.Content(TVShows)</visible>
                 <itemlayout height="50" width="580">
-
                     <control type="group">
                         <!-- banner mod -->
                         <posx>0</posx>
@@ -144,7 +139,6 @@
                             <effect type="zoom" start="0" right="100" center="300,50" time="200" reversible="false"/>
                             <effect type="fade" start="0" end="100" time="100" reversible="false"/>
                         </animation>
-
                         <control type="image">
                             <!-- banner mod -->
                             <posx>0</posx>
@@ -153,26 +147,9 @@
                             <height>106</height>
                             <aspectratio>stretch</aspectratio>
                             <fadetime>200</fadetime>
-
                             <texture background="true" fallback="tvbanner.png">$INFO[ListItem.Art(banner)]</texture>
                             <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                             <bordersize>6</bordersize>
-                            <visible>Skin.HasSetting(jpgsupport)</visible>
-                            <visible>!IsEmpty(ListItem.Thumb)</visible> 
-                        </control>
-
-                        <control type="image">
-                            <!-- banner mod -->
-                            <posx>0</posx>
-                            <posy>7</posy>
-                            <width>575</width>
-                            <height>106</height>
-                            <aspectratio>stretch</aspectratio>
-                            <fadetime>200</fadetime>
-                            <texture background="true" fallback="tvbanner.png">$INFO[ListItem.Icon]</texture>
-                            <bordertexture border="6">ContentPanelvertical.png</bordertexture>
-                            <bordersize>6</bordersize>
-                            <visible>!Skin.HasSetting(jpgsupport)</visible>
                             <visible>!IsEmpty(ListItem.Thumb)</visible> 
                         </control>
                         <control type="image">
@@ -247,7 +224,6 @@
                     <visible>!Skin.HasSetting(poster) + !Skin.HasSetting(banner) + !Skin.HasSetting(widethumb)</visible>
                     <visible>!IsEmpty(ListItem.Thumb)</visible> 
                 </control>
-
                 <control type="group">
                     <description>Nextaired</description>
                     <posx>-80</posx>
@@ -259,7 +235,6 @@
                     <aligny>center</aligny>
                     <font>cirrus_24</font>
                     <scroll>true</scroll>
-
                     <visible>Skin.HasSetting(banner) + !IsEmpty(ListItem.Thumb)</visible> 
                 </control>	
                 <control type="label">
@@ -270,11 +245,9 @@
                     <height>25</height>
                     <label fallback="416">[COLOR=accent]$LOCALIZE[20416]: [/COLOR]$INFO[listitem.premiered]</label>
                     <align>left</align>
-
                     <aligny>center</aligny>
                     <font>cirrus_24</font>
                     <scroll>true</scroll>
-
                     <visible>Skin.HasSetting(banner) + !IsEmpty(ListItem.Thumb)</visible> 
                 </control>
                 <control type="label">
@@ -357,7 +330,6 @@
                 </control>
                 <!-- Poster update v1.1-->
                 <control type="group">
-
                     <visible>Skin.HasSetting(poster)</visible>
                     <control type="image">
                         <posx>-10</posx>
@@ -430,7 +402,6 @@
                     <aligny>center</aligny>
                     <font>cirrus_24</font>
                     <scroll>true</scroll>
-
                     <visible>Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb)</visible> 
                 </control>
                 <control type="image"> 
@@ -451,7 +422,6 @@
                     <height>141</height>
                     <aspectratio aligny="bottom">stretch</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
-
                     <texture background="true" fallback="landscape fallback.png">$INFO[ListItem.Art(landscape)]</texture>
                     <bordersize>8</bordersize>
                     <visible>Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb)</visible> 
@@ -473,12 +443,11 @@
                     <posy>-10</posy> 
                     <width>335</width> 
                     <height>130</height> 
-
                     <texture>$INFO[ListItem.Art(clearlogo)]</texture> 
                     <fadetime>100</fadetime> 
                     <aspectratio scalediffuse="false">keep</aspectratio> 
                     <visible>!IsEmpty(ListItem.Thumb)</visible> 
-                </control>			
+                </control>
             </control>
             <control type="scrollbar" id="60">
                 <posx>10</posx>

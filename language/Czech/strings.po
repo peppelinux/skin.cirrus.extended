@@ -804,10 +804,6 @@ msgctxt "#41084"
 msgid "Enable Landscape"
 msgstr ""
 
-msgctxt "#41085"
-msgid "Enable .jpg support for BannerView"
-msgstr ""
-
 msgctxt "#41086"
 msgid "Enable Extra Fanart for Movies"
 msgstr ""
