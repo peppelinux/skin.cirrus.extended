@@ -506,6 +506,19 @@
                     <onclick>Skin.ToggleSetting(homepageextrainfo)</onclick>
                     <selected>Skin.HasSetting(homepageextrainfo)</selected>
                 </control>
+                <control type="radiobutton" id="1018">
+                    <description>Random Fanart Backdrops</description>
+                    <width>750</width>
+                    <height>34</height>
+                    <font>cirrus_20</font>
+                    <textcolor>grey2</textcolor>
+                    <focusedcolor>white</focusedcolor>
+                    <label>$LOCALIZE[24022] $LOCALIZE[41135]</label>
+                    <onclick>Skin.ToggleSetting(homepageRandomFanart)</onclick>
+                    <selected>Skin.HasSetting(homepageRandomFanart)</selected>
+                    <texturefocus flipx="true">listwhitegradient.png</texturefocus>
+                    <texturenofocus>menuitemNF.png</texturenofocus>
+                </control>
                 <control type="radiobutton" id="1102">
                     <description>Custom Random Fanart Backdrops</description>
                     <include>MenuItemSettings</include>
