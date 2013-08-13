@@ -1254,6 +1254,60 @@
             <visible>!Stringcompare(ListItem.Label,..)</visible>
         </control>
     </include>
+    <include name="NodeFadeLabels">
+        <control type="fadelabel" id="4325">
+            <pauseatend>7500</pauseatend>
+            <width>11479</width>
+            <height>118</height>
+            <font>font10</font>
+            <textcolor>00FFFFFF</textcolor>
+            <label>$INFO[ListItem.Art(fanart)]</label>
+            <label>$INFO[ListItem.Art(extrafanart1)]</label>
+            <label>$INFO[ListItem.Art(extrafanart2)]</label>
+            <label>$INFO[ListItem.Art(extrafanart3)]</label>
+            <label>$INFO[ListItem.Art(extrafanart4)]</label>
+            <label>$INFO[ListItem.Art(extrafanart5)]</label>
+            <label>$INFO[ListItem.Art(extrafanart6)]</label>
+            <label>$INFO[ListItem.Art(extrafanart7)]</label>
+            <label>$INFO[ListItem.Art(extrafanart8)]</label>
+            <label>$INFO[ListItem.Art(extrafanart9)]</label>
+            <label>$INFO[ListItem.Art(extrafanart10)]</label>
+            <label>$INFO[ListItem.Art(extrafanart11)]</label>
+            <label>$INFO[ListItem.Art(extrafanart12)]</label>
+            <label>$INFO[ListItem.Art(extrafanart13)]</label>
+            <label>$INFO[ListItem.Art(extrafanart14)]</label>
+            <label>$INFO[ListItem.Art(extrafanart15)]</label>
+            <label>$INFO[ListItem.Art(extrafanart16)]</label>
+            <label>$INFO[ListItem.Art(extrafanart17)]</label>
+            <visible>Container.Content(TVShows) | Container.Content(Movies)</visible>
+        </control>
+        <control type="fadelabel" id="4325">
+            <pauseatend>7500</pauseatend>
+            <width>11479</width>
+            <height>118</height>
+            <font>font10</font>
+            <textcolor>00FFFFFF</textcolor>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart1)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart2)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart3)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart4)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart5)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart6)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart7)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart8)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart9)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart10)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart11)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart12)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart13)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart14)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart15)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart16)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart17)]</label>
+            <visible>Container.Content(Seasons) | Container.Content(Episodes)</visible>
+        </control>
+    </include>
+    
     <include name="BackgroundFadeLabels">
         <control type="fadelabel" id="4324">
             <pauseatend>7500</pauseatend>

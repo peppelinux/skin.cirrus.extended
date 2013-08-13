@@ -44,6 +44,15 @@
     <variable name="FanartBackgrounds">
         <value condition="System.HasAddon(script.extendedinfo) + [Container.Content(tags) | Container.Content(directors) | Container.Content(actors) | Container.Content(genres) | Container.Content(studios) | Container.Content(countries) | Container.Content(years) | Container.Content(sets) | SubString(ListItem.Path,videodb://1/7/,left)]">$INFO[Control.GetLabel(4750)]</value>
     </variable>
+    <variable name="ExtraFanartVar">
+        <value condition="[!System.HasAddon(script.extendedinfo) | IsEmpty(ListItem.Art(extrafanart1))] + [[Skin.HasSetting(ExtraFanMovies) + Container.Content(Movies)] | [Skin.HasSetting(ExtraFanTV) + [Container.Content(TVShows) | Container.Content(Seasons)]]]">$INFO[ListItem.Path,,extrafanart/]</value>
+        <value condition="[!System.HasAddon(script.extendedinfo) | IsEmpty(ListItem.Art(extrafanart1))] + Skin.HasSetting(ExtraFanTV) + Container.Content(Episodes)">$INFO[ListItem.Path,,../extrafanart/]</value>
+        <value condition="!IsEmpty(ListItem.Art(extrafanart1)) + [Skin.HasSetting(ExtraFanTV) | Skin.HasSetting(ExtraFanMovies)]">$INFO[Control.GetLabel(4325)]</value>
+        <value condition="!IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+        <value condition="Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)">special://skin/backgrounds/tv_shows.jpg</value>
+        <value condition="Container.Content(Movies)">special://skin/backgrounds/videos.jpg</value>
+        <value>special://skin/backgrounds/blackbackground.jpg</value>
+    </variable>
     <variable name="RandomBackgroundFanartVar">
         <value condition="Skin.HasSetting(homepageRandomFanart)">$INFO[Control.GetLabel(4324)]</value>
     </variable>

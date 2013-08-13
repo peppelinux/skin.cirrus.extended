@@ -3612,6 +3612,7 @@
                     <include>MenuItemSettings</include>
                     <label>41087</label>
                     <onclick>Skin.ToggleSetting(ExtraFanTV)</onclick>
+                    <!--<onclick condition="System.HasAddon(script.extendedinfo) + !Skin.HasSetting(ExtraFanTV)">RunScript(script.extendedinfo, importextrafanarttv=true)</onclick>-->
                     <selected>Skin.HasSetting(ExtraFanTV)</selected>
                 </control>		
                 <!--Changes Ending-->
@@ -3624,6 +3625,7 @@
                     <include>MenuItemSettings</include>
                     <label>41086</label>
                     <onclick>Skin.ToggleSetting(ExtraFanMovies)</onclick>
+                    <!--<onclick condition="System.HasAddon(script.extendedinfo) + !Skin.HasSetting(ExtraFanMovies)">RunScript(script.extendedinfo, importextrafanart=true)</onclick>-->
                     <selected>Skin.HasSetting(ExtraFanMovies)</selected>
                 </control>
                 <control type="radiobutton" id="1035">
