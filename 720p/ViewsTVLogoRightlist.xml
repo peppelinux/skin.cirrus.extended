@@ -14,7 +14,6 @@
             </animation>      
             <visible>Control.IsVisible(668)</visible>
             <include>VisibleFadeEffect</include>
-
             <control type="image">
                 <!-- bottom bar background -->
                 <posx>0</posx>
@@ -111,9 +110,8 @@
                         <width>300</width>
                         <height>80</height>
                         <aspectratio scalediffuse="false" aligny="center" align="right">keep</aspectratio> 
-
                         <texture background="true" fallback="fallback.png">$INFO[ListItem.Art(clearlogo)]</texture>
-                        <colordiffuse>888A8A8A</colordiffuse>							
+                        <colordiffuse>888A8A8A</colordiffuse>
                     </control>
                 </itemlayout>
                 <focusedlayout height="130" width="580">
@@ -128,7 +126,6 @@
                             <width>300</width>
                             <height>80</height>
                             <aspectratio scalediffuse="false" aligny="center" align="right">keep</aspectratio> 
-
                             <texture background="true" fallback="fallback.png">$INFO[ListItem.Art(clearlogo)]</texture>
                         </control>
                     </control>
@@ -359,18 +356,18 @@
                         <visible>Skin.HasSetting(showmoviedvd)</visible>
                     </control>
                 </control>
-                <control type="image">
-                    <posx>-10</posx>
-                    <posy>-230</posy>
-                    <width>240</width>
-                    <height>360</height>
-                    <aspectratio aligny="bottom">stretch</aspectratio>
-                    <fadetime>IconCrossfadeTime</fadetime>
-                    <texture>$INFO[ListItem.Icon]</texture>
-                    <visible>Container.Content(Movies)</visible>
-                    <bordertexture border="8">ContentPanelvertical.png</bordertexture>
-                    <bordersize>8</bordersize>
-                </control>
+                    <control type="image">
+                        <posx>-10</posx>
+                        <posy>-230</posy>
+                        <width>240</width>
+                        <height>360</height>
+                        <aspectratio aligny="bottom">stretch</aspectratio>
+                        <fadetime>IconCrossfadeTime</fadetime>
+                        <texture>$INFO[ListItem.Icon]</texture>
+                        <visible>Container.Content(Movies)</visible>
+                        <bordertexture border="8">ContentPanelvertical.png</bordertexture>
+                        <bordersize>8</bordersize>
+                    </control>
                 <!-- Poster update v1.1-->
                 <control type="group">
                     <visible>Skin.HasSetting(poster)</visible>
@@ -483,7 +480,7 @@
 
                     <texture fallback="tvbanner.png" background="true">$INFO[ListItem.Art(banner)]</texture>
                     <bordersize>8</bordersize>
-                    <visible>Skin.HasSetting(banner) + !IsEmpty(ListItem.Thumb) + Skin.HasSetting(jpgsupport) + Container.Content(tvshows)</visible>
+                    <visible>Skin.HasSetting(banner) + !IsEmpty(ListItem.Thumb) + Container.Content(tvshows)</visible>
                 </control>
                 <control type="image">
                     <posx>0</posx>
@@ -495,7 +492,7 @@
 
                     <texture background="true" fallback="tvbanner.png">$INFO[ListItem.Art(banner)]</texture>
                     <bordersize>8</bordersize>
-                    <visible>Skin.HasSetting(banner) + !IsEmpty(ListItem.Thumb) + Skin.HasSetting(jpgsupport) + Container.Content(tvshows)</visible>
+                    <visible>Skin.HasSetting(banner) + !IsEmpty(ListItem.Thumb) + Container.Content(tvshows)</visible>
                 </control>
                 <control type="image">
                     <width>161</width>

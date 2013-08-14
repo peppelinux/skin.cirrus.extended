@@ -1254,4 +1254,89 @@
             <visible>!Stringcompare(ListItem.Label,..)</visible>
         </control>
     </include>
+    <include name="NodeFadeLabels">
+        <control type="fadelabel" id="4325">
+            <pauseatend>7500</pauseatend>
+            <width>11479</width>
+            <height>118</height>
+            <font>font10</font>
+            <textcolor>00FFFFFF</textcolor>
+            <label>$INFO[ListItem.Art(fanart)]</label>
+            <label>$INFO[ListItem.Art(extrafanart1)]</label>
+            <label>$INFO[ListItem.Art(extrafanart2)]</label>
+            <label>$INFO[ListItem.Art(extrafanart3)]</label>
+            <label>$INFO[ListItem.Art(extrafanart4)]</label>
+            <label>$INFO[ListItem.Art(extrafanart5)]</label>
+            <label>$INFO[ListItem.Art(extrafanart6)]</label>
+            <label>$INFO[ListItem.Art(extrafanart7)]</label>
+            <label>$INFO[ListItem.Art(extrafanart8)]</label>
+            <label>$INFO[ListItem.Art(extrafanart9)]</label>
+            <label>$INFO[ListItem.Art(extrafanart10)]</label>
+            <label>$INFO[ListItem.Art(extrafanart11)]</label>
+            <label>$INFO[ListItem.Art(extrafanart12)]</label>
+            <label>$INFO[ListItem.Art(extrafanart13)]</label>
+            <label>$INFO[ListItem.Art(extrafanart14)]</label>
+            <label>$INFO[ListItem.Art(extrafanart15)]</label>
+            <label>$INFO[ListItem.Art(extrafanart16)]</label>
+            <label>$INFO[ListItem.Art(extrafanart17)]</label>
+            <visible>Container.Content(TVShows) | Container.Content(Movies)</visible>
+        </control>
+        <control type="fadelabel" id="4325">
+            <pauseatend>7500</pauseatend>
+            <width>11479</width>
+            <height>118</height>
+            <font>font10</font>
+            <textcolor>00FFFFFF</textcolor>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart1)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart2)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart3)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart4)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart5)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart6)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart7)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart8)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart9)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart10)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart11)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart12)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart13)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart14)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart15)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart16)]</label>
+            <label>$INFO[ListItem.Art(tvshow.extrafanart17)]</label>
+            <visible>Container.Content(Seasons) | Container.Content(Episodes)</visible>
+        </control>
+    </include>
+    
+    <include name="BackgroundFadeLabels">
+        <control type="fadelabel" id="4324">
+            <pauseatend>7500</pauseatend>
+            <width>11479</width>
+            <height>118</height>
+            <font>font10</font>
+            <textcolor>00FFFFFF</textcolor>
+            <label>$INFO[Window(Home).Property(RandomMovie.1.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(RandomMovie.2.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(RandomMovie.3.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(RandomMovie.4.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(RandomMovie.5.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(RandomMovie.6.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(RandomMovie.7.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(RandomMovie.8.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(RandomMovie.9.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(RandomMovie.10.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(RandomMovie.11.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(RandomMovie.12.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(RandomMovie.13.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(RandomMovie.14.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(RandomMovie.15.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(RandomMovie.16.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(RandomMovie.17.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(RandomMovie.18.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(RandomMovie.19.Art(fanart))]</label>
+            <label>$INFO[Window(Home).Property(RandomMovie.20.Art(fanart))]</label>
+        </control>
+    </include>
+    
+    
 </includes>

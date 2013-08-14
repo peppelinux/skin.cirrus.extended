@@ -435,18 +435,7 @@
                     <fadetime>200</fadetime>
                     <texture fallback="tvbanner.png" background="true">$INFO[ListItem.Art(banner)]</texture>
                     <bordersize>8</bordersize>
-                    <visible>Skin.HasSetting(banner) + !IsEmpty(ListItem.Thumb) + Skin.HasSetting(jpgsupport)</visible>
-                </control>
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>14</posy>
-                    <width>514</width>
-                    <height>95</height>
-                    <aspectratio>stretch</aspectratio>
-                    <fadetime>200</fadetime>
-                    <texture background="true" fallback="tvbanner.png">$INFO[ListItem.Icon]</texture>
-                    <bordersize>8</bordersize>
-                    <visible>Skin.HasSetting(banner) + !IsEmpty(ListItem.Thumb) + !Skin.HasSetting(jpgsupport)</visible>
+                    <visible>Skin.HasSetting(banner) + !IsEmpty(ListItem.Thumb)</visible>
                 </control>
                 <control type="label">
                     <description>Episodes</description>

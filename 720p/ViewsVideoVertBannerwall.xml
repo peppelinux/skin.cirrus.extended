@@ -55,7 +55,6 @@
                             <texture background="true" fallback="tvbanner.png">$INFO[ListItem.Art(banner)]</texture>
                             <bordertexture border="8">ThumbBorder.png</bordertexture>
                             <bordersize>8</bordersize>
-                            <visible>Skin.HasSetting(jpgsupport)</visible>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -65,18 +64,6 @@
                             <aspectratio>stretch</aspectratio>
                             <texture>black-back3.png</texture>
                             <colordiffuse>AAFFFFFF</colordiffuse>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>575</width>
-                            <height>106</height>
-                            <aspectratio>stretch</aspectratio>
-                            <fadetime>200</fadetime>
-                            <texture background="true" fallback="tvbanner.png">$INFO[ListItem.Icon]</texture>
-                            <bordertexture border="8">ThumbBorder.png</bordertexture>
-                            <bordersize>8</bordersize>
-                            <visible>!Skin.HasSetting(jpgsupport)</visible>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -104,20 +91,6 @@
                             <texture background="true" fallback="tvbanner.png">$INFO[ListItem.Art(banner)]</texture>
                             <bordertexture border="8">ThumbBorder.png</bordertexture>
                             <bordersize>8</bordersize>
-                            <visible>Skin.HasSetting(jpgsupport)</visible>
-                        </control>
-                        <control type="image">
-                            <!-- banner mod -->
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>575</width>
-                            <height>106</height>
-                            <aspectratio>stretch</aspectratio>
-                            <fadetime>200</fadetime>
-                            <texture background="true" fallback="tvbanner.png">$INFO[ListItem.Icon]</texture>
-                            <bordertexture border="8">ThumbBorder.png</bordertexture>
-                            <bordersize>8</bordersize>
-                            <visible>!Skin.HasSetting(jpgsupport)</visible>
                         </control>
                     </control>
                 </focusedlayout>

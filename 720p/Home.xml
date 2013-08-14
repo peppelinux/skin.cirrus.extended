@@ -1,9 +1,8 @@
 <window id="0">
     <defaultcontrol always="true">9000</defaultcontrol>
     <onload>ClearProperty(DontRunTVShowScripts,Home)</onload>
-    <allowoverlay>yes</allowoverlay>  
+    <allowoverlay>yes</allowoverlay>
     <controls>
-
         <!-- Changes Begin Butchabay CEV2 2.05 -->
         <!-- NORMAL BACKDROPS -->
         <control type="multiimage">
@@ -21,20 +20,20 @@
             <animation effect="slide" end="40,0" delay="10000" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
         </control>
         <!-- RANDOM FANART BACKDROPS -->
-        <!--<control type="multiimage">
+        <include>BackgroundFadeLabels</include>
+        <control type="multiimage">
             <visible>Skin.HasSetting(homepageRandomFanart)</visible>
             <posx>0</posx>
             <posy>0</posy>
             <width>1280</width>
             <height>720</height>
-            <imagepath background="true">special://profile/Thumbnails/Video/Fanart</imagepath>
+            <imagepath background="true">$VAR[RandomBackgroundFanartVar]</imagepath>
             <timeperimage>8000</timeperimage>
-            <randomize>true</randomize>
             <fadetime>500</fadetime>
             <animation effect="zoom" start="110" end="135" center="auto" time="15000" tween="cubic" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
             <animation effect="slide" end="-20,-20" delay="4000" time="8000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
             <animation effect="slide" end="40,0" delay="10000" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
-        </control>-->
+        </control>
         <control type="multiimage">
             <visible>Skin.HasSetting(Menu_RandomCustom1)</visible>
             <posx>0</posx>
