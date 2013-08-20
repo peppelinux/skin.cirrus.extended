@@ -140,17 +140,14 @@
 		    <visible>Control.IsVisible(721)</visible>
 		</control>
         <!-- Extrathumbs für Movies -->
-		<control type="multiimage">
+		<control type="image">
 			<posx>75</posx>
 			<posy>90</posy>
 			<width>185</width>
 			<height>95</height>
 			<aspectratio>stretch</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
-
-
-
-			<imagepath background="true">special://userdata/extras/videofanarts/$INFO[ListItem.FolderName]/extrathumbs/thumb2.jpg]</imagepath>
+			<texture background="true">$INFO[ListItem.Art(extrathumb2)]</texture>
 			<bordersize>8</bordersize>
 			<visible>!Container(721).OnNext + !Container(721).OnPrevious</visible>
 			<animation effect="slide" start="0,-100" end="0,0" easing="out" tween="back" time="1200" delay="900" reversible="false">Visible</animation>
@@ -167,10 +164,7 @@
 			<height>93</height>
 			<aspectratio>stretch</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
-
-
-
-			<imagepath background="true">special://userdata/extras/videofanarts/$INFO[ListItem.FolderName]/extrathumbs/thumb3.jpg]</imagepath>
+			<texture background="true">$INFO[ListItem.Art(extrathumb3)]</texture>
 			<bordersize>8</bordersize>
 			<visible>!Container(721).OnNext + !Container(721).OnPrevious</visible>
 			<animation effect="slide" start="0,-100" end="0,0" easing="out" tween="back" time="1200" delay="900" reversible="false">Visible</animation>
@@ -182,8 +176,6 @@
 			<visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>
 		</control> 
 		<!-- Extrathumbs für Movies Ende -->
-		
-
         <control type="image">
             <!-- Fenster Trailer -->
 			<posx>43</posx>
