@@ -62,6 +62,16 @@
                 <visible>!Container.Content(movies)</visible>
             </control>
             <include condition="System.HasAddon(script.extendedinfo)">FanartFadeLabels</include>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1280</width>
+                <height>720</height>
+                <texture background="true">$VAR[TVFanartBackground]</texture>
+                <fadetime>FanartCrossfadeTime</fadetime>
+                <include>global_kenburns_fanart</include>
+                <visible>!Skin.HasSetting(VideoLibraryTVFanart)</visible>
+            </control>
             <!-- ExtraFanart Mod -->
             <include condition="System.HasAddon(script.extendedinfo)">NodeFadeLabels</include>
             <control type="multiimage">

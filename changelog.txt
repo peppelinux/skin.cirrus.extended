@@ -1,3 +1,11 @@
+[B]3.0.46[/B] (20.08.2013)
+- Fanart View for Movie Sets
+- few bug-/layout-fixes
+- Startup animation configurable
+- deprecated settings removed
+- Random Fanart Backdrops on Home re-added
+- extrafanart support switched to script.extendedinfo (optional, "old" local file still supported)
+
 [B]3.0.45[/B] (05.04.2013)
 - Bugfix for loading smartplylists at startup
 - Optimized png textures to save some megabytes 
