@@ -1293,10 +1293,6 @@ msgctxt "#41249"
 msgid "Enable Now Playing Video Info"
 msgstr "Habilitar información de Reproduciendo Ahora"
 
-msgctxt "#41250"
-msgid "Release Years"
-msgstr "Año de estreno"
-
 msgctxt "#41253"
 msgid "Enable TV Tunes"
 msgstr "Habilitar TV Tunes"

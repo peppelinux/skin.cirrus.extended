@@ -1082,6 +1082,7 @@ msgstr ""
 msgctxt "#41135"
 msgid "Random Fanart Backdrops"
 msgstr ""
+
 msgctxt "#41136"
 msgid "Hide Video Window Border"
 msgstr ""
@@ -1479,10 +1480,6 @@ msgstr ""
 
 msgctxt "#41249"
 msgid "Enable Now Playing Video Info"
-msgstr ""
-
-msgctxt "#41250"
-msgid "Release Years"
 msgstr ""
 
 msgctxt "#41253"
