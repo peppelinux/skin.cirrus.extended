@@ -1,3 +1,8 @@
+[B]3.1.0[/B] (02.10.2013)
+- initial changes for Gotham
+- Set minimum GUI version to 5.0.0
+
+
 [B]3.0.46[/B] (20.08.2013)
 - Fanart View for Movie Sets
 - few bug-/layout-fixes

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="skin.cirrus.extended.v3" name="Cirrus Extended V3" version="3.0.46" provider-name="butchabay-Paradix-YoHan">
     <requires>
-        <import addon="xbmc.gui" version="4.0.0"/>
+        <import addon="xbmc.gui" version="5.0.0"/>
         <import addon="service.skin.widgets" version="0.0.2"/>
         <import addon="script.artistslideshow" version="1.5.0"/>
         <import addon="script.artwork.downloader" version="12.0.14"/>

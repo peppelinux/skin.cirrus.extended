@@ -39,6 +39,10 @@ msgctxt "#31001"
 msgid "Enable startup animation"
 msgstr ""
 
+msgctxt "#31002"
+msgid "Settings Options"
+msgstr ""
+
 msgctxt "#31003"
 msgid "Power Options"
 msgstr ""
