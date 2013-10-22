@@ -1,6 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- pop-up menu for cirrus extended v2 -->
 <!-- mod by el_Paraguayo -->
-
 <window id="1121" type="dialog">
     <defaultcontrol>9021</defaultcontrol>
 

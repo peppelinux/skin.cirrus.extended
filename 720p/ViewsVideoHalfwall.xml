@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <!-- ===================================================================================== -->
     <!-- ============================== HALF WALL VIEW ID 514 ================================ -->
@@ -5,12 +6,12 @@
     <include name="HalfWallView">
         <control type="group">
             <animation type="WindowOpen" reversible="false">
-                <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
-                <effect type="fade" start="0" end="100" time="300" />
+                <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
+                <effect type="fade" start="0" end="100" time="300"/>
             </animation>
             <animation type="WindowClose" reversible="false">
-                <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
-                <effect type="fade" start="100" end="0" time="300" />
+                <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300"/>
+                <effect type="fade" start="100" end="0" time="300"/>
             </animation>      
             <visible>Control.IsVisible(514)</visible>
             <control type="image">
@@ -34,12 +35,12 @@
 
             <control type="panel" id="514">
                 <animation type="WindowOpen" reversible="false">
-                    <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
-                    <effect type="fade" start="0" end="100" time="300" />
+                    <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
+                    <effect type="fade" start="0" end="100" time="300"/>
                 </animation>
                 <animation type="WindowClose" reversible="false">
-                    <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
-                    <effect type="fade" start="100" end="0" time="300" />
+                    <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300"/>
+                    <effect type="fade" start="100" end="0" time="300"/>
                 </animation>      
                 <posx>670</posx>
                 <posy>50</posy>
@@ -232,12 +233,12 @@
                 <width>640</width>
                 <height>360</height>
                 <animation type="WindowOpen" reversible="false">
-                    <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
-                    <effect type="fade" start="0" end="100" time="300" />
+                    <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
+                    <effect type="fade" start="0" end="100" time="300"/>
                 </animation>
                 <animation type="WindowClose" reversible="false">
-                    <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
-                    <effect type="fade" start="100" end="0" time="300" />
+                    <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300"/>
+                    <effect type="fade" start="100" end="0" time="300"/>
                 </animation>      
                 <control type="image">
                     <posx>10</posx>

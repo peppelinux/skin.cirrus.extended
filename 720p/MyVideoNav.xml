@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="25">
     <defaultcontrol always="true">55</defaultcontrol>
     <onload condition="Skin.HasSetting(tv_theme) + System.HasAddon(script.tvtunes) + IsEmpty(Window(Home).Property(DontRunTVShowScripts))">XBMC.RunScript(script.tvtunes,backend=True)</onload>
@@ -79,7 +80,7 @@
                 <posy>0</posy>
                 <width>1280</width>
                 <height>720</height>
-                <imagepath background="true"fallback="special://skin/backgrounds/videos.jpg">$VAR[ExtraFanartVar]</imagepath>
+                <imagepath background="true" fallback="special://skin/backgrounds/videos.jpg">$VAR[ExtraFanartVar]</imagepath>
                 <timeperimage>7000</timeperimage>
                 <randomize>false</randomize>
                 <fadetime>FanartCrossfadeTime</fadetime>

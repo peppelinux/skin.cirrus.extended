@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="3003">
     <defaultcontrol always="true">9000</defaultcontrol>
     <allowoverlay>no</allowoverlay>
@@ -14,8 +15,8 @@
             <ondown>9000</ondown>
             <viewtype label="Movie">list</viewtype>
             <pagecontrol>-</pagecontrol>
-            <itemlayout height="1" width="1" />
-            <focusedlayout height="1" width="1" />
+            <itemlayout height="1" width="1"/>
+            <focusedlayout height="1" width="1"/>
         </control>
 
         <control type="group">
@@ -157,12 +158,12 @@
                 <!-- ====== MOVIES SECTION ======== -->
                 <control type="group">
                     <animation type="WindowOpen" reversible="false">
-                        <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
-                        <effect type="fade" start="0" end="100" time="300" />
+                        <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
+                        <effect type="fade" start="0" end="100" time="300"/>
                     </animation>
                     <animation type="WindowClose" reversible="false">
-                        <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
-                        <effect type="fade" start="100" end="0" time="300" />
+                        <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300"/>
+                        <effect type="fade" start="100" end="0" time="300"/>
                     </animation>      
                     <posy>50</posy>
                     <posx>20</posx>
