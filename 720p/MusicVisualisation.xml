@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="2006">
     <defaultcontrol always="true">999</defaultcontrol>
     <allowoverlay>no</allowoverlay>
@@ -1074,7 +1075,7 @@
                     <visible>Skin.HasSetting(zombie_osd)</visible>
                 </control>	
                 <control type="label">
-                    <posx>890</posx>
+                    <right>890</right>
                     <posy>-595</posy>
                     <width>350</width>
                     <height>100</height>
@@ -1088,7 +1089,7 @@
                     <visible>Skin.HasSetting(zombie_osd)</visible>
                 </control>			
                 <control type="label">
-                    <posx>890</posx>
+                    <right>890</right>
                     <posy>-575</posy>
                     <width>350</width>
                     <height>100</height>
@@ -1102,7 +1103,7 @@
                     <visible>Skin.HasSetting(zombie_osd)</visible>
                 </control>
                 <control type="label">
-                    <posx>890</posx>
+                    <right>890</right>
                     <posy>-555</posy>
                     <width>350</width>
                     <height>100</height>
@@ -1143,7 +1144,7 @@
                     <visible>Skin.HasSetting(cdart) + !Skin.HasSetting(zombie_osd)</visible>
                 </control>
                 <control type="label">
-                    <posx>890</posx>
+                    <right>890</right>
                     <posy>-5</posy>
                     <width>350</width>
                     <height>100</height>
@@ -1157,7 +1158,7 @@
                     <visible>!Skin.HasSetting(zombie_osd)</visible>
                 </control>
                 <control type="label">
-                    <posx>890</posx>
+                    <right>890</right>
                     <posy>65</posy>
                     <width>370</width>
                     <height>25</height>
@@ -1170,7 +1171,7 @@
                     <visible>!Skin.HasSetting(zombie_osd)</visible>
                 </control>
                 <control type="label">
-                    <posx>890</posx>
+                    <right>890</right>
                     <posy>100</posy>
                     <width>490</width>
                     <height>20</height>
@@ -1229,7 +1230,7 @@
                 <shadowcolor>black</shadowcolor>
             </control>
             <control type="label">
-                <posx>760</posx>
+                <right>760</right>
                 <posy>20</posy>
                 <width>360</width>
                 <height>25</height>
@@ -1241,7 +1242,7 @@
                 <shadowcolor>black</shadowcolor>
             </control>
             <control type="label">
-                <posx>760</posx>
+                <right>760</right>
                 <posy>50</posy>
                 <width>right</width>
                 <height>25</height>
@@ -1254,7 +1255,7 @@
                 <visible>Visualisation.Locked</visible>
             </control>
             <control type="label">
-                <posx>760</posx>
+                <right>760</right>
                 <posy>50</posy>
                 <width>360</width>
                 <height>25</height>
@@ -1267,7 +1268,7 @@
                 <visible>!Visualisation.Locked</visible>
             </control>
             <control type="label">
-                <posx>760</posx>
+                <right>760</right>
                 <posy>105</posy>
                 <width>360</width>
                 <height>25</height>
@@ -1279,7 +1280,7 @@
                 <shadowcolor>black</shadowcolor>
             </control>
             <control type="label">
-                <posx>760</posx>
+                <right>760</right>
                 <posy>135</posy>
                 <width>360</width>
                 <height>25</height>

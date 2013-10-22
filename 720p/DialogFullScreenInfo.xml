@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="142">
     <defaultcontrol always="true">603</defaultcontrol>
     <controls>
@@ -678,7 +679,7 @@
         </control>
         <control type="label">
             <description>Current Video End Time</description>
-            <posx>510</posx>
+            <right>510</right>
             <posy>100</posy>
             <width>510</width>
             <height>20</height>
@@ -692,7 +693,7 @@
         </control>
         <control type="label">
             <description>Current Video End Time</description>
-            <posx>510</posx>
+            <right>510</right>
             <posy>300</posy>
             <width>510</width>
             <height>20</height>
@@ -707,7 +708,7 @@
         </control>
         <control type="label">
             <description>System Time</description>
-            <posx>510</posx>
+            <right>510</right>
             <posy>80</posy>
             <width>510</width>
             <height>20</height>
@@ -722,7 +723,7 @@
         </control>
         <control type="label">
             <description>System Time</description>
-            <posx>510</posx>
+            <right>510</right>
             <posy>-20</posy>
             <width>510</width>
             <height>20</height>
@@ -1451,7 +1452,7 @@
     </control>
     <control type="label">
         <description>Current Video End Time</description>
-        <posx>510</posx>
+        <right>510</right>
         <posy>100</posy>
         <width>510</width>
         <height>20</height>
@@ -1465,7 +1466,7 @@
     </control>
     <control type="label">
         <description>Current Video End Time</description>
-        <posx>510</posx>
+        <right>510</right>
         <posy>300</posy>
         <width>510</width>
         <height>20</height>
@@ -1480,7 +1481,7 @@
     </control>
     <control type="label">
         <description>System Time</description>
-        <posx>510</posx>
+        <right>510</right>
         <posy>80</posy>
         <width>510</width>
         <height>20</height>
@@ -1495,7 +1496,7 @@
     </control>
     <control type="label">
         <description>System Time</description>
-        <posx>510</posx>
+        <right>510</right>
         <posy>-20</posy>
         <width>510</width>
         <height>20</height>
@@ -2224,7 +2225,7 @@
     </control>
     <control type="label">
         <description>Current Video End Time</description>
-        <posx>510</posx>
+        <right>510</right>
         <posy>100</posy>
         <width>510</width>
         <height>20</height>
@@ -2238,7 +2239,7 @@
     </control>
     <control type="label">
         <description>Current Video End Time</description>
-        <posx>510</posx>
+        <right>510</right>
         <posy>300</posy>
         <width>510</width>
         <height>20</height>
@@ -2253,7 +2254,7 @@
     </control>
     <control type="label">
         <description>System Time</description>
-        <posx>510</posx>
+        <right>510</right>
         <posy>80</posy>
         <width>510</width>
         <height>20</height>
@@ -2268,7 +2269,7 @@
     </control>
     <control type="label">
         <description>System Time</description>
-        <posx>510</posx>
+        <right>510</right>
         <posy>-20</posy>
         <width>510</width>
         <height>20</height>
@@ -3000,7 +3001,7 @@
     </control>
     <control type="label">
         <description>Current Video End Time</description>
-        <posx>510</posx>
+        <right>510</right>
         <posy>100</posy>
         <width>510</width>
         <height>20</height>
@@ -3014,7 +3015,7 @@
     </control>
     <control type="label">
         <description>Current Video End Time</description>
-        <posx>510</posx>
+        <right>510</right>
         <posy>300</posy>
         <width>510</width>
         <height>20</height>
@@ -3029,7 +3030,7 @@
     </control>
     <control type="label">
         <description>System Time</description>
-        <posx>510</posx>
+        <right>510</right>
         <posy>80</posy>
         <width>510</width>
         <height>20</height>
@@ -3044,7 +3045,7 @@
     </control>
     <control type="label">
         <description>System Time</description>
-        <posx>510</posx>
+        <right>510</right>
         <posy>-20</posy>
         <width>510</width>
         <height>20</height>
@@ -3774,7 +3775,7 @@
     </control>
     <control type="label">
         <description>Current Video End Time</description>
-        <posx>510</posx>
+        <right>510</right>
         <posy>100</posy>
         <width>510</width>
         <height>20</height>
@@ -3788,7 +3789,7 @@
     </control>
     <control type="label">
         <description>Current Video End Time</description>
-        <posx>510</posx>
+        <right>510</right>
         <posy>300</posy>
         <width>510</width>
         <height>20</height>
@@ -3803,7 +3804,7 @@
     </control>
     <control type="label">
         <description>System Time</description>
-        <posx>510</posx>
+        <right>510</right>
         <posy>80</posy>
         <width>510</width>
         <height>20</height>
@@ -3818,7 +3819,7 @@
     </control>
     <control type="label">
         <description>System Time</description>
-        <posx>510</posx>
+        <right>510</right>
         <posy>-20</posy>
         <width>510</width>
         <height>20</height>

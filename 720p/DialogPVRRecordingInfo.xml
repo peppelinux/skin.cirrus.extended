@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="602">
     <defaultcontrol always="true">10</defaultcontrol>
     <controls>
@@ -43,7 +44,7 @@
                 <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
                 <control type="label" id="411">
                     <description>header label</description>
-                    <posx>660</posx>
+                    <right>660</right>
                     <posy>40</posy>
                     <width>630</width>
                     <height>30</height>
@@ -56,7 +57,7 @@
                 </control>
                 <control type="label">
                     <description>Title label</description>
-                    <posx>660</posx>
+                    <right>660</right>
                     <posy>70</posy>
                     <width>630</width>
                     <height>30</height>
@@ -72,7 +73,7 @@
                     <posy>140</posy>
                     <control type="label">
                         <description>Start Date</description>
-                        <posx>190</posx>
+                        <right>190</right>
                         <posy>0</posy>
                         <width>160</width>
                         <height>25</height>
@@ -96,7 +97,7 @@
                     </control>
                     <control type="label">
                         <description>Start time</description>
-                        <posx>190</posx>
+                        <right>190</right>
                         <posy>35</posy>
                         <width>160</width>
                         <height>25</height>
@@ -120,7 +121,7 @@
                     </control>
                     <control type="label">
                         <description>Channel Name</description>
-                        <posx>190</posx>
+                        <right>190</right>
                         <posy>70</posy>
                         <width>160</width>
                         <height>25</height>
@@ -144,7 +145,7 @@
                     </control>
                     <control type="label">
                         <description>Duration</description>
-                        <posx>190</posx>
+                        <right>190</right>
                         <posy>105</posy>
                         <width>160</width>
                         <height>25</height>
@@ -166,7 +167,7 @@
                     </control>
                     <control type="label">
                         <description>Genre</description>
-                        <posx>190</posx>
+                        <right>190</right>
                         <posy>140</posy>
                         <width>160</width>
                         <height>25</height>
@@ -200,7 +201,7 @@
                     </control>
                 </control>
                 <control type="label">
-                    <posx>570</posx>
+                    <right>570</right>
                     <posy>370</posy>
                     <width>400</width>
                     <height>30</height>

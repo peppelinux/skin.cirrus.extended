@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="2901">
     <defaultcontrol always="true">602</defaultcontrol>
     <controls>
@@ -305,7 +306,7 @@
                 <shadowcolor>black</shadowcolor>
             </control>
             <control type="label">
-                <posx>1260</posx>
+                <right>1260</right>
                 <posy>65</posy>
                 <width>460</width>
                 <height>25</height>

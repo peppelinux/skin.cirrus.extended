@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="146">
     <defaultcontrol always="true">9000</defaultcontrol>
     <coordinates>
@@ -155,7 +156,7 @@
                     <visible>!IsEmpty(ListItem.Property(Addon.Disclaimer))</visible>
                     <control type="label">
                         <description>Description Page Count</description>
-                        <posx>600</posx>
+                        <right>600</right>
                         <posy>170</posy>
                         <width>300</width>
                         <height>25</height>
@@ -221,7 +222,7 @@
                     <visible>IsEmpty(ListItem.Property(Addon.Disclaimer))</visible>
                     <control type="label">
                         <description>Description Page Count</description>
-                        <posx>600</posx>
+                        <right>600</right>
                         <posy>170</posy>
                         <width>300</width>
                         <height>25</height>
@@ -263,7 +264,7 @@
             <control type="group" id="9000">
                 <posx>35</posx>
                 <posy>280</posy>
-                <control type="button" id ="6">
+                <control type="button" id="6">
                     <description>Enable Addon button</description>
                     <posx>0</posx>
                     <posy>10</posy>

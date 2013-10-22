@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="7">
     <defaultcontrol always="true">95</defaultcontrol>
     <allowoverlay>no</allowoverlay>
@@ -8,12 +9,12 @@
             <posx>90</posx>
             <posy>60</posy>
             <animation type="WindowOpen" reversible="false">
-                <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
-                <effect type="fade" start="0" end="100" time="300" />
+                <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
+                <effect type="fade" start="0" end="100" time="300"/>
             </animation>
             <animation type="WindowClose" reversible="false">
-                <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
-                <effect type="fade" start="100" end="0" time="300" />
+                <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300"/>
+                <effect type="fade" start="100" end="0" time="300"/>
             </animation>      
             <control type="image">
                 <posx>-90</posx>
@@ -255,7 +256,7 @@
                 </control>
                 <control type="label" id="52">
                     <description>XBMC XBE BUILD Version</description>
-                    <posx>750</posx>
+                    <right>750</right>
                     <posy>400</posy>
                     <width>700</width>
                     <label>144</label>
@@ -266,7 +267,7 @@
                 </control>
                 <control type="label" id="52">
                     <description>CPU Text</description>
-                    <posx>420</posx>
+                    <right>420</right>
                     <posy>450</posy>
                     <width>350</width>
                     <height>25</height>
@@ -287,7 +288,7 @@
                 </control>
                 <control type="label" id="52">
                     <description>Memory Text</description>
-                    <posx>420</posx>
+                    <right>420</right>
                     <posy>480</posy>
                     <width>350</width>
                     <height>25</height>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="2003">
     <defaultcontrol always="true">8</defaultcontrol>
     <allowoverlay>no</allowoverlay>
@@ -149,12 +150,12 @@
                 <!-- ====== MOVIES SECTION ======== -->
                 <control type="group">
                     <animation type="WindowOpen" reversible="false">
-                        <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
-                        <effect type="fade" start="0" end="100" time="300" />
+                        <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
+                        <effect type="fade" start="0" end="100" time="300"/>
                     </animation>
                     <animation type="WindowClose" reversible="false">
-                        <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
-                        <effect type="fade" start="100" end="0" time="300" />
+                        <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300"/>
+                        <effect type="fade" start="100" end="0" time="300"/>
                     </animation>      
                     <visible>[!container.content(tvshows) + !container.content(episodes) + !container.content(musicvideos)] + !Control.HasFocus(12)</visible>
                     <posy>50</posy>
@@ -330,7 +331,7 @@
                         <!-- Changes Begin Butchaby MOD 1.2.0 -->
                         <control type="label">
                             <visible>Skin.HasSetting(pathininfo)</visible>
-                            <posx>125</posx>
+                            <right>125</right>
                             <posy>265</posy>
                             <width>50</width>
                             <height>30</height>
@@ -465,12 +466,12 @@
                 <!-- ============= TV SHOWS ============= -->
                 <control type="group">
                     <animation type="WindowOpen" reversible="false">
-                        <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
-                        <effect type="fade" start="0" end="100" time="300" />
+                        <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
+                        <effect type="fade" start="0" end="100" time="300"/>
                     </animation>
                     <animation type="WindowClose" reversible="false">
-                        <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
-                        <effect type="fade" start="100" end="0" time="300" />
+                        <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300"/>
+                        <effect type="fade" start="100" end="0" time="300"/>
                     </animation>      
                     <visible>Container.Content(TVShows) + !Control.HasFocus(12)</visible>
                     <posy>50</posy>
@@ -594,7 +595,7 @@
                         </control>
                         <control type="label">
                             <visible>Skin.HasSetting(pathininfo)</visible>
-                            <posx>125</posx>
+                            <right>125</right>
                             <posy>265</posy>
                             <width>50</width>
                             <height>30</height>
@@ -734,12 +735,12 @@
                 <!-- ============ EPISODES LEVEL ============ -->
                 <control type="group">
                     <animation type="WindowOpen" reversible="false">
-                        <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
-                        <effect type="fade" start="0" end="100" time="300" />
+                        <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
+                        <effect type="fade" start="0" end="100" time="300"/>
                     </animation>
                     <animation type="WindowClose" reversible="false">
-                        <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
-                        <effect type="fade" start="100" end="0" time="300" />
+                        <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300"/>
+                        <effect type="fade" start="100" end="0" time="300"/>
                     </animation>      
                     <visible>container.content(episodes) + !Control.HasFocus(12)</visible>
                     <posy>50</posy>
@@ -883,7 +884,7 @@
                         </control>
                         <control type="label">
                             <visible>Skin.HasSetting(pathininfo)</visible>
-                            <posx>125</posx>
+                            <right>125</right>
                             <posy>265</posy>
                             <width>50</width>
                             <height>30</height>

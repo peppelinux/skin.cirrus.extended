@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="Weather36HourForcast">
         <control type="group">
@@ -93,7 +94,7 @@
                         <label>[COLOR=grey2]$INFO[Window.Property(36Hour.1.TemperatureHeading)][CR][/COLOR]$INFO[Window.Property(36Hour.1.Temperature),[B] ,[/B]]</label>
                     </control>
                     <control type="label">
-                        <posx>590</posx>
+                        <right>590</right>
                         <posy>60</posy>
                         <width>390</width>
                         <height>20</height>
@@ -172,7 +173,7 @@
                         <label>[COLOR=grey2]$INFO[Window.Property(36Hour.2.TemperatureHeading)][CR][/COLOR]$INFO[Window.Property(36Hour.2.Temperature),[B] ,[/B]]</label>
                     </control>
                     <control type="label">
-                        <posx>590</posx>
+                        <right>590</right>
                         <posy>60</posy>
                         <width>390</width>
                         <height>20</height>
@@ -251,7 +252,7 @@
                         <label>[COLOR=grey2]$INFO[Window.Property(36Hour.3.TemperatureHeading)][CR][/COLOR]$INFO[Window.Property(36Hour.3.Temperature),[B] ,[/B]]</label>
                     </control>
                     <control type="label">
-                        <posx>590</posx>
+                        <right>590</right>
                         <posy>60</posy>
                         <width>390</width>
                         <height>20</height>

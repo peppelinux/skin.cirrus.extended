@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="503">
     <defaultcontrol allways="true">6</defaultcontrol>
     <allowoverlay>no</allowoverlay>
@@ -255,7 +256,7 @@
                 <texture flipx="true">homesubbackground.png</texture>
             </control>
             <control type="label">
-                <posx>440</posx>
+                <right>440</right>
                 <posy>70</posy>
                 <width>410</width>
                 <height>30</height>
@@ -268,7 +269,7 @@
             </control>
             <control type="label">
                 <description>Page Count Label</description>
-                <posx>440</posx>
+                <right>440</right>
                 <posy>38r</posy>
                 <width>300</width>
                 <height>20</height>
@@ -382,4 +383,3 @@
         </control>
     </controls>
 </window>
-

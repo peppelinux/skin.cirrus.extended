@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">50</defaultcontrol>
     <allowoverlay>no</allowoverlay>
@@ -44,12 +45,12 @@
         </control>
         <control type="group">
             <animation type="WindowOpen" reversible="false">
-                <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
-                <effect type="fade" start="0" end="100" time="300" />
+                <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
+                <effect type="fade" start="0" end="100" time="300"/>
             </animation>
             <animation type="WindowClose" reversible="false">
-                <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
-                <effect type="fade" start="100" end="0" time="300" />
+                <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300"/>
+                <effect type="fade" start="100" end="0" time="300"/>
             </animation>
             <include>VisibleFadeEffect</include>
             <control type="image">
@@ -104,7 +105,7 @@
                 </control>        
                 <control type="label">
                     <description>current temp Value</description>
-                    <posx>165</posx>
+                    <right>165</right>
                     <posy>125</posy>
                     <width>200</width>
                     <height>40</height>
@@ -220,7 +221,7 @@
                     </control>
                     <control type="label">
                         <description>Sunset label</description>
-                        <posx>480</posx>
+                        <right>480</right>
                         <posy>540</posy>
                         <width>300</width>
                         <height>35</height>
@@ -599,7 +600,7 @@
                 <control type="label">
                     <animation effect="slide" start="0,0" end="-90,0" time="0" condition="system.getbool(input.enablemouse)">Conditional</animation>
                     <description>number of files/pages</description>
-                    <posx>660</posx>
+                    <right>660</right>
                     <posy>620</posy>
                     <width>570</width>
                     <font>font12</font>

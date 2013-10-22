@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
     <defaultcontrol>201</defaultcontrol>
     <coordinates>
@@ -50,7 +51,7 @@
             </control>
             <control type="label" id="30">
                 <description>Version label</description>
-                <posx>790</posx>
+                <right>790</right>
                 <posy>23</posy>
                 <width>300</width>
                 <height>30</height>

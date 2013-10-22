@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="135">
     <defaultcontrol always="true">10</defaultcontrol>
     <coordinates>
@@ -64,7 +65,7 @@
             </control>
             <control type="label">
                 <description>Artist Title</description>
-                <posx>400</posx>
+                <right>400</right>
                 <posy>140</posy>
                 <width>130</width>
                 <height>25</height>
@@ -88,7 +89,7 @@
             </control>
             <control type="label">
                 <description>Album Title</description>
-                <posx>400</posx>
+                <right>400</right>
                 <posy>175</posy>
                 <width>130</width>
                 <height>25</height>
@@ -112,7 +113,7 @@
             </control>
             <control type="label">
                 <description>Genre Title</description>
-                <posx>400</posx>
+                <right>400</right>
                 <posy>210</posy>
                 <width>130</width>
                 <height>25</height>
@@ -136,7 +137,7 @@
             </control>
             <control type="label">
                 <description>Year Title</description>
-                <posx>400</posx>
+                <right>400</right>
                 <posy>245</posy>
                 <width>130</width>
                 <height>25</height>
@@ -160,7 +161,7 @@
             </control>
             <control type="label">
                 <description>Track Number Title</description>
-                <posx>400</posx>
+                <right>400</right>
                 <posy>280</posy>
                 <width>130</width>
                 <height>25</height>
@@ -184,7 +185,7 @@
             </control>
             <control type="label">
                 <description>Rating Title</description>
-                <posx>400</posx>
+                <right>400</right>
                 <posy>315</posy>
                 <width>130</width>
                 <height>25</height>
@@ -236,7 +237,7 @@
             </control>
             <control type="label">
                 <description>Comment Title</description>
-                <posx>400</posx>
+                <right>400</right>
                 <posy>350</posy>
                 <width>130</width>
                 <height>25</height>
@@ -259,7 +260,7 @@
             <control type="group" id="9000">
                 <posx>10</posx>
                 <posy>280</posy>
-                <control type="button" id ="10">
+                <control type="button" id="10">
                     <description>Ok button</description>
                     <posx>0</posx>
                     <posy>0</posy>
@@ -307,7 +308,7 @@
                     <onup>11</onup>
                     <ondown>13</ondown>
                 </control>
-                <control type="button" id ="13">
+                <control type="button" id="13">
                     <description>Get Thumb button</description>
                     <posx>0</posx>
                     <posy>120</posy>
