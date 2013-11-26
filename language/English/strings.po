@@ -249,7 +249,11 @@ msgctxt "#31130"
 msgid "PATH TO SUBTITLE SCRIPT"
 msgstr ""
 
-#empty strings from id 31131 to 31139
+msgctxt "#31131"
+msgid "Get TvTune"
+msgstr ""
+
+#empty strings from id 31132 to 31139
 
 #New labels Settings (Custom Skin Settings)
 #empty strings from id 31142 to 31184

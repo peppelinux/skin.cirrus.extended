@@ -1,3 +1,7 @@
+[B]3.0.47[/B] (26.11.2013)
+- TvTunes updated to version 4.0.1
+- Swedish language updated
+
 [B]3.0.46[/B] (20.08.2013)
 - Fanart View for Movie Sets
 - few bug-/layout-fixes
