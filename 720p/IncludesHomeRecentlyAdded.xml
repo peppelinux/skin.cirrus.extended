@@ -476,7 +476,7 @@
                             <control type="image">
                                 <width>120</width>
                                 <height>24</height>
-                                <texture>Star_Rating3.png</texture>
+                                <texture>recentlyadded/3.0.png</texture>
                                 <visible>SubString(Container(8000).ListItem.Property(Rating),3,left)</visible>
                                 <colordiffuse>accent</colordiffuse>
                             </control>
@@ -1153,7 +1153,7 @@
                         <control type="image">
                             <width>100</width>
                             <height>20</height>
-                            <texture>Star_Rating3.png</texture>
+                            <texture>recentlyadded/3.0.png</texture>
                             <visible>SubString(Container(8006).ListItem.Property(Rating),3,left)</visible>
                         </control>
                         <control type="image">
@@ -1301,7 +1301,7 @@
                             <control type="image">
                                 <width>120</width>
                                 <height>24</height>
-                                <texture>Star_Rating3.png</texture>
+                                <texture>recentlyadded/3.0.png</texture>
                                 <visible>SubString(Container(8006).ListItem.Property(Rating),3,left)</visible>
                                 <colordiffuse>accent</colordiffuse>
                             </control>
@@ -1816,7 +1816,7 @@
                         <control type="image">
                             <width>100</width>
                             <height>20</height>
-                            <texture>Star_Rating3.png</texture>
+                            <texture>recentlyadded/3.0.png</texture>
                             <visible>SubString(Container(8007).ListItem.Property(Rating),3,left)</visible>
                         </control>
                         <control type="image">
@@ -1964,7 +1964,7 @@
                             <control type="image">
                                 <width>120</width>
                                 <height>24</height>
-                                <texture>Star_Rating3.png</texture>
+                                <texture>recentlyadded/3.0.png</texture>
                                 <visible>SubString(Container(8007).ListItem.Property(Rating),3,left)</visible>
                                 <colordiffuse>accent</colordiffuse>
                             </control>
@@ -2479,7 +2479,7 @@
                         <control type="image">
                             <width>100</width>
                             <height>20</height>
-                            <texture>Star_Rating3.png</texture>
+                            <texture>recentlyadded/3.0.png</texture>
                             <visible>SubString(Container(8008).ListItem.Property(Rating),3,left)</visible>
                         </control>
                         <control type="image">
@@ -2627,7 +2627,7 @@
                             <control type="image">
                                 <width>120</width>
                                 <height>24</height>
-                                <texture>Star_Rating3.png</texture>
+                                <texture>recentlyadded/3.0.png</texture>
                                 <visible>SubString(Container(8008).ListItem.Property(Rating),3,left)</visible>
                                 <colordiffuse>accent</colordiffuse>
                             </control>
@@ -3698,7 +3698,7 @@
                             <control type="image">
                                 <width>120</width>
                                 <height>24</height>
-                                <texture>Star_Rating3.png</texture>
+                                <texture>recentlyadded/3.0.png</texture>
                                 <visible>SubString(Container(8001).ListItem.Property(Rating),3,left)</visible>
                                 <colordiffuse>accent</colordiffuse>
                                 <visible>!Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
@@ -4642,7 +4642,7 @@
                             <control type="image">
                                 <width>120</width>
                                 <height>24</height>
-                                <texture>Star_Rating3.png</texture>
+                                <texture>recentlyadded/3.0.png</texture>
                                 <visible>SubString(Container(8009).ListItem.Property(Rating),3,left)</visible>
                                 <colordiffuse>accent</colordiffuse>
                                 <visible>Container(9000).HasFocus(9)</visible>
@@ -5289,7 +5289,7 @@
                             <control type="image">
                                 <width>120</width>
                                 <height>24</height>
-                                <texture>Star_Rating3.png</texture>
+                                <texture>recentlyadded/3.0.png</texture>
                                 <visible>SubString(Container(8010).ListItem.Property(Rating),3,left)</visible>
                                 <colordiffuse>accent</colordiffuse>
                                 <visible>Container(9000).HasFocus(10)</visible>
@@ -5937,7 +5937,7 @@
                             <control type="image">
                                 <width>120</width>
                                 <height>24</height>
-                                <texture>Star_Rating3.png</texture>
+                                <texture>recentlyadded/3.0.png</texture>
                                 <visible>SubString(Container(8011).ListItem.Property(Rating),3,left)</visible>
                                 <colordiffuse>accent</colordiffuse>
                                 <visible>Container(9000).HasFocus(11)</visible>
