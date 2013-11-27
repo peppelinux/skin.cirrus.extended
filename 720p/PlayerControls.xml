@@ -123,8 +123,8 @@
                 <width>40</width>
                 <height>50</height>
                 <label>-</label>
-                <texturefocus>special://skin/extras/misc/fullscreen_v1FO.png</texturefocus>
-                <texturenofocus>special://skin/extras/misc/fullscreen_v1NF.png</texturenofocus>
+                <texturefocus>fullscreen_v1FO.png</texturefocus>
+                <texturenofocus>fullscreen_v1NF.png</texturenofocus>
                 <onleft>605</onleft>
                 <onright>608</onright>
                 <onup>300</onup>

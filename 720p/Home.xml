@@ -1412,8 +1412,8 @@
         <font>-</font>
         <aligny>-</aligny>
         <onclick>Fullscreen</onclick>
-        <texturefocus>special://skin/extras/misc/fullscreen_v1FO.png</texturefocus>
-        <texturenofocus>special://skin/extras/misc/fullscreen_v1NF.png</texturenofocus>
+        <texturefocus>fullscreen_v1FO.png</texturefocus>
+        <texturenofocus>fullscreen_v1NF.png</texturenofocus>
         <onleft>20</onleft>
         <onright>24</onright>
         <onup>9000</onup>
@@ -1431,8 +1431,8 @@
         <font>-</font>
         <aligny>-</aligny>
         <onclick>Fullscreen</onclick>
-        <texturefocus>special://skin/extras/misc/fullscreen_v1FO.png</texturefocus>
-        <texturenofocus>special://skin/extras/misc/fullscreen_v1NF.png</texturenofocus>
+        <texturefocus>fullscreen_v1FO.png</texturefocus>
+        <texturenofocus>fullscreen_v1NF.png</texturenofocus>
         <onleft>20</onleft>
         <onright>24</onright>
         <onup>9000</onup>
@@ -1586,8 +1586,8 @@
         <font>-</font>
         <aligny>-</aligny>
         <onclick>Fullscreen</onclick>
-        <texturefocus>special://skin/extras/misc/fullscreen_v1FO.png</texturefocus>
-        <texturenofocus>special://skin/extras/misc/fullscreen_v1NF.png</texturenofocus>
+        <texturefocus>fullscreen_v1FO.png</texturefocus>
+        <texturenofocus>fullscreen_v1NF.png</texturenofocus>
         <onleft>20</onleft>
         <onright>24</onright>
         <onup>9000</onup>
@@ -1605,8 +1605,8 @@
         <font>-</font>
         <aligny>-</aligny>
         <onclick>Fullscreen</onclick>
-        <texturefocus>special://skin/extras/misc/fullscreen_v1FO.png</texturefocus>
-        <texturenofocus>special://skin/extras/misc/fullscreen_v1NF.png</texturenofocus>
+        <texturefocus>fullscreen_v1FO.png</texturefocus>
+        <texturenofocus>fullscreen_v1NF.png</texturenofocus>
         <onleft>20</onleft>
         <onright>24</onright>
         <onup>9000</onup>
