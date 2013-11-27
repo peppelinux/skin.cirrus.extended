@@ -63,7 +63,7 @@
                         <posy>5</posy>
                         <width>80</width>
                         <height>80</height>
-                        <imagepath>special://skin/images/weather/$INFO[ListItem.Property(FanartCode)]</imagepath>
+                        <imagepath>weather/$INFO[ListItem.Property(FanartCode)]</imagepath>
                         <timeperimage>100</timeperimage>
                         <randomize>false</randomize>
                         <aspectratio>keep</aspectratio>
@@ -140,7 +140,7 @@
                         <posy>5</posy>
                         <width>80</width>
                         <height>80</height>
-                        <imagepath>special://skin/images/weather/$INFO[ListItem.Property(FanartCode)]</imagepath>
+                        <imagepath>weather/$INFO[ListItem.Property(FanartCode)]</imagepath>
                         <timeperimage>100</timeperimage>
                         <randomize>false</randomize>
                         <aspectratio>keep</aspectratio>

@@ -73,7 +73,7 @@
                         <posy>10</posy>
                         <width>120</width>
                         <height>110</height>
-                        <imagepath>special://skin/images/weather/$INFO[Window.Property(36Hour.1.FanartCode)]</imagepath>
+                        <imagepath>weather/$INFO[Window.Property(36Hour.1.FanartCode)]</imagepath>
                         <timeperimage>100</timeperimage>
                         <randomize>false</randomize>
                         <aspectratio>keep</aspectratio>
@@ -152,7 +152,7 @@
                         <posy>10</posy>
                         <width>120</width>
                         <height>110</height>
-                        <imagepath>special://skin/images/weather/$INFO[Window.Property(36Hour.2.FanartCode)]</imagepath>
+                        <imagepath>weather/$INFO[Window.Property(36Hour.2.FanartCode)]</imagepath>
                         <timeperimage>100</timeperimage>
                         <randomize>false</randomize>
                         <aspectratio>keep</aspectratio>
@@ -231,7 +231,7 @@
                         <posy>10</posy>
                         <width>120</width>
                         <height>110</height>
-                        <imagepath>special://skin/images/weather/$INFO[Window.Property(36Hour.3.FanartCode)]</imagepath>
+                        <imagepath>weather/$INFO[Window.Property(36Hour.3.FanartCode)]</imagepath>
                         <timeperimage>100</timeperimage>
                         <randomize>false</randomize>
                         <aspectratio>keep</aspectratio>

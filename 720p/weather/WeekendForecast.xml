@@ -73,7 +73,7 @@
                         <posy>20</posy>
                         <width>130</width>
                         <height>160</height>
-                        <imagepath>special://skin/images/weather/$INFO[Window.Property(Weekend.1.FanartCode)]</imagepath>
+                        <imagepath>weather/$INFO[Window.Property(Weekend.1.FanartCode)]</imagepath>
                         <timeperimage>100</timeperimage>
                         <randomize>false</randomize>
                         <aspectratio>keep</aspectratio>
@@ -174,7 +174,7 @@
                         <posy>20</posy>
                         <width>130</width>
                         <height>160</height>
-                        <imagepath>special://skin/images/weather/$INFO[Window.Property(Weekend.2.FanartCode)]</imagepath>
+                        <imagepath>weather/$INFO[Window.Property(Weekend.2.FanartCode)]</imagepath>
                         <timeperimage>100</timeperimage>
                         <randomize>false</randomize>
                         <aspectratio>keep</aspectratio>
