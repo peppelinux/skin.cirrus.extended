@@ -258,17 +258,17 @@
                         <onclick>ActivateWindow(Credits)</onclick>
                     </item>
                     <!-- WHEN CLEAN HOME SELECTED (shutdown, play dvd etc added to settings submenu -->
-                    <item type="button" id="90146">
+                    <item id="90146">
                         <label>13005</label>
                         <onclick>ActivateWindow(ShutdownMenu)</onclick>
                         <visible>Skin.HasSetting(cleanHome)</visible>
                     </item>
-                    <item type="button" id="90147">
+                    <item id="90147">
                         <label>1036</label>
                         <onclick>ActivateWindow(Favourites)</onclick>
                         <visible>Skin.HasSetting(cleanHome)</visible>
                     </item>
-                    <item type="button" id="90148">
+                    <item id="90148">
                         <label>446</label>
                         <onclick>XBMC.PlayDVD()</onclick>
                         <visible>Skin.HasSetting(cleanHome)</visible>

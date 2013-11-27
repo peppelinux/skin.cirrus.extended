@@ -936,7 +936,7 @@
                             <width>249</width>
                             <height>57</height>
                             <align>right</align>
-                            <align>center</align>
+                            <aligny>center</aligny>
                             <itemgap>0</itemgap>
                             <orientation>horizontal</orientation>
                             <include>VideoMPAAFlaggingConditions</include>

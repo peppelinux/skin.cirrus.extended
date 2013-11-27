@@ -35,7 +35,6 @@
             <width>1480</width>
             <height>80</height>
             <texture flipy="true">nowplaying_shadow.png</texture>
-            <texture>nowplaying_shadow.png</texture>
             <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu)</visible>
             <visible>Skin.HasSetting(themelighthorz)</visible>
         </control>

@@ -2,18 +2,6 @@
     <defaultcontrol always="true">8</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <controls>
-        <!--     <control type="button" id="7050">
-      <texturefocus>-</texturefocus>
-      <texturenofocus>-</texturenofocus>
-      <onfocus>SendClick(movieinformation,5)</onfocus>
-      <onfocus>SetFocus(5)</onfocus>
-    </control>
-    <control type="button" id="7051">
-      <texturefocus>-</texturefocus>
-      <texturenofocus>-</texturenofocus>
-      <onfocus>SendClick(movieinformation,5)</onfocus>
-      <onfocus>SetFocus(50)</onfocus>
-    </control> -->
         <control type="group">
             <visible>!Window.IsVisible(FileBrowser)</visible>
             <animation effect="slide" start="1300,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
@@ -67,14 +55,6 @@
                 <texture>black-back3.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <!--  <control type="image">
-        <posx>0</posx>
-        <posy>-20</posy>
-        <width>1280</width>
-        <height>750</height>
-        <texture>black-back3.png</texture>
-        <aspectratio>stretch</aspectratio>
-      </control> -->
             <control type="group">
                 <animation effect="fade" delay="400" start="0" end="100" time="200">WindowOpen</animation>
                 <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
