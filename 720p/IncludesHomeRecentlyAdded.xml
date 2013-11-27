@@ -261,7 +261,7 @@
                         <control type="image">
                             <width>100</width>
                             <height>20</height>
-                            <texture>Star_Rating3.png</texture>
+                            <texture>recentlyadded/3.0.png</texture>
                             <visible>SubString(Container(8000).ListItem.Property(Rating),3,left)</visible>
                         </control>
                         <control type="image">
@@ -3951,7 +3951,6 @@
                         <posy>5</posy>
                         <width>800</width>
                         <height>275</height>
-                        <focusposition>0</focusposition>
                         <orientation>vertical</orientation>
                         <onleft>9000</onleft>
                         <onright>9000</onright>
@@ -4818,7 +4817,6 @@
                         <posy>5</posy>
                         <width>800</width>
                         <height>275</height>
-                        <focusposition>0</focusposition>
                         <orientation>vertical</orientation>
                         <onleft>9000</onleft>
                         <onright>9000</onright>
@@ -5466,7 +5464,6 @@
                         <posy>5</posy>
                         <width>800</width>
                         <height>275</height>
-                        <focusposition>0</focusposition>
                         <orientation>vertical</orientation>
                         <onleft>9000</onleft>
                         <onright>9000</onright>
@@ -6115,7 +6112,6 @@
                         <posy>5</posy>
                         <width>800</width>
                         <height>275</height>
-                        <focusposition>0</focusposition>
                         <orientation>vertical</orientation>
                         <onleft>9000</onleft>
                         <onright>9000</onright>
