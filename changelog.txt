@@ -1,7 +1,11 @@
-[B]3.1.0[/B] (02.10.2013)
+[B]3.1.0[/B] (XX.YY.2013)
 - initial changes for Gotham
 - Set minimum GUI version to 5.0.0
 
+[B]3.0.47[/B] (26.11.2013)
+- TvTunes updated to version 4.0.1
+- TvTunes solo mode added to DialogVideoInfo
+- Swedish language updated
 
 [B]3.0.46[/B] (20.08.2013)
 - Fanart View for Movie Sets
