@@ -37,22 +37,7 @@
             <filename>DejaVuSans.ttf</filename>
             <size>30</size>
         </font>
-        <font>
-            <name>fontContextMenu</name>
-            <filename>DejaVuSans.ttf</filename>
-            <size>18</size>
-        </font>
         <!-- cirrus fonts -->
-        <font>
-            <name>cirrus_12</name>
-            <filename>Vegur-Light.ttf</filename>
-            <size>12</size>
-        </font>
-        <font>
-            <name>cirrus_13</name>
-            <filename>Vegur-Light.ttf</filename>
-            <size>13</size>
-        </font>
         <font>
             <name>cirrus_16</name>
             <filename>Vegur-Light.ttf</filename>
@@ -104,26 +89,9 @@
             <size>50</size>
         </font>
         <font>
-            <name>cirrus_70</name>
-            <filename>Vegur-Light.ttf</filename>
-            <size>70</size>
-        </font>
-        <font>
             <name>cirrus_12_Bold</name>
             <filename>Vegur-Light.ttf</filename>
             <size>12</size>
-            <style>bold</style>
-        </font>
-        <font>
-            <name>cirrus_13_Bold</name>
-            <filename>Vegur-Light.ttf</filename>
-            <size>13</size>
-            <style>bold</style>
-        </font>
-        <font>
-            <name>cirrus_15_Bold</name>
-            <filename>Vegur-Light.ttf</filename>
-            <size>15</size>
             <style>bold</style>
         </font>
         <font>
@@ -174,63 +142,6 @@
             <size>50</size>
             <style>bold</style>
         </font>
-        <!-- Fonts Regular Title-->
-        <font>
-            <name>cirrus_12_Reg</name>
-            <filename>Vegur-Regular.ttf</filename>
-            <size>12</size>
-        </font>
-        <font>
-            <name>cirrus_13_Reg</name>
-            <filename>Vegur-Regular.ttf</filename>
-            <size>13</size>
-        </font>
-        <font>
-            <name>cirrus_15_Reg</name>
-            <filename>Vegur-Regular.ttf</filename>
-            <size>15</size>
-        </font>
-        <font>
-            <name>cirrus_16_Reg</name>
-            <filename>Vegur-Regular.ttf</filename>
-            <size>16</size>
-        </font>
-        <font>
-            <name>cirrus_18_Reg</name>
-            <filename>Vegur-Regular.ttf</filename>
-            <size>18</size>
-        </font>
-        <font>
-            <name>cirrus_20_Reg</name>
-            <filename>Vegur-Regular.ttf</filename>
-            <size>20</size>
-        </font>
-        <font>
-            <name>cirrus_22_Reg</name>
-            <filename>Vegur-Regular.ttf</filename>
-            <size>22</size>
-        </font>
-        <font>
-            <name>cirrus_24_Reg</name>
-            <filename>Vegur-Regular.ttf</filename>
-            <size>24</size>
-        </font>
-        <font>
-            <name>cirrus_30_Reg</name>
-            <filename>Vegur-Regular.ttf</filename>
-            <size>30</size>
-        </font>
-        <font>
-            <name>cirrus_40_Reg</name>
-            <filename>Vegur-Regular.ttf</filename>
-            <size>40</size>
-        </font>
-        <font>
-            <name>cirrus_50_Reg</name>
-            <filename>Vegur-Regular.ttf</filename>
-            <size>50</size>
-        </font>
-
         <!-- Title Fonts -->
         <font>
             <name>font10_title</name>
@@ -267,12 +178,6 @@
             <filename>DejaVuSans-Bold.ttf</filename>
             <size>35</size>
         </font>
-        <font>
-            <name>font50caps_title</name>
-            <filename>DejaVuSans-Bold-Caps.ttf</filename>
-            <size>50</size>
-        </font>
-
         <font>
             <name>WeatherTemp</name>
             <filename>DejaVuSans-Bold.ttf</filename>
@@ -317,13 +222,6 @@
             <filename>DejaVuSans.ttf</filename>
             <size>30</size>
         </font>
-        <font>
-            <name>fontContextMenu</name>
-            <filename>DejaVuSans.ttf</filename>
-            <size>18</size>
-        </font>
-
-
         <!-- Title Fonts -->
         <font>
             <name>font10_title</name>
@@ -360,12 +258,6 @@
             <filename>DejaVuSans-Bold.ttf</filename>
             <size>35</size>
         </font>
-        <font>
-            <name>font50caps_title</name>
-            <filename>DejaVuSans-Bold.ttf</filename>
-            <size>50</size>
-        </font>
-
         <font>
             <name>WeatherTemp</name>
             <filename>DejaVuSans-Bold.ttf</filename>
@@ -410,13 +302,6 @@
             <filename>Arial.ttf</filename>
             <size>30</size>
         </font>
-        <font>
-            <name>fontContextMenu</name>
-            <filename>Arial.ttf</filename>
-            <size>18</size>
-        </font>
-
-
         <!-- Title Fonts -->
         <font>
             <name>font10_title</name>
@@ -453,12 +338,6 @@
             <filename>Arial.ttf</filename>
             <size>35</size>
         </font>
-        <font>
-            <name>font50caps_title</name>
-            <filename>Arial.ttf</filename>
-            <size>50</size>
-        </font>
-
         <font>
             <name>WeatherTemp</name>
             <filename>Arial.ttf</filename>
@@ -502,24 +381,7 @@
             <filename>DejaVuSans.ttf</filename>
             <size>30</size>
         </font>
-        <font>
-            <name>fontContextMenu</name>
-            <filename>DejaVuSans.ttf</filename>
-            <size>18</size>
-        </font>
         <!-- cirrus fonts -->
-        <font>
-            <name>cirrus_12</name>
-            <filename>Vegur-Light.ttf</filename>
-            <size>12</size>
-            <style>bold</style>
-        </font>
-        <font>
-            <name>cirrus_13</name>
-            <filename>Vegur-Light.ttf</filename>
-            <size>13</size>
-            <style>bold</style>
-        </font>
         <font>
             <name>cirrus_16</name>
             <filename>Vegur-Light.ttf</filename>
@@ -581,27 +443,9 @@
             <style>bold</style>
         </font>
         <font>
-            <name>cirrus_70</name>
-            <filename>Vegur-Light.ttf</filename>
-            <size>70</size>
-            <style>bold</style>
-        </font>
-        <font>
             <name>cirrus_12_Bold</name>
             <filename>Vegur-Light.ttf</filename>
             <size>12</size>
-            <style>bold</style>
-        </font>
-        <font>
-            <name>cirrus_13_Bold</name>
-            <filename>Vegur-Light.ttf</filename>
-            <size>13</size>
-            <style>bold</style>
-        </font>
-        <font>
-            <name>cirrus_15_Bold</name>
-            <filename>Vegur-Light.ttf</filename>
-            <size>15</size>
             <style>bold</style>
         </font>
         <font>
@@ -688,12 +532,6 @@
             <filename>DejaVuSans-Bold.ttf</filename>
             <size>35</size>
         </font>
-        <font>
-            <name>font50caps_title</name>
-            <filename>DejaVuSans-Bold-Caps.ttf</filename>
-            <size>50</size>
-        </font>
-
         <font>
             <name>WeatherTemp</name>
             <filename>DejaVuSans-Bold.ttf</filename>
@@ -737,22 +575,7 @@
             <filename>DejaVuSans.ttf</filename>
             <size>30</size>
         </font>
-        <font>
-            <name>fontContextMenu</name>
-            <filename>DejaVuSans.ttf</filename>
-            <size>18</size>
-        </font>
         <!-- cirrus fonts -->
-        <font>
-            <name>cirrus_12</name>
-            <filename>Vegur-Regular.ttf</filename>
-            <size>12</size>
-        </font>
-        <font>
-            <name>cirrus_13</name>
-            <filename>Vegur-Regular.ttf</filename>
-            <size>13</size>
-        </font>
         <font>
             <name>cirrus_16</name>
             <filename>Vegur-Regular.ttf</filename>
@@ -804,26 +627,9 @@
             <size>50</size>
         </font>
         <font>
-            <name>cirrus_70</name>
-            <filename>Vegur-Regular.ttf</filename>
-            <size>70</size>
-        </font>
-        <font>
             <name>cirrus_12_Bold</name>
             <filename>Vegur-Regular.ttf</filename>
             <size>12</size>
-            <style>bold</style>
-        </font>
-        <font>
-            <name>cirrus_13_Bold</name>
-            <filename>Vegur-Regular.ttf</filename>
-            <size>13</size>
-            <style>bold</style>
-        </font>
-        <font>
-            <name>cirrus_15_Bold</name>
-            <filename>Vegur-Regular.ttf</filename>
-            <size>15</size>
             <style>bold</style>
         </font>
         <font>
@@ -910,12 +716,6 @@
             <filename>DejaVuSans-Bold.ttf</filename>
             <size>35</size>
         </font>
-        <font>
-            <name>font50caps_title</name>
-            <filename>DejaVuSans-Bold-Caps.ttf</filename>
-            <size>50</size>
-        </font>
-
         <font>
             <name>WeatherTemp</name>
             <filename>DejaVuSans-Bold.ttf</filename>
@@ -961,22 +761,7 @@
             <filename>Ubuntu-L.ttf</filename>
             <size>30</size>
         </font>
-        <font>
-            <name>fontContextMenu</name>
-            <filename>Ubuntu-L.ttf</filename>
-            <size>18</size>
-        </font>
         <!-- cirrus fonts -->
-        <font>
-            <name>cirrus_12</name>
-            <filename>Ubuntu-L.ttf</filename>
-            <size>12</size>
-        </font>
-        <font>
-            <name>cirrus_13</name>
-            <filename>Ubuntu-L.ttf</filename>
-            <size>13</size>
-        </font>
         <font>
             <name>cirrus_16</name>
             <filename>Ubuntu-L.ttf</filename>
@@ -1028,26 +813,9 @@
             <size>50</size>
         </font>
         <font>
-            <name>cirrus_70</name>
-            <filename>Ubuntu-L.ttf</filename>
-            <size>70</size>
-        </font>
-        <font>
             <name>cirrus_12_Bold</name>
             <filename>Ubuntu-L.ttf</filename>
             <size>12</size>
-            <style>bold</style>
-        </font>
-        <font>
-            <name>cirrus_13_Bold</name>
-            <filename>Ubuntu-L.ttf</filename>
-            <size>13</size>
-            <style>bold</style>
-        </font>
-        <font>
-            <name>cirrus_15_Bold</name>
-            <filename>Ubuntu-L.ttf</filename>
-            <size>15</size>
             <style>bold</style>
         </font>
         <font>
@@ -1134,12 +902,6 @@
             <filename>Ubuntu-L.ttf</filename>
             <size>35</size>
         </font>
-        <font>
-            <name>font50caps_title</name>
-            <filename>Ubuntu-L.ttf</filename>
-            <size>50</size>
-        </font>
-
         <font>
             <name>WeatherTemp</name>
             <filename>DejaVuSans-Bold.ttf</filename>

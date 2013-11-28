@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="2003">
     <defaultcontrol always="true">8</defaultcontrol>
+    <onload condition="Skin.HasSetting(tv_theme) + System.HasAddon(script.tvtunes) + IsEmpty(Window(Home).Property(DontRunTVShowScripts))">XBMC.RunScript(script.tvtunes,backend=True)</onload>
     <allowoverlay>no</allowoverlay>
     <controls>
         <control type="button" id="7050">
@@ -936,7 +937,7 @@
                             <width>249</width>
                             <height>57</height>
                             <align>right</align>
-                            <align>center</align>
+                            <aligny>center</aligny>
                             <itemgap>0</itemgap>
                             <orientation>horizontal</orientation>
                             <include>VideoMPAAFlaggingConditions</include>
@@ -1246,6 +1247,13 @@
                         <onclick>Dialog.Close(MovieInformation)</onclick>
                         <onclick condition="Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=tvshow, dbid=$INFO[ListItem.DBID], extrafanart)</onclick>
                         <visible>[Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)] + System.HasAddon(script.artwork.downloader)</visible>
+                    </control>
+                    <control type="button" id="100">
+                        <description>Fetch TvTunes stuff</description>
+                        <include>ButtonVideoInfoCommonValues</include>
+                        <label>31131</label>
+                        <onclick>XBMC.RunScript(script.tvtunes,mode=solo)</onclick>
+                        <visible>Skin.HasSetting(tv_theme) + System.HasAddon(script.tvtunes) + Container.Content(TVShows)</visible>
                     </control>
                     <control type="button" id="132">
                         <description>Edit library</description>

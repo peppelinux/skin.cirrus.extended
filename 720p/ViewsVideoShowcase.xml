@@ -352,7 +352,7 @@
                     <posy>682</posy>
                     <width>8</width>
                     <height>36</height>
-                    <texture>special://skin/extras/misc/Dot.png</texture>
+                    <texture>Dot.png</texture>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
                 </control>
             </control>
@@ -424,7 +424,7 @@
                     <posy>682</posy>
                     <width>8</width>
                     <height>36</height>
-                    <texture>special://skin/extras/misc/Dot.png</texture>
+                    <texture>Dot.png</texture>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
                 </control>
             </control>

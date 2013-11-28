@@ -221,6 +221,10 @@ msgctxt "#31130"
 msgid "PATH TO SUBTITLE SCRIPT"
 msgstr "SÖKVÄG TILL UNDERTEXTSKRIPT"
 
+msgctxt "#31131"
+msgid "Get TvTune"
+msgstr "Hämta logotyp"
+
 msgctxt "#31185"
 msgid "Listed Shows"
 msgstr "Listade Serier"

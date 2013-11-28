@@ -169,7 +169,6 @@
                     <width>170</width>
                     <height>170</height>
                     <aspectratio aligny="bottom">stretch</aspectratio>   
-                    <texture fallback="DefaultAudio.png">$INFO[MusicPlayer.Cover]</texture>
                     <bordertexture border="4">ThumbBorder.png</bordertexture>
                     <bordersize>4</bordersize>	
                     <texture background="true" fallback="DefaultAudio.png">$INFO[MusicPlayer.cover]</texture>
