@@ -525,7 +525,7 @@
                     </item>
                     <item id="90187">
                         <label>41183</label>
-                        <onclick>ActivateWindow(videos,videodb://1/7/,return)</onclick>
+                        <onclick>ActivateWindow(videos,videodb://movies/sets/,return)</onclick>
                         <visible>!Skin.HasSetting(hidemovievideofiles)</visible>
                     </item>
                     <!-- ###################################### -->
@@ -925,7 +925,7 @@
                     </item>
                     <item id="94187">
                         <label>41183</label>
-                        <onclick>ActivateWindow(videos,videodb://1/7/,return)</onclick>
+                        <onclick>ActivateWindow(videos,videodb://movies/sets/,return)</onclick>
                         <visible>!Skin.HasSetting(hidemovievideofiles)</visible>
                     </item>
                     <!-- ################################### -->
@@ -1138,7 +1138,7 @@
                     </item>
                     <item id="95187">
                         <label>41183</label>
-                        <onclick>ActivateWindow(videos,videodb://1/7/,return)</onclick>
+                        <onclick>ActivateWindow(videos,videodb://movies/sets/,return)</onclick>
                         <visible>!Skin.HasSetting(hidemovievideofiles)</visible>
                     </item>
                     <!-- #################################### -->
@@ -1351,7 +1351,7 @@
                     </item>
                     <item id="96187">
                         <label>41183</label>
-                        <onclick>ActivateWindow(videos,videodb://1/7/,return)</onclick>
+                        <onclick>ActivateWindow(videos,videodb://movies/sets/,return)</onclick>
                         <visible>!Skin.HasSetting(hidemovievideofiles)</visible>
                     </item>
                     <!-- ######################################## -->
