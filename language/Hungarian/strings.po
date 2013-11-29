@@ -229,18 +229,6 @@ msgctxt "#31205"
 msgid "Lyrics Source"
 msgstr "Dalszövegforrás"
 
-msgctxt "#31250"
-msgid "Radar & Forecast"
-msgstr "Radar & Előrejelzés"
-
-msgctxt "#31251"
-msgid "Forecast"
-msgstr "Előrejelzés"
-
-msgctxt "#31252"
-msgid "TWC Script"
-msgstr "TWC Szkript"
-
 msgctxt "#31301"
 msgid "Last Updated"
 msgstr "Utoljára frissítve"
@@ -1295,6 +1283,10 @@ msgstr ""
 
 msgctxt "#41249"
 msgid "Enable Now Playing Video Info"
+msgstr ""
+
+msgctxt "#41250"
+msgid "Release Years"
 msgstr ""
 
 msgctxt "#41253"

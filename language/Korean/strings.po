@@ -245,18 +245,6 @@ msgctxt "#31205"
 msgid "Lyrics Source"
 msgstr "가사 소스"
 
-msgctxt "#31250"
-msgid "Radar & Forecast"
-msgstr "레이더 & 예보"
-
-msgctxt "#31251"
-msgid "Forecast"
-msgstr "예보"
-
-msgctxt "#31252"
-msgid "TWC Script"
-msgstr "TWC 스크립트"
-
 msgctxt "#31301"
 msgid "Last Updated"
 msgstr "마지막 업데이트"
@@ -1311,6 +1299,10 @@ msgstr ""
 
 msgctxt "#41249"
 msgid "Enable Now Playing Video Info"
+msgstr ""
+
+msgctxt "#41250"
+msgid "Release Years"
 msgstr ""
 
 msgctxt "#41253"

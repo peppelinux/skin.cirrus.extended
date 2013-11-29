@@ -229,18 +229,6 @@ msgctxt "#31205"
 msgid "Lyrics Source"
 msgstr "Sangtekstkilde"
 
-msgctxt "#31250"
-msgid "Radar & Forecast"
-msgstr "Radar og prognose"
-
-msgctxt "#31251"
-msgid "Forecast"
-msgstr "Prognose"
-
-msgctxt "#31252"
-msgid "TWC Script"
-msgstr "TWC-skript"
-
 msgctxt "#31301"
 msgid "Last Updated"
 msgstr "Sidst opdateret"
@@ -1298,6 +1286,10 @@ msgstr ""
 
 msgctxt "#41249"
 msgid "Enable Now Playing Video Info"
+msgstr ""
+
+msgctxt "#41250"
+msgid "Release Years"
 msgstr ""
 
 msgctxt "#41253"

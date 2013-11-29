@@ -241,18 +241,6 @@ msgctxt "#31205"
 msgid "Lyrics Source"
 msgstr "歌词来源"
 
-msgctxt "#31250"
-msgid "Radar & Forecast"
-msgstr "雷达 & 天气预报"
-
-msgctxt "#31251"
-msgid "Forecast"
-msgstr "天气预报"
-
-msgctxt "#31252"
-msgid "TWC Script"
-msgstr "天气频道脚本"
-
 msgctxt "#31301"
 msgid "Last Updated"
 msgstr "最近修改"
@@ -1318,6 +1306,10 @@ msgstr ""
 
 msgctxt "#41249"
 msgid "Enable Now Playing Video Info"
+msgstr ""
+
+msgctxt "#41250"
+msgid "Release Years"
 msgstr ""
 
 msgctxt "#41253"
