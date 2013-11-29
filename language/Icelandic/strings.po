@@ -229,18 +229,6 @@ msgctxt "#31205"
 msgid "Lyrics Source"
 msgstr "Frumkóði lagatexta"
 
-msgctxt "#31250"
-msgid "Radar & Forecast"
-msgstr "Ratsjá og Veðurspá"
-
-msgctxt "#31251"
-msgid "Forecast"
-msgstr "Veðurspá"
-
-msgctxt "#31252"
-msgid "TWC Script"
-msgstr "TWC skrifta"
-
 msgctxt "#31301"
 msgid "Last Updated"
 msgstr "Síðast uppfært"
@@ -1291,6 +1279,10 @@ msgstr ""
 
 msgctxt "#41249"
 msgid "Enable Now Playing Video Info"
+msgstr ""
+
+msgctxt "#41250"
+msgid "Release Years"
 msgstr ""
 
 msgctxt "#41253"

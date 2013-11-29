@@ -245,18 +245,6 @@ msgctxt "#31205"
 msgid "Lyrics Source"
 msgstr "Sångtextkälla"
 
-msgctxt "#31250"
-msgid "Radar & Forecast"
-msgstr "Radar & prognos"
-
-msgctxt "#31251"
-msgid "Forecast"
-msgstr "Prognos"
-
-msgctxt "#31252"
-msgid "TWC Script"
-msgstr "TWC-skript"
-
 msgctxt "#31301"
 msgid "Last Updated"
 msgstr "Sist uppdaterad"
@@ -1320,6 +1308,10 @@ msgstr "Dölj litet fönster"
 msgctxt "#41249"
 msgid "Enable Now Playing Video Info"
 msgstr "Aktivera Spelar nu, videoinformation"
+
+msgctxt "#41250"
+msgid "Release Years"
+msgstr ""
 
 msgctxt "#41253"
 msgid "Enable TV Tunes"

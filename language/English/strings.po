@@ -288,17 +288,11 @@ msgstr ""
 #The Weather Channel Script labels
 #empty strings from id 31206 to 31249
 
-msgctxt "#31250"
-msgid "Radar & Forecast"
-msgstr ""
 
-msgctxt "#31251"
-msgid "Forecast"
-msgstr ""
 
-msgctxt "#31252"
-msgid "TWC Script"
-msgstr ""
+
+
+
 
 #Extra labels
 #empty strings from id 31253 to 31299
@@ -1488,6 +1482,10 @@ msgstr ""
 
 msgctxt "#41249"
 msgid "Enable Now Playing Video Info"
+msgstr ""
+
+msgctxt "#41250"
+msgid "Release Years"
 msgstr ""
 
 msgctxt "#41253"

@@ -229,18 +229,6 @@ msgctxt "#31205"
 msgid "Lyrics Source"
 msgstr "Fuente de letras de canción"
 
-msgctxt "#31250"
-msgid "Radar & Forecast"
-msgstr "Pronóstico & Radar"
-
-msgctxt "#31251"
-msgid "Forecast"
-msgstr "Pronóstico"
-
-msgctxt "#31252"
-msgid "TWC Script"
-msgstr "TWC Script"
-
 msgctxt "#31301"
 msgid "Last Updated"
 msgstr "Ultima Actualización"
@@ -1292,6 +1280,10 @@ msgstr "Ocultar ventana pequeña"
 msgctxt "#41249"
 msgid "Enable Now Playing Video Info"
 msgstr "Habilitar información de Reproduciendo Ahora"
+
+msgctxt "#41250"
+msgid "Release Years"
+msgstr "Año de estreno"
 
 msgctxt "#41253"
 msgid "Enable TV Tunes"
