@@ -1017,10 +1017,6 @@ msgctxt "#41176"
 msgid "Music Path"
 msgstr "Musikpfad"
 
-msgctxt "#41177"
-msgid "Enable Moviegenres Pack by N.O.W.A.L.L"
-msgstr "Aktiviere Filmgenre von N.O.W.A.L.L"
-
 msgctxt "#41178"
 msgid "Enable Custom Random Fanart"
 msgstr "Aktiviere benutzerdefinierte Zufall-Fanarts"

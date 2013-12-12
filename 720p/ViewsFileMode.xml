@@ -191,18 +191,6 @@
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true" fallback="special://skin/extras/moviegenres/Unknown.png">special://skin/extras/moviegenres/$INFO[ListItem.Label].png</texture>
                     <visible>Container.Content(Genres) + Window.IsVisible(VideoLibrary)</visible>
-                    <visible>!Skin.HasSetting(moviegenresnowall)</visible>
-                </control>
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>40</posy>
-                    <width>360</width>
-                    <height>440</height>
-                    <aspectratio aligny="center">keep</aspectratio>
-                    <fadetime>IconCrossfadeTime</fadetime>
-                    <texture background="true" fallback="special://skin/extras/moviegenresnowall/Unknown.png">special://skin/extras/moviegenresnowall/$INFO[ListItem.Label].png</texture>
-                    <visible>Container.Content(Genres) + Window.IsVisible(VideoLibrary)</visible>
-                    <visible>Skin.HasSetting(moviegenresnowall)</visible>
                 </control>
                 <control type="image">
                     <posx>0</posx>
