@@ -1021,10 +1021,6 @@ msgctxt "#41176"
 msgid "Music Path"
 msgstr "Muziek pad"
 
-msgctxt "#41177"
-msgid "Enable Moviegenres Pack by N.O.W.A.L.L"
-msgstr "Speelfilmgenres van N.O.W.A.L.L inschakelen"
-
 msgctxt "#41178"
 msgid "Enable Custom Random Fanart"
 msgstr "Inschakelen aangepaste willekeurige Fanart"

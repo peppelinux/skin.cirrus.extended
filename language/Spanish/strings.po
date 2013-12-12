@@ -1013,10 +1013,6 @@ msgctxt "#41176"
 msgid "Music Path"
 msgstr "Ruta a Música"
 
-msgctxt "#41177"
-msgid "Enable Moviegenres Pack by N.O.W.A.L.L"
-msgstr "Habilitar Moviegenres Pack by N.O.W.A.L.L"
-
 msgctxt "#41178"
 msgid "Enable Custom Random Fanart"
 msgstr "Habilitar Fanart Personalizado Aleatorio"

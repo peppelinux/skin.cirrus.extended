@@ -3670,13 +3670,6 @@
                     <onclick>Skin.ToggleSetting(originalwatched)</onclick>
                     <selected>Skin.HasSetting(originalwatched)</selected>
                 </control>
-                <control type="radiobutton" id="1101">
-                    <description>Moviegenres Pack N.O.W.A.L.L</description>
-                    <include>MenuItemSettings</include>
-                    <label>41177</label>
-                    <onclick>Skin.ToggleSetting(moviegenresnowall)</onclick>
-                    <selected>Skin.HasSetting(moviegenresnowall)</selected>
-                </control>
                 <control type="label" id="1079">
                     <include>MenuTitleSettings</include>
                     <label>41161</label>

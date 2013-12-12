@@ -241,18 +241,6 @@
                         <fadetime>200</fadetime>
                         <texture fallback="special://skin/extras/moviegenres/Unknown.png">special://skin/extras/moviegenres/$INFO[ListItem.Label].png</texture>
                         <visible>Container.Content(Genres) + Window.IsVisible(VideoLibrary)</visible>
-                        <visible>!Skin.HasSetting(moviegenresnowall)</visible>
-                    </control>
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>-30</posy>
-                        <width>360</width>
-                        <height>440</height>
-                        <aspectratio>keep</aspectratio>
-                        <fadetime>200</fadetime>
-                        <texture fallback="special://skin/extras/moviegenresnowall/Unknown.png">special://skin/extras/moviegenresnowall/$INFO[ListItem.Label].png</texture>
-                        <visible>Container.Content(Genres) + Window.IsVisible(VideoLibrary)</visible>
-                        <visible>Skin.HasSetting(moviegenresnowall)</visible>
                     </control>
                 </control>
                 <control type="group">
