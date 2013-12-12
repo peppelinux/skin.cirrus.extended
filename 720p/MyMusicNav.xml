@@ -67,7 +67,7 @@
                 <posy>0</posy>
                 <width>1280</width>
                 <height>720</height>
-                <texture background="true">special://skin/extras/musicgenrefanart/$INFO[ListItem.Label].jpg</texture>
+                <texture background="true" fallback="special://skin/backgrounds/musicfanart.jpg">special://skin/extras/musicgenrefanart/$INFO[ListItem.Label].jpg</texture>
                 <include>backgroundfade</include>
                 <fadetime>FanartCrossfadeTime</fadetime>
                 <include>global_kenburns_fanart</include>
