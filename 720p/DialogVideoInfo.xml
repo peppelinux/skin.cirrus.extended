@@ -34,7 +34,7 @@
                 <width>1280</width>
                 <height>720</height>
                 <aspectratio>stretch</aspectratio>
-                <texture fallback="special://skin/backgrounds/videosfanart.jpg" background="true">$INFO[ListItem.Art(fanart)]</texture>
+                <texture fallback="special://skin/backgrounds/videos.jpg" background="true">$INFO[ListItem.Art(fanart)]</texture>
             </control>
             <control type="image">
                 <posx>0</posx>
