@@ -179,7 +179,7 @@
                     <label>3</label>
                     <!-- <onclick>ActivateWindow(Videos,Root)</onclick> -->
                     <onclick>ActivateWindow(VideoFiles,Files,return)</onclick>
-                    <icon>special://skin/backgrounds/videosfanart.jpg</icon>
+                    <icon>special://skin/backgrounds/videos.jpg</icon>
                     <thumb>$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</thumb>
                     <visible>!Skin.HasSetting(HomeMenuNoVideosButton)</visible>
                 </item>
