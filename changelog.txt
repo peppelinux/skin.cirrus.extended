@@ -1,7 +1,10 @@
-[B]3.0.47[/B] (26.11.2013)
+[B]3.0.47[/B] (12.12.2013)
 - TvTunes updated to version 4.0.1
 - TvTunes solo mode added to DialogVideoInfo
 - Swedish language updated
+- N.O.W.A.L.L. genre option removed
+- movie/music extras (fanart/poster/etc. removed) - can still be downloaded - ask in forum or email me
+- few bugfixes and tweaks
 
 [B]3.0.46[/B] (20.08.2013)
 - Fanart View for Movie Sets
