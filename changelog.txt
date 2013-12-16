@@ -4,6 +4,7 @@
 - Swedish language updated
 - N.O.W.A.L.L. genre option removed
 - movie/music extras (fanart/poster/etc. removed) - can still be downloaded - ask in forum or email me
+- temporarily removed skin themes
 - few bugfixes and tweaks
 
 [B]3.0.46[/B] (20.08.2013)
