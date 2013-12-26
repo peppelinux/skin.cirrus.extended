@@ -2285,16 +2285,16 @@
                                 <property name="Genre">$INFO[Window.Property(PlaylistLastMovieMenu2.9.Genre)]</property>
                             </item>
                             <item id="10">
-                                <label>$INFO[Window.Property(PlaylistLastMovieMenu1.10.Title)]</label>
-                                <label2>$INFO[Window.Property(PlaylistLastMovieMenu1.10.Plot)]</label2>
-                                <onclick>$INFO[Window.Property(PlaylistLastMovieMenu1.10.Play)]</onclick>
-                                <icon>$INFO[Window.Property(PlaylistLastMovieMenu1.10.Art(fanart))]</icon>
-                                <thumb>$INFO[Window.Property(PlaylistLastMovieMenu1.10.Art(poster))]</thumb>
-                                <property name="Rating">$INFO[Window.Property(PlaylistLastMovieMenu1.10.Rating)]</property>
-                                <property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu1.10.Year)]</property>
-                                <property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.10.Runtime)]</property>
-                                <property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.10.Art(fanart))]</property>
-                                <property name="Genre">$INFO[Window.Property(PlaylistLastMovieMenu1.10.Genre)]</property>
+                                <label>$INFO[Window.Property(PlaylistLastMovieMenu2.10.Title)]</label>
+                                <label2>$INFO[Window.Property(PlaylistLastMovieMenu2.10.Plot)]</label2>
+                                <onclick>$INFO[Window.Property(PlaylistLastMovieMenu2.10.Play)]</onclick>
+                                <icon>$INFO[Window.Property(PlaylistLastMovieMenu2.10.Art(fanart))]</icon>
+                                <thumb>$INFO[Window.Property(PlaylistLastMovieMenu2.10.Art(poster))]</thumb>
+                                <property name="Rating">$INFO[Window.Property(PlaylistLastMovieMenu2.10.Rating)]</property>
+                                <property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu2.10.Year)]</property>
+                                <property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu2.10.Runtime)]</property>
+                                <property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu2.10.Art(fanart))]</property>
+                                <property name="Genre">$INFO[Window.Property(PlaylistLastMovieMenu2.10.Genre)]</property>
                             </item>
                         </content>
                     </control>
