@@ -37,42 +37,17 @@
             <textcolor>accent</textcolor>
             <shadowcolor>black</shadowcolor>
         </control>
-        <control type="label" id="2">
-            <description>dialog line 1</description>
-            <posx>20</posx>
-            <posy>60</posy>
-            <width>560</width>
-            <height>30</height>
-            <align>left</align>
-            <aligny>center</aligny>
-            <label>-</label>
-            <haspath>true</haspath>
-            <font>cirrus_20</font>
-        </control>
-        <control type="label" id="3">
-            <description>dialog line 2</description>
-            <posx>20</posx>
-            <posy>85</posy>
-            <width>560</width>
-            <height>30</height>
-            <align>left</align>
-            <aligny>center</aligny>
-            <label>-</label>
-            <haspath>true</haspath>
-            <font>cirrus_16</font>
-        </control>
-        <control type="label" id="4">
-            <description>dialog line 3</description>
-            <posx>20</posx>
-            <posy>110</posy>
-            <width>560</width>
-            <height>30</height>
-            <align>left</align>
-            <aligny>center</aligny>
-            <label>-</label>
-            <haspath>true</haspath>
-            <font>cirrus_16</font>
-        </control>
+		<control type="textbox" id="9">
+			<description>text</description>
+			<posx>20</posx>
+			<posy>60</posy>
+			<width>560</width>
+			<height>90</height>
+			<align>left</align>
+			<label>-</label>
+			<font>cirrus_20</font>
+			<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+		</control>
         <control type="progress">
             <description>Progressbar</description>
             <posx>20</posx>
