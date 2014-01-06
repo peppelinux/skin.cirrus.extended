@@ -217,19 +217,6 @@
                         <onclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
                         <visible>Skin.HasSetting(LyricScript_Enable)</visible>
                     </control>
-                    <control type="radiobutton" id="786">
-                        <include>MenuItemSettings</include>
-                        <label>$LOCALIZE[31129]</label>
-                        <onclick>Skin.ToggleSetting(SubtitleDownload_Enable)</onclick>
-                        <selected>Skin.HasSetting(SubtitleDownload_Enable)</selected>
-                    </control>
-                    <control type="button" id="787">
-                        <include>MenuItemSettings</include>
-                        <label>- $LOCALIZE[31130]</label>
-                        <label2>[COLOR=selected]$INFO[Skin.String(SubtitleScript_Path)][/COLOR]</label2>
-                        <onclick>Skin.SetAddon(SubtitleScript_Path,xbmc.python.subtitles)</onclick>
-                        <visible>Skin.HasSetting(SubtitleDownload_Enable)</visible>
-                    </control>
                     <control type="radiobutton" id="1000">
                         <description>Enable Kiosk Mode (disable slideout menu)</description>
                         <include>MenuItemSettings</include>

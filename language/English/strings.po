@@ -63,7 +63,11 @@ msgctxt "#31007"
 msgid "Video Addons"
 msgstr ""
 
-#empty strings from id 31008 to 31020
+msgctxt "#31008"
+msgid "Local subtitle available"
+msgstr ""
+
+#empty strings from id 31009 to 31020
 
 msgctxt "#31021"
 msgid "Video: Files"
