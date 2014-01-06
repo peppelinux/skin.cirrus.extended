@@ -281,12 +281,6 @@
 					<label>10037</label>
 					<onclick>SettingsLevelChange</onclick>
 				</control>
-				<control type="button" id="21">
-					<description>Reset button</description>
-					<include>ButtonCommonValues</include>
-					<label>10035</label>
-					<onclick>SettingsReset</onclick>
-				</control>
 			</control>
 		</control>
 
