@@ -307,6 +307,16 @@
                     <selected>Window.IsVisible(MusicLibrary)</selected>
                     <include>ButtonCommonValues</include>
                 </control>
+				<control type="togglebutton" id="20">
+						<description>Scan Library</description>
+						<visible>Window.IsVisible(MusicLibrary)</visible>
+						<include>ButtonCommonValues</include>
+						<label>653</label>
+						<altlabel>13353</altlabel>
+						<alttexturefocus border="0" flipx="true">listwhitegradient.png</alttexturefocus>
+						<alttexturenofocus>-</alttexturenofocus>
+						<usealttexture>Library.IsScanningMusic</usealttexture>
+					</control>
                 <control type="radiobutton" id="16">
                     <description>PartyMode</description>
                     <label>589</label>
@@ -318,7 +328,7 @@
                     <include>ButtonCommonValues</include>
                     <label>587</label>
                 </control>
-                <control type="radiobutton" id="20">
+                <control type="radiobutton" id="21">
                     <visible>Container.CanFilterAdvanced</visible>
                     <description>Filter</description>
                     <include>ButtonCommonValues</include>
