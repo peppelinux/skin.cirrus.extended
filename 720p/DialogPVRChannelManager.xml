@@ -565,7 +565,7 @@
             </control>
             <control type="label">
                 <description>Page Count Label</description>
-                <right>1040</right>
+                <posx>1040</posx>
                 <posy>600</posy>
                 <width>500</width>
                 <height>20</height>

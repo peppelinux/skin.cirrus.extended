@@ -85,7 +85,7 @@
                     <posy>140</posy>
                     <control type="label">
                         <description>Start Date</description>
-                        <right>170</right>
+                        <posx>170</posx>
                         <posy>0</posy>
                         <width>170</width>
                         <height>25</height>
@@ -109,7 +109,7 @@
                     </control>
                     <control type="label">
                         <description>Start time</description>
-                        <right>170</right>
+                        <posx>170</posx>
                         <posy>35</posy>
                         <width>170</width>
                         <height>25</height>
@@ -133,7 +133,7 @@
                     </control>
                     <control type="label">
                         <description>Channel Name</description>
-                        <right>170</right>
+                        <posx>170</posx>
                         <posy>70</posy>
                         <width>170</width>
                         <height>25</height>
@@ -157,7 +157,7 @@
                     </control>
                     <control type="label">
                         <description>Duration</description>
-                        <right>170</right>
+                        <posx>170</posx>
                         <posy>105</posy>
                         <width>170</width>
                         <height>25</height>
@@ -180,7 +180,7 @@
                     </control>
                     <control type="label">
                         <description>Genre</description>
-                        <right>170</right>
+                        <posx>170</posx>
                         <posy>140</posy>
                         <width>170</width>
                         <height>25</height>
@@ -215,7 +215,7 @@
                     </control>
                 </control>
                 <control type="label">
-                    <right>610</right>
+                    <posx>610</posx>
                     <posy>370</posy>
                     <width>400</width>
                     <height>30</height>

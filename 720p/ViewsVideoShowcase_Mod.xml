@@ -1031,7 +1031,7 @@
                 </control>
                 <control type="label">
                     <description>Episodes</description>
-                    <right>1285</right>
+                    <posx>1285</posx>
                     <posy>586</posy>
                     <width>640</width>
                     <height>25</height>

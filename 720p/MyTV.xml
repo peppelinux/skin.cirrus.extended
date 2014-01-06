@@ -398,7 +398,7 @@
                 </control>
                 <control type="label">
                     <description>Page Count Label</description>
-                    <right>40r</right>
+                    <posx>40r</posx>
                     <posy>30r</posy>
                     <width>500</width>
                     <height>20</height>
@@ -761,7 +761,7 @@
                 </control>
                 <control type="label">
                     <description>Page Count Label</description>
-                    <right>40r</right>
+                    <posx>40r</posx>
                     <posy>30r</posy>
                     <width>500</width>
                     <height>20</height>
@@ -1755,7 +1755,7 @@
                 </control>
                 <control type="label">
                     <description>Page Count Label</description>
-                    <right>40r</right>
+                    <posx>40r</posx>
                     <posy>30r</posy>
                     <width>500</width>
                     <height>20</height>
@@ -1981,7 +1981,7 @@
                 </control>
                 <control type="label">
                     <description>Page Count Label</description>
-                    <right>40r</right>
+                    <posx>40r</posx>
                     <posy>30r</posy>
                     <width>500</width>
                     <height>20</height>
@@ -2132,7 +2132,7 @@
                 </control>
                 <control type="label">
                     <description>Page Count Label</description>
-                    <right>40r</right>
+                    <posx>40r</posx>
                     <posy>30r</posy>
                     <width>500</width>
                     <height>20</height>
@@ -2444,7 +2444,7 @@
                 </control>
                 <control type="label">
                     <description>Page Count Label</description>
-                    <right>40r</right>
+                    <posx>40r</posx>
                     <posy>30r</posy>
                     <width>500</width>
                     <height>20</height>
@@ -2799,7 +2799,7 @@
                 </control>
                 <control type="label">
                     <description>Page Count Label</description>
-                    <right>40r</right>
+                    <posx>40r</posx>
                     <posy>30r</posy>
                     <width>500</width>
                     <height>20</height>

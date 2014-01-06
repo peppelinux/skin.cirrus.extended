@@ -22,7 +22,7 @@
             </control>
             <control type="label">
                 <description>header label</description>
-                <right>580</right>
+                <posx>580</posx>
                 <posy>30</posy>
                 <width>550</width>
                 <height>30</height>
@@ -35,7 +35,7 @@
             </control>
             <control type="label">
                 <description>Artist label</description>
-                <right>580</right>
+                <posx>580</posx>
                 <posy>60</posy>
                 <width>550</width>
                 <height>30</height>
@@ -48,7 +48,7 @@
             </control>
             <control type="label">
                 <description>Song label</description>
-                <right>580</right>
+                <posx>580</posx>
                 <posy>85</posy>
                 <width>550</width>
                 <height>30</height>
@@ -269,7 +269,7 @@
             </control>
             <control type="label">
                 <description>Scraper label</description>
-                <right>580</right>
+                <posx>580</posx>
                 <posy>680</posy>
                 <width>550</width>
                 <height>30</height>

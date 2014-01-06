@@ -393,7 +393,7 @@
                     </control>
                 </control>
                 <control type="label">
-                    <right>130r</right>
+                    <posx>130r</posx>
                     <posy>480</posy>
                     <width>400</width>
                     <height>30</height>
@@ -407,7 +407,7 @@
                     <visible>Control.IsVisible(4)</visible>
                 </control>
                 <control type="label">
-                    <right>130r</right>
+                    <posx>130r</posx>
                     <posy>480</posy>
                     <width>400</width>
                     <height>30</height>
@@ -421,7 +421,7 @@
                     <visible>Control.IsVisible(55) + Container.Content(Albums)</visible>
                 </control>
                 <control type="label">
-                    <right>130r</right>
+                    <posx>130r</posx>
                     <posy>480</posy>
                     <width>400</width>
                     <height>30</height>

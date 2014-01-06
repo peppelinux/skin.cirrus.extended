@@ -79,7 +79,7 @@
             </control>
             <control type="label">
                 <description>NowPlaying label</description>
-                <right>190r</right>
+                <posx>190r</posx>
                 <posy>410</posy>
                 <height>30</height>
                 <width>660</width>
@@ -93,7 +93,7 @@
             </control>
             <control type="label">
                 <description>NowPlaying label</description>
-                <right>10r</right>
+                <posx>10r</posx>
                 <posy>410</posy>
                 <height>30</height>
                 <width>660</width>
@@ -108,7 +108,7 @@
             </control>
             <control type="label">
                 <description>Artist label</description>
-                <right>190r</right>
+                <posx>190r</posx>
                 <posy>435</posy>
                 <height>30</height>
                 <width>660</width>
@@ -122,7 +122,7 @@
             </control>
             <control type="label">
                 <description>Artist label</description>
-                <right>10r</right>
+                <posx>10r</posx>
                 <posy>435</posy>
                 <height>30</height>
                 <width>660</width>
@@ -137,7 +137,7 @@
             </control>
             <control type="label">
                 <description>Title label</description>
-                <right>190r</right>
+                <posx>190r</posx>
                 <posy>460</posy>
                 <height>30</height>
                 <width>660</width>
@@ -151,7 +151,7 @@
             </control>
             <control type="label">
                 <description>Title label</description>
-                <right>10r</right>
+                <posx>10r</posx>
                 <posy>460</posy>
                 <height>30</height>
                 <width>660</width>
@@ -166,7 +166,7 @@
             </control>
             <control type="label">
                 <description>Time remaining</description>
-                <right>190r</right>
+                <posx>190r</posx>
                 <posy>490</posy>
                 <height>30</height>
                 <width>660</width>
@@ -180,7 +180,7 @@
             </control>
             <control type="label">
                 <description>Time remaining</description>
-                <right>10r</right>
+                <posx>10r</posx>
                 <posy>490</posy>
                 <height>30</height>
                 <width>660</width>
@@ -396,7 +396,7 @@
                 </control>
                 <control type="label">
                     <description>NowPlaying label</description>
-                    <right>150r</right>
+                    <posx>150r</posx>
                     <posy>380</posy>
                     <height>30</height>
                     <width>660</width>
@@ -410,7 +410,7 @@
                 </control>
                 <control type="label">
                     <description>NowPlaying label</description>
-                    <right>10r</right>
+                    <posx>10r</posx>
                     <posy>380</posy>
                     <height>30</height>
                     <width>660</width>
@@ -424,7 +424,7 @@
                 </control>
                 <control type="label">
                     <description>Title label</description>
-                    <right>150r</right>
+                    <posx>150r</posx>
                     <posy>410</posy>
                     <height>30</height>
                     <width>660</width>
@@ -438,7 +438,7 @@
                 </control>
                 <control type="label">
                     <description>Title label</description>
-                    <right>10r</right>
+                    <posx>10r</posx>
                     <posy>410</posy>
                     <height>30</height>
                     <width>660</width>
@@ -452,7 +452,7 @@
                 </control>
                 <control type="label">
                     <description>Time Label</description>
-                    <right>150r</right>
+                    <posx>150r</posx>
                     <posy>470</posy>
                     <height>30</height>
                     <width>325</width>
@@ -467,7 +467,7 @@
 
                 <control type="label">
                     <description>Time Label</description>
-                    <right>10r</right>
+                    <posx>10r</posx>
                     <posy>470</posy>
                     <height>30</height>
                     <width>325</width>
@@ -518,7 +518,7 @@
                 </control>
                 <control type="label">
                     <description>NowPlaying label</description>
-                    <right>150r</right>
+                    <posx>150r</posx>
                     <posy>380</posy>
                     <height>30</height>
                     <width>660</width>
@@ -532,7 +532,7 @@
                 </control>
                 <control type="label">
                     <description>NowPlaying label</description>
-                    <right>10r</right>
+                    <posx>10r</posx>
                     <posy>380</posy>
                     <height>30</height>
                     <width>660</width>
@@ -546,7 +546,7 @@
                 </control>
                 <control type="label">
                     <description>Title label</description>
-                    <right>150r</right>
+                    <posx>150r</posx>
                     <posy>410</posy>
                     <height>30</height>
                     <width>660</width>
@@ -560,7 +560,7 @@
                 </control>
                 <control type="label">
                     <description>Title label</description>
-                    <right>10r</right>
+                    <posx>10r</posx>
                     <posy>410</posy>
                     <height>30</height>
                     <width>660</width>
@@ -574,7 +574,7 @@
                 </control>
                 <control type="label">
                     <description>Genre Label</description>
-                    <right>150r</right>
+                    <posx>150r</posx>
                     <posy>440</posy>
                     <height>30</height>
                     <width>660</width>
@@ -588,7 +588,7 @@
                 </control>
                 <control type="label">
                     <description>Genre Label</description>
-                    <right>10r</right>
+                    <posx>10r</posx>
                     <posy>440</posy>
                     <height>30</height>
                     <width>660</width>
@@ -602,7 +602,7 @@
                 </control>
                 <control type="label">
                     <description>Time Label</description>
-                    <right>150r</right>
+                    <posx>150r</posx>
                     <posy>470</posy>
                     <height>30</height>
                     <width>325</width>
@@ -616,7 +616,7 @@
                 </control>
                 <control type="label">
                     <description>Time Label</description>
-                    <right>10r</right>
+                    <posx>10r</posx>
                     <posy>470</posy>
                     <height>30</height>
                     <width>325</width>
@@ -644,7 +644,7 @@
                 </control>
                 <control type="label">
                     <description>NowPlaying label</description>
-                    <right>150r</right>
+                    <posx>150r</posx>
                     <posy>380</posy>
                     <height>30</height>
                     <width>660</width>
@@ -657,7 +657,7 @@
                 </control>
                 <control type="label">
                     <description>Title label</description>
-                    <right>150r</right>
+                    <posx>150r</posx>
                     <posy>410</posy>
                     <height>30</height>
                     <width>660</width>
@@ -670,7 +670,7 @@
                 </control>
                 <control type="label">
                     <description>Genre Label</description>
-                    <right>150r</right>
+                    <posx>150r</posx>
                     <posy>440</posy>
                     <height>30</height>
                     <width>660</width>
@@ -683,7 +683,7 @@
                 </control>
                 <control type="label">
                     <description>Time Label</description>
-                    <right>150r</right>
+                    <posx>150r</posx>
                     <posy>470</posy>
                     <height>30</height>
                     <width>325</width>
@@ -733,7 +733,7 @@
                 </control>
                 <control type="label">
                     <description>NowPlaying label</description>
-                    <right>250r</right>
+                    <posx>250r</posx>
                     <posy>400</posy>
                     <height>30</height>
                     <width>610</width>
@@ -747,7 +747,7 @@
                 </control>
                 <control type="label">
                     <description>NowPlaying label</description>
-                    <right>10r</right>
+                    <posx>10r</posx>
                     <posy>400</posy>
                     <height>30</height>
                     <width>610</width>
@@ -761,7 +761,7 @@
                 </control>
                 <control type="label">
                     <description>TV Show label</description>
-                    <right>250r</right>
+                    <posx>250r</posx>
                     <posy>430</posy>
                     <height>30</height>
                     <width>610</width>
@@ -775,7 +775,7 @@
                 </control>
                 <control type="label">
                     <description>TV Show label</description>
-                    <right>10r</right>
+                    <posx>10r</posx>
                     <posy>430</posy>
                     <height>30</height>
                     <width>610</width>
@@ -789,7 +789,7 @@
                 </control>
                 <control type="label">
                     <description>Season Ep Label</description>
-                    <right>250r</right>
+                    <posx>250r</posx>
                     <posy>460</posy>
                     <height>30</height>
                     <width>610</width>
@@ -803,7 +803,7 @@
                 </control>
                 <control type="label">
                     <description>Season Ep Label</description>
-                    <right>10r</right>
+                    <posx>10r</posx>
                     <posy>460</posy>
                     <height>30</height>
                     <width>610</width>
@@ -817,7 +817,7 @@
                 </control>
                 <control type="label">
                     <description>Title label</description>
-                    <right>250r</right>
+                    <posx>250r</posx>
                     <posy>490</posy>
                     <height>30</height>
                     <width>610</width>
@@ -831,7 +831,7 @@
                 </control>
                 <control type="label">
                     <description>Title label</description>
-                    <right>10r</right>
+                    <posx>10r</posx>
                     <posy>490</posy>
                     <height>30</height>
                     <width>610</width>

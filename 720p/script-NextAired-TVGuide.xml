@@ -154,7 +154,7 @@
                     <visible>substring(System.Date,$LOCALIZE[41])</visible>
                 </control>
                 <control type="label">
-                    <right>90</right>
+                    <posx>90</posx>
                     <posy>0</posy>
                     <width>100</width>
                     <height>30</height>
@@ -318,7 +318,7 @@
                     <colordiffuse>AFFFFFFF</colordiffuse>
                 </control>
                 <control type="label">
-                    <right>90</right>
+                    <posx>90</posx>
                     <posy>0</posy>
                     <width>100</width>
                     <height>30</height>
@@ -482,7 +482,7 @@
                     <colordiffuse>AFFFFFFF</colordiffuse>
                 </control>
                 <control type="label">
-                    <right>90</right>
+                    <posx>90</posx>
                     <posy>0</posy>
                     <width>100</width>
                     <height>30</height>
@@ -646,7 +646,7 @@
                     <colordiffuse>AFFFFFFF</colordiffuse>
                 </control>
                 <control type="label">
-                    <right>90</right>
+                    <posx>90</posx>
                     <posy>0</posy>
                     <width>100</width>
                     <height>30</height>
@@ -810,7 +810,7 @@
                     <colordiffuse>AFFFFFFF</colordiffuse>
                 </control>
                 <control type="label">
-                    <right>90</right>
+                    <posx>90</posx>
                     <posy>0</posy>
                     <width>100</width>
                     <height>30</height>
@@ -974,7 +974,7 @@
                     <colordiffuse>AFFFFFFF</colordiffuse>
                 </control>
                 <control type="label">
-                    <right>90</right>
+                    <posx>90</posx>
                     <posy>0</posy>
                     <width>100</width>
                     <height>30</height>
@@ -1138,7 +1138,7 @@
                     <colordiffuse>AFFFFFFF</colordiffuse>
                 </control>
                 <control type="label">
-                    <right>90</right>
+                    <posx>90</posx>
                     <posy>0</posy>
                     <width>100</width>
                     <height>30</height>

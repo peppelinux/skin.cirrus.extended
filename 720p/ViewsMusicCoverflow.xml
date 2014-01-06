@@ -529,7 +529,7 @@
                 <shadowcolor>black</shadowcolor>
             </control>
             <control type="label">
-                <right>40r</right>
+                <posx>40r</posx>
                 <posy>35</posy>
                 <width>300</width>
                 <height>25</height>
@@ -554,7 +554,7 @@
             </control>
             <control type="label">
                 <description>Year txt</description>
-                <right>40r</right>
+                <posx>40r</posx>
                 <posy>0</posy>
                 <width>300</width>
                 <height>25</height>

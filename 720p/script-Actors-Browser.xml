@@ -292,7 +292,7 @@
                 </control>
                 <control type="label">
                     <description>Page label</description>
-                    <right>660</right>
+                    <posx>660</posx>
                     <posy>680</posy>
                     <width>560</width>
                     <height>30</height>
@@ -305,7 +305,7 @@
                 </control>
                 <control type="label">
                     <description>Page label</description>
-                    <right>660</right>
+                    <posx>660</posx>
                     <posy>680</posy>
                     <width>560</width>
                     <height>30</height>
@@ -320,7 +320,7 @@
         </control>
         <control type="label">
             <description>time label</description>
-            <right>20r</right>
+            <posx>20r</posx>
             <posy>5</posy>
             <width>200</width>
             <height>30</height>

@@ -256,7 +256,7 @@
                 <texture flipx="true">homesubbackground.png</texture>
             </control>
             <control type="label">
-                <right>440</right>
+                <posx>440</posx>
                 <posy>70</posy>
                 <width>410</width>
                 <height>30</height>
@@ -269,7 +269,7 @@
             </control>
             <control type="label">
                 <description>Page Count Label</description>
-                <right>440</right>
+                <posx>440</posx>
                 <posy>38r</posy>
                 <width>300</width>
                 <height>20</height>

@@ -65,7 +65,7 @@
             </control>
             <control type="label">
                 <description>Artist Title</description>
-                <right>400</right>
+                <posx>400</posx>
                 <posy>140</posy>
                 <width>130</width>
                 <height>25</height>
@@ -89,7 +89,7 @@
             </control>
             <control type="label">
                 <description>Album Title</description>
-                <right>400</right>
+                <posx>400</posx>
                 <posy>175</posy>
                 <width>130</width>
                 <height>25</height>
@@ -113,7 +113,7 @@
             </control>
             <control type="label">
                 <description>Genre Title</description>
-                <right>400</right>
+                <posx>400</posx>
                 <posy>210</posy>
                 <width>130</width>
                 <height>25</height>
@@ -137,7 +137,7 @@
             </control>
             <control type="label">
                 <description>Year Title</description>
-                <right>400</right>
+                <posx>400</posx>
                 <posy>245</posy>
                 <width>130</width>
                 <height>25</height>
@@ -161,7 +161,7 @@
             </control>
             <control type="label">
                 <description>Track Number Title</description>
-                <right>400</right>
+                <posx>400</posx>
                 <posy>280</posy>
                 <width>130</width>
                 <height>25</height>
@@ -185,7 +185,7 @@
             </control>
             <control type="label">
                 <description>Rating Title</description>
-                <right>400</right>
+                <posx>400</posx>
                 <posy>315</posy>
                 <width>130</width>
                 <height>25</height>
@@ -237,7 +237,7 @@
             </control>
             <control type="label">
                 <description>Comment Title</description>
-                <right>400</right>
+                <posx>400</posx>
                 <posy>350</posy>
                 <width>130</width>
                 <height>25</height>

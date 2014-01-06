@@ -305,7 +305,7 @@
                 <shadowcolor>black</shadowcolor>
             </control>
             <control type="label">
-                <right>1260</right>
+                <posx>1260</posx>
                 <posy>65</posy>
                 <width>460</width>
                 <height>25</height>

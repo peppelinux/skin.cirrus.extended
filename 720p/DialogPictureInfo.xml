@@ -14,7 +14,7 @@
             </control>
             <control type="label">
                 <description>header label</description>
-                <right>35r</right>
+                <posx>35r</posx>
                 <posy>40</posy>
                 <width>710</width>
                 <height>30</height>

@@ -332,7 +332,7 @@
                         <!-- Changes Begin Butchaby MOD 1.2.0 -->
                         <control type="label">
                             <visible>Skin.HasSetting(pathininfo)</visible>
-                            <right>125</right>
+                            <posx>125</posx>
                             <posy>265</posy>
                             <width>50</width>
                             <height>30</height>
@@ -596,7 +596,7 @@
                         </control>
                         <control type="label">
                             <visible>Skin.HasSetting(pathininfo)</visible>
-                            <right>125</right>
+                            <posx>125</posx>
                             <posy>265</posy>
                             <width>50</width>
                             <height>30</height>
@@ -885,7 +885,7 @@
                         </control>
                         <control type="label">
                             <visible>Skin.HasSetting(pathininfo)</visible>
-                            <right>125</right>
+                            <posx>125</posx>
                             <posy>265</posy>
                             <width>50</width>
                             <height>30</height>
