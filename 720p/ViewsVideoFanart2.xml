@@ -778,13 +778,13 @@
                     <pauseatend>2000</pauseatend>
                     <visible>!Skin.HasSetting(Smallwindowhidden)</visible>
                 </control>
-                <control type="group">
+                <control type="label">
                     <description>Nextaired</description>
-                    <posx>-15</posx>
-                    <posy>255</posy>
+                    <posx>65</posx>
+                    <posy>275</posy>
                     <width>250</width>
                     <height>25</height>
-                    <include>NextAired</include>
+                    <label>$VAR[NextAired]</label>
                     <align>left</align>
                     <aligny>center</aligny>
                     <font>cirrus_22</font>
@@ -925,7 +925,7 @@
                 <control type="label">
                     <description>Episodes</description>
                     <posx>205</posx>
-                    <posy>275</posy>
+                    <posy>310</posy>
                     <width>640</width>
                     <height>25</height>
                     <label fallback="416">[COLOR=accent]$LOCALIZE[20360]: [/COLOR]$INFO[listitem.episode] [COLOR=grey] ($INFO[ListItem.Property(WatchedEpisodes),, $LOCALIZE[16102]] - $INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101]])[/COLOR]</label>

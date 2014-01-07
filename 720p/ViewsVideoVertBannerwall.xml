@@ -100,13 +100,13 @@
                 <posx>30</posx>
                 <posy>580</posy>
                 <visible>Control.IsVisible(519) | Container.Content(TVShows)</visible>
-                <control type="group">
+                <control type="label">
                     <description>Nextaired</description>
-                    <posx>-80</posx>
-                    <posy>-69</posy>
+                    <posx>0</posx>
+                    <posy>-5</posy>
                     <width>440</width>
                     <height>25</height>
-                    <include>NextAired</include>
+                    <label>$VAR[NextAired]</label>
                     <align>left</align>
                     <aligny>center</aligny>
                     <font>cirrus_24</font>

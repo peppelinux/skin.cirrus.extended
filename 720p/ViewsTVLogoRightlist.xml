@@ -136,16 +136,16 @@
                 <posx>30</posx>
                 <posy>580</posy>
                 <visible>Control.IsVisible(668) | Container.Content(TVShows) | Container.Content(Movies)</visible>
-                <control type="group">
+                <control type="label">
                     <description>Nextaired</description>
-                    <posx>-80</posx>
-                    <posy>-69</posy>
+                    <posx>0</posx>
+                    <posy>-5</posy>
                     <width>440</width>
                     <height>25</height>
-                    <include>NextAired</include>
+                    <label>$VAR[NextAired]</label>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <font>cirrus_24</font>
+                    <font>cirrus_20</font>
                     <scroll>true</scroll>
                     <visible>Container.Content(TVShows) + !Skin.HasSetting(poster) + !Skin.HasSetting(banner) + !Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb)</visible> 
                 </control>	
@@ -160,7 +160,6 @@
                     <aligny>center</aligny>
                     <font>cirrus_30</font>
                     <scroll>true</scroll>
-
                     <visible>Container.Content(Movies) + !IsEmpty(ListItem.Thumb)</visible> 
                 </control>
                 <control type="label">
@@ -174,7 +173,6 @@
                     <aligny>center</aligny>
                     <font>cirrus_20</font>
                     <scroll>true</scroll>
-
                     <visible>Container.Content(TVShows) + !Skin.HasSetting(poster) + !Skin.HasSetting(banner) + !Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb)</visible> 
                 </control>
                 <control type="label">
@@ -201,24 +199,8 @@
                     <aligny>center</aligny>
                     <font>cirrus_20</font>
                     <scroll>true</scroll>
-
                     <visible>Container.Content(TVShows) + !Skin.HasSetting(poster) + !Skin.HasSetting(banner) + !Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb)</visible> 
                 </control>
-
-                <control type="group">
-                    <description>Nextaired</description>
-                    <posx>-80</posx>
-                    <posy>-69</posy>
-                    <width>440</width>
-                    <height>25</height>
-                    <include>NextAired</include>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <font>cirrus_24</font>
-                    <scroll>true</scroll>
-
-                    <visible>Container.Content(TVShows) + !Skin.HasSetting(banner) + !Skin.HasSetting(poster) + !Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb)</visible> 
-                </control>	
                 <control type="label">
                     <description>First Aired</description>
                     <posx>0</posx>
@@ -259,29 +241,29 @@
                     <scroll>true</scroll>
                     <visible>Container.Content(TVShows) + Skin.HasSetting(banner) + !IsEmpty(ListItem.Thumb)</visible> 
                 </control>
-                <control type="group">
+                <control type="label">
                     <description>Nextaired</description>
-                    <posx>-67</posx>
-                    <posy>-74</posy>
+                    <posx>13</posx>
+                    <posy>-13</posy>
                     <width>440</width>
                     <height>25</height>
-                    <include>NextAired</include>
+                    <label>$VAR[NextAired]</label>
                     <align>left</align>
                     <aligny>center</aligny>
                     <font>cirrus_24</font>
                     <scroll>true</scroll>
                     <visible>Container.Content(TVShows) + Skin.HasSetting(banner) + !IsEmpty(ListItem.Thumb)</visible> 
                 </control>	
-                <control type="group">
+                <control type="label">
                     <description>Nextaired</description>
-                    <posx>160</posx>
-                    <posy>-63</posy>
+                    <posx>240</posx>
+                    <posy>0</posy>
                     <width>440</width>
                     <height>25</height>
-                    <include>NextAired</include>
+                    <label>$VAR[NextAired]</label>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <font>cirrus_24</font>
+                    <font>cirrus_20</font>
                     <scroll>true</scroll>
                     <visible>Container.Content(TVShows) + Skin.HasSetting(poster) + !IsEmpty(ListItem.Thumb)</visible> 
                 </control>	
@@ -384,16 +366,16 @@
                         <bordersize>8</bordersize>
                     </control>
                 </control>
-                <control type="group">
+                <control type="label">
                     <description>Nextaired</description>
-                    <posx>167</posx>
-                    <posy>-63</posy>
+                    <posx>247</posx>
+                    <posy>0</posy>
                     <width>440</width>
                     <height>25</height>
-                    <include>NextAired</include>
+                    <label>$VAR[NextAired]</label>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <font>cirrus_24</font>
+                    <font>cirrus_20</font>
                     <scroll>true</scroll>
                     <visible>Container.Content(TVShows) + Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb)</visible> 
                 </control>	

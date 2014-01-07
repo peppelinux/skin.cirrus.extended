@@ -400,8 +400,7 @@
                     <scroll>true</scroll>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <label>[COLOR=accent]$LOCALIZE[31062] [/COLOR][COLOR=ffffffff]$INFO[Window(Home).Property(NextAired.NextDate)][/COLOR]</label>
-                    <visible>!IsEmpty(Window(Home).Property(NextAired.Label))+!IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
+                    <label>$VAR[NextAired]</label>
                     <scrollout>false</scrollout>
                 </control>
                 <control type="textbox">

@@ -59,7 +59,11 @@ msgctxt "#31007"
 msgid "Video Addons"
 msgstr ""
 
-#empty strings from id 31008 to 31020
+msgctxt "#31009"
+msgid "Status:"
+msgstr ""
+
+#empty strings from id 31010 to 31020
 
 msgctxt "#31021"
 msgid "Video: Files"
@@ -161,12 +165,6 @@ msgid "Next Episode:"
 msgstr ""
 
 #Skin Settings labels
-
-
-
-
-
-
 
 #Playlist Editor labels
 #empty strings from id 31067 to 31100

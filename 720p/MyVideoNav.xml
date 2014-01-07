@@ -1,7 +1,7 @@
 <window id="25">
     <defaultcontrol always="true">55</defaultcontrol>
     <onload condition="Skin.HasSetting(tv_theme) + System.HasAddon(script.tvtunes) + IsEmpty(Window(Home).Property(DontRunTVShowScripts))">XBMC.RunScript(script.tvtunes,backend=True)</onload>
-    <onload condition="System.HasAddon(script.tv.show.next.aired) + IsEmpty(Window(Home).Property(DontRunTVShowScripts)) + !Skin.HasSetting(NextAiredInfo)">RunScript(script.tv.show.next.aired,backend=True)</onload>
+    <onload condition="System.HasAddon(script.tv.show.next.aired) + IsEmpty(Window(Home).Property(DontRunTVShowScripts))">RunScript(script.tv.show.next.aired,backend=True)</onload>
     <onload condition="System.HasAddon(script.extendedinfo)">Runscript(script.extendedinfo, backend=true)</onload>
     <allowoverlay>no</allowoverlay>
     <views>55,52,515,508,666,556,555,667,569,668,570,513,519,571,514,560,590,591,592,593,594,595,511,700,691,766,525,720,721</views>
