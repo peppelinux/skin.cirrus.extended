@@ -1256,7 +1256,7 @@
                     </control>
                     <control type="button" id="132">
                         <description>Edit library</description>
-                        <visible>Container.content(movies) + System.HasAddon(script.libraryeditor)</visible>
+                        <visible>System.HasAddon(script.libraryeditor)</visible>
                         <include>ButtonVideoInfoCommonValues</include>
                         <onclick>XBMC.RunScript(script.libraryeditor, DBID=$INFO[ListItem.DBID])</onclick>
                         <label>41127</label>
