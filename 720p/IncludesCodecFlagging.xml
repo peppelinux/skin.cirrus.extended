@@ -295,7 +295,7 @@
             <height>57</height>
             <aspectratio>keep</aspectratio>
             <texture>special://skin/extras/flagging/ratings/Germany0.png</texture>
-            <visible>substring(ListItem.mpaa,Germany:o.A.) | substring(ListItem.mpaa, o.A.) | substring(ListItem.mpaa, Germany:o.Al.) | substring(ListItem.mpaa, Germany:0)</visible>
+            <visible>substring(ListItem.mpaa,Germany:o.A.) | substring(ListItem.mpaa, o.A.) | substring(ListItem.mpaa, Germany:o.Al.) | substring(ListItem.mpaa, Germany:0) | substring(ListItem.mpaa, FSK 0)</visible>
         </control>
         <control type="image">
             <description>Germany FSK 6</description>
@@ -495,7 +495,7 @@
             <height>34</height>
             <aspectratio>keep</aspectratio>
             <texture>special://skin/extras/flagging/newratings/Germany0.png</texture>
-            <visible>substring(ListItem.mpaa,Germany:o.A.) | substring(ListItem.mpaa, o.A.)</visible>
+            <visible>substring(ListItem.mpaa,Germany:o.A.) | substring(ListItem.mpaa, o.A.) | substring(ListItem.mpaa, Germany:o.Al.) | substring(ListItem.mpaa, Germany:0) | substring(ListItem.mpaa, FSK 0)</visible>
         </control>
         <control type="image">
             <description>Germany FSK 6</description>
