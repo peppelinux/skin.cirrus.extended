@@ -1,15 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <!-- ===================================================================================== -->
     <!-- ================================= FANART VIEW ID 547 ================================ -->
     <!-- ================================= Music ============================================= -->
     <include name="MusicFanart">
         <animation type="WindowOpen" reversible="false">
-            <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
-            <effect type="fade" start="0" end="100" time="300" />
+            <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
+            <effect type="fade" start="0" end="100" time="300"/>
         </animation>
         <animation type="WindowClose" reversible="false">
-            <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
-            <effect type="fade" start="100" end="0" time="300" />
+            <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300"/>
+            <effect type="fade" start="100" end="0" time="300"/>
         </animation>      
         <control type="image">
             <!-- bottom bar background -->
@@ -38,12 +39,12 @@
             <posy>530</posy>
             <control type="wraplist" id="547">
                 <animation type="WindowOpen" reversible="false">
-                    <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
-                    <effect type="fade" start="0" end="100" time="300" />
+                    <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
+                    <effect type="fade" start="0" end="100" time="300"/>
                 </animation>
                 <animation type="WindowClose" reversible="false">
-                    <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
-                    <effect type="fade" start="100" end="0" time="300" />
+                    <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300"/>
+                    <effect type="fade" start="100" end="0" time="300"/>
                 </animation>      
                 <visible>Window.IsVisible(MusicFiles) | Window.IsVisible(MusicPlaylist) |  Container.Content(Songs) | Container.Content(Albums) | Container.Content(Artists) | Container.Content(Genres)</visible>
                 <posx>-162</posx>

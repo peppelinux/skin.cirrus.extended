@@ -39,6 +39,10 @@ msgctxt "#31001"
 msgid "Enable startup animation"
 msgstr ""
 
+msgctxt "#31002"
+msgid "Settings Options"
+msgstr ""
+
 msgctxt "#31003"
 msgid "Power Options"
 msgstr ""
@@ -57,6 +61,10 @@ msgstr ""
 
 msgctxt "#31007"
 msgid "Video Addons"
+msgstr ""
+
+msgctxt "#31008"
+msgid "Local subtitle available"
 msgstr ""
 
 msgctxt "#31009"

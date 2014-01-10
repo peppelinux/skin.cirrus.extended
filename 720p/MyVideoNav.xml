@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="25">
     <defaultcontrol always="true">55</defaultcontrol>
     <onload condition="Skin.HasSetting(tv_theme) + System.HasAddon(script.tvtunes) + IsEmpty(Window(Home).Property(DontRunTVShowScripts))">XBMC.RunScript(script.tvtunes,backend=True)</onload>
@@ -405,7 +406,7 @@
                     <onleft>55</onleft>
                     <onright>4</onright>
                     <onup>2</onup>
-                    <ondown>16</ondown>
+					<ondown>20</ondown>
                 </control>
                 <control type="togglebutton" id="4">
                     <description>Sort asc</description>
@@ -415,7 +416,7 @@
                     <onleft>3</onleft>
                     <onright>55</onright>
                     <onup>3</onup>
-                    <ondown>16</ondown>
+					<ondown>9010</ondown>
                 </control>
                 <!-- GROUP OF RADIO BUTTONS  -->
                 <control type="grouplist" id="9010">
@@ -428,14 +429,19 @@
                     <onup>3</onup>
                     <ondown>2</ondown>
                     <itemgap>0</itemgap>
+					<control type="togglebutton" id="20">
+						<description>Scan Library</description>
+						<include>ButtonCommonValues</include>
+						<label>653</label>
+						<altlabel>13353</altlabel>
+						<alttexturefocus border="0" flipx="true">listwhitegradient.png</alttexturefocus>
+						<alttexturenofocus>-</alttexturenofocus>
+						<usealttexture>Library.IsScanningVideo</usealttexture>
+					</control>
                     <control type="radiobutton" id="16">
                         <description>PartyMode</description>
                         <label>589</label>
                         <include>ButtonCommonValues</include>
-                        <onleft>55</onleft>
-                        <onright>55</onright>
-                        <onup>3</onup>
-                        <ondown>14</ondown>
                     </control>
                     <control type="radiobutton" id="14">
                         <description>HIDE Watched Toggle</description>
@@ -455,22 +461,12 @@
                         <include>ButtonCommonValues</include>
                         <label>587</label>
                     </control>
-                    <control type="radiobutton" id="20">
+					<control type="radiobutton" id="21">
                         <visible>Container.CanFilterAdvanced</visible>
                         <description>Filter</description>
                         <include>ButtonCommonValues</include>
                         <label>587</label>
                         <onclick>Filter</onclick>
-                    </control>
-                    <control type="radiobutton" id="7">
-                        <description>Stack Toggle</description>
-                        <include>ButtonCommonValues</include>
-                        <label>346</label>
-                    </control>
-                    <control type="radiobutton" id="17">
-                        <description>Flatten</description>
-                        <include>ButtonCommonValues</include>
-                        <label>20411</label>
                     </control>
                     <control type="radiobutton" id="11">
                         <description>Unlock Shares</description>
@@ -707,7 +703,6 @@
                         <description>Search</description>
                         <include>ButtonCommonValues</include>
                         <label>137</label>
-                        <ondown>2</ondown>
                     </control>
                 </control>
             </control>

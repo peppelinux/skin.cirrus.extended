@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <!-- ============== Infos On Home ================= -->
     <include name="InfoOnHome">
@@ -9,14 +10,14 @@
                 <posy>-520</posy>
                 <visible>Container(9000).HasFocus(1) | [Container(9000).HasFocus(3) + System.HasAddon(script.randomandlastitems)] | [Container(9000).HasFocus(4) + System.HasAddon(script.randomandlastitems)] | [Container(9000).HasFocus(5) + System.HasAddon(script.randomandlastitems)] | [Container(9000).HasFocus(9) + System.HasAddon(script.randomandlastitems)] | [Container(9000).HasFocus(10) + System.HasAddon(script.randomandlastitems)] | [Container(9000).HasFocus(11) + System.HasAddon(script.randomandlastitems)] | Container(9000).HasFocus(7) | Container(9000).HasFocus(14)</visible>
                 <animation type="Conditional" condition="Container(9000).HasFocus(1) | Container(9000).HasFocus(3) | Container(9000).HasFocus(4) | Container(9000).HasFocus(5) | Container(9000).HasFocus(7) | Container(9000).HasFocus(9) | Container(9000).HasFocus(10) | Container(9000).HasFocus(11) | Container(9000).HasFocus(14)" reversible="false">
-                    <effect type="fade" start="0" end="100" time="250" />
+                    <effect type="fade" start="0" end="100" time="250"/>
                 </animation>
                 <animation type="Hidden" reversible="false">
-                    <effect type="fade" start="100" end="0" time="250" />
+                    <effect type="fade" start="100" end="0" time="250"/>
                 </animation>			
                 <animation effect="fade" start="0" end="100" time="900" delay="800">WindowOpen</animation>
                 <animation type="WindowClose" condition="!Window.Previous(startup)" reversible="false">
-                    <effect type="fade" start="100" end="0" time="200" />
+                    <effect type="fade" start="100" end="0" time="200"/>
                 </animation>
 
                 <control type="image">
@@ -1181,14 +1182,14 @@
                 <visible>Container(9000).HasFocus(25)</visible>
                 <visible>!Player.HasVideo | !Skin.HasSetting(videowindowonhome)</visible>
                 <animation type="Conditional" condition="Container(9000).HasFocus(25)" reversible="false">
-                    <effect type="fade" start="0" end="100" time="250" />
+                    <effect type="fade" start="0" end="100" time="250"/>
                 </animation>
                 <animation type="Hidden" reversible="false">
-                    <effect type="fade" start="100" end="0" time="250" />
+                    <effect type="fade" start="100" end="0" time="250"/>
                 </animation>					
                 <animation effect="fade" start="0" end="100" time="900" delay="800">WindowOpen</animation>
                 <animation type="WindowClose" reversible="false">
-                    <effect type="fade" start="100" end="0" time="200" />
+                    <effect type="fade" start="100" end="0" time="200"/>
                 </animation>
                 <control type="image">
                     <posx>0</posx>
@@ -1433,4 +1434,4 @@
         </control>
 
     </include>
-</includes>	
+</includes>

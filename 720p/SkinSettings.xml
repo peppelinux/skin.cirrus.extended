@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">9000</defaultcontrol>
     <controls>
@@ -11,12 +12,12 @@
             <posy>60</posy>
 
             <animation type="WindowOpen" reversible="false">
-                <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
-                <effect type="fade" start="0" end="100" time="300" />
+                <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
+                <effect type="fade" start="0" end="100" time="300"/>
             </animation>
             <animation type="WindowClose" reversible="false">
-                <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
-                <effect type="fade" start="100" end="0" time="300" />
+                <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300"/>
+                <effect type="fade" start="100" end="0" time="300"/>
             </animation>      
 
             <control type="image">
@@ -215,19 +216,6 @@
                         <label2>[COLOR=selected]$INFO[Skin.String(LyricScript_Path)][/COLOR]</label2>
                         <onclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
                         <visible>Skin.HasSetting(LyricScript_Enable)</visible>
-                    </control>
-                    <control type="radiobutton" id="786">
-                        <include>MenuItemSettings</include>
-                        <label>$LOCALIZE[31129]</label>
-                        <onclick>Skin.ToggleSetting(SubtitleDownload_Enable)</onclick>
-                        <selected>Skin.HasSetting(SubtitleDownload_Enable)</selected>
-                    </control>
-                    <control type="button" id="787">
-                        <include>MenuItemSettings</include>
-                        <label>- $LOCALIZE[31130]</label>
-                        <label2>[COLOR=selected]$INFO[Skin.String(SubtitleScript_Path)][/COLOR]</label2>
-                        <onclick>Skin.SetAddon(SubtitleScript_Path,xbmc.python.subtitles)</onclick>
-                        <visible>Skin.HasSetting(SubtitleDownload_Enable)</visible>
                     </control>
                     <control type="radiobutton" id="1000">
                         <description>Enable Kiosk Mode (disable slideout menu)</description>
@@ -1257,7 +1245,7 @@
             <!-- BACKGROUND CUSTOMIZER -->
 
             <control type="list" id="9003">
-                <hitrect x="0" y="0" w="0" h="0" />
+                <hitrect x="0" y="0" w="0" h="0"/>
                 <posx>0</posx>
                 <posy>45</posy>
                 <width>750</width>

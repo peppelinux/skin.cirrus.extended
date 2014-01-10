@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="HomeSubmenu">
 
@@ -16,7 +17,7 @@
 
             <!-- VIDEOS SUBMENU -->
             <control type="fixedlist" id="9010">
-                <hitrect x="50" y="50" w="330" h="620" />
+                <hitrect x="50" y="50" w="330" h="620"/>
                 <posx>-230</posx>
                 <posy>550</posy>
                 <width>1000</width>
@@ -107,7 +108,7 @@
 
             <!-- MUSIC SUBMENU -->
             <control type="fixedlist" id="9010">
-                <hitrect x="50" y="50" w="330" h="620" />
+                <hitrect x="50" y="50" w="330" h="620"/>
                 <posx>-230</posx>
                 <posy>550</posy>
                 <width>1000</width>
@@ -193,7 +194,7 @@
 
             <!-- SETTINGS SUBMENU -->
             <control type="fixedlist" id="9010">
-                <hitrect x="50" y="50" w="330" h="620" />
+                <hitrect x="50" y="50" w="330" h="620"/>
                 <posx>-230</posx>
                 <posy>550</posy>
                 <width>1000</width>
@@ -281,7 +282,7 @@
 
             <!-- Addon Submenu -->
             <control type="fixedlist" id="9010">
-                <hitrect x="50" y="50" w="330" h="620" />
+                <hitrect x="50" y="50" w="330" h="620"/>
                 <posx>-230</posx>
                 <posy>550</posy>
                 <width>1000</width>
@@ -427,7 +428,7 @@
 
             <!-- MOVIES SUBMENU -->
             <control type="fixedlist" id="9010">
-                <hitrect x="50" y="50" w="330" h="620" />
+                <hitrect x="50" y="50" w="330" h="620"/>
                 <posx>-230</posx>
                 <posy>550</posy>
                 <width>1000</width>
@@ -524,7 +525,7 @@
                     </item>
                     <item id="90187">
                         <label>41183</label>
-                        <onclick>ActivateWindow(videos,videodb://1/7/,return)</onclick>
+                        <onclick>ActivateWindow(videos,videodb://movies/sets/,return)</onclick>
                         <visible>!Skin.HasSetting(hidemovievideofiles)</visible>
                     </item>
                     <!-- ###################################### -->
@@ -641,7 +642,7 @@
 
             <!-- TV SHOWS SUBMENU -->
             <control type="fixedlist" id="9010">
-                <hitrect x="50" y="50" w="330" h="620" />
+                <hitrect x="50" y="50" w="330" h="620"/>
                 <posx>-230</posx>
                 <posy>550</posy>
                 <width>1000</width>
@@ -827,7 +828,7 @@
 
             <!-- MOVIES Custom Playlist 1 -->
             <control type="fixedlist" id="9010">
-                <hitrect x="50" y="50" w="330" h="620" />
+                <hitrect x="50" y="50" w="330" h="620"/>
                 <posx>-230</posx>
                 <posy>550</posy>
                 <width>1000</width>
@@ -924,7 +925,7 @@
                     </item>
                     <item id="94187">
                         <label>41183</label>
-                        <onclick>ActivateWindow(videos,videodb://1/7/,return)</onclick>
+                        <onclick>ActivateWindow(videos,videodb://movies/sets/,return)</onclick>
                         <visible>!Skin.HasSetting(hidemovievideofiles)</visible>
                     </item>
                     <!-- ################################### -->
@@ -1040,7 +1041,7 @@
 
             <!-- MOVIES Custom Playlist 2 -->
             <control type="fixedlist" id="9010">
-                <hitrect x="50" y="50" w="330" h="620" />
+                <hitrect x="50" y="50" w="330" h="620"/>
                 <posx>-230</posx>
                 <posy>550</posy>
                 <width>1000</width>
@@ -1137,7 +1138,7 @@
                     </item>
                     <item id="95187">
                         <label>41183</label>
-                        <onclick>ActivateWindow(videos,videodb://1/7/,return)</onclick>
+                        <onclick>ActivateWindow(videos,videodb://movies/sets/,return)</onclick>
                         <visible>!Skin.HasSetting(hidemovievideofiles)</visible>
                     </item>
                     <!-- #################################### -->
@@ -1253,7 +1254,7 @@
 
             <!-- MOVIES Custom Playlist 3 -->
             <control type="fixedlist" id="9010">
-                <hitrect x="50" y="50" w="330" h="620" />
+                <hitrect x="50" y="50" w="330" h="620"/>
                 <posx>-230</posx>
                 <posy>550</posy>
                 <width>1000</width>
@@ -1350,7 +1351,7 @@
                     </item>
                     <item id="96187">
                         <label>41183</label>
-                        <onclick>ActivateWindow(videos,videodb://1/7/,return)</onclick>
+                        <onclick>ActivateWindow(videos,videodb://movies/sets/,return)</onclick>
                         <visible>!Skin.HasSetting(hidemovievideofiles)</visible>
                     </item>
                     <!-- ######################################## -->
@@ -1466,7 +1467,7 @@
 
             <!-- TV-Serien Custom Playlist 4 -->		
             <control type="fixedlist" id="9010">
-                <hitrect x="50" y="50" w="330" h="620" />
+                <hitrect x="50" y="50" w="330" h="620"/>
                 <posx>-230</posx>
                 <posy>550</posy>
                 <width>1000</width>
@@ -1648,7 +1649,7 @@
 
             <!-- TV-Serien Custom Playlist 5 -->
             <control type="fixedlist" id="9010">
-                <hitrect x="50" y="50" w="330" h="620" />
+                <hitrect x="50" y="50" w="330" h="620"/>
                 <posx>-230</posx>
                 <posy>550</posy>
                 <width>1000</width>
@@ -1830,7 +1831,7 @@
 
             <!-- TV-Serien Custom Playlist 6 -->
             <control type="fixedlist" id="9010">
-                <hitrect x="50" y="50" w="330" h="620" />
+                <hitrect x="50" y="50" w="330" h="620"/>
                 <posx>-230</posx>
                 <posy>550</posy>
                 <width>1000</width>
@@ -2012,7 +2013,7 @@
 
             <!-- Power SUBMENU -->
             <control type="fixedlist" id="9010">
-                <hitrect x="50" y="50" w="330" h="620" />
+                <hitrect x="50" y="50" w="330" h="620"/>
                 <posx>-230</posx>
                 <posy>550</posy>
                 <width>1000</width>

@@ -1,83 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
-    <include file="defaults.xml" />
-    <include file="Variables.xml" />
-    <include file="ViewsVideoCoverflow.xml" />
-    <include file="ViewsVideoBannerwall.xml" />
-    <include file="ViewsVideoVertBannerwall.xml" />
+    <include file="defaults.xml"/>
+    <include file="Variables.xml"/>
+    <include file="ViewsVideoCoverflow.xml"/>
+    <include file="ViewsVideoBannerwall.xml"/>
+    <include file="ViewsVideoVertBannerwall.xml"/>
     <!-- Added this view571 MOD 1.2.0 by Branlr -->  
-    <include file="ViewsVideoBigposter.xml" />
-    <include file="ViewsVideoFanart.xml" />
-    <include file="ViewsVideoFanartSlide.xml" />
+    <include file="ViewsVideoBigposter.xml"/>
+    <include file="ViewsVideoFanart.xml"/>
+    <include file="ViewsVideoFanartSlide.xml"/>
     <!-- Added this view666 for new Fanart  -->
-    <include file="ViewsGamesFanart.xml" />
+    <include file="ViewsGamesFanart.xml"/>
     <!-- Added this view590 for Advanced Launcher plugin  -->
-    <include file="ViewsGamesFanartSquare.xml" />
+    <include file="ViewsGamesFanartSquare.xml"/>
     <!-- Added this view591 for Advanced Launcher plugin  -->
-    <include file="ViewsGamesFanartWide.xml" />
+    <include file="ViewsGamesFanartWide.xml"/>
     <!-- Added this view592 for Advanced Launcher plugin  -->
-    <include file="ViewsGamesRightlist.xml" />
+    <include file="ViewsGamesRightlist.xml"/>
     <!-- Added this view593 for Advanced Launcher plugin  -->
-    <include file="ViewsGamesRightlistSquare.xml" />
+    <include file="ViewsGamesRightlistSquare.xml"/>
     <!-- Added this view594 for Advanced Launcher plugin  -->
-    <include file="ViewsGamesRightlistLandscape.xml" />
+    <include file="ViewsGamesRightlistLandscape.xml"/>
     <!-- Added this view595 for Advanced Launcher plugin  My Mod-->  
-    <include file="ViewsGamesLogoRightlist.xml" />
+    <include file="ViewsGamesLogoRightlist.xml"/>
     <!-- Added this view596 for Advanced Launcher plugin --> 
-    <include file="ViewsVideoHalfwall.xml" />
-    <include file="ViewsVideoHalfwallTV.xml" />
+    <include file="ViewsVideoHalfwall.xml"/>
+    <include file="ViewsVideoHalfwallTV.xml"/>
     <!-- Added this view560 MOD 1.2.0 by Branlr -->  
-    <include file="ViewsVideoRightlist.xml" />
-    <include file="ViewsVideoBannerlist.xml" />
+    <include file="ViewsVideoRightlist.xml"/>
+    <include file="ViewsVideoBannerlist.xml"/>
     <!-- Added this view570 MOD 1.2.0 by Branlr -->  
-    <include file="ViewsVideoWall.xml" />
-    <include file="ViewsVideoCompact.xml" />
+    <include file="ViewsVideoWall.xml"/>
+    <include file="ViewsVideoCompact.xml"/>
     <!-- Added this view51lide5 MOD 1.2.2 by malexx -->  
-    <include file="ViewsTVLogoRightlist.xml" />
+    <include file="ViewsTVLogoRightlist.xml"/>
     <!-- Added this view668 TVLogo Butchabay -->  
-    <include file="ViewsTVLogo.xml" />
+    <include file="ViewsTVLogo.xml"/>
     <!-- Added this view667 TVLogo Butchabay -->  
-    <include file="ViewsVideoFanartLandscape.xml" />
+    <include file="ViewsVideoFanartLandscape.xml"/>
     <!-- Added this view691 Landscape View Butchabay -->  
-    <include file="ViewsVideoFanartMovieSets.xml" />
+    <include file="ViewsVideoFanartMovieSets.xml"/>
     <!-- Added this view  Movie Sets View Butchabay -->  
-    <include file="ViewsVideoShowcase.xml" />
+    <include file="ViewsVideoShowcase.xml"/>
     <!-- Added this view 52 -->  
     <!--  <include file="ViewsVideoSlide.xml" />  -->	              <!-- Added this view 56 -->  
-    <include file="ViewsVideoFanart2.xml" />
+    <include file="ViewsVideoFanart2.xml"/>
     <!-- Added this view 720 by jugger75 -->
-    <include file="ViewsVideoShowcase_Mod.xml" />
+    <include file="ViewsVideoShowcase_Mod.xml"/>
     <!-- Added this view 721 by jugger75 -->
-    <include file="ViewsMusicRightlist.xml" />
-    <include file="ViewsMusicVideoinfo.xml" />
-    <include file="ViewsMusicWall.xml" />
-    <include file="ViewsMusicCoverflow.xml" />
-    <include file="ViewsMusicFanart.xml" />
-    <include file="ViewsMusicLogoRightlist.xml" />
-    <include file="ViewsFileMode.xml" />
-    <include file="ViewsPictures.xml" />
-    <include file="Includes_Next_Aired.xml" />
-    <include file="IncludesCodecFlagging.xml" />
-    <include file="IncludesHomeRecentlyAdded.xml" />
-    <include file="IncludesHomeRecentlyAddedHorz.xml" />
-    <include file="IncludesHomeNowPlaying.xml" />
-    <include file="IncludesHomeNowPlayingHorz.xml" />
-    <include file="IncludesHomeNowPlayingHorz-middle.xml" />
-    <include file="IncludesHomeSubmenuHorz.xml" />
-    <include file="IncludesHomeSubmenuHorzLow.xml" />
-    <include file="IncludesHomeSubmenu.xml" />
-    <include file="IncludesHomeMainMenu.xml" />
-    <include file="IncludesHomeMainMenuHorz.xml" />
-    <include file="ViewsAddonBrowser.xml" />
-    <include file="ViewsLiveTV.xml" />
+    <include file="ViewsMusicRightlist.xml"/>
+    <include file="ViewsMusicVideoinfo.xml"/>
+    <include file="ViewsMusicWall.xml"/>
+    <include file="ViewsMusicCoverflow.xml"/>
+    <include file="ViewsMusicFanart.xml"/>
+    <include file="ViewsMusicLogoRightlist.xml"/>
+    <include file="ViewsFileMode.xml"/>
+    <include file="ViewsPictures.xml"/>
+    <include file="Includes_Next_Aired.xml"/>
+    <include file="IncludesCodecFlagging.xml"/>
+    <include file="IncludesHomeRecentlyAdded.xml"/>
+    <include file="IncludesHomeRecentlyAddedHorz.xml"/>
+    <include file="IncludesHomeNowPlaying.xml"/>
+    <include file="IncludesHomeNowPlayingHorz.xml"/>
+    <include file="IncludesHomeNowPlayingHorz-middle.xml"/>
+    <include file="IncludesHomeSubmenuHorz.xml"/>
+    <include file="IncludesHomeSubmenuHorzLow.xml"/>
+    <include file="IncludesHomeSubmenu.xml"/>
+    <include file="IncludesHomeMainMenu.xml"/>
+    <include file="IncludesHomeMainMenuHorz.xml"/>
+    <include file="ViewsAddonBrowser.xml"/>
+    <include file="ViewsLiveTV.xml"/>
     <!-- Added for PVR Butchabay  view700-->
-    <include file="IncludesExtendedHomePlaying.xml" />	
-    <include file="Includes_Home.xml" />
+    <include file="IncludesExtendedHomePlaying.xml"/>	
+    <include file="Includes_Home.xml"/>
     <!-- Weather -->
-    <include file="weather\10DayForecast.xml" />
-    <include file="weather\36HourForecast.xml" />
-    <include file="weather\WeekendForecast.xml" />
-    <include file="weather\HourlyForecast.xml" />
-    <include file="weather\MapAlerts.xml" />
+    <include file="weather\10DayForecast.xml"/>
+    <include file="weather\36HourForecast.xml"/>
+    <include file="weather\WeekendForecast.xml"/>
+    <include file="weather\HourlyForecast.xml"/>
+    <include file="weather\MapAlerts.xml"/>
 
 
     <constant name="FanartCrossfadeTime">200</constant>
@@ -1191,7 +1192,7 @@
             <label>$INFO[Window(Home).Property(Detail.Movie.18.Art(fanart))]</label>
             <label>$INFO[Window(Home).Property(Detail.Movie.19.Art(fanart))]</label>
             <label>$INFO[Window(Home).Property(Detail.Movie.20.Art(fanart))]</label>
-            <visible>[Container.Content(tags) | Container.Content(directors) | Container.Content(actors) | Container.Content(genres) | Container.Content(studios) | Container.Content(countries) | Container.Content(years) | Container.Content(sets) | SubString(ListItem.Path,videodb://1/7/,left)]</visible>
+            <visible>[Container.Content(tags) | Container.Content(directors) | Container.Content(actors) | Container.Content(genres) | Container.Content(studios) | Container.Content(countries) | Container.Content(years) | Container.Content(sets) | SubString(ListItem.Path,videodb://movies/sets/,left)]</visible>
             <visible>!Stringcompare(ListItem.Label,..)</visible>
         </control>
     </include>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="3000">
     <defaultcontrol always="true">8</defaultcontrol>
     <allowoverlay>no</allowoverlay>
@@ -292,8 +293,8 @@
                     <ondown>9000</ondown>
                     <viewtype label="">list</viewtype>
                     <pagecontrol>-</pagecontrol>
-                    <itemlayout height="1" width="1" />
-                    <focusedlayout height="1" width="1" />
+                    <itemlayout height="1" width="1"/>
+                    <focusedlayout height="1" width="1"/>
                 </control>
                 <control type="group" id="2500">
                     <!--thumb selection-->

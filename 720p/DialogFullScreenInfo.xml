@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="142">
     <defaultcontrol always="true">603</defaultcontrol>
     <controls>
         <control type="group">
             <visible>!Skin.HasSetting(lowerosd) + !Skin.HasSetting(higherosd)</visible>
-            <visible>!Window.IsVisible(script-XBMC-Subtitles-main.xml)</visible>
+            <visible>!Window.IsVisible(subtitlesearch)</visible>
             <animation effect="fade" start="0" end="100" time="300" tween="quadratic" easing="out">WindowOpen</animation>
             <animation effect="fade" start="100" end="0" time="300" delay="150" tween="quadratic" easing="out">WindowClose</animation>
             <animation effect="fade" start="100" end="0" time="300" tween="quadratic" easing="out" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)">Conditional</animation>
@@ -775,7 +776,7 @@
     <posx>0</posx>
     <posy>-230</posy>
     <visible>Skin.HasSetting(higherosd) + !Skin.HasSetting(slimosd) + !Skin.HasSetting(lowerosd)</visible>
-    <visible>!Window.IsVisible(2901) + !Window.IsVisible(script-XBMC-Subtitles-main.xml)</visible>
+    <visible>!Window.IsVisible(2901) + !Window.IsVisible(subtitlesearch)</visible>
     <animation effect="fade" start="0" end="100" time="300" tween="quadratic" easing="out">WindowOpen</animation>
     <animation effect="fade" start="100" end="0" time="300" delay="150" tween="quadratic" easing="out">WindowClose</animation>
     <animation effect="fade" start="100" end="0" time="300" tween="quadratic" easing="out" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)">Conditional</animation>
@@ -1548,7 +1549,7 @@
     <posx>0</posx>
     <posy>-140</posy>
     <visible>Skin.HasSetting(slimosd) + Skin.HasSetting(higherosd) + !Skin.HasSetting(lowerosd)</visible>
-    <visible>!Window.IsVisible(2901) + !Window.IsVisible(script-XBMC-Subtitles-main.xml)</visible>
+    <visible>!Window.IsVisible(2901) + !Window.IsVisible(subtitlesearch)</visible>
     <animation effect="fade" start="0" end="100" time="300" tween="quadratic" easing="out">WindowOpen</animation>
     <animation effect="fade" start="100" end="0" time="300" delay="150" tween="quadratic" easing="out">WindowClose</animation>
     <animation effect="fade" start="100" end="0" time="300" tween="quadratic" easing="out" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)">Conditional</animation>
@@ -2322,7 +2323,7 @@
     <posx>0</posx>
     <posy>165</posy>
     <visible>Skin.HasSetting(lowerosd) + !Skin.HasSetting(higherosd) + !Skin.HasSetting(slimosd)</visible>
-    <visible>!Window.IsVisible(script-XBMC-Subtitles-main.xml)</visible>
+    <visible>!Window.IsVisible(subtitlesearch)</visible>
     <animation effect="fade" start="0" end="100" time="300" tween="quadratic" easing="out">WindowOpen</animation>
     <animation effect="fade" start="100" end="0" time="300" delay="150" tween="quadratic" easing="out">WindowClose</animation>
     <animation effect="fade" start="100" end="0" time="300" tween="quadratic" easing="out" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)">Conditional</animation>

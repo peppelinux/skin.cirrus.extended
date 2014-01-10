@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <!-- ===================================================================================== -->
     <!-- ============================== RIGHTLIST VIEW ID 569 ================================ -->
@@ -5,12 +6,12 @@
     <include name="RightListView">
         <control type="group">
             <animation type="WindowOpen" reversible="false">
-                <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
-                <effect type="fade" start="0" end="100" time="300" />
+                <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
+                <effect type="fade" start="0" end="100" time="300"/>
             </animation>
             <animation type="WindowClose" reversible="false">
-                <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
-                <effect type="fade" start="100" end="0" time="300" />
+                <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300"/>
+                <effect type="fade" start="100" end="0" time="300"/>
             </animation>      
             <visible>Control.IsVisible(569)</visible>
             <include>VisibleFadeEffect</include>
@@ -86,12 +87,12 @@
                 <!-- CUSTOM Scroll + Trailer  Hack -->
                 <visible>Skin.HasSetting(rightlist_view)</visible>
                 <animation type="WindowOpen" reversible="false">
-                    <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
-                    <effect type="fade" start="0" end="100" time="300" />
+                    <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
+                    <effect type="fade" start="0" end="100" time="300"/>
                 </animation>
                 <animation type="WindowClose" reversible="false">
-                    <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
-                    <effect type="fade" start="100" end="0" time="300" />
+                    <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300"/>
+                    <effect type="fade" start="100" end="0" time="300"/>
                 </animation>      
                 <posx>600r</posx>
                 <posy>100</posy>
@@ -185,7 +186,7 @@
                         <texture>$INFO[Listitem.StarRating]</texture>
                         <colordiffuse>black</colordiffuse>
                         <visible>!Skin.HasSetting(imdbnr) + Container.Content(tvshows) | !Skin.HasSetting(imdbnr) + Container.Content(Episodes) | !Skin.HasSetting(imdbnr) + Container.Content(movies) | !Skin.HasSetting(imdbnr) + Container.Content(sets)</visible>
-                        <visible>[!ListItem.IsFolder | SubString(ListItem.Path,videodb://1/7/,left)]</visible>
+                        <visible>[!ListItem.IsFolder | SubString(ListItem.Path,videodb://movies/sets/,left)]</visible>
                     </control>
                     <control type="label">
                         <description>Rating value</description>
@@ -198,7 +199,7 @@
                         <align>left</align>
                         <label>Rating $INFO[ListItem.Rating]</label>
                         <colordiffuse>black</colordiffuse>
-                        <visible>Skin.HasSetting(imdbnr) + [Container.Content(tvshows) | Container.Content(Episodes) | Container.Content(movies) | Container.Content(sets)] + [!ListItem.IsFolder | SubString(ListItem.Path,videodb://1/7/,left)]</visible>
+                        <visible>Skin.HasSetting(imdbnr) + [Container.Content(tvshows) | Container.Content(Episodes) | Container.Content(movies) | Container.Content(sets)] + [!ListItem.IsFolder | SubString(ListItem.Path,videodb://movies/sets/,left)]</visible>
                     </control>
                     <control type="image">
                         <posx>20r</posx>

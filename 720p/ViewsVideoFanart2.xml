@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <!-- ===================================================================================== -->
     <!-- ================================= FANART2 VIEW ID 720 ================================ -->
@@ -45,12 +46,12 @@
         <control type="group">
             <visible>Control.IsVisible(720)</visible>
             <animation type="WindowOpen" reversible="false">
-                <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
-                <effect type="fade" start="0" end="100" time="300" />
+                <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
+                <effect type="fade" start="0" end="100" time="300"/>
             </animation>
             <animation type="WindowClose" reversible="false">
-                <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
-                <effect type="fade" start="100" end="0" time="300" />
+                <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300"/>
+                <effect type="fade" start="100" end="0" time="300"/>
             </animation> 
             <posx>0</posx>
             <posy>510</posy>
@@ -298,12 +299,12 @@
         <!-- WHEN INFO IS NOT HIDDEN MOVIES -->
         <control type="group">
             <animation type="WindowOpen" reversible="false">
-                <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
-                <effect type="fade" start="0" end="100" time="300" />
+                <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
+                <effect type="fade" start="0" end="100" time="300"/>
             </animation>
             <animation type="WindowClose" reversible="false">
-                <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
-                <effect type="fade" start="100" end="0" time="300" />
+                <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300"/>
+                <effect type="fade" start="100" end="0" time="300"/>
             </animation> 
             <posx>0</posx>
             <posy>100</posy>
@@ -740,12 +741,12 @@
             <posy>100</posy>
             <visible>Control.IsVisible(720) + !Window.IsVisible(VideoFiles) + ![ListItem.IsFolder + Container.Content(Movies)] + !Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(Seasons)</visible>
             <animation type="WindowOpen" reversible="false">
-                <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
-                <effect type="fade" start="0" end="100" time="300" />
+                <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
+                <effect type="fade" start="0" end="100" time="300"/>
             </animation>
             <animation type="WindowClose" reversible="false">
-                <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
-                <effect type="fade" start="100" end="0" time="300" />
+                <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300"/>
+                <effect type="fade" start="100" end="0" time="300"/>
             </animation> 
             <control type="group">
                 <posx>80</posx>
@@ -950,12 +951,12 @@
             <posy>100</posy>
             <visible>Control.IsVisible(720) + !Window.IsVisible(VideoFiles) + ![ListItem.IsFolder + Container.Content(Movies)] + !Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(TVShows)</visible>
             <animation type="WindowOpen" reversible="false">
-                <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
-                <effect type="fade" start="0" end="100" time="300" />
+                <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
+                <effect type="fade" start="0" end="100" time="300"/>
             </animation>
             <animation type="WindowClose" reversible="false">
-                <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
-                <effect type="fade" start="100" end="0" time="300" />
+                <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300"/>
+                <effect type="fade" start="100" end="0" time="300"/>
             </animation> 
             <control type="image">
                 <posx>-100</posx>
@@ -1170,12 +1171,12 @@
             <posy>100</posy>
             <visible>Control.IsVisible(720) + !Window.IsVisible(VideoFiles) + ![ListItem.IsFolder + Container.Content(Movies)] + !Container.Content(Movies) + !Container.Content(TVShows) + !Container.Content(Seasons)</visible>
             <animation type="WindowOpen" reversible="false">
-                <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
-                <effect type="fade" start="0" end="100" time="300" />
+                <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
+                <effect type="fade" start="0" end="100" time="300"/>
             </animation>
             <animation type="WindowClose" reversible="false">
-                <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
-                <effect type="fade" start="100" end="0" time="300" />
+                <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300"/>
+                <effect type="fade" start="100" end="0" time="300"/>
             </animation> 
             <control type="group">
                 <posx>80</posx>

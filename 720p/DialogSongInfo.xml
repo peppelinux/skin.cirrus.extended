@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="135">
     <defaultcontrol always="true">10</defaultcontrol>
     <coordinates>
@@ -259,7 +260,7 @@
             <control type="group" id="9000">
                 <posx>10</posx>
                 <posy>280</posy>
-                <control type="button" id ="10">
+                <control type="button" id="10">
                     <description>Ok button</description>
                     <posx>0</posx>
                     <posy>0</posy>
@@ -307,7 +308,7 @@
                     <onup>11</onup>
                     <ondown>13</ondown>
                 </control>
-                <control type="button" id ="13">
+                <control type="button" id="13">
                     <description>Get Thumb button</description>
                     <posx>0</posx>
                     <posy>120</posy>
