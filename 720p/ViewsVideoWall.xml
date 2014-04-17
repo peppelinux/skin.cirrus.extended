@@ -237,12 +237,9 @@
                     <align>right</align>
                     <itemgap>10</itemgap>
                     <orientation>horizontal</orientation>
-                    <include condition="!Skin.HasSetting(newFlags)">VideoCodecFlaggingConditions</include>
-                    <include condition="!Skin.HasSetting(newFlags)">AudioCodecFlaggingConditions</include>
-                    <include condition="!Skin.HasSetting(newFlags)">AspectCodecFlaggingConditions</include>
-                    <include condition="Skin.HasSetting(newFlags)">VideoCodecFlaggingConditionsNew</include>
-                    <include condition="Skin.HasSetting(newFlags)">AudioCodecFlaggingConditionsNew</include>
-                    <include condition="Skin.HasSetting(newFlags)">AspectCodecFlaggingConditionsNew</include>
+                    <include>VideoCodecFlaggingConditions</include>
+                    <include>AudioCodecFlaggingConditions</include>
+                    <include>AspectCodecFlaggingConditions</include>
                 </control>
                 <control type="scrollbar" id="60">
                     <posx>-20</posx>

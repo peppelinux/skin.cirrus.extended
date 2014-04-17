@@ -834,35 +834,15 @@
                         <width>80</width>
                         <height>40</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[MusicPlayer.Codec,special://skin/extras/flagging/audio/,.png]</texture>
-                        <visible>!Skin.HasSetting(newFlags)</visible>
-                    </control>
-                    <control type="image">
-                        <description>Codec Image</description>
-                        <width>80</width>
-                        <height>40</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>$INFO[MusicPlayer.Codec,special://skin/extras/flagging/audioNew/,.png]</texture>
-                        <visible>Skin.HasSetting(newFlags)</visible>
-                    </control>
-
-                    <control type="image">
-                        <description>Channels Image</description>
-                        <width>80</width>
-                        <height>40</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>$INFO[MusicPlayer.Channels,special://skin/extras/flagging/audio/,.png]</texture>
-                        <visible>!Skin.HasSetting(newFlags)</visible>
+                        <texture colordiffuse="$VAR[FlagColor]">$INFO[MusicPlayer.Codec,special://skin/extras/flagging/audio/,.png]</texture>
                     </control>
                     <control type="image">
                         <description>Channels Image</description>
                         <width>80</width>
                         <height>40</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[MusicPlayer.Channels,special://skin/extras/flagging/audioNew/,.png]</texture>
-                        <visible>Skin.HasSetting(newFlags)</visible>
+                        <texture colordiffuse="$VAR[FlagColor]">$INFO[MusicPlayer.Channels,special://skin/extras/flagging/audio/,.png]</texture>
                     </control>
-
                 </control>
                 <!-- Zombie -->				
                 <control type="grouplist">
@@ -874,24 +854,13 @@
                     <visible>Skin.HasSetting(zombie_osd)</visible>
                     <itemgap>20</itemgap>
                     <orientation>horizontal</orientation>
-
                     <control type="image">
                         <description>Codec Image</description>
                         <width>80</width>
                         <height>40</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[MusicPlayer.Codec,special://skin/extras/flagging/audio/,.png]</texture>
-                        <visible>!Skin.HasSetting(newFlags)</visible>
+                        <texture colordiffuse="$VAR[FlagColor]">$INFO[MusicPlayer.Codec,special://skin/extras/flagging/audio/,.png]</texture>
                     </control>
-                    <control type="image">
-                        <description>Codec Image</description>
-                        <width>80</width>
-                        <height>40</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>$INFO[MusicPlayer.Codec,special://skin/extras/flagging/audioNew/,.png]</texture>
-                        <visible>Skin.HasSetting(newFlags)</visible>
-                    </control>
-
                 </control>	
                 <control type="grouplist">
                     <description>Media Codec Flagging Images</description>
@@ -907,18 +876,8 @@
                         <width>80</width>
                         <height>40</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[MusicPlayer.Channels,special://skin/extras/flagging/audio/,.png]</texture>
-                        <visible>!Skin.HasSetting(newFlags)</visible>
+                        <texture colordiffuse="$VAR[FlagColor]">$INFO[MusicPlayer.Channels,special://skin/extras/flagging/audio/,.png]</texture>
                     </control>	
-                    <control type="image">
-                        <description>Channels Image</description>
-                        <width>80</width>
-                        <height>40</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>$INFO[MusicPlayer.Channels,special://skin/extras/flagging/audioNew/,.png]</texture>
-                        <visible>Skin.HasSetting(newFlags)</visible>
-                    </control>	
-
                 </control>				
                 <!-- Zombie -->							
                 <control type="label">

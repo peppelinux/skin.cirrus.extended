@@ -129,6 +129,7 @@
                         <align>right</align>
                         <aligny>center</aligny>
                         <font>cirrus_24</font>
+                        <selectedcolor>selected</selectedcolor>                        
                         <textcolor>grey2</textcolor>
                         <scroll>false</scroll>
                     </control>
@@ -159,6 +160,7 @@
                         <aligny>center</aligny>
                         <font>cirrus_24_Bold</font>
                         <textcolor>black</textcolor>
+                        <selectedcolor>selected</selectedcolor>
                         <scroll>false</scroll>
                         <visible>Container.Content(tvshows) | Container.Content(Episodes) | Container.Content(movies) | Container.Content(sets)</visible>
                     </control>
@@ -669,12 +671,9 @@
                     <align>right</align>
                     <itemgap>10</itemgap>
                     <orientation>horizontal</orientation>
-                    <include condition="!Skin.HasSetting(newFlags)">VideoCodecFlaggingConditions</include>
-                    <include condition="!Skin.HasSetting(newFlags)">AudioCodecFlaggingConditions</include>
-                    <include condition="!Skin.HasSetting(newFlags)">AspectCodecFlaggingConditions</include>
-                    <include condition="Skin.HasSetting(newFlags)">VideoCodecFlaggingConditionsNew</include>
-                    <include condition="Skin.HasSetting(newFlags)">AudioCodecFlaggingConditionsNew</include>
-                    <include condition="Skin.HasSetting(newFlags)">AspectCodecFlaggingConditionsNew</include>
+                    <include>VideoCodecFlaggingConditions</include>
+                    <include>AudioCodecFlaggingConditions</include>
+                    <include>AspectCodecFlaggingConditions</include>
                 </control>
                 <!-- TV SHOW LOGO -->
                 <control type="largeimage" id="7916"> 
@@ -1085,12 +1084,9 @@
                     <align>right</align>
                     <itemgap>10</itemgap>
                     <orientation>horizontal</orientation>
-                    <include condition="!Skin.HasSetting(newFlags)">VideoCodecFlaggingConditions</include>
-                    <include condition="!Skin.HasSetting(newFlags)">AudioCodecFlaggingConditions</include>
-                    <include condition="!Skin.HasSetting(newFlags)">AspectCodecFlaggingConditions</include>
-                    <include condition="Skin.HasSetting(newFlags)">VideoCodecFlaggingConditionsNew</include>
-                    <include condition="Skin.HasSetting(newFlags)">AudioCodecFlaggingConditionsNew</include>
-                    <include condition="Skin.HasSetting(newFlags)">AspectCodecFlaggingConditionsNew</include>
+                    <include>VideoCodecFlaggingConditions</include>
+                    <include>AudioCodecFlaggingConditions</include>
+                    <include>AspectCodecFlaggingConditions</include>
                     <visible>!IsEmpty(ListItem.Thumb)</visible> 
                 </control>
             </control>

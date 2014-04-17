@@ -8,33 +8,14 @@
             <width>75</width>
             <height>28</height>
             <aspectratio>keep</aspectratio>
-            <texture>$INFO[ListItem.VideoResolution,special://skin/extras/flagging/video/,.png]</texture>
+            <texture colordiffuse="$VAR[FlagColor]">$INFO[ListItem.VideoResolution,special://skin/extras/flagging/video/,.png]</texture>
         </control>
         <control type="image">
             <description>VideoCodecFlagging</description>
             <width>75</width>
             <height>28</height>
             <aspectratio>keep</aspectratio>
-            <texture>$INFO[ListItem.VideoCodec,special://skin/extras/flagging/video/,.png]</texture>
-        </control>
-    </include>
-
-    <!-- =============NEW VIDEO FLAGS============ -->
-
-    <include name="VideoCodecFlaggingConditionsNew">
-        <control type="image">
-            <description>Video rez Image</description>
-            <width>75</width>
-            <height>28</height>
-            <aspectratio>keep</aspectratio>
-            <texture>$INFO[ListItem.VideoResolution,special://skin/extras/flagging/videoNew/,.png]</texture>
-        </control>
-        <control type="image">
-            <description>VideoCodecFlagging</description>
-            <width>75</width>
-            <height>28</height>
-            <aspectratio>keep</aspectratio>
-            <texture>$INFO[ListItem.VideoCodec,special://skin/extras/flagging/videoNew/,.png]</texture>
+            <texture colordiffuse="$VAR[FlagColor]">$INFO[ListItem.VideoCodec,special://skin/extras/flagging/video/,.png]</texture>
         </control>
     </include>
 
@@ -46,32 +27,14 @@
             <width>75</width>
             <height>28</height>
             <aspectratio>keep</aspectratio>
-            <texture>$INFO[ListItem.AudioCodec,special://skin/extras/flagging/audio/,.png]</texture>
+            <texture colordiffuse="$VAR[FlagColor]">$INFO[ListItem.AudioCodec,special://skin/extras/flagging/audio/,.png]</texture>
         </control>
         <control type="image">
             <description>Audio Channels Image</description>
             <width>75</width>
             <height>28</height>
             <aspectratio align="left">keep</aspectratio>
-            <texture>$INFO[ListItem.AudioChannels,special://skin/extras/flagging/audio/,.png]</texture>
-        </control>
-    </include>
-
-    <!-- ============AUDIO FLAGS NEW============= -->
-    <include name="AudioCodecFlaggingConditionsNew">
-        <control type="image">
-            <description>AudioCodecFlagging</description>
-            <width>75</width>
-            <height>28</height>
-            <aspectratio>keep</aspectratio>
-            <texture>$INFO[ListItem.AudioCodec,special://skin/extras/flagging/audioNew/,.png]</texture>
-        </control>
-        <control type="image">
-            <description>Audio Channels Image</description>
-            <width>75</width>
-            <height>28</height>
-            <aspectratio align="left">keep</aspectratio>
-            <texture>$INFO[ListItem.AudioChannels,special://skin/extras/flagging/audioNew/,.png]</texture>
+            <texture colordiffuse="$VAR[FlagColor]">$INFO[ListItem.AudioChannels,special://skin/extras/flagging/audio/,.png]</texture>
         </control>
     </include>
 
@@ -82,18 +45,7 @@
             <width>75</width>
             <height>28</height>
             <aspectratio>keep</aspectratio>
-            <texture>$INFO[ListItem.VideoAspect,special://skin/extras/flagging/aspectratio/,.png]</texture>
-        </control>
-    </include>
-
-    <!-- ==============ASPECTRATIO FLAGS NEW============= -->
-    <include name="AspectCodecFlaggingConditionsNew">
-        <control type="image">
-            <description>Aspectratio Image</description>
-            <width>75</width>
-            <height>28</height>
-            <aspectratio>keep</aspectratio>
-            <texture>$INFO[ListItem.VideoAspect,special://skin/extras/flagging/aspectratioNew/,.png]</texture>
+            <texture colordiffuse="$VAR[FlagColor]">$INFO[ListItem.VideoAspect,special://skin/extras/flagging/aspectratio/,.png]</texture>
         </control>
     </include>
 
@@ -542,211 +494,91 @@
     </include>
     <!-- Audio Language Flags -->
     <include name="VideoLangFlaggingConditionsAudiotrackWhite">
-        <control type="image">
-            <description>German</description>
+        <control type="group">
+            <posx>0</posx>
+            <posy>0</posy>
             <width>75</width>
             <height>28</height>
-            <aspectratio>keep</aspectratio>
-            <texture>special://skin/extras/flagsaudiolanguagewhite/ger.png</texture>
-            <visible>substring(listitem.filename,.de.)</visible>
-            <visible>Skin.HasSetting(showlanflag)</visible>
-        </control>
-        <control type="image">
-            <description>English</description>
-            <width>75</width>
-            <height>28</height>
-            <aspectratio>keep</aspectratio>
-            <texture>special://skin/extras/flagsaudiolanguagewhite/eng.png</texture>
-            <visible>substring(listitem.filename,.en.)</visible>
-            <visible>Skin.HasSetting(showlanflag)</visible>
-        </control>
-        <control type="image">
-            <description>Spanish</description>
-            <width>75</width>
-            <height>28</height>
-            <aspectratio>keep</aspectratio>
-            <texture>special://skin/extras/flagsaudiolanguagewhite/spa.png</texture>
-            <visible>substring(listitem.filename,.es.)</visible>
-            <visible>Skin.HasSetting(showlanflag)</visible>
-        </control>
-        <control type="image">
-            <description>French</description>
-            <width>75</width>
-            <height>28</height>
-            <aspectratio>keep</aspectratio>
-            <texture>special://skin/extras/flagsaudiolanguagewhite/fra.png</texture>
-            <visible>substring(listitem.filename,.fr.)</visible>
-            <visible>Skin.HasSetting(showlanflag)</visible>
-        </control>
-        <control type="image">
-            <description>Italian</description>
-            <width>75</width>
-            <height>28</height>
-            <aspectratio>keep</aspectratio>
-            <texture>special://skin/extras/flagsaudiolanguagewhite/ita.png</texture>
-            <visible>substring(listitem.filename,.it.)</visible>
-            <visible>Skin.HasSetting(showlanflag)</visible>
-        </control>
-    </include>
-    <include name="VideoLangFlaggingConditionsAudiotrackOrange">
-        <control type="image">
-            <description>German</description>
-            <width>75</width>
-            <height>28</height>
-            <aspectratio>keep</aspectratio>
-            <texture>special://skin/extras/flagsaudiolanguageorange/ger.png</texture>
-            <visible>substring(listitem.filename,.de.)</visible>
-            <visible>Skin.HasSetting(showlanflag)</visible>
-        </control>
-        <control type="image">
-            <description>English</description>
-            <width>75</width>
-            <height>28</height>
-            <aspectratio>keep</aspectratio>
-            <texture>special://skin/extras/flagsaudiolanguageorange/eng.png</texture>
-            <visible>substring(listitem.filename,.en.)</visible>
-            <visible>Skin.HasSetting(showlanflag)</visible>
-        </control>
-        <control type="image">
-            <description>Spanish</description>
-            <width>75</width>
-            <height>28</height>
-            <aspectratio>keep</aspectratio>
-            <texture>special://skin/extras/flagsaudiolanguageorange/spa.png</texture>
-            <visible>substring(listitem.filename,.es.)</visible>
-            <visible>Skin.HasSetting(showlanflag)</visible>
-        </control>
-        <control type="image">
-            <description>French</description>
-            <width>75</width>
-            <height>28</height>
-            <aspectratio>keep</aspectratio>
-            <texture>special://skin/extras/flagsaudiolanguageorange/fra.png</texture>
-            <visible>substring(listitem.filename,.fr.)</visible>
-            <visible>Skin.HasSetting(showlanflag)</visible>
-        </control>
-        <control type="image">
-            <description>Italian</description>
-            <width>75</width>
-            <height>28</height>
-            <aspectratio>keep</aspectratio>
-            <texture>special://skin/extras/flagsaudiolanguageorange/ita.png</texture>
-            <visible>substring(listitem.filename,.it.)</visible>
-            <visible>Skin.HasSetting(showlanflag)</visible>
+            <visible>substring(listitem.filename,.en.) | substring(listitem.filename,.de.) | substring(listitem.filename,.es.) | substring(listitem.filename,.fr.) | substring(listitem.filename,.it.)</visible>
+            <control type="image">
+                <description>English</description>
+                <width>75</width>
+                <height>28</height>
+                <aspectratio>keep</aspectratio>
+                <texture>special://skin/extras/flagging/audiolanguage/eng.png</texture>
+                <visible>substring(listitem.filename,.en.)</visible>
+                <visible>Skin.HasSetting(showlanflag)</visible>
+            </control>
+            <control type="image">
+                <description>German</description>
+                <width>75</width>
+                <height>28</height>
+                <aspectratio>keep</aspectratio>
+                <texture>special://skin/extras/flagging/audiolanguage/ger.png</texture>
+                <visible>substring(listitem.filename,.de.)</visible>
+                <visible>Skin.HasSetting(showlanflag)</visible>
+            </control>
+            <control type="image">
+                <description>Spanish</description>
+                <width>75</width>
+                <height>28</height>
+                <aspectratio>keep</aspectratio>
+                <texture>special://skin/extras/flagging/audiolanguage/spa.png</texture>
+                <visible>substring(listitem.filename,.es.)</visible>
+                <visible>Skin.HasSetting(showlanflag)</visible>
+            </control>
+            <control type="image">
+                <description>French</description>
+                <width>75</width>
+                <height>28</height>
+                <aspectratio>keep</aspectratio>
+                <texture>special://skin/extras/flagging/audiolanguage/fra.png</texture>
+                <visible>substring(listitem.filename,.fr.)</visible>
+                <visible>Skin.HasSetting(showlanflag)</visible>
+            </control>
+            <control type="image">
+                <description>Italian</description>
+                <width>75</width>
+                <height>28</height>
+                <aspectratio>keep</aspectratio>
+                <texture>special://skin/extras/flagging/audiolanguage/ita.png</texture>
+                <visible>substring(listitem.filename,.it.)</visible>
+                <visible>Skin.HasSetting(showlanflag)</visible>
+            </control>
+            <control type="image">
+                <description>Frame</description>
+                <width>75</width>
+                <height>28</height>
+                <aspectratio>keep</aspectratio>
+                <texture colordiffuse="$VAR[FlagColor]">special://skin/extras/flagging/audiolanguage/frame.png</texture>
+                <visible>Skin.HasSetting(showlanflag)</visible>
+            </control>
         </control>
     </include>
     <include name="VideoLangFlaggingConditionsAudiotrackWhite2">
-        <control type="image">
-            <description>Audiotrack Language</description>
+        <control type="group">
+            <posx>0</posx>
+            <posy>0</posy>
             <width>75</width>
             <height>28</height>
-            <aspectratio>keep</aspectratio>
-            <texture>$INFO[ListItem.AudioLanguage,special://skin/extras/flagsaudiolanguagewhite/,.png]</texture>
-            <visible>!IsEmpty(ListItem.AudioLanguage)</visible>
-            <visible>Skin.HasSetting(showlanflag)</visible>
+            <control type="image">
+                <description>Audiotrack Language</description>
+                <width>75</width>
+                <height>28</height>
+                <aspectratio>keep</aspectratio>
+                <texture>$INFO[ListItem.AudioLanguage,special://skin/extras/flagging/audiolanguage/,.png]</texture>
+                <visible>!IsEmpty(ListItem.AudioLanguage)</visible>
+                <visible>Skin.HasSetting(showlanflag)</visible>
+            </control>
+            <control type="image">
+                <description>Frame</description>
+                <width>75</width>
+                <height>28</height>
+                <aspectratio>keep</aspectratio>
+                <texture colordiffuse="$VAR[FlagColor]">special://skin/extras/flagging/audiolanguage/frame.png</texture>
+                <visible>Skin.HasSetting(showlanflag)</visible>
+                <visible>!IsEmpty(ListItem.AudioLanguage)</visible>
+            </control>
         </control>
     </include>
-    <include name="VideoLangFlaggingConditionsAudiotrackOrange2">
-        <control type="image">
-            <description>Audiotrack Language</description>
-            <width>75</width>
-            <height>28</height>
-            <aspectratio>keep</aspectratio>
-            <texture>$INFO[ListItem.AudioLanguage,special://skin/extras/flagsaudiolanguageorange/,.png]</texture>
-            <visible>!IsEmpty(ListItem.AudioLanguage)</visible>
-            <visible>Skin.HasSetting(showlanflag)</visible>
-        </control>
-    </include>
-    <!-- Audio Subtitle Language Flags -->
-    <!--  <include name="VideoSubLangFlaggingConditions">
-		<control type="image">
-			<description>Sub</description>
-			<width>35</width>
-			<height>35</height>
-			<aspectratio>keep</aspectratio>
-			<texture>Subtitles/flags/en.gif]</texture>
-		    <visible>substring(listitem.filename,.en.srt)</visible>
-		</control>
-		</include> -->
-    <!-- <control type="image">
-			<description>English</description>
-			<width>35</width>
-			<height>35</height>
-			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/en.png</texture>
-			<visible>substring(listitem.filename,.en.)</visible>
-		</control>
-		<control type="image">
-			<description>Spanish</description>
-			<width>35</width>
-			<height>35</height>
-			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/es.png</texture>
-			<visible>substring(listitem.filename,.es.)</visible>
-		</control>
-		<control type="image">
-			<description>Suomi</description>
-			<width>35</width>
-			<height>35</height>
-			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/fi.png</texture>
-			<visible>substring(listitem.filename,.fi.)</visible>
-		</control>
-		<control type="image">
-			<description>French</description>
-			<width>35</width>
-			<height>35</height>
-			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/fr.png</texture>
-			<visible>substring(listitem.filename,.fr.)</visible>
-		</control>
-		<control type="image">
-			<description>Italian</description>
-			<width>35</width>
-			<height>35</height>
-			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/it.png</texture>
-			<visible>substring(listitem.filename,.it.)</visible>
-		</control>
-		<control type="image">
-			<description>Japanese</description>
-			<width>35</width>
-			<height>35</height>
-			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/ja.png</texture>
-			<visible>substring(listitem.filename,.ja.)</visible>
-		</control>
-		<control type="image">
-			<description>Dutsch</description>
-			<width>35</width>
-			<height>35</height>
-			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/nl.png</texture>
-			<visible>substring(listitem.filename,.nl.)</visible>
-		</control>
-		<control type="image">
-			<description>Portugese</description>
-			<width>35</width>
-			<height>35</height>
-			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/pt.png</texture>
-			<visible>substring(listitem.filename,.pt.)</visible>
-		</control>
-		<control type="image">
-			<description>Russian</description>
-			<width>35</width>
-			<height>35</height>
-			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/ru.png</texture>
-			<visible>substring(listitem.filename,.ru.)</visible>
-		</control>
-		<control type="image">
-			<description>Swedish</description>
-			<width>35</width>
-			<height>35</height>
-			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/sv.png</texture>
-			<visible>substring(listitem.filename,.sv.)</visible>
-		</control> -->
-
 </includes>

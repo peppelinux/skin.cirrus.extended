@@ -472,12 +472,9 @@
                     <align>right</align>
                     <itemgap>30</itemgap>
                     <orientation>horizontal</orientation>
-                    <include condition="!Skin.HasSetting(newFlags)">VideoCodecFlaggingConditions</include>
-                    <include condition="!Skin.HasSetting(newFlags)">AudioCodecFlaggingConditions</include>
-                    <include condition="!Skin.HasSetting(newFlags)">AspectCodecFlaggingConditions</include>
-                    <include condition="Skin.HasSetting(newFlags)">VideoCodecFlaggingConditionsNew</include>
-                    <include condition="Skin.HasSetting(newFlags)">AudioCodecFlaggingConditionsNew</include>
-                    <include condition="Skin.HasSetting(newFlags)">AspectCodecFlaggingConditionsNew</include>
+                    <include>VideoCodecFlaggingConditions</include>
+                    <include>AudioCodecFlaggingConditions</include>
+                    <include>AspectCodecFlaggingConditions</include>
                     <animation effect="fade" start="0" end="100" time="0" delay="300" condition="!Container(556).OnPrevious | !Container(556).OnNext">Conditional</animation>
                     <animation effect="fade" start="100" end="0" time="0" condition="Container(556).OnPrevious | Container(556).OnNext">Conditional</animation>
                     <visible>!Skin.HasSetting(newFlags) | Skin.HasSetting(newFlags)</visible>

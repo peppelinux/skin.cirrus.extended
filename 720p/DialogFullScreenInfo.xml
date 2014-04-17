@@ -139,114 +139,49 @@
                 <width>80</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/video/,.png]</texture>
-                <visible>!Skin.HasSetting(newFlags)</visible>
-            </control>
-            <control type="image">
-                <description>Video rez Image</description>
-                <width>80</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/videoNew/,.png]</texture>
-                <visible>Skin.HasSetting(newFlags)</visible>
-            </control>
-
-            <control type="image">
-                <description>Common Codec Image</description>
-                <width min="30" max="120">auto</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/video/,.png]</texture>
-                <!-- Don't show if its one of the 500 divx codecs -->
-                <visible>![substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)]</visible>
-                <visible>!Skin.HasSetting(newFlags)</visible>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/video/,.png]</texture>
             </control>
             <control type="image">
                 <description>Common Codec Image</description>
                 <width min="30" max="120">auto</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/videoNew/,.png]</texture>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/video/,.png]</texture>
                 <!-- Don't show if its one of the 500 divx codecs -->
                 <visible>![substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)]</visible>
-                <visible>Skin.HasSetting(newFlags)</visible>
-            </control>
-
-            <control type="image">
-                <description>Divx Codec Image</description>
-                <width min="30" max="120">auto</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">special://skin/extras/flagging/video/divx.png</texture>
-                <visible>substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)</visible>
-                <visible>!Skin.HasSetting(newFlags)</visible>
             </control>
             <control type="image">
                 <description>Divx Codec Image</description>
                 <width min="30" max="120">auto</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">special://skin/extras/flagging/videoNew/divx.png</texture>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">special://skin/extras/flagging/video/divx.png</texture>
                 <visible>substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)</visible>
-                <visible>Skin.HasSetting(newFlags)</visible>
-            </control>
-
-            <control type="image">
-                <description>Dolby Digital Image</description>
-                <width min="30" max="120">auto</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">special://skin/extras/flagging/audio/dolbydigital.png</texture>
-                <visible>[substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-                <visible>!Skin.HasSetting(newFlags)</visible>
             </control>
             <control type="image">
                 <description>Dolby Digital Image</description>
                 <width min="30" max="120">auto</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">special://skin/extras/flagging/audioNew/dolbydigital.png</texture>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">special://skin/extras/flagging/audio/dolbydigital.png</texture>
                 <visible>[substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-                <visible>Skin.HasSetting(newFlags)</visible>
-            </control>
-
-            <control type="image">
-                <description>Audio Codec Image</description>
-                <width min="30" max="120">auto</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audio/,.png]</texture>
-                <!-- Don't show if I want the Dolby Digital Logo -->
-                <visible>![substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-                <visible>!Skin.HasSetting(newFlags)</visible>
             </control>
             <control type="image">
                 <description>Audio Codec Image</description>
                 <width min="30" max="120">auto</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audioNew/,.png]</texture>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audio/,.png]</texture>
                 <!-- Don't show if I want the Dolby Digital Logo -->
                 <visible>![substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-                <visible>Skin.HasSetting(newFlags)</visible>
             </control>
-
             <control type="image">
                 <description>Audio Channels Image</description>
                 <width min="30" max="80">auto</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audio/,.png]</texture>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audio/,.png]</texture>
                 <visible>!Skin.HasSetting(newFlags)</visible>
-            </control>
-
-            <control type="image">
-                <description>Audio Channels Image</description>
-                <width min="30" max="80">auto</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audioNew/,.png]</texture>
-                <visible>Skin.HasSetting(newFlags)</visible>
             </control>
         </control>
 
@@ -267,114 +202,48 @@
                     <width>80</width>
                     <height>30</height>
                     <aspectratio>keep</aspectratio>
-                    <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/video/,.png]</texture>
-                    <visible>!Skin.HasSetting(newFlags)</visible>
-                </control>
-                <control type="image">
-                    <description>Video rez Image</description>
-                    <width>80</width>
-                    <height>30</height>
-                    <aspectratio>keep</aspectratio>
-                    <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/videoNew/,.png]</texture>
-                    <visible>Skin.HasSetting(newFlags)</visible>
-                </control>
-
-                <control type="image">
-                    <description>Common Codec Image</description>
-                    <width min="30" max="120">auto</width>
-                    <height>30</height>
-                    <aspectratio>keep</aspectratio>
-                    <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/video/,.png]</texture>
-                    <!-- Don't show if its one of the 500 divx codecs -->
-                    <visible>![substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)]</visible>
-                    <visible>!Skin.HasSetting(newFlags)</visible>
+                    <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/video/,.png]</texture>
                 </control>
                 <control type="image">
                     <description>Common Codec Image</description>
                     <width min="30" max="120">auto</width>
                     <height>30</height>
                     <aspectratio>keep</aspectratio>
-                    <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/videoNew/,.png]</texture>
+                    <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/video/,.png]</texture>
                     <!-- Don't show if its one of the 500 divx codecs -->
                     <visible>![substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)]</visible>
-                    <visible>Skin.HasSetting(newFlags)</visible>
-                </control>
-
-                <control type="image">
-                    <description>Divx Codec Image</description>
-                    <width min="30" max="120">auto</width>
-                    <height>30</height>
-                    <aspectratio>keep</aspectratio>
-                    <texture diffuse="maskflags.png">special://skin/extras/flagging/video/divx.png</texture>
-                    <visible>substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)</visible>
-                    <visible>!Skin.HasSetting(newFlags)</visible>
                 </control>
                 <control type="image">
                     <description>Divx Codec Image</description>
                     <width min="30" max="120">auto</width>
                     <height>30</height>
                     <aspectratio>keep</aspectratio>
-                    <texture diffuse="maskflags.png">special://skin/extras/flagging/videoNew/divx.png</texture>
+                    <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">special://skin/extras/flagging/video/divx.png</texture>
                     <visible>substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)</visible>
-                    <visible>Skin.HasSetting(newFlags)</visible>
-                </control>
-
-                <control type="image">
-                    <description>Dolby Digital Image</description>
-                    <width min="30" max="120">auto</width>
-                    <height>30</height>
-                    <aspectratio>keep</aspectratio>
-                    <texture diffuse="maskflags.png">special://skin/extras/flagging/audio/dolbydigital.png</texture>
-                    <visible>[substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-                    <visible>!Skin.HasSetting(newFlags)</visible>
                 </control>
                 <control type="image">
                     <description>Dolby Digital Image</description>
                     <width min="30" max="120">auto</width>
                     <height>30</height>
                     <aspectratio>keep</aspectratio>
-                    <texture diffuse="maskflags.png">special://skin/extras/flagging/audioNew/dolbydigital.png</texture>
+                    <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">special://skin/extras/flagging/audio/dolbydigital.png</texture>
                     <visible>[substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-                    <visible>Skin.HasSetting(newFlags)</visible>
-                </control>
-
-                <control type="image">
-                    <description>Audio Codec Image</description>
-                    <width min="30" max="120">auto</width>
-                    <height>30</height>
-                    <aspectratio>keep</aspectratio>
-                    <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audio/,.png]</texture>
-                    <!-- Don't show if I want the Dolby Digital Logo -->
-                    <visible>![substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-                    <visible>!Skin.HasSetting(newFlags)</visible>
                 </control>
                 <control type="image">
                     <description>Audio Codec Image</description>
                     <width min="30" max="120">auto</width>
                     <height>30</height>
                     <aspectratio>keep</aspectratio>
-                    <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audioNew/,.png]</texture>
+                    <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audio/,.png]</texture>
                     <!-- Don't show if I want the Dolby Digital Logo -->
                     <visible>![substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-                    <visible>Skin.HasSetting(newFlags)</visible>
                 </control>
-
                 <control type="image">
                     <description>Audio Channels Image</description>
                     <width min="30" max="80">auto</width>
                     <height>30</height>
                     <aspectratio>keep</aspectratio>
-                    <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audio/,.png]</texture>
-                    <visible>!Skin.HasSetting(newFlags)</visible>
-                </control>
-
-                <control type="image">
-                    <description>Audio Channels Image</description>
-                    <width min="30" max="80">auto</width>
-                    <height>30</height>
-                    <aspectratio>keep</aspectratio>
-                    <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audioNew/,.png]</texture>
-                    <visible>Skin.HasSetting(newFlags)</visible>
+                    <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audio/,.png]</texture>
                 </control>
             </control>
         </control>
@@ -912,114 +781,48 @@
             <width>80</width>
             <height>30</height>
             <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/video/,.png]</texture>
-            <visible>!Skin.HasSetting(newFlags)</visible>
-        </control>
-        <control type="image">
-            <description>Video rez Image</description>
-            <width>80</width>
-            <height>30</height>
-            <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/videoNew/,.png]</texture>
-            <visible>Skin.HasSetting(newFlags)</visible>
-        </control>
-
-        <control type="image">
-            <description>Common Codec Image</description>
-            <width min="30" max="120">auto</width>
-            <height>30</height>
-            <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/video/,.png]</texture>
-            <!-- Don't show if its one of the 500 divx codecs -->
-            <visible>![substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)]</visible>
-            <visible>!Skin.HasSetting(newFlags)</visible>
+            <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/video/,.png]</texture>
         </control>
         <control type="image">
             <description>Common Codec Image</description>
             <width min="30" max="120">auto</width>
             <height>30</height>
             <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/videoNew/,.png]</texture>
+            <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/video/,.png]</texture>
             <!-- Don't show if its one of the 500 divx codecs -->
             <visible>![substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)]</visible>
-            <visible>Skin.HasSetting(newFlags)</visible>
-        </control>
-
-        <control type="image">
-            <description>Divx Codec Image</description>
-            <width min="30" max="120">auto</width>
-            <height>30</height>
-            <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">special://skin/extras/flagging/video/divx.png</texture>
-            <visible>substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)</visible>
-            <visible>!Skin.HasSetting(newFlags)</visible>
         </control>
         <control type="image">
             <description>Divx Codec Image</description>
             <width min="30" max="120">auto</width>
             <height>30</height>
             <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">special://skin/extras/flagging/videoNew/divx.png</texture>
+            <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">special://skin/extras/flagging/video/divx.png</texture>
             <visible>substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)</visible>
-            <visible>Skin.HasSetting(newFlags)</visible>
-        </control>
-
-        <control type="image">
-            <description>Dolby Digital Image</description>
-            <width min="30" max="120">auto</width>
-            <height>30</height>
-            <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">special://skin/extras/flagging/audio/dolbydigital.png</texture>
-            <visible>[substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-            <visible>!Skin.HasSetting(newFlags)</visible>
         </control>
         <control type="image">
             <description>Dolby Digital Image</description>
             <width min="30" max="120">auto</width>
             <height>30</height>
             <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">special://skin/extras/flagging/audioNew/dolbydigital.png</texture>
+            <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">special://skin/extras/flagging/audio/dolbydigital.png</texture>
             <visible>[substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-            <visible>Skin.HasSetting(newFlags)</visible>
-        </control>
-
-        <control type="image">
-            <description>Audio Codec Image</description>
-            <width min="30" max="120">auto</width>
-            <height>30</height>
-            <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audio/,.png]</texture>
-            <!-- Don't show if I want the Dolby Digital Logo -->
-            <visible>![substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-            <visible>!Skin.HasSetting(newFlags)</visible>
         </control>
         <control type="image">
             <description>Audio Codec Image</description>
             <width min="30" max="120">auto</width>
             <height>30</height>
             <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audioNew/,.png]</texture>
+            <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audio/,.png]</texture>
             <!-- Don't show if I want the Dolby Digital Logo -->
             <visible>![substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-            <visible>Skin.HasSetting(newFlags)</visible>
         </control>
-
         <control type="image">
             <description>Audio Channels Image</description>
             <width min="30" max="80">auto</width>
             <height>30</height>
             <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audio/,.png]</texture>
-            <visible>!Skin.HasSetting(newFlags)</visible>
-        </control>
-
-        <control type="image">
-            <description>Audio Channels Image</description>
-            <width min="30" max="80">auto</width>
-            <height>30</height>
-            <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audioNew/,.png]</texture>
-            <visible>Skin.HasSetting(newFlags)</visible>
+            <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audio/,.png]</texture>
         </control>
     </control>
 
@@ -1040,114 +843,48 @@
                 <width>80</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/video/,.png]</texture>
-                <visible>!Skin.HasSetting(newFlags)</visible>
-            </control>
-            <control type="image">
-                <description>Video rez Image</description>
-                <width>80</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/videoNew/,.png]</texture>
-                <visible>Skin.HasSetting(newFlags)</visible>
-            </control>
-
-            <control type="image">
-                <description>Common Codec Image</description>
-                <width min="30" max="120">auto</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/video/,.png]</texture>
-                <!-- Don't show if its one of the 500 divx codecs -->
-                <visible>![substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)]</visible>
-                <visible>!Skin.HasSetting(newFlags)</visible>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/video/,.png]</texture>
             </control>
             <control type="image">
                 <description>Common Codec Image</description>
                 <width min="30" max="120">auto</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/videoNew/,.png]</texture>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/video/,.png]</texture>
                 <!-- Don't show if its one of the 500 divx codecs -->
                 <visible>![substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)]</visible>
-                <visible>Skin.HasSetting(newFlags)</visible>
-            </control>
-
-            <control type="image">
-                <description>Divx Codec Image</description>
-                <width min="30" max="120">auto</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">special://skin/extras/flagging/video/divx.png</texture>
-                <visible>substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)</visible>
-                <visible>!Skin.HasSetting(newFlags)</visible>
             </control>
             <control type="image">
                 <description>Divx Codec Image</description>
                 <width min="30" max="120">auto</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">special://skin/extras/flagging/videoNew/divx.png</texture>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">special://skin/extras/flagging/video/divx.png</texture>
                 <visible>substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)</visible>
-                <visible>Skin.HasSetting(newFlags)</visible>
-            </control>
-
-            <control type="image">
-                <description>Dolby Digital Image</description>
-                <width min="30" max="120">auto</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">special://skin/extras/flagging/audio/dolbydigital.png</texture>
-                <visible>[substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-                <visible>!Skin.HasSetting(newFlags)</visible>
             </control>
             <control type="image">
                 <description>Dolby Digital Image</description>
                 <width min="30" max="120">auto</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">special://skin/extras/flagging/audioNew/dolbydigital.png</texture>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">special://skin/extras/flagging/audio/dolbydigital.png</texture>
                 <visible>[substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-                <visible>Skin.HasSetting(newFlags)</visible>
-            </control>
-
-            <control type="image">
-                <description>Audio Codec Image</description>
-                <width min="30" max="120">auto</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audio/,.png]</texture>
-                <!-- Don't show if I want the Dolby Digital Logo -->
-                <visible>![substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-                <visible>!Skin.HasSetting(newFlags)</visible>
             </control>
             <control type="image">
                 <description>Audio Codec Image</description>
                 <width min="30" max="120">auto</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audioNew/,.png]</texture>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audio/,.png]</texture>
                 <!-- Don't show if I want the Dolby Digital Logo -->
                 <visible>![substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-                <visible>Skin.HasSetting(newFlags)</visible>
             </control>
-
             <control type="image">
                 <description>Audio Channels Image</description>
                 <width min="30" max="80">auto</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audio/,.png]</texture>
-                <visible>!Skin.HasSetting(newFlags)</visible>
-            </control>
-
-            <control type="image">
-                <description>Audio Channels Image</description>
-                <width min="30" max="80">auto</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audioNew/,.png]</texture>
-                <visible>Skin.HasSetting(newFlags)</visible>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audio/,.png]</texture>
             </control>
         </control>
     </control>
@@ -1685,114 +1422,48 @@
             <width>80</width>
             <height>30</height>
             <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/video/,.png]</texture>
-            <visible>!Skin.HasSetting(newFlags)</visible>
-        </control>
-        <control type="image">
-            <description>Video rez Image</description>
-            <width>80</width>
-            <height>30</height>
-            <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/videoNew/,.png]</texture>
-            <visible>Skin.HasSetting(newFlags)</visible>
-        </control>
-
-        <control type="image">
-            <description>Common Codec Image</description>
-            <width min="30" max="120">auto</width>
-            <height>30</height>
-            <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/video/,.png]</texture>
-            <!-- Don't show if its one of the 500 divx codecs -->
-            <visible>![substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)]</visible>
-            <visible>!Skin.HasSetting(newFlags)</visible>
+            <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/video/,.png]</texture>
         </control>
         <control type="image">
             <description>Common Codec Image</description>
             <width min="30" max="120">auto</width>
             <height>30</height>
             <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/videoNew/,.png]</texture>
+            <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/video/,.png]</texture>
             <!-- Don't show if its one of the 500 divx codecs -->
             <visible>![substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)]</visible>
-            <visible>Skin.HasSetting(newFlags)</visible>
-        </control>
-
-        <control type="image">
-            <description>Divx Codec Image</description>
-            <width min="30" max="120">auto</width>
-            <height>30</height>
-            <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">special://skin/extras/flagging/video/divx.png</texture>
-            <visible>substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)</visible>
-            <visible>!Skin.HasSetting(newFlags)</visible>
         </control>
         <control type="image">
             <description>Divx Codec Image</description>
             <width min="30" max="120">auto</width>
             <height>30</height>
             <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">special://skin/extras/flagging/videoNew/divx.png</texture>
+            <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">special://skin/extras/flagging/video/divx.png</texture>
             <visible>substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)</visible>
-            <visible>Skin.HasSetting(newFlags)</visible>
-        </control>
-
-        <control type="image">
-            <description>Dolby Digital Image</description>
-            <width min="30" max="120">auto</width>
-            <height>30</height>
-            <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">special://skin/extras/flagging/audio/dolbydigital.png</texture>
-            <visible>[substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-            <visible>!Skin.HasSetting(newFlags)</visible>
         </control>
         <control type="image">
             <description>Dolby Digital Image</description>
             <width min="30" max="120">auto</width>
             <height>30</height>
             <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">special://skin/extras/flagging/audioNew/dolbydigital.png</texture>
+            <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">special://skin/extras/flagging/audio/dolbydigital.png</texture>
             <visible>[substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-            <visible>Skin.HasSetting(newFlags)</visible>
-        </control>
-
-        <control type="image">
-            <description>Audio Codec Image</description>
-            <width min="30" max="120">auto</width>
-            <height>30</height>
-            <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audio/,.png]</texture>
-            <!-- Don't show if I want the Dolby Digital Logo -->
-            <visible>![substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-            <visible>!Skin.HasSetting(newFlags)</visible>
         </control>
         <control type="image">
             <description>Audio Codec Image</description>
             <width min="30" max="120">auto</width>
             <height>30</height>
             <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audioNew/,.png]</texture>
+            <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audio/,.png]</texture>
             <!-- Don't show if I want the Dolby Digital Logo -->
             <visible>![substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-            <visible>Skin.HasSetting(newFlags)</visible>
         </control>
-
         <control type="image">
             <description>Audio Channels Image</description>
             <width min="30" max="80">auto</width>
             <height>30</height>
             <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audio/,.png]</texture>
-            <visible>!Skin.HasSetting(newFlags)</visible>
-        </control>
-
-        <control type="image">
-            <description>Audio Channels Image</description>
-            <width min="30" max="80">auto</width>
-            <height>30</height>
-            <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audioNew/,.png]</texture>
-            <visible>Skin.HasSetting(newFlags)</visible>
+            <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audio/,.png]</texture>
         </control>
     </control>
 
@@ -1813,114 +1484,48 @@
                 <width>80</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/video/,.png]</texture>
-                <visible>!Skin.HasSetting(newFlags)</visible>
-            </control>
-            <control type="image">
-                <description>Video rez Image</description>
-                <width>80</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/videoNew/,.png]</texture>
-                <visible>Skin.HasSetting(newFlags)</visible>
-            </control>
-
-            <control type="image">
-                <description>Common Codec Image</description>
-                <width min="30" max="120">auto</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/video/,.png]</texture>
-                <!-- Don't show if its one of the 500 divx codecs -->
-                <visible>![substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)]</visible>
-                <visible>!Skin.HasSetting(newFlags)</visible>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/video/,.png]</texture>
             </control>
             <control type="image">
                 <description>Common Codec Image</description>
                 <width min="30" max="120">auto</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/videoNew/,.png]</texture>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/video/,.png]</texture>
                 <!-- Don't show if its one of the 500 divx codecs -->
                 <visible>![substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)]</visible>
-                <visible>Skin.HasSetting(newFlags)</visible>
-            </control>
-
-            <control type="image">
-                <description>Divx Codec Image</description>
-                <width min="30" max="120">auto</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">special://skin/extras/flagging/video/divx.png</texture>
-                <visible>substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)</visible>
-                <visible>!Skin.HasSetting(newFlags)</visible>
             </control>
             <control type="image">
                 <description>Divx Codec Image</description>
                 <width min="30" max="120">auto</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">special://skin/extras/flagging/videoNew/divx.png</texture>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">special://skin/extras/flagging/video/divx.png</texture>
                 <visible>substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)</visible>
-                <visible>Skin.HasSetting(newFlags)</visible>
-            </control>
-
-            <control type="image">
-                <description>Dolby Digital Image</description>
-                <width min="30" max="120">auto</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">special://skin/extras/flagging/audio/dolbydigital.png</texture>
-                <visible>[substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-                <visible>!Skin.HasSetting(newFlags)</visible>
             </control>
             <control type="image">
                 <description>Dolby Digital Image</description>
                 <width min="30" max="120">auto</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">special://skin/extras/flagging/audioNew/dolbydigital.png</texture>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">special://skin/extras/flagging/audio/dolbydigital.png</texture>
                 <visible>[substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-                <visible>Skin.HasSetting(newFlags)</visible>
-            </control>
-
-            <control type="image">
-                <description>Audio Codec Image</description>
-                <width min="30" max="120">auto</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audio/,.png]</texture>
-                <!-- Don't show if I want the Dolby Digital Logo -->
-                <visible>![substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-                <visible>!Skin.HasSetting(newFlags)</visible>
             </control>
             <control type="image">
                 <description>Audio Codec Image</description>
                 <width min="30" max="120">auto</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audioNew/,.png]</texture>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audio/,.png]</texture>
                 <!-- Don't show if I want the Dolby Digital Logo -->
                 <visible>![substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-                <visible>Skin.HasSetting(newFlags)</visible>
             </control>
-
             <control type="image">
                 <description>Audio Channels Image</description>
                 <width min="30" max="80">auto</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audio/,.png]</texture>
-                <visible>!Skin.HasSetting(newFlags)</visible>
-            </control>
-
-            <control type="image">
-                <description>Audio Channels Image</description>
-                <width min="30" max="80">auto</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audioNew/,.png]</texture>
-                <visible>Skin.HasSetting(newFlags)</visible>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audio/,.png]</texture>
             </control>
         </control>
     </control>
@@ -2459,114 +2064,48 @@
             <width>80</width>
             <height>30</height>
             <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/video/,.png]</texture>
-            <visible>!Skin.HasSetting(newFlags)</visible>
-        </control>
-        <control type="image">
-            <description>Video rez Image</description>
-            <width>80</width>
-            <height>30</height>
-            <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/videoNew/,.png]</texture>
-            <visible>Skin.HasSetting(newFlags)</visible>
-        </control>
-
-        <control type="image">
-            <description>Common Codec Image</description>
-            <width min="30" max="120">auto</width>
-            <height>30</height>
-            <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/video/,.png]</texture>
-            <!-- Don't show if its one of the 500 divx codecs -->
-            <visible>![substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)]</visible>
-            <visible>!Skin.HasSetting(newFlags)</visible>
+            <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/video/,.png]</texture>
         </control>
         <control type="image">
             <description>Common Codec Image</description>
             <width min="30" max="120">auto</width>
             <height>30</height>
             <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/videoNew/,.png]</texture>
+            <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/video/,.png]</texture>
             <!-- Don't show if its one of the 500 divx codecs -->
             <visible>![substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)]</visible>
-            <visible>Skin.HasSetting(newFlags)</visible>
-        </control>
-
-        <control type="image">
-            <description>Divx Codec Image</description>
-            <width min="30" max="120">auto</width>
-            <height>30</height>
-            <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">special://skin/extras/flagging/video/divx.png</texture>
-            <visible>substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)</visible>
-            <visible>!Skin.HasSetting(newFlags)</visible>
         </control>
         <control type="image">
             <description>Divx Codec Image</description>
             <width min="30" max="120">auto</width>
             <height>30</height>
             <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">special://skin/extras/flagging/videoNew/divx.png</texture>
+            <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">special://skin/extras/flagging/video/divx.png</texture>
             <visible>substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)</visible>
-            <visible>Skin.HasSetting(newFlags)</visible>
-        </control>
-
-        <control type="image">
-            <description>Dolby Digital Image</description>
-            <width min="30" max="120">auto</width>
-            <height>30</height>
-            <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">special://skin/extras/flagging/audio/dolbydigital.png</texture>
-            <visible>[substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-            <visible>!Skin.HasSetting(newFlags)</visible>
         </control>
         <control type="image">
             <description>Dolby Digital Image</description>
             <width min="30" max="120">auto</width>
             <height>30</height>
             <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">special://skin/extras/flagging/audioNew/dolbydigital.png</texture>
+            <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">special://skin/extras/flagging/audio/dolbydigital.png</texture>
             <visible>[substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-            <visible>Skin.HasSetting(newFlags)</visible>
-        </control>
-
-        <control type="image">
-            <description>Audio Codec Image</description>
-            <width min="30" max="120">auto</width>
-            <height>30</height>
-            <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audio/,.png]</texture>
-            <!-- Don't show if I want the Dolby Digital Logo -->
-            <visible>![substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-            <visible>!Skin.HasSetting(newFlags)</visible>
         </control>
         <control type="image">
             <description>Audio Codec Image</description>
             <width min="30" max="120">auto</width>
             <height>30</height>
             <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audioNew/,.png]</texture>
+            <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audio/,.png]</texture>
             <!-- Don't show if I want the Dolby Digital Logo -->
             <visible>![substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-            <visible>Skin.HasSetting(newFlags)</visible>
         </control>
-
         <control type="image">
             <description>Audio Channels Image</description>
             <width min="30" max="80">auto</width>
             <height>30</height>
             <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audio/,.png]</texture>
-            <visible>!Skin.HasSetting(newFlags)</visible>
-        </control>
-
-        <control type="image">
-            <description>Audio Channels Image</description>
-            <width min="30" max="80">auto</width>
-            <height>30</height>
-            <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audioNew/,.png]</texture>
-            <visible>Skin.HasSetting(newFlags)</visible>
+            <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audio/,.png]</texture>
         </control>
     </control>
 
@@ -2587,114 +2126,48 @@
                 <width>80</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/video/,.png]</texture>
-                <visible>!Skin.HasSetting(newFlags)</visible>
-            </control>
-            <control type="image">
-                <description>Video rez Image</description>
-                <width>80</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/videoNew/,.png]</texture>
-                <visible>Skin.HasSetting(newFlags)</visible>
-            </control>
-
-            <control type="image">
-                <description>Common Codec Image</description>
-                <width min="30" max="120">auto</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/video/,.png]</texture>
-                <!-- Don't show if its one of the 500 divx codecs -->
-                <visible>![substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)]</visible>
-                <visible>!Skin.HasSetting(newFlags)</visible>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/video/,.png]</texture>
             </control>
             <control type="image">
                 <description>Common Codec Image</description>
                 <width min="30" max="120">auto</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/videoNew/,.png]</texture>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/video/,.png]</texture>
                 <!-- Don't show if its one of the 500 divx codecs -->
                 <visible>![substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)]</visible>
-                <visible>Skin.HasSetting(newFlags)</visible>
-            </control>
-
-            <control type="image">
-                <description>Divx Codec Image</description>
-                <width min="30" max="120">auto</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">special://skin/extras/flagging/video/divx.png</texture>
-                <visible>substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)</visible>
-                <visible>!Skin.HasSetting(newFlags)</visible>
             </control>
             <control type="image">
                 <description>Divx Codec Image</description>
                 <width min="30" max="120">auto</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">special://skin/extras/flagging/videoNew/divx.png</texture>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">special://skin/extras/flagging/video/divx.png</texture>
                 <visible>substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)</visible>
-                <visible>Skin.HasSetting(newFlags)</visible>
-            </control>
-
-            <control type="image">
-                <description>Dolby Digital Image</description>
-                <width min="30" max="120">auto</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">special://skin/extras/flagging/audio/dolbydigital.png</texture>
-                <visible>[substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-                <visible>!Skin.HasSetting(newFlags)</visible>
             </control>
             <control type="image">
                 <description>Dolby Digital Image</description>
                 <width min="30" max="120">auto</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">special://skin/extras/flagging/audioNew/dolbydigital.png</texture>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">special://skin/extras/flagging/audio/dolbydigital.png</texture>
                 <visible>[substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-                <visible>Skin.HasSetting(newFlags)</visible>
-            </control>
-
-            <control type="image">
-                <description>Audio Codec Image</description>
-                <width min="30" max="120">auto</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audio/,.png]</texture>
-                <!-- Don't show if I want the Dolby Digital Logo -->
-                <visible>![substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-                <visible>!Skin.HasSetting(newFlags)</visible>
             </control>
             <control type="image">
                 <description>Audio Codec Image</description>
                 <width min="30" max="120">auto</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audioNew/,.png]</texture>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audio/,.png]</texture>
                 <!-- Don't show if I want the Dolby Digital Logo -->
                 <visible>![substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-                <visible>Skin.HasSetting(newFlags)</visible>
             </control>
-
             <control type="image">
                 <description>Audio Channels Image</description>
                 <width min="30" max="80">auto</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audio/,.png]</texture>
-                <visible>!Skin.HasSetting(newFlags)</visible>
-            </control>
-
-            <control type="image">
-                <description>Audio Channels Image</description>
-                <width min="30" max="80">auto</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audioNew/,.png]</texture>
-                <visible>Skin.HasSetting(newFlags)</visible>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audio/,.png]</texture>
             </control>
         </control>
     </control>
@@ -3235,114 +2708,48 @@
             <width>80</width>
             <height>30</height>
             <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/video/,.png]</texture>
-            <visible>!Skin.HasSetting(newFlags)</visible>
-        </control>
-        <control type="image">
-            <description>Video rez Image</description>
-            <width>80</width>
-            <height>30</height>
-            <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/videoNew/,.png]</texture>
-            <visible>Skin.HasSetting(newFlags)</visible>
-        </control>
-
-        <control type="image">
-            <description>Common Codec Image</description>
-            <width min="30" max="120">auto</width>
-            <height>30</height>
-            <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/video/,.png]</texture>
-            <!-- Don't show if its one of the 500 divx codecs -->
-            <visible>![substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)]</visible>
-            <visible>!Skin.HasSetting(newFlags)</visible>
+            <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/video/,.png]</texture>
         </control>
         <control type="image">
             <description>Common Codec Image</description>
             <width min="30" max="120">auto</width>
             <height>30</height>
             <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/videoNew/,.png]</texture>
+            <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/video/,.png]</texture>
             <!-- Don't show if its one of the 500 divx codecs -->
             <visible>![substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)]</visible>
-            <visible>Skin.HasSetting(newFlags)</visible>
-        </control>
-
-        <control type="image">
-            <description>Divx Codec Image</description>
-            <width min="30" max="120">auto</width>
-            <height>30</height>
-            <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">special://skin/extras/flagging/video/divx.png</texture>
-            <visible>substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)</visible>
-            <visible>!Skin.HasSetting(newFlags)</visible>
         </control>
         <control type="image">
             <description>Divx Codec Image</description>
             <width min="30" max="120">auto</width>
             <height>30</height>
             <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">special://skin/extras/flagging/videoNew/divx.png</texture>
+            <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">special://skin/extras/flagging/video/divx.png</texture>
             <visible>substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)</visible>
-            <visible>Skin.HasSetting(newFlags)</visible>
-        </control>
-
-        <control type="image">
-            <description>Dolby Digital Image</description>
-            <width min="30" max="120">auto</width>
-            <height>30</height>
-            <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">special://skin/extras/flagging/audio/dolbydigital.png</texture>
-            <visible>[substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-            <visible>!Skin.HasSetting(newFlags)</visible>
         </control>
         <control type="image">
             <description>Dolby Digital Image</description>
             <width min="30" max="120">auto</width>
             <height>30</height>
             <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">special://skin/extras/flagging/audioNew/dolbydigital.png</texture>
+            <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">special://skin/extras/flagging/audio/dolbydigital.png</texture>
             <visible>[substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-            <visible>Skin.HasSetting(newFlags)</visible>
-        </control>
-
-        <control type="image">
-            <description>Audio Codec Image</description>
-            <width min="30" max="120">auto</width>
-            <height>30</height>
-            <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audio/,.png]</texture>
-            <!-- Don't show if I want the Dolby Digital Logo -->
-            <visible>![substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-            <visible>!Skin.HasSetting(newFlags)</visible>
         </control>
         <control type="image">
             <description>Audio Codec Image</description>
             <width min="30" max="120">auto</width>
             <height>30</height>
             <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audioNew/,.png]</texture>
+            <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audio/,.png]</texture>
             <!-- Don't show if I want the Dolby Digital Logo -->
             <visible>![substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-            <visible>Skin.HasSetting(newFlags)</visible>
         </control>
-
         <control type="image">
             <description>Audio Channels Image</description>
             <width min="30" max="80">auto</width>
             <height>30</height>
             <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audio/,.png]</texture>
-            <visible>!Skin.HasSetting(newFlags)</visible>
-        </control>
-
-        <control type="image">
-            <description>Audio Channels Image</description>
-            <width min="30" max="80">auto</width>
-            <height>30</height>
-            <aspectratio>keep</aspectratio>
-            <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audioNew/,.png]</texture>
-            <visible>Skin.HasSetting(newFlags)</visible>
+            <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audio/,.png]</texture>
         </control>
     </control>
 
@@ -3363,114 +2770,48 @@
                 <width>80</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/video/,.png]</texture>
-                <visible>!Skin.HasSetting(newFlags)</visible>
-            </control>
-            <control type="image">
-                <description>Video rez Image</description>
-                <width>80</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/videoNew/,.png]</texture>
-                <visible>Skin.HasSetting(newFlags)</visible>
-            </control>
-
-            <control type="image">
-                <description>Common Codec Image</description>
-                <width min="30" max="120">auto</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/video/,.png]</texture>
-                <!-- Don't show if its one of the 500 divx codecs -->
-                <visible>![substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)]</visible>
-                <visible>!Skin.HasSetting(newFlags)</visible>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.VideoResolution,special://skin/extras/flagging/video/,.png]</texture>
             </control>
             <control type="image">
                 <description>Common Codec Image</description>
                 <width min="30" max="120">auto</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/videoNew/,.png]</texture>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.VideoCodec,special://skin/extras/flagging/video/,.png]</texture>
                 <!-- Don't show if its one of the 500 divx codecs -->
                 <visible>![substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)]</visible>
-                <visible>Skin.HasSetting(newFlags)</visible>
-            </control>
-
-            <control type="image">
-                <description>Divx Codec Image</description>
-                <width min="30" max="120">auto</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">special://skin/extras/flagging/video/divx.png</texture>
-                <visible>substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)</visible>
-                <visible>!Skin.HasSetting(newFlags)</visible>
             </control>
             <control type="image">
                 <description>Divx Codec Image</description>
                 <width min="30" max="120">auto</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">special://skin/extras/flagging/videoNew/divx.png</texture>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">special://skin/extras/flagging/video/divx.png</texture>
                 <visible>substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) | substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5) | substring(VideoPlayer.VideoCodec,dx50)</visible>
-                <visible>Skin.HasSetting(newFlags)</visible>
-            </control>
-
-            <control type="image">
-                <description>Dolby Digital Image</description>
-                <width min="30" max="120">auto</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">special://skin/extras/flagging/audio/dolbydigital.png</texture>
-                <visible>[substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-                <visible>!Skin.HasSetting(newFlags)</visible>
             </control>
             <control type="image">
                 <description>Dolby Digital Image</description>
                 <width min="30" max="120">auto</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">special://skin/extras/flagging/audioNew/dolbydigital.png</texture>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">special://skin/extras/flagging/audio/dolbydigital.png</texture>
                 <visible>[substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-                <visible>Skin.HasSetting(newFlags)</visible>
-            </control>
-
-            <control type="image">
-                <description>Audio Codec Image</description>
-                <width min="30" max="120">auto</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audio/,.png]</texture>
-                <!-- Don't show if I want the Dolby Digital Logo -->
-                <visible>![substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-                <visible>!Skin.HasSetting(newFlags)</visible>
             </control>
             <control type="image">
                 <description>Audio Codec Image</description>
                 <width min="30" max="120">auto</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audioNew/,.png]</texture>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.AudioCodec,special://skin/extras/flagging/audio/,.png]</texture>
                 <!-- Don't show if I want the Dolby Digital Logo -->
                 <visible>![substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)]</visible>
-                <visible>Skin.HasSetting(newFlags)</visible>
             </control>
-
             <control type="image">
                 <description>Audio Channels Image</description>
                 <width min="30" max="80">auto</width>
                 <height>30</height>
                 <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audio/,.png]</texture>
-                <visible>!Skin.HasSetting(newFlags)</visible>
-            </control>
-
-            <control type="image">
-                <description>Audio Channels Image</description>
-                <width min="30" max="80">auto</width>
-                <height>30</height>
-                <aspectratio>keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audioNew/,.png]</texture>
-                <visible>Skin.HasSetting(newFlags)</visible>
+                <texture diffuse="maskflags.png" colordiffuse="$VAR[FlagColor]">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audio/,.png]</texture>
             </control>
         </control>
     </control>

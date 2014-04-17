@@ -194,16 +194,11 @@
                             <orientation>horizontal</orientation>
                             <include>VisibleFadeEffect</include>
                             <visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
-                            <include condition="!Skin.HasSetting(newFlags)">VideoCodecFlaggingConditions</include>
-                            <include condition="!Skin.HasSetting(newFlags)">AudioCodecFlaggingConditions</include>
-                            <include condition="!Skin.HasSetting(newFlags)">VideoLangFlaggingConditionsAudiotrackWhite2</include>
-                            <include condition="!Skin.HasSetting(newFlags)">VideoLangFlaggingConditionsAudiotrackWhite</include>
-                            <include condition="!Skin.HasSetting(newFlags)">AspectCodecFlaggingConditions</include>
-                            <include condition="Skin.HasSetting(newFlags)">VideoCodecFlaggingConditionsNew</include>
-                            <include condition="Skin.HasSetting(newFlags)">AudioCodecFlaggingConditionsNew</include>
-                            <include condition="Skin.HasSetting(newFlags)">VideoLangFlaggingConditionsAudiotrackOrange2</include>
-                            <include condition="Skin.HasSetting(newFlags)">VideoLangFlaggingConditionsAudiotrackOrange</include>
-                            <include condition="Skin.HasSetting(newFlags)">AspectCodecFlaggingConditionsNew</include>
+                            <include>VideoCodecFlaggingConditions</include>
+                            <include>AudioCodecFlaggingConditions</include>
+                            <include>VideoLangFlaggingConditionsAudiotrackWhite2</include>
+                            <include>VideoLangFlaggingConditionsAudiotrackWhite</include>
+                            <include>AspectCodecFlaggingConditions</include>
                         </control>
                         <control type="image">
                             <!-- STUDIO FLAG -->
@@ -767,16 +762,11 @@
                             <orientation>horizontal</orientation>
                             <include>VisibleFadeEffect</include>
                             <visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
-                            <include condition="!Skin.HasSetting(newFlags)">VideoCodecFlaggingConditions</include>
-                            <include condition="!Skin.HasSetting(newFlags)">AudioCodecFlaggingConditions</include>
-                            <include condition="!Skin.HasSetting(newFlags)">VideoLangFlaggingConditionsAudiotrackWhite2</include>
-                            <include condition="!Skin.HasSetting(newFlags)">VideoLangFlaggingConditionsAudiotrackWhite</include>
-                            <include condition="!Skin.HasSetting(newFlags)">AspectCodecFlaggingConditions</include>
-                            <include condition="Skin.HasSetting(newFlags)">VideoCodecFlaggingConditionsNew</include>
-                            <include condition="Skin.HasSetting(newFlags)">AudioCodecFlaggingConditionsNew</include>
-                            <include condition="Skin.HasSetting(newFlags)">VideoLangFlaggingConditionsAudiotrackOrange2</include>
-                            <include condition="Skin.HasSetting(newFlags)">VideoLangFlaggingConditionsAudiotrackOrange</include>
-                            <include condition="Skin.HasSetting(newFlags)">AspectCodecFlaggingConditionsNew</include>
+                            <include>VideoCodecFlaggingConditions</include>
+                            <include>AudioCodecFlaggingConditions</include>
+                            <include>VideoLangFlaggingConditionsAudiotrackWhite2</include>
+                            <include>VideoLangFlaggingConditionsAudiotrackWhite</include>
+                            <include>AspectCodecFlaggingConditions</include>
                         </control>
                         <control type="image">
                             <posx>0</posx>
