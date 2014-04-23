@@ -566,7 +566,7 @@
                 <width>75</width>
                 <height>28</height>
                 <aspectratio>keep</aspectratio>
-                <texture>$INFO[ListItem.AudioLanguage,special://skin/extras/flagging/audiolanguage/,.png]</texture>
+                <texture fallback="special://skin/extras/flagging/audiolanguage/unknown.png">$INFO[ListItem.AudioLanguage,special://skin/extras/flagging/audiolanguage/,.png]</texture>
                 <visible>!IsEmpty(ListItem.AudioLanguage)</visible>
                 <visible>Skin.HasSetting(showlanflag)</visible>
             </control>
