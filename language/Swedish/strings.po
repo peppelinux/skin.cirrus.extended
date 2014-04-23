@@ -213,14 +213,6 @@ msgctxt "#31128"
 msgid "XBMC Lyrics"
 msgstr "XBMC Sångtexter"
 
-msgctxt "#31129"
-msgid "Enable Subtitle Download in Video OSD"
-msgstr "Aktivera undertextnedladdning i video-OSD"
-
-msgctxt "#31130"
-msgid "PATH TO SUBTITLE SCRIPT"
-msgstr "SÖKVÄG TILL UNDERTEXTSKRIPT"
-
 msgctxt "#31185"
 msgid "Listed Shows"
 msgstr "Listade Serier"

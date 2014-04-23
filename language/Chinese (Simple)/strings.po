@@ -213,14 +213,6 @@ msgctxt "#31128"
 msgid "XBMC Lyrics"
 msgstr "XBMC歌词"
 
-msgctxt "#31129"
-msgid "Enable Subtitle Download in Video OSD"
-msgstr "在视频OSD菜单启用字幕下载"
-
-msgctxt "#31130"
-msgid "PATH TO SUBTITLE SCRIPT"
-msgstr "字幕脚本目录"
-
 msgctxt "#31185"
 msgid "Listed Shows"
 msgstr ""

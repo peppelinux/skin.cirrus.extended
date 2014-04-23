@@ -247,14 +247,6 @@ msgctxt "#31128"
 msgid "XBMC Lyrics"
 msgstr ""
 
-msgctxt "#31129"
-msgid "Enable Subtitle Download in Video OSD"
-msgstr ""
-
-msgctxt "#31130"
-msgid "PATH TO SUBTITLE SCRIPT"
-msgstr ""
-
 msgctxt "#31131"
 msgid "Get TvTune"
 msgstr ""

@@ -201,14 +201,6 @@ msgctxt "#31128"
 msgid "XBMC Lyrics"
 msgstr "XBMC Dalszöveg"
 
-msgctxt "#31129"
-msgid "Enable Subtitle Download in Video OSD"
-msgstr "Felirat-letöltés gomb engedélyezése a videó OSD-n"
-
-msgctxt "#31130"
-msgid "PATH TO SUBTITLE SCRIPT"
-msgstr "FELIRAT-SZKRIPT ÚTVONALA"
-
 msgctxt "#31185"
 msgid "Listed Shows"
 msgstr ""

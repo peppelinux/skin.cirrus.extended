@@ -201,14 +201,6 @@ msgctxt "#31128"
 msgid "XBMC Lyrics"
 msgstr "Testi XBMC"
 
-msgctxt "#31129"
-msgid "Enable Subtitle Download in Video OSD"
-msgstr "Abilita il download dei sottotitoli nell'OSD Video"
-
-msgctxt "#31130"
-msgid "PATH TO SUBTITLE SCRIPT"
-msgstr "Percorso dello script dei sottotitoli"
-
 msgctxt "#31185"
 msgid "Listed Shows"
 msgstr "Listed Shows"

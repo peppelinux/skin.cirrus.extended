@@ -201,14 +201,6 @@ msgctxt "#31128"
 msgid "XBMC Lyrics"
 msgstr "XBMC Liedtekst"
 
-msgctxt "#31129"
-msgid "Enable Subtitle Download in Video OSD"
-msgstr "Ondertiteling Downloaden in video-OSD inschakelen"
-
-msgctxt "#31130"
-msgid "PATH TO SUBTITLE SCRIPT"
-msgstr "Pad naar ondertitel-script"
-
 msgctxt "#31185"
 msgid "Listed Shows"
 msgstr "Vermelde Shows"
