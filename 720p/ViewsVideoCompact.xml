@@ -126,7 +126,7 @@
                         <textcolor>black</textcolor>
                         <font>cirrus_18_Bold</font>
                         <align>left</align>
-                        <label>Rating $INFO[Listitem.Rating]</label>
+                        <label>$LOCALIZE[563] $INFO[Listitem.Rating]</label>
                         <colordiffuse>black</colordiffuse>
                         <visible>Skin.HasSetting(imdbnr) + Container.Content(Movies)</visible>
                         <visible>!system.getbool(filelists.showparentdiritems)</visible>

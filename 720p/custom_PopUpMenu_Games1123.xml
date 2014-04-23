@@ -61,7 +61,7 @@
                     <scroll>false</scroll>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <label>Playback Options</label>
+                    <label>$LOCALIZE[41240]</label>
                 </control>
             </control>
 

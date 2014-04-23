@@ -1038,8 +1038,7 @@
                     <posy>-595</posy>
                     <width>350</width>
                     <height>100</height>
-                    <label>$INFO[musicplayer.Codec,Info: ,] : $INFO[musicplayer.Bitrate,kbps]</label>
-                    <!--				<label>$INFO[musicplayer.Codec,· Codec: ,]$INFO[musicplayer.Bitrate,[CR]· Bitrate: ,kbps]$INFO[musicplayer.bitspersample,[CR]· Bits:,bit]$INFO[musicplayer.Samplerate,[CR]· Freq.: ,kHz]$INFO[musicplayer.Channels,[CR]· Channels: ]</label> -->
+                    <label>$INFO[musicplayer.Codec,$LOCALIZE[21446]: ,] : $INFO[musicplayer.Bitrate,kbps]</label>
                     <align>right</align>
                     <aligny>center</aligny>
                     <font>cirrus_16</font>
@@ -1053,7 +1052,6 @@
                     <width>350</width>
                     <height>100</height>
                     <label> $INFO[musicplayer.bitspersample,:,bit]</label>
-                    <!--				<label>$INFO[musicplayer.Codec,· Codec: ,]$INFO[musicplayer.Bitrate,[CR]· Bitrate: ,kbps]$INFO[musicplayer.bitspersample,[CR]· Bits:,bit]$INFO[musicplayer.Samplerate,[CR]· Freq.: ,kHz]$INFO[musicplayer.Channels,[CR]· Channels: ]</label> -->
                     <align>right</align>
                     <aligny>center</aligny>
                     <font>cirrus_16</font>
@@ -1067,7 +1065,6 @@
                     <width>350</width>
                     <height>100</height>
                     <label>$INFO[musicplayer.Samplerate,: ,kHz]$INFO[musicplayer.Channels,: ,ch]</label>
-                    <!--				<label>$INFO[musicplayer.Codec,· Codec: ,]$INFO[musicplayer.Bitrate,[CR]· Bitrate: ,kbps]$INFO[musicplayer.bitspersample,[CR]· Bits:,bit]$INFO[musicplayer.Samplerate,[CR]· Freq.: ,kHz]$INFO[musicplayer.Channels,[CR]· Channels: ]</label> -->
                     <align>right</align>
                     <aligny>center</aligny>
                     <font>cirrus_16</font>
@@ -1107,8 +1104,7 @@
                     <posy>-5</posy>
                     <width>350</width>
                     <height>100</height>
-                    <label>$INFO[musicplayer.Codec,Info: ,]$INFO[musicplayer.Bitrate,: ,kbps]$INFO[musicplayer.bitspersample,:,bit]$INFO[musicplayer.Samplerate,: ,kHz]$INFO[musicplayer.Channels,: ,ch]</label>
-                    <!--				<label>$INFO[musicplayer.Codec,· Codec: ,]$INFO[musicplayer.Bitrate,[CR]· Bitrate: ,kbps]$INFO[musicplayer.bitspersample,[CR]· Bits:,bit]$INFO[musicplayer.Samplerate,[CR]· Freq.: ,kHz]$INFO[musicplayer.Channels,[CR]· Channels: ]</label> -->
+                    <label>$INFO[musicplayer.Codec,$LOCALIZE[21446]: ,]$INFO[musicplayer.Bitrate,: ,kbps]$INFO[musicplayer.bitspersample,:,bit]$INFO[musicplayer.Samplerate,: ,kHz]$INFO[musicplayer.Channels,: ,ch]</label>
                     <align>right</align>
                     <aligny>center</aligny>
                     <font>cirrus_16</font>

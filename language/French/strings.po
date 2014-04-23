@@ -833,10 +833,6 @@ msgctxt "#41110"
 msgid "Get Artwork"
 msgstr "Trouver le logo"
 
-msgctxt "#41111"
-msgid "Rightlist Logo"
-msgstr "Liste droite logos"
-
 msgctxt "#41112"
 msgid "Music Coverflow"
 msgstr "Musique Coverflow"

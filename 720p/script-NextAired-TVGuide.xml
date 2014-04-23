@@ -1385,7 +1385,7 @@
                     <posy>424</posy>
                     <width>260</width>
                     <height>20</height>
-                    <label>Genre:</label>
+                    <label>$LOCALIZE[135]:</label>
                     <textcolor>accent</textcolor>
                     <align>left</align>
                 </control>
@@ -1490,7 +1490,7 @@
                     <posy>424</posy>
                     <width>260</width>
                     <height>20</height>
-                    <label>Genre:</label>
+                    <label>$LOCALIZE[135]:</label>
                     <textcolor>accent</textcolor>
                     <align>left</align>
                 </control>
@@ -1558,7 +1558,7 @@
                     <posy>328</posy>
                     <width>260</width>
                     <height>20</height>
-                    <label>Airtime:</label>
+                    <label>$LOCALIZE[31302]:</label>
                     <textcolor>accent</textcolor>
                     <align>left</align>
                 </control>
@@ -1595,7 +1595,7 @@
                     <posy>424</posy>
                     <width>260</width>
                     <height>20</height>
-                    <label>Genre:</label>
+                    <label>$LOCALIZE[135]:</label>
                     <textcolor>accent</textcolor>
                     <align>left</align>
                 </control>
@@ -1700,7 +1700,7 @@
                     <posy>424</posy>
                     <width>260</width>
                     <height>20</height>
-                    <label>Genre:</label>
+                    <label>$LOCALIZE[135]:</label>
                     <textcolor>accent</textcolor>
                     <align>left</align>
                 </control>
@@ -1749,7 +1749,7 @@
                     <posy>280</posy>
                     <width>260</width>
                     <height>20</height>
-                    <label>Next Episode:</label>
+                    <label>$LOCALIZE[209] $LOCALIZE[20359]:</label>
                     <textcolor>accent</textcolor>
                     <align>left</align>
                 </control>
@@ -1787,7 +1787,7 @@
                     <posy>376</posy>
                     <width>260</width>
                     <height>20</height>
-                    <label>Runtime:</label>
+                    <label>$LOCALIZE[2050]:</label>
                     <textcolor>accent</textcolor>
                     <align>left</align>
                 </control>
@@ -1805,7 +1805,7 @@
                     <posy>424</posy>
                     <width>260</width>
                     <height>20</height>
-                    <label>Genre:</label>
+                    <label>$LOCALIZE[135]:</label>
                     <textcolor>accent</textcolor>
                     <align>left</align>
                 </control>
@@ -1873,7 +1873,7 @@
                     <posy>328</posy>
                     <width>260</width>
                     <height>20</height>
-                    <label>Airtime:</label>
+                    <label>$LOCALIZE[31302]:</label>
                     <textcolor>accent</textcolor>
                     <align>left</align>
                 </control>
@@ -1910,7 +1910,7 @@
                     <posy>424</posy>
                     <width>260</width>
                     <height>20</height>
-                    <label>Genre:</label>
+                    <label>$LOCALIZE[135]:</label>
                     <textcolor>accent</textcolor>
                     <align>left</align>
                 </control>
@@ -2015,7 +2015,7 @@
                     <posy>424</posy>
                     <width>260</width>
                     <height>20</height>
-                    <label>Genre:</label>
+                    <label>$LOCALIZE[135]:</label>
                     <textcolor>accent</textcolor>
                     <align>left</align>
                 </control>

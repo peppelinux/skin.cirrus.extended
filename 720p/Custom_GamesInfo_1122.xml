@@ -337,12 +337,12 @@
                                 <onclick>-</onclick>
                             </item>
                             <item>
-                                <label>System:</label>
+                                <label>$LOCALIZE[13000]:</label>
                                 <label2>$INFO[ListItem.Writer]</label2>
                                 <onclick>-</onclick>
                             </item>
                             <item>
-                                <label>Studio:</label>
+                                <label>$LOCALIZE[572]:</label>
                                 <label2>$INFO[ListItem.Studio]</label2>
                                 <onclick>-</onclick>
                             </item>

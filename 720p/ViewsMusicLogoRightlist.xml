@@ -58,7 +58,7 @@
                 <onright>4</onright>
                 <onup>701</onup>
                 <ondown>701</ondown>
-                <viewtype label="MusicLogoRightlist">list</viewtype>
+                <viewtype label="40006">list</viewtype>
                 <focusposition>1</focusposition>
                 <movement>9</movement>
                 <scrolltime>200</scrolltime>

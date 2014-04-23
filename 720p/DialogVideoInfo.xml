@@ -1216,7 +1216,7 @@
                     <control type="button" id="107">
                         <description>Home Cinema Experience</description>
                         <include>ButtonVideoInfoCommonValues</include>
-                        <label>Cinema</label>
+                        <label>$LOCALIZE[41209]</label>
                         <onclick>Playlist.Clear</onclick>
                         <onclick>Dialog.Close(MovieInformation)</onclick>
                         <onclick>XBMC.RunScript(script.cinema.experience)</onclick>

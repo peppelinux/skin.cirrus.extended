@@ -226,7 +226,7 @@
                 <onright>721</onright>
                 <onup>60</onup>
                 <ondown condition="Container.Content(Movies)">ActivateWindow(1121)</ondown>
-                <viewtype label="Showcase2">fixedlist</viewtype>
+                <viewtype label="41131">fixedlist</viewtype>
                 <pagecontrol>60</pagecontrol>
                 <scrolltime tween="quadratic" easing="out">300</scrolltime>
                 <focusposition>5</focusposition>

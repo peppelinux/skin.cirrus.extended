@@ -33,7 +33,7 @@
             <visible>Control.IsVisible(52)</visible>
             <visible>Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Episodes)</visible>
             <control type="fixedlist" id="52">
-                <viewtype label="Showcase">list</viewtype>
+                <viewtype label="41130">list</viewtype>
                 <pagecontrol>60</pagecontrol>
                 <visible>Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows)</visible>
                 <posx>-55</posx>

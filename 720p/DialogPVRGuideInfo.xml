@@ -60,7 +60,7 @@
                 <width>650</width>
                 <height>30</height>
                 <font>cirrus_25</font>
-                <label>Info</label>
+                <label>$LOCALIZE[19033]</label>
                 <align>center</align>
                 <aligny>center</aligny>
                 <textcolor>grey</textcolor>

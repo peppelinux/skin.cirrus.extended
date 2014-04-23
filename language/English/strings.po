@@ -71,7 +71,15 @@ msgctxt "#31009"
 msgid "Status:"
 msgstr ""
 
-#empty strings from id 31010 to 31020
+msgctxt "#31010"
+msgid "Enable Debug Grid"
+msgstr ""
+
+msgctxt "#31011"
+msgid "Enable Debug Info"
+msgstr ""
+
+#empty strings from id 31012 to 31020
 
 msgctxt "#31021"
 msgid "Video: Files"
@@ -283,16 +291,15 @@ msgstr ""
 #empty strings from id 31206 to 31249
 
 
-
-
-
-
-
 #Extra labels
 #empty strings from id 31253 to 31299
 
 msgctxt "#31301"
 msgid "Last Updated"
+msgstr ""
+
+msgctxt "#31302"
+msgid "Airtime"
 msgstr ""
 
 #empty string with id 31303
@@ -998,11 +1005,6 @@ msgstr ""
 
 
 #. ViewsGamesLogoRightlist
-
-msgctxt "#41111"
-msgid "Rightlist Logo"
-msgstr ""
-
 msgctxt "#41112"
 msgid "Music Coverflow"
 msgstr ""
@@ -1041,6 +1043,10 @@ msgstr ""
 
 #. Movie Coverflow
 
+msgctxt "#41121"
+msgid "Double Fanart"
+msgstr ""
+
 msgctxt "#41122"
 msgid "Fanart Slide"
 msgstr ""
@@ -1071,6 +1077,22 @@ msgstr ""
 
 msgctxt "#41127"
 msgid "Edit Library"
+msgstr ""
+
+msgctxt "#41128"
+msgid "Fanart Landscape"
+msgstr ""
+
+msgctxt "#41129"
+msgid "Movie Sets Fanart"
+msgstr ""
+
+msgctxt "#41130"
+msgid "Showcase"
+msgstr ""
+
+msgctxt "#41131"
+msgid "Showcase Mod"
 msgstr ""
 
 #New labels Misc.  Cirrus Extended v2 *** NEW V2.03
@@ -1324,6 +1346,10 @@ msgstr ""
 
 msgctxt "#41208"
 msgid "Cinema Experience"
+msgstr ""
+
+msgctxt "#41209"
+msgid "Cinema"
 msgstr ""
 
 msgctxt "#41210"

@@ -38,7 +38,7 @@
                 <onup>60</onup>
                 <!-- ,1 VideoWindow ,0 Fullscreen -->
                 <ondown condition="Container.Content(Movies) | Container.Content(Episodes)">ActivateWindow(1121)</ondown>
-                <viewtype label="Fanart Landscape">fixedlist</viewtype>
+                <viewtype label="41128">fixedlist</viewtype>
                 <pagecontrol>60</pagecontrol>
                 <scrolltime tween="quadratic" easing="out">300</scrolltime>
                 <focusposition>5</focusposition>

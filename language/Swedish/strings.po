@@ -845,10 +845,6 @@ msgctxt "#41110"
 msgid "Get Artwork"
 msgstr "Hämta logotyp"
 
-msgctxt "#41111"
-msgid "Rightlist Logo"
-msgstr "Högerlista Logo"
-
 msgctxt "#41112"
 msgid "Music Coverflow"
 msgstr "Musik Omslagssvep"

@@ -199,7 +199,7 @@
                         <textcolor>black</textcolor>
                         <font>cirrus_18_Bold</font>
                         <align>left</align>
-                        <label>Rating $INFO[ListItem.Rating]</label>
+                        <label>$LOCALIZE[563] $INFO[ListItem.Rating]</label>
                         <colordiffuse>black</colordiffuse>
                         <visible>Skin.HasSetting(imdbnr) + [Container.Content(tvshows) | Container.Content(Episodes) | Container.Content(movies) | Container.Content(sets)] + [!ListItem.IsFolder | SubString(ListItem.Path,videodb://movies/sets/,left)]</visible>
                     </control>

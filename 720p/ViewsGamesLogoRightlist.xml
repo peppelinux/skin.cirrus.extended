@@ -100,7 +100,7 @@
                 <onright condition="substring(container.folderpath,plugin://plugin.program.advanced.launcher)">ActivateWindow(1122)</onright>
                 <onup>596</onup>
                 <ondown>596</ondown>
-                <viewtype label="41111">list</viewtype>
+                <viewtype label="40006">list</viewtype>
                 <focusposition>2</focusposition>
                 <movement>9</movement>
                 <scrolltime>200</scrolltime>

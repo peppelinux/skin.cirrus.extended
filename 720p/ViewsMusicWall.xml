@@ -102,7 +102,7 @@
                     <posy>35</posy>
                     <width>300</width>
                     <height>25</height>
-                    <label>$INFO[ListItem.Genre, [COLOR=accent]Genre:[/COLOR] ]</label>
+                    <label>$INFO[ListItem.Genre, [COLOR=accent]$LOCALIZE[135]:[/COLOR] ]</label>
                     <scroll>true</scroll>
                     <align>right</align>
                     <aligny>top</aligny>

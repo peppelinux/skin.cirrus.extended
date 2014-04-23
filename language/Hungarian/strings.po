@@ -833,10 +833,6 @@ msgctxt "#41110"
 msgid "Get Artwork"
 msgstr ""
 
-msgctxt "#41111"
-msgid "Rightlist Logo"
-msgstr ""
-
 msgctxt "#41112"
 msgid "Music Coverflow"
 msgstr ""
