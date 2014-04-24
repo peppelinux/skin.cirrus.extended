@@ -27,7 +27,7 @@
                 <width>550</width>
                 <height>30</height>
                 <font>cirrus_30</font>
-                <label>$LOCALIZE[SCRIPT0]</label>
+                <label>$ADDON[script.cu.lrclyrics 32199]</label>
                 <align>right</align>
                 <aligny>center</aligny>
                 <textcolor>accent</textcolor>
