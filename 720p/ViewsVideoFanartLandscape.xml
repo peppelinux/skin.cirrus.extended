@@ -281,7 +281,7 @@
                 </control>
                 <control type="label">
                     <description>Trailer Label while movie is playing</description>
-                    <posx>45</posx>
+                    <posx>55</posx>
                     <posy>90</posy>
                     <width>200</width>
                     <height>30</height>

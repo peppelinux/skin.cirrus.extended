@@ -425,13 +425,13 @@
             <control type="image">
                 <description>Star Rating</description>
                 <posx>608</posx>
-                <posy>510</posy>
+                <posy>370</posy>
                 <width>64</width>
                 <aspectratio>keep</aspectratio>
                 <align>right</align>
                 <info>ListItem.StarRating</info>
+                <animation type="fade" start="0" end="100" time="10" delay="200" condition="Container(52).OnNext | Container(52).OnPrevious">Conditional</animation>
             </control>
-
             <control type="scrollbar" id="60">
                 <posx>-10</posx>
                 <posy>300</posy>

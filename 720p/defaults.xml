@@ -1,27 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <default type="image">
-        <posx>0</posx>
-        <posy>0</posy>
         <texture>-</texture>
         <colorkey>0</colorkey>
     </default>
     <default type="label">
-        <posx>80</posx>
-        <posy>60</posy>
         <label>-</label>
         <font>font13</font>
         <textcolor>white</textcolor>
     </default>
     <default type="fadelabel">
-        <posx>80</posx>
-        <posy>60</posy>
         <font>font13</font>
         <textcolor>white</textcolor>
     </default>
     <default type="button">
-        <posx>300</posx>
-        <posy>200</posy>
         <width>300</width>
         <height>42</height>
         <texturefocus>button-focus.png</texturefocus>
@@ -34,8 +26,6 @@
         <pulseonselect>no</pulseonselect>
     </default>
     <default type="togglebutton">
-        <posx>140</posx>
-        <posy>167</posy>
         <width>20</width>
         <height>20</height>
         <texturefocus>scroll-up-focus.png</texturefocus>
@@ -49,8 +39,6 @@
         <pulseonselect>no</pulseonselect>
     </default>
     <default type="textbox">
-        <posx>220</posx>
-        <posy>220</posy>
         <width>410</width>
         <height>215</height>
         <spinwidth>18</spinwidth>
@@ -67,8 +55,6 @@
         <font>font13</font>
     </default>
     <default type="progress">
-        <posx>100</posx>
-        <posy>325</posy>
         <texturebg border="6,0,6,0">OSDProgressBack.png</texturebg>
         <lefttexture>-</lefttexture>
         <midtexture border="6,0,6,0">OSDProgressMid.png</midtexture>
@@ -76,8 +62,6 @@
         <overlaytexture>-</overlaytexture>
     </default>
     <default type="spincontrol">
-        <posx>330</posx>
-        <posy>126</posy>
         <textureup>scrollupNF.png</textureup>
         <texturedown>scrolldownNF.png</texturedown>
         <textureupfocus>scrollup.png</textureupfocus>
@@ -96,8 +80,6 @@
         <pulseonselect>no</pulseonselect>
     </default>
     <default type="spincontrolex">
-        <posx>530</posx>
-        <posy>160</posy>
         <width>300</width>
         <height>42</height>
         <spinwidth>20</spinwidth>
@@ -117,8 +99,6 @@
         <pulseonselect>no</pulseonselect>
     </default>
     <default type="radiobutton">
-        <posx>300</posx>
-        <posy>200</posy>
         <width>300</width>
         <height>42</height>
         <radiowidth>24</radiowidth>
@@ -135,8 +115,6 @@
         <aligny>center</aligny>
     </default>
     <default type="selectbutton">
-        <posx>490</posx>
-        <posy>335</posy>
         <width>300</width>
         <height>50</height>
         <label>-</label>
@@ -173,20 +151,14 @@
         <disabledcolor>grey3</disabledcolor>
     </default>
     <default type="mover">
-        <posx>60</posx>
-        <posy>192</posy>
         <texturefocus>button-focus.png</texturefocus>
         <texturenofocus>button-nofocus.png</texturenofocus>
     </default>
     <default type="resize">
-        <posx>60</posx>
-        <posy>192</posy>
         <texturefocus>button-focus.png</texturefocus>
         <texturenofocus>button-nofocus.png</texturenofocus>
     </default>
     <default type="edit">
-        <posx>300</posx>
-        <posy>200</posy>
         <width>300</width>
         <height>42</height>
         <texturefocus>button-focus.png</texturefocus>
