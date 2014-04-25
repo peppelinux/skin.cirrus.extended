@@ -434,27 +434,27 @@
                             <item>
                                 <label>$LOCALIZE[562]:</label>
                                 <label2>$INFO[ListItem.Year]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                             </item>
                             <item>
                                 <label>$LOCALIZE[2050]:</label>
                                 <label2>$INFO[ListItem.Duration] $LOCALIZE[12391]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                             </item>
                             <item>
                                 <label>$LOCALIZE[20339]:</label>
                                 <label2>$INFO[ListItem.Director]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                             </item>
                             <item>
                                 <label>$LOCALIZE[20417]:</label>
                                 <label2>$INFO[ListItem.Writer]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                             </item>
                             <item>
                                 <label>$LOCALIZE[206]:</label>
                                 <label2>-</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                             </item>
                         </content>
                     </control>
@@ -703,27 +703,27 @@
                             <item>
                                 <label>$LOCALIZE[20360]:</label>
                                 <label2>$INFO[listitem.episode] [COLOR=grey] ($INFO[ListItem.Property(WatchedEpisodes),, $LOCALIZE[16102]] - $INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101]])[/COLOR]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                             </item>
                             <item>
                                 <label>$LOCALIZE[20416]:</label>
                                 <label2>$INFO[ListItem.Premiered]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                             </item>
                             <item>
                                 <label>$LOCALIZE[563]:</label>
                                 <label2>$INFO[ListItem.Rating]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                             </item>
                             <item>
                                 <label>15311</label>
                                 <label2>$INFO[ListItem.path]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                             </item>
                             <item>
                                 <label>$LOCALIZE[206]:</label>
                                 <label2>-</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                             </item>
                         </content>
                     </control>
@@ -1014,27 +1014,27 @@
                             <item>
                                 <label>$LOCALIZE[20359]</label>
                                 <label2>$LOCALIZE[20373] $INFO[ListItem.Season], $LOCALIZE[20359] $INFO[ListItem.Episode]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                             </item>
                             <item>
                                 <label>$LOCALIZE[20416]:</label>
                                 <label2>$INFO[ListItem.Premiered]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                             </item>
                             <item>
                                 <label>$LOCALIZE[20417]:</label>
                                 <label2>$INFO[ListItem.Writer]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                             </item>
                             <item>
                                 <label>$LOCALIZE[2050]:</label>
                                 <label2>$INFO[ListItem.Duration] $LOCALIZE[12391]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                             </item>
                             <item>
                                 <label>$LOCALIZE[206]:</label>
                                 <label2>-</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                             </item>
                         </content>
                     </control>

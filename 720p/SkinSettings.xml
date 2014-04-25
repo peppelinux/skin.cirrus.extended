@@ -123,37 +123,37 @@
                     <item id="1">
                         <label>128</label>
                         <label2>5</label2>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                     </item>
                     <item id="2">
                         <label>513</label>
                         <label2>33063</label2>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                     </item>
                     <item id="3">
                         <label>33068</label>
                         <label2>31115</label2>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                     </item>
                     <item id="4">
                         <label>41000</label>
                         <label2>41001</label2>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                     </item>
                     <item id="5">
                         <label>41002</label>
                         <label2>41003</label2>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                     </item>
                     <item id="6">
                         <label>41004</label>
                         <label2>41005</label2>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                     </item>
                     <item id="7">
                         <label>41101</label>
                         <label2>41107</label2>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                     </item>
                 </content>
             </control>
@@ -1322,215 +1322,215 @@
                 <content>
                     <item id="1">
                         <label>3</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/videos.jpg</icon>
                         <thumb>$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</thumb>
                     </item>
                     <!-- PVR Butchabay -->
                     <item id="12">
                         <label>31502</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/livetv.jpg</icon>
                         <thumb>$INFO[Skin.String(Home_Custom_Back_TV_Folder)]</thumb>
                     </item>
                     <item id="40">
                         <label>41183</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/moviesets.jpg</icon>
                         <thumb>$INFO[Skin.String(Home_Custom_Back_MoviesSets_Folder)]</thumb>
                     </item>
                     <!-- PVR Butchabay End -->
                     <item id="10">
                         <label>20342</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/movies.jpg</icon>
                         <thumb>$INFO[Skin.String(Home_Custom_Back_Movies_Folder)]</thumb>
                     </item>
                     <item id="41">
                         <label>41256</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/concerts.jpg</icon>
                         <thumb>$INFO[Skin.String(Home_Custom_Back_Concerts_Folder)]</thumb>
                     </item>
                     <item id="11">
                         <label>20343</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/tv_shows.jpg</icon>
                         <thumb>$INFO[Skin.String(Home_Custom_Back_TVShow_Folder)]</thumb>
                     </item>
                     <item id="36">
                         <label>31187</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/tv_guide.jpg</icon>
                         <thumb>$INFO[Skin.String(Home_Custom_Back_TVGuide_Folder)]</thumb>
                     </item>
                     <item id="35">
                         <label>41172</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/hdmovies.jpg</icon>
                         <thumb>$INFO[Skin.String(Home_Custom_Back_HDMovies_Folder)]</thumb>
                     </item>
                     <item id="2">
                         <label>2</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/musicfanart.jpg</icon>
                         <thumb>$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</thumb>
                     </item>
                     <item id="3">
                         <label>1</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/picturesfanart.jpg</icon>
                         <thumb>$INFO[Skin.String(Home_Custom_Back_Pictures_Folder)]</thumb>
                     </item>
                     <item id="4">
                         <label>0</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/programs.jpg</icon>
                         <thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
                     </item>
                     <item id="5">
                         <label>8</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/weatherfanart.jpg</icon>
                         <thumb>$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</thumb>
                     </item>
                     <item id="6">
                         <label>247</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/scripts.jpg</icon>
                         <thumb>$INFO[Skin.String(Home_Custom_Back_Scripts_Folder)]</thumb>
                     </item>
                     <item id="7">
                         <label>13000</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/settings.jpg</icon>
                         <thumb>$INFO[Skin.String(Home_Custom_Back_Settings_Folder)]</thumb>
                     </item>
                     <!-- Changes beginning  -->
                     <item id="30">
                         <label>33060</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/shutdown.jpg</icon>
                         <thumb>$INFO[Skin.String(Home_Custom_Back_Shutdown_Folder)]</thumb>
                     </item>
                     <item id="31">
                         <label>41023</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/playdisc.jpg</icon>
                         <thumb>$INFO[Skin.String(Home_Custom_Back_PlayDisc_Folder)]</thumb>
                     </item>
                     <item id="32">
                         <label>1036</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/favourite.jpg</icon>
                         <thumb>$INFO[Skin.String(Home_Custom_Back_Favourites_Folder)]</thumb>
                     </item>
                     <item id="33">
                         <label>41025</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/DefaultFanart.jpg</icon>
                         <thumb>$INFO[Skin.String(Home_Custom_Back_MusicVisualisation_Folder)]</thumb>
                     </item>
                     <item id="15">
                         <label>$INFO[Skin.String(Menu_Custom1_Label)]</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/custom.jpg</icon>
                         <thumb>$INFO[Skin.String(Menu_Custom1_Folder)]</thumb>
                         <visible>Skin.HasSetting(Menu_Custom1)</visible>
                     </item>
                     <item id="16">
                         <label>$INFO[Skin.String(Menu_Custom2_Label)]</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/custom.jpg</icon>
                         <thumb>$INFO[Skin.String(Menu_Custom2_Folder)]</thumb>
                         <visible>Skin.HasSetting(Menu_Custom2)</visible>
                     </item>
                     <item id="17">
                         <label>$INFO[Skin.String(Menu_Custom3_Label)]</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/custom.jpg</icon>
                         <thumb>$INFO[Skin.String(Menu_Custom3_Folder)]</thumb>
                         <visible>Skin.HasSetting(Menu_Custom3)</visible>
                     </item>
                     <item id="19">
                         <label>$INFO[Skin.String(Menu_Custom4_Label)]</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/custom.jpg</icon>
                         <thumb>$INFO[Skin.String(Menu_Custom4_Folder)]</thumb>
                         <visible>Skin.HasSetting(Menu_Custom4)</visible>
                     </item>
                     <item id="20">
                         <label>$INFO[Skin.String(Menu_Custom5_Label)]</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/custom.jpg</icon>
                         <thumb>$INFO[Skin.String(Menu_Custom5_Folder)]</thumb>
                         <visible>Skin.HasSetting(Menu_Custom5)</visible>
                     </item>
                     <item id="21">
                         <label>$INFO[Skin.String(Menu_Custom6_Label)]</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/custom.jpg</icon>
                         <thumb>$INFO[Skin.String(Menu_Custom6_Folder)]</thumb>
                         <visible>Skin.HasSetting(Menu_Custom6)</visible>
                     </item>
                     <item id="22">
                         <label>$INFO[Skin.String(Menu_Custom7_Label)]</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/custom.jpg</icon>
                         <thumb>$INFO[Skin.String(Menu_Custom7_Folder)]</thumb>
                         <visible>Skin.HasSetting(Menu_Custom7)</visible>
                     </item>
                     <item id="23">
                         <label>$INFO[Skin.String(Menu_Custom8_Label)]</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/custom.jpg</icon>
                         <thumb>$INFO[Skin.String(Menu_Custom8_Folder)]</thumb>
                         <visible>Skin.HasSetting(Menu_Custom8)</visible>
                     </item>
                     <item id="24">
                         <label>$INFO[Skin.String(Menu_Custom9_Label)]</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/custom.jpg</icon>
                         <thumb>$INFO[Skin.String(Menu_Custom9_Folder)]</thumb>
                         <visible>Skin.HasSetting(Menu_Custom9)</visible>
                     </item>
                     <item id="25">
                         <label>$INFO[Skin.String(Menu_Custom10_Label)]</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/custom.jpg</icon>
                         <thumb>$INFO[Skin.String(Menu_Custom10_Folder)]</thumb>
                         <visible>Skin.HasSetting(Menu_Custom10)</visible>
                     </item>
                     <item id="26">
                         <label>$INFO[Skin.String(Menu_Custom11_Label)]</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/custom.jpg</icon>
                         <thumb>$INFO[Skin.String(Menu_Custom11_Folder)]</thumb>
                         <visible>Skin.HasSetting(Menu_Custom11)</visible>
                     </item>
                     <item id="27">
                         <label>$INFO[Skin.String(Menu_Custom12_Label)]</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/custom.jpg</icon>
                         <thumb>$INFO[Skin.String(Menu_Custom12_Folder)]</thumb>
                         <visible>Skin.HasSetting(Menu_Custom12)</visible>
                     </item>
                     <item id="28">
                         <label>$INFO[Skin.String(Menu_Custom13_Label)]</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/custom.jpg</icon>
                         <thumb>$INFO[Skin.String(Menu_Custom13_Folder)]</thumb>
                         <visible>Skin.HasSetting(Menu_Custom13)</visible>
                     </item>
                     <item id="29">
                         <label>15016</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/games.jpg</icon>
                         <thumb>$INFO[Skin.String(Home_Custom_Back_Games_Folder)]</thumb>
                     </item>
                     <item id="37">
                         <label>41185</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <icon>special://skin/backgrounds/globalsearch.jpg</icon>
                         <thumb>$INFO[Skin.String(Home_Custom_Back_GlobalSearch_Folder)]</thumb>
                     </item>

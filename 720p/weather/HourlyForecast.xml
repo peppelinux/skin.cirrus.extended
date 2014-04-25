@@ -175,7 +175,7 @@
                 <content>
                     <item>
                         <icon>$LOCALIZE[31909]</icon>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <visible>IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                     </item>
                     <item>
@@ -184,7 +184,7 @@
                         <thumb>$INFO[Window.Property(Hourly.1.OutlookIcon)]</thumb>
                         <icon>$INFO[Window.Property(Hourly.1.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.1.WindSpeed)] $INFO[Window.Property(Hourly.1.WindDirection)]</icon>
                         <property name="FanartCode">$INFO[Window.Property(Hourly.1.FanartCode)]</property>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                     </item>
                     <item>
@@ -193,7 +193,7 @@
                         <thumb>$INFO[Window.Property(Hourly.2.OutlookIcon)]</thumb>
                         <icon>$INFO[Window.Property(Hourly.2.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.2.WindSpeed)] $INFO[Window.Property(Hourly.2.WindDirection)]</icon>
                         <property name="FanartCode">$INFO[Window.Property(Hourly.2.FanartCode)]</property>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                     </item>
                     <item>
@@ -202,7 +202,7 @@
                         <thumb>$INFO[Window.Property(Hourly.3.OutlookIcon)]</thumb>
                         <icon>$INFO[Window.Property(Hourly.3.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.3.WindSpeed)] $INFO[Window.Property(Hourly.3.WindDirection)]</icon>
                         <property name="FanartCode">$INFO[Window.Property(Hourly.3.FanartCode)]</property>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                     </item>
                     <item>
@@ -211,7 +211,7 @@
                         <thumb>$INFO[Window.Property(Hourly.4.OutlookIcon)]</thumb>
                         <icon>$INFO[Window.Property(Hourly.4.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.4.WindSpeed)] $INFO[Window.Property(Hourly.4.WindDirection)]</icon>
                         <property name="FanartCode">$INFO[Window.Property(Hourly.4.FanartCode)]</property>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                     </item>
                     <item>
@@ -220,7 +220,7 @@
                         <thumb>$INFO[Window.Property(Hourly.5.OutlookIcon)]</thumb>
                         <icon>$INFO[Window.Property(Hourly.5.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.5.WindSpeed)] $INFO[Window.Property(Hourly.5.WindDirection)]</icon>
                         <property name="FanartCode">$INFO[Window.Property(Hourly.5.FanartCode)]</property>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                     </item>
                     <item>
@@ -229,7 +229,7 @@
                         <thumb>$INFO[Window.Property(Hourly.6.OutlookIcon)]</thumb>
                         <icon>$INFO[Window.Property(Hourly.6.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.6.WindSpeed)] $INFO[Window.Property(Hourly.6.WindDirection)]</icon>
                         <property name="FanartCode">$INFO[Window.Property(Hourly.6.FanartCode)]</property>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                     </item>
                     <item>
@@ -238,7 +238,7 @@
                         <thumb>$INFO[Window.Property(Hourly.7.OutlookIcon)]</thumb>
                         <icon>$INFO[Window.Property(Hourly.7.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.7.WindSpeed)] $INFO[Window.Property(Hourly.7.WindDirection)]</icon>
                         <property name="FanartCode">$INFO[Window.Property(Hourly.7.FanartCode)]</property>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                     </item>
                     <item>
@@ -247,7 +247,7 @@
                         <thumb>$INFO[Window.Property(Hourly.8.OutlookIcon)]</thumb>
                         <icon>$INFO[Window.Property(Hourly.8.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.8.WindSpeed)] $INFO[Window.Property(Hourly.8.WindDirection)]</icon>
                         <property name="FanartCode">$INFO[Window.Property(Hourly.8.FanartCode)]</property>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                     </item>
                     <item>
@@ -256,7 +256,7 @@
                         <thumb>$INFO[Window.Property(Hourly.9.OutlookIcon)]</thumb>
                         <icon>$INFO[Window.Property(Hourly.9.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.9.WindSpeed)] $INFO[Window.Property(Hourly.9.WindDirection)]</icon>
                         <property name="FanartCode">$INFO[Window.Property(Hourly.9.FanartCode)]</property>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                     </item>
                     <item>
@@ -265,7 +265,7 @@
                         <thumb>$INFO[Window.Property(Hourly.10.OutlookIcon)]</thumb>
                         <icon>$INFO[Window.Property(Hourly.10.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.10.WindSpeed)] $INFO[Window.Property(Hourly.10.WindDirection)]</icon>
                         <property name="FanartCode">$INFO[Window.Property(Hourly.10.FanartCode)]</property>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                     </item>
                     <item>
@@ -274,7 +274,7 @@
                         <thumb>$INFO[Window.Property(Hourly.11.OutlookIcon)]</thumb>
                         <icon>$INFO[Window.Property(Hourly.11.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.11.WindSpeed)] $INFO[Window.Property(Hourly.11.WindDirection)]</icon>
                         <property name="FanartCode">$INFO[Window.Property(Hourly.11.FanartCode)]</property>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                     </item>
                     <item>
@@ -283,7 +283,7 @@
                         <thumb>$INFO[Window.Property(Hourly.12.OutlookIcon)]</thumb>
                         <icon>$INFO[Window.Property(Hourly.12.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.12.WindSpeed)] $INFO[Window.Property(Hourly.12.WindDirection)]</icon>
                         <property name="FanartCode">$INFO[Window.Property(Hourly.12.FanartCode)]</property>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                     </item>
                 </content>

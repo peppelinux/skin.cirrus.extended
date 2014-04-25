@@ -466,7 +466,7 @@
                         <item>
                             <label>$LOCALIZE[31909]</label>
                             <icon>-</icon>
-                            <onclick>-</onclick>
+                            <onclick>noop</onclick>
                             <visible>!Weather.IsFetched</visible>
                         </item>
                         <item>
@@ -477,7 +477,7 @@
                             <property name="Outlook">$INFO[Window.Property(Day0.Outlook)]</property>
                             <property name="TempUnits">$INFO[System.TemperatureUnits]</property>
                             <property name="FanartCode">$INFO[Window.Property(Day0.FanartCode)]</property>
-                            <onclick>-</onclick>
+                            <onclick>noop</onclick>
                             <visible>Weather.IsFetched + !IsEmpty(Window.Property(Day0.Title))</visible>
                         </item>
                         <item>
@@ -488,7 +488,7 @@
                             <property name="Outlook">$INFO[Window.Property(Day1.Outlook)]</property>
                             <property name="TempUnits">$INFO[System.TemperatureUnits]</property>
                             <property name="FanartCode">$INFO[Window.Property(Day1.FanartCode)]</property>
-                            <onclick>-</onclick>
+                            <onclick>noop</onclick>
                             <visible>Weather.IsFetched + !IsEmpty(Window.Property(Day1.Title))</visible>
                         </item>
                         <item>
@@ -499,7 +499,7 @@
                             <property name="Outlook">$INFO[Window.Property(Day2.Outlook)]</property>
                             <property name="TempUnits">$INFO[System.TemperatureUnits]</property>
                             <property name="FanartCode">$INFO[Window.Property(Day2.FanartCode)]</property>
-                            <onclick>-</onclick>
+                            <onclick>noop</onclick>
                             <visible>Weather.IsFetched + !IsEmpty(Window.Property(Day2.Title))</visible>
                         </item>
                         <item>
@@ -510,7 +510,7 @@
                             <property name="Outlook">$INFO[Window.Property(Day3.Outlook)]</property>
                             <property name="TempUnits">$INFO[System.TemperatureUnits]</property>
                             <property name="FanartCode">$INFO[Window.Property(Day3.FanartCode)]</property>
-                            <onclick>-</onclick>
+                            <onclick>noop</onclick>
                             <visible>Weather.IsFetched + !IsEmpty(Window.Property(Day3.Title))</visible>
                         </item>
                         <item>
@@ -521,7 +521,7 @@
                             <property name="Outlook">$INFO[Window.Property(Day4.Outlook)]</property>
                             <property name="TempUnits">$INFO[System.TemperatureUnits]</property>
                             <property name="FanartCode">$INFO[Window.Property(Day4.FanartCode)]</property>
-                            <onclick>-</onclick>
+                            <onclick>noop</onclick>
                             <visible>Weather.IsFetched + !IsEmpty(Window.Property(Day4.Title))</visible>
                         </item>
                         <item>
@@ -532,7 +532,7 @@
                             <property name="Outlook">$INFO[Window.Property(Day5.Outlook)]</property>
                             <property name="TempUnits">$INFO[System.TemperatureUnits]</property>
                             <property name="FanartCode">$INFO[Window.Property(Day5.FanartCode)]</property>
-                            <onclick>-</onclick>
+                            <onclick>noop</onclick>
                             <visible>Weather.IsFetched + !IsEmpty(Window.Property(Day5.Title))</visible>
                         </item>
                         <item>
@@ -543,7 +543,7 @@
                             <property name="Outlook">$INFO[Window.Property(Day6.Outlook)]</property>
                             <property name="TempUnits">$INFO[System.TemperatureUnits]</property>
                             <property name="FanartCode">$INFO[Window.Property(Day6.FanartCode)]</property>
-                            <onclick>-</onclick>
+                            <onclick>noop</onclick>
                             <visible>Weather.IsFetched + !IsEmpty(Window.Property(Day6.Title))</visible>
                         </item>
                         <item>
@@ -554,7 +554,7 @@
                             <property name="Outlook">$INFO[Window.Property(Day7.Outlook)]</property>
                             <property name="TempUnits">$INFO[System.TemperatureUnits]</property>
                             <property name="FanartCode">$INFO[Window.Property(Day7.FanartCode)]</property>
-                            <onclick>-</onclick>
+                            <onclick>noop</onclick>
                             <visible>Weather.IsFetched + !IsEmpty(Window.Property(Day7.Title))</visible>
                         </item>
                         <item>
@@ -565,7 +565,7 @@
                             <property name="Outlook">$INFO[Window.Property(Day8.Outlook)]</property>
                             <property name="TempUnits">$INFO[System.TemperatureUnits]</property>
                             <property name="FanartCode">$INFO[Window.Property(Day8.FanartCode)]</property>
-                            <onclick>-</onclick>
+                            <onclick>noop</onclick>
                             <visible>Weather.IsFetched + !IsEmpty(Window.Property(Day8.Title))</visible>
                         </item>
                         <item>
@@ -576,7 +576,7 @@
                             <property name="Outlook">$INFO[Window.Property(Day9.Outlook)]</property>
                             <property name="TempUnits">$INFO[System.TemperatureUnits]</property>
                             <property name="FanartCode">$INFO[Window.Property(Day9.FanartCode)]</property>
-                            <onclick>-</onclick>
+                            <onclick>noop</onclick>
                             <visible>Weather.IsFetched + !IsEmpty(Window.Property(Day9.Title))</visible>
                         </item>
                     </content>

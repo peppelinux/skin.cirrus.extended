@@ -396,28 +396,28 @@
                             <item>
                                 <label>$LOCALIZE[562]:</label>
                                 <label2>$INFO[ListItem.Year]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                             </item>
                             <item>
                                 <label>$LOCALIZE[2050]:</label>
                                 <label2>$INFO[ListItem.Duration] $LOCALIZE[12391]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                                 <visible>!IsEmpty(ListItem.Duration) + !StringCompare(ListItem.Duration,0)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[20339]:</label>
                                 <label2>$INFO[ListItem.Director]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                             </item>
                             <item>
                                 <label>$LOCALIZE[20417]:</label>
                                 <label2>$INFO[ListItem.Writer]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                             </item>
                             <item>
                                 <label>$LOCALIZE[206]:</label>
                                 <label2>-</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                             </item>
                         </content>
                     </control>

@@ -177,7 +177,7 @@
                 <content>
                     <item>
                         <icon>$LOCALIZE[31909]</icon>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <visible>IsEmpty(Window.Property(Daily.IsFetched))</visible>
                     </item>
                     <item>
@@ -186,7 +186,7 @@
                         <thumb>$INFO[Window.Property(Daily.1.OutlookIcon)]</thumb>
                         <icon>$INFO[Window.Property(Daily.1.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Daily.1.WindSpeed)] $INFO[Window.Property(Daily.1.WindDirection)]</icon>
                         <property name="FanartCode">$INFO[Window.Property(Daily.1.FanartCode)]</property>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <visible>!IsEmpty(Window.Property(Daily.IsFetched))</visible>
                     </item>
                     <item>
@@ -195,7 +195,7 @@
                         <thumb>$INFO[Window.Property(Daily.2.OutlookIcon)]</thumb>
                         <icon>$INFO[Window.Property(Daily.2.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Daily.2.WindSpeed)] $INFO[Window.Property(Daily.2.WindDirection)]</icon>
                         <property name="FanartCode">$INFO[Window.Property(Daily.2.FanartCode)]</property>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <visible>!IsEmpty(Window.Property(Daily.IsFetched))</visible>
                     </item>
                     <item>
@@ -204,7 +204,7 @@
                         <thumb>$INFO[Window.Property(Daily.3.OutlookIcon)]</thumb>
                         <icon>$INFO[Window.Property(Daily.3.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Daily.3.WindSpeed)] $INFO[Window.Property(Daily.3.WindDirection)]</icon>
                         <property name="FanartCode">$INFO[Window.Property(Daily.3.FanartCode)]</property>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <visible>!IsEmpty(Window.Property(Daily.IsFetched))</visible>
                     </item>
                     <item>
@@ -213,7 +213,7 @@
                         <thumb>$INFO[Window.Property(Daily.4.OutlookIcon)]</thumb>
                         <icon>$INFO[Window.Property(Daily.4.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Daily.4.WindSpeed)] $INFO[Window.Property(Daily.4.WindDirection)]</icon>
                         <property name="FanartCode">$INFO[Window.Property(Daily.4.FanartCode)]</property>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <visible>!IsEmpty(Window.Property(Daily.IsFetched))</visible>
                     </item>
                     <item>
@@ -222,7 +222,7 @@
                         <thumb>$INFO[Window.Property(Daily.5.OutlookIcon)]</thumb>
                         <icon>$INFO[Window.Property(Daily.5.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Daily.5.WindSpeed)] $INFO[Window.Property(Daily.5.WindDirection)]</icon>
                         <property name="FanartCode">$INFO[Window.Property(Daily.5.FanartCode)]</property>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <visible>!IsEmpty(Window.Property(Daily.IsFetched))</visible>
                     </item>
                     <item>
@@ -231,7 +231,7 @@
                         <thumb>$INFO[Window.Property(Daily.6.OutlookIcon)]</thumb>
                         <icon>$INFO[Window.Property(Daily.6.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Daily.6.WindSpeed)] $INFO[Window.Property(Daily.6.WindDirection)]</icon>
                         <property name="FanartCode">$INFO[Window.Property(Daily.6.FanartCode)]</property>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <visible>!IsEmpty(Window.Property(Daily.IsFetched))</visible>
                     </item>
                     <item>
@@ -240,7 +240,7 @@
                         <thumb>$INFO[Window.Property(Daily.7.OutlookIcon)]</thumb>
                         <icon>$INFO[Window.Property(Daily.7.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Daily.7.WindSpeed)] $INFO[Window.Property(Daily.7.WindDirection)]</icon>
                         <property name="FanartCode">$INFO[Window.Property(Daily.6.FanartCode)]</property>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <visible>!IsEmpty(Window.Property(Daily.IsFetched))</visible>
                     </item>
                     <item>
@@ -249,7 +249,7 @@
                         <thumb>$INFO[Window.Property(Daily.8.OutlookIcon)]</thumb>
                         <icon>$INFO[Window.Property(Daily.8.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Daily.8.WindSpeed)] $INFO[Window.Property(Daily.8.WindDirection)]</icon>
                         <property name="FanartCode">$INFO[Window.Property(Daily.8.FanartCode)]</property>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <visible>!IsEmpty(Window.Property(Daily.IsFetched))</visible>
                     </item>
                     <item>
@@ -258,7 +258,7 @@
                         <thumb>$INFO[Window.Property(Daily.9.OutlookIcon)]</thumb>
                         <icon>$INFO[Window.Property(Daily.9.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Daily.9.WindSpeed)] $INFO[Window.Property(Daily.9.WindDirection)]</icon>
                         <property name="FanartCode">$INFO[Window.Property(Daily.9.FanartCode)]</property>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <visible>!IsEmpty(Window.Property(Daily.IsFetched))</visible>
                     </item>
                     <item>
@@ -267,7 +267,7 @@
                         <thumb>$INFO[Window.Property(Daily.10.OutlookIcon)]</thumb>
                         <icon>$INFO[Window.Property(Daily.10.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Daily.10.WindSpeed)] $INFO[Window.Property(Daily.10.WindDirection)]</icon>
                         <property name="FanartCode">$INFO[Window.Property(Daily.10.FanartCode)]</property>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                         <visible>!IsEmpty(Window.Property(Daily.IsFetched))</visible>
                     </item>
                 </content>

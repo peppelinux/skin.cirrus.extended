@@ -334,17 +334,17 @@
                             <item>
                                 <label>$LOCALIZE[562]:</label>
                                 <label2>$INFO[ListItem.Year]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                             </item>
                             <item>
                                 <label>$LOCALIZE[13000]:</label>
                                 <label2>$INFO[ListItem.Writer]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                             </item>
                             <item>
                                 <label>$LOCALIZE[572]:</label>
                                 <label2>$INFO[ListItem.Studio]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                             </item>
                         </content>
                     </control>
