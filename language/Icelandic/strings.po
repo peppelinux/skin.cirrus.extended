@@ -190,7 +190,7 @@ msgid "Show Background \"Now Playing\" Visualization"
 msgstr "Sýna \"Í spilun\" myndskreytingu í bakgrunni"
 
 msgctxt "#31126"
-msgid "Enable Lyrics in Music OSD"
+msgid "Enable Lyrics Addon"
 msgstr "Virkja lagatexta á tónlistarskjá"
 
 msgctxt "#31127"

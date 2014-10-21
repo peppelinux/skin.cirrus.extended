@@ -190,7 +190,7 @@ msgid "Show Background \"Now Playing\" Visualization"
 msgstr "Vis visualisering for \"Nå spilles\" i bakgrunnen"
 
 msgctxt "#31126"
-msgid "Enable Lyrics in Music OSD"
+msgid "Enable Lyrics Addon"
 msgstr "Aktiver sangtekster i musikk-OSD"
 
 msgctxt "#31127"

@@ -190,7 +190,7 @@ msgid "Show Background \"Now Playing\" Visualization"
 msgstr "A háttérben a futó vizualizáció megjelenítése"
 
 msgctxt "#31126"
-msgid "Enable Lyrics in Music OSD"
+msgid "Enable Lyrics Addon"
 msgstr "Dalszöveg engedélyezése a zene OSD-n"
 
 msgctxt "#31127"

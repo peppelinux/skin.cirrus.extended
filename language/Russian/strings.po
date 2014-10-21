@@ -194,7 +194,7 @@ msgid "Show Background \"Now Playing\" Visualization"
 msgstr "Показывать фоновую \"Воспроизводящуюся\" Визуализацию"
 
 msgctxt "#31126"
-msgid "Enable Lyrics in Music OSD"
+msgid "Enable Lyrics Addon"
 msgstr "Показывать Тексты Песен на OSD Музыки"
 
 msgctxt "#31127"

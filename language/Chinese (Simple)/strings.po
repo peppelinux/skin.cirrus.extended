@@ -202,8 +202,8 @@ msgid "Show Background \"Now Playing\" Visualization"
 msgstr "在背景显示“正在播放”可视效果"
 
 msgctxt "#31126"
-msgid "Enable Lyrics in Music OSD"
-msgstr "在音乐OSD菜单启用歌词按钮"
+msgid "Enable Lyrics Addon"
+msgstr "让歌词插件"
 
 msgctxt "#31127"
 msgid "PATH TO LYRICS SCRIPT"

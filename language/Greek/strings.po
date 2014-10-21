@@ -206,7 +206,7 @@ msgid "Show Background \"Now Playing\" Visualization"
 msgstr "Εμφάνιση ως υπόβαθρο η απεικόνιση που \"Τώρα αναπαράγεται\""
 
 msgctxt "#31126"
-msgid "Enable Lyrics in Music OSD"
+msgid "Enable Lyrics Addon"
 msgstr "Εμφάνιση στίχων στις \"Aπεικόνισεις οθόνης (OSD)\""
 
 msgctxt "#31127"

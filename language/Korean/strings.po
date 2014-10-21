@@ -194,7 +194,7 @@ msgid "Show Background \"Now Playing\" Visualization"
 msgstr "시각화 배경에 \"지금 재생중\" 보이기"
 
 msgctxt "#31126"
-msgid "Enable Lyrics in Music OSD"
+msgid "Enable Lyrics Addon"
 msgstr "음악 OSD 에 가사 사용"
 
 msgctxt "#31127"

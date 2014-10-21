@@ -190,7 +190,7 @@ msgid "Show Background \"Now Playing\" Visualization"
 msgstr "Arkaplanda Görsel Ögeyi göster"
 
 msgctxt "#31126"
-msgid "Enable Lyrics in Music OSD"
+msgid "Enable Lyrics Addon"
 msgstr "Müzik OSD'de Lyrics'i etkinleştir"
 
 msgctxt "#31127"
