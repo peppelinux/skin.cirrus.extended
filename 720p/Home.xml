@@ -242,6 +242,7 @@
         <include condition="Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu)">HomeNowPlayingHorz</include>
         <include condition="Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu)">IncludesHomeNowPlayingHorz-middle</include>
         <include condition="Skin.HasSetting(homepageextrainfo)">InfoOnHome</include>
+
         <control type="group">
 
             <!-- SUBMENUS -->
@@ -255,7 +256,7 @@
     <include condition="Skin.HasSetting(customstartupfocus)">StartupCustomFocus</include>
 	-->
             <!-- Weather Plus Widget Beginning -->
-            <control type="group">
+            <!-- <control type="group">
                 <animation type="WindowOpen" reversible="false">
                     <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
                     <effect type="fade" start="0" end="100" time="300"/>
@@ -275,7 +276,7 @@
                 <posx>0</posx>
                 <posy>90</posy>
                 <visible>Container(9000).HasFocus(24) + Weather.IsFetched</visible>
-                <visible>StringCompare(Weather.Plugin,weather.weatherplus)</visible>
+                <visible>StringCompare(Weather.Plugin,weather.wunderground)</visible>
                 <control type="image">
                     <description>background for weather widget</description>
                     <posx>-20</posx>
@@ -355,7 +356,7 @@
                 </control>
                 <control type="label">
                     <description>Day label</description>
-                    <posx>410</posx>
+                    <posx>440</posx>
                     <posy>122</posy>
                     <width>85</width>
                     <height>30</height>
@@ -437,8 +438,8 @@
                     <align>center</align>
                     <aligny>center</aligny>
                 </control>
-            </control>
-            <control type="group">
+            </control> 
+            <control type="group"> 
                 <animation type="WindowOpen" reversible="false">
                     <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
                     <effect type="fade" start="0" end="100" time="300"/>
@@ -458,12 +459,12 @@
                 <posx>0</posx>
                 <posy>110</posy>
                 <visible>Container(9000).HasFocus(24) + Weather.IsFetched</visible>
-                <visible>StringCompare(Weather.Plugin,weather.weatherplus)</visible>
+                <visible>StringCompare(Weather.Plugin,weather.wunderground)</visible>
                 <include>VisibleFadeEffect</include>
                 <control type="multiimage">
                     <visible>!Skin.HasSetting(NoAnimatedWeatherIcons)</visible>
                     <description>Weather image</description>
-                    <posx>430</posx>
+                    <posx>460</posx>
                     <posy>135</posy>
                     <width>40</width>
                     <height>40</height>
@@ -475,7 +476,7 @@
                 <control type="image">
                     <visible>Skin.HasSetting(NoAnimatedWeatherIcons)</visible>
                     <description>Weather image</description>
-                    <posx>430</posx>
+                    <posx>460</posx>
                     <posy>135</posy>
                     <width>40</width>
                     <height>40</height>
@@ -607,7 +608,7 @@
                     <height>40</height>
                     <texture>$INFO[Window(Weather).Property(Daily.7.OutlookIcon)]</texture>
                 </control>
-            </control>
+            </control> -->
             <!-- Weather Plus Widget Ending -->
 
             <!-- Weather Widget Beginning -->
@@ -631,7 +632,7 @@
                 <posx>0</posx>
                 <posy>90</posy>
                 <visible>Container(9000).HasFocus(24)</visible>
-                <visible>!StringCompare(Weather.Plugin,weather.weatherplus)</visible>
+                <visible>!StringCompare(Weather.Plugin,weather.wunderground)</visible>
                 <!-- <control type="label">
 				<description>location label</description>
 				<posx>380</posx>
@@ -1112,7 +1113,7 @@
                 <posx>0</posx>
                 <posy>110</posy>
                 <visible>Container(9000).HasFocus(24)</visible>
-                <visible>!StringCompare(Weather.Plugin,weather.weatherplus)</visible>
+                <visible>!StringCompare(Weather.Plugin,weather.wunderground)</visible>
                 <include>VisibleFadeEffect</include>
                 <control type="multiimage">
                     <visible>!Skin.HasSetting(NoAnimatedWeatherIcons)</visible>
