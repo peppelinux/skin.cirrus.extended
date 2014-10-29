@@ -206,7 +206,7 @@
                     <posx>0</posx>
                     <posy>-10</posy>
                     <height>30</height>
-                    <width>550</width>
+                    <width>300</width>
                     <label>$LOCALIZE[31040]:</label>
                     <align>left</align>
                     <aligny>center</aligny>
@@ -219,7 +219,7 @@
                     <posx>0</posx>
                     <posy>20</posy>
                     <height>30</height>
-                    <width>550</width>
+                    <width>300</width>
                     <label>$INFO[MusicPlayer.Artist]</label>
                     <align>left</align>
                     <aligny>center</aligny>
@@ -232,7 +232,7 @@
                     <posx>0</posx>
                     <posy>45</posy>
                     <height>30</height>
-                    <width>550</width>
+                    <width>300</width>
                     <label>$INFO[MusicPlayer.Title]</label>
                     <align>left</align>
                     <aligny>center</aligny>
@@ -247,7 +247,7 @@
                     <posx>0</posx>
                     <posy>70</posy>
                     <height>30</height>
-                    <width>550</width>
+                    <width>300</width>
                     <label>$INFO[MusicPlayer.Album]</label>
                     <align>left</align>
                     <aligny>center</aligny>
@@ -260,7 +260,7 @@
                     <posx>0</posx>
                     <posy>90</posy>
                     <height>30</height>
-                    <width>550</width>
+                    <width>300</width>
                     <label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
                     <align>left</align>
                     <aligny>center</aligny>
