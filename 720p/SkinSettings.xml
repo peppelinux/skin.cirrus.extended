@@ -1095,7 +1095,6 @@
                 <label>$LOCALIZE[31111] - $LOCALIZE[31187]</label>
                 <onclick>Skin.ToggleSetting(HomeMenuNoTVGuideButton)</onclick>
                 <selected>Skin.HasSetting(HomeMenuNoTVGuideButton)</selected>
-                <enable>!Skin.HasSetting(HomeMenuNoTVShowsButton)</enable>
             </control>
             <control type="radiobutton" id="240">
                 <description>Hide Live TV Button</description>
