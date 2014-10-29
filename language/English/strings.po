@@ -506,7 +506,7 @@ msgid "Weekend Forecast"
 msgstr ""
 
 msgctxt "#31904"
-msgid "10 Day Forecast"
+msgid "Daily Forecast"
 msgstr ""
 
 msgctxt "#31905"
@@ -524,7 +524,7 @@ msgid "Fetching forecast info..."
 msgstr ""
 
 msgctxt "#31910"
-msgid "Map & Alerts"
+msgid "Maps"
 msgstr ""
 
 msgctxt "#31911"

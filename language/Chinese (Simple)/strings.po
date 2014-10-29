@@ -421,8 +421,8 @@ msgid "Weekend Forecast"
 msgstr "一周预报"
 
 msgctxt "#31904"
-msgid "10 Day Forecast"
-msgstr "10日预报"
+msgid "Daily Forecast"
+msgstr ""
 
 msgctxt "#31905"
 msgid "Forecast"
@@ -439,8 +439,8 @@ msgid "Fetching forecast info..."
 msgstr "获取天气信息..."
 
 msgctxt "#31910"
-msgid "Map & Alerts"
-msgstr "地图 & 警报"
+msgid "Maps"
+msgstr ""
 
 #empty strings from id 31911 to 39999
 

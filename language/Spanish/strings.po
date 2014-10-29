@@ -402,8 +402,8 @@ msgid "Weekend Forecast"
 msgstr "Pronóstico semanal"
 
 msgctxt "#31904"
-msgid "10 Day Forecast"
-msgstr "Pronóstico de 10 días"
+msgid "Daily Forecast"
+msgstr ""
 
 msgctxt "#31905"
 msgid "Forecast"
@@ -418,8 +418,8 @@ msgid "Fetching forecast info..."
 msgstr "Obteniendo información meteorológica..."
 
 msgctxt "#31910"
-msgid "Map & Alerts"
-msgstr "Mapa y alertas"
+msgid "Maps"
+msgstr ""
 
 msgctxt "#40000"
 msgid "Fanart Poster"

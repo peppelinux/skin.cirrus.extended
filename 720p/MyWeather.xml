@@ -506,16 +506,12 @@
                     <label>$LOCALIZE[31307]</label>
                     <onclick>Skin.ToggleSetting(HomeWeatherFanart)</onclick>
                     <selected>!Skin.HasSetting(HomeWeatherFanart)</selected>
-                    <!-- <onclick>Skin.ToggleSetting(ShowWeatherFanart)</onclick>
-                    <selected>!Skin.HasSetting(ShowWeatherFanart)</selected> -->
                 </control>
                 <control type="button" id="251">
                     <include>ButtonCommonValues</include>
                     <label>$LOCALIZE[31317]</label>
                     <onclick>Skin.SetPath(HomeWeatherFanartFolder)</onclick>
                     <enable>Skin.HasSetting(HomeWeatherFanart)</enable>
-                    <!-- <onclick>Skin.SetPath(WeatherFanartDir)</onclick>
-                    <enable>Skin.HasSetting(HomeWeatherFanart)</enable> -->
                 </control>
                 <control type="radiobutton" id="252">
                     <description>Animation Toggle</description>
@@ -523,8 +519,6 @@
                     <label>$LOCALIZE[31911]</label>
                     <onclick>Skin.ToggleSetting(NoAnimatedWeatherIcons)</onclick>
                     <selected>!Skin.HasSetting(NoAnimatedWeatherIcons)</selected>
-                    <!-- <onclick>Skin.ToggleSetting(EnableAnimationWeather)</onclick>
-                    <selected>Skin.HasSetting(EnableAnimationWeather)</selected> -->
                 </control>
             </control>
         </control>

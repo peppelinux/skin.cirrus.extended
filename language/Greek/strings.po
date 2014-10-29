@@ -446,8 +446,8 @@ msgid "Weekend Forecast"
 msgstr "Πρόγνωση Σαββατοκύριακου"
 
 msgctxt "#31904"
-msgid "10 Day Forecast"
-msgstr "Πρόγνωση 10 ημερών"
+msgid "Daily Forecast"
+msgstr ""
 
 msgctxt "#31905"
 msgid "Forecast"
@@ -462,8 +462,8 @@ msgid "Fetching forecast info..."
 msgstr "Ανάκτηση πρόγνωσης καιρού..."
 
 msgctxt "#31910"
-msgid "Map & Alerts"
-msgstr "Χάρτης & Προειδοποιήσεις"
+msgid "Maps"
+msgstr ""
 
 msgctxt "#40000"
 msgid "Fanart Poster"

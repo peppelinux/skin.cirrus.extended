@@ -402,8 +402,8 @@ msgid "Weekend Forecast"
 msgstr "Veðurspá helgarinnar"
 
 msgctxt "#31904"
-msgid "10 Day Forecast"
-msgstr "10 daga veðurspá"
+msgid "Daily Forecast"
+msgstr ""
 
 msgctxt "#31905"
 msgid "Forecast"

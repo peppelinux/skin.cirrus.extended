@@ -418,8 +418,8 @@ msgid "Weekend Forecast"
 msgstr "주말 예보"
 
 msgctxt "#31904"
-msgid "10 Day Forecast"
-msgstr "10 일 예보"
+msgid "Daily Forecast"
+msgstr ""
 
 msgctxt "#31905"
 msgid "Forecast"
@@ -434,8 +434,8 @@ msgid "Fetching forecast info..."
 msgstr "날씨 정보를 가져오는 중..."
 
 msgctxt "#31910"
-msgid "Map & Alerts"
-msgstr "지도와 경보"
+msgid "Maps"
+msgstr ""
 
 msgctxt "#40000"
 msgid "Fanart Poster"

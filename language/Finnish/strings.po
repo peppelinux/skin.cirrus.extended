@@ -405,8 +405,8 @@ msgid "Weekend Forecast"
 msgstr "Viikonlopun ennuste"
 
 msgctxt "#31904"
-msgid "10 Day Forecast"
-msgstr "10 paivän ennuste"
+msgid "Daily Forecast"
+msgstr ""
 
 msgctxt "#31905"
 msgid "Forecast"
