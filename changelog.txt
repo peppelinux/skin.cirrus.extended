@@ -1,4 +1,5 @@
-[B]3.1.2[/B] (XX.XX.2014)
+[B]3.1.2[/B] (31.10.2014)
+- weather cleanup and change to support new addons
 - changed script.extendedinfo to script.skin.info.service
 - lyrics addon settings changed
 - positioning and visibility changes
