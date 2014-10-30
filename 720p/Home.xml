@@ -288,7 +288,7 @@
                     <posy>45</posy>
                     <width>80</width>
                     <height>80</height>
-                    <imagepath>weather/$INFO[Window(Weather).Property(Daily.1.FanartCode)]</imagepath>
+                    <imagepath>weather/$VAR[WeatherIcon0]</imagepath>
                     <timeperimage>100</timeperimage>
                     <randomize>false</randomize>
                     <fadetime>0</fadetime>
@@ -308,7 +308,7 @@
                     <posy>130</posy>
                     <height>30</height>
                     <width>320</width>
-                    <label>[COLOR=grey]$LOCALIZE[401]: [/COLOR]$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]   [COLOR=grey]$LOCALIZE[419]: [/COLOR]$INFO[Window(Weather).Property(Daily.1.HighTemperature)]   [COLOR=grey]$LOCALIZE[418]: [/COLOR]$INFO[Window(Weather).Property(Daily.1.LowTemperature)]</label>
+                    <label>[COLOR=grey]$LOCALIZE[401]: [/COLOR]$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]   [COLOR=grey]$LOCALIZE[419]: [/COLOR]$VAR[WeatherHighTemp0]   [COLOR=grey]$LOCALIZE[418]: [/COLOR]$VAR[WeatherLowTemp0]</label>
                     <align>center</align>
                     <aligny>center</aligny>
                     <font>cirrus_20</font>
@@ -316,11 +316,11 @@
                 </control>
                 <control type="label">
                     <description>Conditions Label</description>
-                    <posx>20</posx>
+                    <posx>10</posx>
                     <posy>165</posy>
                     <height>30</height>
-                    <width>320</width>
-                    <label>[COLOR=grey]$LOCALIZE[33020]: [/COLOR]$INFO[Weather.Conditions]   [COLOR=grey]$LOCALIZE[404]: [/COLOR]$INFO[Window(Weather).Property(Daily.1.WindSpeed)] $INFO[Window(Weather).Property(Daily.1.ShortWindDirection)]</label>
+                    <width>340</width>
+                    <label>[COLOR=grey]$LOCALIZE[33020]: [/COLOR]$INFO[Window(Weather).Property(Current.Condition]   [COLOR=grey]$LOCALIZE[404]: [/COLOR]$INFO[Window(Weather).Property(Current.Wind)]</label>
                     <align>center</align>
                     <aligny>center</aligny>
                     <font>cirrus_20</font>
@@ -347,7 +347,7 @@
                             <height>20</height>
                             <font>cirrus_18</font>
                             <textcolor>white</textcolor>
-                            <info>Window(Weather).Property(Daily.2.ShortDay)</info>
+                            <label>$VAR[WeatherShortDay1]</label>
                             <align>center</align>
                             <aligny>center</aligny>
                         </control>
@@ -366,7 +366,7 @@
                             <posy>60</posy>
                             <width>70</width>
                             <height>70</height>
-                            <imagepath>weather/$INFO[Window(Weather).Property(Daily.2.FanartCode)]</imagepath>
+                            <imagepath>weather/$VAR[WeatherIcon1]</imagepath>
                             <timeperimage>100</timeperimage>
                             <randomize>false</randomize>
                             <fadetime>0</fadetime>
@@ -378,7 +378,7 @@
                             <posy>60</posy>
                             <width>70</width>
                             <height>70</height>
-                            <texture>$INFO[Window(Weather).Property(Daily.2.OutlookIcon)]</texture>
+                            <texture>$VAR[WeatherIcon1]</texture>
                         </control>
                         <control type="image">
                             <posx>30</posx>
@@ -396,7 +396,7 @@
                             <height>25</height>
                             <font>cirrus_20</font>
                             <textcolor>white</textcolor>
-                            <label>[COLOR=accent]$LOCALIZE[393]:[/COLOR] $INFO[Window(weather).Property(Daily.2.HighTemperature)]</label>
+                            <label>[COLOR=accent]$LOCALIZE[393]:[/COLOR] $VAR[WeatherHighTemp1]</label>
                             <align>center</align>
                             <aligny>center</aligny>
                         </control>
@@ -408,7 +408,7 @@
                             <height>25</height>
                             <font>cirrus_20</font>
                             <textcolor>white</textcolor>
-                            <label>[COLOR=grey2]$LOCALIZE[391]:[/COLOR] $INFO[Window(weather).Property(Daily.2.LowTemperature)]</label>
+                            <label>[COLOR=grey2]$LOCALIZE[391]:[/COLOR] $VAR[WeatherLowTemp1]</label>
                             <align>center</align>
                             <aligny>center</aligny>
                         </control>
@@ -431,7 +431,7 @@
                             <height>20</height>
                             <font>cirrus_18</font>
                             <textcolor>white</textcolor>
-                            <info>Window(Weather).Property(Daily.3.ShortDay)</info>
+                            <label>$VAR[WeatherShortDay2]</label>
                             <align>center</align>
                             <aligny>center</aligny>
                         </control>
@@ -450,7 +450,7 @@
                             <posy>60</posy>
                             <width>70</width>
                             <height>70</height>
-                            <imagepath>weather/$INFO[Window(Weather).Property(Daily.3.FanartCode)]</imagepath>
+                            <imagepath>weather/$VAR[WeatherIcon2]</imagepath>
                             <timeperimage>100</timeperimage>
                             <randomize>false</randomize>
                             <fadetime>0</fadetime>
@@ -462,7 +462,7 @@
                             <posy>60</posy>
                             <width>70</width>
                             <height>70</height>
-                            <texture>$INFO[Window(Weather).Property(Daily.3.OutlookIcon)]</texture>
+                            <texture>$VAR[WeatherIcon2]</texture>
                         </control>
                         <control type="image">
                             <posx>30</posx>
@@ -480,7 +480,7 @@
                             <height>25</height>
                             <font>cirrus_20</font>
                             <textcolor>white</textcolor>
-                            <label>[COLOR=accent]$LOCALIZE[393]:[/COLOR] $INFO[Window(weather).Property(Daily.3.HighTemperature)]</label>
+                            <label>[COLOR=accent]$LOCALIZE[393]:[/COLOR] $VAR[WeatherHighTemp2]</label>
                             <align>center</align>
                             <aligny>center</aligny>
                         </control>
@@ -492,7 +492,7 @@
                             <height>25</height>
                             <font>cirrus_20</font>
                             <textcolor>white</textcolor>
-                            <label>[COLOR=grey2]$LOCALIZE[391]:[/COLOR] $INFO[Window(weather).Property(Daily.3.LowTemperature)]</label>
+                            <label>[COLOR=grey2]$LOCALIZE[391]:[/COLOR] $VAR[WeatherLowTemp2]</label>
                             <align>center</align>
                             <aligny>center</aligny>
                         </control>
@@ -515,7 +515,7 @@
                             <height>20</height>
                             <font>cirrus_18</font>
                             <textcolor>white</textcolor>
-                            <info>Window(Weather).Property(Daily.4.ShortDay)</info>
+                            <label>$VAR[WeatherShortDay3]</label>
                             <align>center</align>
                             <aligny>center</aligny>
                         </control>
@@ -534,7 +534,7 @@
                             <posy>60</posy>
                             <width>70</width>
                             <height>70</height>
-                            <imagepath>weather/$INFO[Window(Weather).Property(Daily.4.FanartCode)]</imagepath>
+                            <imagepath>weather/$VAR[WeatherIcon3]</imagepath>
                             <timeperimage>100</timeperimage>
                             <randomize>false</randomize>
                             <fadetime>0</fadetime>
@@ -546,7 +546,7 @@
                             <posy>60</posy>
                             <width>70</width>
                             <height>70</height>
-                            <texture>$INFO[Window(Weather).Property(Daily.4.OutlookIcon)]</texture>
+                            <texture>$VAR[WeatherIcon3]</texture>
                         </control>
                         <control type="image">
                             <posx>30</posx>
@@ -564,7 +564,7 @@
                             <height>25</height>
                             <font>cirrus_20</font>
                             <textcolor>white</textcolor>
-                            <label>[COLOR=accent]$LOCALIZE[393]:[/COLOR] $INFO[Window(weather).Property(Daily.4.HighTemperature)]</label>
+                            <label>[COLOR=accent]$LOCALIZE[393]:[/COLOR] $VAR[WeatherHighTemp3]</label>
                             <align>center</align>
                             <aligny>center</aligny>
                         </control>
@@ -576,7 +576,7 @@
                             <height>25</height>
                             <font>cirrus_20</font>
                             <textcolor>white</textcolor>
-                            <label>[COLOR=grey2]$LOCALIZE[391]:[/COLOR] $INFO[Window(weather).Property(Daily.4.LowTemperature)]</label>
+                            <label>[COLOR=grey2]$LOCALIZE[391]:[/COLOR] $VAR[WeatherLowTemp3]</label>
                             <align>center</align>
                             <aligny>center</aligny>
                         </control>
@@ -599,7 +599,7 @@
                             <height>20</height>
                             <font>cirrus_18</font>
                             <textcolor>white</textcolor>
-                            <info>Window(Weather).Property(Daily.5.ShortDay)</info>
+                            <label>$VAR[WeatherShortDay4]</label>
                             <align>center</align>
                             <aligny>center</aligny>
                         </control>
@@ -618,7 +618,7 @@
                             <posy>60</posy>
                             <width>70</width>
                             <height>70</height>
-                            <imagepath>weather/$INFO[Window(Weather).Property(Daily.5.FanartCode)]</imagepath>
+                            <imagepath>weather/$VAR[WeatherIcon4]</imagepath>
                             <timeperimage>100</timeperimage>
                             <randomize>false</randomize>
                             <fadetime>0</fadetime>
@@ -630,7 +630,7 @@
                             <posy>60</posy>
                             <width>70</width>
                             <height>70</height>
-                            <texture>$INFO[Window(Weather).Property(Daily.5.OutlookIcon)]</texture>
+                            <texture>$VAR[WeatherIcon4]</texture>
                         </control>
                         <control type="image">
                             <posx>30</posx>
@@ -648,7 +648,7 @@
                             <height>25</height>
                             <font>cirrus_20</font>
                             <textcolor>white</textcolor>
-                            <label>[COLOR=accent]$LOCALIZE[393]:[/COLOR] $INFO[Window(weather).Property(Daily.5.HighTemperature)]</label>
+                            <label>[COLOR=accent]$LOCALIZE[393]:[/COLOR] $VAR[WeatherHighTemp4]</label>
                             <align>center</align>
                             <aligny>center</aligny>
                         </control>
@@ -660,7 +660,7 @@
                             <height>25</height>
                             <font>cirrus_20</font>
                             <textcolor>white</textcolor>
-                            <label>[COLOR=grey2]$LOCALIZE[391]:[/COLOR] $INFO[Window(weather).Property(Daily.5.LowTemperature)]</label>
+                            <label>[COLOR=grey2]$LOCALIZE[391]:[/COLOR] $VAR[WeatherLowTemp4]</label>
                             <align>center</align>
                             <aligny>center</aligny>
                         </control>
@@ -683,7 +683,7 @@
                             <height>20</height>
                             <font>cirrus_18</font>
                             <textcolor>white</textcolor>
-                            <info>Window(Weather).Property(Daily.6.ShortDay)</info>
+                            <label>$VAR[WeatherShortDay5]</label>
                             <align>center</align>
                             <aligny>center</aligny>
                         </control>
@@ -702,7 +702,7 @@
                             <posy>60</posy>
                             <width>70</width>
                             <height>70</height>
-                            <imagepath>weather/$INFO[Window(Weather).Property(Daily.6.FanartCode)]</imagepath>
+                            <imagepath>weather/$VAR[WeatherIcon5]</imagepath>
                             <timeperimage>100</timeperimage>
                             <randomize>false</randomize>
                             <fadetime>0</fadetime>
@@ -714,7 +714,7 @@
                             <posy>60</posy>
                             <width>70</width>
                             <height>70</height>
-                            <texture>$INFO[Window(Weather).Property(Daily.6.OutlookIcon)]</texture>
+                            <texture>$VAR[WeatherIcon5]</texture>
                         </control>
                         <control type="image">
                             <posx>30</posx>
@@ -732,7 +732,7 @@
                             <height>25</height>
                             <font>cirrus_20</font>
                             <textcolor>white</textcolor>
-                            <label>[COLOR=accent]$LOCALIZE[393]:[/COLOR] $INFO[Window(weather).Property(Daily.6.HighTemperature)]</label>
+                            <label>[COLOR=accent]$LOCALIZE[393]:[/COLOR] $VAR[WeatherHighTemp5]</label>
                             <align>center</align>
                             <aligny>center</aligny>
                         </control>
@@ -744,7 +744,7 @@
                             <height>25</height>
                             <font>cirrus_20</font>
                             <textcolor>white</textcolor>
-                            <label>[COLOR=grey2]$LOCALIZE[391]:[/COLOR] $INFO[Window(weather).Property(Daily.6.LowTemperature)]</label>
+                            <label>[COLOR=grey2]$LOCALIZE[391]:[/COLOR] $VAR[WeatherLowTemp5]</label>
                             <align>center</align>
                             <aligny>center</aligny>
                         </control>
