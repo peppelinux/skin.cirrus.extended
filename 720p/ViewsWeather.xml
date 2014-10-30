@@ -58,20 +58,6 @@
                         <height>135</height>
                         <aspectratio>keep</aspectratio>
                         <texture>$INFO[ListItem.ActualIcon]</texture>
-                        <visible>Skin.HasSetting(NoAnimatedWeatherIcons)</visible>
-                    </control>
-                    <control type="multiimage">
-                        <left>460</left>
-                        <top>0</top>
-                        <width>135</width>
-                        <height>135</height>
-                        <aspectratio>keep</aspectratio>
-                        <imagepath>weather/$INFO[ListItem.Property(FanartCode)]</imagepath>
-                        <timeperimage>100</timeperimage>
-                        <randomize>false</randomize>
-                        <aspectratio>keep</aspectratio>
-                        <fadetime>0</fadetime>
-                        <visible>!Skin.HasSetting(NoAnimatedWeatherIcons)</visible>
                     </control>
                     <control type="label">
                         <left>30</left>
@@ -139,20 +125,6 @@
                         <height>135</height>
                         <aspectratio>keep</aspectratio>
                         <texture>$INFO[ListItem.ActualIcon]</texture>
-                        <visible>Skin.HasSetting(NoAnimatedWeatherIcons)</visible>
-                    </control>
-                    <control type="multiimage">
-                        <left>460</left>
-                        <top>0</top>
-                        <width>135</width>
-                        <height>135</height>
-                        <aspectratio>keep</aspectratio>
-                        <imagepath>weather/$INFO[ListItem.Property(FanartCode)]</imagepath>
-                        <timeperimage>100</timeperimage>
-                        <randomize>false</randomize>
-                        <aspectratio>keep</aspectratio>
-                        <fadetime>0</fadetime>
-                        <visible>!Skin.HasSetting(NoAnimatedWeatherIcons)</visible>
                     </control>
                     <control type="label">
                         <left>30</left>
@@ -208,20 +180,6 @@
                         <height>80</height>
                         <aspectratio>keep</aspectratio>
                         <texture>$INFO[ListItem.Thumb]</texture>
-                        <visible>Skin.HasSetting(NoAnimatedWeatherIcons)</visible>
-                    </control>
-                    <control type="multiimage">
-                        <left>110</left>
-                        <top>5</top>
-                        <width>80</width>
-                        <height>80</height>
-                        <aspectratio>keep</aspectratio>
-                        <imagepath>weather/$INFO[ListItem.Property(FanartCode)]</imagepath>
-                        <timeperimage>100</timeperimage>
-                        <randomize>false</randomize>
-                        <aspectratio>keep</aspectratio>
-                        <fadetime>0</fadetime>
-                        <visible>!Skin.HasSetting(NoAnimatedWeatherIcons)</visible>
                     </control>
                     <control type="label">
                         <left>590</left>
@@ -285,20 +243,6 @@
                         <height>80</height>
                         <aspectratio>keep</aspectratio>
                         <texture>$INFO[ListItem.Thumb]</texture>
-                        <visible>Skin.HasSetting(NoAnimatedWeatherIcons)</visible>
-                    </control>
-                    <control type="multiimage">
-                        <left>110</left>
-                        <top>5</top>
-                        <width>80</width>
-                        <height>80</height>
-                        <aspectratio>keep</aspectratio>
-                        <imagepath>weather/$INFO[ListItem.Property(FanartCode)]</imagepath>
-                        <timeperimage>100</timeperimage>
-                        <randomize>false</randomize>
-                        <aspectratio>keep</aspectratio>
-                        <fadetime>0</fadetime>
-                        <visible>!Skin.HasSetting(NoAnimatedWeatherIcons)</visible>
                     </control>
                     <control type="label">
                         <left>590</left>
@@ -633,20 +577,6 @@
                         <height>110</height>
                         <aspectratio>keep</aspectratio>
                         <texture>$INFO[Window.Property(36Hour.1.OutlookIcon)]</texture>
-                        <visible>Skin.HasSetting(NoAnimatedWeatherIcons)</visible>
-                    </control>
-                    <control type="multiimage">
-                        <description>current weather icon</description>
-                        <left>0</left>
-                        <top>10</top>
-                        <width>120</width>
-                        <height>110</height>
-                        <imagepath>weather/$INFO[Window.Property(36Hour.1.FanartCode)]</imagepath>
-                        <timeperimage>100</timeperimage>
-                        <randomize>false</randomize>
-                        <aspectratio>keep</aspectratio>
-                        <fadetime>0</fadetime>
-                        <visible>!Skin.HasSetting(NoAnimatedWeatherIcons)</visible>
                     </control>
                     <control type="label">
                         <left>120</left>
@@ -712,20 +642,6 @@
                         <height>110</height>
                         <aspectratio>keep</aspectratio>
                         <texture>$INFO[Window.Property(36Hour.2.OutlookIcon)]</texture>
-                        <visible>Skin.HasSetting(NoAnimatedWeatherIcons)</visible>
-                    </control>
-                    <control type="multiimage">
-                        <description>current weather icon</description>
-                        <left>0</left>
-                        <top>10</top>
-                        <width>120</width>
-                        <height>110</height>
-                        <imagepath>weather/$INFO[Window.Property(36Hour.2.FanartCode)]</imagepath>
-                        <timeperimage>100</timeperimage>
-                        <randomize>false</randomize>
-                        <aspectratio>keep</aspectratio>
-                        <fadetime>0</fadetime>
-                        <visible>!Skin.HasSetting(NoAnimatedWeatherIcons)</visible>
                     </control>
                     <control type="label">
                         <left>120</left>
@@ -791,20 +707,6 @@
                         <height>110</height>
                         <aspectratio>keep</aspectratio>
                         <texture>$INFO[Window.Property(36Hour.3.OutlookIcon)]</texture>
-                        <visible>Skin.HasSetting(NoAnimatedWeatherIcons)</visible>
-                    </control>
-                    <control type="multiimage">
-                        <description>current weather icon</description>
-                        <left>0</left>
-                        <top>10</top>
-                        <width>120</width>
-                        <height>110</height>
-                        <imagepath>weather/$INFO[Window.Property(36Hour.3.FanartCode)]</imagepath>
-                        <timeperimage>100</timeperimage>
-                        <randomize>false</randomize>
-                        <aspectratio>keep</aspectratio>
-                        <fadetime>0</fadetime>
-                        <visible>!Skin.HasSetting(NoAnimatedWeatherIcons)</visible>
                     </control>
                     <control type="label">
                         <left>120</left>
@@ -901,20 +803,6 @@
                         <height>80</height>
                         <aspectratio>keep</aspectratio>
                         <texture>$INFO[ListItem.Thumb]</texture>
-                        <visible>Skin.HasSetting(NoAnimatedWeatherIcons)</visible>
-                    </control>
-                    <control type="multiimage">
-                        <description>current weather icon</description>
-                        <posx>110</posx>
-                        <posy>5</posy>
-                        <width>80</width>
-                        <height>80</height>
-                        <imagepath>weather/$INFO[ListItem.Property(FanartCode)]</imagepath>
-                        <timeperimage>100</timeperimage>
-                        <randomize>false</randomize>
-                        <aspectratio>keep</aspectratio>
-                        <fadetime>0</fadetime>
-                        <visible>!Skin.HasSetting(NoAnimatedWeatherIcons)</visible>
                     </control>
                     <control type="label">
                         <posx>590</posx>
@@ -978,20 +866,6 @@
                         <height>80</height>
                         <aspectratio>keep</aspectratio>
                         <texture>$INFO[ListItem.Thumb]</texture>
-                        <visible>Skin.HasSetting(NoAnimatedWeatherIcons)</visible>
-                    </control>
-                    <control type="multiimage">
-                        <description>current weather icon</description>
-                        <posx>110</posx>
-                        <posy>5</posy>
-                        <width>80</width>
-                        <height>80</height>
-                        <imagepath>weather/$INFO[ListItem.Property(FanartCode)]</imagepath>
-                        <timeperimage>100</timeperimage>
-                        <randomize>false</randomize>
-                        <aspectratio>keep</aspectratio>
-                        <fadetime>0</fadetime>
-                        <visible>!Skin.HasSetting(NoAnimatedWeatherIcons)</visible>
                     </control>
                     <control type="label">
                         <posx>590</posx>
@@ -1230,20 +1104,6 @@
                         <height>160</height>
                         <aspectratio>keep</aspectratio>
                         <texture>$INFO[Window.Property(Weekend.1.OutlookIcon)]</texture>
-                        <visible>Skin.HasSetting(NoAnimatedWeatherIcons)</visible>
-                    </control>
-                    <control type="multiimage">
-                        <description>current weather icon</description>
-                        <posx>10</posx>
-                        <posy>20</posy>
-                        <width>130</width>
-                        <height>160</height>
-                        <imagepath>weather/$INFO[Window.Property(Weekend.1.FanartCode)]</imagepath>
-                        <timeperimage>100</timeperimage>
-                        <randomize>false</randomize>
-                        <aspectratio>keep</aspectratio>
-                        <fadetime>0</fadetime>
-                        <visible>!Skin.HasSetting(NoAnimatedWeatherIcons)</visible>
                     </control>
                     <control type="label">
                         <posx>140</posx>
@@ -1331,20 +1191,6 @@
                         <height>160</height>
                         <aspectratio>keep</aspectratio>
                         <texture>$INFO[Window.Property(Weekend.2.OutlookIcon)]</texture>
-                        <visible>Skin.HasSetting(NoAnimatedWeatherIcons)</visible>
-                    </control>
-                    <control type="multiimage">
-                        <description>current weather icon</description>
-                        <posx>10</posx>
-                        <posy>20</posy>
-                        <width>130</width>
-                        <height>160</height>
-                        <imagepath>weather/$INFO[Window.Property(Weekend.2.FanartCode)]</imagepath>
-                        <timeperimage>100</timeperimage>
-                        <randomize>false</randomize>
-                        <aspectratio>keep</aspectratio>
-                        <fadetime>0</fadetime>
-                        <visible>!Skin.HasSetting(NoAnimatedWeatherIcons)</visible>
                     </control>
                     <control type="label">
                         <posx>140</posx>

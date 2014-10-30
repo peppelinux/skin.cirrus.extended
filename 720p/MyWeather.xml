@@ -148,20 +148,6 @@
                     <height>180</height>
                     <info>Window.Property(Current.ConditionIcon)</info>
                     <aspectratio>keep</aspectratio>
-                    <visible>Skin.HasSetting(NoAnimatedWeatherIcons)</visible>
-                </control>        
-                <control type="multiimage">
-                    <description>current weather icon</description>
-                    <posx>230</posx>
-                    <posy>105</posy>
-                    <width>230</width>
-                    <height>180</height>
-                    <imagepath>weather/$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
-                    <timeperimage>100</timeperimage>
-                    <randomize>false</randomize>
-                    <aspectratio>keep</aspectratio>
-                    <fadetime>0</fadetime>
-                    <visible>!Skin.HasSetting(NoAnimatedWeatherIcons)</visible>
                 </control>        
                 <control type="label">
                     <description>current condition label</description>
@@ -512,13 +498,6 @@
                     <label>$LOCALIZE[31317]</label>
                     <onclick>Skin.SetPath(HomeWeatherFanartFolder)</onclick>
                     <enable>Skin.HasSetting(HomeWeatherFanart)</enable>
-                </control>
-                <control type="radiobutton" id="252">
-                    <description>Animation Toggle</description>
-                    <include>ButtonCommonValues</include>
-                    <label>$LOCALIZE[31911]</label>
-                    <onclick>Skin.ToggleSetting(NoAnimatedWeatherIcons)</onclick>
-                    <selected>!Skin.HasSetting(NoAnimatedWeatherIcons)</selected>
                 </control>
             </control>
         </control>

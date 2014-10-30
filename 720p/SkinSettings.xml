@@ -919,13 +919,6 @@
                     <onclick>Skin.SetPath(HomeWeatherFanartFolder)</onclick>
                     <visible>Skin.HasSetting(HomeWeatherFanart)</visible>
                 </control>
-                <control type="radiobutton" id="1072">
-                    <description>Animated Weather Icons</description>
-                    <include>MenuItemSettings</include>
-                    <label>41145</label>
-                    <onclick>Skin.ToggleSetting(NoAnimatedWeatherIcons)</onclick>
-                    <selected>Skin.HasSetting(NoAnimatedWeatherIcons)</selected>
-                </control>
                 <control type="radiobutton" id="1073">
                     <description>Hide Black Bar for Weather widget on home</description>
                     <include>MenuItemSettings</include>
