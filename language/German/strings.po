@@ -898,7 +898,7 @@ msgid "Enable IMDB Rating Number in FanartView"
 msgstr "Aktiviere IMDB Bewertung als Zahl in FanartView"
 
 msgctxt "#41138"
-msgid "Artist fanart on home while playing music"
+msgid "Artist fanart slideshow on home while playing music"
 msgstr "Artist Fanart auf dem Homemenü während der Musikwiedergabe"
 
 msgctxt "#41139"

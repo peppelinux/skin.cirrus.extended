@@ -910,7 +910,7 @@ msgid "Enable IMDB Rating Number in FanartView"
 msgstr "Aktivera IMDB-betyg i fanartvy"
 
 msgctxt "#41138"
-msgid "Artist fanart on home while playing music"
+msgid "Artist fanart slideshow on home while playing music"
 msgstr "Artist-fanart på hemskärmen när musik spelas"
 
 msgctxt "#41139"

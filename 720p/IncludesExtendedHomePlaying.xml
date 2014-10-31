@@ -194,6 +194,7 @@
                     <texture>$INFO[MusicPlayer.Property(fanart_image)]</texture>
                     <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                     <bordersize>6</bordersize>
+                    <visible>!Skin.HasSetting(HomeMusicFanart)</visible>
                 </control>
             </control>	
 
@@ -393,6 +394,7 @@
                     <textcolor>grey</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <scroll>true</scroll>
+                    <scrollspeed>30</scrollspeed>
                     <visible>!Skin.HasSetting(NoAutoScrollNowPlaying)</visible>
                 </control>
                 <control type="label">
@@ -423,6 +425,7 @@
                     <textcolor>grey</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <scroll>true</scroll>
+                    <scrollspeed>30</scrollspeed>
                     <visible>!Skin.HasSetting(NoAutoScrollNowPlaying)</visible>
                 </control>
                 <control type="label">
@@ -453,6 +456,7 @@
                     <textcolor>grey</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <scroll>true</scroll>
+                    <scrollspeed>30</scrollspeed>
                     <visible>!Skin.HasSetting(NoAutoScrollNowPlaying)</visible>
                 </control>
                 <control type="label">
@@ -483,6 +487,7 @@
                     <textcolor>grey</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <scroll>true</scroll>
+                    <scrollspeed>30</scrollspeed>
                     <visible>!Skin.HasSetting(NoAutoScrollNowPlaying)</visible>
                 </control>
                 <control type="label">
@@ -513,6 +518,7 @@
                     <textcolor>grey</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <scroll>true</scroll>
+                    <scrollspeed>30</scrollspeed>
                     <visible>!Skin.HasSetting(NoAutoScrollNowPlaying)</visible>
                 </control>
                 <control type="label" id="45678">
