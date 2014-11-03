@@ -8,32 +8,22 @@
         <posy>0</posy>
     </coordinates>
     <controls>
-
-        <control type="image" id="997">
-            <description>background top image</description>
-            <posx>0</posx>
-            <posy>-15</posy>
-            <width>298</width>
-            <height>16</height>
-            <texture>background-contextmenutop.png</texture>
-        </control>
         <control type="image" id="999">
             <description>background image</description>
             <posx>0</posx>
             <posy>0</posy>
             <width>298</width>
-            <texture>background-contextmenumiddle.png</texture>
+            <height>720</height>
+            <texture>background-contextmenu.png</texture>
         </control>
-        <control type="image" id="998">
-            <description>background bottom image</description>
-            <posx>0</posx>
-            <posy>-</posy>
-            <width>298</width>
-            <height>13</height>
-            <texture>background-contextmenubottom.png</texture>
-            <aligny>bottom</aligny>
+        <control type="grouplist" id="996">
+            <description>grouplist for context buttons</description>
+            <left>20</left>
+            <top>30</top>
+            <width>300</width>
+            <height max="670">auto</height>
+            <itemgap>2</itemgap>
         </control>
-
         <control type="button" id="1000">
             <description>button template</description>
             <posx>15</posx>
