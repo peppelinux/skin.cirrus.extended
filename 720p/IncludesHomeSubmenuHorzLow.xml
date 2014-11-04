@@ -5,13 +5,13 @@
 
         <!-- HOME MENU SUBMENUS HORIZONTAL LOW -->
         <control type="group" id="9001">
-            <posx>-250</posx>
-            <posy>496</posy>
+            <left>0</left>
+            <top>496</top>
 
             <control type="image">
                 <!-- background bar for horizontal submenus -->
-                <posx>0</posx>
-                <posy>85</posy>
+                <left>0</left>
+                <top>85</top>
                 <width>1350</width>
                 <height>40</height>
                 <texture>horzmenuback.png</texture>
@@ -20,7 +20,7 @@
             <animation effect="fade" start="100" end="0" time="0" condition="!ControlGroup(9001).HasFocus">conditional</animation>
             <animation effect="fade" start="0" end="100" delay="300" time="200" condition="ControlGroup(9001).HasFocus">conditional</animation>
             <animation effect="fade" start="100" end="0" time="0" condition="ControlGroup(9001).HasFocus">WindowClose</animation>
-            <animation effect="slide" end="210,0" time="300" tween="quadratic" easing="out" condition="ControlGroup(9001).HasFocus">conditional</animation>
+            <animation effect="slide" end="0,0" time="300" tween="quadratic" easing="out" condition="ControlGroup(9001).HasFocus">conditional</animation>
             <animation effect="slide" end="0,-204" time="300" condition="Container(9000).Row(1)">conditional</animation>
             <animation effect="slide" end="0,-102" time="300" condition="Container(9000).Row(2)">conditional</animation>
             <animation effect="slide" end="0,102" time="300" condition="Container(9000).Row(4)">conditional</animation>
@@ -28,8 +28,8 @@
 
             <!-- VIDEOS SUBMENU -->
             <control type="wraplist" id="9010">
-                <posx>140</posx>
-                <posy>87</posy>
+                <left>0</left>
+                <top>87</top>
                 <width>1280</width>
                 <height>240</height>
                 <align>center</align>
@@ -42,13 +42,13 @@
                 <ondown>9000</ondown>
                 <itemgap>0</itemgap>
                 <visible>Container(9000).HasFocus(12)</visible>
-                <itemlayout width="270" height="245">
+                <itemlayout width="256">
                     <control type="group">	
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <control type="label">
                             <!--Movie title-->
-                            <width>270</width>
+                            <width>256</width>
                             <height>56</height>
                             <label>$INFO[ListItem.Label]</label>
                             <align>center</align>
@@ -57,13 +57,13 @@
                         </control>
                     </control>
                 </itemlayout>
-                <focusedlayout width="270" height="515">
+                <focusedlayout width="256">
                     <control type="group">	
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <control type="label">
                             <!--Movie title-->
-                            <width>270</width>
+                            <width>256</width>
                             <height>56</height>
                             <label>$INFO[ListItem.Label]</label>
                             <align>center</align>
@@ -109,8 +109,8 @@
 
             <!-- MUSIC SUBMENU -->
             <control type="wraplist" id="9011">
-                <posx>140</posx>
-                <posy>87</posy>
+                <left>0</left>
+                <top>87</top>
                 <width>1280</width>
                 <height>240</height>
                 <align>center</align>
@@ -123,13 +123,13 @@
                 <ondown>9000</ondown>
                 <itemgap>0</itemgap>
                 <visible>Container(9000).HasFocus(14)</visible>
-                <itemlayout width="270" height="245">
+                <itemlayout width="256">
                     <control type="group">	
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <control type="label">
                             <!--Movie title-->
-                            <width>270</width>
+                            <width>256</width>
                             <height>56</height>
                             <label>$INFO[ListItem.Label]</label>
                             <align>center</align>
@@ -138,13 +138,13 @@
                         </control>
                     </control>
                 </itemlayout>
-                <focusedlayout width="270" height="515">
+                <focusedlayout width="256">
                     <control type="group">	
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <control type="label">
                             <!--Movie title-->
-                            <width>270</width>
+                            <width>256</width>
                             <height>56</height>
                             <label>$INFO[ListItem.Label]</label>
                             <align>center</align>
@@ -193,8 +193,8 @@
 
             <!-- SETTINGS SUBMENU -->
             <control type="wraplist" id="9014">
-                <posx>140</posx>
-                <posy>87</posy>
+                <left>0</left>
+                <top>87</top>
                 <width>1280</width>
                 <height>240</height>
                 <align>center</align>
@@ -207,13 +207,13 @@
                 <ondown>9000</ondown>
                 <itemgap>0</itemgap>
                 <visible>Container(9000).HasFocus(25)</visible>
-                <itemlayout width="270" height="245">
+                <itemlayout width="256">
                     <control type="group">	
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <control type="label">
                             <!--Movie title-->
-                            <width>270</width>
+                            <width>256</width>
                             <height>56</height>
                             <label>$INFO[ListItem.Label]</label>
                             <align>center</align>
@@ -222,13 +222,13 @@
                         </control>
                     </control>
                 </itemlayout>
-                <focusedlayout width="270" height="515">
+                <focusedlayout width="256">
                     <control type="group">	
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <control type="label">
                             <!--Movie title-->
-                            <width>270</width>
+                            <width>256</width>
                             <height>56</height>
                             <label>$INFO[ListItem.Label]</label>
                             <align>center</align>
@@ -279,8 +279,8 @@
 
             <!-- CUSTOM Addon Submenues -->
             <control type="wraplist" id="9015">
-                <posx>140</posx>
-                <posy>87</posy>
+                <left>0</left>
+                <top>87</top>
                 <width>1280</width>
                 <height>240</height>
                 <align>center</align>
@@ -293,13 +293,13 @@
                 <ondown>9000</ondown>
                 <itemgap>0</itemgap>
                 <visible>Container(9000).HasFocus(18) + [[Skin.HasSetting(HomeScriptButton1) + !IsEmpty(Skin.String(HomeScriptButton1_label))] | [Skin.HasSetting(HomeScriptButton2) + !IsEmpty(Skin.String(HomeScriptButton2_label))] | [Skin.HasSetting(HomeScriptButton3) + !IsEmpty(Skin.String(HomeScriptButton3_label))] | [Skin.HasSetting(HomeScriptButton4) + !IsEmpty(Skin.String(HomeScriptButton4_label))] | [Skin.HasSetting(HomeScriptButton5) + !IsEmpty(Skin.String(HomeScriptButton5_label))] | [Skin.HasSetting(HomeScriptButton6) + !IsEmpty(Skin.String(HomeScriptButton6_label))]]</visible>
-                <itemlayout width="270" height="245">
+                <itemlayout width="256">
                     <control type="group">	
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <control type="label">
                             <!--Movie title-->
-                            <width>270</width>
+                            <width>256</width>
                             <height>56</height>
                             <label>$INFO[ListItem.Label]</label>
                             <align>center</align>
@@ -308,13 +308,13 @@
                         </control>
                     </control>
                 </itemlayout>
-                <focusedlayout width="270" height="515">
+                <focusedlayout width="256">
                     <control type="group">	
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <control type="label">
                             <!--Movie title-->
-                            <width>270</width>
+                            <width>256</width>
                             <height>56</height>
                             <label>$INFO[ListItem.Label]</label>
                             <align>center</align>
@@ -408,8 +408,8 @@
 
             <!-- MOVIES SUBMENU -->
             <control type="wraplist" id="9016">
-                <posx>140</posx>
-                <posy>87</posy>
+                <left>0</left>
+                <top>87</top>
                 <width>1280</width>
                 <height>240</height>
                 <align>center</align>
@@ -422,13 +422,13 @@
                 <ondown>9000</ondown>
                 <itemgap>0</itemgap>
                 <visible>Container(9000).HasFocus(1)</visible>
-                <itemlayout width="270" height="245">
+                <itemlayout width="256">
                     <control type="group">	
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <control type="label">
                             <!--Movie title-->
-                            <width>270</width>
+                            <width>256</width>
                             <height>56</height>
                             <label>$INFO[ListItem.Label]</label>
                             <align>center</align>
@@ -437,13 +437,13 @@
                         </control>
                     </control>
                 </itemlayout>
-                <focusedlayout width="270" height="515">
+                <focusedlayout width="256">
                     <control type="group">	
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <control type="label">
                             <!--Movie title-->
-                            <width>270</width>
+                            <width>256</width>
                             <height>56</height>
                             <label>$INFO[ListItem.Label]</label>
                             <align>center</align>
@@ -614,8 +614,8 @@
             <!-- TV SHOWS SUBMENU -->
             <control type="wraplist" id="9019">
                 <!-- Changed ID Butchabay 1.2.4 -->
-                <posx>140</posx>
-                <posy>87</posy>
+                <left>0</left>
+                <top>87</top>
                 <width>1280</width>
                 <height>240</height>
                 <align>center</align>
@@ -628,13 +628,13 @@
                 <ondown>9000</ondown>
                 <itemgap>0</itemgap>
                 <visible>Container(9000).HasFocus(7)</visible>
-                <itemlayout width="270" height="245">
+                <itemlayout width="256">
                     <control type="group">	
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <control type="label">
                             <!--Movie title-->
-                            <width>270</width>
+                            <width>256</width>
                             <height>56</height>
                             <label>$INFO[ListItem.Label]</label>
                             <align>center</align>
@@ -643,13 +643,13 @@
                         </control>
                     </control>
                 </itemlayout>
-                <focusedlayout width="270" height="515">
+                <focusedlayout width="256">
                     <control type="group">	
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <control type="label">
                             <!--Movie title-->
-                            <width>270</width>
+                            <width>256</width>
                             <height>56</height>
                             <label>$INFO[ListItem.Label]</label>
                             <align>center</align>
