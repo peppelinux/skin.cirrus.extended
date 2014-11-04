@@ -29,8 +29,8 @@
 		</control>
 		<include>CommonMediaPlayingBackgroundBrowser</include>
 		<control type="group">
-			<posx>90</posx>
-			<posy>60</posy>
+			<left>90</left>
+			<top>60</top>
 			<animation type="WindowOpen" reversible="false">
 				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
 				<effect type="fade" start="0" end="100" time="300"/>
@@ -40,24 +40,24 @@
 				<effect type="fade" start="100" end="0" time="300"/>
 			</animation>      
 			<control type="image">
-				<posx>-90</posx>
-				<posy>0</posy>
+				<left>-90</left>
+				<top>0</top>
 				<width>1280</width>
 				<height>640</height>
 				<texture border="20">videoinfoback.png</texture>
 			</control>
 			<control type="image">
 				<description>LOGO</description>
-				<posx>100</posx>
-				<posy>30</posy>
+				<left>100</left>
+				<top>30</top>
 				<width>160</width>
 				<height>40</height>
 				<texture>xbmc_logo_white.png</texture>
 			</control>
 			<control type="grouplist" id="3">
 				<description>button area</description>
-				<posx>10</posx>
-				<posy>90</posy>
+				<left>10</left>
+				<top>90</top>
 				<width>260</width>
 				<height>481</height>
 				<itemgap>-1</itemgap>
@@ -67,16 +67,16 @@
 				<ondown>3</ondown>
 			</control>
 			<control type="image">
-				<posx>268</posx>
-				<posy>1</posy>
+				<left>268</left>
+				<top>1</top>
 				<width>802</width>
 				<height>638</height>
 				<texture border="5">homesubbackground.png</texture>
 			</control>
 			<control type="label">
 				<description>header label</description>
-				<posx>300</posx>
-				<posy>20</posy>
+				<left>300</left>
+				<top>20</top>
 				<width>740</width>
 				<height>30</height>
 				<font>cirrus_35</font>
@@ -88,8 +88,8 @@
 			</control>
 			<control type="grouplist" id="5">
 				<description>control area</description>
-				<posx>290</posx>
-				<posy>70</posy>
+				<left>290</left>
+				<top>70</top>
 				<width>750</width>
 				<height>480</height>
 				<itemgap>-1</itemgap>
@@ -101,8 +101,8 @@
 			</control>
 			<control type="textbox" id="6">
 				<description>description area</description>
-				<posx>290</posx>
-				<posy>560</posy>
+				<left>290</left>
+				<top>560</top>
 				<width>750</width>
 				<height>85</height>
 				<font>font12</font>
@@ -111,8 +111,8 @@
 				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 			</control>
 			<control type="scrollbar" id="60">
-				<posx>1060</posx>
-				<posy>60</posy>
+				<left>1060</left>
+				<top>60</top>
 				<width>25</width>
 				<height>490</height>
 				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
@@ -143,8 +143,8 @@
 		</control>
 		<control type="button" id="7">
 			<description>Default Button</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<height>40</height>
 			<font>cirrus_20</font>
 			<textcolor>grey2</textcolor>
@@ -154,8 +154,8 @@
 		</control>
 		<control type="radiobutton" id="8">
 			<description>Default RadioButton</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<height>40</height>
 			<font>cirrus_20</font>
 			<textcolor>grey2</textcolor>
@@ -165,8 +165,8 @@
 		</control>
 		<control type="spincontrolex" id="9">
 			<description>Default SpinControlex</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<height>40</height>
 			<font>cirrus_20</font>
 			<textcolor>grey2</textcolor>
@@ -183,8 +183,8 @@
 		</control>
 		<control type="label" id="2">
 			<description>Fake Label so we can pass it value down to the one below</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>0</width>
 			<height>0</height>
 			<font>-</font>
@@ -199,8 +199,8 @@
 
 			<control type="button" id="8999">
 				<description>Fake button for mouse control</description>
-				<posx>-250</posx>
-				<posy>0</posy>
+				<left>-250</left>
+				<top>0</top>
 				<width>265</width>
 				<height>720</height>
 				<label>-</label>
@@ -213,24 +213,24 @@
 
 			<!-- Menu background panel -->
 			<control type="image">
-				<posx>-820</posx>
-				<posy>0</posy>
+				<left>-820</left>
+				<top>0</top>
 				<width>820</width>
 				<height>720</height>
 				<texture border="5">dialogbackground.png</texture>
 				<aspectratio>stretch</aspectratio>
 			</control>
 			<control type="image">
-				<posx>-820</posx>
-				<posy>0</posy>
+				<left>-820</left>
+				<top>0</top>
 				<width>820</width>
 				<height>720</height>
 				<texture border="5">dialogbackground.png</texture>
 				<aspectratio>stretch</aspectratio>
 			</control>
 			<control type="image">
-				<posx>-250</posx>
-				<posy>650</posy>
+				<left>-250</left>
+				<top>650</top>
 				<width>160</width>
 				<height>40</height>
 				<texture>xbmc_logo_white.png</texture>
@@ -238,12 +238,12 @@
 
 			<!-- eye image and view options label at top of menu -->
 			<control type="group">   
-				<posx>-240</posx>
-				<posy>20</posy>
+				<left>-240</left>
+				<top>20</top>
 				<control type="label">
 					<description>View options</description>
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>250</width>
 					<height>30</height>
 					<font>cirrus_24</font>
@@ -258,8 +258,8 @@
 
 			<!-- MENU ITEMS BELOW -->
 			<control type="grouplist" id="9000">
-				<posx>-260</posx>
-				<posy>70</posy>
+				<left>-260</left>
+				<top>70</top>
 				<onleft>9000</onleft>
 				<onright>3</onright>
 				<onup>9000</onup>

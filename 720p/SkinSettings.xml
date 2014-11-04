@@ -8,8 +8,8 @@
         <include>CommonMediaPlayingBackgroundBrowser</include>
 
         <control type="group">
-            <posx>90</posx>
-            <posy>60</posy>
+            <left>90</left>
+            <top>60</top>
 
             <animation type="WindowOpen" reversible="false">
                 <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
@@ -21,23 +21,23 @@
             </animation>      
 
             <control type="image">
-                <posx>-90</posx>
-                <posy>0</posy>
+                <left>-90</left>
+                <top>0</top>
                 <width>1280</width>
                 <height>640</height>
                 <texture border="20">videoinfoback.png</texture>
             </control>
             <control type="image">
-                <posx>0</posx>
-                <posy>1</posy>
+                <left>0</left>
+                <top>1</top>
                 <width>1280</width>
                 <height>638</height>
                 <texture>blackgradient.png</texture>
             </control>
             <control type="image">
                 <description>LOGO</description>
-                <posx>100</posx>
-                <posy>20</posy>
+                <left>100</left>
+                <top>20</top>
                 <width>160</width>
                 <height>40</height>
                 <texture>xbmc_logo_white.png</texture>
@@ -45,8 +45,8 @@
 
             <!-- MAIN LIST ON THE LEFT -->
             <control type="list" id="9000">
-                <posx>10</posx>
-                <posy>80</posy>
+                <left>10</left>
+                <top>80</top>
                 <width>260</width>
                 <height>500</height>
                 <onleft>9000</onleft>
@@ -58,16 +58,16 @@
 
                 <itemlayout height="70" width="260">
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>260</width>
                         <height>71</height>
                         <texture border="5">menuitemNF.png</texture>
                     </control>
                     <control type="label">
-                        <posx>250</posx>
-                        <posy>15</posy>
-                        <width>380</width>
+                        <left>0</left>
+                        <top>15</top>
+                        <width>240</width>
                         <height>25</height>
                         <font>cirrus_24</font>
                         <textcolor>grey2</textcolor>
@@ -76,9 +76,9 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
-                        <posx>250</posx>
-                        <posy>42</posy>
-                        <width>870</width>
+                        <left>0</left>
+                        <top>42</top>
+                        <width>240</width>
                         <height>25</height>
                         <font>cirrus_20</font>
                         <textcolor>grey3</textcolor>
@@ -89,17 +89,17 @@
                 </itemlayout>
                 <focusedlayout height="70" width="260">
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>260</width>
                         <height>71</height>
                         <texture border="5">listwhitegradient.png</texture>
                         <animation effect="fade" start="100" end="30" time="100" condition="!Control.HasFocus(9000)">Conditional</animation>
                     </control>
                     <control type="label">
-                        <posx>250</posx>
-                        <posy>15</posy>
-                        <width>380</width>
+                        <left>0</left>
+                        <top>15</top>
+                        <width>240</width>
                         <height>25</height>
                         <font>cirrus_24</font>
                         <textcolor>white</textcolor>
@@ -108,9 +108,9 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
-                        <posx>250</posx>
-                        <posy>42</posy>
-                        <width>870</width>
+                        <left>0</left>
+                        <top>42</top>
+                        <width>240</width>
                         <height>25</height>
                         <font>cirrus_20</font>
                         <textcolor>grey2</textcolor>
@@ -159,16 +159,16 @@
             </control>
 
             <control type="image">
-                <posx>268</posx>
-                <posy>1</posy>
+                <left>268</left>
+                <top>1</top>
                 <width>802</width>
                 <height>638</height>
                 <texture border="5">homesubbackground.png</texture>
             </control>
             <control type="label">
                 <description>header label</description>
-                <posx>300</posx>
-                <posy>20</posy>
+                <left>300</left>
+                <top>20</top>
                 <width>740</width>
                 <height>30</height>
                 <font>cirrus_30</font>
@@ -184,8 +184,8 @@
                 <!-- GENERAL SETTINGS -->
                 <control type="grouplist" id="9001">
                     <visible>Container(9000).Hasfocus(1)</visible>
-                    <posx>290</posx>
-                    <posy>60</posy>
+                    <left>290</left>
+                    <top>60</top>
                     <width>750</width>
                     <height>550</height>
                     <itemgap>-1</itemgap>
@@ -413,8 +413,8 @@
                 </control>   				
             </control>
             <control type="scrollbar" id="60">
-                <posx>1060</posx>
-                <posy>-5</posy>
+                <left>1060</left>
+                <top>-5</top>
                 <width>25</width>
                 <height>652</height>
                 <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
@@ -432,8 +432,8 @@
             <!-- HOME WINDOW SETTINGS -->
             <control type="grouplist" id="9002">
                 <visible>Container(9000).Hasfocus(2)</visible>
-                <posx>290</posx>
-                <posy>60</posy>
+                <left>290</left>
+                <top>60</top>
                 <width>750</width>
                 <height>580</height>
                 <itemgap>-1</itemgap>
@@ -1175,8 +1175,8 @@
             </control>
         </control>
         <control type="scrollbar" id="60">
-            <posx>1060</posx>
-            <posy>-5</posy>
+            <left>1060</left>
+            <top>-5</top>
             <width>25</width>
             <height>652</height>
             <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
@@ -1193,19 +1193,19 @@
 
         <!-- BACKGROUND CUSTOMIZER -->
         <control type="group">
-            <posx>290</posx>
-            <posy>60</posy>
+            <left>290</left>
+            <top>60</top>
             <visible>Container(9000).Hasfocus(3)</visible>
             <control type="label">
                 <include>MenuTitleSettings</include>
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <label>31109</label>
             </control>
             <control type="button" id="304">
                 <description>Menu Item Next Button</description>
-                <posx>670</posx>
-                <posy>53</posy>
+                <left>670</left>
+                <top>53</top>
                 <width>33</width>
                 <height>22</height>
                 <label>-</label>
@@ -1220,8 +1220,8 @@
             </control>
             <control type="button" id="305">
                 <description>Menu Item Prev Button</description>
-                <posx>703</posx>
-                <posy>53</posy>
+                <left>703</left>
+                <top>53</top>
                 <width>33</width>
                 <height>22</height>
                 <label>-</label>
@@ -1238,8 +1238,8 @@
 
             <control type="list" id="9003">
                 <hitrect x="0" y="0" w="0" h="0"/>
-                <posx>0</posx>
-                <posy>45</posy>
+                <left>0</left>
+                <top>45</top>
                 <width>750</width>
                 <height>40</height>
                 <onleft>9000</onleft>
@@ -1254,40 +1254,40 @@
 
                 <focusedlayout height="40" width="750">
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>750</width>
                         <height>40</height>
                         <texture>menuitemNF.png</texture>
                         <visible>![Control.HasFocus(304) | Control.HasFocus(305)]</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>750</width>
                         <height>40</height>
                         <texture flipx="true">listwhitegradient.png</texture>
                         <visible>[Control.HasFocus(304) | Control.HasFocus(305)]</visible>
                     </control>
                     <control type="label">
-                        <posx>10</posx>
-                        <posy>0</posy>
+                        <left>10</left>
+                        <top>0</top>
                         <include>MenuTitleSettingsHomebutton</include>
                         <textcolor>grey2</textcolor>
                         <label>$LOCALIZE[31110]</label>
                         <visible>![Control.HasFocus(304) | Control.HasFocus(305)]</visible>
                     </control>
                     <control type="label">
-                        <posx>10</posx>
-                        <posy>0</posy>
+                        <left>10</left>
+                        <top>0</top>
                         <include>MenuTitleSettingsHomebutton</include>
                         <textcolor>white</textcolor>
                         <label>$LOCALIZE[31110]</label>
                         <visible>[Control.HasFocus(304) | Control.HasFocus(305)]</visible>
                     </control>
                     <control type="label">
-                        <posx>650</posx>
-                        <posy>0</posy>
+                        <left>650</left>
+                        <top>0</top>
                         <width>640</width>
                         <height>40</height>
                         <font>cirrus_20</font>
@@ -1298,8 +1298,8 @@
                         <visible>![Control.HasFocus(304) | Control.HasFocus(305)]</visible>
                     </control>
                     <control type="label">
-                        <posx>650</posx>
-                        <posy>0</posy>
+                        <left>650</left>
+                        <top>0</top>
                         <width>640</width>
                         <height>40</height>
                         <font>cirrus_20</font>
@@ -1530,8 +1530,8 @@
             </control>
 
             <control type="group">
-                <posx>95</posx>
-                <posy>110</posy>
+                <left>95</left>
+                <top>110</top>
                 <control type="group">
                     <visible>Container(9003).HasFocus(1)</visible>
                     <control type="button" id="300">
@@ -2152,8 +2152,8 @@
             </control>
 
             <control type="multiimage">
-                <posx>95</posx>
-                <posy>160</posy>
+                <left>95</left>
+                <top>160</top>
                 <width>560</width>
                 <height>335</height>
                 <imagepath background="true">$INFO[Container(9003).ListItem.Icon]</imagepath>
@@ -2162,8 +2162,8 @@
                 <fadetime>500</fadetime>
             </control>
             <control type="label">
-                <posx>95</posx>
-                <posy>505</posy>
+                <left>95</left>
+                <top>505</top>
                 <width>560</width>
                 <height>20</height>
                 <align>center</align>
@@ -2179,8 +2179,8 @@
         <control type="group">
             <control type="grouplist" id="9004">
                 <visible>Container(9000).Hasfocus(4)</visible>
-                <posx>290</posx>
-                <posy>60</posy>
+                <left>290</left>
+                <top>60</top>
                 <width>750</width>
                 <height>550</height>
                 <itemgap>-1</itemgap>
@@ -3171,8 +3171,8 @@
             </control>
 
             <control type="scrollbar" id="60">
-                <posx>1060</posx>
-                <posy>-5</posy>
+                <left>1060</left>
+                <top>-5</top>
                 <width>25</width>
                 <height>652</height>
                 <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
@@ -3192,8 +3192,8 @@
         <control type="group">
             <control type="grouplist" id="9005">
                 <visible>Container(9000).Hasfocus(5)</visible>
-                <posx>290</posx>
-                <posy>60</posy>
+                <left>290</left>
+                <top>60</top>
                 <width>750</width>
                 <height>550</height>
                 <itemgap>-1</itemgap>
@@ -3543,8 +3543,8 @@
         <control type="group">
             <control type="grouplist" id="9006">
                 <visible>Container(9000).Hasfocus(6)</visible>
-                <posx>290</posx>
-                <posy>60</posy>
+                <left>290</left>
+                <top>60</top>
                 <width>750</width>
                 <height>530</height>
                 <itemgap>-1</itemgap>
@@ -3786,8 +3786,8 @@
 
             </control>
             <control type="scrollbar" id="60">
-                <posx>1060</posx>
-                <posy>-5</posy>
+                <left>1060</left>
+                <top>-5</top>
                 <width>25</width>
                 <height>652</height>
                 <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
@@ -3805,8 +3805,8 @@
             <control type="group">
                 <control type="grouplist" id="9007">
                     <visible>Container(9000).Hasfocus(7)</visible>
-                    <posx>290</posx>
-                    <posy>60</posy>
+                    <left>290</left>
+                    <top>60</top>
                     <width>750</width>
                     <height>550</height>
                     <itemgap>-1</itemgap>
@@ -3930,8 +3930,8 @@
         </control>
 
         <control type="scrollbar" id="60">
-            <posx>1060</posx>
-            <posy>-5</posy>
+            <left>1060</left>
+            <top>-5</top>
             <width>25</width>
             <height>652</height>
             <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>

@@ -6,8 +6,8 @@
         <include>CommonSettingsBackground</include>
         <include>CommonMediaPlayingBackgroundBrowser</include>
         <control type="group">
-            <posx>90</posx>
-            <posy>60</posy>
+            <left>90</left>
+            <top>60</top>
             <animation type="WindowOpen" reversible="false">
                 <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
                 <effect type="fade" start="0" end="100" time="300"/>
@@ -17,23 +17,23 @@
                 <effect type="fade" start="100" end="0" time="300"/>
             </animation>
             <control type="image">
-                <posx>-90</posx>
-                <posy>0</posy>
+                <left>-90</left>
+                <top>0</top>
                 <width>1280</width>
                 <height>640</height>
                 <texture border="20">videoinfoback.png</texture>
             </control>
             <control type="image">
                 <description>LOGO</description>
-                <posx>100</posx>
-                <posy>30</posy>
+                <left>100</left>
+                <top>30</top>
                 <width>160</width>
                 <height>40</height>
                 <texture>xbmc_logo_white.png</texture>
             </control>
             <control type="list" id="9000">
-                <posx>10</posx>
-                <posy>86</posy>
+                <left>10</left>
+                <top>86</top>
                 <width>260</width>
                 <height>581</height>
                 <onleft>9000</onleft>
@@ -44,16 +44,16 @@
                 <scrolltime>300</scrolltime>
                 <itemlayout height="55" width="260">
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>260</width>
                         <height>56</height>
                         <texture border="5">menuitemNF.png</texture>
                     </control>
                     <control type="label">
-                        <posx>240</posx>
-                        <posy>0</posy>
-                        <width>380</width>
+                        <left>0</left>
+                        <top>0</top>
+                        <width>240</width>
                         <height>56</height>
                         <font>cirrus_24</font>
                         <textcolor>grey2</textcolor>
@@ -64,16 +64,16 @@
                 </itemlayout>
                 <focusedlayout height="55" width="260">
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>260</width>
                         <height>56</height>
                         <texture border="5">listwhitegradient.png</texture>
                     </control>
                     <control type="label">
-                        <posx>240</posx>
-                        <posy>0</posy>
-                        <width>380</width>
+                        <left>0</left>
+                        <top>0</top>
+                        <width>240</width>
                         <height>56</height>
                         <font>cirrus_24</font>
                         <textcolor>white</textcolor>
@@ -142,16 +142,16 @@
                 </content>
             </control>
             <control type="image">
-                <posx>268</posx>
-                <posy>1</posy>
+                <left>268</left>
+                <top>1</top>
                 <width>802</width>
                 <height>636</height>
                 <texture border="5">homesubbackground.png</texture>
             </control>
             <control type="label">
                 <description>header label</description>
-                <posx>300</posx>
-                <posy>20</posy>
+                <left>300</left>
+                <top>20</top>
                 <width>735</width>
                 <height>30</height>
                 <font>cirrus_30</font>
@@ -162,15 +162,15 @@
                 <shadowcolor>black</shadowcolor>
             </control>
             <control type="image">
-                <posx>270</posx>
-                <posy>60</posy>
+                <left>270</left>
+                <top>60</top>
                 <width>800</width>
                 <height>450</height>
                 <texture border="5">button-nofocus.png</texture>
             </control>
             <control type="image">
-                <posx>270</posx>
-                <posy>62</posy>
+                <left>270</left>
+                <top>62</top>
                 <width>799</width>
                 <height>446</height>
                 <aspectratio>stretch</aspectratio>
@@ -178,8 +178,8 @@
                 <texture background="true">$INFO[Container(9000).ListItem.Icon]</texture>
             </control>
             <control type="image">
-                <posx>270</posx>
-                <posy>62</posy>
+                <left>270</left>
+                <top>62</top>
                 <width>600</width>
                 <height>340</height>
                 <aspectratio>stretch</aspectratio>
@@ -188,8 +188,8 @@
             </control>
             <control type="textbox">
                 <description>Appearance Description</description>
-                <posx>300</posx>
-                <posy>520</posy>
+                <left>300</left>
+                <top>520</top>
                 <width>740</width>
                 <height>100</height>
                 <font>cirrus_20</font>
