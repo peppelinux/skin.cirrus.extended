@@ -206,6 +206,7 @@
             <width>550</width>
             <height>41</height>
             <texture border="5">menuitemNF.png</texture>
+            <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
             <posx>10</posx>
@@ -227,6 +228,7 @@
             <height>41</height>
             <visible>!Control.HasFocus(120)</visible>
             <texture border="5">menuitemNF.png</texture>
+            <aspectratio>stretch</aspectratio>
           </control>
           <control type="image">
             <posx>0</posx>
@@ -235,6 +237,7 @@
             <height>41</height>
             <visible>Control.HasFocus(120)</visible>
             <texture border="5">menuitemFO.png</texture>
+            <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
             <posx>10</posx>

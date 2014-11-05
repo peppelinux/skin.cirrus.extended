@@ -102,6 +102,7 @@
             <width>540</width>
             <height>36</height>
             <texture border="0,2,0,2">menuitemNF.png</texture>
+            <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
             <posx>20</posx>
@@ -136,6 +137,7 @@
             <height>36</height>
             <visible>!Control.HasFocus(20)</visible>
             <texture border="0,2,0,2">menuitemNF.png</texture>
+            <aspectratio>stretch</aspectratio>
           </control>
           <control type="image">
             <posx>0</posx>
@@ -144,6 +146,7 @@
             <height>36</height>
             <visible>Control.HasFocus(20)</visible>
             <texture border="0,2,0,2" flipx="true">listfilemanagerFO.png</texture>
+            <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
             <posx>20</posx>
@@ -262,6 +265,7 @@
             <width>540</width>
             <height>36</height>
             <texture border="0,2,0,2">menuitemNF.png</texture>
+            <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
             <posx>20</posx>
@@ -296,6 +300,7 @@
             <height>36</height>
             <visible>!Control.HasFocus(21)</visible>
             <texture border="0,2,0,2">menuitemNF.png</texture>
+            <aspectratio>stretch</aspectratio>
           </control>
           <control type="image">
             <posx>0</posx>
@@ -304,6 +309,7 @@
             <height>36</height>
             <visible>Control.HasFocus(21)</visible>
             <texture border="0,2,0,2" flipx="true">listfilemanagerFO.png</texture>
+            <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
             <posx>20</posx>

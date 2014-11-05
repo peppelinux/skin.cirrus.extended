@@ -25,6 +25,7 @@
             <width>760</width>
             <height>41</height>
             <texture border="0,2,0,2">menuitemNF.png</texture>
+            <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
             <posx>10</posx>
@@ -56,6 +57,7 @@
             <width>20</width>
             <height>16</height>
             <texture>$VAR[overlayIcon]</texture>
+            <aspectratio>keep</aspectratio>
           </control>
         </itemlayout>
         <focusedlayout height="40" width="760">
@@ -67,6 +69,7 @@
             <texture border="0,2,0,2">menuitemNF.png</texture>
             <visible>!Control.HasFocus(511)</visible>
             <include>VisibleFadeEffect</include>
+            <aspectratio>stretch</aspectratio>
           </control>
           <control type="image">
             <posx>0</posx>
@@ -76,6 +79,7 @@
             <texture border="0,2,0,2">menuitemFO.png</texture>
             <visible>Control.HasFocus(511)</visible>
             <include>VisibleFadeEffect</include>
+            <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
             <posx>10</posx>
@@ -107,6 +111,7 @@
             <width>20</width>
             <height>16</height>
             <texture>$VAR[overlayIcon]</texture>
+            <aspectratio>keep</aspectratio>
           </control>
         </focusedlayout>
       </control>

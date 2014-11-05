@@ -114,6 +114,7 @@
             <height>10</height>
             <aligny>bottom</aligny>
             <texture border="2,2,2,2" diffuse="rowdiffuse.png">rowblank.png</texture>
+            <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
             <description>Title</description>

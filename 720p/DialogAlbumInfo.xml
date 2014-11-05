@@ -104,7 +104,7 @@
             <posy>-20</posy>
             <width>380</width>
             <height>380</height>
-            <aspectratio>stretch</aspectratio>
+            <aspectratio>keep</aspectratio>
             <texture background="true">$INFO[ListItem.Icon]</texture>
             <bordertexture border="8">ThumbBorder.png</bordertexture>
             <bordersize>8</bordersize>
@@ -155,6 +155,7 @@
                 <visible>Control.HasFocus(49)</visible>
                 <texture>menuitemFO.png</texture>
                 <include>VisibleFadeEffect</include>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
                 <posx>-20</posx>
@@ -308,6 +309,7 @@
                 <visible>Control.HasFocus(49)</visible>
                 <texture>menuitemFO.png</texture>
                 <include>VisibleFadeEffect</include>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
                 <posx>5</posx>
@@ -507,6 +509,7 @@
               <height>40</height>
               <visible>!Control.HasFocus(50)</visible>
               <texture border="5">button-nofocus.png</texture>
+              <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
               <posx>0</posx>
@@ -515,6 +518,7 @@
               <height>40</height>
               <visible>Control.HasFocus(50)</visible>
               <texture border="5">button-focus.png</texture>
+              <aspectratio>keep</aspectratio>
             </control>
             <control type="label">
               <posx>10</posx>
@@ -546,6 +550,7 @@
               <width>430</width>
               <height>40</height>
               <texture border="5">button-nofocus.png</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="label">
               <posx>10</posx>
@@ -567,6 +572,7 @@
               <height>40</height>
               <visible>!Control.HasFocus(50)</visible>
               <texture border="5">button-nofocus.png</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
               <posx>0</posx>
@@ -575,6 +581,7 @@
               <height>40</height>
               <visible>Control.HasFocus(50)</visible>
               <texture border="5">button-focus.png</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="label">
               <posx>10</posx>
@@ -599,7 +606,7 @@
           <orientation>horizontal</orientation>
           <onleft>9000</onleft>
           <onright>9000</onright>
-          <onup>55</onup>
+          <onup>49</onup>
           <ondown>49</ondown>
           <control type="button" id="5">
             <description>Cast/Review</description>

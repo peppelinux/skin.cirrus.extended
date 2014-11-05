@@ -215,6 +215,7 @@
                 <width>1100</width>
                 <height>41</height>
                 <texture border="5">menuitemNF.png</texture>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
                 <posx>75</posx>
@@ -247,6 +248,7 @@
                 <height>20</height>
                 <texture>PVR-IsRecording.png</texture>
                 <visible>ListItem.IsRecording</visible>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
                 <posx>970</posx>
@@ -268,6 +270,7 @@
                 <height>20</height>
                 <texture>PVR-HasTimer.png</texture>
                 <visible>ListItem.HasTimer</visible>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
                 <posx>970</posx>
@@ -290,6 +293,7 @@
                 <width>1100</width>
                 <height>41</height>
                 <texture border="5">menuitemNF.png</texture>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="image">
                 <posx>0</posx>
@@ -299,6 +303,7 @@
                 <colordiffuse />
                 <texture border="5">listwhitegradient.png</texture>
                 <visible>!Control.HasFocus(15)</visible>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="image">
                 <posx>0</posx>
@@ -308,6 +313,7 @@
                 <colordiffuse />
                 <texture border="5">listwhitegradient.png</texture>
                 <visible>Control.HasFocus(15)</visible>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
                 <posx>75</posx>
@@ -340,6 +346,7 @@
                 <height>20</height>
                 <texture>PVR-IsRecording.png</texture>
                 <visible>ListItem.IsRecording</visible>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
                 <posx>970</posx>
@@ -361,6 +368,7 @@
                 <height>20</height>
                 <texture>PVR-HasTimer.png</texture>
                 <visible>ListItem.HasTimer</visible>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
                 <posx>970</posx>
@@ -506,6 +514,7 @@
                 <width>1100</width>
                 <height>41</height>
                 <texture border="5">menuitemNF.png</texture>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="image">
                 <posx>0</posx>
@@ -514,6 +523,7 @@
                 <height>40</height>
                 <colordiffuse>33FFFFFF</colordiffuse>
                 <texture border="5" />
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="image">
                 <posx>0</posx>
@@ -522,6 +532,7 @@
                 <height>40</height>
                 <colordiffuse>33FFFFFF</colordiffuse>
                 <texture border="5" />
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
                 <posx>25</posx>
@@ -541,6 +552,7 @@
                 <width>30</width>
                 <height>30</height>
                 <info>ListItem.Icon</info>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
                 <posx>150</posx>
@@ -573,6 +585,7 @@
                 <height>20</height>
                 <texture>PVR-IsRecording.png</texture>
                 <visible>ListItem.IsRecording</visible>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
                 <posx>970</posx>
@@ -594,6 +607,7 @@
                 <height>20</height>
                 <texture>PVR-HasTimer.png</texture>
                 <visible>ListItem.HasTimer</visible>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
                 <posx>970</posx>
@@ -616,6 +630,7 @@
                 <width>1100</width>
                 <height>41</height>
                 <texture border="5">menuitemNF.png</texture>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="image">
                 <posx>0</posx>
@@ -625,6 +640,7 @@
                 <colordiffuse>33FFFFFF</colordiffuse>
                 <texture border="5">listwhitegradient.png</texture>
                 <visible>!Control.HasFocus(16)</visible>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="image">
                 <posx>0</posx>
@@ -634,6 +650,7 @@
                 <colordiffuse>33FFFFFF</colordiffuse>
                 <texture border="5">listwhitegradient.png</texture>
                 <visible>!Control.HasFocus(16)</visible>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="image">
                 <posx>0</posx>
@@ -643,6 +660,7 @@
                 <colordiffuse>88FFFFFF</colordiffuse>
                 <texture border="5">listwhitegradient.png</texture>
                 <visible>Control.HasFocus(16)</visible>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="image">
                 <posx>0</posx>
@@ -652,6 +670,7 @@
                 <colordiffuse>88FFFFFF</colordiffuse>
                 <texture border="5">listwhitegradient.png</texture>
                 <visible>Control.HasFocus(16)</visible>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
                 <posx>25</posx>
@@ -671,6 +690,7 @@
                 <width>30</width>
                 <height>30</height>
                 <info>ListItem.Icon</info>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
                 <posx>150</posx>
@@ -703,6 +723,7 @@
                 <height>20</height>
                 <texture>PVR-IsRecording.png</texture>
                 <visible>ListItem.IsRecording</visible>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
                 <posx>970</posx>
@@ -724,6 +745,7 @@
                 <height>20</height>
                 <texture>PVR-HasTimer.png</texture>
                 <visible>ListItem.HasTimer</visible>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
                 <posx>970</posx>
@@ -887,6 +909,7 @@
               <posy>0</posy>
               <visible>stringcompare(ListItem.Property(GenreType),16)</visible>
               <texture border="3">32.png</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image" id="3">
               <width>40</width>
@@ -895,6 +918,7 @@
               <posy>0</posy>
               <visible>stringcompare(ListItem.Property(GenreType),32)</visible>
               <texture border="3">48.png</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image" id="4">
               <width>40</width>
@@ -903,6 +927,7 @@
               <posy>0</posy>
               <visible>stringcompare(ListItem.Property(GenreType),48)</visible>
               <texture border="3">64.png</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="label" id="5">
               <width>40</width>
@@ -919,6 +944,7 @@
               <posy>0</posy>
               <visible>stringcompare(ListItem.Property(GenreType),80)</visible>
               <texture border="3">96.png</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image" id="7">
               <width>40</width>
@@ -927,6 +953,7 @@
               <posy>0</posy>
               <visible>stringcompare(ListItem.Property(GenreType),96)</visible>
               <texture border="3">112.png</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image" id="8">
               <width>40</width>
@@ -935,6 +962,7 @@
               <posy>0</posy>
               <visible>stringcompare(ListItem.Property(GenreType),112)</visible>
               <texture border="3">128.png</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image" id="9">
               <width>40</width>
@@ -943,6 +971,7 @@
               <posy>0</posy>
               <visible>stringcompare(ListItem.Property(GenreType),128)</visible>
               <texture border="3">144.png</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image" id="10">
               <width>40</width>
@@ -951,6 +980,7 @@
               <posy>0</posy>
               <visible>stringcompare(ListItem.Property(GenreType),144)</visible>
               <texture border="3">160.png</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image" id="11">
               <width>40</width>
@@ -959,6 +989,7 @@
               <posy>0</posy>
               <visible>stringcompare(ListItem.Property(GenreType),160)</visible>
               <texture border="3">176.png</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image" id="12">
               <width>40</width>
@@ -967,6 +998,7 @@
               <posy>0</posy>
               <visible>stringcompare(ListItem.Property(GenreType),176)</visible>
               <texture border="3">192.png</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image" id="13">
               <width>40</width>
@@ -975,6 +1007,7 @@
               <posy>0</posy>
               <visible>stringcompare(ListItem.Property(GenreType),0) | stringcompare(ListItem.Property(GenreType),240)</visible>
               <texture>pstvButtonNOFocus.png</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="label" id="1">
               <posx>6</posx>
@@ -996,6 +1029,7 @@
               <height>15</height>
               <texture>PVR-IsRecording.png</texture>
               <visible>ListItem.IsRecording</visible>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
               <posx>5</posx>
@@ -1004,6 +1038,7 @@
               <height>20</height>
               <texture>PVR-HasTimer.png</texture>
               <visible>ListItem.HasTimer</visible>
+              <aspectratio>stretch</aspectratio>
             </control>
           </itemlayout>
           <focusedlayout height="52" width="40">
@@ -1014,6 +1049,7 @@
               <posy>0</posy>
               <colordiffuse>EEFFFFFF</colordiffuse>
               <texture>pstvButtonNOFocus.png</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image" id="2">
               <width>40</width>
@@ -1022,6 +1058,7 @@
               <posy>0</posy>
               <visible>stringcompare(ListItem.Property(GenreType),16)</visible>
               <texture border="3">32.png</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image" id="3">
               <width>40</width>
@@ -1030,6 +1067,7 @@
               <posy>0</posy>
               <visible>stringcompare(ListItem.Property(GenreType),32)</visible>
               <texture border="3">48.png</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image" id="4">
               <width>40</width>
@@ -1038,6 +1076,7 @@
               <posy>0</posy>
               <visible>stringcompare(ListItem.Property(GenreType),48)</visible>
               <texture border="3">64.png</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image" id="5">
               <width>40</width>
@@ -1046,6 +1085,7 @@
               <posy>0</posy>
               <visible>stringcompare(ListItem.Property(GenreType),64)</visible>
               <texture border="3">80.png</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image" id="6">
               <width>40</width>
@@ -1054,6 +1094,7 @@
               <posy>0</posy>
               <visible>stringcompare(ListItem.Property(GenreType),80)</visible>
               <texture border="3">96.png</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image" id="7">
               <width>40</width>
@@ -1062,6 +1103,7 @@
               <posy>0</posy>
               <visible>stringcompare(ListItem.Property(GenreType),96)</visible>
               <texture border="3">112.png</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image" id="8">
               <width>40</width>
@@ -1070,6 +1112,7 @@
               <posy>0</posy>
               <visible>stringcompare(ListItem.Property(GenreType),112)</visible>
               <texture border="3">128.png</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image" id="9">
               <width>40</width>
@@ -1078,6 +1121,7 @@
               <posy>0</posy>
               <visible>stringcompare(ListItem.Property(GenreType),128)</visible>
               <texture border="3">144.png</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image" id="10">
               <width>40</width>
@@ -1086,6 +1130,7 @@
               <posy>0</posy>
               <visible>stringcompare(ListItem.Property(GenreType),144)</visible>
               <texture border="3">160.png</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image" id="11">
               <width>40</width>
@@ -1094,6 +1139,7 @@
               <posy>0</posy>
               <visible>stringcompare(ListItem.Property(GenreType),160)</visible>
               <texture border="3">176.png</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image" id="12">
               <width>40</width>
@@ -1102,6 +1148,7 @@
               <posy>0</posy>
               <visible>stringcompare(ListItem.Property(GenreType),176)</visible>
               <texture border="3">192.png</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image" id="13">
               <width>40</width>
@@ -1110,6 +1157,7 @@
               <posy>0</posy>
               <visible>stringcompare(ListItem.Property(GenreType),0) | stringcompare(ListItem.Property(GenreType),240)</visible>
               <texture border="3">16.png</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="label" id="1">
               <posx>6</posx>
@@ -1131,6 +1179,7 @@
               <height>15</height>
               <texture>PVR-IsRecording.png</texture>
               <visible>ListItem.IsRecording</visible>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
               <posx>5</posx>
@@ -1139,6 +1188,7 @@
               <height>20</height>
               <texture>PVR-HasTimer.png</texture>
               <visible>ListItem.HasTimer</visible>
+              <aspectratio>stretch</aspectratio>
             </control>
           </focusedlayout>
         </control>
@@ -1629,6 +1679,7 @@
               <height>61</height>
               <texture border="2">menuitemNF.png</texture>
               <include>VisibleFadeEffect</include>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="label">
               <posx>5</posx>
@@ -1686,6 +1737,7 @@
               <width>50</width>
               <height>50</height>
               <texture>$INFO[ListItem.Icon]</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="progress">
               <description>Progressbar</description>
@@ -1703,6 +1755,7 @@
               <height>20</height>
               <texture>PVR-IsRecording.png</texture>
               <visible>ListItem.IsRecording</visible>
+              <aspectratio>stretch</aspectratio>
             </control>
           </itemlayout>
           <focusedlayout height="60" width="500">
@@ -1714,6 +1767,7 @@
               <texture border="2">menuitemNF.png</texture>
               <visible>!Control.HasFocus(11)</visible>
               <include>VisibleFadeEffect</include>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
               <posx>0</posx>
@@ -1723,6 +1777,7 @@
               <texture border="2">menuitemFO.png</texture>
               <visible>Control.HasFocus(11)</visible>
               <include>VisibleFadeEffect</include>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="label">
               <posx>5</posx>
@@ -1780,6 +1835,7 @@
               <width>50</width>
               <height>50</height>
               <texture>$INFO[ListItem.Icon]</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
               <posx>5</posx>
@@ -1788,6 +1844,7 @@
               <height>20</height>
               <texture>PVR-IsRecording.png</texture>
               <visible>ListItem.IsRecording</visible>
+              <aspectratio>stretch</aspectratio>
             </control>
           </focusedlayout>
         </control>
@@ -1880,6 +1937,7 @@
               <height>61</height>
               <texture border="2">menuitemNF.png</texture>
               <include>VisibleFadeEffect</include>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="label">
               <posx>5</posx>
@@ -1937,6 +1995,7 @@
               <width>50</width>
               <height>50</height>
               <texture>$INFO[ListItem.Icon]</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
           </itemlayout>
           <focusedlayout height="60" width="500">
@@ -1948,6 +2007,7 @@
               <texture border="2">menuitemNF.png</texture>
               <visible>!Control.HasFocus(12)</visible>
               <include>VisibleFadeEffect</include>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
               <posx>0</posx>
@@ -1957,6 +2017,7 @@
               <texture border="2">menuitemFO.png</texture>
               <visible>Control.HasFocus(12)</visible>
               <include>VisibleFadeEffect</include>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="label">
               <posx>5</posx>
@@ -2014,6 +2075,7 @@
               <width>50</width>
               <height>50</height>
               <texture>$INFO[ListItem.Icon]</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
           </focusedlayout>
         </control>
@@ -2075,6 +2137,7 @@
               <height>41</height>
               <texture border="2">menuitemNF.png</texture>
               <include>VisibleFadeEffect</include>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
               <posx>10</posx>
@@ -2082,6 +2145,7 @@
               <width>30</width>
               <height>30</height>
               <texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Icon]</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="label">
               <posx>50</posx>
@@ -2117,6 +2181,7 @@
               <texture border="2">menuitemFO.png</texture>
               <visible>Control.HasFocus(13)</visible>
               <include>VisibleFadeEffect</include>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
               <posx>0</posx>
@@ -2126,6 +2191,7 @@
               <texture border="2">menuitemNF.png</texture>
               <include>VisibleFadeEffect</include>
               <visible>!Control.HasFocus(13)</visible>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
               <posx>500</posx>
@@ -2134,6 +2200,7 @@
               <height>31</height>
               <texture border="0,0,14,0">MediaItemDetailBG.png</texture>
               <visible>Control.HasFocus(13) + !IsEmpty(ListItem.Date)</visible>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
               <posx>10</posx>
@@ -2141,6 +2208,7 @@
               <width>30</width>
               <height>30</height>
               <texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Icon]</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="label">
               <posx>50</posx>
@@ -2326,6 +2394,7 @@
                 <width>1100</width>
                 <height>41</height>
                 <texture border="5">menuitemNF.png</texture>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="image">
                 <posx>0</posx>
@@ -2334,6 +2403,7 @@
                 <height>40</height>
                 <colordiffuse>33FFFFFF</colordiffuse>
                 <texture border="5">0.png</texture>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="image">
                 <posx>900</posx>
@@ -2342,6 +2412,7 @@
                 <height>40</height>
                 <colordiffuse>33FFFFFF</colordiffuse>
                 <texture border="5">0.png</texture>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
                 <posx>75</posx>
@@ -2384,6 +2455,7 @@
                 <width>1100</width>
                 <height>41</height>
                 <texture border="5">menuitemNF.png</texture>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="image">
                 <posx>0</posx>
@@ -2393,6 +2465,7 @@
                 <colordiffuse>33FFFFFF</colordiffuse>
                 <texture border="5">0.png</texture>
                 <visible>!Control.HasFocus(14)</visible>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="image">
                 <posx>900</posx>
@@ -2402,6 +2475,7 @@
                 <colordiffuse>33FFFFFF</colordiffuse>
                 <texture border="5">0.png</texture>
                 <visible>!Control.HasFocus(14)</visible>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="image">
                 <posx>0</posx>
@@ -2411,6 +2485,7 @@
                 <colordiffuse>88FFFFFF</colordiffuse>
                 <texture border="5">16.png</texture>
                 <visible>Control.HasFocus(14)</visible>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="image">
                 <posx>900</posx>
@@ -2420,6 +2495,7 @@
                 <colordiffuse>88FFFFFF</colordiffuse>
                 <texture border="5">16.png</texture>
                 <visible>Control.HasFocus(14)</visible>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
                 <posx>75</posx>
@@ -2600,6 +2676,7 @@
                 <width>1100</width>
                 <height>41</height>
                 <texture border="5">menuitemNF.png</texture>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="image">
                 <posx>300</posx>
@@ -2608,6 +2685,7 @@
                 <height>40</height>
                 <colordiffuse>33FFFFFF</colordiffuse>
                 <texture border="5">0.png</texture>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="image">
                 <posx>960</posx>
@@ -2616,6 +2694,7 @@
                 <height>40</height>
                 <colordiffuse>33FFFFFF</colordiffuse>
                 <texture border="5">0.png</texture>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
                 <posx>75</posx>
@@ -2635,6 +2714,7 @@
                 <width>30</width>
                 <height>30</height>
                 <info>ListItem.Icon</info>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
                 <posx>350</posx>
@@ -2667,6 +2747,7 @@
                 <height>20</height>
                 <texture>PVR-IsRecording.png</texture>
                 <visible>ListItem.IsRecording</visible>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
                 <posx>1005</posx>
@@ -2688,6 +2769,7 @@
                 <height>20</height>
                 <texture>PVR-HasTimer.png</texture>
                 <visible>ListItem.HasTimer</visible>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
                 <posx>1000</posx>
@@ -2710,6 +2792,7 @@
                 <width>1100</width>
                 <height>41</height>
                 <texture border="5">menuitemNF.png</texture>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="image">
                 <posx>300</posx>
@@ -2719,6 +2802,7 @@
                 <colordiffuse>33FFFFFF</colordiffuse>
                 <texture border="5">0.png</texture>
                 <visible>!Control.HasFocus(17)</visible>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="image">
                 <posx>960</posx>
@@ -2728,6 +2812,7 @@
                 <colordiffuse>33FFFFFF</colordiffuse>
                 <texture border="5">0.png</texture>
                 <visible>!Control.HasFocus(17)</visible>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="image">
                 <posx>300</posx>
@@ -2737,6 +2822,7 @@
                 <colordiffuse>88FFFFFF</colordiffuse>
                 <texture border="5">0.png</texture>
                 <visible>Control.HasFocus(17)</visible>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="image">
                 <posx>960</posx>
@@ -2746,6 +2832,7 @@
                 <colordiffuse>88FFFFFF</colordiffuse>
                 <texture border="5">0.png</texture>
                 <visible>Control.HasFocus(17)</visible>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
                 <posx>75</posx>
@@ -2765,6 +2852,7 @@
                 <width>30</width>
                 <height>30</height>
                 <info>ListItem.Icon</info>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
                 <posx>350</posx>
@@ -2797,6 +2885,7 @@
                 <height>20</height>
                 <texture>PVR-IsRecording.png</texture>
                 <visible>ListItem.IsRecording</visible>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
                 <posx>1005</posx>
@@ -2818,6 +2907,7 @@
                 <height>20</height>
                 <texture>PVR-HasTimer.png</texture>
                 <visible>ListItem.HasTimer</visible>
+                <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
                 <posx>1000</posx>

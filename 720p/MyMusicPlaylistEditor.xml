@@ -216,6 +216,7 @@
             <texture border="7" flipx="true">listfilemanagerFO.png</texture>
             <visible>Control.HasFocus(50)</visible>
             <include>VisibleFadeEffect</include>
+            <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
             <posx>5</posx>
@@ -342,6 +343,7 @@
             <texture border="7">listfilemanagerFO.png</texture>
             <visible>Control.HasFocus(100)</visible>
             <include>VisibleFadeEffect</include>
+            <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
             <posx>5</posx>

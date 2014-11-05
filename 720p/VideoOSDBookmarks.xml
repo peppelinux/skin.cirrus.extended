@@ -50,6 +50,7 @@
           <width>235</width>
           <height>170</height>
           <texture border="3">button-nofocus.png</texture>
+          <aspectratio>stretch</aspectratio>
         </control>
         <control type="image">
           <posx>7</posx>
@@ -57,6 +58,7 @@
           <width>220</width>
           <height>140</height>
           <info>ListItem.Icon</info>
+          <aspectratio>stretch</aspectratio>
         </control>
         <control type="label">
           <posx>56</posx>
@@ -77,6 +79,7 @@
           <width>235</width>
           <height>170</height>
           <texture border="3">folder-focus.png</texture>
+          <aspectratio>stretch</aspectratio>
         </control>
         <control type="image">
           <posx>7</posx>
@@ -84,6 +87,7 @@
           <width>220</width>
           <height>140</height>
           <info>ListItem.Icon</info>
+          <aspectratio>stretch</aspectratio>
         </control>
         <control type="label">
           <posx>56</posx>

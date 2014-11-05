@@ -24,6 +24,7 @@
             <width>760</width>
             <height>41</height>
             <texture border="0,2,0,2">menuitemNF.png</texture>
+            <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
             <posx>10</posx>
@@ -59,6 +60,7 @@
             <texture border="0,2,0,2">menuitemNF.png</texture>
             <visible>!Control.HasFocus(560)</visible>
             <include>VisibleFadeEffect</include>
+            <aspectratio>stretch</aspectratio>
           </control>
           <control type="image">
             <posx>0</posx>
@@ -68,6 +70,7 @@
             <texture border="0,2,0,2">menuitemFO.png</texture>
             <visible>Control.HasFocus(560)</visible>
             <include>VisibleFadeEffect</include>
+            <aspectratio>stretch</aspectratio>
           </control>
           <control type="image">
             <posx>560</posx>
@@ -76,6 +79,7 @@
             <height>31</height>
             <texture border="0,0,14,0">MediaItemDetailBG.png</texture>
             <visible>Control.HasFocus(560) + !IsEmpty(ListItem.Label2)</visible>
+            <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
             <posx>10</posx>
