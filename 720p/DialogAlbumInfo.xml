@@ -446,6 +446,8 @@
           <onup>49</onup>
           <textcolor>-</textcolor>
           <showonepage>true</showonepage>
+          <width>20</width>
+          <height>13</height>
         </control>
         <control type="textbox" id="4">
           <description>Description</description>

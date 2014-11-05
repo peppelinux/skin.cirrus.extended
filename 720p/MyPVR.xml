@@ -2979,6 +2979,8 @@
           <onup>36</onup>
           <ondown>603</ondown>
           <visible>false</visible>
+          <width>300</width>
+          <height>42</height>
         </control>
         <control type="group">
           <posx>0</posx>
@@ -2990,6 +2992,8 @@
           <onup>608</onup>
           <ondown>32</ondown>
           <visible>false</visible>
+          <width>300</width>
+          <height>42</height>
         </control>
       </control>
     </control>

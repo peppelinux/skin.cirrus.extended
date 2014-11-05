@@ -96,6 +96,8 @@
         <textcolor>accent</textcolor>
         <showonepage>true</showonepage>
         <visible>Control.IsVisible(100)</visible>
+        <width>20</width>
+        <height>13</height>
       </control>
       <!-- ** Required ** Do not change <id> or <type> (Smooth scrolling list for lyrics) -->
       <control type="list" id="110">
@@ -168,6 +170,8 @@
         <textcolor>blue</textcolor>
         <showonepage>true</showonepage>
         <visible>Control.IsVisible(110)</visible>
+        <width>20</width>
+        <height>13</height>
       </control>
       <control type="label" id="2">
         <description>Pick label</description>
@@ -259,6 +263,8 @@
         <textcolor>blue</textcolor>
         <showonepage>true</showonepage>
         <visible>Control.IsVisible(120)</visible>
+        <width>20</width>
+        <height>13</height>
       </control>
       <control type="image">
         <posx>30</posx>
