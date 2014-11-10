@@ -98,7 +98,7 @@
       <reverse>yes</reverse>
       <width>300</width>
     </control>
-    <control type="sliderex" id="10">
+    <control type="sliderex" id="13">
       <description>Default Slider</description>
       <height>40</height>
       <texturefocus border="0,2,0,2">menuitemFO.png</texturefocus>

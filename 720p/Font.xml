@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fonts>
-    <fontset id="Default" unicode="true">
+    <fontset id="Default">
         <!-- Normal Fonts -->
         <font>
             <name>font10</name>
@@ -185,7 +185,7 @@
         </font>
     </fontset>
 
-    <fontset id="Default_NoCaps" unicode="true">
+    <fontset id="Default_NoCaps">
         <!-- Normal Fonts -->
         <font>
             <name>font10</name>
@@ -265,7 +265,7 @@
         </font>
     </fontset>
 
-    <fontset id="Arial" unicode="true">
+    <fontset id="Arial">
         <!-- Normal Fonts -->
         <font>
             <name>font10</name>
@@ -344,7 +344,7 @@
             <size>80</size>
         </font>
     </fontset>
-    <fontset id="Bold" unicode="true">
+    <fontset id="Bold">
         <!-- Bold Fonts -->
         <font>
             <name>font10</name>
@@ -538,7 +538,7 @@
             <size>80</size>
         </font>
     </fontset>
-    <fontset id="Regular" unicode="true">
+    <fontset id="Regular">
         <!-- Regular Fonts -->
         <font>
             <name>font10</name>
@@ -724,7 +724,7 @@
     </fontset>
 
 
-    <fontset id="Ubuntu" unicode="true">
+    <fontset id="Ubuntu">
         <!-- Regular Fonts -->
         <font>
             <name>font10</name>
