@@ -50,8 +50,8 @@
         <!--<value condition="Container.Content(Episodes) | Container.Content(seasons)">$INFO[ListItem.Art(fanart)]</value>-->
     </variable>
     <variable name="ExtraFanartVar">
-        <value condition="[!System.HasAddon(script.extendedinfo) | IsEmpty(ListItem.Art(extrafanart1))] + [[Skin.HasSetting(ExtraFanMovies) + Container.Content(Movies)] | [Skin.HasSetting(ExtraFanTV) + [Container.Content(TVShows) | Container.Content(Seasons)]]]">$INFO[ListItem.Path,,extrafanart/]</value>
-        <value condition="[!System.HasAddon(script.extendedinfo) | IsEmpty(ListItem.Art(extrafanart1))] + Skin.HasSetting(ExtraFanTV) + Container.Content(Episodes)">$INFO[ListItem.Path,,../extrafanart/]</value>
+        <value condition="[!System.HasAddon(script.toolbox) | IsEmpty(ListItem.Art(extrafanart1))] + [[Skin.HasSetting(ExtraFanMovies) + Container.Content(Movies)] | [Skin.HasSetting(ExtraFanTV) + [Container.Content(TVShows) | Container.Content(Seasons)]]]">$INFO[ListItem.Path,,extrafanart/]</value>
+        <value condition="[!System.HasAddon(script.toolbox) | IsEmpty(ListItem.Art(extrafanart1))] + Skin.HasSetting(ExtraFanTV) + Container.Content(Episodes)">$INFO[ListItem.Path,,../extrafanart/]</value>
         <value condition="!IsEmpty(ListItem.Art(extrafanart1)) + [Skin.HasSetting(ExtraFanTV) | Skin.HasSetting(ExtraFanMovies)]">$INFO[Control.GetLabel(4325)]</value>
         <!--<value condition="!IsEmpty(ListItem.Art(extrafanart1)) + Skin.HasSetting(ExtraFanTV)">$INFO[Control.GetLabel(4325)]</value>
         <value condition="!IsEmpty(ListItem.Art(extrafanart1)) + Skin.HasSetting(ExtraFanMovies)">$INFO[Control.GetLabel(4323)]</value>-->
