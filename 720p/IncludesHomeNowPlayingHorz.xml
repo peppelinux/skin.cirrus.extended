@@ -11,7 +11,7 @@
                 <!--el_Paraguayo mod - end -->
                 <left>30</left>
                 <top>350</top>
-                <visible>Player.HasAudio + !Skin.HasSetting(homepageNowplayingInfo)</visible>
+                <visible>Player.HasAudio + !Skin.HasSetting(homepageNowplayingInfo) + !SubString(Window(videolibrary).Property(tvtunesIsAlive),True)</visible>
                 <include>VisibleFadeEffect</include>
                 <include>Window_OpenClose_Animation</include>
                 <animation effect="slide" end="0" time="0" condition="!system.getbool(lookandfeel.enablerssfeeds)">conditional</animation>

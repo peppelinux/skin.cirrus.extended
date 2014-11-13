@@ -14,7 +14,7 @@
             </animation>      
             <left>0</left>
             <top>0</top>
-            <visible>Player.HasAudio + !Skin.HasSetting(homepageNowplayingInfo)</visible>
+            <visible>Player.HasAudio + !Skin.HasSetting(homepageNowplayingInfo) + !SubString(Window(videolibrary).Property(tvtunesIsAlive),True)</visible>
             <include>VisibleFadeEffect</include>
             <include>Window_OpenClose_Animation</include>
             <control type="image">
