@@ -20,8 +20,8 @@
                 <effect type="fade" start="100" end="0" time="300"/>
             </animation>      
             <control type="image">
-                <posx>0</posx>
-                <posy>-5</posy>
+                <left>0</left>
+                <top>-5</top>
                 <width>1280</width>
                 <height>725</height>
                 <texture border="0.5.0.0">videoinfoback.png</texture>
@@ -29,8 +29,8 @@
                 <visible>Control.IsVisible(511)</visible>
             </control>
             <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>1280</width>
                 <height>600</height>
                 <texture background="true">$INFO[ListItem.FilenameAndPath]</texture>
@@ -52,12 +52,12 @@
         <include>CommonPageCount</include>
         <include>BehindDialogFadeOut</include>
         <control type="group">
-            <posx>20</posx>
-            <posy>0</posy>
+            <left>20</left>
+            <top>0</top>
             <include>WindowOpenCloseAnimation</include>	
             <control type="label">
                 <include>WindowTitleCommons</include>
-                <posx>0</posx>
+                <left>0</left>
                 <label>[COLOR=white]$INFO[System.Time]   [B]$LOCALIZE[1][/B][/COLOR]</label>
                 <visible>!Skin.HasSetting(nobreadcrumb)</visible>
             </control>
@@ -70,35 +70,35 @@
 
             <!-- Menu background panel -->
             <control type="image">
-                <posx>-820</posx>
-                <posy>0</posy>
+                <left>-820</left>
+                <top>0</top>
                 <width>820</width>
                 <height>720</height>
                 <texture border="5">dialogbackground.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
-                <posx>-820</posx>
-                <posy>0</posy>
+                <left>-820</left>
+                <top>0</top>
                 <width>820</width>
                 <height>720</height>
                 <texture border="5">dialogbackground.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
-                <posx>-250</posx>
-                <posy>650</posy>
+                <left>-250</left>
+                <top>650</top>
                 <width>160</width>
                 <height>40</height>
                 <texture>xbmc_logo_white.png</texture>
             </control>
             <control type="group">   
-                <posx>-240</posx>
-                <posy>20</posy>
+                <left>-240</left>
+                <top>20</top>
                 <control type="label">
                     <description>View options</description>
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>250</width>
                     <height>30</height>
                     <font>cirrus_24</font>
@@ -112,12 +112,12 @@
             </control>
 
             <control type="group" id="9000">
-                <posx>-260</posx>
-                <posy>70</posy>
+                <left>-260</left>
+                <top>70</top>
                 <control type="button" id="2">
                     <description>View As button</description>
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <include>ButtonCommonValues</include>
                     <label>-</label>
                     <onleft>55</onleft>
@@ -127,8 +127,8 @@
                 </control>
                 <control type="button" id="3">
                     <description>Sort by button</description>
-                    <posx>0</posx>
-                    <posy>40</posy>
+                    <left>0</left>
+                    <top>40</top>
                     <include>ButtonCommonValues</include>
                     <label>103</label>
                     <onleft>55</onleft>
@@ -138,8 +138,8 @@
                 </control>
                 <control type="togglebutton" id="4">
                     <description>Sort asc</description>
-                    <posx>220</posx>
-                    <posy>53</posy>
+                    <left>220</left>
+                    <top>53</top>
                     <width>20</width>
                     <height>20</height>
                     <label>-</label>
@@ -150,8 +150,8 @@
                 </control>
                 <control type="button" id="6">
                     <description>Slideshow</description>
-                    <posx>0</posx>
-                    <posy>80</posy>
+                    <left>0</left>
+                    <top>80</top>
                     <include>ButtonCommonValues</include>
                     <label>108</label>
                     <onleft>55</onleft>
@@ -161,8 +161,8 @@
                 </control>
                 <control type="button" id="7">
                     <description>Recersive Slideshow</description>
-                    <posx>0</posx>
-                    <posy>120</posy>
+                    <left>0</left>
+                    <top>120</top>
                     <include>ButtonCommonValues</include>
                     <label>361</label>
                     <onleft>55</onleft>
@@ -172,8 +172,8 @@
                 </control>
                 <control type="radiobutton" id="9">
                     <description>Randomize Toggle</description>
-                    <posx>0</posx>
-                    <posy>160</posy>
+                    <left>0</left>
+                    <top>160</top>
                     <include>ButtonCommonValues</include>
                     <label>13319</label>
                     <onleft>55</onleft>

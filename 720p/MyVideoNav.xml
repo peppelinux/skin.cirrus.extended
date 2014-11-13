@@ -12,8 +12,8 @@
         <!-- FANART IMAGES Mod  -->
         <control type="group">
             <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>1280</width>
                 <height>720</height>
                 <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
@@ -23,8 +23,8 @@
                 <visible>Container.Content(Movies) | Container.Content(Addons) | Container.Content(Files)</visible>
             </control>
             <control type="multiimage">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>1280</width>
                 <height>720</height>
                 <imagepath background="true">$INFO[Skin.String(Home_Custom_Back_Movies_Folder)]</imagepath>
@@ -37,8 +37,8 @@
                 <visible>!Skin.HasSetting(VideoLibraryBlackFanart)</visible>
             </control>
             <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>1280</width>
                 <height>720</height>
                 <texture>special://skin/backgrounds/blackbackground.jpg</texture>
@@ -51,8 +51,8 @@
                 <visible>Skin.HasSetting(VideoLibraryBlackFanart)</visible>
             </control>
             <control type="multiimage">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>1280</width>
                 <height>720</height>
                 <imagepath background="true" fallback="special://skin/backgrounds/videos.jpg">$VAR[FanartBackgrounds]</imagepath>
@@ -63,8 +63,8 @@
             </control>
             <include condition="System.HasAddon(script.skin.info.service)">FanartFadeLabels</include>
             <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>1280</width>
                 <height>720</height>
                 <texture background="true">$VAR[TVFanartBackground]</texture>
@@ -75,8 +75,8 @@
             <!-- ExtraFanart Mod -->
             <include condition="System.HasAddon(script.toolbox)">NodeFadeLabels</include>
             <control type="multiimage">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>1280</width>
                 <height>720</height>
                 <imagepath background="true" fallback="special://skin/backgrounds/videos.jpg">$VAR[ExtraFanartVar]</imagepath>
@@ -87,8 +87,8 @@
                 <visible>!Stringcompare(ListItem.Label,..) + [Skin.HasSetting(ExtraFanMovies) + Container.Content(Movies)] | [Skin.HasSetting(ExtraFanTV) + [Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]]</visible>
             </control>
             <control type="multiimage">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>1280</width>
                 <height>720</height>
                 <imagepath background="true">$INFO[Skin.String(Home_Custom_Back_TVShow_Folder)]</imagepath>
@@ -102,8 +102,8 @@
                 <visible>!Skin.HasSetting(VideoLibraryBlackTVFanart)</visible>
             </control>
             <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>1280</width>
                 <height>720</height>
                 <texture>special://skin/backgrounds/blackbackground.jpg</texture>
@@ -116,8 +116,8 @@
                 <visible>Skin.HasSetting(VideoLibraryBlackTVFanart)</visible>
             </control>
             <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>1280</width>
                 <height>720</height>
                 <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
@@ -130,8 +130,8 @@
             <!-- GenreFanart Mod -->
             <!-- Changes Butchabay MOD 1.2.2 -->
             <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>1280</width>
                 <height>720</height>
                 <fadetime>FanartCrossfadeTime</fadetime>
@@ -204,119 +204,119 @@
         <!-- ==================== VIEW OPTIONS FLYOUT MENU ========================== -->
         <!-- LABELS FOR MUSIC VIDEO BREADCRUMB TRAIL -->
         <control type="group">
-            <posx>20</posx>
-            <posy>0</posy>
+            <left>20</left>
+            <top>0</top>
             <visible>Container.Content(MusicVideos)</visible>
             <include>VisibleFadeEffect</include>
             <include>WindowOpenCloseAnimation</include>	
             <control type="label">
                 <include>WindowTitleCommons</include>
-                <posx>0</posx>
+                <left>0</left>
                 <label>[COLOR=white]$INFO[System.Time]   [B]$LOCALIZE[20389][/B]   $INFO[ListItem.label][/COLOR]</label>
                 <visible>!Skin.HasSetting(nobreadcrumb)</visible>
             </control>
         </control>
         <!-- LABELS FOR TV BREADCRUMB TRAIL -->
         <control type="group">
-            <posx>20</posx>
-            <posy>0</posy>
+            <left>20</left>
+            <top>0</top>
             <visible>Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)</visible>
             <include>VisibleFadeEffect</include>
             <include>WindowOpenCloseAnimation</include>	
             <control type="label">
                 <include>WindowTitleCommons</include>
-                <posx>0</posx>
+                <left>0</left>
                 <label>[COLOR=white]$INFO[System.Time]   [B]$LOCALIZE[20343][/B]  $INFO[ListItem.TVShowTitle][/COLOR]</label>
                 <visible>!Skin.HasSetting(nobreadcrumb)</visible>
             </control>
         </control>
         <control type="group">
-            <posx>20</posx>
-            <posy>0</posy>
+            <left>20</left>
+            <top>0</top>
             <visible>Container.Content(Movies)</visible>
             <include>VisibleFadeEffect</include>
             <include>WindowOpenCloseAnimation</include>	
             <control type="label">
                 <include>WindowTitleCommons</include>
-                <posx>0</posx>
+                <left>0</left>
                 <label>[COLOR=white]$INFO[System.Time]   [B]$LOCALIZE[20342][/B][/COLOR]</label>
                 <visible>!Skin.HasSetting(nobreadcrumb)</visible>
             </control>
         </control>
         <control type="group">
-            <posx>20</posx>
-            <posy>0</posy>
+            <left>20</left>
+            <top>0</top>
             <visible>Container.Content(Genres)</visible>
             <include>VisibleFadeEffect</include>
             <include>WindowOpenCloseAnimation</include>	
             <control type="label">
                 <include>WindowTitleCommons</include>
-                <posx>0</posx>
+                <left>0</left>
                 <label>[COLOR=white]$INFO[System.Time]   [B]$LOCALIZE[135][/B][/COLOR]</label>
                 <visible>!Skin.HasSetting(nobreadcrumb)</visible>
             </control>
         </control>
         <control type="group">
-            <posx>20</posx>
-            <posy>0</posy>
+            <left>20</left>
+            <top>0</top>
             <visible>Container.Content(Years)</visible>
             <include>VisibleFadeEffect</include>
             <include>WindowOpenCloseAnimation</include>	
             <control type="label">
                 <include>WindowTitleCommons</include>
-                <posx>0</posx>
+                <left>0</left>
                 <label>[COLOR=white]$INFO[System.Time]   [B]$LOCALIZE[652][/B][/COLOR]</label>
                 <visible>!Skin.HasSetting(nobreadcrumb)</visible>
             </control>
         </control>
         <control type="group">
-            <posx>20</posx>
-            <posy>0</posy>
+            <left>20</left>
+            <top>0</top>
             <visible>Container.Content(Actors)</visible>
             <include>VisibleFadeEffect</include>
             <include>WindowOpenCloseAnimation</include>	
             <control type="label">
                 <include>WindowTitleCommons</include>
-                <posx>0</posx>
+                <left>0</left>
                 <label>[COLOR=white]$INFO[System.Time]   [B]$LOCALIZE[344][/B][/COLOR]</label>
                 <visible>!Skin.HasSetting(nobreadcrumb)</visible>
             </control>
         </control>
         <control type="group">
-            <posx>20</posx>
-            <posy>0</posy>
+            <left>20</left>
+            <top>0</top>
             <visible>Container.Content(Directors)</visible>
             <include>VisibleFadeEffect</include>
             <include>WindowOpenCloseAnimation</include>	
             <control type="label">
                 <include>WindowTitleCommons</include>
-                <posx>0</posx>
+                <left>0</left>
                 <label>[COLOR=white]$INFO[System.Time]   [B]$LOCALIZE[20348][/B][/COLOR]</label>
                 <visible>!Skin.HasSetting(nobreadcrumb)</visible>
             </control>
         </control>
         <control type="group">
-            <posx>20</posx>
-            <posy>0</posy>
+            <left>20</left>
+            <top>0</top>
             <visible>Container.Content(Addons)</visible>
             <include>VisibleFadeEffect</include>
             <include>WindowOpenCloseAnimation</include>	
             <control type="label">
                 <include>WindowTitleCommons</include>
-                <posx>0</posx>
+                <left>0</left>
                 <label>[COLOR=white]$INFO[System.Time]   $LOCALIZE[31007][/COLOR]</label>
                 <visible>!Skin.HasSetting(nobreadcrumb)</visible>
             </control>
         </control>
         <control type="group">
-            <posx>20</posx>
-            <posy>0</posy>
+            <left>20</left>
+            <top>0</top>
             <visible>Container.Content(Files)</visible>
             <include>VisibleFadeEffect</include>
             <include>WindowOpenCloseAnimation</include>	
             <control type="label">
                 <include>WindowTitleCommons</include>
-                <posx>0</posx>
+                <left>0</left>
                 <label>[COLOR=white]$INFO[System.Time]   $LOCALIZE[31021][/COLOR]</label>
                 <visible>!Skin.HasSetting(nobreadcrumb)</visible>
             </control>
@@ -327,8 +327,8 @@
             <animation effect="slide" start="0,0" end="-380,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | ControlGroup(9001).HasFocus">WindowClose</animation>
             <control type="button" id="8999">
                 <description>Fake button for mouse control</description>
-                <posx>-260</posx>
-                <posy>0</posy>
+                <left>-260</left>
+                <top>0</top>
                 <width>265</width>
                 <height>720</height>
                 <label>-</label>
@@ -339,36 +339,36 @@
             </control>
             <!-- Menu background panel -->
             <control type="image">
-                <posx>-820</posx>
-                <posy>0</posy>
+                <left>-820</left>
+                <top>0</top>
                 <width>820</width>
                 <height>720</height>
                 <texture border="5">dialogbackground.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
-                <posx>-820</posx>
-                <posy>0</posy>
+                <left>-820</left>
+                <top>0</top>
                 <width>820</width>
                 <height>720</height>
                 <texture border="5">dialogbackground.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
-                <posx>-250</posx>
-                <posy>650</posy>
+                <left>-250</left>
+                <top>650</top>
                 <width>160</width>
                 <height>40</height>
                 <texture>xbmc_logo_white.png</texture>
             </control>
             <!-- eye image and view options label at top of menu -->
             <control type="group">   
-                <posx>-240</posx>
-                <posy>20</posy>
+                <left>-240</left>
+                <top>20</top>
                 <control type="label">
                     <description>View options</description>
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>250</width>
                     <height>30</height>
                     <font>cirrus_24</font>
@@ -382,13 +382,13 @@
             </control>
             <!-- MENU ITEMS BELOW -->
             <control type="group" id="9000">
-                <posx>-260</posx>
-                <posy>70</posy>
+                <left>-260</left>
+                <top>70</top>
                 <!-- <include>CommonNowPlaying</include> --> <!-- GET RID OF FROM INCLUDES? -->
                 <control type="button" id="2">
                     <description>View As button</description>
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <include>ButtonCommonValues</include>
                     <label>-</label>
                     <onleft>55</onleft>
@@ -398,8 +398,8 @@
                 </control>
                 <control type="button" id="3">
                     <description>Sort by button</description>
-                    <posx>0</posx>
-                    <posy>30</posy>
+                    <left>0</left>
+                    <top>30</top>
                     <include>ButtonCommonValues</include>
                     <label>103</label>
                     <onleft>55</onleft>
@@ -411,8 +411,8 @@
                     <description>Sort asc</description>
                     <width>20</width>
                     <height>20</height>
-                    <posx>220</posx>
-                    <posy>35</posy>
+                    <left>220</left>
+                    <top>35</top>
                     <width>20</width>
                     <height>20</height>
                     <label>-</label>
@@ -423,8 +423,8 @@
                 </control>
                 <!-- GROUP OF RADIO BUTTONS  -->
                 <control type="grouplist" id="9010">
-                    <posx>0</posx>
-                    <posy>80</posy>
+                    <left>0</left>
+                    <top>80</top>
                     <width>250</width>
                     <height>450</height>
                     <onleft>55</onleft>

@@ -14,8 +14,8 @@
       <include>VisibleFadeEffect</include>
       <control type="image">
         <!-- bottom bar background -->
-        <posx>0</posx>
-        <posy>210r</posy>
+        <left>0</left>
+        <top>210r</top>
         <width>1280</width>
         <height>700</height>
         <aspectratio>stretch</aspectratio>
@@ -24,8 +24,8 @@
       </control>
       <control type="image">
         <!-- Black gradient down the bottom -->
-        <posx>0</posx>
-        <posy>300r</posy>
+        <left>0</left>
+        <top>300r</top>
         <width>1280</width>
         <height>500</height>
         <texture>homenowplayingback.png</texture>
@@ -33,24 +33,24 @@
       </control>
       <control type="image">
         <!-- Black gradient up the top -->
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <width>1280</width>
         <height>300</height>
         <texture>blackgradientvert.png</texture>
         <aspectratio>stretch</aspectratio>
       </control>
       <control type="image">
-        <posx>700r</posx>
-        <posy>0</posy>
+        <left>700r</left>
+        <top>0</top>
         <width>700</width>
         <height>720</height>
         <texture flipx="true">blackgradient.png</texture>
       </control>
       <!-- RIGHT LIST -->
       <control type="list" id="566">
-        <posx>680</posx>
-        <posy>90</posy>
+        <left>680</left>
+        <top>90</top>
         <width>600</width>
         <height>420</height>
         <onright>2</onright>
@@ -64,8 +64,8 @@
         <visible>Window.IsVisible(MusicFiles) | Window.IsVisible(MusicPlaylist) |  Container.Content(Songs) | Container.Content(Albums) | Container.Content(Artists) | Container.Content(Genres)</visible>
         <itemlayout height="70" width="580">
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>700</width>
             <height>70</height>
             <aligny>bottom</aligny>
@@ -74,8 +74,8 @@
           </control>
           <control type="label">
             <description>Title</description>
-            <posx>135</posx>
-            <posy>5</posy>
+            <left>135</left>
+            <top>5</top>
             <width>445</width>
             <height>35</height>
             <label>$INFO[listitem.Label]</label>
@@ -88,8 +88,8 @@
           </control>
           <control type="label">
             <description>Artist</description>
-            <posx>135</posx>
-            <posy>35</posy>
+            <left>135</left>
+            <top>35</top>
             <width>445</width>
             <height>35</height>
             <label>$INFO[listitem.Label2]</label>
@@ -103,8 +103,8 @@
         </itemlayout>
         <focusedlayout height="70" width="580">
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>700</width>
             <height>70</height>
             <texture border="2,2,2,2">rowfocusback.png</texture>
@@ -112,8 +112,8 @@
           </control>
           <control type="label">
             <description>Title</description>
-            <posx>135</posx>
-            <posy>5</posy>
+            <left>135</left>
+            <top>5</top>
             <width>445</width>
             <height>35</height>
             <label>$INFO[listitem.Label]</label>
@@ -126,8 +126,8 @@
           </control>
           <control type="label">
             <description>Artist</description>
-            <posx>135</posx>
-            <posy>35</posy>
+            <left>135</left>
+            <top>35</top>
             <width>445</width>
             <height>35</height>
             <label>$INFO[listitem.Label2]</label>
@@ -144,11 +144,11 @@
       <control type="group">
         <visible>Control.IsVisible(566)</visible>
         <control type="group">
-          <posx>20</posx>
-          <posy>330</posy>
+          <left>20</left>
+          <top>330</top>
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>350</width>
             <height>350</height>
             <aspectratio aligny="bottom">stretch</aspectratio>
@@ -158,8 +158,8 @@
             <bordersize>8</bordersize>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>350</width>
             <height>350</height>
             <aspectratio aligny="bottom">stretch</aspectratio>
@@ -169,8 +169,8 @@
             <visible>!Container.Content(Genres)</visible>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>350</width>
             <height>350</height>
             <aspectratio aligny="bottom">stretch</aspectratio>
@@ -181,12 +181,12 @@
           </control>
         </control>
         <control type="group">
-          <posx>380</posx>
-          <posy>520</posy>
+          <left>380</left>
+          <top>520</top>
           <control type="image">
             <!-- logo mod -->
-            <posx>570</posx>
-            <posy>40</posy>
+            <left>570</left>
+            <top>40</top>
             <width>300</width>
             <height>80</height>
             <aspectratio scalediffuse="false" aligny="center" align="right">keep</aspectratio>
@@ -194,8 +194,8 @@
             <texture background="true">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist]/logo.png</texture>
           </control>
           <!-- <control type="label">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>25</height>
 						<label>$INFO[ListItem.Artist]</label>
@@ -207,8 +207,8 @@
 						<shadowcolor>black</shadowcolor>
 					</control> -->
           <control type="label">
-            <posx>0</posx>
-            <posy>35</posy>
+            <left>0</left>
+            <top>35</top>
             <width>400</width>
             <height>25</height>
             <label>$INFO[ListItem.Album]</label>
@@ -220,8 +220,8 @@
             <shadowcolor>black</shadowcolor>
           </control>
           <!-- <control type="label">
-						<posx>0</posx>
-						<posy>-40</posy>
+						<left>0</left>
+						<top>-40</top>
 						<width>400</width>
 						<height>25</height>
 						<label>$INFO[ListItem.Title]</label>
@@ -235,8 +235,8 @@
 						<visible>!Container.Content(Albums)</visible>
 					</control> -->
           <control type="label">
-            <posx>0</posx>
-            <posy>120</posy>
+            <left>0</left>
+            <top>120</top>
             <width>400</width>
             <height>25</height>
             <label fallback="416">[COLOR=accent]$LOCALIZE[515]: [/COLOR]$INFO[listitem.genre]</label>
@@ -251,8 +251,8 @@
           </control>
           <control type="label">
             <description>Trackno txt</description>
-            <posx>0</posx>
-            <posy>120</posy>
+            <left>0</left>
+            <top>120</top>
             <width>400</width>
             <height>25</height>
             <label>$INFO[listitem.TrackNumber,$LOCALIZE[31310]: ]</label>
@@ -264,8 +264,8 @@
           </control>
           <control type="label">
             <description>Year txt</description>
-            <posx>0</posx>
-            <posy>80</posy>
+            <left>0</left>
+            <top>80</top>
             <width>400</width>
             <height>25</height>
             <label>$INFO[listitem.Year]</label>
@@ -276,8 +276,8 @@
           </control>
         </control>
         <control type="scrollbar" id="60">
-          <posx>10</posx>
-          <posy>100</posy>
+          <left>10</left>
+          <top>100</top>
           <width>25</width>
           <height>220</height>
           <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>

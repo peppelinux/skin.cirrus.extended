@@ -168,4 +168,10 @@
         <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Day5.Title)]</value>
         <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Daily.6.LongDay)]</value>
     </variable>
+    <!-- Music Info Dialog -->
+    <variable name="MusicPageControl">
+        <value condition="Control.IsVisible(4)">[COLOR=accent]$LOCALIZE[21821][/COLOR]$INFO[Container(4).CurrentPage, ( $LOCALIZE[31024] ]$INFO[Container(4).NumPages,/, )]</value>
+        <value condition="Control.IsVisible(55) + Container.Content(Albums)">[COLOR=accent]$LOCALIZE[182][/COLOR]$INFO[Container(50).CurrentPage, ( $LOCALIZE[31024] ]$INFO[Container(50).NumPages,/, )]</value>
+        <value condition="Control.IsVisible(55) + Container.Content(Artists)">[COLOR=accent]$LOCALIZE[132][/COLOR]$INFO[Container(50).CurrentPage, ( $LOCALIZE[31024] ]$INFO[Container(50).NumPages,/, )]</value>
+    </variable>
 </includes>

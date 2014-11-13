@@ -3,23 +3,23 @@
     <defaultcontrol>10</defaultcontrol>
     <coordinates>
         <system>1</system>
-        <posx>240</posx>
-        <posy>100</posy>
+        <left>240</left>
+        <top>100</top>
     </coordinates>
     <include>dialogeffect</include>
     <controls>
         <control type="image">
             <description>background image</description>
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>800</width>
             <height>500</height>
             <texture border="40">dialogbackground.png</texture>
         </control>
         <control type="label" id="2">
             <description>header label</description>
-            <posx>20</posx>
-            <posy>18</posy>
+            <left>20</left>
+            <top>18</top>
             <width>760</width>
             <height>30</height>
             <font>cirrus_30</font>
@@ -31,8 +31,8 @@
         </control>
         <control type="label">
             <description>path label</description>
-            <posx>20</posx>
-            <posy>60</posy>
+            <left>20</left>
+            <top>60</top>
             <width>760</width>
             <height>30</height>
             <align>center</align>
@@ -43,8 +43,8 @@
             <shadowcolor>black</shadowcolor>
         </control>
         <control type="list" id="10">
-            <posx>30</posx>
-            <posy>105</posy>
+            <left>30</left>
+            <top>105</top>
             <width>500</width>
             <height>201</height>
             <onup>9001</onup>
@@ -55,16 +55,16 @@
             <scrolltime>200</scrolltime>
             <itemlayout height="40">
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>500</width>
                     <height>41</height>
                     <texture>button-pathboxNF.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="label">
-                    <posx>10</posx>
-                    <posy>0</posy>
+                    <left>10</left>
+                    <top>0</top>
                     <width>490</width>
                     <height>40</height>
                     <font>cirrus_20</font>
@@ -77,8 +77,8 @@
             </itemlayout>
             <focusedlayout height="40">
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>500</width>
                     <height>41</height>
                     <visible>!Control.HasFocus(10)</visible>
@@ -86,8 +86,8 @@
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>500</width>
                     <height>41</height>
                     <visible>Control.HasFocus(10)</visible>
@@ -95,8 +95,8 @@
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="label">
-                    <posx>10</posx>
-                    <posy>0</posy>
+                    <left>10</left>
+                    <top>0</top>
                     <width>490</width>
                     <height>40</height>
                     <font>cirrus_24</font>
@@ -108,8 +108,8 @@
             </focusedlayout>
         </control>
         <control type="scrollbar" id="60">
-            <posx>555</posx>
-            <posy>105</posy>
+            <left>555</left>
+            <top>105</top>
             <width>25</width>
             <height>200</height>
             <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
@@ -123,12 +123,12 @@
             <orientation>vertical</orientation>
         </control>
         <control type="group" id="9000">
-            <posx>580</posx>
-            <posy>105</posy>
+            <left>580</left>
+            <top>105</top>
             <control type="button" id="11">
                 <description>Browse Button</description>
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>200</width>
                 <height>41</height>
                 <label>1024</label>
@@ -144,8 +144,8 @@
             </control>
             <control type="button" id="13">
                 <description>Add Path Button</description>
-                <posx>0</posx>
-                <posy>45</posy>
+                <left>0</left>
+                <top>45</top>
                 <width>200</width>
                 <height>41</height>
                 <label>15019</label>
@@ -161,8 +161,8 @@
             </control>
             <control type="button" id="14">
                 <description>Remove Path Button</description>
-                <posx>0</posx>
-                <posy>90</posy>
+                <left>0</left>
+                <top>90</top>
                 <width>200</width>
                 <height>41</height>
                 <label>1210</label>
@@ -179,8 +179,8 @@
         </control>
         <control type="label">
             <description>Name label</description>
-            <posx>20</posx>
-            <posy>335</posy>
+            <left>20</left>
+            <top>335</top>
             <width>760</width>
             <height>30</height>
             <align>center</align>
@@ -192,8 +192,8 @@
         </control>
         <control type="edit" id="12">
             <description>Name Button</description>
-            <posx>20</posx>
-            <posy>370</posy>
+            <left>20</left>
+            <top>370</top>
             <width>760</width>
             <height>40</height>
             <align>center</align>
@@ -210,8 +210,8 @@
         <control type="group" id="9001">
             <control type="button" id="18">
                 <description>Ok Button</description>
-                <posx>300</posx>
-                <posy>435</posy>
+                <left>300</left>
+                <top>435</top>
                 <width>200</width>
                 <height>40</height>
                 <align>center</align>
@@ -228,8 +228,8 @@
             </control>
             <control type="button" id="19">
                 <description>Cancel Button</description>
-                <posx>510</posx>
-                <posy>435</posy>
+                <left>510</left>
+                <top>435</top>
                 <width>200</width>
                 <height>40</height>
                 <align>center</align>
@@ -246,8 +246,8 @@
             </control>
             <control type="button" id="20">
                 <description>Set Content Button</description>
-                <posx>90</posx>
-                <posy>435</posy>
+                <left>90</left>
+                <top>435</top>
                 <width>200</width>
                 <height>40</height>
                 <align>center</align>

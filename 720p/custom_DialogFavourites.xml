@@ -6,15 +6,15 @@
       <animation effect="slide" start="400,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
       <animation effect="slide" start="0,0" end="400,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
       <control type="image">
-        <posx>400r</posx>
-        <posy>0</posy>
+        <left>400r</left>
+        <top>0</top>
         <width>400</width>
         <height>720</height>
         <texture border="15,0,0,0">homesubbackground.png</texture>
       </control>
       <control type="image">
-        <posx>370r</posx>
-        <posy>30</posy>
+        <left>370r</left>
+        <top>30</top>
         <width>200</width>
         <height>200</height>
         <aspectratio align="center">keep</aspectratio>
@@ -25,8 +25,8 @@
       </control>
       <control type="button" id="451">
         <description>conditionally run RecentlyAdded script at startup</description>
-        <posx>-20</posx>
-        <posy>-20</posy>
+        <left>-20</left>
+        <top>-20</top>
         <width>1</width>
         <height>1</height>
         <label>-</label>
@@ -40,8 +40,8 @@
         <ondown>450</ondown>
       </control>
       <control type="list" id="450">
-        <posx>390r</posx>
-        <posy>250</posy>
+        <left>390r</left>
+        <top>250</top>
         <width>450</width>
         <height>380</height>
         <onup>450</onup>
@@ -52,16 +52,16 @@
         <scrolltime>200</scrolltime>
         <itemlayout height="40">
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>370</width>
             <height>40</height>
             <texture border="5">button-nofocus.png</texture>
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
-            <posx>10</posx>
-            <posy>0</posy>
+            <left>10</left>
+            <top>0</top>
             <width>350</width>
             <height>40</height>
             <font>cirrus_20</font>
@@ -73,8 +73,8 @@
         </itemlayout>
         <focusedlayout height="40">
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>370</width>
             <height>40</height>
             <visible>!Control.HasFocus(450)</visible>
@@ -82,8 +82,8 @@
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>370</width>
             <height>40</height>
             <visible>Control.HasFocus(450)</visible>
@@ -91,8 +91,8 @@
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
-            <posx>10</posx>
-            <posy>0</posy>
+            <left>10</left>
+            <top>0</top>
             <width>350</width>
             <height>40</height>
             <font>cirrus_20_Bold</font>

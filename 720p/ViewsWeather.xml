@@ -6,8 +6,8 @@
       <include>VisibleFadeEffect</include>
       <control type="label">
         <description>header label</description>
-        <posx>20</posx>
-        <posy>25</posy>
+        <left>20</left>
+        <top>25</top>
         <width>595</width>
         <height>30</height>
         <font>cirrus_24_bold</font>
@@ -211,8 +211,8 @@
         </itemlayout>
         <focusedlayout height="135" width="600" condition="!IsEmpty(Window.Property(Daily.IsFetched))">
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>600</width>
             <height>136</height>
             <texture border="0,2,0,2">menuitemNF.png</texture>
@@ -487,8 +487,8 @@
         </content>
       </control>
       <control type="scrollbar" id="61">
-        <posx>615</posx>
-        <posy>60</posy>
+        <left>615</left>
+        <top>60</top>
         <width>25</width>
         <height>540</height>
         <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
@@ -505,8 +505,8 @@
       <control type="label">
         <animation effect="slide" start="0,0" end="-90,0" time="0" condition="system.getbool(input.enablemouse)">Conditional</animation>
         <description>number of files/pages</description>
-        <posx>660</posx>
-        <posy>620</posy>
+        <left>660</left>
+        <top>620</top>
         <width>570</width>
         <font>cirrus_18</font>
         <align>right</align>
@@ -759,8 +759,8 @@
       <include>VisibleFadeEffect</include>
       <control type="label">
         <description>header label</description>
-        <posx>20</posx>
-        <posy>25</posy>
+        <left>20</left>
+        <top>25</top>
         <width>595</width>
         <height>30</height>
         <font>cirrus_24_bold</font>
@@ -771,8 +771,8 @@
         <shadowcolor>black</shadowcolor>
       </control>
       <control type="list" id="52">
-        <posx>15</posx>
-        <posy>60</posy>
+        <left>15</left>
+        <top>60</top>
         <width>600</width>
         <height>541</height>
         <onleft>9000</onleft>
@@ -784,16 +784,16 @@
         <scrolltime>200</scrolltime>
         <itemlayout height="135" width="600">
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>600</width>
             <height>136</height>
             <texture border="0,5,0,5">menuitemNF.png</texture>
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
-            <posx>25</posx>
-            <posy>0</posy>
+            <left>25</left>
+            <top>0</top>
             <width>100</width>
             <height>120</height>
             <font>cirrus_18</font>
@@ -804,16 +804,16 @@
             <label>$INFO[ListItem.Label]</label>
           </control>
           <control type="image">
-            <posx>110</posx>
-            <posy>5</posy>
+            <left>110</left>
+            <top>5</top>
             <width>80</width>
             <height>80</height>
             <aspectratio>keep</aspectratio>
             <texture>$INFO[ListItem.Thumb]</texture>
           </control>
           <control type="label">
-            <posx>200</posx>
-            <posy>5</posy>
+            <left>200</left>
+            <top>5</top>
             <width>390</width>
             <height>70</height>
             <font>cirrus_18</font>
@@ -824,8 +824,8 @@
             <label>$INFO[ListItem.Label2]</label>
           </control>
           <control type="textbox">
-            <posx>5</posx>
-            <posy>80</posy>
+            <left>5</left>
+            <top>80</top>
             <width>590</width>
             <height>50</height>
             <font>cirrus_18</font>
@@ -837,8 +837,8 @@
         </itemlayout>
         <focusedlayout height="135" width="600">
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>600</width>
             <height>136</height>
             <texture border="0,2,0,2">menuitemNF.png</texture>
@@ -847,8 +847,8 @@
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>600</width>
             <height>136</height>
             <texture border="2,2,2,2">menuitemFO.png</texture>
@@ -857,8 +857,8 @@
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
-            <posx>25</posx>
-            <posy>0</posy>
+            <left>25</left>
+            <top>0</top>
             <width>100</width>
             <height>120</height>
             <font>cirrus_18</font>
@@ -869,16 +869,16 @@
             <label>$INFO[ListItem.Label]</label>
           </control>
           <control type="image">
-            <posx>110</posx>
-            <posy>5</posy>
+            <left>110</left>
+            <top>5</top>
             <width>80</width>
             <height>80</height>
             <aspectratio>keep</aspectratio>
             <texture>$INFO[ListItem.Thumb]</texture>
           </control>
           <control type="label">
-            <posx>200</posx>
-            <posy>5</posy>
+            <left>200</left>
+            <top>5</top>
             <width>390</width>
             <height>70</height>
             <font>cirrus_18</font>
@@ -889,8 +889,8 @@
             <label>$INFO[ListItem.Label2]</label>
           </control>
           <control type="textbox">
-            <posx>5</posx>
-            <posy>80</posy>
+            <left>5</left>
+            <top>80</top>
             <width>590</width>
             <height>50</height>
             <font>cirrus_18</font>
@@ -1017,8 +1017,8 @@
         </content>
       </control>
       <control type="scrollbar" id="62">
-        <posx>615</posx>
-        <posy>60</posy>
+        <left>615</left>
+        <top>60</top>
         <width>25</width>
         <height>540</height>
         <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
@@ -1035,8 +1035,8 @@
       <control type="label">
         <animation effect="slide" start="0,0" end="-90,0" time="0" condition="system.getbool(input.enablemouse)">Conditional</animation>
         <description>number of files/pages</description>
-        <posx>660</posx>
-        <posy>620</posy>
+        <left>660</left>
+        <top>620</top>
         <width>570</width>
         <font>cirrus_18</font>
         <align>right</align>
@@ -1053,8 +1053,8 @@
       <include>VisibleFadeEffect</include>
       <control type="button" id="998">
         <description>Hidden Button for focus</description>
-        <posx>-600</posx>
-        <posy>-20</posy>
+        <left>-600</left>
+        <top>-20</top>
         <width>1</width>
         <height>1</height>
         <texturenofocus>-</texturenofocus>
@@ -1064,8 +1064,8 @@
       </control>
       <control type="label">
         <description>header label</description>
-        <posx>20</posx>
-        <posy>25</posy>
+        <left>20</left>
+        <top>25</top>
         <width>595</width>
         <height>30</height>
         <font>cirrus_24_bold</font>
@@ -1076,8 +1076,8 @@
         <shadowcolor>black</shadowcolor>
       </control>
       <control type="label">
-        <posx>0</posx>
-        <posy>200</posy>
+        <left>0</left>
+        <top>200</top>
         <width>600</width>
         <height>30</height>
         <font>cirrus_18</font>
@@ -1088,16 +1088,16 @@
         <visible>IsEmpty(Window.Property(Weekend.IsFetched))</visible>
       </control>
       <control type="group">
-        <posx>20</posx>
-        <posy>50</posy>
+        <left>20</left>
+        <top>50</top>
         <visible>!IsEmpty(Window.Property(Weekend.IsFetched))</visible>
         <include>VisibleFadeEffect</include>
         <control type="group">
-          <posx>0</posx>
-          <posy>0</posy>
+          <left>0</left>
+          <top>0</top>
           <control type="label">
-            <posx>0</posx>
-            <posy>5</posy>
+            <left>0</left>
+            <top>5</top>
             <width>595</width>
             <height>30</height>
             <font>cirrus_30</font>
@@ -1107,16 +1107,16 @@
             <label>$INFO[Window.Property(Weekend.1.LongDay)] - $INFO[Window.Property(Weekend.1.ShortDate)]</label>
           </control>
           <control type="image">
-            <posx>10</posx>
-            <posy>20</posy>
+            <left>10</left>
+            <top>20</top>
             <width>130</width>
             <height>160</height>
             <aspectratio>keep</aspectratio>
             <texture>$INFO[Window.Property(Weekend.1.OutlookIcon)]</texture>
           </control>
           <control type="label">
-            <posx>140</posx>
-            <posy>50</posy>
+            <left>140</left>
+            <top>50</top>
             <width>200</width>
             <height>50</height>
             <font>cirrus_30</font>
@@ -1127,8 +1127,8 @@
             <label>[COLOR=grey2]$LOCALIZE[393][/COLOR]$INFO[Window.Property(Weekend.1.HighTemperature),[B] ,[/B]]</label>
           </control>
           <control type="label">
-            <posx>140</posx>
-            <posy>100</posy>
+            <left>140</left>
+            <top>100</top>
             <width>200</width>
             <height>50</height>
             <font>cirrus_30</font>
@@ -1139,8 +1139,8 @@
             <label>[COLOR=grey2]$LOCALIZE[391][/COLOR]$INFO[Window.Property(Weekend.1.LowTemperature),[B] ,[/B]]</label>
           </control>
           <control type="textbox">
-            <posx>240</posx>
-            <posy>40</posy>
+            <left>240</left>
+            <top>40</top>
             <width>350</width>
             <height>130</height>
             <font>cirrus_18</font>
@@ -1149,8 +1149,8 @@
             <label>$INFO[Window.Property(Weekend.1.Humidity),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR][CR]$INFO[Window.Property(Weekend.1.Cloudiness),[COLOR=grey2]$LOCALIZE[387] :[/COLOR][B] ,[/B]][CR][CR]$INFO[Window.Property(Weekend.1.Precipitation),[COLOR=grey2]$LOCALIZE[33021] :[/COLOR][B] ,[/B]]</label>
           </control>
           <control type="label">
-            <posx>0</posx>
-            <posy>170</posy>
+            <left>0</left>
+            <top>170</top>
             <width>590</width>
             <height>20</height>
             <font>cirrus_18</font>
@@ -1161,8 +1161,8 @@
             <label>$INFO[Window.Property(Weekend.1.WindSpeed),[COLOR=grey2]$LOCALIZE[404]: [/COLOR]]$INFO[Window.Property(Weekend.1.WindDirection), - ]</label>
           </control>
           <control type="textbox">
-            <posx>0</posx>
-            <posy>210</posy>
+            <left>0</left>
+            <top>210</top>
             <width>590</width>
             <height>70</height>
             <font>cirrus_18</font>
@@ -1172,19 +1172,19 @@
             <label>$INFO[Window.Property(Weekend.1.Outlook),[COLOR=grey2]$LOCALIZE[31905]: [/COLOR]][CR]</label>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>270</posy>
+            <left>0</left>
+            <top>270</top>
             <width>650</width>
             <height>4</height>
             <texture>separator.png</texture>
           </control>
         </control>
         <control type="group">
-          <posx>0</posx>
-          <posy>280</posy>
+          <left>0</left>
+          <top>280</top>
           <control type="label">
-            <posx>0</posx>
-            <posy>5</posy>
+            <left>0</left>
+            <top>5</top>
             <width>600</width>
             <height>30</height>
             <font>cirrus_30</font>
@@ -1194,16 +1194,16 @@
             <label>$INFO[Window.Property(Weekend.2.LongDay)] - $INFO[Window.Property(Weekend.2.ShortDate)]</label>
           </control>
           <control type="image">
-            <posx>10</posx>
-            <posy>20</posy>
+            <left>10</left>
+            <top>20</top>
             <width>130</width>
             <height>160</height>
             <aspectratio>keep</aspectratio>
             <texture>$INFO[Window.Property(Weekend.2.OutlookIcon)]</texture>
           </control>
           <control type="label">
-            <posx>140</posx>
-            <posy>50</posy>
+            <left>140</left>
+            <top>50</top>
             <width>200</width>
             <height>50</height>
             <font>cirrus_30</font>
@@ -1214,8 +1214,8 @@
             <label>[COLOR=grey2]$LOCALIZE[393][/COLOR]$INFO[Window.Property(Weekend.2.HighTemperature),[B] ,[/B]]</label>
           </control>
           <control type="label">
-            <posx>140</posx>
-            <posy>100</posy>
+            <left>140</left>
+            <top>100</top>
             <width>200</width>
             <height>50</height>
             <font>cirrus_30</font>
@@ -1226,8 +1226,8 @@
             <label>[COLOR=grey2]$LOCALIZE[391][/COLOR]$INFO[Window.Property(Weekend.2.LowTemperature),[B] ,[/B]]</label>
           </control>
           <control type="textbox">
-            <posx>240</posx>
-            <posy>40</posy>
+            <left>240</left>
+            <top>40</top>
             <width>350</width>
             <height>130</height>
             <font>cirrus_18</font>
@@ -1236,8 +1236,8 @@
             <label>$INFO[Window.Property(Weekend.2.Humidity),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR][CR]$INFO[Window.Property(Weekend.2.Cloudiness),[COLOR=grey2]$LOCALIZE[387] :[/COLOR][B] ,[/B]][CR][CR]$INFO[Window.Property(Weekend.2.Precipitation),[COLOR=grey2]$LOCALIZE[33021] :[/COLOR][B] ,[/B]]</label>
           </control>
           <control type="label">
-            <posx>0</posx>
-            <posy>170</posy>
+            <left>0</left>
+            <top>170</top>
             <width>590</width>
             <height>20</height>
             <font>cirrus_18</font>
@@ -1248,8 +1248,8 @@
             <label>$INFO[Window.Property(Weekend.2.WindSpeed),[COLOR=grey2]$LOCALIZE[404]: [/COLOR]]$INFO[Window.Property(Weekend.2.WindDirection), - ]</label>
           </control>
           <control type="textbox">
-            <posx>0</posx>
-            <posy>210</posy>
+            <left>0</left>
+            <top>210</top>
             <width>590</width>
             <height>70</height>
             <font>cirrus_18</font>

@@ -7,8 +7,8 @@
             <animation effect="slide" start="0,0" end="-250,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus">WindowClose</animation>
             <control type="button" id="8999">
                 <description>Fake button for mouse control</description>
-                <posx>-250</posx>
-                <posy>0</posy>
+                <left>-250</left>
+                <top>0</top>
                 <width>265</width>
                 <height>720</height>
                 <label>-</label>
@@ -20,21 +20,21 @@
             <include>SideBladeLeftPVR</include>
             <control type="image">
                 <description>LOGO</description>
-                <posx>-230</posx>
-                <posy>50</posy>
+                <left>-230</left>
+                <top>50</top>
                 <width>180</width>
                 <height>65</height>
                 <aspectratio>keep</aspectratio>
                 <texture>xbmc_logo_white.png</texture>
             </control>
             <control type="group" id="9000">
-                <posx>-250</posx>
-                <posy>130</posy>
+                <left>-250</left>
+                <top>130</top>
                 <include>CommonNowPlaying</include>
                 <control type="button" id="32">
                     <description>TV Channels</description>
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <include>ButtonCommonValues</include>
                     <label>19019</label>
                     <onclick condition="Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)">NextChannelGroup</onclick>
@@ -47,8 +47,8 @@
                 </control>
                 <control type="button" id="31">
                     <description>TV Guide</description>
-                    <posx>0</posx>
-                    <posy>40</posy>
+                    <left>0</left>
+                    <top>40</top>
                     <include>ButtonCommonValues</include>
                     <label>22020</label>
                     <onclick condition="Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">NextChannelGroup</onclick>
@@ -61,8 +61,8 @@
                 </control>
                 <control type="button" id="34">
                     <description>Recordings</description>
-                    <posx>0</posx>
-                    <posy>80</posy>
+                    <left>0</left>
+                    <top>80</top>
                     <include>ButtonCommonValues</include>
                     <label>19163</label>
                     <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
@@ -74,8 +74,8 @@
                 </control>
                 <control type="button" id="35">
                     <description>Timers</description>
-                    <posx>0</posx>
-                    <posy>120</posy>
+                    <left>0</left>
+                    <top>120</top>
                     <include>ButtonCommonValues</include>
                     <label>19040</label>
                     <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
@@ -87,8 +87,8 @@
                 </control>
                 <control type="button" id="36">
                     <description>Search</description>
-                    <posx>0</posx>
-                    <posy>160</posy>
+                    <left>0</left>
+                    <top>160</top>
                     <include>ButtonCommonValues</include>
                     <label>137</label>
                     <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
@@ -164,8 +164,8 @@
                     <description>Sort asc</description>
                     <width>20</width>
                     <height>20</height>
-                    <posx>220</posx>
-                    <posy>370</posy>
+                    <left>220</left>
+                    <top>370</top>
                     <height>20</height>
                     <label>-</label>
                     <onleft>3</onleft>

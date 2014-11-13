@@ -9,8 +9,8 @@
             <control type="epggrid" id="10">
                 <viewtype label="19032">list</viewtype>
                 <description>EPG Grid</description>
-                <posx>80</posx>
-                <posy>81</posy>
+                <left>80</left>
+                <top>81</top>
                 <width>1120</width>
                 <height>451</height>
                 <pagecontrol>10</pagecontrol>
@@ -26,14 +26,14 @@
                     <control type="image" id="1">
                         <width>40</width>
                         <height>34</height>
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <colordiffuse>EEFFFFFF</colordiffuse>
                         <texture border="3">OverlayDialogBackground.png</texture>
                     </control>
                     <control type="label" id="2">
-                        <posx>10</posx>
-                        <posy>1</posy>
+                        <left>10</left>
+                        <top>1</top>
                         <width>34</width>
                         <height>29</height>
                         <font>cirrus_20</font>
@@ -49,23 +49,23 @@
                 <channellayout height="52" width="220">
                     <animation effect="fade" start="110" time="200">UnFocus</animation>
                     <control type="image" id="1">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>220</width>
                         <height>52</height>
                         <colordiffuse>EEFFFFFF</colordiffuse>
                         <texture border="5">OverlayDialogBackground.png</texture>
                     </control>
                     <control type="image">
-                        <posx>7</posx>
-                        <posy>5</posy>
+                        <left>7</left>
+                        <top>5</top>
                         <width>40</width>
                         <height>40</height>
                         <texture>$INFO[ListItem.Icon]</texture>
                     </control>
                     <control type="label" id="1">
-                        <posx>59</posx>
-                        <posy>0</posy>
+                        <left>59</left>
+                        <top>0</top>
                         <width>160</width>
                         <height>52</height>
                         <font>cirrus_25</font>
@@ -80,23 +80,23 @@
                 <focusedchannellayout height="52" width="220">
                     <animation effect="fade" start="110" time="200">OnFocus</animation>
                     <control type="image" id="1">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>220</width>
                         <height>52</height>
                         <colordiffuse>EEFFFFFF</colordiffuse>
                         <texture border="5">OverlayDialogBackground.png</texture>
                     </control>
                     <control type="image">
-                        <posx>7</posx>
-                        <posy>5</posy>
+                        <left>7</left>
+                        <top>5</top>
                         <width>40</width>
                         <height>40</height>
                         <texture>$INFO[ListItem.Icon]</texture>
                     </control>
                     <control type="label" id="1">
-                        <posx>59</posx>
-                        <posy>0</posy>
+                        <left>59</left>
+                        <top>0</top>
                         <width>160</width>
                         <height>52</height>
                         <font>cirrus_25</font>
@@ -112,15 +112,15 @@
                     <control type="image" id="2">
                         <width>40</width>
                         <height>52</height>
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <aspectratio>stretch</aspectratio>
                         <texture border="3">epg-genres/$INFO[ListItem.Property(GenreType)].png</texture>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="label" id="1">
-                        <posx>6</posx>
-                        <posy>3</posy>
+                        <left>6</left>
+                        <top>3</top>
                         <width>30</width>
                         <height>25</height>
                         <font>cirrus_25</font>
@@ -132,8 +132,8 @@
                         <info>ListItem.Label</info>
                     </control>
                     <control type="image">
-                        <posx>5</posx>
-                        <posy>30</posy>
+                        <left>5</left>
+                        <top>30</top>
                         <width>25</width>
                         <height>15</height>
                         <texture>PVR-IsRecording.png</texture>
@@ -141,8 +141,8 @@
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="image">
-                        <posx>5</posx>
-                        <posy>30</posy>
+                        <left>5</left>
+                        <top>30</top>
                         <width>20</width>
                         <height>20</height>
                         <texture>PVR-HasTimer.png</texture>
@@ -154,8 +154,8 @@
                     <control type="image" id="14">
                         <width>40</width>
                         <height>52</height>
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <colordiffuse>EEFFFFFF</colordiffuse>
                         <texture>pstvButtonNOFocus.png</texture>
                         <aspectratio>stretch</aspectratio>
@@ -163,15 +163,15 @@
                     <control type="image" id="2">
                         <width>40</width>
                         <height>52</height>
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <aspectratio>stretch</aspectratio>
                         <texture border="3">epg-genres/$INFO[ListItem.Property(GenreType)].png</texture>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="label" id="1">
-                        <posx>6</posx>
-                        <posy>3</posy>
+                        <left>6</left>
+                        <top>3</top>
                         <width>30</width>
                         <height>25</height>
                         <font>cirrus_25</font>
@@ -183,8 +183,8 @@
                         <info>ListItem.Label</info>
                     </control>
                     <control type="image">
-                        <posx>5</posx>
-                        <posy>30</posy>
+                        <left>5</left>
+                        <top>30</top>
                         <width>25</width>
                         <height>15</height>
                         <texture>PVR-IsRecording.png</texture>
@@ -192,8 +192,8 @@
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="image">
-                        <posx>5</posx>
-                        <posy>30</posy>
+                        <left>5</left>
+                        <top>30</top>
                         <width>20</width>
                         <height>20</height>
                         <texture>PVR-HasTimer.png</texture>
@@ -203,40 +203,40 @@
                 </focusedlayout>
             </control>
             <control type="group">
-                <posx>200</posx>
-                <posy>57r</posy>
+                <left>200</left>
+                <top>57r</top>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>15</width>
                     <height>15</height>
                     <texture>48.png</texture>
                 </control>
                 <control type="image">
-                    <posx>-200</posx>
-                    <posy>-120</posy>
+                    <left>-200</left>
+                    <top>-120</top>
                     <width>1300</width>
                     <height>118</height>
                     <texture>dialogbackground.png</texture>
                 </control>
                 <control type="image">
-                    <posx>-200</posx>
-                    <posy>-5</posy>
+                    <left>-200</left>
+                    <top>-5</top>
                     <width>1300</width>
                     <height>70</height>
                     <texture>dialogbackground.png</texture>
                 </control>
                 <control type="image">
-                    <posx>-110</posx>
-                    <posy>-112</posy>
+                    <left>-110</left>
+                    <top>-112</top>
                     <width>100</width>
                     <height>100</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <texture>$INFO[ListItem.Icon]</texture>
                 </control>
                 <control type="label">
-                    <posx>100</posx>
-                    <posy>5</posy>
+                    <left>100</left>
+                    <top>5</top>
                     <width>100</width>
                     <height>40</height>
                     <label>$LOCALIZE[335]:</label>
@@ -247,8 +247,8 @@
                     <info>-</info>
                 </control>
                 <control type="label">
-                    <posx>160</posx>
-                    <posy>5</posy>
+                    <left>160</left>
+                    <top>5</top>
                     <width>100</width>
                     <height>40</height>
                     <font>cirrus_20</font>
@@ -258,8 +258,8 @@
                     <info>ListItem.StartTime</info>
                 </control>
                 <control type="label">
-                    <posx>100</posx>
-                    <posy>30</posy>
+                    <left>100</left>
+                    <top>30</top>
                     <width>100</width>
                     <height>40</height>
                     <label>$LOCALIZE[19081]:</label>
@@ -270,8 +270,8 @@
                     <info>-</info>
                 </control>
                 <control type="label">
-                    <posx>160</posx>
-                    <posy>30</posy>
+                    <left>160</left>
+                    <top>30</top>
                     <width>100</width>
                     <height>40</height>
                     <font>cirrus_20</font>
@@ -281,8 +281,8 @@
                     <info>ListItem.EndTime</info>
                 </control>
                 <control type="label">
-                    <posx>250</posx>
-                    <posy>5</posy>
+                    <left>250</left>
+                    <top>5</top>
                     <width>100</width>
                     <height>40</height>
                     <label>$LOCALIZE[180]:</label>
@@ -293,8 +293,8 @@
                     <info>-</info>
                 </control>
                 <control type="label">
-                    <posx>350</posx>
-                    <posy>5</posy>
+                    <left>350</left>
+                    <top>5</top>
                     <width>200</width>
                     <height>40</height>
                     <font>cirrus_20</font>
@@ -304,8 +304,8 @@
                     <info>ListItem.Duration</info>
                 </control>
                 <control type="label">
-                    <posx>250</posx>
-                    <posy>30</posy>
+                    <left>250</left>
+                    <top>30</top>
                     <width>100</width>
                     <height>40</height>
                     <label>$LOCALIZE[135]:</label>
@@ -316,8 +316,8 @@
                     <info>-</info>
                 </control>
                 <control type="label">
-                    <posx>350</posx>
-                    <posy>30</posy>
+                    <left>350</left>
+                    <top>30</top>
                     <width>400</width>
                     <height>40</height>
                     <font>cirrus_20</font>
@@ -327,8 +327,8 @@
                     <info>ListItem.Genre</info>
                 </control>
                 <control type="label">
-                    <posx>100</posx>
-                    <posy>-115</posy>
+                    <left>100</left>
+                    <top>-115</top>
                     <width>700</width>
                     <height>20</height>
                     <font>cirrus_24</font>
@@ -340,8 +340,8 @@
                 </control>
                 <control type="textbox">
                     <description>Plot</description>
-                    <posx>100</posx>
-                    <posy>-80</posy>
+                    <left>100</left>
+                    <top>-80</top>
                     <width>900</width>
                     <height>60</height>
                     <font>cirrus_18</font>
@@ -363,12 +363,12 @@
             <visible>Control.IsVisible(11)</visible>
             <include>VisibleFadeEffect</include>
             <control type="group">
-                <posx>80</posx>
-                <posy>60</posy>
+                <left>80</left>
+                <top>60</top>
                 <control type="label">
                     <description>Time label</description>
-                    <posx>0</posx>
-                    <posy>20</posy>
+                    <left>0</left>
+                    <top>20</top>
                     <width>100</width>
                     <height>20</height>
                     <font>cirrus_30</font>
@@ -380,8 +380,8 @@
                 </control>
                 <control type="label">
                     <description>Channel label</description>
-                    <posx>70</posx>
-                    <posy>20</posy>
+                    <left>70</left>
+                    <top>20</top>
                     <width>250</width>
                     <height>20</height>
                     <font>cirrus_30</font>
@@ -393,8 +393,8 @@
                 </control>
                 <control type="label">
                     <description>Title</description>
-                    <posx>110</posx>
-                    <posy>20</posy>
+                    <left>110</left>
+                    <top>20</top>
                     <width>550</width>
                     <height>20</height>
                     <font>cirrus_30</font>
@@ -406,8 +406,8 @@
                 </control>
                 <control type="label">
                     <description>Status header label</description>
-                    <posx>960</posx>
-                    <posy>20</posy>
+                    <left>960</left>
+                    <top>20</top>
                     <width>140</width>
                     <height>20</height>
                     <font>cirrus_30</font>
@@ -419,8 +419,8 @@
                 </control>
                 <control type="image">
                     <description>separator image</description>
-                    <posx>0</posx>
-                    <posy>54</posy>
+                    <left>0</left>
+                    <top>54</top>
                     <width>1100</width>
                     <height>1</height>
                     <colordiffuse>88FFFFFF</colordiffuse>
@@ -428,8 +428,8 @@
                 </control>
                 <control type="image">
                     <description>separator image</description>
-                    <posx>0</posx>
-                    <posy>575</posy>
+                    <left>0</left>
+                    <top>575</top>
                     <width>1100</width>
                     <height>1</height>
                     <colordiffuse>88FFFFFF</colordiffuse>
@@ -437,8 +437,8 @@
                 </control>
                 <control type="list" id="11">
                     <viewtype label="19030">list</viewtype>
-                    <posx>0</posx>
-                    <posy>55</posy>
+                    <left>0</left>
+                    <top>55</top>
                     <width>1100</width>
                     <height>520</height>
                     <onup>11</onup>
@@ -449,16 +449,16 @@
                     <scrolltime>200</scrolltime>
                     <itemlayout height="40">
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>1100</width>
                             <height>41</height>
                             <texture border="5">menuitemNF.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>1100</width>
                             <height>40</height>
                             <colordiffuse>33FFFFFF</colordiffuse>
@@ -466,8 +466,8 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>1100</width>
                             <height>40</height>
                             <colordiffuse>33FFFFFF</colordiffuse>
@@ -475,8 +475,8 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="label">
-                            <posx>25</posx>
-                            <posy>0</posy>
+                            <left>25</left>
+                            <top>0</top>
                             <width>100</width>
                             <height>40</height>
                             <font>cirrus_25</font>
@@ -487,16 +487,16 @@
                             <info>ListItem.StartTime</info>
                         </control>
                         <control type="image">
-                            <posx>110</posx>
-                            <posy>5</posy>
+                            <left>110</left>
+                            <top>5</top>
                             <width>30</width>
                             <height>30</height>
                             <info>ListItem.Icon</info>
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="label">
-                            <posx>150</posx>
-                            <posy>0</posy>
+                            <left>150</left>
+                            <top>0</top>
                             <width>190</width>
                             <height>35</height>
                             <font>cirrus_25</font>
@@ -507,8 +507,8 @@
                             <info>ListItem.ChannelName</info>
                         </control>
                         <control type="label">
-                            <posx>360</posx>
-                            <posy>0</posy>
+                            <left>360</left>
+                            <top>0</top>
                             <width>590</width>
                             <height>35</height>
                             <font>cirrus_25</font>
@@ -519,8 +519,8 @@
                             <info>ListItem.Label</info>
                         </control>
                         <control type="image">
-                            <posx>930</posx>
-                            <posy>10</posy>
+                            <left>930</left>
+                            <top>10</top>
                             <width>30</width>
                             <height>20</height>
                             <texture>PVR-IsRecording.png</texture>
@@ -528,8 +528,8 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="label">
-                            <posx>970</posx>
-                            <posy>0</posy>
+                            <left>970</left>
+                            <top>0</top>
                             <width>120</width>
                             <height>40</height>
                             <font>cirrus_25</font>
@@ -541,8 +541,8 @@
                             <visible>ListItem.IsRecording</visible>
                         </control>
                         <control type="image">
-                            <posx>940</posx>
-                            <posy>10</posy>
+                            <left>940</left>
+                            <top>10</top>
                             <width>20</width>
                             <height>20</height>
                             <texture>PVR-HasTimer.png</texture>
@@ -550,8 +550,8 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="label">
-                            <posx>970</posx>
-                            <posy>0</posy>
+                            <left>970</left>
+                            <top>0</top>
                             <width>120</width>
                             <height>40</height>
                             <font>cirrus_25</font>
@@ -565,16 +565,16 @@
                     </itemlayout>
                     <focusedlayout height="40">
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>1100</width>
                             <height>41</height>
                             <texture border="5">menuitemNF.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>1100</width>
                             <height>40</height>
                             <colordiffuse>33FFFFFF</colordiffuse>
@@ -583,8 +583,8 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>1100</width>
                             <height>40</height>
                             <colordiffuse>33FFFFFF</colordiffuse>
@@ -593,8 +593,8 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>1100</width>
                             <height>40</height>
                             <colordiffuse>88FFFFFF</colordiffuse>
@@ -603,8 +603,8 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>1100</width>
                             <height>40</height>
                             <colordiffuse>88FFFFFF</colordiffuse>
@@ -613,8 +613,8 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="label">
-                            <posx>25</posx>
-                            <posy>0</posy>
+                            <left>25</left>
+                            <top>0</top>
                             <width>100</width>
                             <height>40</height>
                             <font>cirrus_25</font>
@@ -625,16 +625,16 @@
                             <info>ListItem.StartTime</info>
                         </control>
                         <control type="image">
-                            <posx>110</posx>
-                            <posy>5</posy>
+                            <left>110</left>
+                            <top>5</top>
                             <width>30</width>
                             <height>30</height>
                             <info>ListItem.Icon</info>
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="label">
-                            <posx>150</posx>
-                            <posy>0</posy>
+                            <left>150</left>
+                            <top>0</top>
                             <width>190</width>
                             <height>35</height>
                             <font>cirrus_25</font>
@@ -645,8 +645,8 @@
                             <info>ListItem.ChannelName</info>
                         </control>
                         <control type="label">
-                            <posx>360</posx>
-                            <posy>0</posy>
+                            <left>360</left>
+                            <top>0</top>
                             <width>590</width>
                             <height>35</height>
                             <font>cirrus_25</font>
@@ -657,8 +657,8 @@
                             <info>ListItem.Label</info>
                         </control>
                         <control type="image">
-                            <posx>930</posx>
-                            <posy>10</posy>
+                            <left>930</left>
+                            <top>10</top>
                             <width>30</width>
                             <height>20</height>
                             <texture>PVR-IsRecording.png</texture>
@@ -666,8 +666,8 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="label">
-                            <posx>970</posx>
-                            <posy>0</posy>
+                            <left>970</left>
+                            <top>0</top>
                             <width>120</width>
                             <height>40</height>
                             <font>cirrus_25</font>
@@ -679,8 +679,8 @@
                             <visible>ListItem.IsRecording</visible>
                         </control>
                         <control type="image">
-                            <posx>940</posx>
-                            <posy>10</posy>
+                            <left>940</left>
+                            <top>10</top>
                             <width>20</width>
                             <height>20</height>
                             <texture>PVR-HasTimer.png</texture>
@@ -688,8 +688,8 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="label">
-                            <posx>970</posx>
-                            <posy>0</posy>
+                            <left>970</left>
+                            <top>0</top>
                             <width>120</width>
                             <height>40</height>
                             <font>cirrus_25</font>
@@ -703,8 +703,8 @@
                     </focusedlayout>
                 </control>
                 <control type="scrollbar" id="76">
-                    <posx>1105</posx>
-                    <posy>50</posy>
+                    <left>1105</left>
+                    <top>50</top>
                     <width>25</width>
                     <height>520</height>
                     <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
@@ -723,8 +723,8 @@
             </control>
             <control type="label">
                 <description>Page Count Label</description>
-                <posx>40r</posx>
-                <posy>30r</posy>
+                <left>40r</left>
+                <top>30r</top>
                 <width>500</width>
                 <height>20</height>
                 <font>cirrus_20</font>
@@ -744,12 +744,12 @@
             <visible>Control.IsVisible(12)</visible>
             <include>VisibleFadeEffect</include>
             <control type="group">
-                <posx>80</posx>
-                <posy>60</posy>
+                <left>80</left>
+                <top>60</top>
                 <control type="label">
                     <description>Time label</description>
-                    <posx>0</posx>
-                    <posy>20</posy>
+                    <left>0</left>
+                    <top>20</top>
                     <width>100</width>
                     <height>20</height>
                     <font>cirrus_30</font>
@@ -761,8 +761,8 @@
                 </control>
                 <control type="label">
                     <description>Channel label</description>
-                    <posx>70</posx>
-                    <posy>20</posy>
+                    <left>70</left>
+                    <top>20</top>
                     <width>250</width>
                     <height>20</height>
                     <font>cirrus_30</font>
@@ -774,8 +774,8 @@
                 </control>
                 <control type="label">
                     <description>Title</description>
-                    <posx>110</posx>
-                    <posy>20</posy>
+                    <left>110</left>
+                    <top>20</top>
                     <width>550</width>
                     <height>20</height>
                     <font>cirrus_30</font>
@@ -787,8 +787,8 @@
                 </control>
                 <control type="label">
                     <description>Status header label</description>
-                    <posx>960</posx>
-                    <posy>20</posy>
+                    <left>960</left>
+                    <top>20</top>
                     <width>140</width>
                     <height>20</height>
                     <font>cirrus_30</font>
@@ -800,8 +800,8 @@
                 </control>
                 <control type="image">
                     <description>separator image</description>
-                    <posx>0</posx>
-                    <posy>54</posy>
+                    <left>0</left>
+                    <top>54</top>
                     <width>1100</width>
                     <height>1</height>
                     <colordiffuse>88FFFFFF</colordiffuse>
@@ -809,8 +809,8 @@
                 </control>
                 <control type="image">
                     <description>separator image</description>
-                    <posx>0</posx>
-                    <posy>575</posy>
+                    <left>0</left>
+                    <top>575</top>
                     <width>1100</width>
                     <height>1</height>
                     <colordiffuse>88FFFFFF</colordiffuse>
@@ -818,8 +818,8 @@
                 </control>
                 <control type="list" id="12">
                     <viewtype label="19031">list</viewtype>
-                    <posx>0</posx>
-                    <posy>55</posy>
+                    <left>0</left>
+                    <top>55</top>
                     <width>1100</width>
                     <height>520</height>
                     <onup>12</onup>
@@ -830,16 +830,16 @@
                     <scrolltime>200</scrolltime>
                     <itemlayout height="40">
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>1100</width>
                             <height>41</height>
                             <texture border="5">menuitemNF.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>1100</width>
                             <height>40</height>
                             <colordiffuse>33FFFFFF</colordiffuse>
@@ -847,8 +847,8 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>1100</width>
                             <height>40</height>
                             <colordiffuse>33FFFFFF</colordiffuse>
@@ -856,8 +856,8 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="label">
-                            <posx>25</posx>
-                            <posy>0</posy>
+                            <left>25</left>
+                            <top>0</top>
                             <width>100</width>
                             <height>40</height>
                             <font>cirrus_25</font>
@@ -868,16 +868,16 @@
                             <info>ListItem.StartTime</info>
                         </control>
                         <control type="image">
-                            <posx>110</posx>
-                            <posy>5</posy>
+                            <left>110</left>
+                            <top>5</top>
                             <width>30</width>
                             <height>30</height>
                             <info>ListItem.Icon</info>
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="label">
-                            <posx>150</posx>
-                            <posy>0</posy>
+                            <left>150</left>
+                            <top>0</top>
                             <width>190</width>
                             <height>35</height>
                             <font>cirrus_25</font>
@@ -888,8 +888,8 @@
                             <info>ListItem.ChannelName</info>
                         </control>
                         <control type="label">
-                            <posx>360</posx>
-                            <posy>0</posy>
+                            <left>360</left>
+                            <top>0</top>
                             <width>590</width>
                             <height>35</height>
                             <font>cirrus_25</font>
@@ -900,8 +900,8 @@
                             <info>ListItem.Label</info>
                         </control>
                         <control type="image">
-                            <posx>930</posx>
-                            <posy>10</posy>
+                            <left>930</left>
+                            <top>10</top>
                             <width>30</width>
                             <height>20</height>
                             <texture>PVR-IsRecording.png</texture>
@@ -909,8 +909,8 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="label">
-                            <posx>970</posx>
-                            <posy>0</posy>
+                            <left>970</left>
+                            <top>0</top>
                             <width>120</width>
                             <height>40</height>
                             <font>cirrus_25</font>
@@ -922,8 +922,8 @@
                             <visible>ListItem.IsRecording</visible>
                         </control>
                         <control type="image">
-                            <posx>940</posx>
-                            <posy>10</posy>
+                            <left>940</left>
+                            <top>10</top>
                             <width>20</width>
                             <height>20</height>
                             <texture>PVR-HasTimer.png</texture>
@@ -931,8 +931,8 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="label">
-                            <posx>970</posx>
-                            <posy>0</posy>
+                            <left>970</left>
+                            <top>0</top>
                             <width>120</width>
                             <height>40</height>
                             <font>cirrus_25</font>
@@ -946,16 +946,16 @@
                     </itemlayout>
                     <focusedlayout height="40">
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>1100</width>
                             <height>41</height>
                             <texture border="5">menuitemNF.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>1100</width>
                             <height>40</height>
                             <colordiffuse>33FFFFFF</colordiffuse>
@@ -964,8 +964,8 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>1100</width>
                             <height>40</height>
                             <colordiffuse>33FFFFFF</colordiffuse>
@@ -974,8 +974,8 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>1100</width>
                             <height>40</height>
                             <colordiffuse>88FFFFFF</colordiffuse>
@@ -984,8 +984,8 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>1100</width>
                             <height>40</height>
                             <colordiffuse>88FFFFFF</colordiffuse>
@@ -994,8 +994,8 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="label">
-                            <posx>25</posx>
-                            <posy>0</posy>
+                            <left>25</left>
+                            <top>0</top>
                             <width>100</width>
                             <height>40</height>
                             <font>cirrus_25</font>
@@ -1006,16 +1006,16 @@
                             <info>ListItem.StartTime</info>
                         </control>
                         <control type="image">
-                            <posx>110</posx>
-                            <posy>5</posy>
+                            <left>110</left>
+                            <top>5</top>
                             <width>30</width>
                             <height>30</height>
                             <info>ListItem.Icon</info>
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="label">
-                            <posx>150</posx>
-                            <posy>0</posy>
+                            <left>150</left>
+                            <top>0</top>
                             <width>190</width>
                             <height>35</height>
                             <font>cirrus_25</font>
@@ -1026,8 +1026,8 @@
                             <info>ListItem.ChannelName</info>
                         </control>
                         <control type="label">
-                            <posx>360</posx>
-                            <posy>0</posy>
+                            <left>360</left>
+                            <top>0</top>
                             <width>590</width>
                             <height>35</height>
                             <font>cirrus_25</font>
@@ -1038,8 +1038,8 @@
                             <info>ListItem.Label</info>
                         </control>
                         <control type="image">
-                            <posx>930</posx>
-                            <posy>10</posy>
+                            <left>930</left>
+                            <top>10</top>
                             <width>30</width>
                             <height>20</height>
                             <texture>PVR-IsRecording.png</texture>
@@ -1047,8 +1047,8 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="label">
-                            <posx>970</posx>
-                            <posy>0</posy>
+                            <left>970</left>
+                            <top>0</top>
                             <width>120</width>
                             <height>40</height>
                             <font>cirrus_25</font>
@@ -1060,8 +1060,8 @@
                             <visible>ListItem.IsRecording</visible>
                         </control>
                         <control type="image">
-                            <posx>940</posx>
-                            <posy>10</posy>
+                            <left>940</left>
+                            <top>10</top>
                             <width>20</width>
                             <height>20</height>
                             <texture>PVR-HasTimer.png</texture>
@@ -1069,8 +1069,8 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="label">
-                            <posx>970</posx>
-                            <posy>0</posy>
+                            <left>970</left>
+                            <top>0</top>
                             <width>120</width>
                             <height>40</height>
                             <font>cirrus_25</font>
@@ -1084,8 +1084,8 @@
                     </focusedlayout>
                 </control>
                 <control type="scrollbar" id="76">
-                    <posx>1105</posx>
-                    <posy>50</posy>
+                    <left>1105</left>
+                    <top>50</top>
                     <width>25</width>
                     <height>520</height>
                     <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
@@ -1104,8 +1104,8 @@
             </control>
             <control type="label">
                 <description>Page Count Label</description>
-                <posx>40r</posx>
-                <posy>30r</posy>
+                <left>40r</left>
+                <top>30r</top>
                 <width>500</width>
                 <height>20</height>
                 <font>cirrus_20</font>
@@ -1125,12 +1125,12 @@
             <visible>Control.IsVisible(13)</visible>
             <include>VisibleFadeEffect</include>
             <control type="group">
-                <posx>80</posx>
-                <posy>60</posy>
+                <left>80</left>
+                <top>60</top>
                 <control type="label">
                     <description>Date Time label</description>
-                    <posx>0</posx>
-                    <posy>20</posy>
+                    <left>0</left>
+                    <top>20</top>
                     <width>300</width>
                     <height>20</height>
                     <font>cirrus_30</font>
@@ -1142,8 +1142,8 @@
                 </control>
                 <control type="label">
                     <description>Title</description>
-                    <posx>35</posx>
-                    <posy>20</posy>
+                    <left>35</left>
+                    <top>20</top>
                     <width>600</width>
                     <height>20</height>
                     <font>cirrus_30</font>
@@ -1155,8 +1155,8 @@
                 </control>
                 <control type="label">
                     <description>Status header label</description>
-                    <posx>960</posx>
-                    <posy>20</posy>
+                    <left>960</left>
+                    <top>20</top>
                     <width>140</width>
                     <height>20</height>
                     <font>cirrus_30</font>
@@ -1168,8 +1168,8 @@
                 </control>
                 <control type="image">
                     <description>separator image</description>
-                    <posx>0</posx>
-                    <posy>54</posy>
+                    <left>0</left>
+                    <top>54</top>
                     <width>1100</width>
                     <height>1</height>
                     <colordiffuse>88FFFFFF</colordiffuse>
@@ -1177,8 +1177,8 @@
                 </control>
                 <control type="image">
                     <description>separator image</description>
-                    <posx>0</posx>
-                    <posy>575</posy>
+                    <left>0</left>
+                    <top>575</top>
                     <width>1100</width>
                     <height>1</height>
                     <colordiffuse>88FFFFFF</colordiffuse>
@@ -1186,8 +1186,8 @@
                 </control>
                 <control type="list" id="13">
                     <viewtype label="19029">list</viewtype>
-                    <posx>0</posx>
-                    <posy>55</posy>
+                    <left>0</left>
+                    <top>55</top>
                     <width>1100</width>
                     <height>520</height>
                     <onup>13</onup>
@@ -1198,16 +1198,16 @@
                     <scrolltime>200</scrolltime>
                     <itemlayout height="40">
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>1100</width>
                             <height>41</height>
                             <texture border="5">menuitemNF.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="label">
-                            <posx>75</posx>
-                            <posy>0</posy>
+                            <left>75</left>
+                            <top>0</top>
                             <width>280</width>
                             <height>40</height>
                             <font>cirrus_25</font>
@@ -1218,8 +1218,8 @@
                             <info>ListItem.Label2</info>
                         </control>
                         <control type="label">
-                            <posx>310</posx>
-                            <posy>0</posy>
+                            <left>310</left>
+                            <top>0</top>
                             <width>640</width>
                             <height>40</height>
                             <font>cirrus_25</font>
@@ -1230,8 +1230,8 @@
                             <info>ListItem.Label</info>
                         </control>
                         <control type="image">
-                            <posx>930</posx>
-                            <posy>10</posy>
+                            <left>930</left>
+                            <top>10</top>
                             <width>30</width>
                             <height>20</height>
                             <texture>PVR-IsRecording.png</texture>
@@ -1239,8 +1239,8 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="label">
-                            <posx>970</posx>
-                            <posy>0</posy>
+                            <left>970</left>
+                            <top>0</top>
                             <width>120</width>
                             <height>40</height>
                             <font>cirrus_25</font>
@@ -1252,8 +1252,8 @@
                             <visible>ListItem.IsRecording</visible>
                         </control>
                         <control type="image">
-                            <posx>940</posx>
-                            <posy>10</posy>
+                            <left>940</left>
+                            <top>10</top>
                             <width>20</width>
                             <height>20</height>
                             <texture>PVR-HasTimer.png</texture>
@@ -1261,8 +1261,8 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="label">
-                            <posx>970</posx>
-                            <posy>0</posy>
+                            <left>970</left>
+                            <top>0</top>
                             <width>120</width>
                             <height>40</height>
                             <font>cirrus_25</font>
@@ -1276,16 +1276,16 @@
                     </itemlayout>
                     <focusedlayout height="40">
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>1100</width>
                             <height>41</height>
                             <texture border="5">menuitemNF.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>1100</width>
                             <height>40</height>
                             <colordiffuse />
@@ -1294,8 +1294,8 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>1100</width>
                             <height>40</height>
                             <colordiffuse />
@@ -1304,8 +1304,8 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="label">
-                            <posx>75</posx>
-                            <posy>0</posy>
+                            <left>75</left>
+                            <top>0</top>
                             <width>280</width>
                             <height>40</height>
                             <font>cirrus_25</font>
@@ -1316,8 +1316,8 @@
                             <info>ListItem.Label2</info>
                         </control>
                         <control type="label">
-                            <posx>310</posx>
-                            <posy>0</posy>
+                            <left>310</left>
+                            <top>0</top>
                             <width>640</width>
                             <height>40</height>
                             <font>cirrus_25</font>
@@ -1328,8 +1328,8 @@
                             <info>ListItem.Label</info>
                         </control>
                         <control type="image">
-                            <posx>930</posx>
-                            <posy>10</posy>
+                            <left>930</left>
+                            <top>10</top>
                             <width>30</width>
                             <height>20</height>
                             <texture>PVR-IsRecording.png</texture>
@@ -1337,8 +1337,8 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="label">
-                            <posx>970</posx>
-                            <posy>0</posy>
+                            <left>970</left>
+                            <top>0</top>
                             <width>120</width>
                             <height>40</height>
                             <font>cirrus_25</font>
@@ -1350,8 +1350,8 @@
                             <visible>ListItem.IsRecording</visible>
                         </control>
                         <control type="image">
-                            <posx>940</posx>
-                            <posy>10</posy>
+                            <left>940</left>
+                            <top>10</top>
                             <width>20</width>
                             <height>20</height>
                             <texture>PVR-HasTimer.png</texture>
@@ -1359,8 +1359,8 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="label">
-                            <posx>970</posx>
-                            <posy>0</posy>
+                            <left>970</left>
+                            <top>0</top>
                             <width>120</width>
                             <height>40</height>
                             <font>cirrus_25</font>
@@ -1374,8 +1374,8 @@
                     </focusedlayout>
                 </control>
                 <control type="scrollbar" id="75">
-                    <posx>1105</posx>
-                    <posy>50</posy>
+                    <left>1105</left>
+                    <top>50</top>
                     <width>25</width>
                     <height>520</height>
                     <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
@@ -1394,8 +1394,8 @@
             </control>
             <control type="label">
                 <description>Page Count Label</description>
-                <posx>40r</posx>
-                <posy>30r</posy>
+                <left>40r</left>
+                <top>30r</top>
                 <width>500</width>
                 <height>20</height>
                 <font>cirrus_20</font>

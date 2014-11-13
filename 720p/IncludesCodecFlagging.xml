@@ -495,8 +495,8 @@
     <!-- Audio Language Flags -->
     <include name="VideoLangFlaggingConditionsAudiotrackWhite">
         <control type="group">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>75</width>
             <height>28</height>
             <visible>substring(listitem.filename,.en.) | substring(listitem.filename,.de.) | substring(listitem.filename,.es.) | substring(listitem.filename,.fr.) | substring(listitem.filename,.it.)</visible>
@@ -557,8 +557,8 @@
     </include>
     <include name="VideoLangFlaggingConditionsAudiotrackWhite2">
         <control type="group">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>75</width>
             <height>28</height>
             <control type="image">

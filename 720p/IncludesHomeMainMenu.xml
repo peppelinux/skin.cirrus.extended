@@ -2,8 +2,8 @@
 <includes>
   <include name="HomeMainMenu">
     <control type="image">
-      <posx>370</posx>
-      <posy>630r</posy>
+      <left>370</left>
+      <top>630r</top>
       <width>540</width>
       <height>303</height>
       <texture>black-back.png</texture>
@@ -17,8 +17,8 @@
       <visible>!Container(9000).HasFocus(24)</visible>
     </control>
     <control type="videowindow">
-      <posx>382</posx>
-      <posy>104</posy>
+      <left>382</left>
+      <top>104</top>
       <width>516</width>
       <height>275</height>
       <align>center</align>
@@ -27,16 +27,16 @@
     </control>
     <control type="group">
       <visible>Skin.HasSetting(cdartonhome)</visible>
-      <posx>0</posx>
-      <posy>0</posy>
+      <left>0</left>
+      <top>0</top>
       <!-- CD Animation -->
       <control type="image">
         <animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
         <animation effect="rotate" end="-360" center="auto" time="5000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
         <width>99</width>
         <height>99</height>
-        <posx>1155</posx>
-        <posy>416</posy>
+        <left>1155</left>
+        <top>416</top>
         <texture fallback="cdartdefault.png">$INFO[Player.FolderPath]cdart.png</texture>
         <aspectratio align="bottom">keep</aspectratio>
         <visible>Skin.HasSetting(cdartonhome)</visible>
@@ -49,8 +49,8 @@
         <animation effect="rotate" end="-360" center="auto" time="5000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
         <width>99</width>
         <height>99</height>
-        <posx>1155</posx>
-        <posy>416</posy>
+        <left>1155</left>
+        <top>416</top>
         <texture fallback="cdartdefault 2b.png">$INFO[Player.FolderPath]cdart.png</texture>
         <aspectratio align="bottom">keep</aspectratio>
         <visible>Skin.HasSetting(cdartonhome)</visible>
@@ -63,8 +63,8 @@
         <animation effect="rotate" end="-360" center="auto" time="5000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
         <width>99</width>
         <height>99</height>
-        <posx>1155</posx>
-        <posy>416</posy>
+        <left>1155</left>
+        <top>416</top>
         <texture fallback="cdartdefault 3w.png">$INFO[Player.FolderPath]cdart.png</texture>
         <aspectratio align="bottom">keep</aspectratio>
         <visible>Skin.HasSetting(cdartonhome)</visible>
@@ -77,8 +77,8 @@
         <animation effect="rotate" end="-360" center="auto" time="5000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
         <width>99</width>
         <height>99</height>
-        <posx>1155</posx>
-        <posy>416</posy>
+        <left>1155</left>
+        <top>416</top>
         <imagepath background="true">special://skin/extras/defaultcdarts</imagepath>
         <aspectratio align="bottom">keep</aspectratio>
         <fadetime>FanartCrossfadeTime</fadetime>
@@ -94,11 +94,11 @@
       <visible>Skin.HasSetting(cdartonhome)</visible>
       <visible>Player.HasAudio</visible>
       <visible>!Skin.HasSetting(homepageNowplayingInfo)</visible>
-      <posx>0</posx>
-      <posy>0</posy>
+      <left>0</left>
+      <top>0</top>
       <control type="image">
-        <posx>180r</posx>
-        <posy>410</posy>
+        <left>180r</left>
+        <top>410</top>
         <width>110</width>
         <height>110</height>
         <aspectratio aligny="bottom">stretch</aspectratio>
@@ -112,8 +112,8 @@
     <!-- !!! MAIN MENU !!! -->
     <control type="wraplist" id="9000">
       <hitrect x="50" y="50" w="330" h="620" />
-      <posx>-20</posx>
-      <posy>340</posy>
+      <left>-20</left>
+      <top>340</top>
       <width>1000</width>
       <height>350</height>
       <onleft>10</onleft>
@@ -139,8 +139,8 @@
       <animation effect="slide" start="0" end="-500" time="300" condition="ControlGroup(9001).HasFocus">conditional</animation>
       <itemlayout height="70" width="1000">
         <control type="label">
-          <posx>40</posx>
-          <posy>21</posy>
+          <left>40</left>
+          <top>21</top>
           <width>900</width>
           <height>40</height>
           <font>cirrus_50</font>
@@ -152,16 +152,16 @@
       </itemlayout>
       <focusedlayout height="70" width="1000">
         <control type="image">
-          <posx>-400</posx>
-          <posy>5</posy>
+          <left>-400</left>
+          <top>5</top>
           <width>900</width>
           <height>70</height>
           <texture flipx="true">recentlyaddeddiffuse.png</texture>
           <aspectratio>stretch</aspectratio>
         </control>
         <control type="label">
-          <posx>40</posx>
-          <posy>21</posy>
+          <left>40</left>
+          <top>21</top>
           <width>380</width>
           <height>40</height>
           <font>cirrus_50</font>

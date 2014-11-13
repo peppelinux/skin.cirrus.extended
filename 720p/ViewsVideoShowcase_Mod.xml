@@ -11,14 +11,14 @@
             <animation effect="slide" start="0,0" end="0,-100" time="500" delay="2000" reversible="false">Visible</animation>
             <animation effect="slide" time="300" tween="circle" easing="out" start="0,0" end="0,0">WindowOpen</animation>
             <animation effect="slide" time="200" tween="circle" easing="in" start="0,500" end="0,600">WindowClose</animation>
-            <posx>0</posx>
-            <posy>100</posy>
+            <left>0</left>
+            <top>100</top>
 
             <visible>Control.IsVisible(721) + Control.HasFocus(721)</visible>
             <control type="image">
                 <!-- bottom bar background -->
-                <posx>527</posx>
-                <posy>290</posy>
+                <left>527</left>
+                <top>290</top>
                 <width>170</width>
                 <height>170</height>
                 <aspectratio>stretch</aspectratio>
@@ -32,8 +32,8 @@
 
         <control type="image">
             <!-- Movies und Sets Plot Back -->
-            <posx>295</posx>
-            <posy>-25</posy>
+            <left>295</left>
+            <top>-25</top>
             <width>490</width>
             <height>320</height>
             <aspectratio>stretch</aspectratio>
@@ -48,8 +48,8 @@
 
         <control type="image">
             <!-- TVShows Plot Back -->
-            <posx>45</posx>
-            <posy>-10</posy>
+            <left>45</left>
+            <top>-10</top>
             <width>400</width>
             <height>260</height>
             <aspectratio>stretch</aspectratio>
@@ -64,8 +64,8 @@
 
         <control type="image">
             <!-- TVSeasons Plot Back -->
-            <posx>45</posx>
-            <posy>-10</posy>
+            <left>45</left>
+            <top>-10</top>
             <width>400</width>
             <height>260</height>
             <aspectratio>stretch</aspectratio>
@@ -80,8 +80,8 @@
 
         <control type="image">
             <!-- Fenster zweier rechts für alles -->
-            <posx>1050</posx>
-            <posy>-10</posy>
+            <left>1050</left>
+            <top>-10</top>
             <width>200</width>
             <height>360</height>
             <aspectratio>stretch</aspectratio>
@@ -95,8 +95,8 @@
 
         <control type="image">
             <!-- Fenster zweier links für Movies und Sets -->
-            <posx>66</posx>
-            <posy>-10</posy>
+            <left>66</left>
+            <top>-10</top>
             <width>211</width>
             <height>383</height>
             <aspectratio>stretch</aspectratio>
@@ -112,8 +112,8 @@
 
         <control type="image">
             <!-- Fenster rechts oben -->
-            <posx>1060</posx>
-            <posy>75</posy>
+            <left>1060</left>
+            <top>75</top>
             <width>190</width>
             <height>108</height>
             <aspectratio>stretch</aspectratio>
@@ -127,8 +127,8 @@
             <visible>Control.IsVisible(721)</visible>
         </control>
         <control type="image"> 
-            <posx>880</posx>
-            <posy>-10</posy>
+            <left>880</left>
+            <top>-10</top>
             <width>200</width>
             <height>260</height>
             <aspectratio>stretch</aspectratio>
@@ -141,8 +141,8 @@
         </control>
         <!-- Extrathumbs für Movies -->
         <control type="multiimage">
-            <posx>75</posx>
-            <posy>90</posy>
+            <left>75</left>
+            <top>90</top>
             <width>185</width>
             <height>95</height>
             <aspectratio>stretch</aspectratio>
@@ -157,8 +157,8 @@
             <visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>
         </control>
         <control type="multiimage">
-            <posx>43</posx>
-            <posy>270</posy>
+            <left>43</left>
+            <top>270</top>
             <width>185</width>
             <height>93</height>
             <aspectratio>stretch</aspectratio>
@@ -178,8 +178,8 @@
 
         <control type="image">
             <!-- Fenster Trailer -->
-            <posx>43</posx>
-            <posy>-20</posy>
+            <left>43</left>
+            <top>-20</top>
             <width>360</width>
             <height>360</height>
             <aspectratio>stretch</aspectratio>
@@ -189,8 +189,8 @@
             <visible>Player.HasVideo + Skin.HasSetting(videowindowglobal)</visible>
         </control>
         <control type="image">
-            <posx>33</posx>
-            <posy>225</posy>
+            <left>33</left>
+            <top>225</top>
             <width>150</width>
             <height>150</height>
             <aspectratio>stretch</aspectratio>
@@ -214,12 +214,12 @@
                 <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300"/>
                 <effect type="fade" start="100" end="0" time="300"/>
             </animation> 
-            <posx>0</posx>
-            <posy>510</posy>
+            <left>0</left>
+            <top>510</top>
             <control type="fixedlist" id="721">
                 <visible>Container.Content(Movies) | Window.IsVisible(VideoFiles) | Container.Content(TVShows) | Container.Content(Seasons)</visible>
-                <posx>-20</posx>
-                <posy>-250</posy>
+                <left>-20</left>
+                <top>-250</top>
                 <width>1600</width>
                 <height>400</height>
                 <onleft>721</onleft>
@@ -235,8 +235,8 @@
                 <!-- ITEM LAYOUT FOR MOVIES,TVSHOWS,SEASONS -->
                 <itemlayout height="310" width="120">
                     <control type="image">
-                        <posx>-26</posx>
-                        <posy>155</posy>
+                        <left>-26</left>
+                        <top>155</top>
                         <width>120</width>
                         <height>175</height>
                         <aspectratio>stretch</aspectratio>
@@ -245,8 +245,8 @@
                         <bordersize>6</bordersize>
                     </control>
                     <control type="image">
-                        <posx>-26</posx>
-                        <posy>332</posy>
+                        <left>-26</left>
+                        <top>332</top>
                         <width>120</width>
                         <height>175</height>
                         <aspectratio>stretch</aspectratio>
@@ -261,11 +261,11 @@
                         <animation type="Focus" reversible="false">
                             <effect type="zoom" center="55,116" start="100" end="130" time="900" easing="out" tween="Cubic" reversible="false"/>
                         </animation>
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <control type="image">
-                            <posx>-35</posx>
-                            <posy>110</posy>
+                            <left>-35</left>
+                            <top>110</top>
                             <width>145</width>
                             <height>200</height>
                             <aspectratio>stretch</aspectratio>
@@ -276,8 +276,8 @@
 
                         <control type="image">
                             <!-- großes Cover Spiegel -->
-                            <posx>-35</posx>
-                            <posy>310</posy>
+                            <left>-35</left>
+                            <top>310</top>
                             <width>145</width>
                             <height>200</height>
                             <aspectratio>stretch</aspectratio>
@@ -288,8 +288,8 @@
                             <colordiffuse>ff444444</colordiffuse>
                         </control>
                         <control type="image">
-                            <posx>-35</posx>
-                            <posy>110</posy>
+                            <left>-35</left>
+                            <top>110</top>
                             <width>145</width>
                             <height>200</height>
                             <aspectratio>stretch</aspectratio>
@@ -299,8 +299,8 @@
 
                         <control type="image">
                             <!-- großes Cover Spiegel -->
-                            <posx>-35</posx>
-                            <posy>310</posy>
+                            <left>-35</left>
+                            <top>310</top>
                             <width>145</width>
                             <height>200</height>
                             <aspectratio>stretch</aspectratio>
@@ -311,8 +311,8 @@
 
                         <control type="image">
                             <!-- Gesehen großes Cover -->
-                            <posx>85</posx>
-                            <posy>285</posy>
+                            <left>85</left>
+                            <top>285</top>
                             <width>35</width>
                             <height>35</height>
                             <aspectratio>keep</aspectratio>
@@ -324,11 +324,11 @@
                 <!-- ITEM LAYOUT FOR EPISODES (thumbs rather than posters) -->
                 <itemlayout condition="Container.Content(Episodes)" height="112" width="200">
                     <control type="group">
-                        <posx>-440</posx>
-                        <posy>30</posy>
+                        <left>-440</left>
+                        <top>30</top>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>15</posy>
+                            <left>0</left>
+                            <top>15</top>
                             <width>200</width>
                             <height>130</height>
                             <aspectratio>stretch</aspectratio>
@@ -338,11 +338,11 @@
                         </control>
                     </control>
                     <control type="group">
-                        <posx>-440</posx>
-                        <posy>160</posy>
+                        <left>-440</left>
+                        <top>160</top>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>15</posy>
+                            <left>0</left>
+                            <top>15</top>
                             <width>200</width>
                             <height>130</height>
                             <aspectratio>stretch</aspectratio>
@@ -353,8 +353,8 @@
                         </control>
                     </control>
                     <control type="image">
-                        <posx>280</posx>
-                        <posy>110</posy>
+                        <left>280</left>
+                        <top>110</top>
                         <width>35</width>
                         <height>35</height>
                         <aspectratio>keep</aspectratio>
@@ -367,11 +367,11 @@
                         <animation type="Focus" reversible="false">
                             <effect type="zoom" center="-345,100" start="100" end="170" time="300" easing="out" tween="cubic" reversible="false"/>
                         </animation>
-                        <posx>-440</posx>
-                        <posy>30</posy>
+                        <left>-440</left>
+                        <top>30</top>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>15</posy>
+                            <left>0</left>
+                            <top>15</top>
                             <width>200</width>
                             <height>112</height>
                             <aspectratio>stretch</aspectratio>
@@ -380,8 +380,8 @@
                             <bordersize>6</bordersize>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>125</posy>
+                            <left>0</left>
+                            <top>125</top>
                             <width>200</width>
                             <height>112</height>
                             <aspectratio>stretch</aspectratio>
@@ -392,8 +392,8 @@
                             <colordiffuse>ff444444</colordiffuse>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>15</posy>
+                            <left>0</left>
+                            <top>15</top>
                             <width>200</width>
                             <height>112</height>
                             <aspectratio>stretch</aspectratio>
@@ -401,8 +401,8 @@
                             <bordersize>6</bordersize>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>125</posy>
+                            <left>0</left>
+                            <top>125</top>
                             <width>200</width>
                             <height>112</height>
                             <aspectratio>stretch</aspectratio>
@@ -411,8 +411,8 @@
                             <colordiffuse>ff444444</colordiffuse>
                         </control>
                         <control type="image">
-                            <posx>170</posx>
-                            <posy>250</posy>
+                            <left>170</left>
+                            <top>250</top>
                             <width>20</width>
                             <height>20</height>
                             <aspectratio>keep</aspectratio>
@@ -424,8 +424,8 @@
             </control>
 
             <control type="scrollbar" id="60">
-                <posx>-10</posx>
-                <posy>110</posy>
+                <left>-10</left>
+                <top>110</top>
                 <width>1300</width>
                 <height>35</height>
                 <texturesliderbackground border="14,0,14,0">ScrollBarV.png</texturesliderbackground>
@@ -449,16 +449,16 @@
                 <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300"/>
                 <effect type="fade" start="100" end="0" time="300"/>
             </animation> 
-            <posx>0</posx>
-            <posy>100</posy>
+            <left>0</left>
+            <top>100</top>
             <visible>Control.IsVisible(721) + !Window.IsVisible(VideoFiles) + Container.Content(Movies) + !Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Episodes)</visible>
             <control type="group">
-                <posx>80</posx>
-                <posy>20</posy>
+                <left>80</left>
+                <top>20</top>
                 <visible>Control.IsVisible(721) + Container.Content(Movies)</visible>
                 <control type="image"> 
-                    <posx>-80</posx>
-                    <posy>-120</posy>
+                    <left>-80</left>
+                    <top>-120</top>
                     <width>1280</width>
                     <height>720</height>
                     <aspectratio>stretch</aspectratio>
@@ -468,8 +468,8 @@
                 </control>
                 <!-- ende -->
                 <control type="fadelabel">
-                    <posx>230</posx>
-                    <posy>-37</posy>
+                    <left>230</left>
+                    <top>-37</top>
                     <width>455</width>
                     <height>30</height>
                     <font>cirrus_26</font>
@@ -489,8 +489,8 @@
                     <visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>
                 </control>
                 <control type="fadelabel">
-                    <posx>465</posx>
-                    <posy>548</posy>
+                    <left>465</left>
+                    <top>548</top>
                     <width>170</width>
                     <height>30</height>
                     <font>cirrus_24</font>
@@ -506,8 +506,8 @@
 
                 <control type="image">
                     <!-- Top250IMDB Mod 1.2 -->
-                    <posx>350</posx>
-                    <posy>547</posy>
+                    <left>350</left>
+                    <top>547</top>
                     <width>88</width>
                     <height>30</height>
                     <aspectratio aligny="bottom">stretch</aspectratio>
@@ -520,8 +520,8 @@
                 <control type="label">
                     <!-- Top250IMDB Mod 1.2 -->
                     <description>top250</description>
-                    <posx>348</posx>
-                    <posy>545</posy>
+                    <left>348</left>
+                    <top>545</top>
                     <width>130</width>
                     <height>30</height>
                     <label>$INFO[ListItem.Top250]</label>
@@ -534,8 +534,8 @@
                 <control type="textbox">
                     <!-- Plotoutline Mod -->
                     <description>Movie Plot</description>
-                    <posx>230</posx>
-                    <posy>-2</posy>
+                    <left>230</left>
+                    <top>-2</top>
                     <width>459</width>
                     <height>160</height>
                     <font>cirrus_16</font>
@@ -553,8 +553,8 @@
                 </control>
                 <control type="textbox">
                     <description>Movie PlotOutline</description>
-                    <posx>230</posx>
-                    <posy>-2</posy>
+                    <left>230</left>
+                    <top>-2</top>
                     <width>459</width>
                     <height>160</height>
                     <font>cirrus_16</font>
@@ -572,12 +572,12 @@
                 </control>
             </control>		
             <control type="group">
-                <posx>-60</posx>
+                <left>-60</left>
 
                 <control type="videowindow" id="8">
                     <!-- Trailer -->
-                    <posx>113</posx>
-                    <posy>27</posy>
+                    <left>113</left>
+                    <top>27</top>
                     <width>340</width>
                     <height>200</height>
                     <align>right</align>
@@ -586,8 +586,8 @@
                 </control>
                 <control type="label">
                     <description>Title label</description>
-                    <posx>117</posx>
-                    <posy>195</posy>
+                    <left>117</left>
+                    <top>195</top>
                     <height>20</height>
                     <width>310</width>
                     <label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year,[COLOR=accent] (,)[/COLOR]]</label>
@@ -606,8 +606,8 @@
                 <control type="image">
                     <width>150</width>
                     <height>75</height>
-                    <posx>967</posx>
-                    <posy>50</posy>
+                    <left>967</left>
+                    <top>50</top>
                     <aspectratio align="center">keep</aspectratio>
                     <texture border="2">$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
                     <visible>!Container(721).OnNext + !Container(721).OnPrevious + Container.Content(movies)</visible>
@@ -620,8 +620,8 @@
                 <control type="image">
                     <!-- Movie Logo -->
                     <description>Movie Logo</description>
-                    <posx>1135</posx>
-                    <posy>-50</posy>
+                    <left>1135</left>
+                    <top>-50</top>
                     <width>180</width>
                     <height>120</height>
 
@@ -637,8 +637,8 @@
                 </control>
                 <control type="label">
                     <description>Movie Set Genre</description>
-                    <posx>1145</posx>
-                    <posy>-3</posy>
+                    <left>1145</left>
+                    <top>-3</top>
                     <width>160</width>
                     <height>120</height>
                     <textcolor>white</textcolor>
@@ -656,8 +656,8 @@
                 <!-- Changes Ending -->
                 <control type="grouplist">
                     <description>Media Codec Flagging Images</description>
-                    <posx>80</posx>
-                    <posy>568</posy>
+                    <left>80</left>
+                    <top>568</top>
                     <width>500</width>
                     <height>550</height>
                     <align>left</align>
@@ -670,8 +670,8 @@
             </control>
             <control type="grouplist">
                 <description>MPAA Rating Flagging Images</description>
-                <posx>920</posx>
-                <posy>567</posy>
+                <left>920</left>
+                <top>567</top>
                 <width>145</width>
                 <align>left</align>
                 <itemgap>0</itemgap>
@@ -681,8 +681,8 @@
             </control>
             <control type="image">
                 <description>Rating value</description>
-                <posx>1085</posx>
-                <posy>566</posy>
+                <left>1085</left>
+                <top>566</top>
                 <align>left</align>
                 <width>180</width>
                 <height>35</height>
@@ -691,8 +691,8 @@
             </control>
             <control type="label">
                 <description>Rating value</description>
-                <posx>860</posx>
-                <posy>568</posy>
+                <left>860</left>
+                <top>568</top>
                 <width>183</width>
                 <height>25</height>
                 <textcolor>white</textcolor>
@@ -705,16 +705,16 @@
             <control type="image">
                 <width>84</width>
                 <height>31</height>
-                <posx>770</posx>
-                <posy>568</posy>
+                <left>770</left>
+                <top>568</top>
                 <aspectratio align="center">keep</aspectratio>
                 <texture>imdb-logo.png</texture>
                 <visible>!ListItem.IsFolder + !IsEmpty(Listitem.Rating)</visible>
             </control>
             <control type="image">
-                <posx>525</posx>
+                <left>525</left>
 
-                <posy>270</posy>
+                <top>270</top>
                 <width>91</width>
                 <height>91</height>
                 <aspectratio>keep</aspectratio>
@@ -733,8 +733,8 @@
 
         <!-- Movie Sets Mod Anfang -->
         <control type="label">
-            <posx>0</posx>
-            <posy>675</posy>
+            <left>0</left>
+            <top>675</top>
             <width>1280</width>
             <height>30</height>
             <font>cirrus_20</font>
@@ -749,8 +749,8 @@
         </control>  
         <control type="textbox">
             <description>Plot</description>
-            <posx>310</posx>
-            <posy>118</posy>
+            <left>310</left>
+            <top>118</top>
             <width>459</width>
             <height>160</height>
             <font>cirrus_16</font>
@@ -771,8 +771,8 @@
 
         <control type="image">
             <!-- Movie Sets Cover --> 
-            <posx>87</posx>
-            <posy>80</posy>
+            <left>87</left>
+            <top>80</top>
             <width>80</width>
             <height>112</height>
             <aspectratio>stretch</aspectratio>
@@ -787,8 +787,8 @@
             <visible>!Skin.HasSetting(VideoLibraryMovieExtrathumbs)</visible>
         </control>
         <control type="image">
-            <posx>167</posx>
-            <posy>80</posy>
+            <left>167</left>
+            <top>80</top>
             <width>80</width>
             <height>112</height>
             <aspectratio>stretch</aspectratio>
@@ -803,8 +803,8 @@
             <visible>!Skin.HasSetting(VideoLibraryMovieExtrathumbs)</visible>
         </control>
         <control type="image">
-            <posx>55</posx>
-            <posy>260</posy>
+            <left>55</left>
+            <top>260</top>
             <width>80</width>
             <height>112</height>
             <aspectratio>stretch</aspectratio>
@@ -820,8 +820,8 @@
             <visible>!Skin.HasSetting(VideoLibraryMovieExtrathumbs)</visible>
         </control>
         <control type="image">
-            <posx>135</posx>
-            <posy>260</posy>
+            <left>135</left>
+            <top>260</top>
             <width>80</width>
             <height>112</height>
             <aspectratio>stretch</aspectratio>
@@ -837,8 +837,8 @@
             <visible>!Skin.HasSetting(VideoLibraryMovieExtrathumbs)</visible>
         </control>
         <control type="image">
-            <posx>880</posx>
-            <posy>137</posy>
+            <left>880</left>
+            <top>137</top>
             <width>200</width>
             <height>110</height>
             <aspectratio>stretch</aspectratio>
@@ -852,8 +852,8 @@
             <visible>Control.IsVisible(721) + Container.Content(Sets)</visible>
         </control>
         <control type="image">
-            <posx>750</posx>
-            <posy>313</posy>
+            <left>750</left>
+            <top>313</top>
             <width>300</width>
             <height>180</height>
             <aspectratio>stretch</aspectratio>
@@ -867,8 +867,8 @@
         <!-- WHEN INFO IS NOT HIDDEN TV SHOWS -->
         <!-- Update 1.1 Next Aired + Alignment Correction -->
         <control type="group">
-            <posx>0</posx>
-            <posy>100</posy>
+            <left>0</left>
+            <top>100</top>
             <visible>Control.IsVisible(721) + !Window.IsVisible(VideoFiles) + ![ListItem.IsFolder + Container.Content(Movies)] + !Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(Seasons)</visible>
             <animation type="WindowOpen" reversible="false">
                 <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
@@ -879,12 +879,12 @@
                 <effect type="fade" start="100" end="0" time="300"/>
             </animation> 
             <control type="group">
-                <posx>80</posx>
-                <posy>0</posy>
+                <left>80</left>
+                <top>0</top>
                 <visible>Container.Content(TVShows)</visible>
                 <control type="image"> 
-                    <posx>-80</posx>
-                    <posy>-100</posy>
+                    <left>-80</left>
+                    <top>-100</top>
                     <width>1280</width>
                     <height>720</height>
                     <aspectratio>stretch</aspectratio>
@@ -894,8 +894,8 @@
                 </control>
                 <!-- ende -->
                 <control type="largeimage" id="7914"> 
-                    <posx>999</posx> 
-                    <posy>-14</posy> 
+                    <left>999</left> 
+                    <top>-14</top> 
                     <width>170</width> 
                     <height>100</height>
 
@@ -911,8 +911,8 @@
 
                 <control type="fadelabel">
                     <!--Serien Titel-->
-                    <posx>-22</posx>
-                    <posy>-24</posy>
+                    <left>-22</left>
+                    <top>-24</top>
                     <width>375</width>
                     <height>30</height>
                     <font>cirrus_26</font>
@@ -933,8 +933,8 @@
                 </control>
                 <control type="label">
                     <description>Nextaired</description>
-                    <posx>755</posx>
-                    <posy>555</posy>
+                    <left>755</left>
+                    <top>555</top>
                     <width>250</width>
                     <height>25</height>
                     <label>$VAR[NextAired]</label>
@@ -945,8 +945,8 @@
                     <visible>!IsEmpty(ListItem.Thumb)</visible> 
                 </control>	
                 <control type="label">
-                    <posx>-20</posx>
-                    <posy>555</posy>
+                    <left>-20</left>
+                    <top>555</top>
                     <width>470</width>
                     <height>30</height>
                     <font>cirrus_22</font>
@@ -959,8 +959,8 @@
                     <pauseatend>2000</pauseatend>
                 </control>
                 <control type="fadelabel">
-                    <posx>-20</posx>
-                    <posy>585</posy>
+                    <left>-20</left>
+                    <top>585</top>
                     <width>470</width>
                     <height>30</height>
                     <font>cirrus_22</font>
@@ -977,8 +977,8 @@
                 <control type="textbox">
                     <!--Beschreibung Serien -->
                     <description>Serien Plot</description>
-                    <posx>-22</posx>
-                    <posy>12</posy>
+                    <left>-22</left>
+                    <top>12</top>
                     <width>375</width>
                     <height>115</height>
                     <font>cirrus_16</font>
@@ -997,10 +997,10 @@
             </control>
             <!--Beschreibung Serien ende -->
             <control type="group">
-                <posx>-60</posx>
+                <left>-60</left>
                 <control type="image"> 
-                    <posx>940</posx>
-                    <posy>-110</posy>
+                    <left>940</left>
+                    <top>-110</top>
                     <width>200</width>
                     <height>260</height>
                     <aspectratio>stretch</aspectratio>
@@ -1013,8 +1013,8 @@
                     <visible>!IsEmpty(ListItem.Thumb)</visible> 
                 </control>
                 <control type="image">
-                    <posx>940</posx>
-                    <posy>37</posy>
+                    <left>940</left>
+                    <top>37</top>
                     <width>200</width>
                     <height>110</height>
                     <aspectratio aligny="bottom">stretch</aspectratio>
@@ -1031,8 +1031,8 @@
                 </control>
                 <control type="label">
                     <description>Episodes</description>
-                    <posx>895</posx>
-                    <posy>586</posy>
+                    <left>895</left>
+                    <top>586</top>
                     <width>640</width>
                     <height>25</height>
                     <label fallback="416">[COLOR=accent]$LOCALIZE[20360]: [/COLOR]$INFO[listitem.episode] [COLOR=grey] ($INFO[ListItem.Property(WatchedEpisodes),, $LOCALIZE[16102]] - $INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101]])[/COLOR]</label>
@@ -1045,8 +1045,8 @@
 
             <control type="videowindow" id="8">
                 <!-- Trailer -->
-                <posx>53</posx>
-                <posy>27</posy>
+                <left>53</left>
+                <top>27</top>
                 <width>340</width>
                 <height>200</height>
                 <align>right</align>
@@ -1055,8 +1055,8 @@
             </control>
             <control type="label">
                 <description>Title label</description>
-                <posx>57</posx>
-                <posy>195</posy>
+                <left>57</left>
+                <top>195</top>
                 <height>20</height>
                 <width>310</width>
                 <label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year,[COLOR=accent] (,)[/COLOR]]</label>
@@ -1075,8 +1075,8 @@
             <control type="image">
                 <width>150</width>
                 <height>50</height>
-                <posx>30</posx>
-                <posy>200</posy>
+                <left>30</left>
+                <top>200</top>
                 <aspectratio align="center">keep</aspectratio>
                 <texture diffuse="maskflags.png">$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
                 <visible>!Container(721).OnNext + !Container(721).OnPrevious</visible>
@@ -1089,8 +1089,8 @@
         </control>
         <!-- WHEN INFO IS NOT HIDDEN SEASONS -->
         <control type="group">
-            <posx>0</posx>
-            <posy>100</posy>
+            <left>0</left>
+            <top>100</top>
             <visible>Control.IsVisible(721) + !Window.IsVisible(VideoFiles) + ![ListItem.IsFolder + Container.Content(Movies)] + !Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(TVShows)</visible>
             <animation type="WindowOpen" reversible="false">
                 <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
@@ -1101,8 +1101,8 @@
                 <effect type="fade" start="100" end="0" time="300"/>
             </animation> 
             <control type="image">
-                <posx>-100</posx>
-                <posy>-10</posy>
+                <left>-100</left>
+                <top>-10</top>
                 <width>1480</width>
                 <height>400</height>
 
@@ -1110,12 +1110,12 @@
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="group">
-                <posx>80</posx>
-                <posy>20</posy>
+                <left>80</left>
+                <top>20</top>
                 <visible>Container.Content(Seasons)</visible>
                 <control type="image"> 
-                    <posx>-80</posx>
-                    <posy>-120</posy>
+                    <left>-80</left>
+                    <top>-120</top>
                     <width>1280</width>
                     <height>720</height>
                     <aspectratio>stretch</aspectratio>
@@ -1125,8 +1125,8 @@
                 </control>
                 <!-- ende -->
                 <control type="largeimage" id="7914"> 
-                    <posx>997</posx> 
-                    <posy>-34</posy> 
+                    <left>997</left> 
+                    <top>-34</top> 
                     <width>170</width> 
                     <height>100</height> 
 
@@ -1140,8 +1140,8 @@
                     <animation effect="rotate" time="0" delay="0" start="0" end="-8" condition="true">Conditional</animation>
                 </control>
                 <control type="image"> 
-                    <posx>800</posx>
-                    <posy>-130</posy>
+                    <left>800</left>
+                    <top>-130</top>
                     <width>200</width>
                     <height>260</height>
                     <aspectratio>stretch</aspectratio>
@@ -1153,8 +1153,8 @@
                     <visible>Skin.HasSetting(seasonthumbs)</visible>
                 </control>
                 <control type="image">
-                    <posx>800</posx>
-                    <posy>17</posy>
+                    <left>800</left>
+                    <top>17</top>
                     <width>200</width>
                     <height>110</height>
                     <aspectratio aligny="bottom">stretch</aspectratio>
@@ -1168,8 +1168,8 @@
                     <visible>Skin.HasSetting(seasonthumbs)</visible>
                 </control>
                 <control type="image"> 
-                    <posx>660</posx>
-                    <posy>-130</posy>
+                    <left>660</left>
+                    <top>-130</top>
                     <width>290</width>
                     <height>90</height>
                     <aspectratio>stretch</aspectratio>
@@ -1180,8 +1180,8 @@
                     <animation effect="fade" start="100" end="0" easing="out" time="200" delay="200" reversible="false">WindowClose</animation>
                 </control>
                 <control type="image"> 
-                    <posx>660</posx> 
-                    <posy>-104</posy> 
+                    <left>660</left> 
+                    <top>-104</top> 
                     <width>290</width>
                     <height>65</height>
                     <aspectratio>stretch</aspectratio>
@@ -1196,8 +1196,8 @@
 
                 <control type="fadelabel">
                     <!-- title only visible if logo doesnt exits -->
-                    <posx>-22</posx>
-                    <posy>-41</posy>
+                    <left>-22</left>
+                    <top>-41</top>
                     <width>470</width>
                     <height>30</height>
                     <font>cirrus_26</font>
@@ -1215,8 +1215,8 @@
                 </control>
 
                 <control type="image">
-                    <posx>799</posx>
-                    <posy>18</posy>
+                    <left>799</left>
+                    <top>18</top>
                     <width>200</width>
                     <height>110</height>
                     <aspectratio aligny="bottom">stretch</aspectratio>
@@ -1236,8 +1236,8 @@
                 <control type="textbox">
                     <!--Beschreibung Serien -->
                     <description>Movie Plot</description>
-                    <posx>-22</posx>
-                    <posy>-5</posy>
+                    <left>-22</left>
+                    <top>-5</top>
                     <width>375</width>
                     <height>115</height>
                     <font>cirrus_16</font>
@@ -1254,8 +1254,8 @@
                 </control>
                 <control type="label"> 
                     <description>Studio</description>
-                    <posx>10</posx>
-                    <posy>560</posy>
+                    <left>10</left>
+                    <top>560</top>
                     <width>470</width>
                     <height>30</height>
                     <font>cirrus_22</font>
@@ -1265,8 +1265,8 @@
                 </control>
                 <control type="videowindow" id="8">
                     <!-- Trailer -->
-                    <posx>-26</posx>
-                    <posy>7</posy>
+                    <left>-26</left>
+                    <top>7</top>
                     <width>340</width>
                     <height>200</height>
                     <align>right</align>
@@ -1275,8 +1275,8 @@
                 </control>
                 <control type="label">
                     <description>Title label</description>
-                    <posx>-22</posx>
-                    <posy>178</posy>
+                    <left>-22</left>
+                    <top>178</top>
                     <height>20</height>
                     <width>310</width>
                     <label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year,[COLOR=accent] (,)[/COLOR]]</label>
@@ -1294,8 +1294,8 @@
                 </control>
                 <control type="label">
                     <description>Episodes</description>
-                    <posx>0</posx>
-                    <posy>560</posy>
+                    <left>0</left>
+                    <top>560</top>
                     <width>1280</width>
                     <height>30</height>
                     <label fallback="416">$INFO[ListItem.Genre,[COLOR=accent]$LOCALIZE[515]: [/COLOR] ] [COLOR=accent]   $LOCALIZE[20360]: [/COLOR]$INFO[listitem.episode] [COLOR=grey] ($INFO[ListItem.Property(WatchedEpisodes),, $LOCALIZE[16102]] - $INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101]])[/COLOR]</label>
@@ -1308,8 +1308,8 @@
             <control type="image">
                 <width>150</width>
                 <height>50</height>
-                <posx>30</posx>
-                <posy>200</posy>
+                <left>30</left>
+                <top>200</top>
                 <aspectratio align="center">keep</aspectratio>
                 <texture diffuse="maskflags.png">$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
                 <visible>!Container(721).OnNext + !Container(721).OnPrevious</visible>
@@ -1324,8 +1324,8 @@
 
         <!-- WHEN INFO IS NOT HIDDEN EPISODES -->
         <control type="group">
-            <posx>0</posx>
-            <posy>100</posy>
+            <left>0</left>
+            <top>100</top>
             <visible>Control.IsVisible(721) + !Window.IsVisible(VideoFiles) + ![ListItem.IsFolder + Container.Content(Movies)] + !Container.Content(Movies) + !Container.Content(TVShows) + !Container.Content(Seasons)</visible>
             <animation type="WindowOpen" reversible="false">
                 <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
@@ -1336,8 +1336,8 @@
                 <effect type="fade" start="100" end="0" time="300"/>
             </animation> 
             <control type="group">
-                <posx>80</posx>
-                <posy>20</posy>
+                <left>80</left>
+                <top>20</top>
                 <visible>Container.Content(Episodes)</visible>
 
             </control>

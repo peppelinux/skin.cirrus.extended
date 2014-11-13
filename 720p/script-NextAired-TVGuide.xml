@@ -3,8 +3,8 @@
     <allowoverlay>no</allowoverlay>
     <controls>
         <control type="button" id="999">
-            <posx>-10</posx>
-            <posy>-10</posy>
+            <left>-10</left>
+            <top>-10</top>
             <width>1</width>
             <height>1</height>
             <label>-</label>
@@ -17,8 +17,8 @@
             <include condition="substring(System.Date,$LOCALIZE[47])">NextAiredSunday</include>
         </control>
         <control type="multiimage">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1280</width>
             <height>720</height>
             <imagepath fallback="special://skin/backgrounds/tv_shows.jpg" background="true">$INFO[Skin.String(Custom_Back_TV_Folder)]</imagepath>
@@ -30,8 +30,8 @@
             <visible>![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)] + StringCompare(Window(Home).Property(TVGuide.BackgroundFanart),1)</visible>
         </control>
         <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1280</width>
             <height>720</height>
             <texture background="true">$VAR[NextAiredFanart]</texture>
@@ -41,8 +41,8 @@
             <include condition="Skin.HasSetting(animation_bg_global)">global_kenburns_fanart</include>
         </control>
         <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1280</width>
             <height>720</height>
             <texture>black.png</texture>
@@ -51,8 +51,8 @@
         <include>CommonMediaPlayingBackground</include>
         <control type="group" id="9002">
             <control type="image">
-                <posx>30</posx>
-                <posy>60</posy>
+                <left>30</left>
+                <top>60</top>
                 <width>100</width>
                 <height>630</height>
                 <texture border="2">tvguide-dark.png</texture>
@@ -60,8 +60,8 @@
             </control>
             <control type="group">
                 <description>monday</description>
-                <posx>30</posx>
-                <posy>60</posy>
+                <left>30</left>
+                <top>60</top>
                 <include>Window_OpenClose_Left_Animation</include>
                 <include>NextAireDayBackgroundBright</include>
                 <include condition="substring(System.Date,$LOCALIZE[41])">NextAiredHighlight</include>
@@ -79,8 +79,8 @@
             </control>
             <control type="group">
                 <description>tuesday</description>
-                <posx>30</posx>
-                <posy>150</posy>
+                <left>30</left>
+                <top>150</top>
                 <include>Window_OpenClose_Right_Animation</include>
                 <include>NextAireDayBackgroundDark</include>
                 <include condition="substring(System.Date,$LOCALIZE[42])">NextAiredHighlight</include>
@@ -98,8 +98,8 @@
             </control>
             <control type="group">
                 <description>wednesday</description>
-                <posx>30</posx>
-                <posy>240</posy>
+                <left>30</left>
+                <top>240</top>
                 <include>Window_OpenClose_Right_Animation</include>
                 <include>NextAireDayBackgroundBright</include>
                 <include condition="substring(System.Date,$LOCALIZE[43])">NextAiredHighlight</include>
@@ -117,8 +117,8 @@
             </control>
             <control type="group">
                 <description>thursday</description>
-                <posx>30</posx>
-                <posy>330</posy>
+                <left>30</left>
+                <top>330</top>
                 <include>Window_OpenClose_Right_Animation</include>
                 <include>NextAireDayBackgroundDark</include>
                 <include condition="substring(System.Date,$LOCALIZE[44])">NextAiredHighlight</include>
@@ -136,8 +136,8 @@
             </control>
             <control type="group">
                 <description>friday</description>
-                <posx>30</posx>
-                <posy>420</posy>
+                <left>30</left>
+                <top>420</top>
                 <include>Window_OpenClose_Right_Animation</include>
                 <include>NextAireDayBackgroundBright</include>
                 <include condition="substring(System.Date,$LOCALIZE[45])">NextAiredHighlight</include>
@@ -155,8 +155,8 @@
             </control>
             <control type="group">
                 <description>saturday</description>
-                <posx>30</posx>
-                <posy>510</posy>
+                <left>30</left>
+                <top>510</top>
                 <include>Window_OpenClose_Right_Animation</include>
                 <include>NextAireDayBackgroundDark</include>
                 <include condition="substring(System.Date,$LOCALIZE[46])">NextAiredHighlight</include>
@@ -174,8 +174,8 @@
             </control>
             <control type="group">
                 <description>sunday</description>
-                <posx>30</posx>
-                <posy>600</posy>
+                <left>30</left>
+                <top>600</top>
                 <include>Window_OpenClose_Right_Animation</include>
                 <include>NextAireDayBackgroundBright</include>
                 <include condition="substring(System.Date,$LOCALIZE[47])">NextAiredHighlight</include>
@@ -200,8 +200,8 @@
             <animation effect="slide" start="-380,0" end="0,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus">WindowOpen</animation>
             <control type="button" id="8999">
                 <description>Fake button for mouse control</description>
-                <posx>-260</posx>
-                <posy>0</posy>
+                <left>-260</left>
+                <top>0</top>
                 <width>265</width>
                 <height>720</height>
                 <label>-</label>
@@ -212,23 +212,23 @@
             </control>
             <!-- Menu background panel -->
             <control type="image">
-                <posx>-820</posx>
-                <posy>0</posy>
+                <left>-820</left>
+                <top>0</top>
                 <width>820</width>
                 <height>720</height>
                 <texture border="5">dialogbackground.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
-                <posx>-250</posx>
-                <posy>650</posy>
+                <left>-250</left>
+                <top>650</top>
                 <width>160</width>
                 <height>40</height>
                 <texture>xbmc_logo_white.png</texture>
             </control>
             <control type="label">
-                <posx>-240</posx>
-                <posy>20</posy>
+                <left>-240</left>
+                <top>20</top>
                 <label>33063</label>
                 <width>250</width>
                 <height>30</height>
@@ -240,8 +240,8 @@
                 <aligny>center</aligny>
             </control>
             <control type="grouplist" id="9000">
-                <posx>-260</posx>
-                <posy>70</posy>
+                <left>-260</left>
+                <top>70</top>
                 <onleft>9002</onleft>
                 <onright>9002</onright>
                 <control type="button" id="8">

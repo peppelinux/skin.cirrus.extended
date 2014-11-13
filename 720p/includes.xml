@@ -84,23 +84,23 @@
 
     <include name="CommonMediaPlayingBackground">
         <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1280</width>
             <height>720</height>
             <texture>special://skin/backgrounds/media-overlay.png</texture>
             <visible>Player.HasVideo + !Skin.HasSetting(ShowBackgroundVideo)+ !SubString(Window(videos).Property(tvtunesIsAlive),True)</visible>
         </control>
         <control type="visualisation">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1280</width>
             <height>720</height>
             <visible>Player.HasAudio + !Skin.HasSetting(ShowBackgroundVis)+ !SubString(Window(videos).Property(tvtunesIsAlive),True)</visible>
         </control>
         <control type="videowindow">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1280</width>
             <height>720</height>
             <visible>Player.HasVideo + !Skin.HasSetting(ShowBackgroundVideo)</visible>
@@ -109,23 +109,23 @@
     </include>
     <include name="CommonMediaPlayingBackgroundBrowser">
         <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1280</width>
             <height>720</height>
             <texture>special://skin/backgrounds/media-overlay.png</texture>
             <visible>Player.HasVideo + !SubString(Window(videos).Property(tvtunesIsAlive),True) + !Skin.HasSetting(ShowBackgroundVideoBrowser)</visible>
         </control>
         <control type="visualisation">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1280</width>
             <height>720</height>
             <visible>Player.HasAudio + !SubString(Window(videos).Property(tvtunesIsAlive),True) + !Skin.HasSetting(ShowBackgroundVideoBrowser)</visible>
         </control>
         <control type="videowindow">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1280</width>
             <height>720</height>
             <visible>Player.HasVideo + !Skin.HasSetting(ShowBackgroundVideoBrowser)</visible>
@@ -133,8 +133,8 @@
     </include>
     <include name="CommonVideoBackground">
         <control type="multiimage">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1280</width>
             <height>720</height>
             <imagepath fallback="special://skin/backgrounds/videos.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</imagepath>
@@ -146,8 +146,8 @@
             <!--  <visible>!Container.Content(Movies) + !Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Episodes)</visible> -->
         </control>
         <control type="multiimage">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1280</width>
             <height>720</height>
             <imagepath fallback="special://skin/backgrounds/movies.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Movies_Folder)]</imagepath>
@@ -159,8 +159,8 @@
             <visible>Container.Content(Movies) + [!IsEmpty(Skin.String(Home_Custom_Back_Movies_Folder)) + Skin.HasSetting(HomeMenuNoMoviesButton)]</visible>	  
         </control>
         <control type="multiimage">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1280</width>
             <height>720</height>
             <imagepath fallback="special://skin/backgrounds/tv_shows.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_TVShow_Folder)]</imagepath>
@@ -175,8 +175,8 @@
     <!-- PVR Butchabay -->
     <include name="CommonTVBackground">
         <control type="multiimage">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1280</width>
             <height>720</height>
             <imagepath fallback="special://skin/backgrounds/livetv.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_TV_Folder)]</imagepath>
@@ -190,8 +190,8 @@
     <!-- PVR Butchabay End -->
     <include name="CommonMusicBackground">
         <control type="multiimage">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1280</width>
             <height>720</height>
             <imagepath fallback="special://skin/backgrounds/musicfanart.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</imagepath>
@@ -204,8 +204,8 @@
     </include>
     <include name="CommonPictureBackground">
         <control type="multiimage">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1280</width>
             <height>720</height>
             <imagepath fallback="special://skin/backgrounds/picturesfanart.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Pictures_Folder)]</imagepath>
@@ -218,8 +218,8 @@
     </include>
     <include name="CommonProgramsBackground">
         <control type="multiimage">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1280</width>
             <height>720</height>
             <imagepath fallback="special://skin/backgrounds/programs.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</imagepath>
@@ -232,8 +232,8 @@
     </include>
     <include name="CommonScriptBackground">
         <control type="multiimage">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1280</width>
             <height>720</height>
             <imagepath fallback="special://skin/backgrounds/scripts.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Scripts_Folder)]</imagepath>
@@ -246,8 +246,8 @@
     </include>
     <include name="CommonWeatherBackground">
         <control type="multiimage">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1280</width>
             <height>720</height>
             <imagepath fallback="special://skin/backgrounds/weatherfanart.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</imagepath>
@@ -259,8 +259,8 @@
             <visible>![Skin.HasSetting(HomeWeatherFanart) + !IsEmpty(Skin.String(HomeWeatherFanartFolder))]</visible>
         </control>
         <control type="multiimage">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1280</width>
             <height>720</height>
             <imagepath background="true">$INFO[Skin.String(HomeWeatherFanartFolder)]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
@@ -273,8 +273,8 @@
     </include>
     <include name="CommonSettingsBackground">
         <control type="multiimage">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1280</width>
             <height>720</height>
             <imagepath fallback="special://skin/backgrounds/settings.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Settings_Folder)]</imagepath>
@@ -288,8 +288,8 @@
     </include>
     <include name="BehindDialogFadeOut">
         <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1280</width>
             <height>720</height>
             <texture>black-back.png</texture>
@@ -303,7 +303,7 @@
         <animation effect="slide" start="-1300,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
     </include>
     <include name="WindowTitleCommons">
-        <posy>0</posy>
+        <top>0</top>
         <width>600</width>
         <height>50</height>
         <font>cirrus_24</font>
@@ -314,7 +314,7 @@
         <aligny>center</aligny>
     </include>
     <include name="WindowTitleCommonsSort">
-        <posy>-10</posy>
+        <top>-10</top>
         <width>900</width>
         <height>50</height>
         <font>cirrus_40_Bold</font>
@@ -327,15 +327,15 @@
     <include name="ScrollListLetter">
         <!-- Mod Yo Han -->
         <control type="group">
-            <posx>20</posx>
-            <posy>50</posy>
+            <left>20</left>
+            <top>50</top>
             <visible>Container.Scrolling + [StringCompare(Container.SortMethod,$LOCALIZE[551]) | StringCompare(Container.SortMethod,$LOCALIZE[561]) | StringCompare(Container.SortMethod,$LOCALIZE[558]) | StringCompare(Container.SortMethod,$LOCALIZE[557]) | StringCompare(Container.SortMethod,$LOCALIZE[556])]</visible>
             <include>VisibleFadeEffect</include>
             <animation effect="slide" end="-510,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
             <animation effect="slide" start="-510,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
             <control type="label">
                 <include>WindowTitleCommonsSort</include>
-                <posx>0</posx>
+                <left>0</left>
                 <label>$INFO[ListItem.SortLetter]</label>
             </control>
         </control>
@@ -402,8 +402,8 @@
     </include>
     <include name="SideBladeLeft">
         <control type="image">
-            <posx>-820</posx>
-            <posy>0</posy>
+            <left>-820</left>
+            <top>0</top>
             <width>820</width>
             <height>720</height>
             <texture border="5">dialogbackground.png</texture>
@@ -413,8 +413,8 @@
     </include>
     <include name="SideBladeLeftPVR">
         <control type="image">
-            <posx>-820</posx>
-            <posy>0</posy>
+            <left>-820</left>
+            <top>0</top>
             <width>846</width>
             <height>720</height>
             <texture>HomeBlade.png</texture>
@@ -438,8 +438,8 @@
         <!-- PAGE COUNT STUFF UPPER RIGHT CORNER -->
         <control type="label">
             <description>Page Count Label</description>
-            <posx>25r</posx>
-            <posy>0</posy>
+            <left>25r</left>
+            <top>0</top>
             <width>500</width>
             <height>50</height>
             <font>cirrus_24</font>
@@ -455,16 +455,16 @@
     <include name="SmallMusicInfo">
         <control type="image">
             <description>Cover image</description>
-            <posx>20</posx>
-            <posy>17</posy>
+            <left>20</left>
+            <top>17</top>
             <width>130</width>
             <height>130</height>
             <texture>$INFO[MusicPlayer.Cover]</texture>
         </control>
         <control type="label">
             <description>Artist label</description>
-            <posx>160</posx>
-            <posy>20</posy>
+            <left>160</left>
+            <top>20</top>
             <height>30</height>
             <width>325</width>
             <label>$INFO[MusicPlayer.Artist]</label>
@@ -476,8 +476,8 @@
         </control>
         <control type="fadelabel">
             <description>Title label</description>
-            <posx>160</posx>
-            <posy>43</posy>
+            <left>160</left>
+            <top>43</top>
             <height>30</height>
             <width>325</width>
             <label>$INFO[MusicPlayer.Title]</label>
@@ -491,8 +491,8 @@
         </control>
         <control type="label">
             <description>Album Label</description>
-            <posx>160</posx>
-            <posy>70</posy>
+            <left>160</left>
+            <top>70</top>
             <height>30</height>
             <width>325</width>
             <label>$INFO[MusicPlayer.Album]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label>
@@ -504,8 +504,8 @@
         </control>
         <control type="label">
             <description>Time Label</description>
-            <posx>160</posx>
-            <posy>95</posy>
+            <left>160</left>
+            <top>95</top>
             <height>30</height>
             <width>325</width>
             <label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
@@ -517,8 +517,8 @@
         </control>
         <control type="label">
             <description>Next Label</description>
-            <posx>160</posx>
-            <posy>120</posy>
+            <left>160</left>
+            <top>120</top>
             <height>30</height>
             <width>370</width>
             <label>[COLOR=accent]$LOCALIZE[209] :[/COLOR] $INFO[MusicPlayer.offset(1).Title]</label>
@@ -532,8 +532,8 @@
     <include name="SmallVideoInfo">
         <control type="image">
             <description>Cover image</description>
-            <posx>20</posx>
-            <posy>17</posy>
+            <left>20</left>
+            <top>17</top>
             <width>130</width>
             <height>130</height>
             <aspectratio>keep</aspectratio>
@@ -541,8 +541,8 @@
         </control>
         <control type="label">
             <description>Studio label</description>
-            <posx>160</posx>
-            <posy>20</posy>
+            <left>160</left>
+            <top>20</top>
             <height>30</height>
             <width>325</width>
             <label>$INFO[VideoPlayer.Studio]</label>
@@ -555,8 +555,8 @@
         </control>
         <control type="label">
             <description>TV Show Title label</description>
-            <posx>160</posx>
-            <posy>20</posy>
+            <left>160</left>
+            <top>20</top>
             <height>30</height>
             <width>325</width>
             <label>$INFO[VideoPlayer.tvshowtitle]</label>
@@ -569,8 +569,8 @@
         </control>
         <control type="fadelabel">
             <description>Music Video Artist label</description>
-            <posx>160</posx>
-            <posy>20</posy>
+            <left>160</left>
+            <top>20</top>
             <height>30</height>
             <width>325</width>
             <label>$INFO[VideoPlayer.Artist]</label>
@@ -585,8 +585,8 @@
         </control>
         <control type="fadelabel">
             <description>Title label</description>
-            <posx>160</posx>
-            <posy>43</posy>
+            <left>160</left>
+            <top>43</top>
             <height>30</height>
             <width>325</width>
             <label>$INFO[VideoPlayer.Title]</label>
@@ -600,8 +600,8 @@
         </control>
         <control type="label">
             <description>Genre label</description>
-            <posx>160</posx>
-            <posy>70</posy>
+            <left>160</left>
+            <top>70</top>
             <height>30</height>
             <width>325</width>
             <label>$INFO[VideoPlayer.Genre]</label>
@@ -613,8 +613,8 @@
             <visible>!videoplayer.content(episodes) + !videoplayer.content(musicvideos)</visible>
         </control>
         <control type="label">
-            <posx>160</posx>
-            <posy>70</posy>
+            <left>160</left>
+            <top>70</top>
             <height>30</height>
             <width>325</width>
             <label>$INFO[VideoPlayer.Album]</label>
@@ -627,8 +627,8 @@
         </control>
         <control type="label">
             <description>Season and Episode label</description>
-            <posx>160</posx>
-            <posy>70</posy>
+            <left>160</left>
+            <top>70</top>
             <height>30</height>
             <width>325</width>
             <label>$LOCALIZE[20373] $INFO[VideoPlayer.Season] - $LOCALIZE[20359] $INFO[VideoPlayer.episode]</label>
@@ -641,8 +641,8 @@
         </control>
         <control type="label">
             <description>Time Label</description>
-            <posx>160</posx>
-            <posy>95</posy>
+            <left>160</left>
+            <top>95</top>
             <height>30</height>
             <width>325</width>
             <label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
@@ -657,8 +657,8 @@
         <visible>[Player.HasAudio | Player.HasVideo]</visible>
         <include>VisibleFadeEffect</include>
         <control type="label">
-            <posx>85</posx>
-            <posy>0</posy>
+            <left>85</left>
+            <top>0</top>
             <width>250</width>
             <height>40</height>
             <font>cirrus_24</font>
@@ -669,11 +669,11 @@
             <label>31023</label>
         </control>
         <control type="group" id="9005">
-            <posx>12</posx>
-            <posy>40</posy>
+            <left>12</left>
+            <top>40</top>
             <control type="button" id="600">
-                <posx>0</posx>
-                <posy>2</posy>
+                <left>0</left>
+                <top>2</top>
                 <width>28</width>
                 <height>28</height>
                 <label>-</label>
@@ -686,8 +686,8 @@
                 <onclick>XBMC.PlayerControl(Previous)</onclick>
             </control>
             <control type="button" id="606">
-                <posx>30</posx>
-                <posy>2</posy>
+                <left>30</left>
+                <top>2</top>
                 <width>28</width>
                 <height>28</height>
                 <label>-</label>
@@ -703,8 +703,8 @@
             <control type="group">
                 <animation effect="slide" start="0,0" end="40,0" time="0" condition="Window.IsVisible(MusicPlaylist) | Window.IsVisible(VideoPlaylist) | Player.HasVideo">Conditional</animation>
                 <control type="button" id="601">
-                    <posx>40</posx>
-                    <posy>2</posy>
+                    <left>40</left>
+                    <top>2</top>
                     <width>28</width>
                     <height>28</height>
                     <label>-</label>
@@ -718,8 +718,8 @@
                     <onclick>XBMC.PlayerControl(Stop)</onclick>
                 </control>
                 <control type="togglebutton" id="603">
-                    <posx>80</posx>
-                    <posy>2</posy>
+                    <left>80</left>
+                    <top>2</top>
                     <width>28</width>
                     <height>28</height>
                     <label>-</label>
@@ -735,8 +735,8 @@
                     <onclick>XBMC.PlayerControl(Play)</onclick>
                 </control>
                 <control type="button" id="607">
-                    <posx>120</posx>
-                    <posy>2</posy>
+                    <left>120</left>
+                    <top>2</top>
                     <width>28</width>
                     <height>28</height>
                     <label>-</label>
@@ -750,8 +750,8 @@
                     <visible>Window.IsVisible(MusicPlaylist) | Window.IsVisible(VideoPlaylist) | Player.HasVideo</visible>
                 </control>
                 <control type="button" id="602">
-                    <posx>120</posx>
-                    <posy>2</posy>
+                    <left>120</left>
+                    <top>2</top>
                     <width>28</width>
                     <height>28</height>
                     <label>-</label>
@@ -768,8 +768,8 @@
             <control type="group">
                 <visible>!Window.IsVisible(MusicPlaylist) + !Window.IsVisible(VideoPlaylist) + !Player.HasVideo</visible>
                 <control type="button" id="604">
-                    <posx>160</posx>
-                    <posy>2</posy>
+                    <left>160</left>
+                    <top>2</top>
                     <width>39</width>
                     <height>39</height>
                     <label>-</label>
@@ -782,8 +782,8 @@
                     <ondown>608</ondown>
                 </control>
                 <control type="image">
-                    <posx>160</posx>
-                    <posy>2</posy>
+                    <left>160</left>
+                    <top>2</top>
                     <width>39</width>
                     <height>39</height>
                     <texture>OSDRepeatNF.png</texture>
@@ -791,8 +791,8 @@
                     <visible>!Control.HasFocus(604)</visible>
                 </control>
                 <control type="image">
-                    <posx>160</posx>
-                    <posy>2</posy>
+                    <left>160</left>
+                    <top>2</top>
                     <width>39</width>
                     <height>39</height>
                     <texture>OSDRepeatFO.png</texture>
@@ -800,8 +800,8 @@
                     <visible>Control.HasFocus(604)</visible>
                 </control>
                 <control type="image">
-                    <posx>160</posx>
-                    <posy>2</posy>
+                    <left>160</left>
+                    <top>2</top>
                     <width>39</width>
                     <height>39</height>
                     <texture>OSDRepeatOneNF.png</texture>
@@ -809,8 +809,8 @@
                     <visible>!Control.HasFocus(604)</visible>
                 </control>
                 <control type="image">
-                    <posx>160</posx>
-                    <posy>2</posy>
+                    <left>160</left>
+                    <top>2</top>
                     <width>39</width>
                     <height>39</height>
                     <texture>OSDRepeatOneFO.png</texture>
@@ -818,8 +818,8 @@
                     <visible>Control.HasFocus(604)</visible>
                 </control>
                 <control type="image">
-                    <posx>160</posx>
-                    <posy>2</posy>
+                    <left>160</left>
+                    <top>2</top>
                     <width>39</width>
                     <height>39</height>
                     <texture>OSDRepeatAllNF.png</texture>
@@ -827,8 +827,8 @@
                     <visible>!Control.HasFocus(604)</visible>
                 </control>
                 <control type="image">
-                    <posx>160</posx>
-                    <posy>2</posy>
+                    <left>160</left>
+                    <top>2</top>
                     <width>39</width>
                     <height>39</height>
                     <texture>OSDRepeatAllFO.png</texture>
@@ -836,8 +836,8 @@
                     <visible>Control.HasFocus(604)</visible>
                 </control>
                 <control type="togglebutton" id="605">
-                    <posx>200</posx>
-                    <posy>2</posy>
+                    <left>200</left>
+                    <top>2</top>
                     <width>39</width>
                     <height>39</height>
                     <label>-</label>
@@ -857,13 +857,13 @@
     </include>
     <include name="CommonNowPlaying">
         <control type="group">
-            <posx>10</posx>
-            <posy>345</posy>
+            <left>10</left>
+            <top>345</top>
             <visible>Player.HasAudio</visible>
             <include>VisibleFadeEffect</include>
             <control type="button" id="608">
-                <posx>38</posx>
-                <posy>0</posy>
+                <left>38</left>
+                <top>0</top>
                 <width>164</width>
                 <height>164</height>
                 <label>-</label>
@@ -876,8 +876,8 @@
                 <onclick>fullscreen</onclick>
             </control>
             <control type="image">
-                <posx>40</posx>
-                <posy>2</posy>
+                <left>40</left>
+                <top>2</top>
                 <width>160</width>
                 <height>160</height>
                 <texture>$INFO[MusicPlayer.Cover]</texture>
@@ -886,8 +886,8 @@
                 <aspectratio align="center">keep</aspectratio>
             </control>
             <control type="fadelabel">
-                <posx>0</posx>
-                <posy>170</posy>
+                <left>0</left>
+                <top>170</top>
                 <width>235</width>
                 <height>20</height>
                 <label>$INFO[MusicPlayer.Title]</label>
@@ -900,8 +900,8 @@
                 <pauseatend>2000</pauseatend>
             </control>
             <control type="fadelabel">
-                <posx>0</posx>
-                <posy>190</posy>
+                <left>0</left>
+                <top>190</top>
                 <width>235</width>
                 <height>20</height>
                 <label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, | ]</label>
@@ -915,13 +915,13 @@
             </control>
         </control>
         <control type="group">
-            <posx>10</posx>
-            <posy>345</posy>
+            <left>10</left>
+            <top>345</top>
             <visible>Player.HasVideo</visible>
             <include>VisibleFadeEffect</include>
             <control type="button" id="608">
-                <posx>-8</posx>
-                <posy>0</posy>
+                <left>-8</left>
+                <top>0</top>
                 <width>242</width>
                 <height>164</height>
                 <label>-</label>
@@ -934,14 +934,14 @@
                 <onclick>fullscreen</onclick>
             </control>
             <control type="videowindow">
-                <posx>-5</posx>
-                <posy>2</posy>
+                <left>-5</left>
+                <top>2</top>
                 <width>236</width>
                 <height>160</height>
             </control>
             <control type="fadelabel">
-                <posx>0</posx>
-                <posy>170</posy>
+                <left>0</left>
+                <top>170</top>
                 <width>235</width>
                 <height>20</height>
                 <label>$INFO[VideoPlayer.Title]</label>
@@ -954,8 +954,8 @@
                 <pauseatend>2000</pauseatend>
             </control>
             <control type="fadelabel">
-                <posx>0</posx>
-                <posy>190</posy>
+                <left>0</left>
+                <top>190</top>
                 <width>235</width>
                 <height>20</height>
                 <label>$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[VideoPlayer.Season,,x]$INFO[VideoPlayer.Episode]</label>
@@ -969,8 +969,8 @@
                 <visible>VideoPlayer.Content(Episodes)</visible>
             </control>
             <control type="fadelabel">
-                <posx>0</posx>
-                <posy>190</posy>
+                <left>0</left>
+                <top>190</top>
                 <width>235</width>
                 <height>20</height>
                 <label>$INFO[VideoPlayer.Year] $INFO[VideoPlayer.Director]</label>
@@ -988,15 +988,15 @@
 
     <include name="Clock">
         <control type="group">
-            <posx>0</posx>
+            <left>0</left>
             <!-- 140r -->
-            <posy>0</posy>
+            <top>0</top>
             <animation effect="slide" start="0,0" end="-210,0" delay="0" time="300" condition="Window.Next(Home) | Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)">WindowClose</animation>
             <animation effect="slide" start="-210,0" end="0,0" delay="0" time="300" condition="Window.Previous(Home) | Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)">WindowOpen</animation>
             <control type="label">
                 <description>time label</description>
-                <posx>20</posx>
-                <posy>11</posy>
+                <left>20</left>
+                <top>11</top>
                 <width>400</width>
                 <height>28</height>
                 <align>left</align>
@@ -1061,7 +1061,7 @@
     </include>
 
     <include name="MenuSettingsImagebutton">
-        <posy>0</posy>
+        <top>0</top>
         <width>180</width>
         <height>40</height>
         <font>cirrus_20</font>
@@ -1076,21 +1076,21 @@
 
     <include name="MenuSettingsImagebutton1">
         <include>MenuSettingsImagebutton</include>
-        <posx>5</posx>
+        <left>5</left>
         <label>31113</label>
         <onleft>302</onleft>
         <onright>301</onright>
     </include>
     <include name="MenuSettingsImagebutton2">
         <include>MenuSettingsImagebutton</include>
-        <posx>190</posx>
+        <left>190</left>
         <label>31114</label>
         <onleft>300</onleft>
         <onright>302</onright>
     </include>
     <include name="MenuSettingsImagebutton3">
         <include>MenuSettingsImagebutton</include>
-        <posx>375</posx>
+        <left>375</left>
         <label>571</label>
         <onleft>301</onleft>
         <onright>300</onright>
@@ -1111,8 +1111,8 @@
         <align>left</align>
     </include>
     <include name="PathID">
-        <posx>10r</posx>
-        <posy>30</posy>
+        <left>10r</left>
+        <top>30</top>
         <width>520</width>
         <height>14</height>
         <textcolor>orange</textcolor>
@@ -1120,8 +1120,8 @@
         <align>right</align>
     </include>
     <include name="ControlID">
-        <posx>10r</posx>
-        <posy>50</posy>
+        <left>10r</left>
+        <top>50</top>
         <width>520</width>
         <height>14</height>
         <textcolor>orange</textcolor>

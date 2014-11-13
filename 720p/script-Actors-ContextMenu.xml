@@ -5,13 +5,13 @@
     <animation effect="fade" time="250">WindowClose</animation>
     <coordinates>
         <system>1</system>
-        <posx>640</posx>
-        <posy>0</posy>
+        <left>640</left>
+        <top>0</top>
     </coordinates>
     <controls>
         <control type="grouplist" id="1000">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>300</width>
             <height>645</height>
             <align>bottom</align>
@@ -22,16 +22,16 @@
             <itemgap>0</itemgap>
             <control type="image" id="997">
                 <description>background top image</description>
-                <posx>0</posx>
-                <posy>-15</posy>
+                <left>0</left>
+                <top>-15</top>
                 <width>300</width>
                 <height>15</height>
                 <texture>background-contextmenutop.png</texture>
             </control>
             <control type="image" id="998">
                 <description>background middle image</description>
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>300</width>
                 <texture>background-contextmenumiddle.png</texture>
             </control>
@@ -170,8 +170,8 @@
         </control>
         <control type="image" id="1998">
             <description>background bottom image</description>
-            <posx>0</posx>
-            <posy>645</posy>
+            <left>0</left>
+            <top>645</top>
             <width>300</width>
             <height>15</height>
             <texture>background-contextmenubottom.png</texture>

@@ -17,8 +17,8 @@
       <include>VisibleFadeEffect</include>
       <control type="image">
         <!-- bottom bar background -->
-        <posx>0</posx>
-        <posy>155r</posy>
+        <left>0</left>
+        <top>155r</top>
         <width>1280</width>
         <height>700</height>
         <aspectratio>stretch</aspectratio>
@@ -26,8 +26,8 @@
       </control>
       <control type="image">
         <!-- bottom bar background -->
-        <posx>0</posx>
-        <posy>50r</posy>
+        <left>0</left>
+        <top>50r</top>
         <width>1280</width>
         <height>700</height>
         <aspectratio>stretch</aspectratio>
@@ -38,8 +38,8 @@
       </control>
       <control type="image">
         <!-- Black gradient up the top -->
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <width>1280</width>
         <height>300</height>
         <texture>blackgradientvert.png</texture>
@@ -47,15 +47,15 @@
       </control>
       <control type="image">
         <!-- right gradient -->
-        <posx>700r</posx>
-        <posy>0</posy>
+        <left>700r</left>
+        <top>0</top>
         <width>700</width>
         <height>720</height>
         <texture flipx="true">blackgradient.png</texture>
       </control>
       <control type="image">
-        <posx>268</posx>
-        <posy>360</posy>
+        <left>268</left>
+        <top>360</top>
         <width>385</width>
         <height>200</height>
         <texture>black-back.png</texture>
@@ -68,8 +68,8 @@
         <visible>Control.IsVisible(595)</visible>
       </control>
       <control type="videowindow" id="8">
-        <posx>280</posx>
-        <posy>370</posy>
+        <left>280</left>
+        <top>370</top>
         <width>362</width>
         <height>180</height>
         <visible>Skin.Hassetting(videowindowglobal)</visible>
@@ -77,8 +77,8 @@
       </control>
       <control type="label">
         <description>Title label</description>
-        <posx>296</posx>
-        <posy>510</posy>
+        <left>296</left>
+        <top>510</top>
         <height>30</height>
         <width>330</width>
         <label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year,[COLOR=accent] (,)[/COLOR]]</label>
@@ -95,8 +95,8 @@
       <!-- START OF ACTUAL LIST -->
       <control type="fixedlist" id="595">
         <!-- CUSTOM Scroll + Trailer  Hack  + Advanced Launcher -->
-        <posx>680</posx>
-        <posy>90</posy>
+        <left>680</left>
+        <top>90</top>
         <width>600</width>
         <height>440</height>
         <orientation>vertical</orientation>
@@ -114,8 +114,8 @@
         <!-- SLIM LAYOUT GAMES -->
         <itemlayout height="40" width="580">
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>700</width>
             <height>40</height>
             <aligny>bottom</aligny>
@@ -124,8 +124,8 @@
           </control>
           <control type="label">
             <description>Title</description>
-            <posx>105</posx>
-            <posy>8</posy>
+            <left>105</left>
+            <top>8</top>
             <width>445</width>
             <height>25</height>
             <label>$INFO[listitem.Label]</label>
@@ -136,8 +136,8 @@
             <scroll>false</scroll>
           </control>
           <control type="image">
-            <posx>20r</posx>
-            <posy>2</posy>
+            <left>20r</left>
+            <top>2</top>
             <width>30</width>
             <height>40</height>
             <texture>$VAR[overlayIcon]</texture>
@@ -146,8 +146,8 @@
         </itemlayout>
         <focusedlayout height="70" width="580">
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>700</width>
             <height>70</height>
             <texture border="2,2,2,2">rowfocusback.png</texture>
@@ -155,8 +155,8 @@
           </control>
           <control type="label">
             <description>Title</description>
-            <posx>105</posx>
-            <posy>8</posy>
+            <left>105</left>
+            <top>8</top>
             <width>445</width>
             <height>25</height>
             <label>[COLOR=white]$INFO[ListItem.Year][/COLOR] $INFO[ListItem.Label,][COLOR=white]$INFO[ListItem.Property(Addon.Version),  (,)][/COLOR]</label>
@@ -168,8 +168,8 @@
           </control>
           <control type="label">
             <description>Author</description>
-            <posx>105</posx>
-            <posy>40</posy>
+            <left>105</left>
+            <top>40</top>
             <width>445</width>
             <height>25</height>
             <label>[COLOR=black]$INFO[ListItem.Property(Addon.Creator),][/COLOR]</label>
@@ -181,8 +181,8 @@
           </control>
           <control type="label">
             <description>System</description>
-            <posx>105</posx>
-            <posy>40</posy>
+            <left>105</left>
+            <top>40</top>
             <width>445</width>
             <height>25</height>
             <label>[COLOR=black]$INFO[ListItem.Writer][/COLOR]</label>
@@ -193,8 +193,8 @@
             <scroll>false</scroll>
           </control>
           <control type="image">
-            <posx>20r</posx>
-            <posy>15</posy>
+            <left>20r</left>
+            <top>15</top>
             <width>30</width>
             <height>40</height>
             <texture>$VAR[overlayIcon]</texture>
@@ -204,15 +204,15 @@
       </control>
       <!-- RIGHLIST BOTTOM INFO  -->
       <control type="group">
-        <posx>20</posx>
-        <posy>360</posy>
+        <left>20</left>
+        <top>360</top>
         <visible>Control.IsVisible(595) | Window.IsVisible(VideoFiles) | Window.IsVisible(VideoLibrary)</visible>
         <control type="group">
-          <posx>0</posx>
-          <posy>-30</posy>
+          <left>0</left>
+          <top>-30</top>
           <control type="image">
-            <posx>-10</posx>
-            <posy>180</posy>
+            <left>-10</left>
+            <top>180</top>
             <width>250</width>
             <height>186</height>
             <aspectratio aligny="bottom">stretch</aspectratio>
@@ -222,8 +222,8 @@
             <bordersize>8</bordersize>
           </control>
           <control type="image">
-            <posx>-10</posx>
-            <posy>180</posy>
+            <left>-10</left>
+            <top>180</top>
             <width>250</width>
             <height>186</height>
             <aspectratio aligny="bottom">stretch</aspectratio>
@@ -233,12 +233,12 @@
           </control>
         </control>
         <control type="group">
-          <posx>250</posx>
-          <posy>210</posy>
+          <left>250</left>
+          <top>210</top>
           <control type="label">
             <description>Genre label</description>
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>550</width>
             <height>25</height>
             <label>$INFO[ListItem.Genre,[COLOR=accent]$LOCALIZE[515]:[/COLOR] ]</label>
@@ -251,8 +251,8 @@
           <control type="textbox">
             <!-- CUSTOM mod plotoutline -->
             <description>plot</description>
-            <posx>0</posx>
-            <posy>32</posy>
+            <left>0</left>
+            <top>32</top>
             <width>700</width>
             <height>68</height>
             <label>$INFO[ListItem.Plot]</label>
@@ -265,8 +265,8 @@
           </control>
           <control type="label">
             <description>Year Label</description>
-            <posx>0</posx>
-            <posy>110</posy>
+            <left>0</left>
+            <top>110</top>
             <width>320</width>
             <height>30</height>
             <label>$INFO[ListItem.Year]</label>
@@ -280,16 +280,16 @@
         <control type="image">
           <width>110</width>
           <height>47</height>
-          <posx>240</posx>
-          <posy>48r</posy>
+          <left>240</left>
+          <top>48r</top>
           <aspectratio>keep</aspectratio>
           <align>right</align>
           <aligny>bottom</aligny>
           <texture border="2">$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
         </control>
         <control type="image">
-          <posx>282r</posx>
-          <posy>207</posy>
+          <left>282r</left>
+          <top>207</top>
           <width>263</width>
           <height>144</height>
           <aspectratio aligny="bottom">stretch</aspectratio>
@@ -300,8 +300,8 @@
           <visible>!Window.IsVisible(VideoFiles) + !Window.IsVisible(VideoLibrary)</visible>
         </control>
         <control type="image">
-          <posx>282r</posx>
-          <posy>207</posy>
+          <left>282r</left>
+          <top>207</top>
           <width>263</width>
           <height>144</height>
           <aspectratio aligny="bottom">stretch</aspectratio>
@@ -311,8 +311,8 @@
           <visible>!Window.IsVisible(VideoFiles) + !Window.IsVisible(VideoLibrary)</visible>
         </control>
         <control type="multiimage">
-          <posx>274r</posx>
-          <posy>215</posy>
+          <left>274r</left>
+          <top>215</top>
           <width>247</width>
           <height>128</height>
           <aspectratio aligny="bottom">stretch</aspectratio>
@@ -324,8 +324,8 @@
         </control>
       </control>
       <control type="scrollbar" id="60">
-        <posx>10</posx>
-        <posy>100</posy>
+        <left>10</left>
+        <top>100</top>
         <width>25</width>
         <height>220</height>
         <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>

@@ -14,8 +14,8 @@
         </animation>      
         <control type="image">
             <!-- bottom bar background -->
-            <posx>0</posx>
-            <posy>230r</posy>
+            <left>0</left>
+            <top>230r</top>
             <width>1280</width>
             <height>700</height>
             <aspectratio>stretch</aspectratio>
@@ -24,8 +24,8 @@
         </control>
         <control type="image">
             <!-- bottom bar background -->
-            <posx>0</posx>
-            <posy>190r</posy>
+            <left>0</left>
+            <top>190r</top>
             <width>1280</width>
             <height>700</height>
             <aspectratio>stretch</aspectratio>
@@ -35,8 +35,8 @@
         <control type="group">
             <visible>Control.IsVisible(547)</visible>
             <include>VisibleFadeEffect</include>
-            <posx>0</posx>
-            <posy>530</posy>
+            <left>0</left>
+            <top>530</top>
             <control type="wraplist" id="547">
                 <animation type="WindowOpen" reversible="false">
                     <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
@@ -47,8 +47,8 @@
                     <effect type="fade" start="100" end="0" time="300"/>
                 </animation>      
                 <visible>Window.IsVisible(MusicFiles) | Window.IsVisible(MusicPlaylist) |  Container.Content(Songs) | Container.Content(Albums) | Container.Content(Artists) | Container.Content(Genres)</visible>
-                <posx>-162</posx>
-                <posy>0</posy>
+                <left>-162</left>
+                <top>0</top>
                 <width>1480</width>
                 <height>250</height>
                 <onleft>508</onleft>
@@ -64,8 +64,8 @@
                 <preloaditems>4</preloaditems>
                 <itemlayout height="200" width="180">
                     <control type="image">
-                        <posx>2</posx>
-                        <posy>15</posy>
+                        <left>2</left>
+                        <top>15</top>
                         <width>160</width>
                         <height>160</height>
                         <aspectratio>stretch</aspectratio>
@@ -77,8 +77,8 @@
                     </control>
                     <!-- Butchabay MOD Music Genre -->
                     <control type="image">
-                        <posx>2</posx>
-                        <posy>15</posy>
+                        <left>2</left>
+                        <top>15</top>
                         <width>160</width>
                         <height>160</height>
                         <aspectratio>stretch</aspectratio>
@@ -90,8 +90,8 @@
                 </itemlayout>
                 <focusedlayout height="200" width="180">
                     <control type="image">
-                        <posx>2</posx>
-                        <posy>15</posy>
+                        <left>2</left>
+                        <top>15</top>
                         <width>160</width>
                         <height>160</height>
                         <aspectratio>stretch</aspectratio>
@@ -104,8 +104,8 @@
                     </control>
                     <!-- Butchabay MOD Music Genre -->
                     <control type="image">
-                        <posx>2</posx>
-                        <posy>15</posy>
+                        <left>2</left>
+                        <top>15</top>
                         <width>160</width>
                         <height>160</height>
                         <aspectratio>stretch</aspectratio>
@@ -123,8 +123,8 @@
         <!-- Labels -->
         <control type="label">
             <visible>Control.IsVisible(547) + !Container.Content(Artists)</visible>
-            <posx>20</posx>
-            <posy>498</posy>
+            <left>20</left>
+            <top>498</top>
             <width>600</width>
             <height>25</height>
             <label>$INFO[ListItem.Label]</label>
@@ -137,8 +137,8 @@
         </control>
         <control type="label">
             <visible>Control.IsVisible(547)</visible>
-            <posx>1260</posx>
-            <posy>498</posy>
+            <left>1260</left>
+            <top>498</top>
             <width>600</width>
             <height>25</height>
             <label>$INFO[ListItem.Artist]</label>
@@ -150,8 +150,8 @@
             <shadowcolor>black</shadowcolor>
         </control>
         <control type="scrollbar" id="60">
-            <posx>-10</posx>
-            <posy>460</posy>
+            <left>-10</left>
+            <top>460</top>
             <width>1300</width>
             <height>35</height>
             <texturesliderbackground border="14,0,14,0">ScrollBarV.png</texturesliderbackground>

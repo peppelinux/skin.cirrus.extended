@@ -9,8 +9,8 @@
       <animation effect="fade" time="200">WindowClose</animation>
       <control type="image">
         <description>media info background image</description>
-        <posx>0</posx>
-        <posy>460</posy>
+        <left>0</left>
+        <top>460</top>
         <width>1280</width>
         <height>430</height>
         <texture flipy="true">nowplaying_shadow1.png</texture>
@@ -20,8 +20,8 @@
       </control>
       <control type="image">
         <description>media info background image</description>
-        <posx>0</posx>
-        <posy>460</posy>
+        <left>0</left>
+        <top>460</top>
         <width>1280</width>
         <height>430</height>
         <texture flipy="true">nowplaying_shadow1.png</texture>
@@ -30,8 +30,8 @@
         <animation effect="slide" start="0,0" end="0,-470" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + !Skin.HasSetting(HomeMenuNoMoviesButton) + Control.HasFocus(8000)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>0</posx>
-        <posy>790</posy>
+        <left>0</left>
+        <top>790</top>
         <width>1330</width>
         <height>1</height>
         <aspectratio>stretch</aspectratio>
@@ -41,8 +41,8 @@
         <animation effect="slide" start="0,0" end="0,-470" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + !Skin.HasSetting(HomeMenuNoMoviesButton) + Control.HasFocus(8000)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>0</posx>
-        <posy>790</posy>
+        <left>0</left>
+        <top>790</top>
         <width>1330</width>
         <height>1</height>
         <aspectratio>stretch</aspectratio>
@@ -52,8 +52,8 @@
         <animation effect="slide" start="0,0" end="0,-470" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + !Skin.HasSetting(HomeMenuNoMoviesButton) + Control.HasFocus(8000)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>200</posx>
-        <posy>540</posy>
+        <left>200</left>
+        <top>540</top>
         <width>1</width>
         <height>240</height>
         <aspectratio>stretch</aspectratio>
@@ -63,8 +63,8 @@
         <animation effect="slide" start="0,0" end="0,-470" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + !Skin.HasSetting(HomeMenuNoMoviesButton) + Control.HasFocus(8000)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>985</posx>
-        <posy>540</posy>
+        <left>985</left>
+        <top>540</top>
         <width>1</width>
         <height>240</height>
         <aspectratio>stretch</aspectratio>
@@ -75,8 +75,8 @@
       </control>
       <!-- Recently Added Movies  -->
       <control type="group">
-        <posx>1028</posx>
-        <posy>452</posy>
+        <left>1028</left>
+        <top>452</top>
         <visible>Library.HasContent(Movies)</visible>
         <visible>Container(9000).Hasfocus(1)</visible>
         <include>VisibleFadeEffect</include>
@@ -89,8 +89,8 @@
           <visible>!Control.HasFocus(8000)</visible>
           <!-- Main Picture -->
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture background="true">ContentPanelRecentlyaddedvertical.png</texture>
@@ -100,8 +100,8 @@
             <visible>!Skin.HasSetting(watchlistmovieswidget)</visible>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture background="true">ContentPanelRecentlyaddedvertical.png</texture>
@@ -111,8 +111,8 @@
             <visible>Skin.HasSetting(watchlistmovieswidget)</visible>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture>nowplaying_shadow5.png</texture>
@@ -121,8 +121,8 @@
             <visible>!Skin.HasSetting(watchlistmovieswidget)</visible>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture>nowplaying_shadow5.png</texture>
@@ -131,8 +131,8 @@
             <visible>Skin.HasSetting(watchlistmovieswidget)</visible>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture flipy="true">nowplaying_shadow5.png</texture>
@@ -141,8 +141,8 @@
             <visible>!Skin.HasSetting(watchlistmovieswidget)</visible>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture flipy="true">nowplaying_shadow5.png</texture>
@@ -153,8 +153,8 @@
           <!-- Recently Added Label -->
           <control type="label">
             <description>RECENTLY ADDED</description>
-            <posx>10</posx>
-            <posy>25</posy>
+            <left>10</left>
+            <top>25</top>
             <width>220</width>
             <height>40</height>
             <align>center</align>
@@ -173,8 +173,8 @@
           </control>
           <control type="label">
             <description>WATCHLIST MOVIES WIDGET</description>
-            <posx>10</posx>
-            <posy>25</posy>
+            <left>10</left>
+            <top>25</top>
             <width>220</width>
             <height>40</height>
             <align>center</align>
@@ -193,8 +193,8 @@
           </control>
           <control type="label">
             <description>RECENTLY ADDED</description>
-            <posx>10</posx>
-            <posy>25</posy>
+            <left>10</left>
+            <top>25</top>
             <width>220</width>
             <height>40</height>
             <align>center</align>
@@ -213,8 +213,8 @@
           </control>
           <control type="label">
             <description>WATCHLIST MOVIES WIDGET</description>
-            <posx>10</posx>
-            <posy>25</posy>
+            <left>10</left>
+            <top>25</top>
             <width>220</width>
             <height>40</height>
             <align>center</align>
@@ -233,8 +233,8 @@
           </control>
           <control type="group">
             <visible>Skin.HasSetting(nomoviewidget) | Skin.HasSetting(watchlistmovieswidget)</visible>
-            <posx>70</posx>
-            <posy>198</posy>
+            <left>70</left>
+            <top>198</top>
             <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
             <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
             <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
@@ -310,8 +310,8 @@
           <control type="image">
             <texture background="true">$INFO[Container(8000).ListItem.ActualIcon]</texture>
             <aspectratio scalediffuse="false">scale</aspectratio>
-            <posx>10</posx>
-            <posy>68</posy>
+            <left>10</left>
+            <top>68</top>
             <width>220</width>
             <height>123</height>
             <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
@@ -324,8 +324,8 @@
           <control type="image">
             <texture background="true">$INFO[Container(8000).ListItem.ActualIcon]</texture>
             <aspectratio scalediffuse="false">scale</aspectratio>
-            <posx>10</posx>
-            <posy>68</posy>
+            <left>10</left>
+            <top>68</top>
             <width>220</width>
             <height>123</height>
             <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
@@ -338,8 +338,8 @@
           <!-- Movie Title -->
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>230</posy>
+            <left>10</left>
+            <top>230</top>
             <width>220</width>
             <height>20</height>
             <align>center</align>
@@ -363,8 +363,8 @@
           <!-- Movie Title -->
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>230</posy>
+            <left>10</left>
+            <top>230</top>
             <width>220</width>
             <height>20</height>
             <align>center</align>
@@ -387,8 +387,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>225</posy>
+            <left>10</left>
+            <top>225</top>
             <width>220</width>
             <height>20</height>
             <align>center</align>
@@ -411,8 +411,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>225</posy>
+            <left>10</left>
+            <top>225</top>
             <width>220</width>
             <height>20</height>
             <align>center</align>
@@ -438,15 +438,15 @@
         <control type="group">
           <description>Recently Added Widget Movies</description>
           <visible>Control.HasFocus(8000)</visible>
-          <posx>-2100</posx>
-          <posy>-16</posy>
+          <left>-2100</left>
+          <top>-16</top>
           <animation effect="slide" start="0,0" end="1020,0" time="500" easing="inout" tween="cubic" condition="Control.HasFocus(8000)">Conditional</animation>
           <control type="group">
-            <posx>159</posx>
+            <left>159</left>
             <!-- Changes Rating Stars 2.06 -->
             <control type="group">
-              <posx>115</posx>
-              <posy>233</posy>
+              <left>115</left>
+              <top>233</top>
               <animation effect="fade" start="0" end="100" time="600">WindowOpen</animation>
               <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
               <control type="image">
@@ -528,8 +528,8 @@
               </control>
             </control>
             <control type="label">
-              <posx>120</posx>
-              <posy>30</posy>
+              <left>120</left>
+              <top>30</top>
               <width>700</width>
               <height>30</height>
               <align>left</align>
@@ -541,36 +541,36 @@
               <shadowcolor>black</shadowcolor>
             </control>
             <control type="label">
-              <posx>120</posx>
+              <left>120</left>
               <width>533</width>
               <height>25</height>
-              <posy>60</posy>
+              <top>60</top>
               <label>[COLOR=accent]$LOCALIZE[562]:[/COLOR] $INFO[Container(8000).ListItem.Property(Year)]</label>
               <font>cirrus_20</font>
               <shadowcolor>black</shadowcolor>
             </control>
             <control type="label">
-              <posx>120</posx>
+              <left>120</left>
               <width>533</width>
               <height>25</height>
-              <posy>85</posy>
+              <top>85</top>
               <label>[COLOR=accent]$LOCALIZE[368]:[/COLOR] $INFO[Container(8000).ListItem.Property(Rating)]</label>
               <font>cirrus_20</font>
               <shadowcolor>black</shadowcolor>
             </control>
             <control type="label">
-              <posx>120</posx>
+              <left>120</left>
               <width>533</width>
               <height>25</height>
-              <posy>110</posy>
+              <top>110</top>
               <label>[COLOR=accent]$LOCALIZE[31054]:[/COLOR] $INFO[Container(8000).ListItem.Property(RunningTime)]</label>
               <font>cirrus_20</font>
               <shadowcolor>black</shadowcolor>
             </control>
             <!-- Plot Movie -->
             <control type="textbox">
-              <posx>120</posx>
-              <posy>135</posy>
+              <left>120</left>
+              <top>135</top>
               <width>740</width>
               <height>90</height>
               <align>left</align>
@@ -583,8 +583,8 @@
             </control>
           </control>
           <control type="image">
-            <posx>70</posx>
-            <posy>31</posy>
+            <left>70</left>
+            <top>31</top>
             <width>153</width>
             <height>230</height>
             <texture>black-back.png</texture>
@@ -594,8 +594,8 @@
             <fadetime>400</fadetime>
           </control>
           <control type="image">
-            <posx>70</posx>
-            <posy>31</posy>
+            <left>70</left>
+            <top>31</top>
             <description>Main Icon</description>
             <width>153</width>
             <height>230</height>
@@ -606,8 +606,8 @@
             <visible>!Skin.HasSetting(watchlistmovies)+Container(9000).HasFocus(1)</visible>
           </control>
           <control type="image">
-            <posx>70</posx>
-            <posy>31</posy>
+            <left>70</left>
+            <top>31</top>
             <description>Watchlist Movies Thumb</description>
             <width>153</width>
             <height>230</height>
@@ -620,13 +620,13 @@
         </control>
         <control type="group">
           <animation effect="slide" start="0,0" end="-380,0" time="500" easing="inout" tween="cubic" condition="Control.HasFocus(8000)">Conditional</animation>
-          <posx>342</posx>
-          <posy>-22</posy>
+          <left>342</left>
+          <top>-22</top>
           <!-- Last Played Lable -->
           <control type="label">
             <description>Title label</description>
-            <posx>-15</posx>
-            <posy>25</posy>
+            <left>-15</left>
+            <top>25</top>
             <width>255</width>
             <height>25</height>
             <align>center</align>
@@ -642,8 +642,8 @@
           </control>
           <!-- Movies 2.06 -->
           <control type="list" id="8000">
-            <posx>0</posx>
-            <posy>5</posy>
+            <left>0</left>
+            <top>5</top>
             <width>800</width>
             <height>275</height>
             <onleft>SetFocus(9000)</onleft>
@@ -657,8 +657,8 @@
             <movement>1</movement>
             <itemlayout height="25" width="800">
               <control type="label">
-                <posx>20</posx>
-                <posy>26</posy>
+                <left>20</left>
+                <top>26</top>
                 <width>250</width>
                 <height>23</height>
                 <font>cirrus_20</font>
@@ -673,16 +673,16 @@
             </itemlayout>
             <focusedlayout height="25" width="800">
               <control type="image">
-                <posx>-10</posx>
-                <posy>27</posy>
+                <left>-10</left>
+                <top>27</top>
                 <width>300</width>
                 <height>24</height>
                 <texture flipx="true">recentlyaddeddiffuse.png</texture>
                 <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
-                <posx>20</posx>
-                <posy>26</posy>
+                <left>20</left>
+                <top>26</top>
                 <width>250</width>
                 <height>23</height>
                 <font>cirrus_20</font>
@@ -972,8 +972,8 @@
       <!-- Recently Added Playlist 1 Movies  -->
       <control type="image">
         <description>media info background image</description>
-        <posx>0</posx>
-        <posy>460</posy>
+        <left>0</left>
+        <top>460</top>
         <width>1280</width>
         <height>430</height>
         <texture flipy="true">nowplaying_shadow1.png</texture>
@@ -983,8 +983,8 @@
       </control>
       <control type="image">
         <description>media info background image</description>
-        <posx>0</posx>
-        <posy>460</posy>
+        <left>0</left>
+        <top>460</top>
         <width>1280</width>
         <height>430</height>
         <texture flipy="true">nowplaying_shadow1.png</texture>
@@ -993,8 +993,8 @@
         <animation effect="slide" start="0,0" end="0,-470" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + Control.HasFocus(8006)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>0</posx>
-        <posy>790</posy>
+        <left>0</left>
+        <top>790</top>
         <width>1330</width>
         <height>1</height>
         <aspectratio>stretch</aspectratio>
@@ -1004,8 +1004,8 @@
         <animation effect="slide" start="0,0" end="0,-470" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + Control.HasFocus(8006)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>0</posx>
-        <posy>790</posy>
+        <left>0</left>
+        <top>790</top>
         <width>1330</width>
         <height>1</height>
         <aspectratio>stretch</aspectratio>
@@ -1015,8 +1015,8 @@
         <animation effect="slide" start="0,0" end="0,-470" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + Control.HasFocus(8006)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>200</posx>
-        <posy>540</posy>
+        <left>200</left>
+        <top>540</top>
         <width>1</width>
         <height>240</height>
         <aspectratio>stretch</aspectratio>
@@ -1026,8 +1026,8 @@
         <animation effect="slide" start="0,0" end="0,-470" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + Control.HasFocus(8006)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>985</posx>
-        <posy>540</posy>
+        <left>985</left>
+        <top>540</top>
         <width>1</width>
         <height>240</height>
         <aspectratio>stretch</aspectratio>
@@ -1037,8 +1037,8 @@
         <animation effect="slide" start="0,0" end="0,-470" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + Control.HasFocus(8006)">Conditional</animation>
       </control>
       <control type="group">
-        <posx>1028</posx>
-        <posy>452</posy>
+        <left>1028</left>
+        <top>452</top>
         <visible>Library.HasContent(Movies)</visible>
         <visible>Container(9000).Hasfocus(3) + System.HasAddon(script.randomandlastitems) + Skin.HasSetting(nomoviewidgetplaylistmovie)</visible>
         <include>VisibleFadeEffect</include>
@@ -1051,8 +1051,8 @@
           <visible>!Control.HasFocus(8006)</visible>
           <!-- Main Picture -->
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture background="true">ContentPanelRecentlyaddedvertical.png</texture>
@@ -1061,8 +1061,8 @@
             <visible>Skin.HasSetting(nomoviewidgetplaylistmovie1)</visible>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture>nowplaying_shadow5.png</texture>
@@ -1070,8 +1070,8 @@
             <visible>Skin.HasSetting(nomoviewidgetplaylistmovie1)</visible>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture flipy="true">nowplaying_shadow5.png</texture>
@@ -1081,8 +1081,8 @@
           <!-- Recently Added Label -->
           <control type="label">
             <description>RECENTLY ADDED</description>
-            <posx>10</posx>
-            <posy>25</posy>
+            <left>10</left>
+            <top>25</top>
             <width>220</width>
             <height>40</height>
             <align>center</align>
@@ -1100,8 +1100,8 @@
           </control>
           <control type="label">
             <description>RECENTLY ADDED</description>
-            <posx>10</posx>
-            <posy>25</posy>
+            <left>10</left>
+            <top>25</top>
             <width>220</width>
             <height>40</height>
             <align>center</align>
@@ -1119,8 +1119,8 @@
           </control>
           <control type="group">
             <visible>Skin.HasSetting(nomoviewidgetplaylistmovie1) + System.HasAddon(script.randomandlastitems)</visible>
-            <posx>70</posx>
-            <posy>198</posy>
+            <left>70</left>
+            <top>198</top>
             <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
             <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
             <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
@@ -1196,8 +1196,8 @@
           <control type="image">
             <texture background="true">$INFO[Container(8006).ListItem.ActualIcon]</texture>
             <aspectratio scalediffuse="false">scale</aspectratio>
-            <posx>10</posx>
-            <posy>68</posy>
+            <left>10</left>
+            <top>68</top>
             <width>220</width>
             <height>123</height>
             <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
@@ -1209,8 +1209,8 @@
           <!-- Movie Title -->
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>230</posy>
+            <left>10</left>
+            <top>230</top>
             <width>220</width>
             <height>20</height>
             <align>center</align>
@@ -1232,8 +1232,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>225</posy>
+            <left>10</left>
+            <top>225</top>
             <width>220</width>
             <height>20</height>
             <align>center</align>
@@ -1257,15 +1257,15 @@
         <control type="group">
           <description>Recently Added Widget Movies</description>
           <visible>Control.HasFocus(8006)</visible>
-          <posx>-2100</posx>
-          <posy>-16</posy>
+          <left>-2100</left>
+          <top>-16</top>
           <animation effect="slide" start="0,0" end="1020,0" time="500" easing="inout" tween="cubic" condition="Control.HasFocus(8006)">Conditional</animation>
           <control type="group">
-            <posx>159</posx>
+            <left>159</left>
             <!-- Changes Rating Stars 2.06 -->
             <control type="group">
-              <posx>115</posx>
-              <posy>233</posy>
+              <left>115</left>
+              <top>233</top>
               <animation effect="fade" start="0" end="100" time="600">WindowOpen</animation>
               <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
               <control type="image">
@@ -1347,8 +1347,8 @@
               </control>
             </control>
             <control type="label">
-              <posx>120</posx>
-              <posy>30</posy>
+              <left>120</left>
+              <top>30</top>
               <width>700</width>
               <height>30</height>
               <align>left</align>
@@ -1360,36 +1360,36 @@
               <shadowcolor>black</shadowcolor>
             </control>
             <control type="label">
-              <posx>120</posx>
+              <left>120</left>
               <width>533</width>
               <height>25</height>
-              <posy>60</posy>
+              <top>60</top>
               <label>[COLOR=accent]$LOCALIZE[562]:[/COLOR] $INFO[Container(8006).ListItem.Property(Year)]</label>
               <font>cirrus_20</font>
               <shadowcolor>black</shadowcolor>
             </control>
             <control type="label">
-              <posx>120</posx>
+              <left>120</left>
               <width>533</width>
               <height>25</height>
-              <posy>85</posy>
+              <top>85</top>
               <label>[COLOR=accent]$LOCALIZE[368]:[/COLOR] $INFO[Container(8006).ListItem.Property(Rating)]</label>
               <font>cirrus_20</font>
               <shadowcolor>black</shadowcolor>
             </control>
             <control type="label">
-              <posx>120</posx>
+              <left>120</left>
               <width>533</width>
               <height>25</height>
-              <posy>110</posy>
+              <top>110</top>
               <label>[COLOR=accent]$LOCALIZE[31054]:[/COLOR] $INFO[Container(8006).ListItem.Property(RunningTime)]</label>
               <font>cirrus_20</font>
               <shadowcolor>black</shadowcolor>
             </control>
             <!-- Plot Movie -->
             <control type="textbox">
-              <posx>120</posx>
-              <posy>135</posy>
+              <left>120</left>
+              <top>135</top>
               <width>740</width>
               <height>90</height>
               <align>left</align>
@@ -1402,8 +1402,8 @@
             </control>
           </control>
           <control type="image">
-            <posx>70</posx>
-            <posy>31</posy>
+            <left>70</left>
+            <top>31</top>
             <width>153</width>
             <height>230</height>
             <texture>black-back.png</texture>
@@ -1413,8 +1413,8 @@
             <fadetime>400</fadetime>
           </control>
           <control type="image">
-            <posx>70</posx>
-            <posy>31</posy>
+            <left>70</left>
+            <top>31</top>
             <description>Main Icon</description>
             <width>153</width>
             <height>230</height>
@@ -1427,13 +1427,13 @@
         </control>
         <control type="group">
           <animation effect="slide" start="0,0" end="-380,0" time="500" easing="inout" tween="cubic" condition="Control.HasFocus(8006)">Conditional</animation>
-          <posx>342</posx>
-          <posy>-22</posy>
+          <left>342</left>
+          <top>-22</top>
           <!-- Last Played Lable -->
           <control type="label">
             <description>Title label</description>
-            <posx>-15</posx>
-            <posy>25</posy>
+            <left>-15</left>
+            <top>25</top>
             <width>255</width>
             <height>25</height>
             <align>center</align>
@@ -1449,8 +1449,8 @@
           </control>
           <!-- Movies 2.06 -->
           <control type="list" id="8006">
-            <posx>0</posx>
-            <posy>5</posy>
+            <left>0</left>
+            <top>5</top>
             <width>800</width>
             <height>275</height>
             <onleft>SetFocus(9000)</onleft>
@@ -1464,8 +1464,8 @@
             <movement>1</movement>
             <itemlayout height="25" width="800">
               <control type="label">
-                <posx>20</posx>
-                <posy>26</posy>
+                <left>20</left>
+                <top>26</top>
                 <width>250</width>
                 <height>23</height>
                 <font>cirrus_20</font>
@@ -1480,16 +1480,16 @@
             </itemlayout>
             <focusedlayout height="25" width="800">
               <control type="image">
-                <posx>-10</posx>
-                <posy>27</posy>
+                <left>-10</left>
+                <top>27</top>
                 <width>300</width>
                 <height>24</height>
                 <texture flipx="true">recentlyaddeddiffuse.png</texture>
                 <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
-                <posx>20</posx>
-                <posy>26</posy>
+                <left>20</left>
+                <top>26</top>
                 <width>250</width>
                 <height>23</height>
                 <font>cirrus_20</font>
@@ -1629,8 +1629,8 @@
       <!-- Recently Added Playlist 2 Movies  -->
       <control type="image">
         <description>media info background image</description>
-        <posx>0</posx>
-        <posy>460</posy>
+        <left>0</left>
+        <top>460</top>
         <width>1280</width>
         <height>430</height>
         <texture flipy="true">nowplaying_shadow1.png</texture>
@@ -1640,8 +1640,8 @@
       </control>
       <control type="image">
         <description>media info background image</description>
-        <posx>0</posx>
-        <posy>460</posy>
+        <left>0</left>
+        <top>460</top>
         <width>1280</width>
         <height>430</height>
         <texture flipy="true">nowplaying_shadow1.png</texture>
@@ -1650,8 +1650,8 @@
         <animation effect="slide" start="0,0" end="0,-470" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + Control.HasFocus(8007)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>0</posx>
-        <posy>790</posy>
+        <left>0</left>
+        <top>790</top>
         <width>1330</width>
         <height>1</height>
         <aspectratio>stretch</aspectratio>
@@ -1661,8 +1661,8 @@
         <animation effect="slide" start="0,0" end="0,-470" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + Control.HasFocus(8007)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>0</posx>
-        <posy>790</posy>
+        <left>0</left>
+        <top>790</top>
         <width>1330</width>
         <height>1</height>
         <aspectratio>stretch</aspectratio>
@@ -1672,8 +1672,8 @@
         <animation effect="slide" start="0,0" end="0,-470" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + Control.HasFocus(8007)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>200</posx>
-        <posy>540</posy>
+        <left>200</left>
+        <top>540</top>
         <width>1</width>
         <height>240</height>
         <aspectratio>stretch</aspectratio>
@@ -1683,8 +1683,8 @@
         <animation effect="slide" start="0,0" end="0,-470" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + Control.HasFocus(8007)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>985</posx>
-        <posy>540</posy>
+        <left>985</left>
+        <top>540</top>
         <width>1</width>
         <height>240</height>
         <aspectratio>stretch</aspectratio>
@@ -1694,8 +1694,8 @@
         <animation effect="slide" start="0,0" end="0,-470" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + Control.HasFocus(8007)">Conditional</animation>
       </control>
       <control type="group">
-        <posx>1028</posx>
-        <posy>452</posy>
+        <left>1028</left>
+        <top>452</top>
         <visible>Library.HasContent(Movies)</visible>
         <visible>Container(9000).Hasfocus(4) + System.HasAddon(script.randomandlastitems) + Skin.HasSetting(nomoviewidgetplaylistmovie)</visible>
         <include>VisibleFadeEffect</include>
@@ -1708,8 +1708,8 @@
           <visible>!Control.HasFocus(8007)</visible>
           <!-- Main Picture -->
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture background="true">ContentPanelRecentlyaddedvertical.png</texture>
@@ -1718,8 +1718,8 @@
             <visible>Skin.HasSetting(nomoviewidgetplaylistmovie2)</visible>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture>nowplaying_shadow5.png</texture>
@@ -1727,8 +1727,8 @@
             <visible>Skin.HasSetting(nomoviewidgetplaylistmovie2)</visible>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture flipy="true">nowplaying_shadow5.png</texture>
@@ -1738,8 +1738,8 @@
           <!-- Recently Added Label -->
           <control type="label">
             <description>RECENTLY ADDED</description>
-            <posx>10</posx>
-            <posy>25</posy>
+            <left>10</left>
+            <top>25</top>
             <width>220</width>
             <height>40</height>
             <align>center</align>
@@ -1757,8 +1757,8 @@
           </control>
           <control type="label">
             <description>RECENTLY ADDED</description>
-            <posx>10</posx>
-            <posy>25</posy>
+            <left>10</left>
+            <top>25</top>
             <width>220</width>
             <height>40</height>
             <align>center</align>
@@ -1776,8 +1776,8 @@
           </control>
           <control type="group">
             <visible>Skin.HasSetting(nomoviewidgetplaylistmovie2) + System.HasAddon(script.randomandlastitems)</visible>
-            <posx>70</posx>
-            <posy>198</posy>
+            <left>70</left>
+            <top>198</top>
             <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
             <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
             <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
@@ -1853,8 +1853,8 @@
           <control type="image">
             <texture background="true">$INFO[Container(8007).ListItem.ActualIcon]</texture>
             <aspectratio scalediffuse="false">scale</aspectratio>
-            <posx>10</posx>
-            <posy>68</posy>
+            <left>10</left>
+            <top>68</top>
             <width>220</width>
             <height>123</height>
             <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
@@ -1866,8 +1866,8 @@
           <!-- Movie Title -->
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>230</posy>
+            <left>10</left>
+            <top>230</top>
             <width>220</width>
             <height>20</height>
             <align>center</align>
@@ -1889,8 +1889,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>225</posy>
+            <left>10</left>
+            <top>225</top>
             <width>220</width>
             <height>20</height>
             <align>center</align>
@@ -1914,15 +1914,15 @@
         <control type="group">
           <description>Recently Added Widget Movies</description>
           <visible>Control.HasFocus(8007)</visible>
-          <posx>-2100</posx>
-          <posy>-16</posy>
+          <left>-2100</left>
+          <top>-16</top>
           <animation effect="slide" start="0,0" end="1020,0" time="500" easing="inout" tween="cubic" condition="Control.HasFocus(8007)">Conditional</animation>
           <control type="group">
-            <posx>159</posx>
+            <left>159</left>
             <!-- Changes Rating Stars 2.06 -->
             <control type="group">
-              <posx>115</posx>
-              <posy>233</posy>
+              <left>115</left>
+              <top>233</top>
               <animation effect="fade" start="0" end="100" time="600">WindowOpen</animation>
               <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
               <control type="image">
@@ -2004,8 +2004,8 @@
               </control>
             </control>
             <control type="label">
-              <posx>120</posx>
-              <posy>30</posy>
+              <left>120</left>
+              <top>30</top>
               <width>700</width>
               <height>30</height>
               <align>left</align>
@@ -2017,36 +2017,36 @@
               <shadowcolor>black</shadowcolor>
             </control>
             <control type="label">
-              <posx>120</posx>
+              <left>120</left>
               <width>533</width>
               <height>25</height>
-              <posy>60</posy>
+              <top>60</top>
               <label>[COLOR=accent]$LOCALIZE[562]:[/COLOR] $INFO[Container(8007).ListItem.Property(Year)]</label>
               <font>cirrus_20</font>
               <shadowcolor>black</shadowcolor>
             </control>
             <control type="label">
-              <posx>120</posx>
+              <left>120</left>
               <width>533</width>
               <height>25</height>
-              <posy>85</posy>
+              <top>85</top>
               <label>[COLOR=accent]$LOCALIZE[368]:[/COLOR] $INFO[Container(8007).ListItem.Property(Rating)]</label>
               <font>cirrus_20</font>
               <shadowcolor>black</shadowcolor>
             </control>
             <control type="label">
-              <posx>120</posx>
+              <left>120</left>
               <width>533</width>
               <height>25</height>
-              <posy>110</posy>
+              <top>110</top>
               <label>[COLOR=accent]$LOCALIZE[31054]:[/COLOR] $INFO[Container(8007).ListItem.Property(RunningTime)]</label>
               <font>cirrus_20</font>
               <shadowcolor>black</shadowcolor>
             </control>
             <!-- Plot Movie -->
             <control type="textbox">
-              <posx>120</posx>
-              <posy>135</posy>
+              <left>120</left>
+              <top>135</top>
               <width>740</width>
               <height>90</height>
               <align>left</align>
@@ -2059,8 +2059,8 @@
             </control>
           </control>
           <control type="image">
-            <posx>70</posx>
-            <posy>31</posy>
+            <left>70</left>
+            <top>31</top>
             <width>153</width>
             <height>230</height>
             <texture>black-back.png</texture>
@@ -2070,8 +2070,8 @@
             <fadetime>400</fadetime>
           </control>
           <control type="image">
-            <posx>70</posx>
-            <posy>31</posy>
+            <left>70</left>
+            <top>31</top>
             <description>Main Icon</description>
             <width>153</width>
             <height>230</height>
@@ -2084,13 +2084,13 @@
         </control>
         <control type="group">
           <animation effect="slide" start="0,0" end="-380,0" time="500" easing="inout" tween="cubic" condition="Control.HasFocus(8007)">Conditional</animation>
-          <posx>342</posx>
-          <posy>-22</posy>
+          <left>342</left>
+          <top>-22</top>
           <!-- Last Played Lable -->
           <control type="label">
             <description>Title label</description>
-            <posx>-15</posx>
-            <posy>25</posy>
+            <left>-15</left>
+            <top>25</top>
             <width>255</width>
             <height>25</height>
             <align>center</align>
@@ -2106,8 +2106,8 @@
           </control>
           <!-- Movies 2.06 -->
           <control type="list" id="8007">
-            <posx>0</posx>
-            <posy>5</posy>
+            <left>0</left>
+            <top>5</top>
             <width>800</width>
             <height>275</height>
             <onleft>SetFocus(9000)</onleft>
@@ -2121,8 +2121,8 @@
             <movement>1</movement>
             <itemlayout height="25" width="800">
               <control type="label">
-                <posx>20</posx>
-                <posy>26</posy>
+                <left>20</left>
+                <top>26</top>
                 <width>250</width>
                 <height>23</height>
                 <font>cirrus_20</font>
@@ -2137,16 +2137,16 @@
             </itemlayout>
             <focusedlayout height="25" width="800">
               <control type="image">
-                <posx>-10</posx>
-                <posy>27</posy>
+                <left>-10</left>
+                <top>27</top>
                 <width>300</width>
                 <height>24</height>
                 <texture flipx="true">recentlyaddeddiffuse.png</texture>
                 <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
-                <posx>20</posx>
-                <posy>26</posy>
+                <left>20</left>
+                <top>26</top>
                 <width>250</width>
                 <height>23</height>
                 <font>cirrus_20</font>
@@ -2286,8 +2286,8 @@
       <!-- Recently Added Playlist 3 Movies  -->
       <control type="image">
         <description>media info background image</description>
-        <posx>0</posx>
-        <posy>460</posy>
+        <left>0</left>
+        <top>460</top>
         <width>1280</width>
         <height>430</height>
         <texture flipy="true">nowplaying_shadow1.png</texture>
@@ -2297,8 +2297,8 @@
       </control>
       <control type="image">
         <description>media info background image</description>
-        <posx>0</posx>
-        <posy>460</posy>
+        <left>0</left>
+        <top>460</top>
         <width>1280</width>
         <height>430</height>
         <texture flipy="true">nowplaying_shadow1.png</texture>
@@ -2307,8 +2307,8 @@
         <animation effect="slide" start="0,0" end="0,-470" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + Control.HasFocus(8008)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>0</posx>
-        <posy>790</posy>
+        <left>0</left>
+        <top>790</top>
         <width>1330</width>
         <height>1</height>
         <aspectratio>stretch</aspectratio>
@@ -2318,8 +2318,8 @@
         <animation effect="slide" start="0,0" end="0,-470" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + Control.HasFocus(8008)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>0</posx>
-        <posy>790</posy>
+        <left>0</left>
+        <top>790</top>
         <width>1330</width>
         <height>1</height>
         <aspectratio>stretch</aspectratio>
@@ -2329,8 +2329,8 @@
         <animation effect="slide" start="0,0" end="0,-470" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + Control.HasFocus(8008)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>200</posx>
-        <posy>540</posy>
+        <left>200</left>
+        <top>540</top>
         <width>1</width>
         <height>240</height>
         <aspectratio>stretch</aspectratio>
@@ -2340,8 +2340,8 @@
         <animation effect="slide" start="0,0" end="0,-470" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + Control.HasFocus(8008)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>985</posx>
-        <posy>540</posy>
+        <left>985</left>
+        <top>540</top>
         <width>1</width>
         <height>240</height>
         <aspectratio>stretch</aspectratio>
@@ -2351,8 +2351,8 @@
         <animation effect="slide" start="0,0" end="0,-470" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + Control.HasFocus(8008)">Conditional</animation>
       </control>
       <control type="group">
-        <posx>1028</posx>
-        <posy>452</posy>
+        <left>1028</left>
+        <top>452</top>
         <visible>Library.HasContent(Movies)</visible>
         <visible>Container(9000).Hasfocus(5) + System.HasAddon(script.randomandlastitems) + Skin.HasSetting(nomoviewidgetplaylistmovie)</visible>
         <include>VisibleFadeEffect</include>
@@ -2365,8 +2365,8 @@
           <visible>!Control.HasFocus(8008)</visible>
           <!-- Main Picture -->
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture background="true">ContentPanelRecentlyaddedvertical.png</texture>
@@ -2375,8 +2375,8 @@
             <visible>Skin.HasSetting(nomoviewidgetplaylistmovie3)</visible>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture>nowplaying_shadow5.png</texture>
@@ -2384,8 +2384,8 @@
             <visible>Skin.HasSetting(nomoviewidgetplaylistmovie3)</visible>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture flipy="true">nowplaying_shadow5.png</texture>
@@ -2395,8 +2395,8 @@
           <!-- Recently Added Label -->
           <control type="label">
             <description>RECENTLY ADDED</description>
-            <posx>10</posx>
-            <posy>25</posy>
+            <left>10</left>
+            <top>25</top>
             <width>220</width>
             <height>40</height>
             <align>center</align>
@@ -2414,8 +2414,8 @@
           </control>
           <control type="label">
             <description>RECENTLY ADDED</description>
-            <posx>10</posx>
-            <posy>25</posy>
+            <left>10</left>
+            <top>25</top>
             <width>220</width>
             <height>40</height>
             <align>center</align>
@@ -2433,8 +2433,8 @@
           </control>
           <control type="group">
             <visible>Skin.HasSetting(nomoviewidgetplaylistmovie3) + System.HasAddon(script.randomandlastitems)</visible>
-            <posx>70</posx>
-            <posy>198</posy>
+            <left>70</left>
+            <top>198</top>
             <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
             <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
             <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
@@ -2510,8 +2510,8 @@
           <control type="image">
             <texture background="true">$INFO[Container(8008).ListItem.ActualIcon]</texture>
             <aspectratio scalediffuse="false">scale</aspectratio>
-            <posx>10</posx>
-            <posy>68</posy>
+            <left>10</left>
+            <top>68</top>
             <width>220</width>
             <height>123</height>
             <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
@@ -2523,8 +2523,8 @@
           <!-- Movie Title -->
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>230</posy>
+            <left>10</left>
+            <top>230</top>
             <width>220</width>
             <height>20</height>
             <align>center</align>
@@ -2546,8 +2546,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>225</posy>
+            <left>10</left>
+            <top>225</top>
             <width>220</width>
             <height>20</height>
             <align>center</align>
@@ -2571,15 +2571,15 @@
         <control type="group">
           <description>Recently Added Widget Movies</description>
           <visible>Control.HasFocus(8008)</visible>
-          <posx>-2100</posx>
-          <posy>-16</posy>
+          <left>-2100</left>
+          <top>-16</top>
           <animation effect="slide" start="0,0" end="1020,0" time="500" easing="inout" tween="cubic" condition="Control.HasFocus(8008)">Conditional</animation>
           <control type="group">
-            <posx>159</posx>
+            <left>159</left>
             <!-- Changes Rating Stars 2.06 -->
             <control type="group">
-              <posx>115</posx>
-              <posy>233</posy>
+              <left>115</left>
+              <top>233</top>
               <animation effect="fade" start="0" end="100" time="600">WindowOpen</animation>
               <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
               <control type="image">
@@ -2661,8 +2661,8 @@
               </control>
             </control>
             <control type="label">
-              <posx>120</posx>
-              <posy>30</posy>
+              <left>120</left>
+              <top>30</top>
               <width>700</width>
               <height>30</height>
               <align>left</align>
@@ -2674,36 +2674,36 @@
               <shadowcolor>black</shadowcolor>
             </control>
             <control type="label">
-              <posx>120</posx>
+              <left>120</left>
               <width>533</width>
               <height>25</height>
-              <posy>60</posy>
+              <top>60</top>
               <label>[COLOR=accent]$LOCALIZE[562]:[/COLOR] $INFO[Container(8008).ListItem.Property(Year)]</label>
               <font>cirrus_20</font>
               <shadowcolor>black</shadowcolor>
             </control>
             <control type="label">
-              <posx>120</posx>
+              <left>120</left>
               <width>533</width>
               <height>25</height>
-              <posy>85</posy>
+              <top>85</top>
               <label>[COLOR=accent]$LOCALIZE[368]:[/COLOR] $INFO[Container(8008).ListItem.Property(Rating)]</label>
               <font>cirrus_20</font>
               <shadowcolor>black</shadowcolor>
             </control>
             <control type="label">
-              <posx>120</posx>
+              <left>120</left>
               <width>533</width>
               <height>25</height>
-              <posy>110</posy>
+              <top>110</top>
               <label>[COLOR=accent]$LOCALIZE[31054]:[/COLOR] $INFO[Container(8008).ListItem.Property(RunningTime)]</label>
               <font>cirrus_20</font>
               <shadowcolor>black</shadowcolor>
             </control>
             <!-- Plot Movie -->
             <control type="textbox">
-              <posx>120</posx>
-              <posy>135</posy>
+              <left>120</left>
+              <top>135</top>
               <width>740</width>
               <height>90</height>
               <align>left</align>
@@ -2716,8 +2716,8 @@
             </control>
           </control>
           <control type="image">
-            <posx>70</posx>
-            <posy>31</posy>
+            <left>70</left>
+            <top>31</top>
             <width>153</width>
             <height>230</height>
             <texture>black-back.png</texture>
@@ -2727,8 +2727,8 @@
             <fadetime>400</fadetime>
           </control>
           <control type="image">
-            <posx>70</posx>
-            <posy>31</posy>
+            <left>70</left>
+            <top>31</top>
             <description>Main Icon</description>
             <width>153</width>
             <height>230</height>
@@ -2741,13 +2741,13 @@
         </control>
         <control type="group">
           <animation effect="slide" start="0,0" end="-380,0" time="500" easing="inout" tween="cubic" condition="Control.HasFocus(8008)">Conditional</animation>
-          <posx>342</posx>
-          <posy>-22</posy>
+          <left>342</left>
+          <top>-22</top>
           <!-- Last Played Lable -->
           <control type="label">
             <description>Title label</description>
-            <posx>-15</posx>
-            <posy>25</posy>
+            <left>-15</left>
+            <top>25</top>
             <width>255</width>
             <height>25</height>
             <align>center</align>
@@ -2763,8 +2763,8 @@
           </control>
           <!-- Movies 2.06 -->
           <control type="list" id="8008">
-            <posx>0</posx>
-            <posy>5</posy>
+            <left>0</left>
+            <top>5</top>
             <width>800</width>
             <height>275</height>
             <onleft>SetFocus(9000)</onleft>
@@ -2778,8 +2778,8 @@
             <movement>1</movement>
             <itemlayout height="25" width="800">
               <control type="label">
-                <posx>20</posx>
-                <posy>26</posy>
+                <left>20</left>
+                <top>26</top>
                 <width>250</width>
                 <height>23</height>
                 <font>cirrus_20</font>
@@ -2794,16 +2794,16 @@
             </itemlayout>
             <focusedlayout height="25" width="800">
               <control type="image">
-                <posx>-10</posx>
-                <posy>27</posy>
+                <left>-10</left>
+                <top>27</top>
                 <width>300</width>
                 <height>24</height>
                 <texture flipx="true">recentlyaddeddiffuse.png</texture>
                 <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
-                <posx>20</posx>
-                <posy>26</posy>
+                <left>20</left>
+                <top>26</top>
                 <width>250</width>
                 <height>23</height>
                 <font>cirrus_20</font>
@@ -2942,8 +2942,8 @@
       </control>
       <!-- Stats -->
       <control type="group">
-        <posx>1028</posx>
-        <posy>452</posy>
+        <left>1028</left>
+        <top>452</top>
         <visible>Container(9000).Hasfocus(12)</visible>
         <include>VisibleFadeEffect</include>
         <animation effect="slide" start="0,0" end="0,-180" time="400" tween="cubic" easing="inout" condition="[Skin.HasSetting(lowermainmenu) | Skin.HasSetting(Lockhomemenulow)]">Conditional</animation>
@@ -2955,8 +2955,8 @@
           <visible>!Control.HasFocus(8000)</visible>
           <!-- Main Picture -->
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture background="true">ContentPanelRecentlyaddedvertical.png</texture>
@@ -2967,8 +2967,8 @@
             <visible>Skin.HasSetting(nostatswidget)</visible>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture>nowplaying_shadow5.png</texture>
@@ -2976,8 +2976,8 @@
             <visible>Skin.HasSetting(nostatswidget)</visible>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture flipy="true">nowplaying_shadow5.png</texture>
@@ -2986,8 +2986,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>20</posx>
-            <posy>25</posy>
+            <left>20</left>
+            <top>25</top>
             <width>220</width>
             <height>40</height>
             <align>left</align>
@@ -3004,8 +3004,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>20</posx>
-            <posy>135</posy>
+            <left>20</left>
+            <top>135</top>
             <width>220</width>
             <height>40</height>
             <align>left</align>
@@ -3023,8 +3023,8 @@
           <!-- Totals -->
           <control type="label">
             <description>Title label</description>
-            <posx>20</posx>
-            <posy>60</posy>
+            <left>20</left>
+            <top>60</top>
             <width>220</width>
             <height>20</height>
             <label>[COLOR=white]$LOCALIZE[20161][/COLOR]</label>
@@ -3039,8 +3039,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>150</posx>
-            <posy>60</posy>
+            <left>150</left>
+            <top>60</top>
             <width>220</width>
             <height>20</height>
             <label>$INFO[Window.Property(Movies.Count)]</label>
@@ -3055,8 +3055,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>20</posx>
-            <posy>90</posy>
+            <left>20</left>
+            <top>90</top>
             <width>220</width>
             <height>20</height>
             <label>[COLOR=white]$LOCALIZE[16102][/COLOR]</label>
@@ -3071,8 +3071,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>150</posx>
-            <posy>90</posy>
+            <left>150</left>
+            <top>90</top>
             <width>220</width>
             <height>20</height>
             <label>$INFO[Window.Property(Movies.Watched)]</label>
@@ -3087,8 +3087,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>20</posx>
-            <posy>120</posy>
+            <left>20</left>
+            <top>120</top>
             <width>220</width>
             <height>20</height>
             <label>[COLOR=white]$LOCALIZE[16101][/COLOR]</label>
@@ -3103,8 +3103,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>150</posx>
-            <posy>120</posy>
+            <left>150</left>
+            <top>120</top>
             <width>220</width>
             <height>20</height>
             <label>$INFO[Window.Property(Movies.UnWatched)]</label>
@@ -3121,8 +3121,8 @@
           <!-- TV SHow Totals -->
           <control type="label">
             <description>Title label</description>
-            <posx>20</posx>
-            <posy>170</posy>
+            <left>20</left>
+            <top>170</top>
             <width>220</width>
             <height>20</height>
             <label>[COLOR=white]$LOCALIZE[20161][/COLOR]</label>
@@ -3137,8 +3137,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>150</posx>
-            <posy>170</posy>
+            <left>150</left>
+            <top>170</top>
             <width>220</width>
             <height>20</height>
             <label>$INFO[Window.Property(tvshows.Count)]</label>
@@ -3153,8 +3153,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>20</posx>
-            <posy>200</posy>
+            <left>20</left>
+            <top>200</top>
             <width>220</width>
             <height>20</height>
             <label>[COLOR=white]$LOCALIZE[16102][/COLOR]</label>
@@ -3169,8 +3169,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>150</posx>
-            <posy>200</posy>
+            <left>150</left>
+            <top>200</top>
             <width>220</width>
             <height>20</height>
             <label>$INFO[Window.Property(tvshows.Watched)]</label>
@@ -3185,8 +3185,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>20</posx>
-            <posy>230</posy>
+            <left>20</left>
+            <top>230</top>
             <width>220</width>
             <height>20</height>
             <label>[COLOR=white]$LOCALIZE[16101][/COLOR]</label>
@@ -3201,8 +3201,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>150</posx>
-            <posy>230</posy>
+            <left>150</left>
+            <top>230</top>
             <width>220</width>
             <height>20</height>
             <label>$INFO[Window.Property(tvshows.UnWatched)]</label>
@@ -3221,8 +3221,8 @@
       <!-- TV -->
       <control type="image">
         <description>media info background image</description>
-        <posx>0</posx>
-        <posy>-9</posy>
+        <left>0</left>
+        <top>-9</top>
         <width>1280</width>
         <height>430</height>
         <texture flipy="true">nowplaying_shadow1.png</texture>
@@ -3232,8 +3232,8 @@
       </control>
       <control type="image">
         <description>media info background image</description>
-        <posx>0</posx>
-        <posy>-9</posy>
+        <left>0</left>
+        <top>-9</top>
         <width>1280</width>
         <height>430</height>
         <texture flipy="true">nowplaying_shadow1.png</texture>
@@ -3242,8 +3242,8 @@
         <animation effect="slide" start="0,430" end="0,0" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + !Skin.HasSetting(HomeMenuNoMoviesButton) + Control.HasFocus(8001)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>0</posx>
-        <posy>321</posy>
+        <left>0</left>
+        <top>321</top>
         <width>1330</width>
         <height>1</height>
         <aspectratio>stretch</aspectratio>
@@ -3253,8 +3253,8 @@
         <animation effect="slide" start="0,430" end="0,0" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + !Skin.HasSetting(HomeMenuNoMoviesButton) + Control.HasFocus(8001)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>0</posx>
-        <posy>321</posy>
+        <left>0</left>
+        <top>321</top>
         <width>1330</width>
         <height>1</height>
         <aspectratio>stretch</aspectratio>
@@ -3264,8 +3264,8 @@
         <animation effect="slide" start="0,430" end="0,0" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + !Skin.HasSetting(HomeMenuNoMoviesButton) + Control.HasFocus(8001)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>985</posx>
-        <posy>71</posy>
+        <left>985</left>
+        <top>71</top>
         <width>1</width>
         <height>240</height>
         <aspectratio>stretch</aspectratio>
@@ -3275,8 +3275,8 @@
         <animation effect="slide" start="0,430" end="0,0" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + !Skin.HasSetting(HomeMenuNoMoviesButton) + Control.HasFocus(8001)">Conditional</animation>
       </control>
       <control type="group">
-        <posx>1028</posx>
-        <posy>53</posy>
+        <left>1028</left>
+        <top>53</top>
         <visible>Library.HasContent(TVShows)</visible>
         <visible>Container(9000).Hasfocus(7)</visible>
         <animation effect="slide" start="0,0" end="0,-180" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu) | Skin.HasSetting(Lockhomemenulow)">Conditional</animation>
@@ -3286,8 +3286,8 @@
           <animation effect="slide" start="400,0" end="0,0" easing="inout" tween="cubic" time="500" delay="100">VisibleChange</animation>
           <visible>!Control.HasFocus(8001)</visible>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture background="true">ContentPanelRecentlyaddedvertical.png</texture>
@@ -3296,8 +3296,8 @@
             <visible>Skin.HasSetting(notvshowwidget)</visible>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture background="true">ContentPanelRecentlyaddedvertical.png</texture>
@@ -3306,8 +3306,8 @@
             <visible>Skin.HasSetting(nowatchlisttvshowwidget)</visible>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture>nowplaying_shadow5.png</texture>
@@ -3315,8 +3315,8 @@
             <visible>Skin.HasSetting(notvshowwidget)</visible>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture>nowplaying_shadow5.png</texture>
@@ -3324,8 +3324,8 @@
             <visible>Skin.HasSetting(nowatchlisttvshowwidget)</visible>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture flipy="true">nowplaying_shadow5.png</texture>
@@ -3333,8 +3333,8 @@
             <visible>Skin.HasSetting(notvshowwidget)</visible>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture flipy="true">nowplaying_shadow5.png</texture>
@@ -3343,8 +3343,8 @@
           </control>
           <control type="label">
             <description>RECENTLY ADDED</description>
-            <posx>10</posx>
-            <posy>25</posy>
+            <left>10</left>
+            <top>25</top>
             <width>220</width>
             <height>40</height>
             <align>center</align>
@@ -3361,8 +3361,8 @@
           </control>
           <control type="label">
             <description>CURRENTLY WATCHING</description>
-            <posx>10</posx>
-            <posy>25</posy>
+            <left>10</left>
+            <top>25</top>
             <width>220</width>
             <height>40</height>
             <align>center</align>
@@ -3379,8 +3379,8 @@
           </control>
           <control type="label">
             <description>RECENTLY ADDED</description>
-            <posx>10</posx>
-            <posy>25</posy>
+            <left>10</left>
+            <top>25</top>
             <width>220</width>
             <height>40</height>
             <align>center</align>
@@ -3397,8 +3397,8 @@
           </control>
           <control type="label">
             <description>CURRENTLY WATCHING</description>
-            <posx>10</posx>
-            <posy>25</posy>
+            <left>10</left>
+            <top>25</top>
             <width>220</width>
             <height>40</height>
             <align>center</align>
@@ -3416,8 +3416,8 @@
           <control type="image">
             <texture background="true">$INFO[Container(8001).ListItem.Thumb]</texture>
             <aspectratio scalediffuse="false">scale</aspectratio>
-            <posx>10</posx>
-            <posy>67</posy>
+            <left>10</left>
+            <top>67</top>
             <width>220</width>
             <height>123</height>
             <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
@@ -3429,8 +3429,8 @@
           <control type="image">
             <texture background="true">$INFO[Container(8001).ListItem.Thumb]</texture>
             <aspectratio scalediffuse="false">scale</aspectratio>
-            <posx>10</posx>
-            <posy>67</posy>
+            <left>10</left>
+            <top>67</top>
             <width>220</width>
             <height>123</height>
             <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
@@ -3441,8 +3441,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>230</posy>
+            <left>10</left>
+            <top>230</top>
             <width>220</width>
             <height>20</height>
             <align>center</align>
@@ -3463,8 +3463,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>230</posy>
+            <left>10</left>
+            <top>230</top>
             <width>220</width>
             <height>20</height>
             <align>center</align>
@@ -3485,8 +3485,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>225</posy>
+            <left>10</left>
+            <top>225</top>
             <width>220</width>
             <height>20</height>
             <align>center</align>
@@ -3507,8 +3507,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>225</posy>
+            <left>10</left>
+            <top>225</top>
             <width>220</width>
             <height>20</height>
             <align>center</align>
@@ -3529,8 +3529,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>198</posy>
+            <left>10</left>
+            <top>198</top>
             <height>20</height>
             <width>220</width>
             <label>$INFO[Container(8001).ListItem.Label2]  $INFO[Container(8001).ListItem.Property(EpisodeSeasonWidget)]$INFO[Container(8001).ListItem.Property(EpisodeNumberWidget)]</label>
@@ -3552,8 +3552,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>198</posy>
+            <left>10</left>
+            <top>198</top>
             <height>20</height>
             <width>220</width>
             <label>$INFO[Container(8001).ListItem.Label2]  $INFO[Container(8001).ListItem.Property(EpisodeNumber)]</label>
@@ -3575,8 +3575,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>193</posy>
+            <left>10</left>
+            <top>193</top>
             <height>20</height>
             <width>220</width>
             <label>$INFO[Container(8001).ListItem.Label2]  $INFO[Container(8001).ListItem.Property(EpisodeSeasonWidget)]$INFO[Container(8001).ListItem.Property(EpisodeNumberWidget)]</label>
@@ -3598,8 +3598,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>193</posy>
+            <left>10</left>
+            <top>193</top>
             <height>20</height>
             <width>220</width>
             <label>$INFO[Container(8001).ListItem.Label2]â€¢$INFO[Container(8001).ListItem.Property(EpisodeNumber)]</label>
@@ -3623,15 +3623,15 @@
         <control type="group">
           <description>Recently Added Widget Series</description>
           <visible>Control.HasFocus(8001)</visible>
-          <posx>-2033</posx>
-          <posy>-11</posy>
+          <left>-2033</left>
+          <top>-11</top>
           <animation effect="slide" start="0,0" end="1020,0" time="500" easing="inout" tween="cubic" condition="Control.HasFocus(8001)">Conditional</animation>
           <control type="group">
-            <posx>159</posx>
+            <left>159</left>
             <!-- Changes Rating Stars 2.06 -->
             <control type="group">
-              <posx>-210</posx>
-              <posy>180</posy>
+              <left>-210</left>
+              <top>180</top>
               <animation effect="fade" start="0" end="100" time="600">WindowOpen</animation>
               <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
               <control type="image">
@@ -3725,8 +3725,8 @@
             </control>
             <animation effect="slide" start="0,0" end="150,50" time="0" condition="Container(9000).HasFocus(7) | [Container(9000).Hasfocus(12) + !Skin.HasSetting(HomeMenuNoTVShowsButton)]">Conditional</animation>
             <control type="label">
-              <posx>28</posx>
-              <posy>-25</posy>
+              <left>28</left>
+              <top>-25</top>
               <width>550</width>
               <height>30</height>
               <font>cirrus_24</font>
@@ -3737,8 +3737,8 @@
               <visible>!Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
             </control>
             <control type="label">
-              <posx>28</posx>
-              <posy>-25</posy>
+              <left>28</left>
+              <top>-25</top>
               <width>550</width>
               <height>30</height>
               <font>cirrus_24</font>
@@ -3749,48 +3749,48 @@
               <visible>Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
             </control>
             <control type="label">
-              <posx>28</posx>
+              <left>28</left>
               <width>533</width>
               <height>25</height>
-              <posy>8</posy>
+              <top>8</top>
               <label>[COLOR=accent]$LOCALIZE[20373]:[/COLOR] $INFO[Container(8001).ListItem.Property(EpisodeSeason)]</label>
               <font>cirrus_20</font>
               <shadowcolor>black</shadowcolor>
               <visible>!Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
             </control>
             <control type="label">
-              <posx>28</posx>
+              <left>28</left>
               <width>533</width>
               <height>25</height>
-              <posy>8</posy>
+              <top>8</top>
               <label>[COLOR=accent]$LOCALIZE[20373]:[/COLOR] $INFO[Container(8001).ListItem.Property(Season)]</label>
               <font>cirrus_20</font>
               <shadowcolor>black</shadowcolor>
               <visible>Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
             </control>
             <control type="label">
-              <posx>28</posx>
+              <left>28</left>
               <width>533</width>
               <height>25</height>
-              <posy>34</posy>
+              <top>34</top>
               <label>[COLOR=accent]$LOCALIZE[20359]:[/COLOR] $INFO[Container(8001).ListItem.Property(EpisodeNumber)]</label>
               <font>cirrus_20</font>
               <shadowcolor>black</shadowcolor>
               <visible>!Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
             </control>
             <control type="label">
-              <posx>28</posx>
+              <left>28</left>
               <width>533</width>
               <height>25</height>
-              <posy>34</posy>
+              <top>34</top>
               <label>[COLOR=accent]$LOCALIZE[20359]:[/COLOR] $INFO[Container(8001).ListItem.Property(Episode)]</label>
               <font>cirrus_20</font>
               <shadowcolor>black</shadowcolor>
               <visible>Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
             </control>
             <control type="textbox">
-              <posx>28</posx>
-              <posy>70</posy>
+              <left>28</left>
+              <top>70</top>
               <width>610</width>
               <height>110</height>
               <align>left</align>
@@ -3803,8 +3803,8 @@
             </control>
             <control type="image">
               <description>Show clearlogo</description>
-              <posx>380</posx>
-              <posy>-65</posy>
+              <left>380</left>
+              <top>-65</top>
               <width>250</width>
               <height>170</height>
               <texture background="true">$INFO[Container(8001).ListItem.Property(Clearlogo)]</texture>
@@ -3817,8 +3817,8 @@
             <bordertexture border="6">ContentPanelvertical.png</bordertexture>
             <bordersize>6</bordersize>
             <aspectratio scalediffuse="false">scale</aspectratio>
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>321</width>
             <height>180</height>
             <fadetime>400</fadetime>
@@ -3828,8 +3828,8 @@
             <texture fallback="DefaultVideo.png">$INFO[Container(8001).ListItem.Thumb]</texture>
             <bordersize>8</bordersize>
             <aspectratio scalediffuse="false">scale</aspectratio>
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>321</width>
             <height>180</height>
             <fadetime>400</fadetime>
@@ -3840,8 +3840,8 @@
             <bordertexture border="6">ContentPanelvertical.png</bordertexture>
             <bordersize>6</bordersize>
             <aspectratio scalediffuse="false">scale</aspectratio>
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>321</width>
             <height>180</height>
             <fadetime>400</fadetime>
@@ -3852,8 +3852,8 @@
             <texture fallback="DefaultVideo.png">$INFO[Container(8001).ListItem.Thumb]</texture>
             <bordersize>8</bordersize>
             <aspectratio scalediffuse="false">scale</aspectratio>
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>321</width>
             <height>180</height>
             <fadetime>400</fadetime>
@@ -3861,8 +3861,8 @@
             <visible>Skin.HasSetting(episodethumb)</visible>
           </control>
           <control type="image">
-            <posx>70</posx>
-            <posy>25</posy>
+            <left>70</left>
+            <top>25</top>
             <width>153</width>
             <height>230</height>
             <texture>black-back.png</texture>
@@ -3874,8 +3874,8 @@
             <visible>Skin.HasSetting(tvshowthumb)</visible>
           </control>
           <control type="image">
-            <posx>70</posx>
-            <posy>25</posy>
+            <left>70</left>
+            <top>25</top>
             <description>Main Icon</description>
             <width>153</width>
             <height>230</height>
@@ -3889,12 +3889,12 @@
         </control>
         <control type="group">
           <animation effect="slide" start="0,0" end="-380,0" time="500" easing="inout" tween="cubic" condition="Control.HasFocus(8001)">Conditional</animation>
-          <posx>342</posx>
-          <posy>-22</posy>
+          <left>342</left>
+          <top>-22</top>
           <control type="label">
             <description>Title label</description>
-            <posx>21</posx>
-            <posy>36</posy>
+            <left>21</left>
+            <top>36</top>
             <width>255</width>
             <height>40</height>
             <align>center</align>
@@ -3909,8 +3909,8 @@
             <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
           </control>
           <control type="list" id="8001">
-            <posx>0</posx>
-            <posy>5</posy>
+            <left>0</left>
+            <top>5</top>
             <width>800</width>
             <height>275</height>
             <orientation>vertical</orientation>
@@ -3925,8 +3925,8 @@
             <movement>1</movement>
             <itemlayout height="25" width="800">
               <control type="label">
-                <posx>20</posx>
-                <posy>26</posy>
+                <left>20</left>
+                <top>26</top>
                 <width>250</width>
                 <height>23</height>
                 <font>cirrus_20</font>
@@ -3940,8 +3940,8 @@
                 <visible>!Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
               </control>
               <control type="label">
-                <posx>20</posx>
-                <posy>26</posy>
+                <left>20</left>
+                <top>26</top>
                 <width>250</width>
                 <height>23</height>
                 <font>cirrus_20</font>
@@ -3957,16 +3957,16 @@
             </itemlayout>
             <focusedlayout height="25" width="300">
               <control type="image">
-                <posx>-10</posx>
-                <posy>27</posy>
+                <left>-10</left>
+                <top>27</top>
                 <width>300</width>
                 <height>24</height>
                 <texture flipx="true">recentlyaddeddiffuse.png</texture>
                 <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
-                <posx>20</posx>
-                <posy>26</posy>
+                <left>20</left>
+                <top>26</top>
                 <width>250</width>
                 <height>23</height>
                 <font>cirrus_20</font>
@@ -3979,8 +3979,8 @@
                 <visible>!Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
               </control>
               <control type="label">
-                <posx>20</posx>
-                <posy>26</posy>
+                <left>20</left>
+                <top>26</top>
                 <width>300</width>
                 <height>23</height>
                 <font>cirrus_20</font>
@@ -4331,8 +4331,8 @@
       <!-- Recently Added TV Shows Playlist 1 -->
       <control type="image">
         <description>media info background image</description>
-        <posx>0</posx>
-        <posy>-9</posy>
+        <left>0</left>
+        <top>-9</top>
         <width>1280</width>
         <height>430</height>
         <texture flipy="true">nowplaying_shadow1.png</texture>
@@ -4342,8 +4342,8 @@
       </control>
       <control type="image">
         <description>media info background image</description>
-        <posx>0</posx>
-        <posy>-9</posy>
+        <left>0</left>
+        <top>-9</top>
         <width>1280</width>
         <height>430</height>
         <texture flipy="true">nowplaying_shadow1.png</texture>
@@ -4352,8 +4352,8 @@
         <animation effect="slide" start="0,430" end="0,0" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + Control.HasFocus(8009)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>0</posx>
-        <posy>321</posy>
+        <left>0</left>
+        <top>321</top>
         <width>1330</width>
         <height>1</height>
         <aspectratio>stretch</aspectratio>
@@ -4363,8 +4363,8 @@
         <animation effect="slide" start="0,430" end="0,0" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + Control.HasFocus(8009)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>0</posx>
-        <posy>321</posy>
+        <left>0</left>
+        <top>321</top>
         <width>1330</width>
         <height>1</height>
         <aspectratio>stretch</aspectratio>
@@ -4374,8 +4374,8 @@
         <animation effect="slide" start="0,430" end="0,0" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + Control.HasFocus(8009)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>985</posx>
-        <posy>71</posy>
+        <left>985</left>
+        <top>71</top>
         <width>1</width>
         <height>240</height>
         <aspectratio>stretch</aspectratio>
@@ -4385,8 +4385,8 @@
         <animation effect="slide" start="0,430" end="0,0" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + Control.HasFocus(8009)">Conditional</animation>
       </control>
       <control type="group">
-        <posx>1028</posx>
-        <posy>53</posy>
+        <left>1028</left>
+        <top>53</top>
         <visible>Library.HasContent(TVShows)</visible>
         <visible>Container(9000).Hasfocus(9) + System.HasAddon(script.randomandlastitems) + Skin.HasSetting(notvwidgetplaylisttv)</visible>
         <animation effect="slide" start="0,0" end="0,-180" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu) | Skin.HasSetting(Lockhomemenulow)">Conditional</animation>
@@ -4396,8 +4396,8 @@
           <animation effect="slide" start="400,0" end="0,0" easing="inout" tween="cubic" time="500" delay="100">VisibleChange</animation>
           <visible>!Control.HasFocus(8009)</visible>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture background="true">ContentPanelRecentlyaddedvertical.png</texture>
@@ -4406,8 +4406,8 @@
             <visible>Skin.HasSetting(notvwidgetplaylisttv1)</visible>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture>nowplaying_shadow5.png</texture>
@@ -4415,8 +4415,8 @@
             <visible>Skin.HasSetting(notvwidgetplaylisttv1)</visible>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture flipy="true">nowplaying_shadow5.png</texture>
@@ -4425,8 +4425,8 @@
           </control>
           <control type="label">
             <description>RECENTLY ADDED</description>
-            <posx>10</posx>
-            <posy>25</posy>
+            <left>10</left>
+            <top>25</top>
             <width>220</width>
             <height>40</height>
             <align>center</align>
@@ -4443,8 +4443,8 @@
           </control>
           <control type="label">
             <description>RECENTLY ADDED</description>
-            <posx>10</posx>
-            <posy>25</posy>
+            <left>10</left>
+            <top>25</top>
             <width>220</width>
             <height>40</height>
             <align>center</align>
@@ -4462,8 +4462,8 @@
           <control type="image">
             <texture background="true">$INFO[Container(8009).ListItem.Thumb]</texture>
             <aspectratio scalediffuse="false">scale</aspectratio>
-            <posx>10</posx>
-            <posy>67</posy>
+            <left>10</left>
+            <top>67</top>
             <width>220</width>
             <height>123</height>
             <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
@@ -4474,8 +4474,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>230</posy>
+            <left>10</left>
+            <top>230</top>
             <width>220</width>
             <height>20</height>
             <align>center</align>
@@ -4496,8 +4496,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>225</posy>
+            <left>10</left>
+            <top>225</top>
             <width>220</width>
             <height>20</height>
             <align>center</align>
@@ -4518,8 +4518,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>198</posy>
+            <left>10</left>
+            <top>198</top>
             <height>20</height>
             <width>220</width>
             <label>$INFO[Container(8009).ListItem.Label2]  $INFO[Container(8009).ListItem.Property(EpisodeSeasonWidget)]$INFO[Container(8009).ListItem.Property(EpisodeNumberWidget)]</label>
@@ -4541,8 +4541,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>193</posy>
+            <left>10</left>
+            <top>193</top>
             <height>20</height>
             <width>220</width>
             <label>$INFO[Container(8009).ListItem.Label2]  $INFO[Container(8009).ListItem.Property(EpisodeSeasonWidget)]$INFO[Container(8009).ListItem.Property(EpisodeNumberWidget)]</label>
@@ -4566,15 +4566,15 @@
         <control type="group">
           <description>Recently Added Widget Series</description>
           <visible>Control.HasFocus(8009)</visible>
-          <posx>-2033</posx>
-          <posy>-11</posy>
+          <left>-2033</left>
+          <top>-11</top>
           <animation effect="slide" start="0,0" end="1020,0" time="500" easing="inout" tween="cubic" condition="Control.HasFocus(8009)">Conditional</animation>
           <control type="group">
-            <posx>159</posx>
+            <left>159</left>
             <!-- Changes Rating Stars 2.06 -->
             <control type="group">
-              <posx>-210</posx>
-              <posy>180</posy>
+              <left>-210</left>
+              <top>180</top>
               <animation effect="fade" start="0" end="100" time="600">WindowOpen</animation>
               <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
               <control type="image">
@@ -4668,8 +4668,8 @@
             </control>
             <animation effect="slide" start="0,0" end="150,50" time="0" condition="Container(9000).HasFocus(9)">Conditional</animation>
             <control type="label">
-              <posx>28</posx>
-              <posy>-25</posy>
+              <left>28</left>
+              <top>-25</top>
               <width>550</width>
               <height>30</height>
               <font>cirrus_24</font>
@@ -4680,28 +4680,28 @@
               <visible>Container(9000).HasFocus(9)</visible>
             </control>
             <control type="label">
-              <posx>28</posx>
+              <left>28</left>
               <width>533</width>
               <height>25</height>
-              <posy>8</posy>
+              <top>8</top>
               <label>[COLOR=accent]$LOCALIZE[20373]:[/COLOR] $INFO[Container(8009).ListItem.Property(EpisodeSeason)]</label>
               <font>cirrus_20</font>
               <shadowcolor>black</shadowcolor>
               <visible>Container(9000).HasFocus(9)</visible>
             </control>
             <control type="label">
-              <posx>28</posx>
+              <left>28</left>
               <width>533</width>
               <height>25</height>
-              <posy>34</posy>
+              <top>34</top>
               <label>[COLOR=accent]$LOCALIZE[20359]:[/COLOR] $INFO[Container(8009).ListItem.Property(EpisodeNumber)]</label>
               <font>cirrus_20</font>
               <shadowcolor>black</shadowcolor>
               <visible>Container(9000).HasFocus(9)</visible>
             </control>
             <control type="textbox">
-              <posx>28</posx>
-              <posy>70</posy>
+              <left>28</left>
+              <top>70</top>
               <width>610</width>
               <height>110</height>
               <align>left</align>
@@ -4714,8 +4714,8 @@
             </control>
             <control type="image">
               <description>Show clearlogo</description>
-              <posx>350</posx>
-              <posy>-60</posy>
+              <left>350</left>
+              <top>-60</top>
               <width>200</width>
               <height>150</height>
               <texture background="true">$INFO[Container(8009).ListItem.Property(Clearlogo)]</texture>
@@ -4728,8 +4728,8 @@
             <bordertexture border="6">ContentPanelvertical.png</bordertexture>
             <bordersize>6</bordersize>
             <aspectratio scalediffuse="false">scale</aspectratio>
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>321</width>
             <height>180</height>
             <fadetime>400</fadetime>
@@ -4739,8 +4739,8 @@
             <texture fallback="DefaultVideo.png">$INFO[Container(8009).ListItem.Thumb]</texture>
             <bordersize>8</bordersize>
             <aspectratio scalediffuse="false">scale</aspectratio>
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>321</width>
             <height>180</height>
             <fadetime>400</fadetime>
@@ -4749,14 +4749,14 @@
         </control>
         <control type="group">
           <animation effect="slide" start="0,0" end="-380,0" time="500" easing="inout" tween="cubic" condition="Control.HasFocus(8009)">Conditional</animation>
-          <posx>342</posx>
-          <posy>-22</posy>
+          <left>342</left>
+          <top>-22</top>
           <!-- Slide Picture Background -->
           <!-- Last Played Lable -->
           <control type="label">
             <description>Title label</description>
-            <posx>21</posx>
-            <posy>36</posy>
+            <left>21</left>
+            <top>36</top>
             <width>255</width>
             <height>40</height>
             <align>center</align>
@@ -4771,8 +4771,8 @@
             <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
           </control>
           <control type="list" id="8009">
-            <posx>0</posx>
-            <posy>5</posy>
+            <left>0</left>
+            <top>5</top>
             <width>800</width>
             <height>275</height>
             <orientation>vertical</orientation>
@@ -4787,8 +4787,8 @@
             <movement>1</movement>
             <itemlayout height="25" width="800">
               <control type="label">
-                <posx>20</posx>
-                <posy>26</posy>
+                <left>20</left>
+                <top>26</top>
                 <width>250</width>
                 <height>23</height>
                 <font>cirrus_20</font>
@@ -4804,16 +4804,16 @@
             </itemlayout>
             <focusedlayout height="25" width="300">
               <control type="image">
-                <posx>-10</posx>
-                <posy>27</posy>
+                <left>-10</left>
+                <top>27</top>
                 <width>300</width>
                 <height>24</height>
                 <texture flipx="true">recentlyaddeddiffuse.png</texture>
                 <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
-                <posx>20</posx>
-                <posy>26</posy>
+                <left>20</left>
+                <top>26</top>
                 <width>250</width>
                 <height>23</height>
                 <font>cirrus_20</font>
@@ -4974,8 +4974,8 @@
       <!-- Recently Added TV Shows Playlist 2 -->
       <control type="image">
         <description>media info background image</description>
-        <posx>0</posx>
-        <posy>-9</posy>
+        <left>0</left>
+        <top>-9</top>
         <width>1280</width>
         <height>430</height>
         <texture flipy="true">nowplaying_shadow1.png</texture>
@@ -4985,8 +4985,8 @@
       </control>
       <control type="image">
         <description>media info background image</description>
-        <posx>0</posx>
-        <posy>-9</posy>
+        <left>0</left>
+        <top>-9</top>
         <width>1280</width>
         <height>430</height>
         <texture flipy="true">nowplaying_shadow1.png</texture>
@@ -4995,8 +4995,8 @@
         <animation effect="slide" start="0,430" end="0,0" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + Control.HasFocus(8010)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>0</posx>
-        <posy>321</posy>
+        <left>0</left>
+        <top>321</top>
         <width>1330</width>
         <height>1</height>
         <aspectratio>stretch</aspectratio>
@@ -5006,8 +5006,8 @@
         <animation effect="slide" start="0,430" end="0,0" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + Control.HasFocus(8010)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>0</posx>
-        <posy>321</posy>
+        <left>0</left>
+        <top>321</top>
         <width>1330</width>
         <height>1</height>
         <aspectratio>stretch</aspectratio>
@@ -5017,8 +5017,8 @@
         <animation effect="slide" start="0,430" end="0,0" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + Control.HasFocus(8010)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>985</posx>
-        <posy>71</posy>
+        <left>985</left>
+        <top>71</top>
         <width>1</width>
         <height>240</height>
         <aspectratio>stretch</aspectratio>
@@ -5028,8 +5028,8 @@
         <animation effect="slide" start="0,430" end="0,0" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + Control.HasFocus(8010)">Conditional</animation>
       </control>
       <control type="group">
-        <posx>1028</posx>
-        <posy>53</posy>
+        <left>1028</left>
+        <top>53</top>
         <visible>Library.HasContent(TVShows)</visible>
         <visible>Container(9000).Hasfocus(10) + System.HasAddon(script.randomandlastitems) + Skin.HasSetting(notvwidgetplaylisttv)</visible>
         <animation effect="slide" start="0,0" end="0,-180" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu) | Skin.HasSetting(Lockhomemenulow)">Conditional</animation>
@@ -5039,8 +5039,8 @@
           <animation effect="slide" start="400,0" end="0,0" easing="inout" tween="cubic" time="500" delay="100">VisibleChange</animation>
           <visible>!Control.HasFocus(8010)</visible>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture background="true">ContentPanelRecentlyaddedvertical.png</texture>
@@ -5049,8 +5049,8 @@
             <visible>Skin.HasSetting(notvwidgetplaylisttv2)</visible>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture>nowplaying_shadow5.png</texture>
@@ -5058,8 +5058,8 @@
             <visible>Skin.HasSetting(notvwidgetplaylisttv2)</visible>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture flipy="true">nowplaying_shadow5.png</texture>
@@ -5068,8 +5068,8 @@
           </control>
           <control type="label">
             <description>RECENTLY ADDED</description>
-            <posx>10</posx>
-            <posy>25</posy>
+            <left>10</left>
+            <top>25</top>
             <width>220</width>
             <height>40</height>
             <align>center</align>
@@ -5086,8 +5086,8 @@
           </control>
           <control type="label">
             <description>RECENTLY ADDED</description>
-            <posx>10</posx>
-            <posy>25</posy>
+            <left>10</left>
+            <top>25</top>
             <width>220</width>
             <height>40</height>
             <align>center</align>
@@ -5105,8 +5105,8 @@
           <control type="image">
             <texture background="true">$INFO[Container(8010).ListItem.Thumb]</texture>
             <aspectratio scalediffuse="false">scale</aspectratio>
-            <posx>10</posx>
-            <posy>67</posy>
+            <left>10</left>
+            <top>67</top>
             <width>220</width>
             <height>123</height>
             <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
@@ -5117,8 +5117,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>230</posy>
+            <left>10</left>
+            <top>230</top>
             <width>220</width>
             <height>20</height>
             <align>center</align>
@@ -5139,8 +5139,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>225</posy>
+            <left>10</left>
+            <top>225</top>
             <width>220</width>
             <height>20</height>
             <align>center</align>
@@ -5161,8 +5161,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>198</posy>
+            <left>10</left>
+            <top>198</top>
             <height>20</height>
             <width>220</width>
             <label>$INFO[Container(8010).ListItem.Label2]  $INFO[Container(8010).ListItem.Property(EpisodeSeasonWidget)]$INFO[Container(8010).ListItem.Property(EpisodeNumberWidget)]</label>
@@ -5184,8 +5184,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>193</posy>
+            <left>10</left>
+            <top>193</top>
             <height>20</height>
             <width>220</width>
             <label>$INFO[Container(8010).ListItem.Label2]  $INFO[Container(8010).ListItem.Property(EpisodeSeasonWidget)]$INFO[Container(8010).ListItem.Property(EpisodeNumberWidget)]</label>
@@ -5209,15 +5209,15 @@
         <control type="group">
           <description>Recently Added Widget Series</description>
           <visible>Control.HasFocus(8010)</visible>
-          <posx>-2033</posx>
-          <posy>-11</posy>
+          <left>-2033</left>
+          <top>-11</top>
           <animation effect="slide" start="0,0" end="1020,0" time="500" easing="inout" tween="cubic" condition="Control.HasFocus(8010)">Conditional</animation>
           <control type="group">
-            <posx>159</posx>
+            <left>159</left>
             <!-- Changes Rating Stars 2.06 -->
             <control type="group">
-              <posx>-210</posx>
-              <posy>180</posy>
+              <left>-210</left>
+              <top>180</top>
               <animation effect="fade" start="0" end="100" time="600">WindowOpen</animation>
               <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
               <control type="image">
@@ -5311,8 +5311,8 @@
             </control>
             <animation effect="slide" start="0,0" end="150,50" time="0" condition="Container(9000).HasFocus(10)">Conditional</animation>
             <control type="label">
-              <posx>28</posx>
-              <posy>-25</posy>
+              <left>28</left>
+              <top>-25</top>
               <width>550</width>
               <height>30</height>
               <font>cirrus_24</font>
@@ -5323,28 +5323,28 @@
               <visible>Container(9000).HasFocus(10)</visible>
             </control>
             <control type="label">
-              <posx>28</posx>
+              <left>28</left>
               <width>533</width>
               <height>25</height>
-              <posy>8</posy>
+              <top>8</top>
               <label>[COLOR=accent]$LOCALIZE[20373]:[/COLOR] $INFO[Container(8010).ListItem.Property(EpisodeSeason)]</label>
               <font>cirrus_20</font>
               <shadowcolor>black</shadowcolor>
               <visible>Container(9000).HasFocus(10)</visible>
             </control>
             <control type="label">
-              <posx>28</posx>
+              <left>28</left>
               <width>533</width>
               <height>25</height>
-              <posy>34</posy>
+              <top>34</top>
               <label>[COLOR=accent]$LOCALIZE[20359]:[/COLOR] $INFO[Container(8010).ListItem.Property(EpisodeNumber)]</label>
               <font>cirrus_20</font>
               <shadowcolor>black</shadowcolor>
               <visible>Container(9000).HasFocus(10)</visible>
             </control>
             <control type="textbox">
-              <posx>28</posx>
-              <posy>70</posy>
+              <left>28</left>
+              <top>70</top>
               <width>610</width>
               <height>110</height>
               <align>left</align>
@@ -5357,8 +5357,8 @@
             </control>
             <control type="image">
               <description>Show clearlogo</description>
-              <posx>350</posx>
-              <posy>-60</posy>
+              <left>350</left>
+              <top>-60</top>
               <width>200</width>
               <height>150</height>
               <texture background="true">$INFO[Container(8010).ListItem.Property(Clearlogo)]</texture>
@@ -5371,8 +5371,8 @@
             <bordertexture border="6">ContentPanelvertical.png</bordertexture>
             <bordersize>6</bordersize>
             <aspectratio scalediffuse="false">scale</aspectratio>
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>321</width>
             <height>180</height>
             <fadetime>400</fadetime>
@@ -5382,8 +5382,8 @@
             <texture fallback="DefaultVideo.png">$INFO[Container(8010).ListItem.Thumb]</texture>
             <bordersize>8</bordersize>
             <aspectratio scalediffuse="false">scale</aspectratio>
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>321</width>
             <height>180</height>
             <fadetime>400</fadetime>
@@ -5392,14 +5392,14 @@
         </control>
         <control type="group">
           <animation effect="slide" start="0,0" end="-380,0" time="500" easing="inout" tween="cubic" condition="Control.HasFocus(8010)">Conditional</animation>
-          <posx>342</posx>
-          <posy>-22</posy>
+          <left>342</left>
+          <top>-22</top>
           <!-- Slide Picture Background -->
           <!-- Last Played Lable -->
           <control type="label">
             <description>Title label</description>
-            <posx>21</posx>
-            <posy>36</posy>
+            <left>21</left>
+            <top>36</top>
             <width>255</width>
             <height>40</height>
             <align>center</align>
@@ -5414,8 +5414,8 @@
             <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
           </control>
           <control type="list" id="8010">
-            <posx>0</posx>
-            <posy>5</posy>
+            <left>0</left>
+            <top>5</top>
             <width>800</width>
             <height>275</height>
             <orientation>vertical</orientation>
@@ -5430,8 +5430,8 @@
             <movement>1</movement>
             <itemlayout height="25" width="800">
               <control type="label">
-                <posx>20</posx>
-                <posy>26</posy>
+                <left>20</left>
+                <top>26</top>
                 <width>250</width>
                 <height>23</height>
                 <font>cirrus_20</font>
@@ -5447,16 +5447,16 @@
             </itemlayout>
             <focusedlayout height="25" width="300">
               <control type="image">
-                <posx>-10</posx>
-                <posy>27</posy>
+                <left>-10</left>
+                <top>27</top>
                 <width>300</width>
                 <height>24</height>
                 <texture flipx="true">recentlyaddeddiffuse.png</texture>
                 <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
-                <posx>20</posx>
-                <posy>26</posy>
+                <left>20</left>
+                <top>26</top>
                 <width>250</width>
                 <height>23</height>
                 <font>cirrus_20</font>
@@ -5617,8 +5617,8 @@
       <!-- Recently Added TV Shows Playlist 3 -->
       <control type="image">
         <description>media info background image</description>
-        <posx>0</posx>
-        <posy>-9</posy>
+        <left>0</left>
+        <top>-9</top>
         <width>1280</width>
         <height>430</height>
         <texture flipy="true">nowplaying_shadow1.png</texture>
@@ -5628,8 +5628,8 @@
       </control>
       <control type="image">
         <description>media info background image</description>
-        <posx>0</posx>
-        <posy>-9</posy>
+        <left>0</left>
+        <top>-9</top>
         <width>1280</width>
         <height>430</height>
         <texture flipy="true">nowplaying_shadow1.png</texture>
@@ -5638,8 +5638,8 @@
         <animation effect="slide" start="0,430" end="0,0" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + Control.HasFocus(8011)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>0</posx>
-        <posy>321</posy>
+        <left>0</left>
+        <top>321</top>
         <width>1330</width>
         <height>1</height>
         <aspectratio>stretch</aspectratio>
@@ -5649,8 +5649,8 @@
         <animation effect="slide" start="0,430" end="0,0" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + Control.HasFocus(8011)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>0</posx>
-        <posy>321</posy>
+        <left>0</left>
+        <top>321</top>
         <width>1330</width>
         <height>1</height>
         <aspectratio>stretch</aspectratio>
@@ -5660,8 +5660,8 @@
         <animation effect="slide" start="0,430" end="0,0" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + Control.HasFocus(8011)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>985</posx>
-        <posy>71</posy>
+        <left>985</left>
+        <top>71</top>
         <width>1</width>
         <height>240</height>
         <aspectratio>stretch</aspectratio>
@@ -5671,8 +5671,8 @@
         <animation effect="slide" start="0,430" end="0,0" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + Control.HasFocus(8011)">Conditional</animation>
       </control>
       <control type="group">
-        <posx>1028</posx>
-        <posy>53</posy>
+        <left>1028</left>
+        <top>53</top>
         <visible>Library.HasContent(TVShows)</visible>
         <visible>Container(9000).Hasfocus(11) + System.HasAddon(script.randomandlastitems) + Skin.HasSetting(notvwidgetplaylisttv)</visible>
         <animation effect="slide" start="0,0" end="0,-180" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu) | Skin.HasSetting(Lockhomemenulow)">Conditional</animation>
@@ -5682,8 +5682,8 @@
           <animation effect="slide" start="400,0" end="0,0" easing="inout" tween="cubic" time="500" delay="100">VisibleChange</animation>
           <visible>!Control.HasFocus(8011)</visible>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture background="true">ContentPanelRecentlyaddedvertical.png</texture>
@@ -5692,8 +5692,8 @@
             <visible>Skin.HasSetting(notvwidgetplaylisttv3)</visible>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture>nowplaying_shadow5.png</texture>
@@ -5701,8 +5701,8 @@
             <visible>Skin.HasSetting(notvwidgetplaylisttv3)</visible>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture flipy="true">nowplaying_shadow5.png</texture>
@@ -5711,8 +5711,8 @@
           </control>
           <control type="label">
             <description>RECENTLY ADDED</description>
-            <posx>10</posx>
-            <posy>25</posy>
+            <left>10</left>
+            <top>25</top>
             <width>220</width>
             <height>40</height>
             <align>center</align>
@@ -5729,8 +5729,8 @@
           </control>
           <control type="label">
             <description>RECENTLY ADDED</description>
-            <posx>10</posx>
-            <posy>25</posy>
+            <left>10</left>
+            <top>25</top>
             <width>220</width>
             <height>40</height>
             <align>center</align>
@@ -5748,8 +5748,8 @@
           <control type="image">
             <texture background="true">$INFO[Container(8011).ListItem.Thumb]</texture>
             <aspectratio scalediffuse="false">scale</aspectratio>
-            <posx>10</posx>
-            <posy>67</posy>
+            <left>10</left>
+            <top>67</top>
             <width>220</width>
             <height>123</height>
             <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
@@ -5760,8 +5760,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>230</posy>
+            <left>10</left>
+            <top>230</top>
             <width>220</width>
             <height>20</height>
             <align>center</align>
@@ -5782,8 +5782,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>225</posy>
+            <left>10</left>
+            <top>225</top>
             <width>220</width>
             <height>20</height>
             <align>center</align>
@@ -5804,8 +5804,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>198</posy>
+            <left>10</left>
+            <top>198</top>
             <height>20</height>
             <width>220</width>
             <label>$INFO[Container(8011).ListItem.Label2]  $INFO[Container(8011).ListItem.Property(EpisodeSeasonWidget)]$INFO[Container(8011).ListItem.Property(EpisodeNumberWidget)]</label>
@@ -5827,8 +5827,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>193</posy>
+            <left>10</left>
+            <top>193</top>
             <height>20</height>
             <width>220</width>
             <label>$INFO[Container(8011).ListItem.Label2]  $INFO[Container(8011).ListItem.Property(EpisodeSeasonWidget)]$INFO[Container(8011).ListItem.Property(EpisodeNumberWidget)]</label>
@@ -5852,15 +5852,15 @@
         <control type="group">
           <description>Recently Added Widget Series</description>
           <visible>Control.HasFocus(8011)</visible>
-          <posx>-2033</posx>
-          <posy>-11</posy>
+          <left>-2033</left>
+          <top>-11</top>
           <animation effect="slide" start="0,0" end="1020,0" time="500" easing="inout" tween="cubic" condition="Control.HasFocus(8011)">Conditional</animation>
           <control type="group">
-            <posx>159</posx>
+            <left>159</left>
             <!-- Changes Rating Stars 2.06 -->
             <control type="group">
-              <posx>-210</posx>
-              <posy>180</posy>
+              <left>-210</left>
+              <top>180</top>
               <animation effect="fade" start="0" end="100" time="600">WindowOpen</animation>
               <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
               <control type="image">
@@ -5954,8 +5954,8 @@
             </control>
             <animation effect="slide" start="0,0" end="150,50" time="0" condition="Container(9000).HasFocus(11)">Conditional</animation>
             <control type="label">
-              <posx>28</posx>
-              <posy>-25</posy>
+              <left>28</left>
+              <top>-25</top>
               <width>550</width>
               <height>30</height>
               <font>cirrus_24</font>
@@ -5966,28 +5966,28 @@
               <visible>Container(9000).HasFocus(11)</visible>
             </control>
             <control type="label">
-              <posx>28</posx>
+              <left>28</left>
               <width>533</width>
               <height>25</height>
-              <posy>8</posy>
+              <top>8</top>
               <label>[COLOR=accent]$LOCALIZE[20373]:[/COLOR] $INFO[Container(8011).ListItem.Property(EpisodeSeason)]</label>
               <font>cirrus_20</font>
               <shadowcolor>black</shadowcolor>
               <visible>Container(9000).HasFocus(11)</visible>
             </control>
             <control type="label">
-              <posx>28</posx>
+              <left>28</left>
               <width>533</width>
               <height>25</height>
-              <posy>34</posy>
+              <top>34</top>
               <label>[COLOR=accent]$LOCALIZE[20359]:[/COLOR] $INFO[Container(8011).ListItem.Property(EpisodeNumber)]</label>
               <font>cirrus_20</font>
               <shadowcolor>black</shadowcolor>
               <visible>Container(9000).HasFocus(11)</visible>
             </control>
             <control type="textbox">
-              <posx>28</posx>
-              <posy>70</posy>
+              <left>28</left>
+              <top>70</top>
               <width>610</width>
               <height>110</height>
               <align>left</align>
@@ -6000,8 +6000,8 @@
             </control>
             <control type="image">
               <description>Show clearlogo</description>
-              <posx>350</posx>
-              <posy>-60</posy>
+              <left>350</left>
+              <top>-60</top>
               <width>200</width>
               <height>150</height>
               <texture background="true">$INFO[Container(8011).ListItem.Property(Clearlogo)]</texture>
@@ -6014,8 +6014,8 @@
             <bordertexture border="6">ContentPanelvertical.png</bordertexture>
             <bordersize>6</bordersize>
             <aspectratio scalediffuse="false">scale</aspectratio>
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>321</width>
             <height>180</height>
             <fadetime>400</fadetime>
@@ -6025,8 +6025,8 @@
             <texture fallback="DefaultVideo.png">$INFO[Container(8011).ListItem.Thumb]</texture>
             <bordersize>8</bordersize>
             <aspectratio scalediffuse="false">scale</aspectratio>
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>321</width>
             <height>180</height>
             <fadetime>400</fadetime>
@@ -6035,14 +6035,14 @@
         </control>
         <control type="group">
           <animation effect="slide" start="0,0" end="-380,0" time="500" easing="inout" tween="cubic" condition="Control.HasFocus(8011)">Conditional</animation>
-          <posx>342</posx>
-          <posy>-22</posy>
+          <left>342</left>
+          <top>-22</top>
           <!-- Slide Picture Background -->
           <!-- Last Played Lable -->
           <control type="label">
             <description>Title label</description>
-            <posx>21</posx>
-            <posy>36</posy>
+            <left>21</left>
+            <top>36</top>
             <width>255</width>
             <height>40</height>
             <align>center</align>
@@ -6057,8 +6057,8 @@
             <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
           </control>
           <control type="list" id="8011">
-            <posx>0</posx>
-            <posy>5</posy>
+            <left>0</left>
+            <top>5</top>
             <width>800</width>
             <height>275</height>
             <orientation>vertical</orientation>
@@ -6073,8 +6073,8 @@
             <movement>1</movement>
             <itemlayout height="25" width="800">
               <control type="label">
-                <posx>20</posx>
-                <posy>26</posy>
+                <left>20</left>
+                <top>26</top>
                 <width>250</width>
                 <height>23</height>
                 <font>cirrus_20</font>
@@ -6090,16 +6090,16 @@
             </itemlayout>
             <focusedlayout height="25" width="300">
               <control type="image">
-                <posx>-10</posx>
-                <posy>27</posy>
+                <left>-10</left>
+                <top>27</top>
                 <width>300</width>
                 <height>24</height>
                 <texture flipx="true">recentlyaddeddiffuse.png</texture>
                 <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
-                <posx>20</posx>
-                <posy>26</posy>
+                <left>20</left>
+                <top>26</top>
                 <width>250</width>
                 <height>23</height>
                 <font>cirrus_20</font>
@@ -6260,8 +6260,8 @@
       <!-- Music -->
       <control type="image">
         <description>media info background image</description>
-        <posx>0</posx>
-        <posy>-10</posy>
+        <left>0</left>
+        <top>-10</top>
         <width>1280</width>
         <height>430</height>
         <texture flipy="true">nowplaying_shadow1.png</texture>
@@ -6271,8 +6271,8 @@
       </control>
       <control type="image">
         <description>media info background image</description>
-        <posx>0</posx>
-        <posy>-10</posy>
+        <left>0</left>
+        <top>-10</top>
         <width>1280</width>
         <height>430</height>
         <texture flipy="true">nowplaying_shadow1.png</texture>
@@ -6281,8 +6281,8 @@
         <animation effect="slide" start="0,430" end="0,0" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + !Skin.HasSetting(HomeMenuNoMoviesButton) + Control.HasFocus(8002)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>0</posx>
-        <posy>321</posy>
+        <left>0</left>
+        <top>321</top>
         <width>1330</width>
         <height>1</height>
         <aspectratio>stretch</aspectratio>
@@ -6292,8 +6292,8 @@
         <animation effect="slide" start="0,430" end="0,0" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + !Skin.HasSetting(HomeMenuNoMoviesButton) + Control.HasFocus(8002)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>0</posx>
-        <posy>321</posy>
+        <left>0</left>
+        <top>321</top>
         <width>1330</width>
         <height>1</height>
         <aspectratio>stretch</aspectratio>
@@ -6303,8 +6303,8 @@
         <animation effect="slide" start="0,430" end="0,0" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + !Skin.HasSetting(HomeMenuNoMoviesButton) + Control.HasFocus(8002)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>985</posx>
-        <posy>71</posy>
+        <left>985</left>
+        <top>71</top>
         <width>1</width>
         <height>240</height>
         <aspectratio>stretch</aspectratio>
@@ -6314,8 +6314,8 @@
         <animation effect="slide" start="0,430" end="0,0" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + !Skin.HasSetting(HomeMenuNoMoviesButton) + Control.HasFocus(8002)">Conditional</animation>
       </control>
       <control type="group">
-        <posx>1028</posx>
-        <posy>53</posy>
+        <left>1028</left>
+        <top>53</top>
         <visible>Library.HasContent(Music)</visible>
         <visible>Container(9000).Hasfocus(14)</visible>
         <animation effect="slide" start="0,0" end="0,-180" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu) | Skin.HasSetting(Lockhomemenulow)">Conditional</animation>
@@ -6325,8 +6325,8 @@
           <animation effect="slide" start="400,0" end="0,0" easing="inout" tween="cubic" time="500" delay="100">VisibleChange</animation>
           <visible>!Control.HasFocus(8002)</visible>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture background="true">ContentPanelRecentlyaddedvertical.png</texture>
@@ -6335,8 +6335,8 @@
             <visible>Skin.HasSetting(nomusicwidget)</visible>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture>nowplaying_shadow5.png</texture>
@@ -6344,8 +6344,8 @@
             <visible>Skin.HasSetting(nomusicwidget)</visible>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture flipy="true">nowplaying_shadow5.png</texture>
@@ -6354,8 +6354,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>25</posy>
+            <left>10</left>
+            <top>25</top>
             <width>220</width>
             <height>40</height>
             <align>center</align>
@@ -6372,8 +6372,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>30</posy>
+            <left>10</left>
+            <top>30</top>
             <width>220</width>
             <height>40</height>
             <align>center</align>
@@ -6393,8 +6393,8 @@
             <bordertexture border="6">ContentPanelvertical.png</bordertexture>
             <bordersize>6</bordersize>
             <aspectratio scalediffuse="false">stretch</aspectratio>
-            <posx>58</posx>
-            <posy>67</posy>
+            <left>58</left>
+            <top>67</top>
             <width>123</width>
             <height>123</height>
             <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
@@ -6407,8 +6407,8 @@
             <texture background="true">$INFO[Container(8002).ListItem.Icon]</texture>
             <bordersize>8</bordersize>
             <aspectratio scalediffuse="false">stretch</aspectratio>
-            <posx>58</posx>
-            <posy>67</posy>
+            <left>58</left>
+            <top>67</top>
             <width>123</width>
             <height>123</height>
             <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
@@ -6419,8 +6419,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>230</posy>
+            <left>10</left>
+            <top>230</top>
             <width>220</width>
             <height>20</height>
             <align>center</align>
@@ -6441,8 +6441,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>225</posy>
+            <left>10</left>
+            <top>225</top>
             <width>220</width>
             <height>20</height>
             <align>center</align>
@@ -6463,8 +6463,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>198</posy>
+            <left>10</left>
+            <top>198</top>
             <height>20</height>
             <width>220</width>
             <label>$INFO[Container(8002).ListItem.Label2]</label>
@@ -6487,15 +6487,15 @@
         <control type="group">
           <description>Latest Items Widget Music</description>
           <visible>Control.HasFocus(8002)</visible>
-          <posx>-2033</posx>
-          <posy>-11</posy>
+          <left>-2033</left>
+          <top>-11</top>
           <animation effect="slide" start="0,0" end="1020,0" time="500" easing="inout" tween="cubic" condition="Control.HasFocus(8002)">Conditional</animation>
           <control type="group">
-            <posx>159</posx>
+            <left>159</left>
             <!-- Changes Rating Stars 2.06 -->
             <control type="label">
-              <posx>130</posx>
-              <posy>30</posy>
+              <left>130</left>
+              <top>30</top>
               <width>550</width>
               <height>30</height>
               <font>cirrus_24</font>
@@ -6505,8 +6505,8 @@
               <label>$INFO[Container(8002).ListItem.Label2]</label>
             </control>
             <control type="label">
-              <posx>130</posx>
-              <posy>65</posy>
+              <left>130</left>
+              <top>65</top>
               <width>550</width>
               <height>30</height>
               <font>cirrus_20</font>
@@ -6516,8 +6516,8 @@
               <label fallback="-">[COLOR=accent]Album:[/COLOR] $INFO[Container(8002).ListItem.Label]</label>
             </control>
             <control type="label">
-              <posx>130</posx>
-              <posy>100</posy>
+              <left>130</left>
+              <top>100</top>
               <width>533</width>
               <height>25</height>
               <font>cirrus_20</font>
@@ -6532,8 +6532,8 @@
             <bordertexture border="6">ContentPanelvertical.png</bordertexture>
             <bordersize>6</bordersize>
             <aspectratio scalediffuse="false">scale</aspectratio>
-            <posx>35</posx>
-            <posy>28</posy>
+            <left>35</left>
+            <top>28</top>
             <height>222</height>
             <width>222</width>
             <fadetime>400</fadetime>
@@ -6542,8 +6542,8 @@
             <texture background="true" fallback="DefaultAlbumCover.png">$INFO[Container(8002).ListItem.Icon]</texture>
             <bordersize>8</bordersize>
             <aspectratio scalediffuse="false">scale</aspectratio>
-            <posx>35</posx>
-            <posy>28</posy>
+            <left>35</left>
+            <top>28</top>
             <height>222</height>
             <width>222</width>
             <fadetime>400</fadetime>
@@ -6551,12 +6551,12 @@
         </control>
         <control type="group">
           <animation effect="slide" start="0,0" end="-380,0" time="500" easing="inout" tween="cubic" condition="Control.HasFocus(8002)">Conditional</animation>
-          <posx>342</posx>
-          <posy>-22</posy>
+          <left>342</left>
+          <top>-22</top>
           <control type="label">
             <description>Title label</description>
-            <posx>18</posx>
-            <posy>36</posy>
+            <left>18</left>
+            <top>36</top>
             <width>255</width>
             <height>40</height>
             <align>center</align>
@@ -6571,8 +6571,8 @@
             <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
           </control>
           <control type="list" id="8002">
-            <posx>0</posx>
-            <posy>5</posy>
+            <left>0</left>
+            <top>5</top>
             <width>800</width>
             <height>275</height>
             <onleft>9000</onleft>
@@ -6584,8 +6584,8 @@
             <scrolltime>200</scrolltime>
             <itemlayout height="25" width="800">
               <control type="label">
-                <posx>20</posx>
-                <posy>26</posy>
+                <left>20</left>
+                <top>26</top>
                 <width>250</width>
                 <height>23</height>
                 <font>cirrus_20</font>
@@ -6600,16 +6600,16 @@
             </itemlayout>
             <focusedlayout height="25" width="800">
               <control type="image">
-                <posx>-10</posx>
-                <posy>27</posy>
+                <left>-10</left>
+                <top>27</top>
                 <width>300</width>
                 <height>24</height>
                 <texture flipx="true">recentlyaddeddiffuse.png</texture>
                 <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
-                <posx>20</posx>
-                <posy>26</posy>
+                <left>20</left>
+                <top>26</top>
                 <width>250</width>
                 <height>23</height>
                 <font>cirrus_20</font>
@@ -6749,8 +6749,8 @@
       <!-- Addons -->
       <control type="image">
         <description>media info background image</description>
-        <posx>0</posx>
-        <posy>-10</posy>
+        <left>0</left>
+        <top>-10</top>
         <width>1280</width>
         <height>430</height>
         <texture flipy="true">nowplaying_shadow1.png</texture>
@@ -6760,8 +6760,8 @@
       </control>
       <control type="image">
         <description>media info background image</description>
-        <posx>0</posx>
-        <posy>-10</posy>
+        <left>0</left>
+        <top>-10</top>
         <width>1280</width>
         <height>430</height>
         <texture flipy="true">nowplaying_shadow1.png</texture>
@@ -6770,8 +6770,8 @@
         <animation effect="slide" start="0,430" end="0,0" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + !Skin.HasSetting(HomeMenuNoScriptsButton) + Control.HasFocus(8005)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>0</posx>
-        <posy>321</posy>
+        <left>0</left>
+        <top>321</top>
         <width>1330</width>
         <height>1</height>
         <aspectratio>stretch</aspectratio>
@@ -6781,8 +6781,8 @@
         <animation effect="slide" start="0,430" end="0,0" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + !Skin.HasSetting(HomeMenuNoScriptsButton) + Control.HasFocus(8005)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>0</posx>
-        <posy>321</posy>
+        <left>0</left>
+        <top>321</top>
         <width>1330</width>
         <height>1</height>
         <aspectratio>stretch</aspectratio>
@@ -6792,8 +6792,8 @@
         <animation effect="slide" start="0,430" end="0,0" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + !Skin.HasSetting(HomeMenuNoScriptsButton) + Control.HasFocus(8005)">Conditional</animation>
       </control>
       <control type="image">
-        <posx>985</posx>
-        <posy>71</posy>
+        <left>985</left>
+        <top>71</top>
         <width>1</width>
         <height>240</height>
         <aspectratio>stretch</aspectratio>
@@ -6803,8 +6803,8 @@
         <animation effect="slide" start="0,430" end="0,0" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + !Skin.HasSetting(HomeMenuNoScriptsButton) + Control.HasFocus(8005)">Conditional</animation>
       </control>
       <control type="group">
-        <posx>1028</posx>
-        <posy>53</posy>
+        <left>1028</left>
+        <top>53</top>
         <visible>Container(9000).Hasfocus(18)</visible>
         <animation effect="slide" start="0,0" end="0,-180" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu) | Skin.HasSetting(Lockhomemenulow)">Conditional</animation>
         <include>VisibleFadeEffect</include>
@@ -6813,8 +6813,8 @@
           <animation effect="slide" start="400,0" end="0,0" easing="inout" tween="cubic" time="500" delay="100">VisibleChange</animation>
           <visible>!Control.HasFocus(8005)</visible>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture background="true">ContentPanelRecentlyaddedvertical.png</texture>
@@ -6823,8 +6823,8 @@
             <visible>Skin.HasSetting(noaddonwidget)</visible>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture>nowplaying_shadow5.png</texture>
@@ -6832,8 +6832,8 @@
             <visible>Skin.HasSetting(noaddonwidget)</visible>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>28</posy>
+            <left>0</left>
+            <top>28</top>
             <width>240</width>
             <height>230</height>
             <texture flipy="true">nowplaying_shadow5.png</texture>
@@ -6842,8 +6842,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>25</posy>
+            <left>10</left>
+            <top>25</top>
             <width>220</width>
             <height>40</height>
             <align>center</align>
@@ -6860,8 +6860,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>25</posy>
+            <left>10</left>
+            <top>25</top>
             <width>220</width>
             <height>40</height>
             <align>center</align>
@@ -6881,8 +6881,8 @@
             <bordertexture border="6">ContentPanelvertical.png</bordertexture>
             <bordersize>6</bordersize>
             <aspectratio scalediffuse="false">stretch</aspectratio>
-            <posx>58</posx>
-            <posy>67</posy>
+            <left>58</left>
+            <top>67</top>
             <width>123</width>
             <height>123</height>
             <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
@@ -6895,8 +6895,8 @@
             <texture background="true">$INFO[Container(8005).ListItem.Icon]</texture>
             <bordersize>8</bordersize>
             <aspectratio scalediffuse="false">stretch</aspectratio>
-            <posx>58</posx>
-            <posy>67</posy>
+            <left>58</left>
+            <top>67</top>
             <width>123</width>
             <height>123</height>
             <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
@@ -6907,8 +6907,8 @@
           </control>
           <control type="label">
             <description>Title label</description>
-            <posx>10</posx>
-            <posy>198</posy>
+            <left>10</left>
+            <top>198</top>
             <height>20</height>
             <width>220</width>
             <label>$INFO[Container(8005).ListItem.Label]</label>
@@ -6931,14 +6931,14 @@
         <control type="group">
           <description>Random Items Widget Addons</description>
           <visible>Control.HasFocus(8005)</visible>
-          <posx>-2033</posx>
-          <posy>-11</posy>
+          <left>-2033</left>
+          <top>-11</top>
           <animation effect="slide" start="0,0" end="1020,0" time="500" easing="inout" tween="cubic" condition="Control.HasFocus(8005)">Conditional</animation>
           <control type="group">
-            <posx>159</posx>
+            <left>159</left>
             <control type="label">
-              <posx>130</posx>
-              <posy>30</posy>
+              <left>130</left>
+              <top>30</top>
               <width>550</width>
               <height>30</height>
               <font>cirrus_24</font>
@@ -6948,8 +6948,8 @@
               <label>$INFO[Container(8005).ListItem.Label] [COLOR=grey]$INFO[Container(8005).ListItem.Property(Version)][/COLOR]</label>
             </control>
             <control type="label">
-              <posx>130</posx>
-              <posy>65</posy>
+              <left>130</left>
+              <top>65</top>
               <width>550</width>
               <height>30</height>
               <font>cirrus_20</font>
@@ -6959,8 +6959,8 @@
               <label fallback="-">[COLOR=accent]$LOCALIZE[41193]:[/COLOR]  $INFO[Container(8005).ListItem.Label2]</label>
             </control>
             <control type="label">
-              <posx>130</posx>
-              <posy>100</posy>
+              <left>130</left>
+              <top>100</top>
               <width>550</width>
               <height>150</height>
               <font>cirrus_20</font>
@@ -6971,8 +6971,8 @@
             </control>
           </control>
           <control type="image">
-            <posx>35</posx>
-            <posy>28</posy>
+            <left>35</left>
+            <top>28</top>
             <height>222</height>
             <width>222</width>
             <texture>black-back.png</texture>
@@ -6982,8 +6982,8 @@
             <fadetime>400</fadetime>
           </control>
           <control type="image">
-            <posx>35</posx>
-            <posy>28</posy>
+            <left>35</left>
+            <top>28</top>
             <height>222</height>
             <width>222</width>
             <texture background="true">$INFO[Container(8005).ListItem.Icon]</texture>
@@ -6994,12 +6994,12 @@
         </control>
         <control type="group">
           <animation effect="slide" start="0,0" end="-380,0" time="500" easing="inout" tween="cubic" condition="Control.HasFocus(8005)">Conditional</animation>
-          <posx>342</posx>
-          <posy>-22</posy>
+          <left>342</left>
+          <top>-22</top>
           <control type="label">
             <description>Title label</description>
-            <posx>18</posx>
-            <posy>36</posy>
+            <left>18</left>
+            <top>36</top>
             <width>255</width>
             <height>40</height>
             <align>center</align>
@@ -7014,8 +7014,8 @@
             <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
           </control>
           <control type="list" id="8005">
-            <posx>0</posx>
-            <posy>5</posy>
+            <left>0</left>
+            <top>5</top>
             <width>800</width>
             <height>275</height>
             <onleft>9000</onleft>
@@ -7027,8 +7027,8 @@
             <scrolltime tween="quadratic" easing="out">300</scrolltime>
             <itemlayout height="25" width="800">
               <control type="label">
-                <posx>20</posx>
-                <posy>26</posy>
+                <left>20</left>
+                <top>26</top>
                 <width>300</width>
                 <height>23</height>
                 <font>cirrus_20</font>
@@ -7043,16 +7043,16 @@
             </itemlayout>
             <focusedlayout height="25" width="800">
               <control type="image">
-                <posx>-10</posx>
-                <posy>27</posy>
+                <left>-10</left>
+                <top>27</top>
                 <width>300</width>
                 <height>24</height>
                 <texture flipx="true">recentlyaddeddiffuse.png</texture>
                 <aspectratio>stretch</aspectratio>
               </control>
               <control type="label">
-                <posx>20</posx>
-                <posy>26</posy>
+                <left>20</left>
+                <top>26</top>
                 <width>300</width>
                 <height>23</height>
                 <font>cirrus_20</font>

@@ -12,15 +12,15 @@
                 <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300"/>
                 <effect type="fade" start="100" end="0" time="300"/>
             </animation>      
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <visible>Player.HasAudio + !Skin.HasSetting(homepageNowplayingInfo)</visible>
             <include>VisibleFadeEffect</include>
             <include>Window_OpenClose_Animation</include>
             <control type="image">
                 <description>Cover image</description>
-                <posx>180r</posx>
-                <posy>410</posy>
+                <left>180r</left>
+                <top>410</top>
                 <width>110</width>
                 <height>110</height>
                 <aspectratio aligny="bottom">stretch</aspectratio>
@@ -32,8 +32,8 @@
             </control>
             <control type="image">
                 <description>Logo image</description>
-                <posx>222r</posx>
-                <posy>520</posy>
+                <left>222r</left>
+                <top>520</top>
                 <width>150</width>
                 <height>40</height>
                 <aspectratio scalediffuse="false" aligny="center" align="right">keep</aspectratio> 
@@ -43,8 +43,8 @@
             </control>
             <control type="image">
                 <description>Background image</description>
-                <posx>295r</posx>
-                <posy>565</posy>
+                <left>295r</left>
+                <top>565</top>
                 <width>225</width>
                 <height>125</height>
                 <aspectratio scalediffuse="false" aligny="center" align="right">stretch</aspectratio> 
@@ -57,8 +57,8 @@
             </control>
             <control type="image">
                 <description>fanart image</description>
-                <posx>287r</posx>
-                <posy>572</posy>
+                <left>287r</left>
+                <top>572</top>
                 <width>209</width>
                 <height>111</height>
                 <texture background="true" fallback="special://skin/backgrounds/musicfanart.jpg">$INFO[MusicPlayer.Property(fanart_image)]</texture>
@@ -68,8 +68,8 @@
             </control>
             <control type="multiimage">
                 <description>Extrafanart image</description>
-                <posx>287r</posx>
-                <posy>572</posy>
+                <left>287r</left>
+                <top>572</top>
                 <width>209</width>
                 <height>111</height>
                 <imagepath background="true" fallback="special://skin/backgrounds/musicfanart.jpg">$INFO[Skin.String(Music_Folder_Path)]$INFO[MusicPlayer.Artist,,/extrafanart/]</imagepath>
@@ -79,8 +79,8 @@
             </control>
             <control type="label">
                 <description>NowPlaying label</description>
-                <posx>190r</posx>
-                <posy>410</posy>
+                <left>190r</left>
+                <top>410</top>
                 <height>30</height>
                 <width>660</width>
                 <label>$LOCALIZE[31040]</label>
@@ -93,8 +93,8 @@
             </control>
             <control type="label">
                 <description>NowPlaying label</description>
-                <posx>10r</posx>
-                <posy>410</posy>
+                <left>10r</left>
+                <top>410</top>
                 <height>30</height>
                 <width>660</width>
                 <label>$LOCALIZE[31040]</label>
@@ -108,8 +108,8 @@
             </control>
             <control type="label">
                 <description>Artist label</description>
-                <posx>190r</posx>
-                <posy>435</posy>
+                <left>190r</left>
+                <top>435</top>
                 <height>30</height>
                 <width>660</width>
                 <label>$INFO[MusicPlayer.Artist]</label>
@@ -122,8 +122,8 @@
             </control>
             <control type="label">
                 <description>Artist label</description>
-                <posx>10r</posx>
-                <posy>435</posy>
+                <left>10r</left>
+                <top>435</top>
                 <height>30</height>
                 <width>660</width>
                 <label>$INFO[MusicPlayer.Artist]</label>
@@ -137,8 +137,8 @@
             </control>
             <control type="label">
                 <description>Title label</description>
-                <posx>190r</posx>
-                <posy>460</posy>
+                <left>190r</left>
+                <top>460</top>
                 <height>30</height>
                 <width>660</width>
                 <label>$INFO[MusicPlayer.Title]</label>
@@ -151,8 +151,8 @@
             </control>
             <control type="label">
                 <description>Title label</description>
-                <posx>10r</posx>
-                <posy>460</posy>
+                <left>10r</left>
+                <top>460</top>
                 <height>30</height>
                 <width>660</width>
                 <label>$INFO[MusicPlayer.Title]</label>
@@ -166,8 +166,8 @@
             </control>
             <control type="label">
                 <description>Time remaining</description>
-                <posx>190r</posx>
-                <posy>490</posy>
+                <left>190r</left>
+                <top>490</top>
                 <height>30</height>
                 <width>660</width>
                 <label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
@@ -180,8 +180,8 @@
             </control>
             <control type="label">
                 <description>Time remaining</description>
-                <posx>10r</posx>
-                <posy>490</posy>
+                <left>10r</left>
+                <top>490</top>
                 <height>30</height>
                 <width>660</width>
                 <label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
@@ -197,8 +197,8 @@
         <!-- PVR Butchabay from home.xml confluence-->
         <!-- LiveTV Info -->
         <control type="group">
-            <posx>600</posx>
-            <posy>75</posy>
+            <left>600</left>
+            <top>75</top>
             <visible>Container(9000).HasFocus(33) + [PVR.IsRecording | PVR.HasTimer]</visible>
             <animation type="Visible" reversible="false">
                 <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
@@ -219,8 +219,8 @@
             <animation effect="fade" start="100" end="0" time="200" condition="Window.IsActive(Favourites)">conditional</animation>
             <control type="image">
                 <description>background</description>
-                <posx>347</posx>
-                <posy>5</posy>
+                <left>347</left>
+                <top>5</top>
                 <width>320</width>
                 <height>135</height>
                 <colordiffuse>DDFFFFFF</colordiffuse>
@@ -229,16 +229,16 @@
             <control type="group">
                 <visible>!PVR.IsRecording + PVR.HasTimer</visible>
                 <control type="image">
-                    <posx>600</posx>
-                    <posy>15</posy>
+                    <left>600</left>
+                    <top>15</top>
                     <width>25</width>
                     <height>25</height>
                     <texture>PVR-HasTimer.png</texture>
                 </control>
                 <control type="label">
                     <description>Next Timer Header label</description>
-                    <posx>370</posx>
-                    <posy>15</posy>
+                    <left>370</left>
+                    <top>15</top>
                     <height>25</height>
                     <width>400</width>
                     <label>$LOCALIZE[19157]</label>
@@ -250,8 +250,8 @@
                 </control>
                 <control type="label">
                     <description>NextRecordingTitle</description>
-                    <posx>370</posx>
-                    <posy>40</posy>
+                    <left>370</left>
+                    <top>40</top>
                     <height>30</height>
                     <width>440</width>
                     <label>$INFO[PVR.NextRecordingTitle]</label>
@@ -263,8 +263,8 @@
                 </control>
                 <control type="label">
                     <description>NextRecordingChannel</description>
-                    <posx>370</posx>
-                    <posy>70</posy>
+                    <left>370</left>
+                    <top>70</top>
                     <height>25</height>
                     <width>440</width>
                     <label>$INFO[PVR.NextRecordingChannel]</label>
@@ -276,8 +276,8 @@
                 </control>
                 <control type="label">
                     <description>NextRecordingDateTime</description>
-                    <posx>370</posx>
-                    <posy>95</posy>
+                    <left>370</left>
+                    <top>95</top>
                     <height>25</height>
                     <width>440</width>
                     <label>$INFO[PVR.NextRecordingDateTime,$LOCALIZE[19126] - ]</label>
@@ -290,16 +290,16 @@
             <control type="group">
                 <visible>PVR.IsRecording</visible>
                 <control type="image">
-                    <posx>600</posx>
-                    <posy>15</posy>
+                    <left>600</left>
+                    <top>15</top>
                     <width>37</width>
                     <height>25</height>
                     <texture>PVR-IsRecording.png</texture>
                 </control>
                 <control type="label">
                     <description>Is Recording Header label</description>
-                    <posx>370</posx>
-                    <posy>15</posy>
+                    <left>370</left>
+                    <top>15</top>
                     <height>25</height>
                     <width>390</width>
                     <label>$LOCALIZE[19158]</label>
@@ -311,8 +311,8 @@
                 </control>
                 <control type="label">
                     <description>NextRecordingTitle</description>
-                    <posx>370</posx>
-                    <posy>40</posy>
+                    <left>370</left>
+                    <top>40</top>
                     <height>30</height>
                     <width>440</width>
                     <label>$INFO[PVR.NowRecordingTitle]</label>
@@ -324,8 +324,8 @@
                 </control>
                 <control type="label">
                     <description>NextRecordingChannel</description>
-                    <posx>370</posx>
-                    <posy>70</posy>
+                    <left>370</left>
+                    <top>70</top>
                     <height>25</height>
                     <width>440</width>
                     <label>$INFO[PVR.NowRecordingChannel]</label>
@@ -337,8 +337,8 @@
                 </control>
                 <control type="label">
                     <description>NextRecordingDateTime</description>
-                    <posx>370</posx>
-                    <posy>95</posy>
+                    <left>370</left>
+                    <top>95</top>
                     <height>25</height>
                     <width>440</width>
                     <label>$INFO[PVR.NowRecordingDateTime,$LOCALIZE[19126] - ]</label>
@@ -353,8 +353,8 @@
 
         <!-- VIDEO NOW PLAYING -->
         <control type="group">
-            <posx>-10</posx>
-            <posy>0</posy>
+            <left>-10</left>
+            <top>0</top>
             <visible>Player.HasVideo + !Skin.HasSetting(homepageNowplayingInfo) + !Skin.HasSetting(Use_Startup_DreamVideo)</visible>
             <include>VisibleFadeEffect</include>
             <include>Window_OpenClose_Animation</include>
@@ -364,8 +364,8 @@
                 <visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(LiveTV) + !Skin.HasSetting(Use_Startup_DreamVideo)</visible>
                 <control type="image">
                     <description>Cover image</description>
-                    <posx>140r</posx>
-                    <posy>380</posy>
+                    <left>140r</left>
+                    <top>380</top>
                     <width>100</width>
                     <height>140</height>
                     <aspectratio aligny="top">stretch</aspectratio>
@@ -375,8 +375,8 @@
                     <visible>!Skin.HasSetting(cleannowplaying)</visible>
                 </control>
                 <control type="image">
-                    <posx>140r</posx>
-                    <posy>380</posy>
+                    <left>140r</left>
+                    <top>380</top>
                     <width>100</width>
                     <height>140</height>
                     <aspectratio aligny="top">stretch</aspectratio>
@@ -385,8 +385,8 @@
                     <visible>!Skin.HasSetting(cleannowplaying)</visible>
                 </control>
                 <control type="image">
-                    <posx>140r</posx>
-                    <posy>380</posy>
+                    <left>140r</left>
+                    <top>380</top>
                     <width>100</width>
                     <height>140</height>
                     <aspectratio aligny="top">stretch</aspectratio>
@@ -396,8 +396,8 @@
                 </control>
                 <control type="label">
                     <description>NowPlaying label</description>
-                    <posx>150r</posx>
-                    <posy>380</posy>
+                    <left>150r</left>
+                    <top>380</top>
                     <height>30</height>
                     <width>660</width>
                     <label>[COLOR=accent]$LOCALIZE[31040][/COLOR]</label>
@@ -410,8 +410,8 @@
                 </control>
                 <control type="label">
                     <description>NowPlaying label</description>
-                    <posx>10r</posx>
-                    <posy>380</posy>
+                    <left>10r</left>
+                    <top>380</top>
                     <height>30</height>
                     <width>660</width>
                     <label>[COLOR=accent]$LOCALIZE[31040][/COLOR]</label>
@@ -424,8 +424,8 @@
                 </control>
                 <control type="label">
                     <description>Title label</description>
-                    <posx>150r</posx>
-                    <posy>410</posy>
+                    <left>150r</left>
+                    <top>410</top>
                     <height>30</height>
                     <width>660</width>
                     <label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year,[COLOR=grey] (,)[/COLOR]]</label>
@@ -438,8 +438,8 @@
                 </control>
                 <control type="label">
                     <description>Title label</description>
-                    <posx>10r</posx>
-                    <posy>410</posy>
+                    <left>10r</left>
+                    <top>410</top>
                     <height>30</height>
                     <width>660</width>
                     <label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year,[COLOR=grey] (,)[/COLOR]]</label>
@@ -452,8 +452,8 @@
                 </control>
                 <control type="label">
                     <description>Time Label</description>
-                    <posx>150r</posx>
-                    <posy>470</posy>
+                    <left>150r</left>
+                    <top>470</top>
                     <height>30</height>
                     <width>325</width>
                     <label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
@@ -467,8 +467,8 @@
 
                 <control type="label">
                     <description>Time Label</description>
-                    <posx>10r</posx>
-                    <posy>470</posy>
+                    <left>10r</left>
+                    <top>470</top>
                     <height>30</height>
                     <width>325</width>
                     <label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
@@ -486,8 +486,8 @@
                 <visible>Skin.HasSetting(homepageNowplayingVideoInfo)</visible>
                 <control type="image">
                     <description>Cover image</description>
-                    <posx>140r</posx>
-                    <posy>360</posy>
+                    <left>140r</left>
+                    <top>360</top>
                     <width>100</width>
                     <height>140</height>
                     <aspectratio aligny="top">stretch</aspectratio>
@@ -497,8 +497,8 @@
                     <visible>!Skin.HasSetting(cleannowplaying)</visible>
                 </control>
                 <control type="image">
-                    <posx>140r</posx>
-                    <posy>380</posy>
+                    <left>140r</left>
+                    <top>380</top>
                     <width>100</width>
                     <height>140</height>
                     <aspectratio aligny="top">stretch</aspectratio>
@@ -507,8 +507,8 @@
                     <visible>!Skin.HasSetting(cleannowplaying)</visible>
                 </control>
                 <control type="image">
-                    <posx>140r</posx>
-                    <posy>380</posy>
+                    <left>140r</left>
+                    <top>380</top>
                     <width>100</width>
                     <height>140</height>
                     <aspectratio aligny="top">stretch</aspectratio>
@@ -518,8 +518,8 @@
                 </control>
                 <control type="label">
                     <description>NowPlaying label</description>
-                    <posx>150r</posx>
-                    <posy>380</posy>
+                    <left>150r</left>
+                    <top>380</top>
                     <height>30</height>
                     <width>660</width>
                     <label>[COLOR=accent]$LOCALIZE[31040][/COLOR]</label>
@@ -532,8 +532,8 @@
                 </control>
                 <control type="label">
                     <description>NowPlaying label</description>
-                    <posx>10r</posx>
-                    <posy>380</posy>
+                    <left>10r</left>
+                    <top>380</top>
                     <height>30</height>
                     <width>660</width>
                     <label>[COLOR=accent]$LOCALIZE[31040][/COLOR]</label>
@@ -546,8 +546,8 @@
                 </control>
                 <control type="label">
                     <description>Title label</description>
-                    <posx>150r</posx>
-                    <posy>410</posy>
+                    <left>150r</left>
+                    <top>410</top>
                     <height>30</height>
                     <width>660</width>
                     <label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year,[COLOR=grey] (,)[/COLOR]]</label>
@@ -560,8 +560,8 @@
                 </control>
                 <control type="label">
                     <description>Title label</description>
-                    <posx>10r</posx>
-                    <posy>410</posy>
+                    <left>10r</left>
+                    <top>410</top>
                     <height>30</height>
                     <width>660</width>
                     <label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year,[COLOR=grey] (,)[/COLOR]]</label>
@@ -574,8 +574,8 @@
                 </control>
                 <control type="label">
                     <description>Genre Label</description>
-                    <posx>150r</posx>
-                    <posy>440</posy>
+                    <left>150r</left>
+                    <top>440</top>
                     <height>30</height>
                     <width>660</width>
                     <label>$INFO[VideoPlayer.Genre]</label>
@@ -588,8 +588,8 @@
                 </control>
                 <control type="label">
                     <description>Genre Label</description>
-                    <posx>10r</posx>
-                    <posy>440</posy>
+                    <left>10r</left>
+                    <top>440</top>
                     <height>30</height>
                     <width>660</width>
                     <label>$INFO[VideoPlayer.Genre]</label>
@@ -602,8 +602,8 @@
                 </control>
                 <control type="label">
                     <description>Time Label</description>
-                    <posx>150r</posx>
-                    <posy>470</posy>
+                    <left>150r</left>
+                    <top>470</top>
                     <height>30</height>
                     <width>325</width>
                     <label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
@@ -616,8 +616,8 @@
                 </control>
                 <control type="label">
                     <description>Time Label</description>
-                    <posx>10r</posx>
-                    <posy>470</posy>
+                    <left>10r</left>
+                    <top>470</top>
                     <height>30</height>
                     <width>325</width>
                     <label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
@@ -635,8 +635,8 @@
                 <visible>Skin.HasSetting(homepageNowplayingVideoInfo)</visible>
                 <control type="image">
                     <description>Cover image</description>
-                    <posx>235r</posx>
-                    <posy>500</posy>
+                    <left>235r</left>
+                    <top>500</top>
                     <width>80</width>
                     <height>80</height>
                     <aspectratio aligny="top">keep</aspectratio>
@@ -644,8 +644,8 @@
                 </control>
                 <control type="label">
                     <description>NowPlaying label</description>
-                    <posx>150r</posx>
-                    <posy>380</posy>
+                    <left>150r</left>
+                    <top>380</top>
                     <height>30</height>
                     <width>660</width>
                     <label>[COLOR=accent]$LOCALIZE[31040][/COLOR]</label>
@@ -657,8 +657,8 @@
                 </control>
                 <control type="label">
                     <description>Title label</description>
-                    <posx>150r</posx>
-                    <posy>410</posy>
+                    <left>150r</left>
+                    <top>410</top>
                     <height>30</height>
                     <width>660</width>
                     <label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year,[COLOR=grey] (,)[/COLOR]]</label>
@@ -670,8 +670,8 @@
                 </control>
                 <control type="label">
                     <description>Genre Label</description>
-                    <posx>150r</posx>
-                    <posy>440</posy>
+                    <left>150r</left>
+                    <top>440</top>
                     <height>30</height>
                     <width>660</width>
                     <label>$INFO[VideoPlayer.Genre]</label>
@@ -683,8 +683,8 @@
                 </control>
                 <control type="label">
                     <description>Time Label</description>
-                    <posx>150r</posx>
-                    <posy>470</posy>
+                    <left>150r</left>
+                    <top>470</top>
                     <height>30</height>
                     <width>325</width>
                     <label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
@@ -701,8 +701,8 @@
                 <visible>Skin.HasSetting(homepageNowplayingVideoInfo)</visible>
                 <control type="image">
                     <description>Cover image</description>
-                    <posx>240r</posx>
-                    <posy>400</posy>
+                    <left>240r</left>
+                    <top>400</top>
                     <width>200</width>
                     <height>120</height>
                     <aspectratio aligny="top">keep</aspectratio>
@@ -712,8 +712,8 @@
                     <visible>!Skin.HasSetting(cleannowplaying)</visible>
                 </control>
                 <control type="image">
-                    <posx>240r</posx>
-                    <posy>400</posy>
+                    <left>240r</left>
+                    <top>400</top>
                     <width>200</width>
                     <height>120</height>
                     <aspectratio aligny="top">stretch</aspectratio>
@@ -722,8 +722,8 @@
                     <visible>!Skin.HasSetting(cleannowplaying)</visible>
                 </control>
                 <control type="image">
-                    <posx>240r</posx>
-                    <posy>400</posy>
+                    <left>240r</left>
+                    <top>400</top>
                     <width>200</width>
                     <height>120</height>
                     <aspectratio aligny="top">stretch</aspectratio>
@@ -733,8 +733,8 @@
                 </control>
                 <control type="label">
                     <description>NowPlaying label</description>
-                    <posx>250r</posx>
-                    <posy>400</posy>
+                    <left>250r</left>
+                    <top>400</top>
                     <height>30</height>
                     <width>610</width>
                     <label>$LOCALIZE[31040]</label>
@@ -747,8 +747,8 @@
                 </control>
                 <control type="label">
                     <description>NowPlaying label</description>
-                    <posx>10r</posx>
-                    <posy>400</posy>
+                    <left>10r</left>
+                    <top>400</top>
                     <height>30</height>
                     <width>610</width>
                     <label>$LOCALIZE[31040]</label>
@@ -761,8 +761,8 @@
                 </control>
                 <control type="label">
                     <description>TV Show label</description>
-                    <posx>250r</posx>
-                    <posy>430</posy>
+                    <left>250r</left>
+                    <top>430</top>
                     <height>30</height>
                     <width>610</width>
                     <label>$INFO[VideoPlayer.TVShowTitle]</label>
@@ -775,8 +775,8 @@
                 </control>
                 <control type="label">
                     <description>TV Show label</description>
-                    <posx>10r</posx>
-                    <posy>430</posy>
+                    <left>10r</left>
+                    <top>430</top>
                     <height>30</height>
                     <width>610</width>
                     <label>$INFO[VideoPlayer.TVShowTitle]</label>
@@ -789,8 +789,8 @@
                 </control>
                 <control type="label">
                     <description>Season Ep Label</description>
-                    <posx>250r</posx>
-                    <posy>460</posy>
+                    <left>250r</left>
+                    <top>460</top>
                     <height>30</height>
                     <width>610</width>
                     <label>$LOCALIZE[20373] $INFO[VideoPlayer.Season] - $LOCALIZE[20359] $INFO[VideoPlayer.episode]</label>
@@ -803,8 +803,8 @@
                 </control>
                 <control type="label">
                     <description>Season Ep Label</description>
-                    <posx>10r</posx>
-                    <posy>460</posy>
+                    <left>10r</left>
+                    <top>460</top>
                     <height>30</height>
                     <width>610</width>
                     <label>$LOCALIZE[20373] $INFO[VideoPlayer.Season] - $LOCALIZE[20359] $INFO[VideoPlayer.episode]</label>
@@ -817,8 +817,8 @@
                 </control>
                 <control type="label">
                     <description>Title label</description>
-                    <posx>250r</posx>
-                    <posy>490</posy>
+                    <left>250r</left>
+                    <top>490</top>
                     <height>30</height>
                     <width>610</width>
                     <label>$INFO[VideoPlayer.Title]</label>
@@ -831,8 +831,8 @@
                 </control>
                 <control type="label">
                     <description>Title label</description>
-                    <posx>10r</posx>
-                    <posy>490</posy>
+                    <left>10r</left>
+                    <top>490</top>
                     <height>30</height>
                     <width>610</width>
                     <label>$INFO[VideoPlayer.Title]</label>

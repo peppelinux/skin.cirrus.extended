@@ -4,14 +4,14 @@
     <include>dialogeffect</include>
     <coordinates>
         <system>1</system>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
     </coordinates>
     <controls>
         <control type="image" id="999">
             <description>background image</description>
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>298</width>
             <height>720</height>
             <texture>background-contextmenu.png</texture>
@@ -26,8 +26,8 @@
         </control>
         <control type="button" id="1000">
             <description>button template</description>
-            <posx>15</posx>
-            <posy>-</posy>
+            <left>15</left>
+            <top>-</top>
             <width>270</width>
             <height>40</height>
             <font>cirrus_20</font>

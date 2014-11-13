@@ -6,16 +6,16 @@
       <animation effect="slide" start="640,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
       <animation effect="slide" start="0,0" end="640,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
       <control type="image">
-        <posx>640</posx>
-        <posy>0</posy>
+        <left>640</left>
+        <top>0</top>
         <width>640</width>
         <height>720</height>
         <texture border="15,0,0,0" flipx="true">homesubbackground.png</texture>
       </control>
       <control type="label">
         <description>header label</description>
-        <posx>35r</posx>
-        <posy>40</posy>
+        <left>535</left>
+        <top>40</top>
         <width>710</width>
         <height>30</height>
         <font>cirrus_30</font>
@@ -26,8 +26,8 @@
         <shadowcolor>black</shadowcolor>
       </control>
       <control type="scrollbar" id="60">
-        <posx>1235</posx>
-        <posy>90</posy>
+        <left>1235</left>
+        <top>90</top>
         <width>25</width>
         <height>600</height>
         <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
@@ -41,8 +41,8 @@
         <orientation>vertical</orientation>
       </control>
       <control type="list" id="5">
-        <posx>670</posx>
-        <posy>90</posy>
+        <left>670</left>
+        <top>90</top>
         <width>560</width>
         <height>601</height>
         <onleft>60</onleft>
@@ -53,16 +53,16 @@
         <scrolltime>200</scrolltime>
         <itemlayout height="40">
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>560</width>
             <height>41</height>
             <texture border="5">menuitemNF.png</texture>
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
-            <posx>10</posx>
-            <posy>0</posy>
+            <left>10</left>
+            <top>0</top>
             <width>160</width>
             <height>35</height>
             <font>cirrus_20</font>
@@ -74,8 +74,8 @@
             <label>$INFO[ListItem.Label][COLOR=grey2] : [/COLOR]</label>
           </control>
           <control type="label">
-            <posx>170</posx>
-            <posy>0</posy>
+            <left>170</left>
+            <top>0</top>
             <width>390</width>
             <height>35</height>
             <font>cirrus_20</font>
@@ -88,8 +88,8 @@
         </itemlayout>
         <focusedlayout height="40">
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>560</width>
             <height>41</height>
             <visible>!Control.HasFocus(5)</visible>
@@ -97,8 +97,8 @@
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>560</width>
             <height>41</height>
             <visible>Control.HasFocus(5)</visible>
@@ -106,8 +106,8 @@
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
-            <posx>10</posx>
-            <posy>0</posy>
+            <left>10</left>
+            <top>0</top>
             <width>160</width>
             <height>35</height>
             <font>cirrus_20</font>
@@ -119,8 +119,8 @@
             <label>$INFO[ListItem.Label][COLOR=grey2] : [/COLOR]</label>
           </control>
           <control type="label">
-            <posx>170</posx>
-            <posy>0</posy>
+            <left>170</left>
+            <top>0</top>
             <width>390</width>
             <height>35</height>
             <font>cirrus_20</font>

@@ -3,8 +3,8 @@
   <include name="HomeSubmenu">
     <!-- HOME MENU SUBMENUS NORMAL -->
     <control type="group" id="9001">
-      <posx>0</posx>
-      <posy>0</posy>
+      <left>0</left>
+      <top>0</top>
       <animation effect="fade" start="100" end="0" time="0" condition="!ControlGroup(9001).HasFocus">conditional</animation>
       <animation effect="fade" start="0" end="100" delay="300" time="200" condition="ControlGroup(9001).HasFocus">conditional</animation>
       <animation effect="fade" start="100" end="0" time="0" condition="ControlGroup(9001).HasFocus">WindowClose</animation>
@@ -16,8 +16,8 @@
       <!-- VIDEOS SUBMENU -->
       <control type="fixedlist" id="9010">
         <hitrect x="50" y="50" w="330" h="620" />
-        <posx>-230</posx>
-        <posy>550</posy>
+        <left>-230</left>
+        <top>550</top>
         <width>1000</width>
         <height>350</height>
         <onleft>9000</onleft>
@@ -30,8 +30,8 @@
         <visible>Container(9000).HasFocus(12)</visible>
         <itemlayout height="50" width="1000">
           <control type="label">
-            <posx>40</posx>
-            <posy>21</posy>
+            <left>40</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <font>cirrus_40</font>
@@ -43,16 +43,16 @@
         </itemlayout>
         <focusedlayout height="45" width="1000">
           <control type="image">
-            <posx>-400</posx>
-            <posy>21</posy>
+            <left>-400</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <texture flipx="true">recentlyaddeddiffuse.png</texture>
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
-            <posx>40</posx>
-            <posy>21</posy>
+            <left>40</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <font>cirrus_40</font>
@@ -106,8 +106,8 @@
       <!-- MUSIC SUBMENU -->
       <control type="fixedlist" id="9010">
         <hitrect x="50" y="50" w="330" h="620" />
-        <posx>-230</posx>
-        <posy>550</posy>
+        <left>-230</left>
+        <top>550</top>
         <width>1000</width>
         <height>350</height>
         <onleft>9000</onleft>
@@ -120,8 +120,8 @@
         <visible>Container(9000).HasFocus(14) | Container(9000).HasFocus(15)</visible>
         <itemlayout height="50" width="1000">
           <control type="label">
-            <posx>40</posx>
-            <posy>21</posy>
+            <left>40</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <font>cirrus_40</font>
@@ -133,16 +133,16 @@
         </itemlayout>
         <focusedlayout height="45" width="1000">
           <control type="image">
-            <posx>-400</posx>
-            <posy>21</posy>
+            <left>-400</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <texture flipx="true">recentlyaddeddiffuse.png</texture>
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
-            <posx>40</posx>
-            <posy>21</posy>
+            <left>40</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <font>cirrus_40</font>
@@ -192,8 +192,8 @@
       <!-- SETTINGS SUBMENU -->
       <control type="fixedlist" id="9010">
         <hitrect x="50" y="50" w="330" h="620" />
-        <posx>-230</posx>
-        <posy>550</posy>
+        <left>-230</left>
+        <top>550</top>
         <width>1000</width>
         <height>350</height>
         <onleft>9000</onleft>
@@ -206,8 +206,8 @@
         <visible>Container(9000).HasFocus(25)</visible>
         <itemlayout height="50" width="1000">
           <control type="label">
-            <posx>40</posx>
-            <posy>21</posy>
+            <left>40</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <font>cirrus_40</font>
@@ -219,16 +219,16 @@
         </itemlayout>
         <focusedlayout height="45" width="1000">
           <control type="image">
-            <posx>-400</posx>
-            <posy>21</posy>
+            <left>-400</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <texture flipx="true">recentlyaddeddiffuse.png</texture>
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
-            <posx>40</posx>
-            <posy>21</posy>
+            <left>40</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <font>cirrus_40</font>
@@ -280,8 +280,8 @@
       <!-- Addon Submenu -->
       <control type="fixedlist" id="9010">
         <hitrect x="50" y="50" w="330" h="620" />
-        <posx>-230</posx>
-        <posy>550</posy>
+        <left>-230</left>
+        <top>550</top>
         <width>1000</width>
         <height>350</height>
         <onleft>9000</onleft>
@@ -294,8 +294,8 @@
         <visible>Container(9000).HasFocus(18)</visible>
         <itemlayout height="50" width="1000">
           <control type="label">
-            <posx>40</posx>
-            <posy>21</posy>
+            <left>40</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <font>cirrus_40</font>
@@ -307,16 +307,16 @@
         </itemlayout>
         <focusedlayout height="45" width="1000">
           <control type="image">
-            <posx>-400</posx>
-            <posy>21</posy>
+            <left>-400</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <texture flipx="true">recentlyaddeddiffuse.png</texture>
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
-            <posx>40</posx>
-            <posy>21</posy>
+            <left>40</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <font>cirrus_40</font>
@@ -426,8 +426,8 @@
       <!-- MOVIES SUBMENU -->
       <control type="fixedlist" id="9010">
         <hitrect x="50" y="50" w="330" h="620" />
-        <posx>-230</posx>
-        <posy>550</posy>
+        <left>-230</left>
+        <top>550</top>
         <width>1000</width>
         <height>350</height>
         <onleft>9000</onleft>
@@ -440,8 +440,8 @@
         <visible>Container(9000).HasFocus(1)</visible>
         <itemlayout height="50" width="1000">
           <control type="label">
-            <posx>40</posx>
-            <posy>21</posy>
+            <left>40</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <font>cirrus_40</font>
@@ -453,16 +453,16 @@
         </itemlayout>
         <focusedlayout height="45" width="1000">
           <control type="image">
-            <posx>-400</posx>
-            <posy>21</posy>
+            <left>-400</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <texture flipx="true">recentlyaddeddiffuse.png</texture>
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
-            <posx>40</posx>
-            <posy>21</posy>
+            <left>40</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <font>cirrus_40</font>
@@ -638,8 +638,8 @@
       <!-- TV SHOWS SUBMENU -->
       <control type="fixedlist" id="9010">
         <hitrect x="50" y="50" w="330" h="620" />
-        <posx>-230</posx>
-        <posy>550</posy>
+        <left>-230</left>
+        <top>550</top>
         <width>1000</width>
         <height>350</height>
         <onleft>9000</onleft>
@@ -652,8 +652,8 @@
         <visible>Container(9000).HasFocus(7)</visible>
         <itemlayout height="50" width="1000">
           <control type="label">
-            <posx>40</posx>
-            <posy>21</posy>
+            <left>40</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <font>cirrus_40</font>
@@ -665,16 +665,16 @@
         </itemlayout>
         <focusedlayout height="45" width="1000">
           <control type="image">
-            <posx>-400</posx>
-            <posy>21</posy>
+            <left>-400</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <texture flipx="true">recentlyaddeddiffuse.png</texture>
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
-            <posx>40</posx>
-            <posy>21</posy>
+            <left>40</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <font>cirrus_40</font>
@@ -823,8 +823,8 @@
       <!-- MOVIES Custom Playlist 1 -->
       <control type="fixedlist" id="9010">
         <hitrect x="50" y="50" w="330" h="620" />
-        <posx>-230</posx>
-        <posy>550</posy>
+        <left>-230</left>
+        <top>550</top>
         <width>1000</width>
         <height>350</height>
         <onleft>9000</onleft>
@@ -837,8 +837,8 @@
         <visible>Container(9000).HasFocus(3)</visible>
         <itemlayout height="50" width="1000">
           <control type="label">
-            <posx>40</posx>
-            <posy>21</posy>
+            <left>40</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <font>cirrus_40</font>
@@ -850,16 +850,16 @@
         </itemlayout>
         <focusedlayout height="45" width="1000">
           <control type="image">
-            <posx>-400</posx>
-            <posy>21</posy>
+            <left>-400</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <texture flipx="true">recentlyaddeddiffuse.png</texture>
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
-            <posx>40</posx>
-            <posy>21</posy>
+            <left>40</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <font>cirrus_40</font>
@@ -1035,8 +1035,8 @@
       <!-- MOVIES Custom Playlist 2 -->
       <control type="fixedlist" id="9010">
         <hitrect x="50" y="50" w="330" h="620" />
-        <posx>-230</posx>
-        <posy>550</posy>
+        <left>-230</left>
+        <top>550</top>
         <width>1000</width>
         <height>350</height>
         <onleft>9000</onleft>
@@ -1049,8 +1049,8 @@
         <visible>Container(9000).HasFocus(4)</visible>
         <itemlayout height="50" width="1000">
           <control type="label">
-            <posx>40</posx>
-            <posy>21</posy>
+            <left>40</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <font>cirrus_40</font>
@@ -1062,16 +1062,16 @@
         </itemlayout>
         <focusedlayout height="45" width="1000">
           <control type="image">
-            <posx>-400</posx>
-            <posy>21</posy>
+            <left>-400</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <texture flipx="true">recentlyaddeddiffuse.png</texture>
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
-            <posx>40</posx>
-            <posy>21</posy>
+            <left>40</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <font>cirrus_40</font>
@@ -1247,8 +1247,8 @@
       <!-- MOVIES Custom Playlist 3 -->
       <control type="fixedlist" id="9010">
         <hitrect x="50" y="50" w="330" h="620" />
-        <posx>-230</posx>
-        <posy>550</posy>
+        <left>-230</left>
+        <top>550</top>
         <width>1000</width>
         <height>350</height>
         <onleft>9000</onleft>
@@ -1261,8 +1261,8 @@
         <visible>Container(9000).HasFocus(5)</visible>
         <itemlayout height="50" width="1000">
           <control type="label">
-            <posx>40</posx>
-            <posy>21</posy>
+            <left>40</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <font>cirrus_40</font>
@@ -1274,16 +1274,16 @@
         </itemlayout>
         <focusedlayout height="45" width="1000">
           <control type="image">
-            <posx>-400</posx>
-            <posy>21</posy>
+            <left>-400</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <texture flipx="true">recentlyaddeddiffuse.png</texture>
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
-            <posx>40</posx>
-            <posy>21</posy>
+            <left>40</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <font>cirrus_40</font>
@@ -1459,8 +1459,8 @@
       <!-- TV-Serien Custom Playlist 4 -->
       <control type="fixedlist" id="9010">
         <hitrect x="50" y="50" w="330" h="620" />
-        <posx>-230</posx>
-        <posy>550</posy>
+        <left>-230</left>
+        <top>550</top>
         <width>1000</width>
         <height>350</height>
         <onleft>9000</onleft>
@@ -1473,8 +1473,8 @@
         <visible>Container(9000).HasFocus(9)</visible>
         <itemlayout height="50" width="1000">
           <control type="label">
-            <posx>40</posx>
-            <posy>21</posy>
+            <left>40</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <font>cirrus_40</font>
@@ -1486,16 +1486,16 @@
         </itemlayout>
         <focusedlayout height="45" width="1000">
           <control type="image">
-            <posx>-400</posx>
-            <posy>21</posy>
+            <left>-400</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <texture flipx="true">recentlyaddeddiffuse.png</texture>
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
-            <posx>40</posx>
-            <posy>21</posy>
+            <left>40</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <font>cirrus_40</font>
@@ -1640,8 +1640,8 @@
       <!-- TV-Serien Custom Playlist 5 -->
       <control type="fixedlist" id="9010">
         <hitrect x="50" y="50" w="330" h="620" />
-        <posx>-230</posx>
-        <posy>550</posy>
+        <left>-230</left>
+        <top>550</top>
         <width>1000</width>
         <height>350</height>
         <onleft>9000</onleft>
@@ -1654,8 +1654,8 @@
         <visible>Container(9000).HasFocus(10)</visible>
         <itemlayout height="50" width="1000">
           <control type="label">
-            <posx>40</posx>
-            <posy>21</posy>
+            <left>40</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <font>cirrus_40</font>
@@ -1667,16 +1667,16 @@
         </itemlayout>
         <focusedlayout height="45" width="1000">
           <control type="image">
-            <posx>-400</posx>
-            <posy>21</posy>
+            <left>-400</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <texture flipx="true">recentlyaddeddiffuse.png</texture>
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
-            <posx>40</posx>
-            <posy>21</posy>
+            <left>40</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <font>cirrus_40</font>
@@ -1821,8 +1821,8 @@
       <!-- TV-Serien Custom Playlist 6 -->
       <control type="fixedlist" id="9010">
         <hitrect x="50" y="50" w="330" h="620" />
-        <posx>-230</posx>
-        <posy>550</posy>
+        <left>-230</left>
+        <top>550</top>
         <width>1000</width>
         <height>350</height>
         <onleft>9000</onleft>
@@ -1835,8 +1835,8 @@
         <visible>Container(9000).HasFocus(11)</visible>
         <itemlayout height="50" width="1000">
           <control type="label">
-            <posx>40</posx>
-            <posy>21</posy>
+            <left>40</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <font>cirrus_40</font>
@@ -1848,16 +1848,16 @@
         </itemlayout>
         <focusedlayout height="45" width="1000">
           <control type="image">
-            <posx>-400</posx>
-            <posy>21</posy>
+            <left>-400</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <texture flipx="true">recentlyaddeddiffuse.png</texture>
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
-            <posx>40</posx>
-            <posy>21</posy>
+            <left>40</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <font>cirrus_40</font>
@@ -2002,8 +2002,8 @@
       <!-- Power SUBMENU -->
       <control type="fixedlist" id="9010">
         <hitrect x="50" y="50" w="330" h="620" />
-        <posx>-230</posx>
-        <posy>550</posy>
+        <left>-230</left>
+        <top>550</top>
         <width>1000</width>
         <height>350</height>
         <onleft>9000</onleft>
@@ -2016,8 +2016,8 @@
         <visible>Container(9000).HasFocus(26)</visible>
         <itemlayout height="50" width="1000">
           <control type="label">
-            <posx>40</posx>
-            <posy>21</posy>
+            <left>40</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <font>cirrus_40</font>
@@ -2029,16 +2029,16 @@
         </itemlayout>
         <focusedlayout height="45" width="1000">
           <control type="image">
-            <posx>-400</posx>
-            <posy>21</posy>
+            <left>-400</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <texture flipx="true">recentlyaddeddiffuse.png</texture>
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
-            <posx>40</posx>
-            <posy>21</posy>
+            <left>40</left>
+            <top>21</top>
             <width>900</width>
             <height>45</height>
             <font>cirrus_40</font>

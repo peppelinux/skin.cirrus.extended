@@ -5,8 +5,8 @@
     <!-- ====================================== Movies ======================================= -->
     <include name="BigPosterView">
         <control type="group">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1280</width>
             <height>720</height>
             <animation type="WindowOpen" reversible="false">
@@ -21,8 +21,8 @@
             <include>VisibleFadeEffect</include>
             <control type="image">
                 <!-- genre -->
-                <posx>0</posx>
-                <posy>130</posy>
+                <left>0</left>
+                <top>130</top>
                 <width>1280</width>
                 <height>700</height>
                 <aspectratio>stretch</aspectratio>
@@ -32,8 +32,8 @@
             </control>
             <control type="image">
                 <!-- plot-->
-                <posx>0</posx>
-                <posy>170</posy>
+                <left>0</left>
+                <top>170</top>
                 <width>1280</width>
                 <height>700</height>
                 <aspectratio>stretch</aspectratio>
@@ -43,8 +43,8 @@
             </control>
             <control type="image">
                 <!-- title date -->
-                <posx>0</posx>
-                <posy>370</posy>
+                <left>0</left>
+                <top>370</top>
                 <width>1280</width>
                 <height>700</height>
                 <aspectratio>stretch</aspectratio>
@@ -52,8 +52,8 @@
             </control>
             <control type="image">
                 <!-- poster -->
-                <posx>0</posx>
-                <posy>410</posy>
+                <left>0</left>
+                <top>410</top>
                 <width>1280</width>
                 <height>700</height>
                 <aspectratio>stretch</aspectratio>
@@ -61,8 +61,8 @@
             </control>
             <control type="image">
                 <!-- bottom bar background -->
-                <posx>0</posx>
-                <posy>50r</posy>
+                <left>0</left>
+                <top>50r</top>
                 <width>1280</width>
                 <height>700</height>
                 <aspectratio>stretch</aspectratio>
@@ -71,8 +71,8 @@
             </control>
             <control type="image">
                 <!-- Black gradient up the top -->
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>1280</width>
                 <height>300</height>
                 <texture>blackgradientvert.png</texture>
@@ -80,15 +80,15 @@
             </control>
             <control type="image">
                 <!-- right gradient -->
-                <posx>700r</posx>
-                <posy>0</posy>
+                <left>700r</left>
+                <top>0</top>
                 <width>700</width>
                 <height>720</height>
                 <texture flipx="true">blackgradient.png</texture>
             </control>
             <control type="image">
-                <posx>600</posx>
-                <posy>50</posy>
+                <left>600</left>
+                <top>50</top>
                 <width>540</width>
                 <height>303</height>
                 <texture>black-back.png</texture>
@@ -104,8 +104,8 @@
                 <visible>Control.IsVisible(556) + !Control.HasFocus(8241) + !Control.HasFocus(2)</visible>
             </control>
             <control type="videowindow" id="8">
-                <posx>614</posx>
-                <posy>65</posy>
+                <left>614</left>
+                <top>65</top>
                 <width>511</width>
                 <height>275</height>
                 <align>center</align>
@@ -116,8 +116,8 @@
             </control> 
             <control type="label">
                 <description>Title label</description>
-                <posx>720</posx>
-                <posy>300</posy>
+                <left>720</left>
+                <top>300</top>
                 <height>30</height>
                 <width>330</width>
                 <label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year,[COLOR=accent] (,)[/COLOR]]</label>
@@ -135,8 +135,8 @@
             <control type="wraplist" id="556">
                 <!-- Trailer mod -->
                 <visible>Skin.HasSetting(bigposter_view)</visible>
-                <posx>0</posx>
-                <posy>100</posy>
+                <left>0</left>
+                <top>100</top>
                 <width>1260</width>
                 <height>710</height>
                 <onleft>556</onleft>
@@ -153,8 +153,8 @@
                 <itemlayout width="170">
                     <control type="image">
                         <visible>!Skin.HasSetting(showBigposterCases) + !Skin.HasSetting(showBigposterClearCases)</visible>
-                        <posx>20</posx>
-                        <posy>325</posy>
+                        <left>20</left>
+                        <top>325</top>
                         <width>150</width>
                         <height>230</height>
                         <aspectratio>stretch</aspectratio>
@@ -165,8 +165,8 @@
                     </control>
                     <control type="image">
                         <visible>Skin.HasSetting(showBigposterCases) + !Skin.HasSetting(showBigposterClearCases)</visible>
-                        <posx>11</posx>
-                        <posy>335</posy>
+                        <left>11</left>
+                        <top>335</top>
                         <width>148</width>
                         <height>220</height>
                         <aspectratio>stretch</aspectratio>
@@ -174,8 +174,8 @@
                         <texture background="true">$INFO[ListItem.Icon]</texture>
                     </control>
                     <control type="image">
-                        <posx>128</posx>
-                        <posy>330</posy>
+                        <left>128</left>
+                        <top>330</top>
                         <width>35</width>
                         <height>35</height>
                         <aspectratio>keep</aspectratio>
@@ -184,8 +184,8 @@
                     </control>
                     <control type="image">
                         <visible>Skin.HasSetting(showBigposterClearCases) + Skin.HasSetting(showBigposterCases)</visible>
-                        <posx>20</posx>
-                        <posy>325</posy>
+                        <left>20</left>
+                        <top>325</top>
                         <width>143</width>
                         <height>230</height>
                         <aspectratio>stretch</aspectratio>
@@ -195,8 +195,8 @@
                     <control type="group">
                         <visible>Skin.HasSetting(showBigposterCases) | Skin.HasSetting(showBigposterClearCases)</visible>
                         <control type="image">
-                            <posx>9</posx>
-                            <posy>317</posy>
+                            <left>9</left>
+                            <top>317</top>
                             <width>160</width>
                             <height>250</height>
                             <aspectratio aligny="bottom">stretch</aspectratio>
@@ -205,8 +205,8 @@
                             <visible>Skin.HasSetting(showBigposterCases) + !Skin.HasSetting(showBigposterClearCases)</visible>
                         </control>
                         <control type="image">
-                            <posx>-1</posx>
-                            <posy>317</posy>
+                            <left>-1</left>
+                            <top>317</top>
                             <width>170</width>
                             <height>250</height>
                             <aspectratio aligny="bottom">stretch</aspectratio>
@@ -215,8 +215,8 @@
                             <visible>Skin.HasSetting(showBigposterClearCases)</visible>
                         </control>
                         <control type="image">
-                            <posx>119</posx>
-                            <posy>520</posy>
+                            <left>119</left>
+                            <top>520</top>
                             <width>35</width>
                             <height>35</height>
                             <aspectratio>keep</aspectratio>
@@ -232,11 +232,11 @@
                         <animation effect="fade" start="0" end="100" time="0" tween="quadratic" easing="out" condition="Container.OnPrevious">Focus</animation>
                         <control type="group">
                             <visible>!Skin.HasSetting(showBigposterCases)</visible>
-                            <posx>10</posx>
-                            <posy>0</posy>
+                            <left>10</left>
+                            <top>0</top>
                             <control type="image">
-                                <posx>0</posx>
-                                <posy>20</posy>
+                                <left>0</left>
+                                <top>20</top>
                                 <width>390</width>
                                 <height>580</height>
                                 <aspectratio aligny="bottom">stretch</aspectratio>
@@ -245,16 +245,16 @@
                                 <bordersize>8</bordersize>
                             </control>
                             <control type="image">
-                                <posx>291</posx>
-                                <posy>23</posy>
+                                <left>291</left>
+                                <top>23</top>
                                 <width>91</width>
                                 <height>91</height>
                                 <aspectratio>keep</aspectratio>
                                 <texture>Overlayicons/$INFO[ListItem.Overlay]</texture>
                             </control>
                             <control type="image">
-                                <posx>8</posx>
-                                <posy>28</posy>
+                                <left>8</left>
+                                <top>28</top>
                                 <width>91</width>
                                 <height>91</height>
                                 <aspectratio aligny="bottom">stretch</aspectratio>
@@ -265,11 +265,11 @@
                         </control>
                         <control type="group">
                             <visible>Skin.HasSetting(showBigposterCases) | Skin.HasSetting(showBigposterClearCases)</visible>
-                            <posx>10</posx>
-                            <posy>0</posy>
+                            <left>10</left>
+                            <top>0</top>
                             <control type="image">
-                                <posx>0</posx>
-                                <posy>60</posy>
+                                <left>0</left>
+                                <top>60</top>
                                 <width>385</width>
                                 <height>542</height>
                                 <aspectratio aligny="bottom">stretch</aspectratio>
@@ -277,8 +277,8 @@
                                 <visible>Skin.HasSetting(showBigposterCases) + !Skin.HasSetting(showBigposterClearCases)</visible>
                             </control>
                             <control type="image">
-                                <posx>0</posx>
-                                <posy>10</posy>
+                                <left>0</left>
+                                <top>10</top>
                                 <width>410</width>
                                 <height>630</height>
                                 <aspectratio aligny="bottom">stretch</aspectratio>
@@ -286,8 +286,8 @@
                                 <visible>Skin.HasSetting(showBigposterCases) + !Skin.HasSetting(showBigposterClearCases)</visible>
                             </control>
                             <control type="image">
-                                <posx>45</posx>
-                                <posy>23</posy>
+                                <left>45</left>
+                                <top>23</top>
                                 <width>340</width>
                                 <height>572</height>
                                 <aspectratio aligny="bottom">stretch</aspectratio>
@@ -295,8 +295,8 @@
                                 <visible>Skin.HasSetting(showBigposterClearCases)</visible>
                             </control>
                             <control type="image">
-                                <posx>-10</posx>
-                                <posy>0</posy>
+                                <left>-10</left>
+                                <top>0</top>
                                 <width>415</width>
                                 <height>620</height>
                                 <aspectratio aligny="bottom">stretch</aspectratio>
@@ -304,16 +304,16 @@
                                 <visible>Skin.HasSetting(showBigposterClearCases)</visible>
                             </control>
                             <control type="image">
-                                <posx>335</posx>
-                                <posy>555</posy>
+                                <left>335</left>
+                                <top>555</top>
                                 <width>41</width>
                                 <height>41</height>
                                 <aspectratio>keep</aspectratio>
                                 <texture>$VAR[overlayIcon]</texture>
                             </control>
                             <control type="image">
-                                <posx>15</posx>
-                                <posy>540</posy>
+                                <left>15</left>
+                                <top>540</top>
                                 <width>80</width>
                                 <height>53</height>
                                 <aspectratio aligny="bottom">keep</aspectratio>
@@ -326,17 +326,17 @@
                 </focusedlayout>
             </control>
             <control type="group">
-                <posx>20</posx>
-                <posy>0</posy>
+                <left>20</left>
+                <top>0</top>
                 <width>1260</width>
                 <height>720</height>
                 <control type="group">
-                    <posx>250</posx>
-                    <posy>100</posy>
+                    <left>250</left>
+                    <top>100</top>
                     <control type="label">
                         <description>Titel label</description>
-                        <posx>160</posx>
-                        <posy>280</posy>
+                        <left>160</left>
+                        <top>280</top>
                         <width>510</width>
                         <height>25</height>
                         <label>$INFO[ListItem.Label]</label>
@@ -351,8 +351,8 @@
                     </control>
                     <control type="label">
                         <description>Year Label if mins</description>
-                        <posx>770</posx>
-                        <posy>278</posy>
+                        <left>770</left>
+                        <top>278</top>
                         <width>400</width>
                         <height>30</height>
                         <label>[COLOR=accent]$INFO[ListItem.Year][/COLOR] $INFO[ListItem.Duration] $LOCALIZE[12391]</label>
@@ -364,8 +364,8 @@
                         <visible>!ListItem.IsFolder</visible>
                     </control>
                     <control type="image">
-                        <posx>665</posx>
-                        <posy>277</posy>
+                        <left>665</left>
+                        <top>277</top>
                         <width>88</width>
                         <height>30</height>
                         <aspectratio aligny="bottom">stretch</aspectratio>
@@ -376,8 +376,8 @@
                     </control>
                     <control type="label">
                         <description>top250</description>
-                        <posx>525</posx>
-                        <posy>276</posy>
+                        <left>525</left>
+                        <top>276</top>
                         <width>400</width>
                         <height>30</height>
                         <label>$INFO[ListItem.Top250]</label>
@@ -391,8 +391,8 @@
                 <control type="image">
                     <width>240</width>
                     <height>50</height>
-                    <posx>550</posx>
-                    <posy>670</posy>
+                    <left>550</left>
+                    <top>670</top>
                     <aspectratio>keep</aspectratio>
                     <align>right</align>
                     <aligny>top</aligny>
@@ -400,8 +400,8 @@
                 </control>
                 <control type="image">
                     <description>Rating value</description>
-                    <posx>410</posx>
-                    <posy>673</posy>
+                    <left>410</left>
+                    <top>673</top>
                     <align>right</align>
                     <aligny>center</aligny>
                     <width>200</width>
@@ -411,16 +411,16 @@
                 </control>
             </control>
             <control type="group">
-                <posx>20</posx>
-                <posy>0</posy>
+                <left>20</left>
+                <top>0</top>
                 <visible>Container.Content(Movies)</visible>
                 <control type="group">
-                    <posx>250</posx>
-                    <posy>100</posy>
+                    <left>250</left>
+                    <top>100</top>
                     <control type="label">
                         <description>Genre label</description>
-                        <posx>160</posx>
-                        <posy>40</posy>
+                        <left>160</left>
+                        <top>40</top>
                         <width>800</width>
                         <height>25</height>
                         <label>$INFO[ListItem.Genre,[COLOR=accent]$LOCALIZE[515]:[/COLOR] ]</label>
@@ -434,8 +434,8 @@
                     </control>-
                     <control type="textbox">
                         <description>plot</description>
-                        <posx>160</posx>
-                        <posy>85</posy>
+                        <left>160</left>
+                        <top>85</top>
                         <width>810</width>
                         <height>170</height>
                         <label>$INFO[ListItem.Plot]</label>
@@ -454,8 +454,8 @@
                     <control type="button" id="8241">
                         <width>1</width>
                         <height>1</height>
-                        <posx>0</posx>
-                        <posy>870</posy>
+                        <left>0</left>
+                        <top>870</top>
                         <onleft>556</onleft>
                         <onright>556</onright>
                         <onup>60</onup>
@@ -466,8 +466,8 @@
                 </control>
                 <control type="grouplist">
                     <description>Media Codec Flagging Images</description>
-                    <posx>580r</posx>
-                    <posy>40r</posy>
+                    <left>580r</left>
+                    <top>40r</top>
                     <width>550</width>
                     <align>right</align>
                     <itemgap>30</itemgap>
@@ -480,8 +480,8 @@
                     <visible>!Skin.HasSetting(newFlags) | Skin.HasSetting(newFlags)</visible>
                 </control>
                 <control type="scrollbar" id="60">
-                    <posx>-30</posx>
-                    <posy>80</posy>
+                    <left>-30</left>
+                    <top>80</top>
                     <width>1300</width>
                     <height>35</height>
                     <texturesliderbackground border="14,0,14,0">ScrollBarV.png</texturesliderbackground>

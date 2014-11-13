@@ -16,8 +16,8 @@
       <visible>Control.IsVisible(514)</visible>
       <control type="image">
         <!-- darken the background a bit -->
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <width>660</width>
         <height>720</height>
         <aspectratio>stretch</aspectratio>
@@ -25,8 +25,8 @@
       </control>
       <control type="image">
         <!-- right panel behind the wall -->
-        <posx>620r</posx>
-        <posy>0</posy>
+        <left>620r</left>
+        <top>0</top>
         <width>620</width>
         <height>720</height>
         <texture border="15,0,0,0">homesubbackground.png</texture>
@@ -41,8 +41,8 @@
           <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
           <effect type="fade" start="100" end="0" time="300" />
         </animation>
-        <posx>670</posx>
-        <posy>50</posy>
+        <left>670</left>
+        <top>50</top>
         <width>680</width>
         <height>650</height>
         <onleft>2</onleft>
@@ -56,8 +56,8 @@
         <visible>Container.Content(Movies)</visible>
         <itemlayout height="216" width="144">
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>144</width>
             <height>216</height>
             <aspectratio>stretch</aspectratio>
@@ -67,16 +67,16 @@
             <bordersize>8</bordersize>
           </control>
           <control type="image">
-            <posx>105</posx>
-            <posy>170</posy>
+            <left>105</left>
+            <top>170</top>
             <width>30</width>
             <height>40</height>
             <texture>$VAR[overlayIcon]</texture>
             <aspectratio>keep</aspectratio>
           </control>
           <control type="image">
-            <posx>5</posx>
-            <posy>3</posy>
+            <left>5</left>
+            <top>3</top>
             <width>91</width>
             <height>91</height>
             <texture>Overlayicons/TrailerOverlay.png</texture>
@@ -84,8 +84,8 @@
             <aspectratio>keep</aspectratio>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>144</width>
             <height>216</height>
             <aspectratio>stretch</aspectratio>
@@ -95,8 +95,8 @@
         </itemlayout>
         <focusedlayout height="323" width="225">
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>144</width>
             <height>216</height>
             <aspectratio>stretch</aspectratio>
@@ -106,16 +106,16 @@
             <bordersize>8</bordersize>
           </control>
           <control type="image">
-            <posx>105</posx>
-            <posy>170</posy>
+            <left>105</left>
+            <top>170</top>
             <width>30</width>
             <height>40</height>
             <texture>$VAR[overlayIcon]</texture>
             <aspectratio>keep</aspectratio>
           </control>
           <control type="image">
-            <posx>5</posx>
-            <posy>3</posy>
+            <left>5</left>
+            <top>3</top>
             <width>91</width>
             <height>91</height>
             <texture>Overlayicons/TrailerOverlay.png</texture>
@@ -126,12 +126,12 @@
       </control>
       <control type="group">
         <!-- Labels -->
-        <posx>20</posx>
-        <posy>120</posy>
+        <left>20</left>
+        <top>120</top>
         <visible>Container.Content(Movies)</visible>
         <control type="fadelabel">
-          <posx>0</posx>
-          <posy>-60</posy>
+          <left>0</left>
+          <top>-60</top>
           <width>620</width>
           <height>30</height>
           <font>cirrus_40</font>
@@ -145,8 +145,8 @@
           <pauseatend>2000</pauseatend>
         </control>
         <control type="label">
-          <posx>0</posx>
-          <posy>40</posy>
+          <left>0</left>
+          <top>40</top>
           <width>480</width>
           <height>30</height>
           <font>cirrus_24</font>
@@ -160,8 +160,8 @@
           <pauseatend>2000</pauseatend>
         </control>
         <control type="fadelabel">
-          <posx>0</posx>
-          <posy>80</posy>
+          <left>0</left>
+          <top>80</top>
           <width>220</width>
           <height>30</height>
           <font>cirrus_30</font>
@@ -177,8 +177,8 @@
         </control>
         <control type="label">
           <description>Trailer Label while movie is playing</description>
-          <posx>150</posx>
-          <posy>80</posy>
+          <left>150</left>
+          <top>80</top>
           <width>200</width>
           <height>30</height>
           <align>center</align>
@@ -192,8 +192,8 @@
         </control>
         <control type="textbox">
           <description>Movie Plot</description>
-          <posx>0</posx>
-          <posy>120</posy>
+          <left>0</left>
+          <top>120</top>
           <width>620</width>
           <height>110</height>
           <font>cirrus_20</font>
@@ -205,8 +205,8 @@
       </control>
       <control type="grouplist">
         <description>MPAA Rating Flagging Images</description>
-        <posx>22</posx>
-        <posy>100</posy>
+        <left>22</left>
+        <top>100</top>
         <width>249</width>
         <align>left</align>
         <itemgap>0</itemgap>
@@ -218,8 +218,8 @@
       </control>
       <control type="grouplist">
         <description>MPAA NEW Rating Flagging Images</description>
-        <posx>11</posx>
-        <posy>100</posy>
+        <left>11</left>
+        <top>100</top>
         <width>249</width>
         <align>left</align>
         <itemgap>0</itemgap>
@@ -231,8 +231,8 @@
       </control>
       <control type="group">
         <!-- Fanart and media flags -->
-        <posx>10</posx>
-        <posy>330</posy>
+        <left>10</left>
+        <top>330</top>
         <width>640</width>
         <height>360</height>
         <animation type="WindowOpen" reversible="false">
@@ -244,8 +244,8 @@
           <effect type="fade" start="100" end="0" time="300" />
         </animation>
         <control type="image">
-          <posx>10</posx>
-          <posy>45</posy>
+          <left>10</left>
+          <top>45</top>
           <width>540</width>
           <height>303</height>
           <aspectratio aligny="bottom">stretch</aspectratio>
@@ -257,8 +257,8 @@
           <visible>!IsEmpty(ListItem.Thumb)</visible>
         </control>
         <control type="image">
-          <posx>10</posx>
-          <posy>45</posy>
+          <left>10</left>
+          <top>45</top>
           <width>540</width>
           <height>303</height>
           <aspectratio>stretch</aspectratio>
@@ -268,8 +268,8 @@
           <bordersize>8</bordersize>
         </control>
         <control type="multiimage">
-          <posx>18</posx>
-          <posy>53</posy>
+          <left>18</left>
+          <top>53</top>
           <width>524</width>
           <height>287</height>
           <aspectratio>stretch</aspectratio>
@@ -279,8 +279,8 @@
           <visible>!Player.HasVideo | !Skin.HasSetting(videowindowglobal)</visible>
         </control>
         <!-- <control type="image">
-					<posx>120</posx>
-					<posy>20</posy>
+					<left>120</left>
+					<top>20</top>
 					<width>385</width>
 					<height>200</height>
 					<texture>dialogbackground.png</texture>
@@ -292,8 +292,8 @@
 					<visible>Control.IsVisible(514)</visible>
 				</control> -->
         <control type="videowindow" id="8">
-          <posx>24</posx>
-          <posy>61</posy>
+          <left>24</left>
+          <top>61</top>
           <width>513</width>
           <height>270</height>
           <visible>Skin.Hassetting(videowindowglobal)</visible>
@@ -301,8 +301,8 @@
         </control>
         <control type="label">
           <description>Title label</description>
-          <posx>120</posx>
-          <posy>280</posy>
+          <left>120</left>
+          <top>280</top>
           <height>30</height>
           <width>330</width>
           <label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year,[COLOR=accent] (,)[/COLOR]]</label>
@@ -318,8 +318,8 @@
         </control>
         <control type="grouplist">
           <description>Media Codec Flagging Images</description>
-          <posx>560</posx>
-          <posy>30</posy>
+          <left>560</left>
+          <top>30</top>
           <width>640</width>
           <align>center</align>
           <itemgap>30</itemgap>
@@ -331,8 +331,8 @@
       </control>
       <control type="image">
         <description>Rating value</description>
-        <posx>390</posx>
-        <posy>190</posy>
+        <left>390</left>
+        <top>190</top>
         <align>center</align>
         <width>249</width>
         <height>40</height>
@@ -341,8 +341,8 @@
         <visible>!ListItem.IsFolder</visible>
       </control>
       <control type="scrollbar" id="60">
-        <posx>1249</posx>
-        <posy>50</posy>
+        <left>1249</left>
+        <top>50</top>
         <width>25</width>
         <height>650</height>
         <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>

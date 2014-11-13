@@ -3,23 +3,23 @@
   <defaultcontrol always="true">3</defaultcontrol>
   <coordinates>
     <system>1</system>
-    <posx>335</posx>
-    <posy>35</posy>
+    <left>335</left>
+    <top>35</top>
   </coordinates>
   <include>dialogeffect</include>
   <controls>
     <control type="image">
       <description>background image</description>
-      <posx>0</posx>
-      <posy>0</posy>
+      <left>0</left>
+      <top>0</top>
       <width>610</width>
       <height>650</height>
       <texture border="40">dialogbackground.png</texture>
     </control>
     <control type="button">
       <description>Close Window button</description>
-      <posx>520</posx>
-      <posy>9</posy>
+      <left>520</left>
+      <top>9</top>
       <width>64</width>
       <height>32</height>
       <label>-</label>
@@ -35,8 +35,8 @@
     </control>
     <control type="label" id="1">
       <description>header label</description>
-      <posx>20</posx>
-      <posy>18</posy>
+      <left>20</left>
+      <top>18</top>
       <width>570</width>
       <height>30</height>
       <font>cirrus_30</font>
@@ -47,8 +47,8 @@
       <shadowcolor>black</shadowcolor>
     </control>
     <control type="list" id="3">
-      <posx>20</posx>
-      <posy>60</posy>
+      <left>20</left>
+      <top>60</top>
       <width>550</width>
       <height>520</height>
       <onup>3</onup>
@@ -60,16 +60,16 @@
       <animation effect="slide" start="0,0" end="10,0" time="0" condition="!Control.IsVisible(61)">Conditional</animation>
       <itemlayout height="50" width="570">
         <control type="image">
-          <posx>10</posx>
-          <posy>0</posy>
+          <left>10</left>
+          <top>0</top>
           <width>460</width>
           <height>50</height>
           <texture border="0,2,0,2" flipx="true">menuitemNF.png</texture>
           <aspectratio>stretch</aspectratio>
         </control>
         <control type="label">
-          <posx>20</posx>
-          <posy>0</posy>
+          <left>20</left>
+          <top>0</top>
           <width>430</width>
           <height>50</height>
           <font>cirrus_24</font>
@@ -82,8 +82,8 @@
       </itemlayout>
       <focusedlayout height="50" width="570">
         <control type="image">
-          <posx>10</posx>
-          <posy>0</posy>
+          <left>10</left>
+          <top>0</top>
           <width>460</width>
           <height>50</height>
           <texture border="0,2,0,2" flipx="true">listwhitegradient.png</texture>
@@ -92,8 +92,8 @@
           <aspectratio>stretch</aspectratio>
         </control>
         <control type="image">
-          <posx>10</posx>
-          <posy>0</posy>
+          <left>10</left>
+          <top>0</top>
           <width>460</width>
           <height>50</height>
           <texture border="0,2,0,2" flipx="true">menuitemFO.png</texture>
@@ -102,8 +102,8 @@
           <aspectratio>stretch</aspectratio>
         </control>
         <control type="label">
-          <posx>20</posx>
-          <posy>0</posy>
+          <left>20</left>
+          <top>0</top>
           <width>430</width>
           <height>50</height>
           <font>cirrus_24</font>
@@ -116,8 +116,8 @@
       </focusedlayout>
     </control>
     <control type="list" id="6">
-      <posx>20</posx>
-      <posy>60</posy>
+      <left>20</left>
+      <top>60</top>
       <width>550</width>
       <height>520</height>
       <onup>6</onup>
@@ -129,16 +129,16 @@
       <animation effect="slide" start="0,0" end="10,0" time="0" condition="!Control.IsVisible(61)">Conditional</animation>
       <itemlayout height="80" width="550">
         <control type="image">
-          <posx>0</posx>
-          <posy>0</posy>
+          <left>0</left>
+          <top>0</top>
           <width>550</width>
           <height>81</height>
           <texture border="0,2,0,2" flipx="true">menuitemNF.png</texture>
           <aspectratio>stretch</aspectratio>
         </control>
         <control type="image">
-          <posx>0</posx>
-          <posy>2</posy>
+          <left>0</left>
+          <top>2</top>
           <width>120</width>
           <height>76</height>
           <texture>$INFO[Listitem.Icon]</texture>
@@ -147,8 +147,8 @@
           <aspectratio>keep</aspectratio>
         </control>
         <control type="label">
-          <posx>130</posx>
-          <posy>0</posy>
+          <left>130</left>
+          <top>0</top>
           <width>410</width>
           <height>30</height>
           <font>cirrus_20</font>
@@ -159,8 +159,8 @@
           <label>[B]$INFO[ListItem.Label][/B]</label>
         </control>
         <control type="textbox">
-          <posx>130</posx>
-          <posy>30</posy>
+          <left>130</left>
+          <top>30</top>
           <width>410</width>
           <height>50</height>
           <font>cirrus_16</font>
@@ -172,8 +172,8 @@
       </itemlayout>
       <focusedlayout height="80" width="550">
         <control type="image">
-          <posx>0</posx>
-          <posy>0</posy>
+          <left>0</left>
+          <top>0</top>
           <width>550</width>
           <height>81</height>
           <texture border="0,2,0,2" flipx="true">menuitemNF.png</texture>
@@ -182,8 +182,8 @@
           <aspectratio>stretch</aspectratio>
         </control>
         <control type="image">
-          <posx>0</posx>
-          <posy>0</posy>
+          <left>0</left>
+          <top>0</top>
           <width>550</width>
           <height>81</height>
           <texture border="0,2,0,2" flipx="true">menuitemFO.png</texture>
@@ -192,8 +192,8 @@
           <aspectratio>stretch</aspectratio>
         </control>
         <control type="image">
-          <posx>0</posx>
-          <posy>2</posy>
+          <left>0</left>
+          <top>2</top>
           <width>120</width>
           <height>76</height>
           <texture>$INFO[Listitem.Icon]</texture>
@@ -202,8 +202,8 @@
           <aspectratio>keep</aspectratio>
         </control>
         <control type="label">
-          <posx>130</posx>
-          <posy>0</posy>
+          <left>130</left>
+          <top>0</top>
           <width>410</width>
           <height>30</height>
           <font>font13</font>
@@ -214,8 +214,8 @@
           <label>[B]$INFO[ListItem.Label][/B]</label>
         </control>
         <control type="textbox">
-          <posx>130</posx>
-          <posy>30</posy>
+          <left>130</left>
+          <top>30</top>
           <width>410</width>
           <height>50</height>
           <font>font12</font>
@@ -227,8 +227,8 @@
       </focusedlayout>
     </control>
     <control type="scrollbar" id="61">
-      <posx>570</posx>
-      <posy>60</posy>
+      <left>570</left>
+      <top>60</top>
       <width>25</width>
       <height>520</height>
       <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
@@ -245,8 +245,8 @@
     </control>
     <control type="label">
       <description>number of files/pages in list text label</description>
-      <posx>580</posx>
-      <posy>592</posy>
+      <left>580</left>
+      <top>592</top>
       <width>300</width>
       <height>35</height>
       <font>cirrus_16</font>
@@ -259,8 +259,8 @@
     </control>
     <control type="label">
       <description>number of files/pages in list text label</description>
-      <posx>580</posx>
-      <posy>592</posy>
+      <left>580</left>
+      <top>592</top>
       <width>300</width>
       <height>35</height>
       <font>cirrus_16</font>
@@ -273,8 +273,8 @@
     </control>
     <control type="button" id="5">
       <description>Manual button</description>
-      <posx>20</posx>
-      <posy>590</posy>
+      <left>20</left>
+      <top>590</top>
       <width>200</width>
       <height>40</height>
       <label>186</label>

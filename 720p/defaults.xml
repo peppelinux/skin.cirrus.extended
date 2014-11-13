@@ -37,8 +37,8 @@
     <default type="textbox">
         <spinwidth>18</spinwidth>
         <spinheight>16</spinheight>
-        <spinposx>410</spinposx>
-        <spinposy>305</spinposy>
+        <spinleft>410</spinleft>
+        <spintop>305</spintop>
         <spincolor>white</spincolor>
         <spinfont>font13</spinfont>
         <textcolor>white</textcolor>

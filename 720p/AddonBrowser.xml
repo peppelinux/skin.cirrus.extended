@@ -6,8 +6,8 @@
   <controls>
     <include>CommonSettingsBackground</include>
     <control type="image">
-      <posx>0</posx>
-      <posy>0</posy>
+      <left>0</left>
+      <top>0</top>
       <width>1280</width>
       <height>720</height>
       <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
@@ -43,8 +43,8 @@
     <include>Clock</include>
     <control type="group">
       <!-- Add-on Category -->
-      <posx>20</posx>
-      <posy>20</posy>
+      <left>20</left>
+      <top>20</top>
       <visible>!IsEmpty(Container.Property(AddonCategory))</visible>
       <include>VisibleFadeEffect</include>
       <animation effect="slide" end="-710,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
@@ -52,7 +52,7 @@
       <control type="fadelabel">
         <width>800</width>
         <!-- <include>WindowTitleCommons</include> -->
-        <posx>0</posx>
+        <left>0</left>
         <font>cirrus_24</font>
         <textcolor>white</textcolor>
         <scrollout>false</scrollout>
@@ -62,8 +62,8 @@
       </control>
     </control>
     <control type="group">
-      <posx>20</posx>
-      <posy>-15</posy>
+      <left>20</left>
+      <top>-15</top>
       <visible>!IsEmpty(Container.Property(RepoName))</visible>
       <include>VisibleFadeEffect</include>
       <animation effect="slide" end="-600,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
@@ -72,7 +72,7 @@
         <width>450</width>
         <font>cirrus_24</font>
         <textcolor>grey</textcolor>
-        <posx>0</posx>
+        <left>0</left>
         <scrollout>false</scrollout>
         <pauseatend>2000</pauseatend>
         <label>$INFO[Container.Property(RepoName)]</label>
@@ -80,13 +80,13 @@
       </control>
     </control>
     <control type="group">
-      <posx>120</posx>
-      <posy>0</posy>
+      <left>120</left>
+      <top>0</top>
       <animation effect="slide" end="-310,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
       <animation effect="slide" start="-310,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
       <control type="label">
         <include>WindowTitleCommons</include>
-        <posx>0</posx>
+        <left>0</left>
         <label>$LOCALIZE[24001]</label>
       </control>
     </control>
@@ -95,8 +95,8 @@
       <animation effect="slide" start="0,0" end="-250,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | Control.HasFocus(8999)">WindowClose</animation>
       <control type="button" id="8999">
         <description>Fake button for mouse control</description>
-        <posx>-250</posx>
-        <posy>0</posy>
+        <left>-250</left>
+        <top>0</top>
         <width>265</width>
         <height>720</height>
         <label>-</label>
@@ -107,13 +107,13 @@
       </control>
       <include>SideBladeLeft</include>
       <control type="group" id="9000">
-        <posx>-250</posx>
-        <posy>130</posy>
+        <left>-250</left>
+        <top>130</top>
         <include>CommonNowPlaying</include>
         <control type="button" id="2">
           <description>View As button</description>
-          <posx>0</posx>
-          <posy>0</posy>
+          <left>0</left>
+          <top>0</top>
           <include>ButtonCommonValues</include>
           <label>-</label>
           <onleft>55</onleft>
@@ -123,8 +123,8 @@
         </control>
         <control type="button" id="3">
           <description>Sort by button</description>
-          <posx>0</posx>
-          <posy>40</posy>
+          <left>0</left>
+          <top>40</top>
           <include>ButtonCommonValues</include>
           <label>103</label>
           <onleft>55</onleft>
@@ -134,8 +134,8 @@
         </control>
         <control type="togglebutton" id="4">
           <description>Sort asc</description>
-          <posx>220</posx>
-          <posy>53</posy>
+          <left>220</left>
+          <top>53</top>
           <width>20</width>
           <height>20</height>
           <label>-</label>
@@ -145,8 +145,8 @@
           <ondown>5</ondown>
         </control>
         <control type="label">
-          <posx>0</posx>
-          <posy>90</posy>
+          <left>0</left>
+          <top>90</top>
           <width>250</width>
           <height>45</height>
           <font>cirrus_24</font>
@@ -157,8 +157,8 @@
         </control>
         <control type="button" id="5">
           <description>Enable auto-updates</description>
-          <posx>0</posx>
-          <posy>130</posy>
+          <left>0</left>
+          <top>130</top>
           <textwidth>235</textwidth>
           <include>ButtonCommonValues</include>
           <label>24063</label>
@@ -169,8 +169,8 @@
         </control>
         <control type="radiobutton" id="6">
           <description>No notifications</description>
-          <posx>0</posx>
-          <posy>170</posy>
+          <left>0</left>
+          <top>170</top>
           <include>ButtonCommonValues</include>
           <label>25000</label>
           <onleft>55</onleft>
@@ -180,8 +180,8 @@
         </control>
         <control type="radiobutton" id="7">
           <description>Hide foreign</description>
-          <posx>0</posx>
-          <posy>210</posy>
+          <left>0</left>
+          <top>210</top>
           <include>ButtonCommonValues</include>
           <label>25001</label>
         </control>
@@ -194,8 +194,8 @@
           <height>42</height>
         </control>
         <control type="group">
-          <posx>0</posx>
-          <posy>260</posy>
+          <left>0</left>
+          <top>260</top>
           <include>CommonNowPlaying_Controls</include>
         </control>
         <control type="button" id="611">
@@ -209,7 +209,7 @@
       </control>
     </control>
     <control type="group">
-      <posy>90</posy>
+      <top>90</top>
       <include>ScrollListLetter</include>
     </control>
   </controls>

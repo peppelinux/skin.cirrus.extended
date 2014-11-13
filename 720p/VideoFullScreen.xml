@@ -5,16 +5,16 @@
         <!-- codec infos -->
         <control type="image">
             <description>media info background image</description>
-            <posx>0</posx>
-            <posy>30</posy>
+            <left>0</left>
+            <top>30</top>
             <width>1280</width>
             <height>130</height>
             <texture>black-back.png</texture>
         </control>
         <control type="label" id="10">
             <description>row 1 label</description>
-            <posx>50</posx>
-            <posy>40</posy>
+            <left>50</left>
+            <top>40</top>
             <label>-</label>
             <align>left</align>
             <font>font12</font>
@@ -22,8 +22,8 @@
         </control>
         <control type="label" id="11">
             <description>row 2 label</description>
-            <posx>50</posx>
-            <posy>70</posy>
+            <left>50</left>
+            <top>70</top>
             <label>-</label>
             <align>left</align>
             <font>font12</font>
@@ -31,8 +31,8 @@
         </control>
         <control type="label" id="12">
             <description>row 3 label</description>
-            <posx>50</posx>
-            <posy>100</posy>
+            <left>50</left>
+            <top>100</top>
             <label>-</label>
             <align>left</align>
             <font>font12</font>

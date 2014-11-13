@@ -3,16 +3,16 @@
   <defaultcontrol>2</defaultcontrol>
   <coordinates>
     <system>1</system>
-    <posx>240</posx>
-    <posy>115</posy>
+    <left>240</left>
+    <top>115</top>
   </coordinates>
   <include>dialogeffect</include>
   <controls>
     <control type="group">
       <control type="image">
         <description>background image</description>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <width>800</width>
         <height>490</height>
         <colordiffuse>DDFFFFFF</colordiffuse>
@@ -20,8 +20,8 @@
       </control>
       <control type="label">
         <description>header label</description>
-        <posx>20</posx>
-        <posy>18</posy>
+        <left>10</left>
+        <top>18</top>
         <width>760</width>
         <height>30</height>
         <font>font13_title</font>
@@ -33,16 +33,16 @@
       </control>
       <control type="label" id="4">
         <description>No Settings Label</description>
-        <posx>20</posx>
-        <posy>180</posy>
+        <left>10</left>
+        <top>180</top>
         <width>760</width>
         <align>center</align>
         <label>13390</label>
         <font>font13caps</font>
       </control>
       <control type="list" id="2">
-        <posx>40</posx>
-        <posy>65</posy>
+        <left>40</left>
+        <top>65</top>
         <width>720</width>
         <height>395</height>
         <onleft>60</onleft>
@@ -53,16 +53,16 @@
         <scrolltime>200</scrolltime>
         <itemlayout height="40" width="720">
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>720</width>
             <height>41</height>
             <texture border="0,2,0,2">menuitemNF.png</texture>
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>720</width>
             <height>40</height>
             <font>font13</font>
@@ -75,8 +75,8 @@
         </itemlayout>
         <focusedlayout height="40" width="720">
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>720</width>
             <height>41</height>
             <texture border="0,2,0,2">menuitemNF.png</texture>
@@ -85,8 +85,8 @@
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>720</width>
             <height>41</height>
             <texture border="0,2,0,2">menuitemFO.png</texture>
@@ -95,8 +95,8 @@
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>720</width>
             <height>40</height>
             <font>font13</font>
@@ -109,8 +109,8 @@
         </focusedlayout>
       </control>
       <control type="scrollbar" id="60">
-        <posx>760</posx>
-        <posy>65</posy>
+        <left>760</left>
+        <top>65</top>
         <width>25</width>
         <height>390</height>
         <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>

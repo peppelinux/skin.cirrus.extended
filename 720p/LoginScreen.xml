@@ -4,13 +4,13 @@
   <allowoverlay>no</allowoverlay>
   <coordinates>
     <system>1</system>
-    <posx>0</posx>
-    <posy>0</posy>
+    <left>0</left>
+    <top>0</top>
   </coordinates>
   <controls>
     <control type="multiimage">
-      <posx>0</posx>
-      <posy>0</posy>
+      <left>0</left>
+      <top>0</top>
       <width>1280</width>
       <height>720</height>
       <imagepath fallback="special://skin/backgrounds/videos.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</imagepath>
@@ -22,23 +22,23 @@
     <control type="group">
       <include>Window_OpenClose_Animation</include>
       <control type="image">
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <width>1280</width>
         <height>720</height>
         <texture border="20">black-back.png</texture>
       </control>
       <control type="image">
-        <posx>0</posx>
-        <posy>120</posy>
+        <left>0</left>
+        <top>120</top>
         <width>1280</width>
         <height>530</height>
         <texture border="20">ContentPanel.png</texture>
         <aspectratio>stretch</aspectratio>
       </control>
       <control type="label">
-        <posx>50</posx>
-        <posy>140</posy>
+        <left>50</left>
+        <top>140</top>
         <width>690</width>
         <height>40</height>
         <font>cirrus_20</font>
@@ -48,8 +48,8 @@
         <label>$LOCALIZE[31421]</label>
       </control>
       <control type="list" id="52">
-        <posx>50</posx>
-        <posy>200</posy>
+        <left>50</left>
+        <top>200</top>
         <width>690</width>
         <height>401</height>
         <onleft>20</onleft>
@@ -61,24 +61,24 @@
         <scrolltime>200</scrolltime>
         <itemlayout height="100" width="690">
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>690</width>
             <height>101</height>
             <texture border="0,5,0,5">menuitemNF.png</texture>
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="image">
-            <posx>10</posx>
-            <posy>10</posy>
+            <left>10</left>
+            <top>10</top>
             <width>80</width>
             <height>80</height>
             <texture>$INFO[ListItem.Icon]</texture>
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
-            <posx>110</posx>
-            <posy>10</posy>
+            <left>110</left>
+            <top>10</top>
             <width>580</width>
             <height>40</height>
             <font>cirrus_24_Bold</font>
@@ -89,8 +89,8 @@
             <label>$INFO[ListItem.Label]</label>
           </control>
           <control type="label">
-            <posx>110</posx>
-            <posy>50</posy>
+            <left>110</left>
+            <top>50</top>
             <width>580</width>
             <height>40</height>
             <font>cirrus_18</font>
@@ -103,8 +103,8 @@
         </itemlayout>
         <focusedlayout height="100" width="580">
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>690</width>
             <height>101</height>
             <texture flipx="true" border="0,5,0,5">menuitemNF.png</texture>
@@ -113,8 +113,8 @@
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>690</width>
             <height>101</height>
             <texture flipx="true" border="0,5,0,5">menuitemFO.png</texture>
@@ -123,16 +123,16 @@
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="image">
-            <posx>10</posx>
-            <posy>10</posy>
+            <left>10</left>
+            <top>10</top>
             <width>80</width>
             <height>80</height>
             <texture>$INFO[ListItem.Icon]</texture>
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
-            <posx>110</posx>
-            <posy>10</posy>
+            <left>110</left>
+            <top>10</top>
             <width>580</width>
             <height>40</height>
             <font>cirrus_24_Bold</font>
@@ -143,8 +143,8 @@
             <label>$INFO[ListItem.Label]</label>
           </control>
           <control type="label">
-            <posx>110</posx>
-            <posy>50</posy>
+            <left>110</left>
+            <top>50</top>
             <width>580</width>
             <height>40</height>
             <font>cirrus_18</font>
@@ -157,11 +157,11 @@
         </focusedlayout>
       </control>
       <control type="group">
-        <posx>1030</posx>
-        <posy>570</posy>
+        <left>1030</left>
+        <top>570</top>
         <control type="label">
-          <posx>0</posx>
-          <posy>0</posy>
+          <left>0</left>
+          <top>0</top>
           <width>580</width>
           <height>35</height>
           <font>cirrus_24</font>
@@ -172,8 +172,8 @@
         </control>
         <control type="button" id="20">
           <description>Power push button</description>
-          <posx>170</posx>
-          <posy>0</posy>
+          <left>170</left>
+          <top>0</top>
           <width>40</width>
           <height>40</height>
           <label>-</label>
@@ -189,8 +189,8 @@
           <colordiffuse>CCFFFFFF</colordiffuse>
         </control>
         <control type="image">
-          <posx>13</posx>
-          <posy>3</posy>
+          <left>13</left>
+          <top>3</top>
           <width>30</width>
           <height>29</height>
           <texture>home-power-focus.gif</texture>
@@ -199,14 +199,14 @@
       </control>
     </control>
     <control type="group">
-      <posx>400r</posx>
-      <posy>0</posy>
+      <left>400r</left>
+      <top>0</top>
       <animation effect="slide" start="0,0" end="400,0" delay="0" time="300">WindowClose</animation>
       <animation effect="slide" start="400,0" end="0,0" delay="0" time="300">WindowOpen</animation>
       <control type="label">
         <description>time label</description>
-        <posx>350</posx>
-        <posy>145</posy>
+        <left>-50</left>
+        <top>145</top>
         <width>400</width>
         <height>28</height>
         <align>right</align>
@@ -218,20 +218,20 @@
       </control>
     </control>
     <control type="image">
-      <posx>1020</posx>
-      <posy>270</posy>
+      <left>1020</left>
+      <top>270</top>
       <width>180</width>
       <height>180</height>
       <texture>$INFO[ListItem.Icon]</texture>
     </control>
     <control type="group">
-      <posx>0</posx>
-      <posy>0</posy>
+      <left>0</left>
+      <top>0</top>
       <animation effect="slide" end="-270,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
       <animation effect="slide" start="-270,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
       <control type="label">
         <include>WindowTitleCommons</include>
-        <posx>50</posx>
+        <left>50</left>
         <label>$LOCALIZE[20096]</label>
       </control>
     </control>

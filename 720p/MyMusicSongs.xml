@@ -22,13 +22,13 @@
         <include>CommonPageCount</include>
         <include>BehindDialogFadeOut</include>
         <control type="group">
-            <posx>20</posx>
-            <posy>0</posy>
+            <left>20</left>
+            <top>0</top>
             <animation effect="slide" end="-310,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
             <animation effect="slide" start="-310,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
             <control type="label">
                 <include>WindowTitleCommons</include>
-                <posx>0</posx>
+                <left>0</left>
                 <label>[COLOR=white]$INFO[System.Time]   [B]$LOCALIZE[31022][/B][/COLOR]</label>
                 <visible>!Skin.HasSetting(nobreadcrumb)</visible>
             </control>
@@ -40,8 +40,8 @@
             <animation effect="slide" start="0,0" end="-380,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | Control.HasFocus(8999)">WindowClose</animation>
             <control type="button" id="8999">
                 <description>Fake button for mouse control</description>
-                <posx>-250</posx>
-                <posy>0</posy>
+                <left>-250</left>
+                <top>0</top>
                 <width>265</width>
                 <height>720</height>
                 <label>-</label>
@@ -52,33 +52,33 @@
             </control>
             <!-- Menu background panel -->
             <control type="image">
-                <posx>-820</posx>
-                <posy>0</posy>
+                <left>-820</left>
+                <top>0</top>
                 <width>820</width>
                 <height>720</height>
                 <texture border="5">dialogbackground.png</texture>
             </control>
             <control type="image">
-                <posx>-820</posx>
-                <posy>0</posy>
+                <left>-820</left>
+                <top>0</top>
                 <width>820</width>
                 <height>720</height>
                 <texture border="5">dialogbackground.png</texture>
             </control>
             <control type="image">
-                <posx>-250</posx>
-                <posy>650</posy>
+                <left>-250</left>
+                <top>650</top>
                 <width>160</width>
                 <height>40</height>
                 <texture>xbmc_logo_white.png</texture>
             </control>
             <control type="group">   
-                <posx>-240</posx>
-                <posy>20</posy>
+                <left>-240</left>
+                <top>20</top>
                 <control type="label">
                     <description>View options</description>
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>250</width>
                     <height>30</height>
                     <font>cirrus_24</font>
@@ -93,13 +93,13 @@
 
             <!-- MENU ITEMS BELOW -->
             <control type="group" id="9000">
-                <posx>-260</posx>
-                <posy>70</posy>
+                <left>-260</left>
+                <top>70</top>
                 <!-- <include>CommonNowPlaying</include> --> <!-- GET RID OF FROM INCLUDES? -->
                 <control type="button" id="2">
                     <description>View As button</description>
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <include>ButtonCommonValues</include>
                     <label>-</label>
                     <onleft>55</onleft>
@@ -109,8 +109,8 @@
                 </control>
                 <control type="button" id="3">
                     <description>Sort by button</description>
-                    <posx>0</posx>
-                    <posy>40</posy>
+                    <left>0</left>
+                    <top>40</top>
                     <include>ButtonCommonValues</include>
                     <label>103</label>
                     <onleft>55</onleft>
@@ -120,8 +120,8 @@
                 </control>
                 <control type="togglebutton" id="4">
                     <description>Sort asc</description>
-                    <posx>220</posx>
-                    <posy>53</posy>
+                    <left>220</left>
+                    <top>53</top>
                     <width>20</width>
                     <height>20</height>
                     <label>-</label>
@@ -132,8 +132,8 @@
                 </control>
                 <control type="radiobutton" id="99">
                     <description>Library button</description>
-                    <posx>0</posx>
-                    <posy>80</posy>
+                    <left>0</left>
+                    <top>80</top>
                     <label>$LOCALIZE[29800]</label>
                     <onclick>ReplaceWindow(MusicLibrary)</onclick>
                     <selected>Window.IsVisible(MusicLibrary)</selected>
@@ -145,8 +145,8 @@
                 </control>
                 <control type="radiobutton" id="16">
                     <description>PartyMode</description>
-                    <posx>0</posx>
-                    <posy>120</posy>
+                    <left>0</left>
+                    <top>120</top>
                     <label>589</label>
                     <include>ButtonCommonValues</include>
                     <onleft>55</onleft>
@@ -157,8 +157,8 @@
                 <control type="radiobutton" id="19">
                     <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
                     <description>Filter</description>
-                    <posx>0</posx>
-                    <posy>160</posy>
+                    <left>0</left>
+                    <top>160</top>
                     <include>ButtonCommonValues</include>
                     <label>587</label>
                     <onleft>55</onleft>
@@ -169,8 +169,8 @@
                 <control type="radiobutton" id="20">
                     <visible>Container.CanFilterAdvanced</visible>
                     <description>Filter</description>
-                    <posx>0</posx>
-                    <posy>160</posy>
+                    <left>0</left>
+                    <top>160</top>
                     <include>ButtonCommonValues</include>
                     <label>587</label>
                     <onleft>55</onleft>
@@ -182,8 +182,8 @@
                 </control>
                 <control type="radiobutton" id="201">
                     <description>Toggle Fanart</description>
-                    <posx>0</posx>
-                    <posy>200</posy>
+                    <left>0</left>
+                    <top>200</top>
                     <include>ButtonCommonValues</include>
                     <label>31307</label>
                     <onclick>Skin.ToggleSetting(MusicLibraryFanart)</onclick>
@@ -195,8 +195,8 @@
                 </control>
                 <control type="button" id="8">
                     <description>Search</description>
-                    <posx>0</posx>
-                    <posy>240</posy>
+                    <left>0</left>
+                    <top>240</top>
                     <include>ButtonCommonValues</include>
                     <label>137</label>
                     <onleft>55</onleft>

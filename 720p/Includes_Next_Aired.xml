@@ -23,25 +23,25 @@
     </include>
 
     <include name="NextAiredDayCommon">
-        <posx>90</posx>
-        <posy>0</posy>
-        <width>100</width>
+        <left>0</left>
+        <top>0</top>
+        <width>90</width>
         <height>30</height>
         <font>cirrus_24</font>
         <align>right</align>
     </include>
     <include name="NextAiredDateCommon">
-        <posx>90</posx>
-        <posy>30</posy>
-        <width>100</width>
+        <left>0</left>
+        <top>30</top>
+        <width>90</width>
         <height>30</height>
         <font>cirrus_20</font>
         <align>right</align>
     </include>
     <include name="NextAiredHighlight">
         <control type="image">
-            <posx>-1</posx>
-            <posy>0</posy>
+            <left>-1</left>
+            <top>0</top>
             <width>948</width>
             <height>91</height>
             <texture border="2">tvguide-orange.png</texture>
@@ -50,16 +50,16 @@
     </include>
     <include name="NextAireDayBackgroundBright">
         <control type="image">
-            <posx>-1</posx>
-            <posy>0</posy>
+            <left>-1</left>
+            <top>0</top>
             <width>948</width>
             <height>91</height>
             <texture border="2">tvguide-dark.png</texture>
             <colordiffuse>4FFFFFFF</colordiffuse>
         </control>
         <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>946</width>
             <height>1</height>
             <texture>white.png</texture>
@@ -68,16 +68,16 @@
     </include>
     <include name="NextAireDayBackgroundDark">
         <control type="image">
-            <posx>-1</posx>
-            <posy>0</posy>
+            <left>-1</left>
+            <top>0</top>
             <width>948</width>
             <height>91</height>
             <texture border="2">tvguide-dark.png</texture>
             <colordiffuse>AFFFFFFF</colordiffuse>
         </control>
         <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>946</width>
             <height>1</height>
             <texture>white.png</texture>
@@ -86,15 +86,15 @@
     </include>
 
     <include name="NextAiredLayout">
-        <posx>98</posx>
-        <posy>0</posy>
+        <left>98</left>
+        <top>0</top>
         <width>850</width>
         <height>90</height>
         <orientation>horizontal</orientation>
         <itemlayout width="170" height="90">
             <control type="image">
-                <posx>4</posx>
-                <posy>6</posy>
+                <left>4</left>
+                <top>6</top>
                 <width>160</width>
                 <height>40</height>
                 <texture background="true" fallback="tvbanner.png">$INFO[ListItem.Property(Art(banner))]</texture>
@@ -104,8 +104,8 @@
                 <bordertexture border="3">ContentPanelvertical.png</bordertexture>
             </control>
             <control type="label">
-                <posx>5</posx>
-                <posy>46</posy>
+                <left>5</left>
+                <top>46</top>
                 <width>160</width>
                 <height>20</height>
                 <label>$INFO[ListItem.Label]</label>
@@ -113,8 +113,8 @@
                 <align>center</align>
             </control>
             <control type="image">
-                <posx>4</posx>
-                <posy>6</posy>
+                <left>4</left>
+                <top>6</top>
                 <width>160</width>
                 <height>40</height>
                 <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
@@ -124,8 +124,8 @@
                 <bordertexture border="3">ContentPanelvertical.png</bordertexture>
             </control>
             <control type="image">
-                <posx>4</posx>
-                <posy>6</posy>
+                <left>4</left>
+                <top>6</top>
                 <width>160</width>
                 <height>40</height>
                 <texture background="true">$INFO[ListItem.Property(Art(clearlogo))]</texture>
@@ -135,8 +135,8 @@
                 <bordertexture border="3">ContentPanelvertical.png</bordertexture>
             </control>
             <control type="image">
-                <posx>168</posx>
-                <posy>0</posy>
+                <left>168</left>
+                <top>0</top>
                 <width>1</width>
                 <height>90</height>
                 <texture>separator2.png</texture>
@@ -146,15 +146,15 @@
         </itemlayout>
         <focusedlayout width="170" height="90">
             <control type="button">
-                <posx>-1</posx>
-                <posy>0</posy>
+                <left>-1</left>
+                <top>0</top>
                 <width>170</width>
                 <height>90</height>
                 <texturefocus border="2" colordiffuse="9FFFFFFF">tvguide-light.png</texturefocus>
             </control>
             <control type="image">
-                <posx>4</posx>
-                <posy>6</posy>
+                <left>4</left>
+                <top>6</top>
                 <width>160</width>
                 <height>40</height>
                 <texture background="true" fallback="tvbanner.png">$INFO[ListItem.Property(Art(banner))]</texture>
@@ -164,8 +164,8 @@
                 <bordertexture border="3">ContentPanelvertical.png</bordertexture>
             </control>
             <control type="label">
-                <posx>5</posx>
-                <posy>46</posy>
+                <left>5</left>
+                <top>46</top>
                 <width>160</width>
                 <height>20</height>
                 <label>$INFO[ListItem.Label]</label>
@@ -173,8 +173,8 @@
                 <align>center</align>
             </control>
             <control type="image">
-                <posx>4</posx>
-                <posy>6</posy>
+                <left>4</left>
+                <top>6</top>
                 <width>160</width>
                 <height>40</height>
                 <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
@@ -184,8 +184,8 @@
                 <bordertexture border="3">ContentPanelvertical.png</bordertexture>
             </control>
             <control type="image">
-                <posx>4</posx>
-                <posy>6</posy>
+                <left>4</left>
+                <top>6</top>
                 <width>160</width>
                 <height>40</height>
                 <texture background="true">$INFO[ListItem.Property(Art(clearlogo))]</texture>
@@ -195,8 +195,8 @@
                 <bordertexture border="3">ContentPanelvertical.png</bordertexture>
             </control>
             <control type="image">
-                <posx>168</posx>
-                <posy>0</posy>
+                <left>168</left>
+                <top>0</top>
                 <width>1</width>
                 <height>90</height>
                 <texture>separator2.png</texture>
@@ -212,27 +212,27 @@
             <description>description</description>
             <animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
             <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-            <posx>984</posx>
-            <posy>60</posy>
+            <left>984</left>
+            <top>60</top>
             <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>266</width>
                 <height>630</height>
                 <texture border="2">tvguide-light.png</texture>
                 <colordiffuse>4F000000</colordiffuse>
             </control>
             <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>266</width>
                 <height>90</height>
                 <texture border="2">tvguide-dark.png</texture>
                 <colordiffuse>AFFFFFFF</colordiffuse>
             </control>
             <control type="image">
-                <posx>0</posx>
-                <posy>540</posy>
+                <left>0</left>
+                <top>540</top>
                 <width>266</width>
                 <height>90</height>
                 <texture border="2">tvguide-dark.png</texture>
@@ -242,8 +242,8 @@
             <control type="group">
                 <visible>Control.HasFocus(200) | Control.HasFocus(201) | Control.HasFocus(202) | Control.HasFocus(203) | Control.HasFocus(204) | Control.HasFocus(205) | Control.HasFocus(206) | Control.HasFocus(207) | Control.HasFocus(208) | Control.HasFocus(209) | Control.HasFocus(210) | Control.HasFocus(211) | Control.HasFocus(212) | Control.HasFocus(213) | Control.HasFocus(214) | Control.HasFocus(215)</visible>
                 <control type="label">
-                    <posx>2</posx>
-                    <posy>6</posy>
+                    <left>2</left>
+                    <top>6</top>
                     <width>260</width>
                     <height>84</height>
                     <label>[B]$VAR[NextAiredLabel][/B]</label>
@@ -252,8 +252,8 @@
                     <wrapmultiline>true</wrapmultiline>
                 </control>
                 <control type="image">
-                    <posx>73</posx>
-                    <posy>100</posy>
+                    <left>73</left>
+                    <top>100</top>
                     <width>120</width>
                     <height>175</height>
                     <bordersize>5</bordersize>
@@ -263,8 +263,8 @@
                 </control>
                 <!-- Number + Title -->
                 <control type="label">
-                    <posx>2</posx>
-                    <posy>280</posy>
+                    <left>2</left>
+                    <top>280</top>
                     <width>260</width>
                     <height>20</height>
                     <label>$LOCALIZE[31062]</label>
@@ -272,8 +272,8 @@
                     <align>left</align>
                 </control>
                 <control type="label">
-                    <posx>2</posx>
-                    <posy>303</posy>
+                    <left>2</left>
+                    <top>303</top>
                     <width>260</width>
                     <height>20</height>
                     <label>$VAR[NextAiredNextNumber]: $VAR[NextAiredNextTitle]</label>
@@ -282,8 +282,8 @@
                 </control>
                 <!-- Airtime -->
                 <control type="label">
-                    <posx>2</posx>
-                    <posy>328</posy>
+                    <left>2</left>
+                    <top>328</top>
                     <width>260</width>
                     <height>20</height>
                     <label>$LOCALIZE[31302]:</label>
@@ -291,8 +291,8 @@
                     <align>left</align>
                 </control>
                 <control type="label">
-                    <posx>2</posx>
-                    <posy>351</posy>
+                    <left>2</left>
+                    <top>351</top>
                     <width>260</width>
                     <height>20</height>
                     <label>$VAR[NextAiredAirtime]</label>
@@ -301,8 +301,8 @@
                 </control>
                 <!-- Runtime-->
                 <control type="label">
-                    <posx>2</posx>
-                    <posy>376</posy>
+                    <left>2</left>
+                    <top>376</top>
                     <width>260</width>
                     <height>20</height>
                     <label>$LOCALIZE[2050]:</label>
@@ -310,8 +310,8 @@
                     <align>left</align>
                 </control>
                 <control type="label">
-                    <posx>2</posx>
-                    <posy>399</posy>
+                    <left>2</left>
+                    <top>399</top>
                     <width>260</width>
                     <height>20</height>
                     <label>$VAR[NextAiredRuntime]</label>
@@ -319,8 +319,8 @@
                 </control>
                 <!-- Genre -->
                 <control type="label">
-                    <posx>2</posx>
-                    <posy>424</posy>
+                    <left>2</left>
+                    <top>424</top>
                     <width>260</width>
                     <height>20</height>
                     <label>$LOCALIZE[135]:</label>
@@ -328,8 +328,8 @@
                     <align>left</align>
                 </control>
                 <control type="label">
-                    <posx>2</posx>
-                    <posy>447</posy>
+                    <left>2</left>
+                    <top>447</top>
                     <width>260</width>
                     <height>20</height>
                     <label>$VAR[NextAiredGenre]</label>
@@ -338,8 +338,8 @@
                 </control>
                 <!-- Network Logo -->
                 <control type="image">
-                    <posx>2</posx>
-                    <posy>472</posy>
+                    <left>2</left>
+                    <top>472</top>
                     <width>260</width>
                     <height>80</height>
                     <aspectratio align="center">keep</aspectratio>
@@ -347,8 +347,8 @@
                 </control>
             </control>
             <control type="label">
-                <posx>2</posx>
-                <posy>562</posy>
+                <left>2</left>
+                <top>562</top>
                 <width>260</width>
                 <height>20</height>
                 <label>[B]$LOCALIZE[31185]: $INFO[Window(Home).Property(NextAired.Total)][/B]</label>
@@ -356,8 +356,8 @@
                 <align>center</align>
             </control>
             <control type="label">
-                <posx>2</posx>
-                <posy>590</posy>
+                <left>2</left>
+                <top>590</top>
                 <width>260</width>
                 <height>20</height>
                 <label>[B]$LOCALIZE[31186]: $INFO[Window(Home).Property(NextAired.TodayTotal)][/B]</label>

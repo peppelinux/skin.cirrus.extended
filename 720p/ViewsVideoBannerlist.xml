@@ -9,8 +9,8 @@
       <include>VisibleFadeEffect</include>
       <control type="image">
         <!-- bottom bar background -->
-        <posx>0</posx>
-        <posy>155r</posy>
+        <left>0</left>
+        <top>155r</top>
         <width>1280</width>
         <height>700</height>
         <aspectratio>stretch</aspectratio>
@@ -18,8 +18,8 @@
       </control>
       <control type="image">
         <!-- bottom bar background -->
-        <posx>0</posx>
-        <posy>50r</posy>
+        <left>0</left>
+        <top>50r</top>
         <width>1280</width>
         <height>700</height>
         <aspectratio>stretch</aspectratio>
@@ -28,8 +28,8 @@
       </control>
       <control type="image">
         <!-- Black gradient up the top -->
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <width>1280</width>
         <height>300</height>
         <texture>blackgradientvert.png</texture>
@@ -37,15 +37,15 @@
       </control>
       <control type="image">
         <!-- right gradient -->
-        <posx>700r</posx>
-        <posy>0</posy>
+        <left>700r</left>
+        <top>0</top>
         <width>700</width>
         <height>720</height>
         <texture flipx="true">blackgradient.png</texture>
       </control>
       <control type="image">
-        <posx>268</posx>
-        <posy>360</posy>
+        <left>268</left>
+        <top>360</top>
         <width>385</width>
         <height>200</height>
         <texture>dialogbackground.png</texture>
@@ -59,8 +59,8 @@
         <visible>Control.IsVisible(570)</visible>
       </control>
       <control type="videowindow" id="8">
-        <posx>280</posx>
-        <posy>370</posy>
+        <left>280</left>
+        <top>370</top>
         <width>362</width>
         <height>180</height>
         <visible>Skin.Hassetting(videowindowglobal)</visible>
@@ -68,8 +68,8 @@
       </control>
       <control type="label">
         <description>Title label</description>
-        <posx>296</posx>
-        <posy>510</posy>
+        <left>296</left>
+        <top>510</top>
         <height>30</height>
         <width>330</width>
         <label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year,[COLOR=accent] (,)[/COLOR]]</label>
@@ -86,8 +86,8 @@
       <!-- list -->
       <control type="fixedlist" id="570">
         <visible>Skin.HasSetting(bannerlist_view)</visible>
-        <posx>680</posx>
-        <posy>50</posy>
+        <left>680</left>
+        <top>50</top>
         <width>575</width>
         <height>515</height>
         <onleft>60</onleft>
@@ -104,12 +104,12 @@
         <itemlayout height="50" width="580">
           <control type="group">
             <!-- banner mod -->
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>-20</posy>
+            <left>0</left>
+            <top>-20</top>
             <width>700</width>
             <height>10</height>
             <aligny>bottom</aligny>
@@ -118,8 +118,8 @@
           </control>
           <control type="label">
             <description>Title</description>
-            <posx>105</posx>
-            <posy>-40</posy>
+            <left>105</left>
+            <top>-40</top>
             <width>445</width>
             <height>0</height>
             <label>$INFO[listitem.Label]</label>
@@ -133,8 +133,8 @@
         </itemlayout>
         <focusedlayout height="140" width="758">
           <control type="group">
-            <posx>0</posx>
-            <posy>-10</posy>
+            <left>0</left>
+            <top>-10</top>
             <width>575</width>
             <height>500</height>
             <animation type="focus">
@@ -143,8 +143,8 @@
             </animation>
             <control type="image">
               <!-- banner mod -->
-              <posx>0</posx>
-              <posy>7</posy>
+              <left>0</left>
+              <top>7</top>
               <width>575</width>
               <height>106</height>
               <aspectratio>stretch</aspectratio>
@@ -155,8 +155,8 @@
               <visible>!IsEmpty(ListItem.Thumb)</visible>
             </control>
             <control type="image">
-              <posx>0</posx>
-              <posy>-17</posy>
+              <left>0</left>
+              <top>-17</top>
               <width>700</width>
               <height>10</height>
               <aligny>bottom</aligny>
@@ -167,13 +167,13 @@
       </control>
       <!-- Tv show info down thebottom -->
       <control type="group">
-        <posx>30</posx>
-        <posy>580</posy>
+        <left>30</left>
+        <top>580</top>
         <visible>Control.IsVisible(519) | Container.Content(TVShows)</visible>
         <control type="label">
           <description>Nextaired</description>
-          <posx>0</posx>
-          <posy>-5</posy>
+          <left>0</left>
+          <top>-5</top>
           <width>440</width>
           <height>25</height>
           <label>$VAR[NextAired]</label>
@@ -186,8 +186,8 @@
         </control>
         <control type="label">
           <description>First Aired</description>
-          <posx>0</posx>
-          <posy>30</posy>
+          <left>0</left>
+          <top>30</top>
           <width>440</width>
           <height>25</height>
           <label fallback="416">[COLOR=accent]$LOCALIZE[20416]: [/COLOR]$INFO[listitem.premiered]</label>
@@ -200,8 +200,8 @@
         </control>
         <control type="label">
           <description>Genre</description>
-          <posx>0</posx>
-          <posy>65</posy>
+          <left>0</left>
+          <top>65</top>
           <width>440</width>
           <height>25</height>
           <label fallback="416">[COLOR=accent]$LOCALIZE[515]: [/COLOR]$INFO[listitem.genre]</label>
@@ -214,8 +214,8 @@
         </control>
         <control type="label">
           <description>Episodes</description>
-          <posx>0</posx>
-          <posy>100</posy>
+          <left>0</left>
+          <top>100</top>
           <width>580</width>
           <height>25</height>
           <label fallback="416">[COLOR=accent]$LOCALIZE[20360]: [/COLOR]$INFO[listitem.episode] [COLOR=grey] ($INFO[ListItem.Property(WatchedEpisodes),, $LOCALIZE[16102]] - $INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101]])[/COLOR]</label>
@@ -228,8 +228,8 @@
         </control>
         <control type="label">
           <description>Nextaired</description>
-          <posx>240</posx>
-          <posy>0</posy>
+          <left>240</left>
+          <top>0</top>
           <width>440</width>
           <height>25</height>
           <label>$VAR[NextAired]</label>
@@ -241,8 +241,8 @@
         </control>
         <control type="label">
           <description>First Aired</description>
-          <posx>240</posx>
-          <posy>35</posy>
+          <left>240</left>
+          <top>35</top>
           <width>440</width>
           <height>25</height>
           <label fallback="416">[COLOR=accent]$LOCALIZE[20416]: [/COLOR]$INFO[listitem.premiered]</label>
@@ -254,8 +254,8 @@
         </control>
         <control type="label">
           <description>Genre</description>
-          <posx>240</posx>
-          <posy>70</posy>
+          <left>240</left>
+          <top>70</top>
           <width>740</width>
           <height>25</height>
           <label fallback="416">[COLOR=accent]$LOCALIZE[515]: [/COLOR]$INFO[listitem.genre]</label>
@@ -267,8 +267,8 @@
         </control>
         <control type="label">
           <description>Episodes</description>
-          <posx>240</posx>
-          <posy>105</posy>
+          <left>240</left>
+          <top>105</top>
           <width>600</width>
           <height>25</height>
           <label fallback="416">[COLOR=accent]$LOCALIZE[20360]: [/COLOR]$INFO[listitem.episode] [COLOR=grey] ($INFO[ListItem.Property(WatchedEpisodes),, $LOCALIZE[16102]] - $INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101]])[/COLOR]</label>
@@ -282,8 +282,8 @@
         <control type="group">
           <visible>Skin.HasSetting(poster)</visible>
           <control type="image">
-            <posx>-10</posx>
-            <posy>-230</posy>
+            <left>-10</left>
+            <top>-230</top>
             <width>240</width>
             <height>360</height>
             <aspectratio aligny="bottom">stretch</aspectratio>
@@ -292,8 +292,8 @@
             <bordersize>8</bordersize>
           </control>
           <control type="image">
-            <posx>-10</posx>
-            <posy>-230</posy>
+            <left>-10</left>
+            <top>-230</top>
             <width>240</width>
             <height>360</height>
             <aspectratio aligny="bottom">stretch</aspectratio>
@@ -304,8 +304,8 @@
         </control>
         <control type="label">
           <description>Nextaired</description>
-          <posx>247</posx>
-          <posy>0</posy>
+          <left>247</left>
+          <top>0</top>
           <width>440</width>
           <height>25</height>
           <label>$VAR[NextAired]</label>
@@ -317,8 +317,8 @@
         </control>
         <control type="label">
           <description>First Aired</description>
-          <posx>247</posx>
-          <posy>35</posy>
+          <left>247</left>
+          <top>35</top>
           <width>440</width>
           <height>25</height>
           <label fallback="416">[COLOR=accent]$LOCALIZE[20416]: [/COLOR]$INFO[listitem.premiered]</label>
@@ -330,8 +330,8 @@
         </control>
         <control type="label">
           <description>Genre</description>
-          <posx>247</posx>
-          <posy>70</posy>
+          <left>247</left>
+          <top>70</top>
           <width>740</width>
           <height>25</height>
           <label fallback="416">[COLOR=accent]$LOCALIZE[515]: [/COLOR]$INFO[listitem.genre]</label>
@@ -343,8 +343,8 @@
         </control>
         <control type="label">
           <description>Episodes</description>
-          <posx>247</posx>
-          <posy>105</posy>
+          <left>247</left>
+          <top>105</top>
           <width>600</width>
           <height>25</height>
           <label fallback="416">[COLOR=accent]$LOCALIZE[20360]: [/COLOR]$INFO[listitem.episode] [COLOR=grey] ($INFO[ListItem.Property(WatchedEpisodes),, $LOCALIZE[16102]] - $INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101]])[/COLOR]</label>
@@ -355,8 +355,8 @@
           <visible>Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb)</visible>
         </control>
         <control type="image">
-          <posx>-10</posx>
-          <posy>-7</posy>
+          <left>-10</left>
+          <top>-7</top>
           <width>250</width>
           <height>141</height>
           <aspectratio aligny="bottom">stretch</aspectratio>
@@ -366,8 +366,8 @@
           <visible>Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb)</visible>
         </control>
         <control type="image">
-          <posx>-10</posx>
-          <posy>-7</posy>
+          <left>-10</left>
+          <top>-7</top>
           <width>250</width>
           <height>141</height>
           <aspectratio aligny="bottom">stretch</aspectratio>
@@ -379,8 +379,8 @@
         <control type="image">
           <width>161</width>
           <height>110</height>
-          <posx>570r</posx>
-          <posy>0</posy>
+          <left>570r</left>
+          <top>0</top>
           <fadetime>100</fadetime>
           <aspectratio>keep</aspectratio>
           <texture>$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
@@ -389,8 +389,8 @@
         </control>
         <!-- TV SHOW LOGO -->
         <control type="largeimage" id="7914">
-          <posx>370r</posx>
-          <posy>-10</posy>
+          <left>370r</left>
+          <top>-10</top>
           <width>335</width>
           <height>130</height>
           <texture>$INFO[ListItem.Art(clearlogo)]</texture>
@@ -400,8 +400,8 @@
         </control>
       </control>
       <control type="scrollbar" id="60">
-        <posx>10</posx>
-        <posy>100</posy>
+        <left>10</left>
+        <top>100</top>
         <width>25</width>
         <height>220</height>
         <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>

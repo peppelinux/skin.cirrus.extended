@@ -9,8 +9,8 @@
     <control type="group">
       <include>Window_OpenClose_Animation</include>
       <control type="image">
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <width>1280</width>
         <height>720</height>
         <texture border="20">black-back.png</texture>
@@ -21,16 +21,16 @@
         <include>VisibleFadeEffect</include>
         <visible>Control.IsVisible(55)</visible>
         <control type="image">
-          <posx>0</posx>
-          <posy>120</posy>
+          <left>0</left>
+          <top>120</top>
           <width>1280</width>
           <height>480</height>
           <texture border="20">videoinfoback.png</texture>
           <!-- background bar -->
         </control>
         <control type="image">
-          <posx>0</posx>
-          <posy>120</posy>
+          <left>0</left>
+          <top>120</top>
           <width>1280</width>
           <height>480</height>
           <texture border="20">videoinfoback.png</texture>
@@ -41,8 +41,8 @@
         <include>VisibleFadeEffect</include>
         <visible>Control.IsVisible(51)</visible>
         <control type="image">
-          <posx>0</posx>
-          <posy>120</posy>
+          <left>0</left>
+          <top>120</top>
           <width>1280</width>
           <height>480</height>
           <texture border="20">videoinfoback.png</texture>
@@ -59,13 +59,13 @@
     </control>
     <include>BehindDialogFadeOut</include>
     <control type="group">
-      <posx>120</posx>
-      <posy>10</posy>
+      <left>120</left>
+      <top>10</top>
       <animation effect="slide" end="-360,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
       <animation effect="slide" start="-360,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
       <control type="label">
         <include>WindowTitleCommons</include>
-        <posx>0</posx>
+        <left>0</left>
         <label>$LOCALIZE[10517]</label>
         <label>[COLOR=white]$INFO[System.Time]   [B]$LOCALIZE[10517][/B][/COLOR]</label>
         <visible>!Skin.HasSetting(nobreadcrumb)</visible>
@@ -76,8 +76,8 @@
       <animation effect="slide" start="0,0" end="-250,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | Control.HasFocus(8999)">WindowClose</animation>
       <control type="button" id="8999">
         <description>Fake button for mouse control</description>
-        <posx>-250</posx>
-        <posy>0</posy>
+        <left>-250</left>
+        <top>0</top>
         <width>265</width>
         <height>720</height>
         <label>-</label>
@@ -88,13 +88,13 @@
       </control>
       <include>SideBladeLeft</include>
       <control type="group" id="9000">
-        <posx>-250</posx>
-        <posy>130</posy>
+        <left>-250</left>
+        <top>130</top>
         <include>CommonNowPlaying</include>
         <control type="button" id="2">
           <description>View As button</description>
-          <posx>0</posx>
-          <posy>0</posy>
+          <left>0</left>
+          <top>0</top>
           <include>ButtonCommonValues</include>
           <label>-</label>
           <onleft>55</onleft>
@@ -104,8 +104,8 @@
         </control>
         <control type="radiobutton" id="20">
           <description>Shuffle button</description>
-          <posx>0</posx>
-          <posy>40</posy>
+          <left>0</left>
+          <top>40</top>
           <include>ButtonCommonValues</include>
           <label>191</label>
           <onleft>55</onleft>
@@ -115,8 +115,8 @@
         </control>
         <control type="button" id="26">
           <description>Repeat button</description>
-          <posx>0</posx>
-          <posy>80</posy>
+          <left>0</left>
+          <top>80</top>
           <include>ButtonCommonValues</include>
           <label>-</label>
           <onleft>55</onleft>
@@ -126,8 +126,8 @@
         </control>
         <control type="button" id="21">
           <description>Save button</description>
-          <posx>0</posx>
-          <posy>120</posy>
+          <left>0</left>
+          <top>120</top>
           <label>190</label>
           <include>ButtonCommonValues</include>
           <onleft>55</onleft>
@@ -137,8 +137,8 @@
         </control>
         <control type="button" id="22">
           <description>Clear button</description>
-          <posx>0</posx>
-          <posy>160</posy>
+          <left>0</left>
+          <top>160</top>
           <label>192</label>
           <onclick>ReplaceWindow(music)</onclick>
           <include>ButtonCommonValues</include>
@@ -156,8 +156,8 @@
           <height>42</height>
         </control>
         <control type="group">
-          <posx>0</posx>
-          <posy>260</posy>
+          <left>0</left>
+          <top>260</top>
           <include>CommonNowPlaying_Controls</include>
         </control>
         <control type="button" id="611">

@@ -6,8 +6,8 @@
         <visible>![Skin.HasSetting(ExtendedNowPlaying) + !Skin.HasSetting(homepageNowplayingInfo)] | [[Skin.HasSetting(ExtendedNowPlaying) + !Skin.HasSetting(homepageNowplayingInfo)] + !Player.HasAudio]</visible>
             <!-- ============== Database Infos ================= -->	
             <control type="group">
-                <posx>300</posx>
-                <posy>-520</posy>
+                <left>300</left>
+                <top>-520</top>
                 <visible>Container(9000).HasFocus(1) | [Container(9000).HasFocus(3) + System.HasAddon(script.randomandlastitems)] | [Container(9000).HasFocus(4) + System.HasAddon(script.randomandlastitems)] | [Container(9000).HasFocus(5) + System.HasAddon(script.randomandlastitems)] | [Container(9000).HasFocus(9) + System.HasAddon(script.randomandlastitems)] | [Container(9000).HasFocus(10) + System.HasAddon(script.randomandlastitems)] | [Container(9000).HasFocus(11) + System.HasAddon(script.randomandlastitems)] | Container(9000).HasFocus(7) | Container(9000).HasFocus(14)</visible>
                 <animation type="Conditional" condition="Container(9000).HasFocus(1) | Container(9000).HasFocus(3) | Container(9000).HasFocus(4) | Container(9000).HasFocus(5) | Container(9000).HasFocus(7) | Container(9000).HasFocus(9) | Container(9000).HasFocus(10) | Container(9000).HasFocus(11) | Container(9000).HasFocus(14)" reversible="false">
                     <effect type="fade" start="0" end="100" time="250"/>
@@ -21,24 +21,24 @@
                 </animation>
 
                 <control type="image">
-                    <posx>723</posx>
-                    <posy>920</posy>
+                    <left>723</left>
+                    <top>920</top>
                     <width>245</width>
                     <height>160</height>
                     <texture>ContentPanelRecentlyaddedvertical.png</texture>
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia</visible>
                 </control>
                 <control type="image">
-                    <posx>723</posx>
-                    <posy>1040</posy>
+                    <left>723</left>
+                    <top>1040</top>
                     <width>245</width>
                     <height>160</height>
                     <texture>ContentPanelRecentlyaddedvertical.png</texture>
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu)</visible>
                 </control>
                 <control type="image">
-                    <posx>723</posx>
-                    <posy>890</posy>
+                    <left>723</left>
+                    <top>890</top>
                     <width>245</width>
                     <height>160</height>
                     <texture>ContentPanelRecentlyaddedvertical.png</texture>
@@ -47,8 +47,8 @@
 
                 <!-- ============== Movie Infos ================= -->
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>935</posy>
+                    <left>760</left>
+                    <top>935</top>
                     <width>225</width>
                     <height>30</height>
                     <align>left</align>
@@ -58,8 +58,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(1)</visible>
                 </control>	
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>935</posy>
+                    <left>760</left>
+                    <top>935</top>
                     <width>225</width>
                     <height>30</height>
                     <align>left</align>
@@ -69,8 +69,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(3) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>	
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>935</posy>
+                    <left>760</left>
+                    <top>935</top>
                     <width>225</width>
                     <height>30</height>
                     <align>left</align>
@@ -80,8 +80,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(4) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>	
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>935</posy>
+                    <left>760</left>
+                    <top>935</top>
                     <width>225</width>
                     <height>30</height>
                     <align>left</align>
@@ -91,8 +91,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(5) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>	
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1055</posy>
+                    <left>760</left>
+                    <top>1055</top>
                     <width>225</width>
                     <height>30</height>
                     <align>left</align>
@@ -102,8 +102,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(1)</visible>
                 </control>	
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1055</posy>
+                    <left>760</left>
+                    <top>1055</top>
                     <width>225</width>
                     <height>30</height>
                     <align>left</align>
@@ -113,8 +113,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(3) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>	
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1055</posy>
+                    <left>760</left>
+                    <top>1055</top>
                     <width>225</width>
                     <height>30</height>
                     <align>left</align>
@@ -124,8 +124,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(4) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>	
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1055</posy>
+                    <left>760</left>
+                    <top>1055</top>
                     <width>225</width>
                     <height>30</height>
                     <align>left</align>
@@ -135,8 +135,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(5) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>	
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>905</posy>
+                    <left>760</left>
+                    <top>905</top>
                     <width>225</width>
                     <height>30</height>
                     <align>left</align>
@@ -146,8 +146,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(1)</visible>
                 </control>	
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>905</posy>
+                    <left>760</left>
+                    <top>905</top>
                     <width>225</width>
                     <height>30</height>
                     <align>left</align>
@@ -157,8 +157,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(3) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>	
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>905</posy>
+                    <left>760</left>
+                    <top>905</top>
                     <width>225</width>
                     <height>30</height>
                     <align>left</align>
@@ -168,8 +168,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(4) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>	
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>905</posy>
+                    <left>760</left>
+                    <top>905</top>
                     <width>225</width>
                     <height>30</height>
                     <align>left</align>
@@ -182,8 +182,8 @@
                 <!-- ==============  ================= -->
 
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>970</posy>
+                    <left>760</left>
+                    <top>970</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -192,8 +192,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(1)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>970</posy>
+                    <left>760</left>
+                    <top>970</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -202,8 +202,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(3) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>970</posy>
+                    <left>760</left>
+                    <top>970</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -212,8 +212,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(4) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>970</posy>
+                    <left>760</left>
+                    <top>970</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -222,8 +222,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(5) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1090</posy>
+                    <left>760</left>
+                    <top>1090</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -232,8 +232,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(1)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1090</posy>
+                    <left>760</left>
+                    <top>1090</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -242,8 +242,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(3) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1090</posy>
+                    <left>760</left>
+                    <top>1090</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -252,8 +252,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(4) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1090</posy>
+                    <left>760</left>
+                    <top>1090</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -262,8 +262,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(5) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>940</posy>
+                    <left>760</left>
+                    <top>940</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -272,8 +272,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(1)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>940</posy>
+                    <left>760</left>
+                    <top>940</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -282,8 +282,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(3) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>940</posy>
+                    <left>760</left>
+                    <top>940</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -292,8 +292,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(4) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>940</posy>
+                    <left>760</left>
+                    <top>940</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -305,8 +305,8 @@
                 <!-- ==============  ================= -->
 
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1005</posy>
+                    <left>760</left>
+                    <top>1005</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -315,8 +315,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(1)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1005</posy>
+                    <left>760</left>
+                    <top>1005</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -325,8 +325,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(3) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1005</posy>
+                    <left>760</left>
+                    <top>1005</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -335,8 +335,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(4) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1005</posy>
+                    <left>760</left>
+                    <top>1005</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -345,8 +345,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(5) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1125</posy>
+                    <left>760</left>
+                    <top>1125</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -355,8 +355,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(1)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1125</posy>
+                    <left>760</left>
+                    <top>1125</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -365,8 +365,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(3) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1125</posy>
+                    <left>760</left>
+                    <top>1125</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -375,8 +375,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(4) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1125</posy>
+                    <left>760</left>
+                    <top>1125</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -385,8 +385,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(5) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>975</posy>
+                    <left>760</left>
+                    <top>975</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -395,8 +395,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(1)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>975</posy>
+                    <left>760</left>
+                    <top>975</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -405,8 +405,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(3) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>975</posy>
+                    <left>760</left>
+                    <top>975</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -415,8 +415,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(4) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>975</posy>
+                    <left>760</left>
+                    <top>975</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -428,8 +428,8 @@
                 <!-- ==============  ================= -->
 
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1040</posy>
+                    <left>760</left>
+                    <top>1040</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -438,8 +438,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(1)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1040</posy>
+                    <left>760</left>
+                    <top>1040</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -448,8 +448,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(3) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1040</posy>
+                    <left>760</left>
+                    <top>1040</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -458,8 +458,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(4) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1040</posy>
+                    <left>760</left>
+                    <top>1040</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -468,8 +468,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(5) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1160</posy>
+                    <left>760</left>
+                    <top>1160</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -478,8 +478,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(1)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1160</posy>
+                    <left>760</left>
+                    <top>1160</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -488,8 +488,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(3) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1160</posy>
+                    <left>760</left>
+                    <top>1160</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -498,8 +498,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(4) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1160</posy>
+                    <left>760</left>
+                    <top>1160</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -508,8 +508,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(5) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1010</posy>
+                    <left>760</left>
+                    <top>1010</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -518,8 +518,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(1)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1010</posy>
+                    <left>760</left>
+                    <top>1010</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -528,8 +528,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(3) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1010</posy>
+                    <left>760</left>
+                    <top>1010</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -538,8 +538,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(4) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1010</posy>
+                    <left>760</left>
+                    <top>1010</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -549,8 +549,8 @@
                 </control>
                 <!-- ============== TV-Show Infos ================= -->
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>935</posy>
+                    <left>760</left>
+                    <top>935</top>
                     <width>225</width>
                     <height>30</height>
                     <align>left</align>
@@ -560,8 +560,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(7)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>935</posy>
+                    <left>760</left>
+                    <top>935</top>
                     <width>225</width>
                     <height>30</height>
                     <align>left</align>
@@ -571,8 +571,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(9) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>935</posy>
+                    <left>760</left>
+                    <top>935</top>
                     <width>225</width>
                     <height>30</height>
                     <align>left</align>
@@ -582,8 +582,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(10) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>935</posy>
+                    <left>760</left>
+                    <top>935</top>
                     <width>225</width>
                     <height>30</height>
                     <align>left</align>
@@ -593,8 +593,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(11) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1055</posy>
+                    <left>760</left>
+                    <top>1055</top>
                     <width>225</width>
                     <height>30</height>
                     <align>left</align>
@@ -604,8 +604,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(7)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1055</posy>
+                    <left>760</left>
+                    <top>1055</top>
                     <width>225</width>
                     <height>30</height>
                     <align>left</align>
@@ -615,8 +615,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(9) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1055</posy>
+                    <left>760</left>
+                    <top>1055</top>
                     <width>225</width>
                     <height>30</height>
                     <align>left</align>
@@ -626,8 +626,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(10) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1055</posy>
+                    <left>760</left>
+                    <top>1055</top>
                     <width>225</width>
                     <height>30</height>
                     <align>left</align>
@@ -637,8 +637,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(11) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>905</posy>
+                    <left>760</left>
+                    <top>905</top>
                     <width>225</width>
                     <height>30</height>
                     <align>left</align>
@@ -648,8 +648,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(7)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>905</posy>
+                    <left>760</left>
+                    <top>905</top>
                     <width>225</width>
                     <height>30</height>
                     <align>left</align>
@@ -659,8 +659,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(9) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>905</posy>
+                    <left>760</left>
+                    <top>905</top>
                     <width>225</width>
                     <height>30</height>
                     <align>left</align>
@@ -670,8 +670,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(10) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>905</posy>
+                    <left>760</left>
+                    <top>905</top>
                     <width>225</width>
                     <height>30</height>
                     <align>left</align>
@@ -684,8 +684,8 @@
                 <!-- ==============  ================= -->
 
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>970</posy>
+                    <left>760</left>
+                    <top>970</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -694,8 +694,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(7)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>970</posy>
+                    <left>760</left>
+                    <top>970</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -704,8 +704,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(9) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>970</posy>
+                    <left>760</left>
+                    <top>970</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -714,8 +714,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(10) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>970</posy>
+                    <left>760</left>
+                    <top>970</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -724,8 +724,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(11) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1090</posy>
+                    <left>760</left>
+                    <top>1090</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -734,8 +734,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(7)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1090</posy>
+                    <left>760</left>
+                    <top>1090</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -744,8 +744,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(9) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1090</posy>
+                    <left>760</left>
+                    <top>1090</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -754,8 +754,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(10) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1090</posy>
+                    <left>760</left>
+                    <top>1090</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -764,8 +764,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(11) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>940</posy>
+                    <left>760</left>
+                    <top>940</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -774,8 +774,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(7)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>940</posy>
+                    <left>760</left>
+                    <top>940</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -784,8 +784,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(9) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>940</posy>
+                    <left>760</left>
+                    <top>940</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -794,8 +794,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(10) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>940</posy>
+                    <left>760</left>
+                    <top>940</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -807,8 +807,8 @@
                 <!-- ==============  ================= -->
 
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1005</posy>
+                    <left>760</left>
+                    <top>1005</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -817,8 +817,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(7)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1005</posy>
+                    <left>760</left>
+                    <top>1005</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -827,8 +827,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(9) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1005</posy>
+                    <left>760</left>
+                    <top>1005</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -837,8 +837,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(10) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1005</posy>
+                    <left>760</left>
+                    <top>1005</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -847,8 +847,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(11) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1125</posy>
+                    <left>760</left>
+                    <top>1125</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -857,8 +857,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(7)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1125</posy>
+                    <left>760</left>
+                    <top>1125</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -867,8 +867,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(9) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1125</posy>
+                    <left>760</left>
+                    <top>1125</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -877,8 +877,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(10) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1125</posy>
+                    <left>760</left>
+                    <top>1125</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -887,8 +887,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(11) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>975</posy>
+                    <left>760</left>
+                    <top>975</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -897,8 +897,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(7)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>975</posy>
+                    <left>760</left>
+                    <top>975</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -907,8 +907,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(9) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>975</posy>
+                    <left>760</left>
+                    <top>975</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -917,8 +917,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(10) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>975</posy>
+                    <left>760</left>
+                    <top>975</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -930,8 +930,8 @@
                 <!-- ============== ================= -->
 
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1040</posy>
+                    <left>760</left>
+                    <top>1040</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -940,8 +940,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(7)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1040</posy>
+                    <left>760</left>
+                    <top>1040</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -950,8 +950,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(9) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1040</posy>
+                    <left>760</left>
+                    <top>1040</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -960,8 +960,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(10) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1040</posy>
+                    <left>760</left>
+                    <top>1040</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -970,8 +970,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(11) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1160</posy>
+                    <left>760</left>
+                    <top>1160</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -980,8 +980,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(7)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1160</posy>
+                    <left>760</left>
+                    <top>1160</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -990,8 +990,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(9) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1160</posy>
+                    <left>760</left>
+                    <top>1160</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -1000,8 +1000,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(10) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1160</posy>
+                    <left>760</left>
+                    <top>1160</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -1010,8 +1010,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(11) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1010</posy>
+                    <left>760</left>
+                    <top>1010</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -1020,8 +1020,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(7)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1010</posy>
+                    <left>760</left>
+                    <top>1010</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -1030,8 +1030,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(9) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1010</posy>
+                    <left>760</left>
+                    <top>1010</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -1040,8 +1040,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(10) + System.HasAddon(script.randomandlastitems)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1010</posy>
+                    <left>760</left>
+                    <top>1010</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -1051,8 +1051,8 @@
                 </control>
                 <!-- ============== Music Infos ================= -->
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>935</posy>
+                    <left>760</left>
+                    <top>935</top>
                     <width>225</width>
                     <height>30</height>
                     <align>left</align>
@@ -1062,8 +1062,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(14)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>970</posy>
+                    <left>760</left>
+                    <top>970</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -1072,8 +1072,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(14)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1005</posy>
+                    <left>760</left>
+                    <top>1005</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -1082,8 +1082,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(14)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1040</posy>
+                    <left>760</left>
+                    <top>1040</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -1092,8 +1092,8 @@
                     <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(14)</visible>
                 </control>	
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1055</posy>
+                    <left>760</left>
+                    <top>1055</top>
                     <width>225</width>
                     <height>30</height>
                     <align>left</align>
@@ -1103,8 +1103,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(14)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1090</posy>
+                    <left>760</left>
+                    <top>1090</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -1113,8 +1113,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(14)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1125</posy>
+                    <left>760</left>
+                    <top>1125</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -1123,8 +1123,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(14)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1160</posy>
+                    <left>760</left>
+                    <top>1160</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -1133,8 +1133,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(14)</visible>
                 </control>	
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>905</posy>
+                    <left>760</left>
+                    <top>905</top>
                     <width>225</width>
                     <height>30</height>
                     <align>left</align>
@@ -1144,8 +1144,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(14)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>940</posy>
+                    <left>760</left>
+                    <top>940</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -1154,8 +1154,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(14)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>975</posy>
+                    <left>760</left>
+                    <top>975</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -1164,8 +1164,8 @@
                     <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(14)</visible>
                 </control>
                 <control type="label">
-                    <posx>760</posx>
-                    <posy>1010</posy>
+                    <left>760</left>
+                    <top>1010</top>
                     <height>30</height>
                     <align>left</align>
                     <font>cirrus_20</font>
@@ -1177,8 +1177,8 @@
 
             <!-- ============== System Infos ================= -->
             <control type="group">
-                <posx>80</posx>
-                <posy>100</posy>
+                <left>80</left>
+                <top>100</top>
                 <visible>Container(9000).HasFocus(25)</visible>
                 <visible>!Player.HasVideo | !Skin.HasSetting(videowindowonhome)</visible>
                 <animation type="Conditional" condition="Container(9000).HasFocus(25)" reversible="false">
@@ -1192,19 +1192,19 @@
                     <effect type="fade" start="100" end="0" time="200"/>
                 </animation>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>1120</width>
                     <height>210</height>
                     <texture>videoinfoback.png</texture>
                 </control>
 
                 <control type="group">
-                    <posx>25</posx>
-                    <posy>25</posy>			
+                    <left>25</left>
+                    <top>25</top>			
                     <control type="label">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>450</width>
                         <height>25</height>
                         <align>left</align>
@@ -1214,8 +1214,8 @@
                         <label fallback="-">[COLOR=grey]$LOCALIZE[552]:[/COLOR] $INFO[System.Date(DDD)] $INFO[System.Date(d)] $INFO[System.Date(MMM)] $INFO[System.Date(yyyy)]</label>
                     </control>
                     <control type="label">
-                        <posx>0</posx>
-                        <posy>35</posy>
+                        <left>0</left>
+                        <top>35</top>
                         <width>450</width>
                         <height>25</height>
                         <align>left</align>
@@ -1225,8 +1225,8 @@
                         <label fallback="-">[COLOR=grey]$LOCALIZE[12390]:[/COLOR] $INFO[System.Uptime]</label>
                     </control>
                     <control type="label">
-                        <posx>0</posx>
-                        <posy>70</posy>
+                        <left>0</left>
+                        <top>70</top>
                         <width>500</width>
                         <height>25</height>
                         <align>left</align>
@@ -1236,8 +1236,8 @@
                         <label fallback="-">[COLOR=grey]$LOCALIZE[12394]:[/COLOR] $INFO[System.TotalUptime]</label>
                     </control>
                     <control type="label">
-                        <posx>0</posx>
-                        <posy>105</posy>
+                        <left>0</left>
+                        <top>105</top>
                         <width>500</width>
                         <height>25</height>
                         <align>left</align>
@@ -1247,8 +1247,8 @@
                         <label fallback="-">[COLOR=grey]XBMC $LOCALIZE[144][/COLOR] $INFO[System.BuildVersion]</label>
                     </control>
                     <control type="label">
-                        <posx>0</posx>
-                        <posy>140</posy>
+                        <left>0</left>
+                        <top>140</top>
                         <width>500</width>
                         <height>25</height>
                         <align>left</align>
@@ -1258,19 +1258,19 @@
                         <label fallback="-">[COLOR=grey]$LOCALIZE[13000]:[/COLOR] $INFO[System.KernelVersion]</label>
                     </control>
                     <control type="image">
-                        <posx>470</posx>
-                        <posy>-20</posy>
+                        <left>470</left>
+                        <top>-20</top>
                         <height>200</height>
                         <texture>separator_vertical.png</texture>
                     </control>
                 </control>
 
                 <control type="group">
-                    <posx>520</posx>
-                    <posy>25</posy>		
+                    <left>520</left>
+                    <top>25</top>		
                     <control type="label">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>300</width>
                         <height>25</height>
                         <align>left</align>
@@ -1280,8 +1280,8 @@
                         <label fallback="-">[COLOR=grey]$LOCALIZE[243]:[/COLOR] $INFO[System.FPS] fps</label>
                     </control>
                     <control type="label">
-                        <posx>0</posx>
-                        <posy>35</posy>
+                        <left>0</left>
+                        <top>35</top>
                         <width>300</width>
                         <height>25</height>
                         <align>left</align>
@@ -1291,8 +1291,8 @@
                         <label fallback="-">[COLOR=grey]$LOCALIZE[13271][/COLOR] $INFO[System.CPUUsage]</label>
                     </control>
                     <control type="label">
-                        <posx>0</posx>
-                        <posy>70</posy>
+                        <left>0</left>
+                        <top>70</top>
                         <width>300</width>
                         <height>25</height>
                         <align>left</align>
@@ -1302,8 +1302,8 @@
                         <label fallback="-">[COLOR=grey]$LOCALIZE[158]:[/COLOR] $INFO[System.FreeMemory]</label>
                     </control>
                     <control type="label">
-                        <posx>0</posx>
-                        <posy>105</posy>
+                        <left>0</left>
+                        <top>105</top>
                         <width>300</width>
                         <height>25</height>
                         <align>left</align>
@@ -1313,8 +1313,8 @@
                         <label fallback="-">$LOCALIZE[13287] True 1080p</label>
                     </control>
                     <control type="label">
-                        <posx>0</posx>
-                        <posy>105</posy>
+                        <left>0</left>
+                        <top>105</top>
                         <width>300</width>
                         <height>25</height>
                         <align>left</align>
@@ -1324,8 +1324,8 @@
                         <label fallback="-">$LOCALIZE[13287] True 720p</label>
                     </control>
                     <control type="label">
-                        <posx>0</posx>
-                        <posy>105</posy>
+                        <left>0</left>
+                        <top>105</top>
                         <width>300</width>
                         <height>25</height>
                         <align>left</align>
@@ -1335,8 +1335,8 @@
                         <label fallback="-">[COLOR=grey]$LOCALIZE[13287][/COLOR] $INFO[System.ScreenWidth]x$INFO[System.ScreenHeight]</label>
                     </control>
                     <control type="label">
-                        <posx>0</posx>
-                        <posy>140</posy>
+                        <left>0</left>
+                        <top>140</top>
                         <width>300</width>
                         <height>25</height>
                         <align>left</align>
@@ -1347,8 +1347,8 @@
                         <visible>System.InternetState</visible>
                     </control>
                     <control type="label">
-                        <posx>0</posx>
-                        <posy>140</posy>
+                        <left>0</left>
+                        <top>140</top>
                         <width>300</width>
                         <height>25</height>
                         <align>left</align>
@@ -1359,19 +1359,19 @@
                         <visible>!System.InternetState</visible>
                     </control>
                     <control type="image">
-                        <posx>320</posx>
-                        <posy>-20</posy>
+                        <left>320</left>
+                        <top>-20</top>
                         <height>200</height>
                         <texture>separator_vertical.png</texture>
                     </control>
                 </control>
 
                 <control type="group">
-                    <posx>865</posx>
-                    <posy>20</posy>	
+                    <left>865</left>
+                    <top>20</top>	
                     <control type="label">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>200</width>
                         <height>25</height>
                         <align>left</align>
@@ -1380,8 +1380,8 @@
                         <label fallback="-">[COLOR=grey]$LOCALIZE[13277]:[/COLOR]</label>
                     </control>	
                     <control type="label">
-                        <posx>0</posx>
-                        <posy>30</posy>
+                        <left>0</left>
+                        <top>30</top>
                         <width>200</width>
                         <height>25</height>
                         <align>left</align>
@@ -1390,8 +1390,8 @@
                         <label fallback="-">$INFO[System.TotalSpace]</label>
                     </control>
                     <control type="label">
-                        <posx>0</posx>
-                        <posy>60</posy>
+                        <left>0</left>
+                        <top>60</top>
                         <width>200</width>
                         <height>25</height>
                         <align>left</align>
@@ -1400,8 +1400,8 @@
                         <label fallback="-">$INFO[System.UsedSpace]</label>
                     </control>
                     <control type="label">
-                        <posx>0</posx>
-                        <posy>90</posy>
+                        <left>0</left>
+                        <top>90</top>
                         <width>200</width>
                         <height>25</height>
                         <align>left</align>
@@ -1410,8 +1410,8 @@
                         <label fallback="-">$INFO[System.UsedSpacePercent]</label>
                     </control>
                     <control type="label">
-                        <posx>0</posx>
-                        <posy>120</posy>
+                        <left>0</left>
+                        <top>120</top>
                         <width>200</width>
                         <height>25</height>
                         <align>left</align>
@@ -1420,8 +1420,8 @@
                         <label fallback="-">$INFO[System.FreeSpace]</label>
                     </control>
                     <control type="label">
-                        <posx>0</posx>
-                        <posy>150</posy>
+                        <left>0</left>
+                        <top>150</top>
                         <width>200</width>
                         <height>25</height>
                         <align>left</align>

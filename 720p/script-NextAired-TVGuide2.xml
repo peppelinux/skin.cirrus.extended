@@ -3,16 +3,16 @@
     <allowoverlay>no</allowoverlay>
     <controls>
         <control type="button" id="999">
-            <posx>-10</posx>
-            <posy>-10</posy>
+            <left>-10</left>
+            <top>-10</top>
             <width>1</width>
             <height>1</height>
             <label>-</label>
             <onfocus>SetFocus(200)</onfocus>
         </control>
         <control type="multiimage">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1280</width>
             <height>720</height>
             <imagepath fallback="special://skin/backgrounds/tv_shows.jpg" background="true">$INFO[Skin.String(Custom_Back_TV_Folder)]</imagepath>
@@ -24,8 +24,8 @@
             <visible>![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)] + StringCompare(Window(Home).Property(TVGuide.BackgroundFanart),1)</visible>
         </control>
         <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1280</width>
             <height>720</height>
             <texture background="true">$VAR[NextAiredFanart]</texture>
@@ -35,8 +35,8 @@
             <include condition="Skin.HasSetting(animation_bg_global)">global_kenburns_fanart</include>
         </control>
         <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1280</width>
             <height>720</height>
             <texture>black.png</texture>
@@ -44,16 +44,16 @@
         </control>
         <include>CommonMediaPlayingBackground</include>
         <control type="image">
-            <posx>30</posx>
-            <posy>60</posy>
+            <left>30</left>
+            <top>60</top>
             <width>100</width>
             <height>630</height>
             <texture border="2">tvguide-dark.png</texture>
             <colordiffuse>5FFFFFFF</colordiffuse>
         </control>
         <control type="grouplist" id="9002">
-            <posx>30</posx>
-            <posy>60</posy>
+            <left>30</left>
+            <top>60</top>
             <width>950</width>
             <height>630</height>
             <pagecontrol>60</pagecontrol>
@@ -66,8 +66,8 @@
             <control type="group">
                 <visible>!StringCompare(Window(Home).Property(NextAired.200.Wday),)</visible>
                 <description>1Day</description>
-                <posx>30</posx>
-                <posy>60</posy>
+                <left>30</left>
+                <top>60</top>
                 <width>920</width>
                 <height>90</height>
                 <include>Window_OpenClose_Left_Animation</include>
@@ -91,8 +91,8 @@
             <control type="group">
                 <visible>!StringCompare(Window(Home).Property(NextAired.201.Wday),)</visible>
                 <description>2Day</description>
-                <posx>30</posx>
-                <posy>150</posy>
+                <left>30</left>
+                <top>150</top>
                 <width>920</width>
                 <height>90</height>
                 <include>Window_OpenClose_Right_Animation</include>
@@ -116,8 +116,8 @@
             <control type="group">
                 <visible>!StringCompare(Window(Home).Property(NextAired.202.Wday),)</visible>
                 <description>3Day</description>
-                <posx>30</posx>
-                <posy>240</posy>
+                <left>30</left>
+                <top>240</top>
                 <width>920</width>
                 <height>90</height>
                 <include>Window_OpenClose_Right_Animation</include>
@@ -141,8 +141,8 @@
             <control type="group">
                 <visible>!StringCompare(Window(Home).Property(NextAired.203.Wday),)</visible>
                 <description>4Day</description>
-                <posx>30</posx>
-                <posy>330</posy>
+                <left>30</left>
+                <top>330</top>
                 <width>920</width>
                 <height>90</height>
                 <include>Window_OpenClose_Right_Animation</include>
@@ -166,8 +166,8 @@
             <control type="group">
                 <visible>!StringCompare(Window(Home).Property(NextAired.204.Wday),)</visible>
                 <description>5Day</description>
-                <posx>30</posx>
-                <posy>420</posy>
+                <left>30</left>
+                <top>420</top>
                 <width>920</width>
                 <height>90</height>
                 <include>Window_OpenClose_Right_Animation</include>
@@ -191,8 +191,8 @@
             <control type="group">
                 <visible>!StringCompare(Window(Home).Property(NextAired.205.Wday),)</visible>
                 <description>6Day</description>
-                <posx>30</posx>
-                <posy>510</posy>
+                <left>30</left>
+                <top>510</top>
                 <width>920</width>
                 <height>90</height>
                 <include>Window_OpenClose_Right_Animation</include>
@@ -216,8 +216,8 @@
             <control type="group">
                 <visible>!StringCompare(Window(Home).Property(NextAired.206.Wday),)</visible>
                 <description>7Day</description>
-                <posx>30</posx>
-                <posy>600</posy>
+                <left>30</left>
+                <top>600</top>
                 <width>920</width>
                 <height>90</height>
                 <include>Window_OpenClose_Right_Animation</include>
@@ -241,8 +241,8 @@
             <control type="group">
                 <visible>!StringCompare(Window(Home).Property(NextAired.207.Wday),)</visible>
                 <description>8Day</description>
-                <posx>30</posx>
-                <posy>690</posy>
+                <left>30</left>
+                <top>690</top>
                 <width>920</width>
                 <height>90</height>
                 <include>Window_OpenClose_Right_Animation</include>
@@ -266,8 +266,8 @@
             <control type="group">
                 <visible>!StringCompare(Window(Home).Property(NextAired.208.Wday),)</visible>
                 <description>9Day</description>
-                <posx>30</posx>
-                <posy>690</posy>
+                <left>30</left>
+                <top>690</top>
                 <width>920</width>
                 <height>90</height>
                 <include>Window_OpenClose_Right_Animation</include>
@@ -291,8 +291,8 @@
             <control type="group">
                 <visible>!StringCompare(Window(Home).Property(NextAired.209.Wday),)</visible>
                 <description>10Day</description>
-                <posx>30</posx>
-                <posy>690</posy>
+                <left>30</left>
+                <top>690</top>
                 <width>920</width>
                 <height>90</height>
                 <include>Window_OpenClose_Right_Animation</include>
@@ -316,8 +316,8 @@
             <control type="group">
                 <visible>!StringCompare(Window(Home).Property(NextAired.210.Wday),)</visible>
                 <description>11Day</description>
-                <posx>30</posx>
-                <posy>690</posy>
+                <left>30</left>
+                <top>690</top>
                 <width>920</width>
                 <height>90</height>
                 <include>Window_OpenClose_Right_Animation</include>
@@ -341,8 +341,8 @@
             <control type="group">
                 <visible>!StringCompare(Window(Home).Property(NextAired.211.Wday),)</visible>
                 <description>12Day</description>
-                <posx>30</posx>
-                <posy>690</posy>
+                <left>30</left>
+                <top>690</top>
                 <width>920</width>
                 <height>90</height>
                 <include>Window_OpenClose_Right_Animation</include>
@@ -366,8 +366,8 @@
             <control type="group">
                 <visible>!StringCompare(Window(Home).Property(NextAired.212.Wday),)</visible>
                 <description>13Day</description>
-                <posx>30</posx>
-                <posy>690</posy>
+                <left>30</left>
+                <top>690</top>
                 <width>920</width>
                 <height>90</height>
                 <include>Window_OpenClose_Right_Animation</include>
@@ -391,8 +391,8 @@
             <control type="group">
                 <visible>!StringCompare(Window(Home).Property(NextAired.213.Wday),)</visible>
                 <description>14Day</description>
-                <posx>30</posx>
-                <posy>690</posy>
+                <left>30</left>
+                <top>690</top>
                 <width>920</width>
                 <height>90</height>
                 <include>Window_OpenClose_Right_Animation</include>
@@ -416,8 +416,8 @@
             <control type="group">
                 <visible>!StringCompare(Window(Home).Property(NextAired.214.Wday),)</visible>
                 <description>15Day</description>
-                <posx>30</posx>
-                <posy>690</posy>
+                <left>30</left>
+                <top>690</top>
                 <width>920</width>
                 <height>90</height>
                 <include>Window_OpenClose_Right_Animation</include>
@@ -441,8 +441,8 @@
             <control type="group">
                 <visible>!StringCompare(Window(Home).Property(NextAired.215.Wday),)</visible>
                 <description>16Day</description>
-                <posx>30</posx>
-                <posy>690</posy>
+                <left>30</left>
+                <top>690</top>
                 <width>920</width>
                 <height>90</height>
                 <include>Window_OpenClose_Right_Animation</include>
@@ -465,8 +465,8 @@
             </control>
         </control>
         <control type="scrollbar" id="60">
-            <posx>5</posx>
-            <posy>60</posy>
+            <left>5</left>
+            <top>60</top>
             <width>20</width>
             <height>630</height>
             <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
@@ -487,8 +487,8 @@
             <animation effect="slide" start="-380,0" end="0,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus">WindowOpen</animation>
             <control type="button" id="8999">
                 <description>Fake button for mouse control</description>
-                <posx>-260</posx>
-                <posy>0</posy>
+                <left>-260</left>
+                <top>0</top>
                 <width>265</width>
                 <height>720</height>
                 <label>-</label>
@@ -499,23 +499,23 @@
             </control>
             <!-- Menu background panel -->
             <control type="image">
-                <posx>-820</posx>
-                <posy>0</posy>
+                <left>-820</left>
+                <top>0</top>
                 <width>820</width>
                 <height>720</height>
                 <texture border="5">dialogbackground.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
-                <posx>-250</posx>
-                <posy>650</posy>
+                <left>-250</left>
+                <top>650</top>
                 <width>160</width>
                 <height>40</height>
                 <texture>xbmc_logo_white.png</texture>
             </control>
             <control type="label">
-                <posx>-240</posx>
-                <posy>20</posy>
+                <left>-240</left>
+                <top>20</top>
                 <label>33063</label>
                 <width>250</width>
                 <height>30</height>
@@ -527,8 +527,8 @@
                 <aligny>center</aligny>
             </control>
             <control type="grouplist" id="9000">
-                <posx>-260</posx>
-                <posy>70</posy>
+                <left>-260</left>
+                <top>70</top>
                 <onleft>9002</onleft>
                 <onright>9002</onright>
                 <control type="button" id="8">

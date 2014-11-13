@@ -9,8 +9,8 @@
     <control type="group">
       <include>Window_OpenClose_Animation</include>
       <control type="image">
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <width>1280</width>
         <height>720</height>
         <texture border="20">black-back.png</texture>
@@ -20,8 +20,8 @@
         <include>VisibleFadeEffect</include>
         <visible>Control.IsVisible(55)</visible>
         <control type="image">
-          <posx>0</posx>
-          <posy>120</posy>
+          <left>0</left>
+          <top>120</top>
           <width>1280</width>
           <height>480</height>
           <texture border="20">videoinfoback.png</texture>
@@ -37,12 +37,12 @@
     <include>CommonPageCount</include>
     <include>BehindDialogFadeOut</include>
     <control type="group">
-      <posx>20</posx>
-      <posy>0</posy>
+      <left>20</left>
+      <top>0</top>
       <include>WindowOpenCloseAnimation</include>
       <control type="label">
         <include>WindowTitleCommons</include>
-        <posx>0</posx>
+        <left>0</left>
         <label>[COLOR=white]$INFO[System.Time]   [B]$LOCALIZE[10020][/B][/COLOR]</label>
         <visible>!Skin.HasSetting(nobreadcrumb)</visible>
       </control>
@@ -52,8 +52,8 @@
       <animation effect="slide" start="0,0" end="-250,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | Control.HasFocus(8999)">WindowClose</animation>
       <control type="button" id="8999">
         <description>Fake button for mouse control</description>
-        <posx>-250</posx>
-        <posy>0</posy>
+        <left>-250</left>
+        <top>0</top>
         <width>265</width>
         <height>720</height>
         <label>-</label>
@@ -64,13 +64,13 @@
       </control>
       <include>SideBladeLeft</include>
       <control type="group" id="9000">
-        <posx>-250</posx>
-        <posy>130</posy>
+        <left>-250</left>
+        <top>130</top>
         <include>CommonNowPlaying</include>
         <control type="button" id="2">
           <description>View As button</description>
-          <posx>0</posx>
-          <posy>0</posy>
+          <left>0</left>
+          <top>0</top>
           <include>ButtonCommonValues</include>
           <label>-</label>
           <onleft>55</onleft>
@@ -80,8 +80,8 @@
         </control>
         <control type="button" id="3">
           <description>Sort by button</description>
-          <posx>0</posx>
-          <posy>40</posy>
+          <left>0</left>
+          <top>40</top>
           <include>ButtonCommonValues</include>
           <label>103</label>
           <onleft>55</onleft>
@@ -91,8 +91,8 @@
         </control>
         <control type="togglebutton" id="4">
           <description>Sort asc</description>
-          <posx>220</posx>
-          <posy>53</posy>
+          <left>220</left>
+          <top>53</top>
           <width>20</width>
           <height>20</height>
           <label>-</label>
@@ -110,8 +110,8 @@
           <height>42</height>
         </control>
         <control type="group">
-          <posx>0</posx>
-          <posy>260</posy>
+          <left>0</left>
+          <top>260</top>
           <include>CommonNowPlaying_Controls</include>
         </control>
         <control type="button" id="611">

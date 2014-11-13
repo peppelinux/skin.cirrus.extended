@@ -4,8 +4,8 @@
   <defaultcontrol always="false">101</defaultcontrol>
   <coordinates>
     <system>1</system>
-    <posx>680</posx>
-    <posy>0</posy>
+    <left>680</left>
+    <top>0</top>
   </coordinates>
   <controls>
     <control type="group">
@@ -14,16 +14,16 @@
       <animation effect="slide" start="0,0" end="600,0" time="200" tween="quadratic" easing="out">WindowClose</animation>
       <control type="image">
         <description>media info background image</description>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <width>600</width>
         <height>720</height>
         <texture border="15,0,0,0">homesubbackground.png</texture>
       </control>
       <control type="label">
         <description>header label</description>
-        <posx>580</posx>
-        <posy>30</posy>
+        <left>30</left>
+        <top>30</top>
         <width>550</width>
         <height>30</height>
         <font>cirrus_30</font>
@@ -35,8 +35,8 @@
       </control>
       <control type="label">
         <description>Artist label</description>
-        <posx>580</posx>
-        <posy>60</posy>
+        <left>30</left>
+        <top>60</top>
         <width>550</width>
         <height>30</height>
         <font>cirrus_24</font>
@@ -48,8 +48,8 @@
       </control>
       <control type="label">
         <description>Song label</description>
-        <posx>580</posx>
-        <posy>85</posy>
+        <left>30</left>
+        <top>85</top>
         <width>550</width>
         <height>30</height>
         <font>cirrus_24</font>
@@ -60,8 +60,8 @@
         <shadowcolor>black</shadowcolor>
       </control>
       <control type="image">
-        <posx>30</posx>
-        <posy>120</posy>
+        <left>30</left>
+        <top>120</top>
         <width>550</width>
         <height>4</height>
         <texture>separator.png</texture>
@@ -69,8 +69,8 @@
       <!-- ** Required ** Do not change <id> or <type> (Text box for lyrics) -->
       <control type="textbox" id="100">
         <description>textarea</description>
-        <posx>30</posx>
-        <posy>130</posy>
+        <left>30</left>
+        <top>130</top>
         <width>550</width>
         <height>500</height>
         <align>center</align>
@@ -85,8 +85,8 @@
       </control>
       <control type="spincontrol" id="101">
         <description>Next page button</description>
-        <posx>520</posx>
-        <posy>650</posy>
+        <left>520</left>
+        <top>650</top>
         <subtype>page</subtype>
         <font>cirrus_20</font>
         <onleft>101</onleft>
@@ -101,8 +101,8 @@
       </control>
       <!-- ** Required ** Do not change <id> or <type> (Smooth scrolling list for lyrics) -->
       <control type="list" id="110">
-        <posx>30</posx>
-        <posy>130</posy>
+        <left>30</left>
+        <top>130</top>
         <width>550</width>
         <height>500</height>
         <onleft>111</onleft>
@@ -113,8 +113,8 @@
         <scrolltime>200</scrolltime>
         <itemlayout height="25">
           <control type="label">
-            <posx>138</posx>
-            <posy>0</posy>
+            <left>138</left>
+            <top>0</top>
             <width>550</width>
             <height>25</height>
             <font>cirrus_24</font>
@@ -127,8 +127,8 @@
         </itemlayout>
         <focusedlayout height="25">
           <control type="label">
-            <posx>138</posx>
-            <posy>0</posy>
+            <left>138</left>
+            <top>0</top>
             <width>550</width>
             <height>25</height>
             <font>cirrus_24</font>
@@ -142,8 +142,8 @@
             <visible>!Control.HasFocus(110)</visible>
           </control>
           <control type="label">
-            <posx>138</posx>
-            <posy>0</posy>
+            <left>138</left>
+            <top>0</top>
             <width>550</width>
             <height>25</height>
             <font>cirrus_24</font>
@@ -159,8 +159,8 @@
       </control>
       <control type="spincontrol" id="111">
         <description>Next page button</description>
-        <posx>520</posx>
-        <posy>650</posy>
+        <left>520</left>
+        <top>650</top>
         <subtype>page</subtype>
         <font>cirrus_20</font>
         <onleft>110</onleft>
@@ -175,8 +175,8 @@
       </control>
       <control type="label" id="2">
         <description>Pick label</description>
-        <posx>30</posx>
-        <posy>130</posy>
+        <left>15</left>
+        <top>130</top>
         <width>550</width>
         <height>30</height>
         <align>center</align>
@@ -188,8 +188,8 @@
       </control>
       <!-- ** Required ** Do not change <id> or <type> (Song Chooser if it gets it wrong) -->
       <control type="list" id="120">
-        <posx>30</posx>
-        <posy>170</posy>
+        <left>30</left>
+        <top>170</top>
         <width>550</width>
         <height>440</height>
         <onleft>121</onleft>
@@ -201,16 +201,16 @@
         <animation effect="slide" start="0,0" end="20,0" time="0" condition="!Control.IsVisible(121)">Conditional</animation>
         <itemlayout height="40">
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>550</width>
             <height>41</height>
             <texture border="5">menuitemNF.png</texture>
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
-            <posx>10</posx>
-            <posy>0</posy>
+            <left>10</left>
+            <top>0</top>
             <width>530</width>
             <height>40</height>
             <font>cirrus_20</font>
@@ -222,8 +222,8 @@
         </itemlayout>
         <focusedlayout height="40">
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>550</width>
             <height>41</height>
             <visible>!Control.HasFocus(120)</visible>
@@ -231,8 +231,8 @@
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>550</width>
             <height>41</height>
             <visible>Control.HasFocus(120)</visible>
@@ -240,8 +240,8 @@
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
-            <posx>10</posx>
-            <posy>0</posy>
+            <left>10</left>
+            <top>0</top>
             <width>530</width>
             <height>40</height>
             <font>cirrus_20</font>
@@ -255,8 +255,8 @@
       <control type="spincontrol" id="121">
         <description>Next page button</description>
         <description>Next page button</description>
-        <posx>520</posx>
-        <posy>650</posy>
+        <left>520</left>
+        <top>650</top>
         <subtype>page</subtype>
         <font>cirrus_20</font>
         <onleft>120</onleft>
@@ -270,16 +270,16 @@
         <height>13</height>
       </control>
       <control type="image">
-        <posx>30</posx>
-        <posy>640</posy>
+        <left>30</left>
+        <top>640</top>
         <width>550</width>
         <height>4</height>
         <texture>separator.png</texture>
       </control>
       <control type="label">
         <description>Scraper label</description>
-        <posx>580</posx>
-        <posy>680</posy>
+        <left>30</left>
+        <top>680</top>
         <width>550</width>
         <height>30</height>
         <label>$LOCALIZE[31205] - $INFO[Control.GetLabel(200)]</label>

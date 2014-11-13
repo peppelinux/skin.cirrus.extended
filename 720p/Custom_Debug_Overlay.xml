@@ -13,8 +13,8 @@
 
         <!-- Window/Dialog debug -->
         <control type="grouplist">
-            <posx>20</posx>
-            <posy>30</posy>
+            <left>20</left>
+            <top>30</top>
             <width>520</width>
             <height>300</height>
             <itemgap>8</itemgap>
