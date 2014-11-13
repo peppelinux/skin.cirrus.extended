@@ -103,7 +103,7 @@
             <aligny>center</aligny>
             <textcolor>grey</textcolor>
             <selectedcolor>grey</selectedcolor>
-            <info>ListItem.ChannelNumber</info>
+            <info>ListItem.ChannelNumberLabel</info>
           </control>
           <control type="label">
             <left>50</left>
@@ -183,7 +183,7 @@
             <aligny>center</aligny>
             <textcolor>grey</textcolor>
             <selectedcolor>grey</selectedcolor>
-            <info>ListItem.ChannelNumber</info>
+            <info>ListItem.ChannelNumberLabel</info>
           </control>
           <control type="label">
             <left>50</left>
