@@ -1,0 +1,1411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <!-- ID: 10 -->
+    <include name="PVRGuideViewTimeline">
+        <control type="group">
+            <description>TV Guide Timeline</description>
+            <visible>Control.IsVisible(10)</visible>
+            <include>VisibleFadeEffect</include>
+            <control type="epggrid" id="10">
+                <viewtype label="19032">list</viewtype>
+                <description>EPG Grid</description>
+                <posx>80</posx>
+                <posy>81</posy>
+                <width>1120</width>
+                <height>451</height>
+                <pagecontrol>10</pagecontrol>
+                <scrolltime>350</scrolltime>
+                <timeblocks>40</timeblocks>
+                <rulerunit>6</rulerunit>
+                <onleft>31</onleft>
+                <onright>31</onright>
+                <onup>10</onup>
+                <ondown>10</ondown>
+                <!-- Time Timeline -->
+                <rulerlayout height="35" width="40">
+                    <control type="image" id="1">
+                        <width>40</width>
+                        <height>34</height>
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <colordiffuse>EEFFFFFF</colordiffuse>
+                        <texture border="3">OverlayDialogBackground.png</texture>
+                    </control>
+                    <control type="label" id="2">
+                        <posx>10</posx>
+                        <posy>1</posy>
+                        <width>34</width>
+                        <height>29</height>
+                        <font>cirrus_20</font>
+                        <aligny>center</aligny>
+                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>accent</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <align>left</align>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                </rulerlayout>
+                <!-- Channel Layout Timeline -->
+                <channellayout height="52" width="220">
+                    <animation effect="fade" start="110" time="200">UnFocus</animation>
+                    <control type="image" id="1">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>220</width>
+                        <height>52</height>
+                        <colordiffuse>EEFFFFFF</colordiffuse>
+                        <texture border="5">OverlayDialogBackground.png</texture>
+                    </control>
+                    <control type="image">
+                        <posx>7</posx>
+                        <posy>5</posy>
+                        <width>40</width>
+                        <height>40</height>
+                        <texture>$INFO[ListItem.Icon]</texture>
+                    </control>
+                    <control type="label" id="1">
+                        <posx>59</posx>
+                        <posy>0</posy>
+                        <width>160</width>
+                        <height>52</height>
+                        <font>cirrus_25</font>
+                        <aligny>center</aligny>
+                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>grey2</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <align>left</align>
+                        <label>$INFO[ListItem.ChannelName]</label>
+                    </control>
+                </channellayout>
+                <focusedchannellayout height="52" width="220">
+                    <animation effect="fade" start="110" time="200">OnFocus</animation>
+                    <control type="image" id="1">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>220</width>
+                        <height>52</height>
+                        <colordiffuse>EEFFFFFF</colordiffuse>
+                        <texture border="5">OverlayDialogBackground.png</texture>
+                    </control>
+                    <control type="image">
+                        <posx>7</posx>
+                        <posy>5</posy>
+                        <width>40</width>
+                        <height>40</height>
+                        <texture>$INFO[ListItem.Icon]</texture>
+                    </control>
+                    <control type="label" id="1">
+                        <posx>59</posx>
+                        <posy>0</posy>
+                        <width>160</width>
+                        <height>52</height>
+                        <font>cirrus_25</font>
+                        <aligny>center</aligny>
+                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>accent</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <align>left</align>
+                        <label>$INFO[ListItem.ChannelName]</label>
+                    </control>
+                </focusedchannellayout>
+                <itemlayout height="52" width="40">
+                    <control type="image" id="2">
+                        <width>40</width>
+                        <height>52</height>
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="3">epg-genres/$INFO[ListItem.Property(GenreType)].png</texture>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+                    <control type="label" id="1">
+                        <posx>6</posx>
+                        <posy>3</posy>
+                        <width>30</width>
+                        <height>25</height>
+                        <font>cirrus_25</font>
+                        <aligny>center</aligny>
+                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <align>left</align>
+                        <info>ListItem.Label</info>
+                    </control>
+                    <control type="image">
+                        <posx>5</posx>
+                        <posy>30</posy>
+                        <width>25</width>
+                        <height>15</height>
+                        <texture>PVR-IsRecording.png</texture>
+                        <visible>ListItem.IsRecording</visible>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+                    <control type="image">
+                        <posx>5</posx>
+                        <posy>30</posy>
+                        <width>20</width>
+                        <height>20</height>
+                        <texture>PVR-HasTimer.png</texture>
+                        <visible>ListItem.HasTimer</visible>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="52" width="40">
+                    <control type="image" id="14">
+                        <width>40</width>
+                        <height>52</height>
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <colordiffuse>EEFFFFFF</colordiffuse>
+                        <texture>pstvButtonNOFocus.png</texture>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+                    <control type="image" id="2">
+                        <width>40</width>
+                        <height>52</height>
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="3">epg-genres/$INFO[ListItem.Property(GenreType)].png</texture>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+                    <control type="label" id="1">
+                        <posx>6</posx>
+                        <posy>3</posy>
+                        <width>30</width>
+                        <height>25</height>
+                        <font>cirrus_25</font>
+                        <aligny>center</aligny>
+                        <selectedcolor>selected</selectedcolor>
+                        <textcolor>accent</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <align>left</align>
+                        <info>ListItem.Label</info>
+                    </control>
+                    <control type="image">
+                        <posx>5</posx>
+                        <posy>30</posy>
+                        <width>25</width>
+                        <height>15</height>
+                        <texture>PVR-IsRecording.png</texture>
+                        <visible>ListItem.IsRecording</visible>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+                    <control type="image">
+                        <posx>5</posx>
+                        <posy>30</posy>
+                        <width>20</width>
+                        <height>20</height>
+                        <texture>PVR-HasTimer.png</texture>
+                        <visible>ListItem.HasTimer</visible>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+                </focusedlayout>
+            </control>
+            <control type="group">
+                <posx>200</posx>
+                <posy>57r</posy>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>15</width>
+                    <height>15</height>
+                    <texture>48.png</texture>
+                </control>
+                <control type="image">
+                    <posx>-200</posx>
+                    <posy>-120</posy>
+                    <width>1300</width>
+                    <height>118</height>
+                    <texture>dialogbackground.png</texture>
+                </control>
+                <control type="image">
+                    <posx>-200</posx>
+                    <posy>-5</posy>
+                    <width>1300</width>
+                    <height>70</height>
+                    <texture>dialogbackground.png</texture>
+                </control>
+                <control type="image">
+                    <posx>-110</posx>
+                    <posy>-112</posy>
+                    <width>100</width>
+                    <height>100</height>
+                    <aspectratio aligny="bottom">keep</aspectratio>
+                    <texture>$INFO[ListItem.Icon]</texture>
+                </control>
+                <control type="label">
+                    <posx>100</posx>
+                    <posy>5</posy>
+                    <width>100</width>
+                    <height>40</height>
+                    <label>$LOCALIZE[335]:</label>
+                    <font>cirrus_20</font>
+                    <align>left</align>
+                    <textcolor>accent</textcolor>
+                    <selectedcolor>selected</selectedcolor>
+                    <info>-</info>
+                </control>
+                <control type="label">
+                    <posx>160</posx>
+                    <posy>5</posy>
+                    <width>100</width>
+                    <height>40</height>
+                    <font>cirrus_20</font>
+                    <align>left</align>
+                    <textcolor>grey</textcolor>
+                    <selectedcolor>selected</selectedcolor>
+                    <info>ListItem.StartTime</info>
+                </control>
+                <control type="label">
+                    <posx>100</posx>
+                    <posy>30</posy>
+                    <width>100</width>
+                    <height>40</height>
+                    <label>$LOCALIZE[19081]:</label>
+                    <font>cirrus_20</font>
+                    <align>left</align>
+                    <textcolor>accent</textcolor>
+                    <selectedcolor>selected</selectedcolor>
+                    <info>-</info>
+                </control>
+                <control type="label">
+                    <posx>160</posx>
+                    <posy>30</posy>
+                    <width>100</width>
+                    <height>40</height>
+                    <font>cirrus_20</font>
+                    <align>left</align>
+                    <textcolor>grey</textcolor>
+                    <selectedcolor>selected</selectedcolor>
+                    <info>ListItem.EndTime</info>
+                </control>
+                <control type="label">
+                    <posx>250</posx>
+                    <posy>5</posy>
+                    <width>100</width>
+                    <height>40</height>
+                    <label>$LOCALIZE[180]:</label>
+                    <font>cirrus_20</font>
+                    <align>left</align>
+                    <textcolor>accent</textcolor>
+                    <selectedcolor>selected</selectedcolor>
+                    <info>-</info>
+                </control>
+                <control type="label">
+                    <posx>350</posx>
+                    <posy>5</posy>
+                    <width>200</width>
+                    <height>40</height>
+                    <font>cirrus_20</font>
+                    <align>left</align>
+                    <textcolor>grey</textcolor>
+                    <selectedcolor>selected</selectedcolor>
+                    <info>ListItem.Duration</info>
+                </control>
+                <control type="label">
+                    <posx>250</posx>
+                    <posy>30</posy>
+                    <width>100</width>
+                    <height>40</height>
+                    <label>$LOCALIZE[135]:</label>
+                    <font>cirrus_20</font>
+                    <align>left</align>
+                    <textcolor>accent</textcolor>
+                    <selectedcolor>selected</selectedcolor>
+                    <info>-</info>
+                </control>
+                <control type="label">
+                    <posx>350</posx>
+                    <posy>30</posy>
+                    <width>400</width>
+                    <height>40</height>
+                    <font>cirrus_20</font>
+                    <align>left</align>
+                    <textcolor>grey</textcolor>
+                    <selectedcolor>selected</selectedcolor>
+                    <info>ListItem.Genre</info>
+                </control>
+                <control type="label">
+                    <posx>100</posx>
+                    <posy>-115</posy>
+                    <width>700</width>
+                    <height>20</height>
+                    <font>cirrus_24</font>
+                    <textcolor>accent</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <scroll>true</scroll>
+                    <align>left</align>
+                    <label>$INFO[ListItem.Title]</label>
+                </control>
+                <control type="textbox">
+                    <description>Plot</description>
+                    <posx>100</posx>
+                    <posy>-80</posy>
+                    <width>900</width>
+                    <height>60</height>
+                    <font>cirrus_18</font>
+                    <align>justify</align>
+                    <textcolor>grey</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <pagecontrol>-</pagecontrol>
+                    <label>$INFO[ListItem.Plot]</label>
+                    <autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
+                </control>
+            </control>
+        </control>
+    </include>
+
+    <!-- ID: 11 -->
+    <include name="PVRGuideViewNow">
+        <control type="group">
+            <description>TV Guide Now</description>
+            <visible>Control.IsVisible(11)</visible>
+            <include>VisibleFadeEffect</include>
+            <control type="group">
+                <posx>80</posx>
+                <posy>60</posy>
+                <control type="label">
+                    <description>Time label</description>
+                    <posx>0</posx>
+                    <posy>20</posy>
+                    <width>100</width>
+                    <height>20</height>
+                    <font>cirrus_30</font>
+                    <textcolor>accent</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>555</label>
+                </control>
+                <control type="label">
+                    <description>Channel label</description>
+                    <posx>70</posx>
+                    <posy>20</posy>
+                    <width>250</width>
+                    <height>20</height>
+                    <font>cirrus_30</font>
+                    <textcolor>accent</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>19148</label>
+                </control>
+                <control type="label">
+                    <description>Title</description>
+                    <posx>110</posx>
+                    <posy>20</posy>
+                    <width>550</width>
+                    <height>20</height>
+                    <font>cirrus_30</font>
+                    <textcolor>accent</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>369</label>
+                </control>
+                <control type="label">
+                    <description>Status header label</description>
+                    <posx>960</posx>
+                    <posy>20</posy>
+                    <width>140</width>
+                    <height>20</height>
+                    <font>cirrus_30</font>
+                    <textcolor>accent</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>126</label>
+                </control>
+                <control type="image">
+                    <description>separator image</description>
+                    <posx>0</posx>
+                    <posy>54</posy>
+                    <width>1100</width>
+                    <height>1</height>
+                    <colordiffuse>88FFFFFF</colordiffuse>
+                    <texture>separator2.png</texture>
+                </control>
+                <control type="image">
+                    <description>separator image</description>
+                    <posx>0</posx>
+                    <posy>575</posy>
+                    <width>1100</width>
+                    <height>1</height>
+                    <colordiffuse>88FFFFFF</colordiffuse>
+                    <texture>separator2.png</texture>
+                </control>
+                <control type="list" id="11">
+                    <viewtype label="19030">list</viewtype>
+                    <posx>0</posx>
+                    <posy>55</posy>
+                    <width>1100</width>
+                    <height>520</height>
+                    <onup>11</onup>
+                    <ondown>11</ondown>
+                    <onleft>31</onleft>
+                    <onright>76</onright>
+                    <pagecontrol>76</pagecontrol>
+                    <scrolltime>200</scrolltime>
+                    <itemlayout height="40">
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1100</width>
+                            <height>41</height>
+                            <texture border="5">menuitemNF.png</texture>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1100</width>
+                            <height>40</height>
+                            <colordiffuse>33FFFFFF</colordiffuse>
+                            <texture border="5" />
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1100</width>
+                            <height>40</height>
+                            <colordiffuse>33FFFFFF</colordiffuse>
+                            <texture border="5" />
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="label">
+                            <posx>25</posx>
+                            <posy>0</posy>
+                            <width>100</width>
+                            <height>40</height>
+                            <font>cirrus_25</font>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <textcolor>grey2</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                            <info>ListItem.StartTime</info>
+                        </control>
+                        <control type="image">
+                            <posx>110</posx>
+                            <posy>5</posy>
+                            <width>30</width>
+                            <height>30</height>
+                            <info>ListItem.Icon</info>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="label">
+                            <posx>150</posx>
+                            <posy>0</posy>
+                            <width>190</width>
+                            <height>35</height>
+                            <font>cirrus_25</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <textcolor>grey2</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                            <info>ListItem.ChannelName</info>
+                        </control>
+                        <control type="label">
+                            <posx>360</posx>
+                            <posy>0</posy>
+                            <width>590</width>
+                            <height>35</height>
+                            <font>cirrus_25</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <textcolor>grey2</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                            <info>ListItem.Label</info>
+                        </control>
+                        <control type="image">
+                            <posx>930</posx>
+                            <posy>10</posy>
+                            <width>30</width>
+                            <height>20</height>
+                            <texture>PVR-IsRecording.png</texture>
+                            <visible>ListItem.IsRecording</visible>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="label">
+                            <posx>970</posx>
+                            <posy>0</posy>
+                            <width>120</width>
+                            <height>40</height>
+                            <font>cirrus_25</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <textcolor>accent</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                            <label>19043</label>
+                            <visible>ListItem.IsRecording</visible>
+                        </control>
+                        <control type="image">
+                            <posx>940</posx>
+                            <posy>10</posy>
+                            <width>20</width>
+                            <height>20</height>
+                            <texture>PVR-HasTimer.png</texture>
+                            <visible>ListItem.HasTimer</visible>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="label">
+                            <posx>970</posx>
+                            <posy>0</posy>
+                            <width>120</width>
+                            <height>40</height>
+                            <font>cirrus_25</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <textcolor>accent</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                            <label>31510</label>
+                            <visible>ListItem.HasTimer</visible>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="40">
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1100</width>
+                            <height>41</height>
+                            <texture border="5">menuitemNF.png</texture>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1100</width>
+                            <height>40</height>
+                            <colordiffuse>33FFFFFF</colordiffuse>
+                            <texture border="5">listwhitegradient.png</texture>
+                            <visible>!Control.HasFocus(11)</visible>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1100</width>
+                            <height>40</height>
+                            <colordiffuse>33FFFFFF</colordiffuse>
+                            <texture border="5">listwhitegradient.png</texture>
+                            <visible>!Control.HasFocus(11)</visible>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1100</width>
+                            <height>40</height>
+                            <colordiffuse>88FFFFFF</colordiffuse>
+                            <texture border="5">listwhitegradient.png</texture>
+                            <visible>Control.HasFocus(11)</visible>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1100</width>
+                            <height>40</height>
+                            <colordiffuse>88FFFFFF</colordiffuse>
+                            <texture border="5">listwhitegradient.png</texture>
+                            <visible>Control.HasFocus(11)</visible>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="label">
+                            <posx>25</posx>
+                            <posy>0</posy>
+                            <width>100</width>
+                            <height>40</height>
+                            <font>cirrus_25</font>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <textcolor>accent</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                            <info>ListItem.StartTime</info>
+                        </control>
+                        <control type="image">
+                            <posx>110</posx>
+                            <posy>5</posy>
+                            <width>30</width>
+                            <height>30</height>
+                            <info>ListItem.Icon</info>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="label">
+                            <posx>150</posx>
+                            <posy>0</posy>
+                            <width>190</width>
+                            <height>35</height>
+                            <font>cirrus_25</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <textcolor>accent</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                            <info>ListItem.ChannelName</info>
+                        </control>
+                        <control type="label">
+                            <posx>360</posx>
+                            <posy>0</posy>
+                            <width>590</width>
+                            <height>35</height>
+                            <font>cirrus_25</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <textcolor>accent</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                            <info>ListItem.Label</info>
+                        </control>
+                        <control type="image">
+                            <posx>930</posx>
+                            <posy>10</posy>
+                            <width>30</width>
+                            <height>20</height>
+                            <texture>PVR-IsRecording.png</texture>
+                            <visible>ListItem.IsRecording</visible>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="label">
+                            <posx>970</posx>
+                            <posy>0</posy>
+                            <width>120</width>
+                            <height>40</height>
+                            <font>cirrus_25</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <textcolor>accent</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                            <label>19043</label>
+                            <visible>ListItem.IsRecording</visible>
+                        </control>
+                        <control type="image">
+                            <posx>940</posx>
+                            <posy>10</posy>
+                            <width>20</width>
+                            <height>20</height>
+                            <texture>PVR-HasTimer.png</texture>
+                            <visible>ListItem.HasTimer</visible>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="label">
+                            <posx>970</posx>
+                            <posy>0</posy>
+                            <width>120</width>
+                            <height>40</height>
+                            <font>cirrus_25</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <textcolor>accent</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                            <label>31510</label>
+                            <visible>ListItem.HasTimer</visible>
+                        </control>
+                    </focusedlayout>
+                </control>
+                <control type="scrollbar" id="76">
+                    <posx>1105</posx>
+                    <posy>50</posy>
+                    <width>25</width>
+                    <height>520</height>
+                    <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+                    <texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+                    <texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+                    <textureslidernib>ScrollBarNib.png</textureslidernib>
+                    <textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+                    <onleft>11</onleft>
+                    <onright>31</onright>
+                    <ondown>76</ondown>
+                    <onup>76</onup>
+                    <showonepage>false</showonepage>
+                    <orientation>vertical</orientation>
+                    <visible>Control.IsVisible(11)</visible>
+                </control>
+            </control>
+            <control type="label">
+                <description>Page Count Label</description>
+                <posx>40r</posx>
+                <posy>30r</posy>
+                <width>500</width>
+                <height>20</height>
+                <font>cirrus_20</font>
+                <textcolor>grey</textcolor>
+                <scroll>false</scroll>
+                <align>right</align>
+                <aligny>center</aligny>
+                <label>([COLOR=accent]$INFO[Container(11).NumItems][/COLOR]) $LOCALIZE[31025] - $LOCALIZE[31024] ([COLOR=accent]$INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages][/COLOR])</label>
+            </control>
+        </control>
+    </include>
+
+    <!-- ID: 12 -->
+    <include name="PVRGuideViewNext">
+        <control type="group">
+            <description>TV Guide Next</description>
+            <visible>Control.IsVisible(12)</visible>
+            <include>VisibleFadeEffect</include>
+            <control type="group">
+                <posx>80</posx>
+                <posy>60</posy>
+                <control type="label">
+                    <description>Time label</description>
+                    <posx>0</posx>
+                    <posy>20</posy>
+                    <width>100</width>
+                    <height>20</height>
+                    <font>cirrus_30</font>
+                    <textcolor>accent</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>555</label>
+                </control>
+                <control type="label">
+                    <description>Channel label</description>
+                    <posx>70</posx>
+                    <posy>20</posy>
+                    <width>250</width>
+                    <height>20</height>
+                    <font>cirrus_30</font>
+                    <textcolor>accent</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>19148</label>
+                </control>
+                <control type="label">
+                    <description>Title</description>
+                    <posx>110</posx>
+                    <posy>20</posy>
+                    <width>550</width>
+                    <height>20</height>
+                    <font>cirrus_30</font>
+                    <textcolor>accent</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>369</label>
+                </control>
+                <control type="label">
+                    <description>Status header label</description>
+                    <posx>960</posx>
+                    <posy>20</posy>
+                    <width>140</width>
+                    <height>20</height>
+                    <font>cirrus_30</font>
+                    <textcolor>accent</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>126</label>
+                </control>
+                <control type="image">
+                    <description>separator image</description>
+                    <posx>0</posx>
+                    <posy>54</posy>
+                    <width>1100</width>
+                    <height>1</height>
+                    <colordiffuse>88FFFFFF</colordiffuse>
+                    <texture>separator2.png</texture>
+                </control>
+                <control type="image">
+                    <description>separator image</description>
+                    <posx>0</posx>
+                    <posy>575</posy>
+                    <width>1100</width>
+                    <height>1</height>
+                    <colordiffuse>88FFFFFF</colordiffuse>
+                    <texture>separator2.png</texture>
+                </control>
+                <control type="list" id="12">
+                    <viewtype label="19031">list</viewtype>
+                    <posx>0</posx>
+                    <posy>55</posy>
+                    <width>1100</width>
+                    <height>520</height>
+                    <onup>12</onup>
+                    <ondown>12</ondown>
+                    <onleft>31</onleft>
+                    <onright>76</onright>
+                    <pagecontrol>76</pagecontrol>
+                    <scrolltime>200</scrolltime>
+                    <itemlayout height="40">
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1100</width>
+                            <height>41</height>
+                            <texture border="5">menuitemNF.png</texture>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1100</width>
+                            <height>40</height>
+                            <colordiffuse>33FFFFFF</colordiffuse>
+                            <texture border="5" />
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1100</width>
+                            <height>40</height>
+                            <colordiffuse>33FFFFFF</colordiffuse>
+                            <texture border="5" />
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="label">
+                            <posx>25</posx>
+                            <posy>0</posy>
+                            <width>100</width>
+                            <height>40</height>
+                            <font>cirrus_25</font>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <textcolor>grey2</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                            <info>ListItem.StartTime</info>
+                        </control>
+                        <control type="image">
+                            <posx>110</posx>
+                            <posy>5</posy>
+                            <width>30</width>
+                            <height>30</height>
+                            <info>ListItem.Icon</info>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="label">
+                            <posx>150</posx>
+                            <posy>0</posy>
+                            <width>190</width>
+                            <height>35</height>
+                            <font>cirrus_25</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <textcolor>grey2</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                            <info>ListItem.ChannelName</info>
+                        </control>
+                        <control type="label">
+                            <posx>360</posx>
+                            <posy>0</posy>
+                            <width>590</width>
+                            <height>35</height>
+                            <font>cirrus_25</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <textcolor>grey2</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                            <info>ListItem.Label</info>
+                        </control>
+                        <control type="image">
+                            <posx>930</posx>
+                            <posy>10</posy>
+                            <width>30</width>
+                            <height>20</height>
+                            <texture>PVR-IsRecording.png</texture>
+                            <visible>ListItem.IsRecording</visible>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="label">
+                            <posx>970</posx>
+                            <posy>0</posy>
+                            <width>120</width>
+                            <height>40</height>
+                            <font>cirrus_25</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <textcolor>accent</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                            <label>19043</label>
+                            <visible>ListItem.IsRecording</visible>
+                        </control>
+                        <control type="image">
+                            <posx>940</posx>
+                            <posy>10</posy>
+                            <width>20</width>
+                            <height>20</height>
+                            <texture>PVR-HasTimer.png</texture>
+                            <visible>ListItem.HasTimer</visible>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="label">
+                            <posx>970</posx>
+                            <posy>0</posy>
+                            <width>120</width>
+                            <height>40</height>
+                            <font>cirrus_25</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <textcolor>accent</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                            <label>31510</label>
+                            <visible>ListItem.HasTimer</visible>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="40">
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1100</width>
+                            <height>41</height>
+                            <texture border="5">menuitemNF.png</texture>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1100</width>
+                            <height>40</height>
+                            <colordiffuse>33FFFFFF</colordiffuse>
+                            <texture border="5">listwhitegradient.png</texture>
+                            <visible>!Control.HasFocus(12)</visible>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1100</width>
+                            <height>40</height>
+                            <colordiffuse>33FFFFFF</colordiffuse>
+                            <texture border="5">listwhitegradient.png</texture>
+                            <visible>!Control.HasFocus(12)</visible>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1100</width>
+                            <height>40</height>
+                            <colordiffuse>88FFFFFF</colordiffuse>
+                            <texture border="5">listwhitegradient.png</texture>
+                            <visible>Control.HasFocus(12)</visible>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1100</width>
+                            <height>40</height>
+                            <colordiffuse>88FFFFFF</colordiffuse>
+                            <texture border="5">listwhitegradient.png</texture>
+                            <visible>Control.HasFocus(12)</visible>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="label">
+                            <posx>25</posx>
+                            <posy>0</posy>
+                            <width>100</width>
+                            <height>40</height>
+                            <font>cirrus_25</font>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <textcolor>accent</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                            <info>ListItem.StartTime</info>
+                        </control>
+                        <control type="image">
+                            <posx>110</posx>
+                            <posy>5</posy>
+                            <width>30</width>
+                            <height>30</height>
+                            <info>ListItem.Icon</info>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="label">
+                            <posx>150</posx>
+                            <posy>0</posy>
+                            <width>190</width>
+                            <height>35</height>
+                            <font>cirrus_25</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <textcolor>accent</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                            <info>ListItem.ChannelName</info>
+                        </control>
+                        <control type="label">
+                            <posx>360</posx>
+                            <posy>0</posy>
+                            <width>590</width>
+                            <height>35</height>
+                            <font>cirrus_25</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <textcolor>accent</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                            <info>ListItem.Label</info>
+                        </control>
+                        <control type="image">
+                            <posx>930</posx>
+                            <posy>10</posy>
+                            <width>30</width>
+                            <height>20</height>
+                            <texture>PVR-IsRecording.png</texture>
+                            <visible>ListItem.IsRecording</visible>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="label">
+                            <posx>970</posx>
+                            <posy>0</posy>
+                            <width>120</width>
+                            <height>40</height>
+                            <font>cirrus_25</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <textcolor>accent</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                            <label>19043</label>
+                            <visible>ListItem.IsRecording</visible>
+                        </control>
+                        <control type="image">
+                            <posx>940</posx>
+                            <posy>10</posy>
+                            <width>20</width>
+                            <height>20</height>
+                            <texture>PVR-HasTimer.png</texture>
+                            <visible>ListItem.HasTimer</visible>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="label">
+                            <posx>970</posx>
+                            <posy>0</posy>
+                            <width>120</width>
+                            <height>40</height>
+                            <font>cirrus_25</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <textcolor>accent</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                            <label>31510</label>
+                            <visible>ListItem.HasTimer</visible>
+                        </control>
+                    </focusedlayout>
+                </control>
+                <control type="scrollbar" id="76">
+                    <posx>1105</posx>
+                    <posy>50</posy>
+                    <width>25</width>
+                    <height>520</height>
+                    <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+                    <texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+                    <texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+                    <textureslidernib>ScrollBarNib.png</textureslidernib>
+                    <textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+                    <onleft>12</onleft>
+                    <onright>31</onright>
+                    <ondown>76</ondown>
+                    <onup>76</onup>
+                    <showonepage>false</showonepage>
+                    <orientation>vertical</orientation>
+                    <visible>Control.IsVisible(12)</visible>
+                </control>
+            </control>
+            <control type="label">
+                <description>Page Count Label</description>
+                <posx>40r</posx>
+                <posy>30r</posy>
+                <width>500</width>
+                <height>20</height>
+                <font>cirrus_20</font>
+                <textcolor>grey</textcolor>
+                <scroll>false</scroll>
+                <align>right</align>
+                <aligny>center</aligny>
+                <label>([COLOR=accent]$INFO[Container(12).NumItems][/COLOR]) $LOCALIZE[31025] - $LOCALIZE[31024] ([COLOR=accent]$INFO[Container(12).CurrentPage]/$INFO[Container(12).NumPages][/COLOR])</label>
+            </control>
+        </control>
+    </include>
+
+    <!-- ID: 13 -->
+    <include name="PVRGuideViewChannel">
+        <control type="group">
+            <description>TV Guide Channel</description>
+            <visible>Control.IsVisible(13)</visible>
+            <include>VisibleFadeEffect</include>
+            <control type="group">
+                <posx>80</posx>
+                <posy>60</posy>
+                <control type="label">
+                    <description>Date Time label</description>
+                    <posx>0</posx>
+                    <posy>20</posy>
+                    <width>300</width>
+                    <height>20</height>
+                    <font>cirrus_30</font>
+                    <textcolor>accent</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>21820</label>
+                </control>
+                <control type="label">
+                    <description>Title</description>
+                    <posx>35</posx>
+                    <posy>20</posy>
+                    <width>600</width>
+                    <height>20</height>
+                    <font>cirrus_30</font>
+                    <textcolor>accent</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>369</label>
+                </control>
+                <control type="label">
+                    <description>Status header label</description>
+                    <posx>960</posx>
+                    <posy>20</posy>
+                    <width>140</width>
+                    <height>20</height>
+                    <font>cirrus_30</font>
+                    <textcolor>accent</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>126</label>
+                </control>
+                <control type="image">
+                    <description>separator image</description>
+                    <posx>0</posx>
+                    <posy>54</posy>
+                    <width>1100</width>
+                    <height>1</height>
+                    <colordiffuse>88FFFFFF</colordiffuse>
+                    <texture>separator2.png</texture>
+                </control>
+                <control type="image">
+                    <description>separator image</description>
+                    <posx>0</posx>
+                    <posy>575</posy>
+                    <width>1100</width>
+                    <height>1</height>
+                    <colordiffuse>88FFFFFF</colordiffuse>
+                    <texture>separator2.png</texture>
+                </control>
+                <control type="list" id="13">
+                    <viewtype label="19029">list</viewtype>
+                    <posx>0</posx>
+                    <posy>55</posy>
+                    <width>1100</width>
+                    <height>520</height>
+                    <onup>13</onup>
+                    <ondown>13</ondown>
+                    <onleft>9000</onleft>
+                    <onright>75</onright>
+                    <pagecontrol>75</pagecontrol>
+                    <scrolltime>200</scrolltime>
+                    <itemlayout height="40">
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1100</width>
+                            <height>41</height>
+                            <texture border="5">menuitemNF.png</texture>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="label">
+                            <posx>75</posx>
+                            <posy>0</posy>
+                            <width>280</width>
+                            <height>40</height>
+                            <font>cirrus_25</font>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <textcolor>grey2</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                            <info>ListItem.Label2</info>
+                        </control>
+                        <control type="label">
+                            <posx>310</posx>
+                            <posy>0</posy>
+                            <width>640</width>
+                            <height>40</height>
+                            <font>cirrus_25</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <textcolor>grey2</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                            <info>ListItem.Label</info>
+                        </control>
+                        <control type="image">
+                            <posx>930</posx>
+                            <posy>10</posy>
+                            <width>30</width>
+                            <height>20</height>
+                            <texture>PVR-IsRecording.png</texture>
+                            <visible>ListItem.IsRecording</visible>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="label">
+                            <posx>970</posx>
+                            <posy>0</posy>
+                            <width>120</width>
+                            <height>40</height>
+                            <font>cirrus_25</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <textcolor>accent</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                            <label>19043</label>
+                            <visible>ListItem.IsRecording</visible>
+                        </control>
+                        <control type="image">
+                            <posx>940</posx>
+                            <posy>10</posy>
+                            <width>20</width>
+                            <height>20</height>
+                            <texture>PVR-HasTimer.png</texture>
+                            <visible>ListItem.HasTimer</visible>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="label">
+                            <posx>970</posx>
+                            <posy>0</posy>
+                            <width>120</width>
+                            <height>40</height>
+                            <font>cirrus_25</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <textcolor>accent</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                            <label>31510</label>
+                            <visible>ListItem.HasTimer</visible>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="40">
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1100</width>
+                            <height>41</height>
+                            <texture border="5">menuitemNF.png</texture>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1100</width>
+                            <height>40</height>
+                            <colordiffuse />
+                            <texture border="5">listwhitegradient.png</texture>
+                            <visible>!Control.HasFocus(13)</visible>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1100</width>
+                            <height>40</height>
+                            <colordiffuse />
+                            <texture border="5">listwhitegradient.png</texture>
+                            <visible>Control.HasFocus(13)</visible>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="label">
+                            <posx>75</posx>
+                            <posy>0</posy>
+                            <width>280</width>
+                            <height>40</height>
+                            <font>cirrus_25</font>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <textcolor>accent</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                            <info>ListItem.Label2</info>
+                        </control>
+                        <control type="label">
+                            <posx>310</posx>
+                            <posy>0</posy>
+                            <width>640</width>
+                            <height>40</height>
+                            <font>cirrus_25</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <textcolor>accent</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                            <info>ListItem.Label</info>
+                        </control>
+                        <control type="image">
+                            <posx>930</posx>
+                            <posy>10</posy>
+                            <width>30</width>
+                            <height>20</height>
+                            <texture>PVR-IsRecording.png</texture>
+                            <visible>ListItem.IsRecording</visible>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="label">
+                            <posx>970</posx>
+                            <posy>0</posy>
+                            <width>120</width>
+                            <height>40</height>
+                            <font>cirrus_25</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <textcolor>accent</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                            <label>19043</label>
+                            <visible>ListItem.IsRecording</visible>
+                        </control>
+                        <control type="image">
+                            <posx>940</posx>
+                            <posy>10</posy>
+                            <width>20</width>
+                            <height>20</height>
+                            <texture>PVR-HasTimer.png</texture>
+                            <visible>ListItem.HasTimer</visible>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="label">
+                            <posx>970</posx>
+                            <posy>0</posy>
+                            <width>120</width>
+                            <height>40</height>
+                            <font>cirrus_25</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <textcolor>accent</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                            <label>31510</label>
+                            <visible>ListItem.HasTimer</visible>
+                        </control>
+                    </focusedlayout>
+                </control>
+                <control type="scrollbar" id="75">
+                    <posx>1105</posx>
+                    <posy>50</posy>
+                    <width>25</width>
+                    <height>520</height>
+                    <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+                    <texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+                    <texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+                    <textureslidernib>ScrollBarNib.png</textureslidernib>
+                    <textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+                    <onleft>13</onleft>
+                    <onright>31</onright>
+                    <ondown>75</ondown>
+                    <onup>75</onup>
+                    <showonepage>false</showonepage>
+                    <orientation>vertical</orientation>
+                    <visible>Control.IsVisible(13)</visible>
+                </control>
+            </control>
+            <control type="label">
+                <description>Page Count Label</description>
+                <posx>40r</posx>
+                <posy>30r</posy>
+                <width>500</width>
+                <height>20</height>
+                <font>cirrus_20</font>
+                <textcolor>grey</textcolor>
+                <scroll>false</scroll>
+                <align>right</align>
+                <aligny>center</aligny>
+                <label>([COLOR=accent]$INFO[Container(13).NumItems][/COLOR]) $LOCALIZE[31025] - $LOCALIZE[31024] ([COLOR=accent]$INFO[Container(13).CurrentPage]/$INFO[Container(13).NumPages][/COLOR])</label>
+            </control>
+        </control>
+
+    </include>
+</includes>

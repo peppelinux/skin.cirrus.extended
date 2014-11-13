@@ -70,11 +70,14 @@
     <include file="IncludesHomeMainMenuHorz.xml"/>
     <include file="ViewsAddonBrowser.xml"/>
     <include file="ViewsLiveTV.xml"/>
-    <!-- Added for PVR Butchabay  view700-->
+
     <include file="IncludesExtendedHomePlaying.xml"/>	
     <include file="Includes_Home.xml"/>
     <!-- Weather -->
     <include file="ViewsWeather.xml"/>
+    <!-- PVR -->
+    <include file="IncludesPVR.xml"/>
+    <include file="ViewsPVRGuide.xml"/>
 
     <constant name="FanartCrossfadeTime">200</constant>
     <constant name="IconCrossfadeTime">200</constant>

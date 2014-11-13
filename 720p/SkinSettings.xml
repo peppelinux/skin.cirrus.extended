@@ -1087,6 +1087,13 @@
                         <onclick>Skin.ToggleSetting(HomeMenuNoTVButton)</onclick>
                         <selected>Skin.HasSetting(HomeMenuNoTVButton)</selected>
                     </control>
+                    <control type="radiobutton" id="241">
+                        <description>Hide Live TV Button</description>
+                        <include>MenuItemSettings</include>
+                        <label>$LOCALIZE[31111] - $LOCALIZE[19021]</label>
+                        <onclick>Skin.ToggleSetting(HomeMenuNoRadioButton)</onclick>
+                        <selected>Skin.HasSetting(HomeMenuNoRadioButton)</selected>
+                    </control>
                     <control type="radiobutton" id="250">
                         <description>Concerts</description>
                         <include>MenuItemSettings</include>
