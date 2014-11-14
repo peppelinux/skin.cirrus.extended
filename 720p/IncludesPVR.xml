@@ -48,7 +48,7 @@
                 <control type="button" id="31">
                     <description>TV Guide</description>
                     <left>0</left>
-                    <top>40</top>
+                    <top>30</top>
                     <include>ButtonCommonValues</include>
                     <label>22020</label>
                     <onclick condition="Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">NextChannelGroup</onclick>
@@ -62,7 +62,7 @@
                 <control type="button" id="34">
                     <description>Recordings</description>
                     <left>0</left>
-                    <top>80</top>
+                    <top>60</top>
                     <include>ButtonCommonValues</include>
                     <label>19163</label>
                     <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
@@ -75,7 +75,7 @@
                 <control type="button" id="35">
                     <description>Timers</description>
                     <left>0</left>
-                    <top>120</top>
+                    <top>90</top>
                     <include>ButtonCommonValues</include>
                     <label>19040</label>
                     <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
@@ -88,7 +88,7 @@
                 <control type="button" id="36">
                     <description>Search</description>
                     <left>0</left>
-                    <top>160</top>
+                    <top>120</top>
                     <include>ButtonCommonValues</include>
                     <label>137</label>
                     <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
@@ -100,7 +100,7 @@
                 </control>
                 <control type="label" id="201">
                     <left>0</left>
-                    <top>210</top>
+                    <top>160</top>
                     <top>290</top>
                     <width>250</width>
                     <height>35</height>
@@ -114,7 +114,7 @@
                 <control type="button" id="28">
                     <description>Channel Groups</description>
                     <left>0</left>
-                    <top>250</top>
+                    <top>190</top>
                     <textwidth>235</textwidth>
                     <include>ButtonCommonValues</include>
                     <label>-</label>
@@ -126,7 +126,7 @@
                 <control type="radiobutton" id="5">
                     <description>Group recording items by folder structure</description>
                     <left>0</left>
-                    <top>290</top>
+                    <top>220</top>
                     <textwidth>235</textwidth>
                     <include>ButtonCommonValues</include>
                     <label>19270</label>
@@ -139,7 +139,7 @@
                 <control type="button" id="2">
                     <description>View As button</description>
                     <left>0</left>
-                    <top>330</top>
+                    <top>250</top>
                     <textwidth>235</textwidth>
                     <include>ButtonCommonValues</include>
                     <label>-</label>
@@ -152,7 +152,7 @@
                 <control type="button" id="3">
                     <description>Sort by button</description>
                     <left>0</left>
-                    <top>370</top>
+                    <top>280</top>
                     <include>ButtonCommonValues</include>
                     <label>103</label>
                     <onleft>4</onleft>
@@ -165,7 +165,7 @@
                     <width>20</width>
                     <height>20</height>
                     <left>220</left>
-                    <top>370</top>
+                    <top>285</top>
                     <height>20</height>
                     <label>-</label>
                     <onleft>3</onleft>
@@ -178,8 +178,12 @@
                     <visible>false</visible>
                     <width>300</width>
                     <height>42</height>
+                    <ondown>603</ondown>
+                    <onup>3</onup>
                 </control>
                 <control type="group">
+                    <left>0</left>
+                    <top>280</top>
                     <include>CommonNowPlaying_Controls</include>
                 </control>
                 <control type="button" id="611">
@@ -187,6 +191,8 @@
                     <visible>false</visible>
                     <width>300</width>
                     <height>42</height>
+                    <onup>603</onup>
+                    <ondown>32</ondown>
                 </control>
             </control>
         </control> 

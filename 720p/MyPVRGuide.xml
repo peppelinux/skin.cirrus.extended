@@ -25,7 +25,7 @@
                 <include>VisibleFadeEffect</include>
             </control>
         </control>
-        <control type="group">
+        <control type="group" id="50">
             <include>Window_OpenClose_Animation</include>
             <include>PVRGuideViewTimeline</include>
             <include>PVRGuideViewNow</include>

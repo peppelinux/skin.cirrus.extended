@@ -17,6 +17,7 @@
                 <scrolltime>350</scrolltime>
                 <timeblocks>40</timeblocks>
                 <rulerunit>6</rulerunit>
+                <progresstexture border="0,48,18,14">pvrprogress.png</progresstexture>
                 <onleft>31</onleft>
                 <onright>31</onright>
                 <onup>10</onup>
@@ -210,7 +211,7 @@
                     <top>0</top>
                     <width>15</width>
                     <height>15</height>
-                    <texture>48.png</texture>
+                    <texture>epg-genres/48.png</texture>
                 </control>
                 <control type="image">
                     <left>-200</left>
@@ -1406,6 +1407,5 @@
                 <label>([COLOR=accent]$INFO[Container(13).NumItems][/COLOR]) $LOCALIZE[31025] - $LOCALIZE[31024] ([COLOR=accent]$INFO[Container(13).CurrentPage]/$INFO[Container(13).NumPages][/COLOR])</label>
             </control>
         </control>
-
     </include>
 </includes>

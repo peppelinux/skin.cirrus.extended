@@ -657,14 +657,13 @@
         <visible>[Player.HasAudio | Player.HasVideo]</visible>
         <include>VisibleFadeEffect</include>
         <control type="label">
-            <left>85</left>
+            <left>10</left>
             <top>0</top>
             <width>250</width>
             <height>40</height>
             <font>cirrus_24</font>
             <textcolor>accent</textcolor>
             <shadowcolor>black</shadowcolor>
-            <align>right</align>
             <aligny>center</aligny>
             <label>31023</label>
         </control>
