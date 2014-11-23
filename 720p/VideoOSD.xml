@@ -67,14 +67,14 @@
                     <top>0</top>
                     <width>40</width>
                     <height>28</height>
-                    <label>31356</label>
+                    <label>24012</label>
                     <font>-</font>
                     <texturefocus>OSDSubtitlesFO.png</texturefocus>
                     <texturenofocus>OSDSubtitlesNF.png</texturenofocus>
                     <onleft>702</onleft>
                     <onright>704</onright>
-                    <ondown>500</ondown>
-                    <onclick>Close</onclick>
+                    <ondown>801</ondown>
+                    <onclick>Dialog.Close(VideoOSD)</onclick>
                     <onclick>ActivateWindow(SubtitleSearch)</onclick>
                 </control>
                 <control type="button" id="704">
@@ -336,6 +336,60 @@
                 <texturesliderbar>seekslider.png</texturesliderbar>
                 <textureslidernib>osd_seeknf.png</textureslidernib>
                 <textureslidernibfocus>osd_seek.png</textureslidernibfocus>
+            </control>
+
+            <control type="grouplist" id="800">
+                <description>subtitles options</description>
+                <animation effect="fade" time="200">VisibleChange</animation>
+                <left>870</left>
+                <top>65</top>
+                <width>140</width>
+                <height>30</height>
+                <itemgap>5</itemgap>
+                <onleft>800</onleft>
+                <onright>800</onright>
+                <onup>703</onup>
+                <ondown>703</ondown>
+                <orientation>horizontal</orientation>
+                <visible>Control.HasFocus(703) | ControlGroup(800).HasFocus</visible>
+                <control type="button" id="801">
+                    <width>40</width>
+                    <height>28</height>
+                    <font>-</font>
+                    <label>31356</label>
+                    <texturefocus>OSDDownFO.png</texturefocus>
+                    <texturenofocus>OSDDownNF.png</texturenofocus>
+                    <pulseonselect>false</pulseonselect>
+                    <onclick>Dialog.Close(VideoOSD)</onclick>
+                    <onclick>ActivateWindow(SubtitleSearch)</onclick>
+                </control>
+                <control type="togglebutton" id="802">
+                    <width>40</width>
+                    <height>28</height>
+                    <font>-</font>
+                    <label>24022</label>
+                    <altlabel>24021</altlabel>
+                    <textoffsety>-500</textoffsety>
+                    <texturefocus>OSDSubsOffFO.png</texturefocus>
+                    <texturenofocus>OSDSubsOffNF.png</texturenofocus>
+                    <alttexturefocus>OSDSubsOnFO.png</alttexturefocus>
+                    <alttexturenofocus>OSDSubsOnNF.png</alttexturenofocus>
+                    <usealttexture>VideoPlayer.SubtitlesEnabled</usealttexture>
+                    <onclick>ShowSubtitles</onclick>
+                    <pulseonselect>false</pulseonselect>
+                    <visible>VideoPlayer.HasSubtitles</visible>
+                </control>
+                <control type="button" id="803">
+                    <width>40</width>
+                    <height>28</height>
+                    <font>-</font>
+                    <label>209</label>
+                    <texturefocus>OSDNextSubFO.png</texturefocus>
+                    <texturenofocus>OSDNextSubNF.png</texturenofocus>
+                    <pulseonselect>false</pulseonselect>
+                    <onclick>CycleSubtitle</onclick>
+                    <visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
+                </control>
             </control>
             <include>Clock</include>
         </control>
