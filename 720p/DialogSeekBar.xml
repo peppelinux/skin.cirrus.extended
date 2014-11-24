@@ -2,7 +2,7 @@
 <window id="115">
   <defaultcontrol>1</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
-  <visible>Window.IsActive(fullscreenvideo) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding] + !Window.IsVisible(142) + !Window.IsVisible(2901) + !Window.IsVisible(subtitlesearch) + !Skin.HasSetting(noinfopaused)</visible>
+  <visible>Window.IsActive(fullscreenvideo) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding] + !Window.IsVisible(fullscreeninfo) + !Window.IsVisible(videoosd) + !Window.IsVisible(subtitlesearch) + !Skin.HasSetting(noinfopaused)</visible>
   <animation effect="fade" start="0" end="100" time="300" tween="quadratic" easing="out">WindowOpen</animation>
   <animation effect="fade" start="100" end="0" time="300" delay="150" tween="quadratic" easing="out">WindowClose</animation>
   <coordinates>
@@ -556,96 +556,14 @@
           <top>0</top>
           <width>65</width>
           <height>55</height>
-          <texture>OSDRewindNF.png</texture>
-          <visible>Player.Rewinding</visible>
-        </control>
-        <control type="image">
-          <left>0</left>
-          <top>0</top>
-          <width>65</width>
-          <height>55</height>
-          <texture>OSDForwardNF.png</texture>
-          <visible>Player.Forwarding</visible>
+          <texture>$VAR[VideoPlayerForwardRewind,OSD,NF.png]</texture>
         </control>
         <control type="image">
           <left>86</left>
           <top>0</top>
           <width>97</width>
           <height>55</height>
-          <texture>OSD2x.png</texture>
-          <visible>Player.Rewinding2x</visible>
-        </control>
-        <control type="image">
-          <left>86</left>
-          <top>0</top>
-          <width>97</width>
-          <height>55</height>
-          <texture>OSD4x.png</texture>
-          <visible>Player.Rewinding4x</visible>
-        </control>
-        <control type="image">
-          <left>86</left>
-          <top>0</top>
-          <width>97</width>
-          <height>55</height>
-          <texture>OSD8x.png</texture>
-          <visible>Player.Rewinding8x</visible>
-        </control>
-        <control type="image">
-          <left>86</left>
-          <top>0</top>
-          <width>97</width>
-          <height>55</height>
-          <texture>OSD16x.png</texture>
-          <visible>Player.Rewinding16x</visible>
-        </control>
-        <control type="image">
-          <left>86</left>
-          <top>0</top>
-          <width>97</width>
-          <height>55</height>
-          <texture>OSD32x.png</texture>
-          <visible>Player.Rewinding32x</visible>
-        </control>
-        <control type="image">
-          <left>86</left>
-          <top>0</top>
-          <width>97</width>
-          <height>55</height>
-          <texture>OSD2x.png</texture>
-          <visible>Player.Forwarding2x</visible>
-        </control>
-        <control type="image">
-          <left>86</left>
-          <top>0</top>
-          <width>97</width>
-          <height>55</height>
-          <texture>OSD4x.png</texture>
-          <visible>Player.Forwarding4x</visible>
-        </control>
-        <control type="image">
-          <left>86</left>
-          <top>0</top>
-          <width>97</width>
-          <height>55</height>
-          <texture>OSD8x.png</texture>
-          <visible>Player.Forwarding8x</visible>
-        </control>
-        <control type="image">
-          <left>86</left>
-          <top>0</top>
-          <width>97</width>
-          <height>55</height>
-          <texture>OSD16x.png</texture>
-          <visible>Player.Forwarding16x</visible>
-        </control>
-        <control type="image">
-          <left>86</left>
-          <top>0</top>
-          <width>97</width>
-          <height>55</height>
-          <texture>OSD32x.png</texture>
-          <visible>Player.Forwarding32x</visible>
+          <texture>$VAR[VideoPlayerForwardRewindSpeed,OSD,.png]</texture>
         </control>
       </control>
       <control type="group">
@@ -658,96 +576,14 @@
           <top>10</top>
           <width>35</width>
           <height>29</height>
-          <texture>OSDRewindNF.png</texture>
-          <visible>Player.Rewinding</visible>
-        </control>
-        <control type="image">
-          <left>40</left>
-          <top>10</top>
-          <width>35</width>
-          <height>29</height>
-          <texture>OSDForwardNF.png</texture>
-          <visible>Player.Forwarding</visible>
+          <texture>$VAR[VideoPlayerForwardRewind,OSD,NF.png]</texture>
         </control>
         <control type="image">
           <left>86</left>
           <top>0</top>
           <width>67</width>
           <height>38</height>
-          <texture>OSD2x.png</texture>
-          <visible>Player.Rewinding2x</visible>
-        </control>
-        <control type="image">
-          <left>86</left>
-          <top>0</top>
-          <width>67</width>
-          <height>38</height>
-          <texture>OSD4x.png</texture>
-          <visible>Player.Rewinding4x</visible>
-        </control>
-        <control type="image">
-          <left>86</left>
-          <top>0</top>
-          <width>67</width>
-          <height>38</height>
-          <texture>OSD8x.png</texture>
-          <visible>Player.Rewinding8x</visible>
-        </control>
-        <control type="image">
-          <left>86</left>
-          <top>0</top>
-          <width>67</width>
-          <height>38</height>
-          <texture>OSD16x.png</texture>
-          <visible>Player.Rewinding16x</visible>
-        </control>
-        <control type="image">
-          <left>86</left>
-          <top>0</top>
-          <width>67</width>
-          <height>38</height>
-          <texture>OSD32x.png</texture>
-          <visible>Player.Rewinding32x</visible>
-        </control>
-        <control type="image">
-          <left>86</left>
-          <top>0</top>
-          <width>67</width>
-          <height>38</height>
-          <texture>OSD2x.png</texture>
-          <visible>Player.Forwarding2x</visible>
-        </control>
-        <control type="image">
-          <left>86</left>
-          <top>0</top>
-          <width>67</width>
-          <height>38</height>
-          <texture>OSD4x.png</texture>
-          <visible>Player.Forwarding4x</visible>
-        </control>
-        <control type="image">
-          <left>86</left>
-          <top>0</top>
-          <width>67</width>
-          <height>38</height>
-          <texture>OSD8x.png</texture>
-          <visible>Player.Forwarding8x</visible>
-        </control>
-        <control type="image">
-          <left>86</left>
-          <top>0</top>
-          <width>67</width>
-          <height>38</height>
-          <texture>OSD16x.png</texture>
-          <visible>Player.Forwarding16x</visible>
-        </control>
-        <control type="image">
-          <left>86</left>
-          <top>0</top>
-          <width>67</width>
-          <height>38</height>
-          <texture>OSD32x.png</texture>
-          <visible>Player.Forwarding32x</visible>
+          <texture>$VAR[VideoPlayerForwardRewindSpeed,OSD,.png]</texture>
         </control>
       </control>
       <control type="group">
