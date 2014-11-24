@@ -120,7 +120,7 @@
                 <top>240</top>
                 <width>920</width>
                 <height>90</height>
-                <include>Window_OpenClose_Right_Animation</include>
+                <include>Window_OpenClose_Left_Animation</include>
                 <include>NextAireDayBackgroundBright</include>
                 <control type="label">
                     <include>NextAiredDayCommon</include>
@@ -170,7 +170,7 @@
                 <top>420</top>
                 <width>920</width>
                 <height>90</height>
-                <include>Window_OpenClose_Right_Animation</include>
+                <include>Window_OpenClose_Left_Animation</include>
                 <include>NextAireDayBackgroundBright</include>
                 <control type="label">
                     <include>NextAiredDayCommon</include>
@@ -220,7 +220,7 @@
                 <top>600</top>
                 <width>920</width>
                 <height>90</height>
-                <include>Window_OpenClose_Right_Animation</include>
+                <include>Window_OpenClose_Left_Animation</include>
                 <include>NextAireDayBackgroundBright</include>
                 <control type="label">
                     <include>NextAiredDayCommon</include>
@@ -270,7 +270,7 @@
                 <top>690</top>
                 <width>920</width>
                 <height>90</height>
-                <include>Window_OpenClose_Right_Animation</include>
+                <include>Window_OpenClose_Left_Animation</include>
                 <include>NextAireDayBackgroundBright</include>
                 <control type="label">
                     <include>NextAiredDayCommon</include>
@@ -320,7 +320,7 @@
                 <top>690</top>
                 <width>920</width>
                 <height>90</height>
-                <include>Window_OpenClose_Right_Animation</include>
+                <include>Window_OpenClose_Left_Animation</include>
                 <include>NextAireDayBackgroundBright</include>
                 <control type="label">
                     <include>NextAiredDayCommon</include>
@@ -370,7 +370,7 @@
                 <top>690</top>
                 <width>920</width>
                 <height>90</height>
-                <include>Window_OpenClose_Right_Animation</include>
+                <include>Window_OpenClose_Left_Animation</include>
                 <include>NextAireDayBackgroundBright</include>
                 <control type="label">
                     <include>NextAiredDayCommon</include>
@@ -420,7 +420,7 @@
                 <top>690</top>
                 <width>920</width>
                 <height>90</height>
-                <include>Window_OpenClose_Right_Animation</include>
+                <include>Window_OpenClose_Left_Animation</include>
                 <include>NextAireDayBackgroundBright</include>
                 <control type="label">
                     <include>NextAiredDayCommon</include>
