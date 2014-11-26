@@ -81,16 +81,16 @@
         <value>$INFO[ListItem.VideoCodec,special://skin/extras/flagging/video/,.png]</value>
     </variable>
     <variable name="AudioChannels">
-        <value condition="Window.IsVisible(script-globalsearch-infodialog.xml)">$INFO[Container(100).ListItem.Property(AudioChannels),special://skin/extras/flagging/video/,.png]</value>
-        <value>$INFO[ListItem.AudioChannels,special://skin/extras/flagging/video/,.png]</value>
+        <value condition="Window.IsVisible(script-globalsearch-infodialog.xml)">$INFO[Container(100).ListItem.Property(AudioChannels),special://skin/extras/flagging/audio/,.png]</value>
+        <value>$INFO[ListItem.AudioChannels,special://skin/extras/flagging/audio/,.png]</value>
     </variable>
     <variable name="AudioCodec">
-        <value condition="Window.IsVisible(script-globalsearch-infodialog.xml)">$INFO[Container(100).ListItem.Property(AudioCodec),special://skin/extras/flagging/video/,.png]</value>
-        <value>$INFO[ListItem.AudioCodec,special://skin/extras/flagging/video/,.png]</value>
+        <value condition="Window.IsVisible(script-globalsearch-infodialog.xml)">$INFO[Container(100).ListItem.Property(AudioCodec),special://skin/extras/flagging/audio/,.png]</value>
+        <value>$INFO[ListItem.AudioCodec,special://skin/extras/flagging/audio/,.png]</value>
     </variable>
     <variable name="VideoAspect">
-        <value condition="Window.IsVisible(script-globalsearch-infodialog.xml)">$INFO[Container(100).ListItem.Property(VideoAspect),special://skin/extras/flagging/video/,.png]</value>
-        <value>$INFO[ListItem.VideoAspect,special://skin/extras/flagging/video/,.png]</value>
+        <value condition="Window.IsVisible(script-globalsearch-infodialog.xml)">$INFO[Container(100).ListItem.Property(VideoAspect),special://skin/extras/flagging/aspectratio/,.png]</value>
+        <value>$INFO[ListItem.VideoAspect,special://skin/extras/flagging/aspectratio/,.png]</value>
     </variable>
 
 
