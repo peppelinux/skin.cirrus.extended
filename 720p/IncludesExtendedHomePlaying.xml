@@ -11,8 +11,6 @@
             <left>0</left>
             <top>-11</top>
             <visible>Player.HasAudio + !SubString(Window(videolibrary).Property(tvtunesIsAlive),True)</visible>
-            <!--  + !Skin.HasSetting(homepageNowplayingInfo) -->
-
             <control type="image">
                 <left>0</left>
                 <top>0</top>
@@ -21,7 +19,6 @@
                 <texture>videoinfoback.png</texture>
                 <visible>!Skin.HasSetting(themelighthorz)</visible>
             </control>
-
             <control type="image">
                 <left>-100</left>
                 <top>-6</top>
@@ -77,7 +74,6 @@
                 <!--Skin.HasSetting(cdart)-->
                 <left>10</left>
                 <top>5</top>
-
                 <!-- CD Animation -->
                 <control type="image">
                     <description>Cd Disc</description>
@@ -294,251 +290,107 @@
 
                 <!-- numbers -->
                 <!-- label control displays text-->
-                <control type="label">
-                    <!-- not necessary, but useful for debugging -->
-                    <description>Next1</description>
-                    <!-- horizontal positioning (from left), in this case relative to group control -->
+                <control type="list">
                     <left>0</left>
-                    <!-- vertical positioning (from top), in this case relative to group control -->
-                    <top>20</top>
-                    <!-- height of control -->
-                    <height>30</height>
-                    <!-- width of control-->
-                    <width>320</width>
-                    <!-- text to display -->
-                    <label>1:</label>
-                    <!-- horizontal alignment of text -->
-                    <align>left</align>
-                    <!--- vertical alignment of text -->
-                    <aligny>center</aligny>
-                    <!-- font to use - defined in fonts.xml -->
-                    <font>cirrus_20</font>
-                    <!-- color of text -->
-                    <textcolor>accent</textcolor>
-                    <!-- color of shadow -->
-                    <shadowcolor>black</shadowcolor>
-                    <!-- only display text if condition below is satisfied -->
-                    <!-- in this case, check there is one more track to play -->
-                    <visible>MusicPlayer.Offset(1).Exists</visible>
-                    <!-- end of our label -->
-                </control>
-                <control type="label">
-                    <description>Next2</description>
-                    <left>0</left>
-                    <top>40</top>
-                    <height>30</height>
-                    <width>320</width>
-                    <label>2:</label>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <font>cirrus_20</font>
-                    <textcolor>accent</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <visible>MusicPlayer.offset(2).Exists</visible>
-                </control>
-                <control type="label">
-                    <description>Next3</description>
-                    <left>0</left>
-                    <top>60</top>
-                    <height>30</height>
-                    <width>320</width>
-                    <label>3:</label>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <font>cirrus_20</font>
-                    <textcolor>accent</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <visible>MusicPlayer.offset(3).Exists</visible>
-                </control>
-                <control type="label">
-                    <description>Next4</description>
-                    <left>0</left>
-                    <top>80</top>
-                    <height>30</height>
-                    <width>320</width>
-                    <label>4:</label>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <font>cirrus_20</font>
-                    <textcolor>accent</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <visible>MusicPlayer.offset(4).Exists</visible>
-                </control>
-                <control type="label">
-                    <description>Next5</description>
-                    <left>0</left>
-                    <top>100</top>
-                    <height>30</height>
-                    <width>320</width>
-                    <label>5:</label>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <font>cirrus_20</font>
-                    <textcolor>accent</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <visible>MusicPlayer.Offset(5).Exists</visible>
-
-                </control>
-
-                <!-- tracks -->
-                <control type="label">
-                    <description>Next1 Label</description>
-                    <left>15</left>
-                    <top>20</top>
-                    <height>30</height>
-                    <width>320</width>
-                    <label>$INFO[MusicPlayer.offset(1).Artist]$INFO[MusicPlayer.offset(1).Title, - ]</label>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <font>cirrus_20</font>
-                    <textcolor>grey</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <scroll>true</scroll>
-                    <scrollspeed>30</scrollspeed>
-                    <visible>!Skin.HasSetting(NoAutoScrollNowPlaying)</visible>
-                </control>
-                <control type="label">
-                    <description>Next1 Label</description>
-                    <left>15</left>
-                    <top>20</top>
-                    <height>30</height>
-                    <width>320</width>
-                    <label>$INFO[MusicPlayer.offset(1).Artist]$INFO[MusicPlayer.offset(1).Title, - ]</label>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <font>cirrus_20</font>
-                    <textcolor>grey</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <scroll>false</scroll>
-                    <visible>Skin.HasSetting(NoAutoScrollNowPlaying)</visible>
-                </control>
-                <control type="label">
-                    <description>Next2 Label</description>
-                    <left>15</left>
-                    <top>40</top>
-                    <height>30</height>
-                    <width>320</width>
-                    <label>$INFO[MusicPlayer.offset(2).Artist]$INFO[MusicPlayer.offset(2).Title, - ]</label>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <font>cirrus_20</font>
-                    <textcolor>grey</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <scroll>true</scroll>
-                    <scrollspeed>30</scrollspeed>
-                    <visible>!Skin.HasSetting(NoAutoScrollNowPlaying)</visible>
-                </control>
-                <control type="label">
-                    <description>Next2 Label</description>
-                    <left>15</left>
-                    <top>40</top>
-                    <height>30</height>
-                    <width>320</width>
-                    <label>$INFO[MusicPlayer.offset(2).Artist]$INFO[MusicPlayer.offset(2).Title, - ]</label>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <font>cirrus_20</font>
-                    <textcolor>grey</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <scroll>false</scroll>
-                    <visible>Skin.HasSetting(NoAutoScrollNowPlaying)</visible>
-                </control>
-                <control type="label">
-                    <description>Next3 Label</description>
-                    <left>15</left>
-                    <top>60</top>
-                    <height>30</height>
-                    <width>320</width>
-                    <label>$INFO[MusicPlayer.offset(3).Artist]$INFO[MusicPlayer.offset(3).Title, - ]</label>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <font>cirrus_20</font>
-                    <textcolor>grey</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <scroll>true</scroll>
-                    <scrollspeed>30</scrollspeed>
-                    <visible>!Skin.HasSetting(NoAutoScrollNowPlaying)</visible>
-                </control>
-                <control type="label">
-                    <description>Next3 Label</description>
-                    <left>15</left>
-                    <top>60</top>
-                    <height>30</height>
-                    <width>320</width>
-                    <label>$INFO[MusicPlayer.offset(3).Artist]$INFO[MusicPlayer.offset(3).Title, - ]</label>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <font>cirrus_20</font>
-                    <textcolor>grey</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <scroll>false</scroll>
-                    <visible>Skin.HasSetting(NoAutoScrollNowPlaying)</visible>
-                </control>
-                <control type="label">
-                    <description>Next4 Label</description>
-                    <left>15</left>
-                    <top>80</top>
-                    <height>30</height>
-                    <width>320</width>
-                    <label>$INFO[MusicPlayer.offset(4).Artist]$INFO[MusicPlayer.offset(4).Title, - ]</label>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <font>cirrus_20</font>
-                    <textcolor>grey</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <scroll>true</scroll>
-                    <scrollspeed>30</scrollspeed>
-                    <visible>!Skin.HasSetting(NoAutoScrollNowPlaying)</visible>
-                </control>
-                <control type="label">
-                    <description>Next4 Label</description>
-                    <left>15</left>
-                    <top>80</top>
-                    <height>30</height>
-                    <width>320</width>
-                    <label>$INFO[MusicPlayer.offset(4).Artist]$INFO[MusicPlayer.offset(4).Title, - ]</label>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <font>cirrus_20</font>
-                    <textcolor>grey</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <scroll>false</scroll>
-                    <visible>Skin.HasSetting(NoAutoScrollNowPlaying)</visible>
-                </control>
-                <control type="label" id="45678">
-                    <description>Next5 Label</description>
-                    <left>15</left>
-                    <top>100</top>
-                    <height>30</height>
-                    <width>320</width>
-                    <label>$INFO[MusicPlayer.offset(5).Artist]$INFO[MusicPlayer.offset(5).Title, - ]</label>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <font>cirrus_20</font>
-                    <textcolor>grey</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <scroll>true</scroll>
-                    <scrollspeed>30</scrollspeed>
-                    <visible>!Skin.HasSetting(NoAutoScrollNowPlaying)</visible>
-                </control>
-                <control type="label" id="45678">
-                    <description>Next5 Label</description>
-                    <left>15</left>
-                    <top>100</top>
-                    <height>30</height>
-                    <width>320</width>
-                    <label>$INFO[MusicPlayer.offset(5).Artist]$INFO[MusicPlayer.offset(5).Title, - ]</label>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <font>cirrus_20</font>
-                    <textcolor>grey</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <scroll>false</scroll>
-                    <visible>Skin.HasSetting(NoAutoScrollNowPlaying)</visible>
+                    <top>5</top>
+                    <width>350</width>
+                    <height>150</height>
+                    <orientation>vertical</orientation>
+                    <itemgap>0</itemgap>
+                    <itemlayout width="340" height="25">
+                        <control type="label">
+                            <description>Number</description>
+                            <left>0</left>
+                            <top>20</top>
+                            <height>25</height>
+                            <width>20</width>
+                            <label>$INFO[ListItem.Label]</label>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <font>cirrus_20</font>
+                            <textcolor>accent</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                        </control>
+                        <control type="label">
+                            <description>Titel</description>
+                            <left>15</left>
+                            <top>20</top>
+                            <height>25</height>
+                            <width>330</width>
+                            <label>$INFO[ListItem.Label2]</label>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <font>cirrus_20</font>
+                            <textcolor>grey</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <scroll>!Skin.HasSetting(NoAutoScrollNowPlaying)</scroll>
+                            <scrollspeed>30</scrollspeed>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout width="340" height="25">
+                        <control type="label">
+                            <description>Number</description>
+                            <left>0</left>
+                            <top>20</top>
+                            <height>25</height>
+                            <width>20</width>
+                            <label>$INFO[ListItem.Label]</label>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <font>cirrus_20</font>
+                            <textcolor>accent</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                        </control>
+                        <control type="label">
+                            <description>Titel</description>
+                            <left>15</left>
+                            <top>20</top>
+                            <height>25</height>
+                            <width>330</width>
+                            <label>$INFO[ListItem.Label2]</label>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <font>cirrus_20</font>
+                            <textcolor>grey</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <scroll>!Skin.HasSetting(NoAutoScrollNowPlaying)</scroll>
+                            <scrollspeed>30</scrollspeed>
+                        </control>
+                    </focusedlayout>
+                    <content>
+                        <item>
+                            <label>1:</label>
+                            <label2>$INFO[MusicPlayer.offset(1).Artist]$INFO[MusicPlayer.offset(1).Title, - ]</label2>
+                            <onclick>noop</onclick>
+                            <visible>MusicPlayer.Offset(1).Exists</visible>
+                        </item>
+                        <item>
+                            <label>2:</label>
+                            <label2>$INFO[MusicPlayer.offset(2).Artist]$INFO[MusicPlayer.offset(2).Title, - ]</label2>
+                            <onclick>noop</onclick>
+                            <visible>MusicPlayer.Offset(2).Exists</visible>
+                        </item>
+                        <item>
+                            <label>3:</label>
+                            <label2>$INFO[MusicPlayer.offset(3).Artist]$INFO[MusicPlayer.offset(3).Title, - ]</label2>
+                            <onclick>noop</onclick>
+                            <visible>MusicPlayer.Offset(3).Exists</visible>
+                        </item>
+                        <item>
+                            <label>4:</label>
+                            <label2>$INFO[MusicPlayer.offset(4).Artist]$INFO[MusicPlayer.offset(4).Title, - ]</label2>
+                            <onclick>noop</onclick>
+                            <visible>MusicPlayer.Offset(4).Exists</visible>
+                        </item>
+                        <item>
+                            <label>5:</label>
+                            <label2>$INFO[MusicPlayer.offset(5).Artist]$INFO[MusicPlayer.offset(5).Title, - ]</label2>
+                            <onclick>noop</onclick>
+                            <visible>MusicPlayer.Offset(5).Exists</visible>
+                        </item>
+                    </content>
                 </control>
             </control>
         </control>
-
-
     </include>
 </includes>
