@@ -6,15 +6,17 @@
         <control type="image">
             <description>media info background image</description>
             <left>0</left>
-            <top>30</top>
+            <top>0</top>
             <width>1280</width>
-            <height>130</height>
+            <height>155</height>
             <texture>black-back.png</texture>
         </control>
         <control type="label" id="10">
             <description>row 1 label</description>
             <left>50</left>
-            <top>40</top>
+            <top>10</top>
+            <width>1180</width>
+            <height>30</height>
             <label>-</label>
             <align>left</align>
             <font>font12</font>
@@ -23,7 +25,9 @@
         <control type="label" id="11">
             <description>row 2 label</description>
             <left>50</left>
-            <top>70</top>
+            <top>55</top>
+            <width>1180</width>
+            <height>30</height>
             <label>-</label>
             <align>left</align>
             <font>font12</font>
@@ -33,6 +37,8 @@
             <description>row 3 label</description>
             <left>50</left>
             <top>100</top>
+            <width>1180</width>
+            <height>45</height>
             <label>-</label>
             <align>left</align>
             <font>font12</font>
