@@ -495,6 +495,20 @@
                 </control>
                 <control type="label">
                     <description>NowPlaying label</description>
+                    <left>50</left>
+                    <top>5</top>
+                    <height>30</height>
+                    <width>660</width>
+                    <label>$LOCALIZE[31040]</label>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <font>cirrus_20</font>
+                    <textcolor>accent</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <visible>!Skin.HasSetting(cleannowplaying) + !Skin.HasSetting(Use_Startup_DreamVideo) + VideoPlayer.Content(Episodes)</visible>
+                </control>
+                <control type="label">
+                    <description>NowPlaying label</description>
                     <left>115</left>
                     <top>5</top>
                     <height>30</height>
@@ -505,8 +519,7 @@
                     <font>cirrus_20</font>
                     <textcolor>accent</textcolor>
                     <shadowcolor>black</shadowcolor>
-                    <visible>!Skin.HasSetting(cleannowplaying)</visible>
-                    <visible>!Skin.HasSetting(Use_Startup_DreamVideo)</visible>
+                    <visible>!Skin.HasSetting(cleannowplaying) + !Skin.HasSetting(Use_Startup_DreamVideo) + !VideoPlayer.Content(Episodes)</visible>
                 </control>
                 <control type="label">
                     <description>NowPlaying label</description>
@@ -884,16 +897,6 @@
                         <bordersize>5</bordersize>
                         <visible>!Skin.HasSetting(cleannowplaying)</visible>
                     </control>
-                    <!-- <control type="image">
-          <left>0</left>
-          <top>35</top>
-          <width>190</width>
-          <height>130</height>
-          <aspectratio aligny="top">stretch</aspectratio>
-          <fadetime>IconCrossfadeTime</fadetime>
-          <texture background="true" diffuse="maskposter.png">GlassOverlay2.png</texture>
-		  <visible>!Skin.HasSetting(cleannowplaying)</visible>
-        </control> -->
                     <control type="label">
                         <description>TV Show label</description>
                         <left>200</left>
