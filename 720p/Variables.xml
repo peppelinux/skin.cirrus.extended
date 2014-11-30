@@ -111,7 +111,7 @@
         <!-- US -->
         <value condition="SubString(ListItem.Mpaa,Rated G) | SubString(ListItem.mpaa,US:G) | SubString(ListItem.mpaa,USA:G)">mpaa_general</value>
         <value condition="SubString(ListItem.Mpaa,Rated PG-13) | SubString(ListItem.mpaa,US:PG-13) | SubString(ListItem.mpaa,USA:PG-13)">mpaa_pg13</value>
-        <value condition="SubString(ListItem.Mpaa,Rated PG | SubString(ListItem.mpaa,US:PG) | SubString(ListItem.mpaa,USA:PG)">mpaa_pg</value>
+        <value condition="SubString(ListItem.Mpaa,Rated PG) | SubString(ListItem.mpaa,US:PG) | SubString(ListItem.mpaa,USA:PG)">mpaa_pg</value>
         <value condition="SubString(Listitem.mpaa,Rated R) | SubString(ListItem.mpaa,US:R) | SubString(ListItem.mpaa,USA:R)">mpaa_restricted</value>
         <value condition="SubString(Listitem.mpaa,Rated NC-17) | SubString(ListItem.mpaa,US:NC-17) | SubString(ListItem.mpaa,USA:NC-17)">mpaa_nc17</value>
         <value condition="SubString(Container(100).ListItem.Property(Mpaa),Rated G) | SubString(Container(100).ListItem.Property(Mpaa),US:G) | SubString(Container(100).ListItem.Property(Mpaa),USA:G)">mpaa_general</value>
@@ -122,7 +122,7 @@
         <!-- UK -->
         <value condition="SubString(Listitem.mpaa,UK:U)">UK_u</value>
         <value condition="SubString(Listitem.mpaa,UK:PG)">UK_pg</value>
-        <value condition="SubString(Listitem.mpaa,UK:12a">UK_12a</value>
+        <value condition="SubString(Listitem.mpaa,UK:12a)">UK_12a</value>
         <value condition="SubString(Listitem.mpaa,UK:12)">UK_12</value>
         <value condition="SubString(Listitem.mpaa,UK:15)">UK_15</value>
         <value condition="SubString(Listitem.mpaa,UK:18)">UK_18</value>
@@ -141,10 +141,10 @@
         <value condition="SubString(Listitem.mpaa,Germany:16) | SubString(Listitem.mpaa,FSK 16) | SubString(ListItem.mpaa,ab 16) | StringCompare(ListItem.mpaa,16) | SubString(ListItem.mpaa,Rated 16)">Germany16</value>
         <value condition="SubString(Listitem.mpaa,Germany:18) | SubString(Listitem.mpaa,FSK 18) | SubString(ListItem.mpaa,ab 18) | StringCompare(ListItem.mpaa,18) | SubString(ListItem.mpaa,Rated 18)">Germany18</value>
         <value condition="SubString(Container(100).ListItem.Property(mpaa),Germany:o.A.) | SubString(Container(100).ListItem.Property(mpaa), o.A.) | SubString(Container(100).ListItem.Property(mpaa), Germany:o.Al.) | SubString(Container(100).ListItem.Property(mpaa), Germany:0) | SubString(Container(100).ListItem.Property(mpaa), FSK 0)">Germany0</value>
-        <value condition="SubString(Container(100).ListItem.Property(mpaa),Germany:6) | SubString(Container(100).ListItem.Property(mpaa),FSK 6) | SubString(SubString(Container(100).ListItem.Property(mpaa),ab 6) | StringCompare(SubString(Container(100).ListItem.Property(mpaa),6) | SubString(SubString(Container(100).ListItem.Property(mpaa),Rated 6)">Germany6</value>
-        <value condition="SubString(Container(100).ListItem.Property(mpaa),Germany:12) | SubString(Container(100).ListItem.Property(mpaa),FSK 12) | SubString(SubString(Container(100).ListItem.Property(mpaa),ab 12) | StringCompare(SubString(Container(100).ListItem.Property(mpaa),12) | SubString(SubString(Container(100).ListItem.Property(mpaa),Rated 12)">Germany12</value>
-        <value condition="SubString(Container(100).ListItem.Property(mpaa),Germany:16) | SubString(Container(100).ListItem.Property(mpaa),FSK 16) | SubString(SubString(Container(100).ListItem.Property(mpaa),ab 16) | StringCompare(SubString(Container(100).ListItem.Property(mpaa),16) | SubString(SubString(Container(100).ListItem.Property(mpaa),Rated 16)">Germany16</value>
-        <value condition="SubString(Container(100).ListItem.Property(mpaa),Germany:18) | SubString(Container(100).ListItem.Property(mpaa),FSK 18) | SubString(SubString(Container(100).ListItem.Property(mpaa),ab 18) | StringCompare(SubString(Container(100).ListItem.Property(mpaa),18) | SubString(SubString(Container(100).ListItem.Property(mpaa),Rated 18)">Germany18</value>
+        <value condition="SubString(Container(100).ListItem.Property(mpaa),Germany:6) | SubString(Container(100).ListItem.Property(mpaa),FSK 6) | SubString(Container(100).ListItem.Property(mpaa),ab 6) | StringCompare(Container(100).ListItem.Property(mpaa),6) | SubString(Container(100).ListItem.Property(mpaa),Rated 6)">Germany6</value>
+        <value condition="SubString(Container(100).ListItem.Property(mpaa),Germany:12) | SubString(Container(100).ListItem.Property(mpaa),FSK 12) | SubString(Container(100).ListItem.Property(mpaa),ab 12) | StringCompare(Container(100).ListItem.Property(mpaa),12) | SubString(Container(100).ListItem.Property(mpaa),Rated 12)">Germany12</value>
+        <value condition="SubString(Container(100).ListItem.Property(mpaa),Germany:16) | SubString(Container(100).ListItem.Property(mpaa),FSK 16) | SubString(Container(100).ListItem.Property(mpaa),ab 16) | StringCompare(Container(100).ListItem.Property(mpaa),16) | SubString(Container(100).ListItem.Property(mpaa),Rated 16)">Germany16</value>
+        <value condition="SubString(Container(100).ListItem.Property(mpaa),Germany:18) | SubString(Container(100).ListItem.Property(mpaa),FSK 18) | SubString(Container(100).ListItem.Property(mpaa),ab 18) | StringCompare(Container(100).ListItem.Property(mpaa),18) | SubString(Container(100).ListItem.Property(mpaa),Rated 18)">Germany18</value>
         <!-- none -->
         <value condition="IsEmpty(Listitem.mpaa) | IsEmpty(Container(100).ListItem.Property(mpaa))">mpaa_notrated</value>
     </variable>
