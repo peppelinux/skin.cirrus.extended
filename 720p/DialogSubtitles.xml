@@ -246,7 +246,7 @@
                     <font>cirrus_24</font>
                     <align>center</align>
                     <textcolor>accent</textcolor>
-                    <shadowcolor>AA000000</shadowcolor>
+                    <shadowcolor>black</shadowcolor>
                 </control>
                 <control type="list" id="150">
                     <left>1055</left>
@@ -301,13 +301,19 @@
                     <description>Manual search button</description>
                     <left>1060</left>
                     <top>360</top>
-                    <width>220</width>
+                    <width>900</width>
+                    <height>25</height>
                     <onleft>120</onleft>
                     <onright>120</onright>
                     <onup>150</onup>
                     <ondown>150</ondown>
                     <font>cirrus_18_Bold</font>
-                    <include>ButtonVideoInfoCommonValues</include>
+                    <textoffsetx>15</textoffsetx>
+                    <textcolor>grey</textcolor>
+                    <focusedcolor>white</focusedcolor>
+                    <texturefocus border="0">recentlyaddeddiffuse.png</texturefocus>
+                    <texturenofocus border="0">-</texturenofocus>
+                    <pulseonselect>false</pulseonselect>
                     <label>$LOCALIZE[24120]</label>
                 </control>
             </control>
