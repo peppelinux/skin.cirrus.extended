@@ -239,8 +239,8 @@
         <include condition="Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)">HomeRecentlyAddedInfo</include>
         <include condition="Skin.HasSetting(homepageHideRecentlyAdded) + Skin.HasSetting(homepagerecentlyaddedinfohorz)">HomeRecentlyAddedInfoHorz</include>
         <include condition="!Skin.HasSetting(horzHomeMenu)">HomeNowPlaying</include>
-        <include condition="Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu)">HomeNowPlayingHorz</include>
-        <include condition="Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu)">IncludesHomeNowPlayingHorz-middle</include>
+        <include condition="Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu)">HomeNowPlayingHorzLow</include>
+        <include condition="Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu)">HomeNowPlayingHorz</include>
         <include condition="Skin.HasSetting(homepageextrainfo)">InfoOnHome</include>
         <control type="group">
             <!-- SUBMENUS -->
