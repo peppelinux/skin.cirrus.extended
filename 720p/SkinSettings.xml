@@ -937,7 +937,7 @@
                         <label>41014</label>
                         <onclick>Skin.ToggleSetting(cleannowplaying)</onclick>
                         <selected>Skin.HasSetting(cleannowplaying)</selected>
-                        <enable>!Skin.HasSetting(homepageNowplayingInfo) + !Skin.HasSetting(ExtendedNowPlaying) + !Skin.HasSetting(cdartonhome)</enable>
+                        <enable>!Skin.HasSetting(homepageNowplayingInfo) + !Skin.HasSetting(ExtendedNowPlaying)</enable>
                     </control>
                     <control type="radiobutton" id="1068">
                         <description>extended Now Playing</description>
@@ -945,7 +945,7 @@
                         <label>41141</label>
                         <onclick>Skin.ToggleSetting(ExtendedNowPlaying)</onclick>
                         <selected>Skin.HasSetting(ExtendedNowPlaying)</selected>
-                        <enable>!Skin.HasSetting(homepageNowplayingInfo) + [Skin.HasSetting(horzHomeMenu) | Skin.HasSetting(horzLowHomeMenu)] + !Skin.HasSetting(cdartonhome) + !Skin.HasSetting(cleannowplaying)</enable>
+                        <enable>!Skin.HasSetting(homepageNowplayingInfo) + [Skin.HasSetting(horzHomeMenu) | Skin.HasSetting(horzLowHomeMenu)] + !Skin.HasSetting(cleannowplaying)</enable>
                     </control>
                     <control type="radiobutton" id="1069">
                         <description>extended Now Playing progress</description>
@@ -970,14 +970,6 @@
                         <onclick>Skin.ToggleSetting(NoAutoScrollNowPlaying)</onclick>
                         <selected>Skin.HasSetting(NoAutoScrollNowPlaying)</selected>
                         <enable>!Skin.HasSetting(homepageNowplayingInfo) + Skin.HasSetting(ExtendedNowPlaying) + [Skin.HasSetting(horzHomeMenu) | Skin.HasSetting(horzLowHomeMenu)]</enable>
-                    </control>
-                    <control type="radiobutton" id="1002">
-                        <description>Enable CDArt animation on Home</description>
-                        <include>MenuItemSettings</include>
-                        <label>41008</label>
-                        <onclick>Skin.ToggleSetting(cdartonhome)</onclick>
-                        <selected>Skin.HasSetting(cdartonhome)</selected>
-                        <enable>!Skin.HasSetting(homepageNowplayingInfo) + !Skin.HasSetting(cleannowplaying) + !Skin.HasSetting(ExtendedNowPlaying)</enable>
                     </control>
                     <control type="radiobutton" id="1065">
                         <!-- music fanart -->
