@@ -62,7 +62,6 @@
     <include file="IncludesHomeRecentlyAddedHorz.xml"/>
     <include file="IncludesHomeNowPlaying.xml"/>
     <include file="IncludesHomeSubmenuHorz.xml"/>
-    <include file="IncludesHomeSubmenuHorzLow.xml"/>
     <include file="IncludesHomeSubmenu.xml"/>
     <include file="IncludesHomeMainMenu.xml"/>
     <include file="IncludesHomeMainMenuHorz.xml"/>
