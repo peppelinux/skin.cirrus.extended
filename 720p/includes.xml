@@ -61,8 +61,6 @@
     <include file="IncludesHomeRecentlyAdded.xml"/>
     <include file="IncludesHomeRecentlyAddedHorz.xml"/>
     <include file="IncludesHomeNowPlaying.xml"/>
-    <include file="IncludesHomeNowPlayingHorz.xml"/>
-    <include file="IncludesHomeNowPlayingHorz-middle.xml"/>
     <include file="IncludesHomeSubmenuHorz.xml"/>
     <include file="IncludesHomeSubmenuHorzLow.xml"/>
     <include file="IncludesHomeSubmenu.xml"/>
@@ -78,6 +76,8 @@
     <!-- PVR -->
     <include file="IncludesPVR.xml"/>
     <include file="ViewsPVRGuide.xml"/>
+
+    <include file="IncludesSideBlade.xml"/>
 
     <constant name="FanartCrossfadeTime">200</constant>
     <constant name="IconCrossfadeTime">200</constant>
@@ -399,28 +399,6 @@
         <texturefocus border="0">button-focus.png</texturefocus>
         <texturenofocus border="0">button-nofocus.png</texturenofocus>
         <pulseonselect>false</pulseonselect>
-    </include>
-    <include name="SideBladeLeft">
-        <control type="image">
-            <left>-820</left>
-            <top>0</top>
-            <width>820</width>
-            <height>720</height>
-            <texture border="5">dialogbackground.png</texture>
-            <animation effect="slide" start="-26,0" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
-            <animation effect="slide" start="0,0" end="-26,0" time="200" delay="200" tween="quadratic" easing="out">WindowClose</animation>
-        </control>
-    </include>
-    <include name="SideBladeLeftPVR">
-        <control type="image">
-            <left>-820</left>
-            <top>0</top>
-            <width>846</width>
-            <height>720</height>
-            <texture>HomeBlade.png</texture>
-            <animation effect="slide" start="-26,0" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
-            <animation effect="slide" start="0,0" end="-26,0" time="200" delay="200" tween="quadratic" easing="out">WindowClose</animation>
-        </control>
     </include>
 
     <!-- Animation Includes 1.2.2 -->
@@ -1126,11 +1104,6 @@
         <textcolor>orange</textcolor>
         <shadowcolor>black</shadowcolor>
         <align>right</align>
-    </include>
-    <include name="WeatherTxt">
-        <font>cirrus_20</font>
-        <align>left</align>
-        <aligny>center</aligny>
     </include>
     <include name="WeatherTxtLabel2">
         <left>185</left>
