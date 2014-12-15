@@ -128,7 +128,7 @@
         <texturenofocus border="5">button-nofocus.png</texturenofocus>
         <sliderwidth>150</sliderwidth>
         <sliderheight>20</sliderheight>
-        <texturesliderbar>osd_slider_bg.png</texturesliderbar>
+        <texturesliderbar>OSDSubOffNF.png</texturesliderbar>
         <textureslidernib>osd_slider_nibNF.png</textureslidernib>
         <textureslidernibfocus>osd_slider_nib.png</textureslidernibfocus>
         <font>font12</font>
