@@ -164,7 +164,7 @@
                             <top>0</top>
                             <width>780</width>
                             <height>36</height>
-                            <texture flipx="true">recentlyaddeddiffuse.png</texture>
+                            <texture flipx="true">menuitemFO.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="label">
@@ -261,7 +261,7 @@
                     <scrolltime>200</scrolltime>
                     <itemlayout width="400" height="36">
                         <control type="label">
-                            <left>20</left>
+                            <left>5</left>
                             <top>0</top>
                             <width>210</width>
                             <height>38</height>
@@ -273,18 +273,18 @@
                             <info>ListItem.Label</info>
                         </control>
                     </itemlayout>
-                    <focusedlayout width="900" height="36">
+                    <focusedlayout width="250" height="36">
                         <control type="image">
                             <left>1</left>
                             <top>6</top>
-                            <width>900</width>
+                            <width>250</width>
                             <height>25</height>
-                            <texture>recentlyaddeddiffuse.png</texture>
+                            <texture flipx="true">menuitemFO.png</texture>
                             <visible>Control.HasFocus(150)</visible>
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="label">
-                            <left>20</left>
+                            <left>5</left>
                             <top>0</top>
                             <width>210</width>
                             <height>38</height>
@@ -299,19 +299,19 @@
                 </control>
                 <control type="button" id="160">
                     <description>Manual search button</description>
-                    <left>1060</left>
+                    <left>1055</left>
                     <top>360</top>
-                    <width>900</width>
+                    <width>250</width>
                     <height>25</height>
                     <onleft>120</onleft>
                     <onright>120</onright>
                     <onup>150</onup>
                     <ondown>150</ondown>
                     <font>cirrus_18_Bold</font>
-                    <textoffsetx>15</textoffsetx>
+                    <textoffsetx>5</textoffsetx>
                     <textcolor>grey</textcolor>
-                    <focusedcolor>white</focusedcolor>
-                    <texturefocus border="0">recentlyaddeddiffuse.png</texturefocus>
+                    <focusedcolor>grey</focusedcolor>
+                    <texturefocus border="0" flipx="true">menuitemFO.png</texturefocus>
                     <texturenofocus border="0">-</texturenofocus>
                     <pulseonselect>false</pulseonselect>
                     <label>$LOCALIZE[24120]</label>
