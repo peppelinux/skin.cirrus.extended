@@ -123,20 +123,21 @@
             <onleft>9000</onleft>
             <onright>9000</onright>
             <viewtype>list</viewtype>
-            <onup condition="!Container(9000).Hasfocus(3) + !Container(9000).Hasfocus(4) + !Container(9000).Hasfocus(5) + !Container(9000).Hasfocus(9) + !Container(9000).Hasfocus(10) + !Container(9000).Hasfocus(11)">9001</onup>
-            <onup condition="Container(9000).Hasfocus(3)">8006</onup>
-            <onup condition="Container(9000).Hasfocus(4)">8007</onup>
-            <onup condition="Container(9000).Hasfocus(5)">8008</onup>
-            <onup condition="Container(9000).Hasfocus(9)">8009</onup>
-            <onup condition="Container(9000).Hasfocus(10)">8010</onup>
-            <onup condition="Container(9000).Hasfocus(11)">8011</onup>
+            <onup condition="!Container(9000).Hasfocus(3) + !Container(9000).Hasfocus(4) + !Container(9000).Hasfocus(5) + !Container(9000).Hasfocus(9) + !Container(9000).Hasfocus(10) + !Container(9000).Hasfocus(11) + !Container(9000).Hasfocus(31)">9001</onup>
+            <onup condition="Container(9000).Hasfocus(3)">9105</onup>
+            <onup condition="Container(9000).Hasfocus(4)">9106</onup>
+            <onup condition="Container(9000).Hasfocus(5)">9107</onup>
+            <onup condition="Container(9000).Hasfocus(9)">9108</onup>
+            <onup condition="Container(9000).Hasfocus(10)">9109</onup>
+            <onup condition="Container(9000).Hasfocus(11)">9110</onup>
+            <onup condition="Container(9000).Hasfocus(31)">9103</onup>
             <ondown>10</ondown>
             <pagecontrol>-</pagecontrol>
             <scrolltime tween="quadratic" easing="out">300</scrolltime>
             <focusposition>1</focusposition>
             <orientation>horizontal</orientation>
             <animation effect="fade" start="0" end="100" time="200">Visible</animation>
-            <animation effect="fade" start="100" end="30" time="200" condition="Window.IsVisible(1113) | ControlGroup(9001).HasFocus | ControlGroup(10).HasFocus | Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002) | Control.HasFocus(8005) | Control.HasFocus(8006) | Control.HasFocus(8007) | Control.HasFocus(8008) | Control.HasFocus(8009) | Control.HasFocus(8010) | Control.HasFocus(8011)">conditional</animation>
+            <animation effect="fade" start="100" end="30" time="200" condition="Window.IsVisible(1113) | ControlGroup(9001).HasFocus | ControlGroup(10).HasFocus | Control.HasFocus(8000) | Control.HasFocus(9101) | Control.HasFocus(8002) | Control.HasFocus(8005) | Control.HasFocus(9110) | Control.HasFocus(8009) | Control.HasFocus(8010) | Control.HasFocus(8011)">conditional</animation>
 
             <itemlayout condition="!Skin.HasSetting(horzLowHomeMenu)" width="430">
                 <control type="label">

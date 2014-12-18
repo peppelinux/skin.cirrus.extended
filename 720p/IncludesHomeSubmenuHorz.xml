@@ -127,7 +127,7 @@
             <orientation>horizontal</orientation>
             <focusposition>2</focusposition>
             <scrolltime>200</scrolltime>
-            <onup>8002</onup>
+            <onup>9102</onup>
             <ondown>9000</ondown>
             <itemgap>0</itemgap>
             <visible>Container(9000).HasFocus(14)</visible>
@@ -295,7 +295,7 @@
             <orientation>horizontal</orientation>
             <focusposition>2</focusposition>
             <scrolltime>200</scrolltime>
-            <onup>8005</onup>
+            <onup>9104</onup>
             <ondown>9000</ondown>
             <itemgap>0</itemgap>
             <visible>Container(9000).HasFocus(18) + [[Skin.HasSetting(HomeScriptButton1) + !IsEmpty(Skin.String(HomeScriptButton1_label))] | [Skin.HasSetting(HomeScriptButton2) + !IsEmpty(Skin.String(HomeScriptButton2_label))] | [Skin.HasSetting(HomeScriptButton3) + !IsEmpty(Skin.String(HomeScriptButton3_label))] | [Skin.HasSetting(HomeScriptButton4) + !IsEmpty(Skin.String(HomeScriptButton4_label))] | [Skin.HasSetting(HomeScriptButton5) + !IsEmpty(Skin.String(HomeScriptButton5_label))] | [Skin.HasSetting(HomeScriptButton6) + !IsEmpty(Skin.String(HomeScriptButton6_label))]]</visible>
@@ -423,7 +423,7 @@
             <orientation>horizontal</orientation>
             <focusposition>2</focusposition>
             <scrolltime>200</scrolltime>
-            <onup>8000</onup>
+            <onup>9100</onup>
             <ondown>9000</ondown>
             <itemgap>0</itemgap>
             <visible>Container(9000).HasFocus(1)</visible>
@@ -628,7 +628,7 @@
             <orientation>horizontal</orientation>
             <focusposition>2</focusposition>
             <scrolltime>200</scrolltime>
-            <onup>8001</onup>
+            <onup>9101</onup>
             <ondown>9000</ondown>
             <itemgap>0</itemgap>
             <visible>Container(9000).HasFocus(7)</visible>
