@@ -6,6 +6,8 @@
     <include name="WidgetHomeLayout">
         <animation effect="fade" start="0" end="100" delay="800" time="500">Visible</animation>
         <animation effect="fade" start="100" end="0" time="400">Hidden</animation>
+        <animation effect="fade" start="0" end="100" delay="800" time="500">WindowOpen</animation>
+        <animation effect="fade" start="100" end="0" time="400">WindowClose</animation>
         <control type="group">
             <control type="image">
                 <left>-10</left>
@@ -91,8 +93,8 @@
     </include>
 
     <include name="NoWidgetContentLabelLayoutPosition">
-        <left>-1045</left>
-        <top>-20</top>
+        <left>-1038</left>
+        <top>-25</top>
     </include>
     <include name="WidgetContentLabelLayoutPosition">
         <left>0</left>
@@ -102,6 +104,8 @@
     <include name="WidgetContentLabelAnimation">
         <animation effect="fade" start="0" end="100" delay="800" time="500">Visible</animation>
         <animation effect="fade" start="100" end="0" time="400">Hidden</animation>
+        <animation effect="fade" start="0" end="100" delay="800" time="500">WindowOpen</animation>
+        <animation effect="fade" start="100" end="0" time="400">WindowClose</animation>
     </include>
 
     <include name="NoWidgetContentLabelAnimation">
@@ -109,40 +113,45 @@
         <animation effect="slide" start="0,0" end="-1020,0" time="400" easing="inout" tween="cubic">Hidden</animation>
     </include>
 
+    <include name="WidgetContentLabelControl">
+        <control type="group">
+            <control type="label">
+                <description>Widget Name</description>
+                <left>0</left>
+                <top>25</top>
+                <!-- <width>220</width> -->
+                <height>40</height>
+                <align>center</align>
+                <aligny>center</aligny>
+                <label>$INFO[ListItem.Label]</label>
+                <font>cirrus_20</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+            </control>
+        </control>
+    </include>
     <include name="WidgetContentLabelLayout">
-        <include condition="Skin.HasSetting(nomoviewidget)">WidgetContentLabelAnimation</include>
-        <include condition="!Skin.HasSetting(nomoviewidget)">NoWidgetContentLabelAnimation</include>
-        <include condition="Skin.HasSetting(nomoviewidget)">WidgetContentLabelLayoutPosition</include>
-        <include condition="!Skin.HasSetting(nomoviewidget)">NoWidgetContentLabelLayoutPosition</include>
-        <width>240</width>
+        <width>360</width>
         <height>230</height>
         <ondown>9000</ondown>
         <viewtype label="WidgetContentList">list</viewtype>
         <orientation>horizontal</orientation>
-        <scrolltime tween="sine" easing="out">200</scrolltime>
+        <scrolltime>0</scrolltime>
         <itemlayout/>
-        <focusedlayout height="230" width="240">
-            <control type="group">
-                <control type="label">
-                    <description>Widget Name</description>
-                    <left>0</left>
-                    <top>25</top>
-                    <width>220</width>
-                    <height>40</height>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$INFO[ListItem.Label]</label>
-                    <font>cirrus_20</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                </control>
-            </control>
+        <focusedlayout height="230" width="370" condition="SubString(Control.GetLabel(91004),Thumb,left)">
+            <include>WidgetContentLabelControl</include>
+        </focusedlayout>
+        <focusedlayout height="230" width="260" condition="SubString(Control.GetLabel(91004),Cover,left)">
+            <include>WidgetContentLabelControl</include>
+        </focusedlayout>
+        <focusedlayout height="230" width="220" condition="SubString(Control.GetLabel(91004),Poster,left) | StringCompare(Control.GetLabel(91004),Widget)">
+            <include>WidgetContentLabelControl</include>
         </focusedlayout>
     </include>
 
     <include name="WidgetListBackground">
         <control type="group">
-            <visible>[Control.HasFocus(9100) + !Skin.HasSetting(nomoviewidget)] | Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002) | Control.HasFocus(8003) | Control.HasFocus(8004) | Control.HasFocus(8005) | Control.HasFocus(8006) | Control.HasFocus(8007) | Control.HasFocus(8008) | Control.HasFocus(8009) | Control.HasFocus(8010)</visible>
+            <visible>[Control.HasFocus(9100) + !Skin.HasSetting(nomoviewidget)] | Control.HasFocus(8000) | [Control.HasFocus(9101) + !Skin.HasSetting(notvshowwidget)] | Control.HasFocus(8001) | [Control.HasFocus(9102) + !Skin.HasSetting(nomusicwidget)] | Control.HasFocus(8002) | [Control.HasFocus(9103) + !Skin.HasSetting(nomusicvideoswidget)] | Control.HasFocus(8003) | [Control.HasFocus(9104) + !Skin.HasSetting(noaddonwidget)] | Control.HasFocus(8004) | [Control.HasFocus(9105) + !Skin.HasSetting(nomoviewidgetplaylistmovie1)] | Control.HasFocus(8005) | [Control.HasFocus(9106) + !Skin.HasSetting(nomoviewidgetplaylistmovie2)] | Control.HasFocus(8006) | [Control.HasFocus(9107) + !Skin.HasSetting(nomoviewidgetplaylistmovie3)] | Control.HasFocus(8007) | [Control.HasFocus(9108) + !Skin.HasSetting(notvwidgetplaylisttv1)] | Control.HasFocus(8008) | [Control.HasFocus(9109) + !Skin.HasSetting(notvwidgetplaylisttv2)] | Control.HasFocus(8009) | [Control.HasFocus(9110) + !Skin.HasSetting(notvwidgetplaylisttv3)] | Control.HasFocus(8010)</visible>
             <animation effect="fade" start="0" end="100" time="400">Visible</animation>
             <animation effect="fade" start="100" end="0" time="400" delay="400">Hidden</animation>
             <control type="image">
@@ -187,7 +196,7 @@
                 <visible>SubString(Control.GetLabel(91001),Poster,left)</visible>
             </control>
             <control type="image">
-                <left>360</left>
+                <left>370</left>
                 <top>80</top>
                 <width>1</width>
                 <height>240</height>
@@ -277,17 +286,10 @@
         <left>380</left>
     </include>
 
-    <include name="NoWidgetListArtOffset">
-        <top>20</top>
-    </include>
-    <include name="WidgetListArtOffset">
-        <top>0</top>
-    </include>
-
     <include name="WidgetListInfoLayout">
         <control type="group">
             <description>Recently Added Widget Movies</description>
-            <visible>[Control.HasFocus(9100) + !Skin.HasSetting(nomoviewidget)] | Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002) | Control.HasFocus(8003) | Control.HasFocus(8004) | Control.HasFocus(8005) | Control.HasFocus(8006) | Control.HasFocus(8007) | Control.HasFocus(8008) | Control.HasFocus(8009) | Control.HasFocus(8010)</visible>
+            <visible>[Control.HasFocus(9100) + !Skin.HasSetting(nomoviewidget)] | Control.HasFocus(8000) | [Control.HasFocus(9101) + !Skin.HasSetting(notvshowwidget)] | Control.HasFocus(8001) | [Control.HasFocus(9102) + !Skin.HasSetting(nomusicwidget)] | Control.HasFocus(8002) | [Control.HasFocus(9103) + !Skin.HasSetting(nomusicvideoswidget)] | Control.HasFocus(8003) | [Control.HasFocus(9104) + !Skin.HasSetting(noaddonwidget)] | Control.HasFocus(8004) | [Control.HasFocus(9105) + !Skin.HasSetting(nomoviewidgetplaylistmovie1)] | Control.HasFocus(8005) | [Control.HasFocus(9106) + !Skin.HasSetting(nomoviewidgetplaylistmovie2)] | Control.HasFocus(8006) | [Control.HasFocus(9107) + !Skin.HasSetting(nomoviewidgetplaylistmovie3)] | Control.HasFocus(8007) | [Control.HasFocus(9108) + !Skin.HasSetting(notvwidgetplaylisttv1)] | Control.HasFocus(8008) | [Control.HasFocus(9109) + !Skin.HasSetting(notvwidgetplaylisttv2)] | Control.HasFocus(8009) | [Control.HasFocus(9110) + !Skin.HasSetting(notvwidgetplaylisttv3)] | Control.HasFocus(8010)</visible>
             <left>-2100</left>
             <top>-16</top>
             <animation effect="slide" start="0,0" end="1020,0" time="400" delay="400" easing="inout" tween="cubic">Visible</animation>
@@ -298,63 +300,112 @@
                 <visible>SubString(Control.GetLabel(91001),Poster,left)</visible>
             </control>
             <control type="group">
-                <include condition="Skin.HasSetting(nomoviewidget)">WidgetListArtOffset</include>
-                <include condition="!Skin.HasSetting(nomoviewidget)">NoWidgetListArtOffset</include>
-                <control type="image">
-                    <description>Poster</description>
-                    <left>70</left>
-                    <top>30</top>
-                    <width>150</width>
-                    <height>230</height>
-                    <aspectratio scalediffuse="false">stretch</aspectratio>
-                    <texture background="true" fallback="DefaultVideo.png">$VAR[WidgetListArt]</texture>
-                    <bordertexture border="6">ContentPanelvertical.png</bordertexture>
-                    <bordersize>6</bordersize>
-                    <visible>SubString(Control.GetLabel(91001),Poster,left)</visible>
-                </control>
-
-                <control type="image">
+                <left>0</left>
+                <top>30</top>
+                <width>400</width>
+                <height>400</height>
+                <control type="grouplist">
+                    <animation effect="slide" start="0,0" end="0,20" time="0" condition="!StringCompare(Control.GetLabel(91004),Widget)" reversible="false">Conditional</animation>
+                    <orientation>horizontal</orientation>
                     <left>55</left>
-                    <centertop>145</centertop>
-                    <width>20</width>
-                    <height>30</height>
-                    <texture background="true" flipx="true">OSDPlayNF.png</texture>
-                    <aspectratio>stretch</aspectratio>
-                    <visible>!IsEmpty(Control.GetLabel(91002)) + !Skin.HasSetting(nomoviewidget)</visible>
-                </control>
-                <control type="image">
-                    <left>215</left>
-                    <centertop>145</centertop>
-                    <width>20</width>
-                    <height>30</height>
-                    <texture background="true">OSDPlayNF.png</texture>
-                    <aspectratio>stretch</aspectratio>
-                    <visible>!IsEmpty(Control.GetLabel(91003)) + !Skin.HasSetting(nomoviewidget)</visible>
-                </control>
-
-                <control type="image">
-                    <description>Thumb</description>
-                    <left>70</left>
-                    <top>65</top>
-                    <width>320</width>
-                    <height>180</height>
-                    <aspectratio scalediffuse="false">scale</aspectratio>
-                    <texture fallback="DefaultVideo.png">$VAR[WidgetListArt]</texture>
-                    <bordertexture border="6">ContentPanelvertical.png</bordertexture>
-                    <bordersize>6</bordersize>
-                    <visible>SubString(Control.GetLabel(91001),Thumb,left)</visible>
-                </control>
-                <control type="image">
-                    <description>Cover</description>
-                    <left>70</left>
-                    <top>55</top>
-                    <height>220</height>
-                    <width>220</width>
-                    <aspectratio scalediffuse="false">scale</aspectratio>
-                    <texture background="true" fallback="DefaultAlbumCover.png">$VAR[WidgetListArt]</texture>
-                    <bordertexture border="6">ContentPanelvertical.png</bordertexture>
-                    <bordersize>6</bordersize>
-                    <visible>SubString(Control.GetLabel(91001),Cover,left)</visible>
+                    <top>0</top>
+                    <aligny>center</aligny>
+                    <width>400</width>
+                    <height>400</height>
+                    <itemgap>1</itemgap>
+                    <control type="group">
+                        <width>20</width>
+                        <height>230</height>
+                        <control type="image">
+                            <description>Fake image</description>
+                            <left>0</left>
+                            <centertop>115</centertop>
+                            <aligny>center</aligny>
+                            <align>center</align>
+                            <width>20</width>
+                            <height>30</height>
+                            <texture background="true" flipx="true">-</texture>
+                            <aspectratio>stretch</aspectratio>
+                            <visible>IsEmpty(Control.GetLabel(91002))</visible>
+                        </control>
+                        <control type="image">
+                            <left>0</left>
+                            <centertop>115</centertop>
+                            <aligny>center</aligny>
+                            <align>center</align>
+                            <width>20</width>
+                            <height>30</height>
+                            <texture background="true" flipx="true">OSDPlayNF.png</texture>
+                            <aspectratio>stretch</aspectratio>
+                            <visible>!IsEmpty(Control.GetLabel(91002))</visible>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <width>150</width>
+                        <height>230</height>
+                        <visible>SubString(Control.GetLabel(91001),Poster,left)</visible>
+                        <control type="image">
+                            <description>Poster</description>
+                            <left>0</left>
+                            <top>0</top>
+                            <aligny>center</aligny>
+                            <width>150</width>
+                            <height>230</height>
+                            <aspectratio scalediffuse="false">stretch</aspectratio>
+                            <texture background="true" fallback="DefaultVideo.png">$VAR[WidgetListArt]</texture>
+                            <bordertexture border="6">ContentPanelvertical.png</bordertexture>
+                            <bordersize>6</bordersize>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <width>320</width>
+                        <height>230</height>
+                        <visible>SubString(Control.GetLabel(91001),Thumb,left)</visible>
+                        <control type="image">
+                            <description>Thumb</description>
+                            <left>0</left>
+                            <top>15</top>
+                            <aligny>center</aligny>
+                            <width>320</width>
+                            <height>180</height>
+                            <aspectratio scalediffuse="false">scale</aspectratio>
+                            <texture fallback="DefaultVideo.png">$VAR[WidgetListArt]</texture>
+                            <bordertexture border="6">ContentPanelvertical.png</bordertexture>
+                            <bordersize>6</bordersize>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <width>220</width>
+                        <height>230</height>
+                        <visible>SubString(Control.GetLabel(91001),Cover,left)</visible>
+                        <control type="image">
+                            <description>Cover</description>
+                            <left>0</left>
+                            <top>0</top>
+                            <aligny>center</aligny>
+                            <height>220</height>
+                            <width>220</width>
+                            <aspectratio scalediffuse="false">scale</aspectratio>
+                            <texture background="true" fallback="DefaultAlbumCover.png">$VAR[WidgetListArt]</texture>
+                            <bordertexture border="6">ContentPanelvertical.png</bordertexture>
+                            <bordersize>6</bordersize>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <width>20</width>
+                        <height>230</height>
+                        <control type="image">
+                            <left>0</left>
+                            <centertop>115</centertop>
+                            <aligny>center</aligny>
+                            <align>center</align>
+                            <width>20</width>
+                            <height>30</height>
+                            <texture background="true">OSDPlayNF.png</texture>
+                            <aspectratio>stretch</aspectratio>
+                            <visible>!IsEmpty(Control.GetLabel(91003))</visible>
+                        </control>
+                    </control>
                 </control>
             </control>
         </control>
@@ -364,14 +415,13 @@
     <include name="WidgetListLayout">
         <viewtype label="WidgetItemList">list</viewtype>
         <left>342</left>
-        <top>-17</top>
+        <top>-12</top>
         <width>800</width>
         <height>275</height>
-        <onleft condition="Skin.HasSetting(nomoviewidget)">SetFocus(9000)</onleft>
+        <onleft condition="Skin.HasSetting(nomoviewidget) | Skin.HasSetting(notvshowwidget) | Skin.HasSetting(nomoviewidgetplaylistmovie1) | Skin.HasSetting(nomoviewidgetplaylistmovie2) | Skin.HasSetting(nomoviewidgetplaylistmovie3)">SetFocus(9000)</onleft>
         <onright>SetFocus(9000)</onright>
         <pagecontrol>-</pagecontrol>
         <scrolltime tween="quadratic" easing="out">300</scrolltime>
-        <animation effect="slide" start="0,0" end="-380,0" time="400" delay="400" easing="inout" tween="cubic" condition="Control.HasFocus(8000) | [Control.HasFocus(9100) + !Skin.HasSetting(nomoviewidget)]">Conditional</animation>
         <itemlayout height="25" width="800">
             <control type="label">
                 <left>5</left>
@@ -451,7 +501,16 @@
                 <texturenofocus>-</texturenofocus>
                 <font>-</font>
             </control>
-
+            <control type="label" id="91004">
+                <posx>2000</posx>
+                <posy>2000</posy>
+                <label>$VAR[WidgetContentLabelPosition]</label>
+                <width>1</width>
+                <height>1</height>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+                <font>-</font>
+            </control>
 
             <include>WidgetListBackground</include>
             <!-- Recently Added Movies  -->
@@ -467,7 +526,11 @@
                 </control>
                 <!-- Content List Movies-->
                 <control type="wraplist" id="9100">
-b                    <description>Movie Widget</description>
+                    <description>Movie Widget</description>
+                    <include condition="Skin.HasSetting(nomoviewidget)">WidgetContentLabelAnimation</include>
+                    <include condition="Skin.HasSetting(nomoviewidget)">WidgetContentLabelLayoutPosition</include>
+                    <include condition="!Skin.HasSetting(nomoviewidget)">NoWidgetContentLabelAnimation</include>
+                    <include condition="!Skin.HasSetting(nomoviewidget)">NoWidgetContentLabelLayoutPosition</include>
                     <include>WidgetContentLabelLayout</include>
                     <onup>8000</onup>
                     <focusposition>0</focusposition>
@@ -484,66 +547,77 @@ b                    <description>Movie Widget</description>
                             <onclick>noop</onclick>
                             <property name="content">plugin://service.library.data.provider?type=randommovies&amp;reload=10&amp;limit=10</property>
                             <property name="layout">PosterFanart</property>
+                            <visible>System.HasAddon(service.library.data.provider)</visible>
                         </item>
                         <item id="3">
                             <label>Recommended Movies</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://service.library.data.provider?type=recommendedmovies&amp;reload=10&amp;limit=10</property>
                             <property name="layout">PosterFanart</property>
+                            <visible>System.HasAddon(service.library.data.provider)</visible>
                         </item>
                         <item id="4">
                             <label>In theaters</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://script.extendedinfo?info=intheaters</property>
                             <property name="layout">PosterPoster</property>
+                            <visible>System.HasAddon(script.extendedinfo)</visible>
                         </item>
                         <item id="5">
                             <label>Comming Soon</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://script.extendedinfo?info=comingsoon</property>
                             <property name="layout">PosterPoster</property>
+                            <visible>System.HasAddon(script.extendedinfo)</visible>
                         </item>
                         <item id="6">
                             <label>Opening</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://script.extendedinfo?info=opening</property>
                             <property name="layout">PosterPoster</property>
+                            <visible>System.HasAddon(script.extendedinfo)</visible>
                         </item>
                         <item id="7">
                             <label>Box Office</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://script.extendedinfo?info=boxoffice</property>
                             <property name="layout">PosterPoster</property>
+                            <visible>System.HasAddon(script.extendedinfo)</visible>
                         </item>
                         <item id="8">
                             <label>Top Rentals</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://script.extendedinfo?info=toprentals</property>
                             <property name="layout">PosterPoster</property>
+                            <visible>System.HasAddon(script.extendedinfo)</visible>
                         </item>
                         <item id="9">
                             <label>Current DVD</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://script.extendedinfo?info=currentdvdreleases</property>
                             <property name="layout">PosterPoster</property>
+                            <visible>System.HasAddon(script.extendedinfo)</visible>
                         </item>
                         <item id="10">
                             <label>New DVDs</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://script.extendedinfo?info=newdvdreleases</property>
                             <property name="layout">PosterPoster</property>
+                            <visible>System.HasAddon(script.extendedinfo)</visible>
                         </item>
                         <item id="15">
                             <label>Trending Movies</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://script.extendedinfo?info=trendingmovies</property>
                             <property name="layout">PosterFanart</property>
+                            <visible>System.HasAddon(script.extendedinfo)</visible>
                         </item>
                     </content>
                 </control>
                 <!-- LIST -->
                 <include>WidgetListInfoLayout</include>
                 <control type="list" id="8000">
+                    <animation effect="slide" start="0,0" end="-380,0" time="400" delay="400" easing="inout" tween="cubic" condition="Control.HasFocus(8000) | [Control.HasFocus(9100) + !Skin.HasSetting(nomoviewidget)]">Conditional</animation>
                     <include>WidgetListLayout</include>
                     <onleft condition="!Skin.HasSetting(nomoviewidget)">9100</onleft>
                     <content limit="10">$VAR[WidgetContent]</content>
@@ -555,32 +629,39 @@ b                    <description>Movie Widget</description>
                 <left>1028</left>
                 <top>52</top>
                 <visible>Container(9000).Hasfocus(3)</visible>
-                <visible>Skin.HasSetting(nomoviewidget)</visible>
-                <include>HomeWidgetInOutAnimation</include>
                 <!-- WIDGET -->
+                <include>HomeWidgetInOutAnimation</include>
                 <control type="group">
                     <visible>!Control.HasFocus(8005)</visible>
-                    <include>WidgetHomeLayout</include>
-                    <!-- Content List Movies-->
-                    <control type="wraplist" id="9105">
-                        <description>MoviePlaylist1 Widget</description>
-                        <include>WidgetContentLabelLayout</include>
-                        <onup>8005</onup>
-                        <visible>Container(9000).Hasfocus(3)</visible>
-                        <content>
-                            <item id="1">
-                                <label>$INFO[Skin.String(Menu_Custom4_Label)]</label>
-                                <onclick>noop</onclick>
-                                <property name="content">$INFO[Skin.String(Menu_Custom4_Path)]</property>
-                                <property name="layout">PosterFanart</property>
-                            </item>
-                        </content>
-                    </control>
+                    <include condition="Skin.HasSetting(nomoviewidgetplaylistmovie1)">WidgetHomeLayout</include>
+                </control>
+                <!-- Content List Movies-->
+                <control type="wraplist" id="9105">
+                    <description>MoviePlaylist1 Widget</description>
+                    <include condition="Skin.HasSetting(nomoviewidgetplaylistmovie1)">WidgetContentLabelAnimation</include>
+                    <include condition="!Skin.HasSetting(nomoviewidgetplaylistmovie1)">NoWidgetContentLabelAnimation</include>
+                    <include condition="Skin.HasSetting(nomoviewidgetplaylistmovie1)">WidgetContentLabelLayoutPosition</include>
+                    <include condition="!Skin.HasSetting(nomoviewidgetplaylistmovie1)">NoWidgetContentLabelLayoutPosition</include>
+                    <include>WidgetContentLabelLayout</include>
+                    <onup>8005</onup>
+                    <focusposition>0</focusposition>
+                    <visible>[!Control.HasFocus(8005) + Skin.HasSetting(nomoviewidgetplaylistmovie1)] | [[Control.HasFocus(8005) | Control.HasFocus(9105)] + !Skin.HasSetting(nomoviewidgetplaylistmovie1)]</visible>
+                    <content>
+                        <item id="1">
+                            <label>$INFO[Skin.String(Menu_Custom4_Label)]</label>
+                            <onclick>noop</onclick>
+                            <property name="content">$INFO[Skin.String(Menu_Custom4_Path)]</property>
+                            <property name="layout">PosterFanart</property>
+                            <visible>Skin.HasSetting(Menu_Custom4) + !IsEmpty(Skin.String(Menu_Custom4_Path))</visible>
+                        </item>
+                    </content>
                 </control>
                 <!-- LIST -->
                 <include>WidgetListInfoLayout</include>
                 <control type="list" id="8005">
+                    <animation effect="slide" start="0,0" end="-380,0" time="400" delay="400" easing="inout" tween="cubic" condition="Control.HasFocus(8005) | [Control.HasFocus(9105) + !Skin.HasSetting(nomoviewidgetplaylistmovie1)]">Conditional</animation>
                     <include>WidgetListLayout</include>
+                    <onleft condition="!Skin.HasSetting(nomoviewidgetplaylistmovie1)">9105</onleft>
                     <content limit="10">$VAR[WidgetContent]</content>
                 </control>
             </control>
@@ -589,32 +670,39 @@ b                    <description>Movie Widget</description>
                 <left>1028</left>
                 <top>52</top>
                 <visible>Container(9000).Hasfocus(4)</visible>
-                <visible>Skin.HasSetting(nomoviewidget)</visible>
-                <include>HomeWidgetInOutAnimation</include>
                 <!-- WIDGET -->
+                <include>HomeWidgetInOutAnimation</include>
                 <control type="group">
                     <visible>!Control.HasFocus(8006)</visible>
-                    <include>WidgetHomeLayout</include>
-                    <!-- Content List Movies-->
-                    <control type="wraplist" id="9106">
-                        <description>MoviePlaylist1 Widget</description>
-                        <include>WidgetContentLabelLayout</include>
-                        <onup>8006</onup>
-                        <visible>Container(9000).Hasfocus(4)</visible>
-                        <content>
-                            <item id="1">
-                                <label>$INFO[Skin.String(Menu_Custom5_Label)]</label>
-                                <onclick>noop</onclick>
-                                <property name="content">$INFO[Skin.String(Menu_Custom5_Path)]</property>
-                                <property name="layout">PosterFanart</property>
-                            </item>
-                        </content>
-                    </control>
+                    <include condition="Skin.HasSetting(nomoviewidgetplaylistmovie2)">WidgetHomeLayout</include>
+                </control>
+                <!-- Content List Movies-->
+                <control type="wraplist" id="9106">
+                    <description>MoviePlaylist2 Widget</description>
+                    <include condition="Skin.HasSetting(nomoviewidgetplaylistmovie2)">WidgetContentLabelAnimation</include>
+                    <include condition="!Skin.HasSetting(nomoviewidgetplaylistmovie2)">NoWidgetContentLabelAnimation</include>
+                    <include condition="Skin.HasSetting(nomoviewidgetplaylistmovie2)">WidgetContentLabelLayoutPosition</include>
+                    <include condition="!Skin.HasSetting(nomoviewidgetplaylistmovie2)">NoWidgetContentLabelLayoutPosition</include>
+                    <include>WidgetContentLabelLayout</include>
+                    <onup>8006</onup>
+                    <focusposition>0</focusposition>
+                    <visible>[!Control.HasFocus(8006) + Skin.HasSetting(nomoviewidgetplaylistmovie2)] | [[Control.HasFocus(8006) | Control.HasFocus(9106)] + !Skin.HasSetting(nomoviewidgetplaylistmovie2)]</visible>
+                    <content>
+                        <item id="1">
+                            <label>$INFO[Skin.String(Menu_Custom5_Label)]</label>
+                            <onclick>noop</onclick>
+                            <property name="content">$INFO[Skin.String(Menu_Custom5_Path)]</property>
+                            <property name="layout">PosterFanart</property>
+                            <visible>Skin.HasSetting(Menu_Custom5) + !IsEmpty(Skin.String(Menu_Custom5_Path))</visible>
+                        </item>
+                    </content>
                 </control>
                 <!-- LIST -->
                 <include>WidgetListInfoLayout</include>
                 <control type="list" id="8006">
+                    <animation effect="slide" start="0,0" end="-380,0" time="400" delay="400" easing="inout" tween="cubic" condition="Control.HasFocus(8006) | [Control.HasFocus(9106) + !Skin.HasSetting(nomoviewidgetplaylistmovie2)]">Conditional</animation>
                     <include>WidgetListLayout</include>
+                    <onleft condition="!Skin.HasSetting(nomoviewidgetplaylistmovie2)">9106</onleft>
                     <content limit="10">$VAR[WidgetContent]</content>
                 </control>
             </control>
@@ -623,32 +711,39 @@ b                    <description>Movie Widget</description>
                 <left>1028</left>
                 <top>52</top>
                 <visible>Container(9000).Hasfocus(5)</visible>
-                <visible>Skin.HasSetting(nomoviewidget)</visible>
-                <include>HomeWidgetInOutAnimation</include>
                 <!-- WIDGET -->
+                <include>HomeWidgetInOutAnimation</include>
                 <control type="group">
                     <visible>!Control.HasFocus(8007)</visible>
-                    <include>WidgetHomeLayout</include>
-                    <!-- Content List Movies-->
-                    <control type="wraplist" id="9107">
-                        <description>MoviePlaylist1 Widget</description>
-                        <include>WidgetContentLabelLayout</include>
-                        <onup>8007</onup>
-                        <visible>Container(9000).Hasfocus(5)</visible>
-                        <content>
-                            <item id="1">
-                                <label>$INFO[Skin.String(Menu_Custom6_Label)]</label>
-                                <onclick>noop</onclick>
-                                <property name="content">$INFO[Skin.String(Menu_Custom6_Path)]</property>
-                                <property name="layout">PosterFanart</property>
-                            </item>
-                        </content>
-                    </control>
+                    <include condition="Skin.HasSetting(nomoviewidgetplaylistmovie3)">WidgetHomeLayout</include>
+                </control>
+                <!-- Content List Movies-->
+                <control type="wraplist" id="9107">
+                    <description>MoviePlaylist1 Widget</description>
+                    <include condition="Skin.HasSetting(nomoviewidgetplaylistmovie3)">WidgetContentLabelAnimation</include>
+                    <include condition="!Skin.HasSetting(nomoviewidgetplaylistmovie3)">NoWidgetContentLabelAnimation</include>
+                    <include condition="Skin.HasSetting(nomoviewidgetplaylistmovie3)">WidgetContentLabelLayoutPosition</include>
+                    <include condition="!Skin.HasSetting(nomoviewidgetplaylistmovie3)">NoWidgetContentLabelLayoutPosition</include>
+                    <include>WidgetContentLabelLayout</include>
+                    <onup>8007</onup>
+                    <focusposition>0</focusposition>
+                    <visible>[!Control.HasFocus(8007) + Skin.HasSetting(nomoviewidgetplaylistmovie3)] | [[Control.HasFocus(8007) | Control.HasFocus(9107)] + !Skin.HasSetting(nomoviewidgetplaylistmovie3)]</visible>
+                    <content>
+                        <item id="1">
+                            <label>$INFO[Skin.String(Menu_Custom6_Label)]</label>
+                            <onclick>noop</onclick>
+                            <property name="content">$INFO[Skin.String(Menu_Custom6_Path)]</property>
+                            <property name="layout">PosterFanart</property>
+                            <visible>Skin.HasSetting(Menu_Custom6) + !IsEmpty(Skin.String(Menu_Custom6_Path))</visible>
+                        </item>
+                    </content>
                 </control>
                 <!-- LIST -->
                 <include>WidgetListInfoLayout</include>
                 <control type="list" id="8007">
+                    <animation effect="slide" start="0,0" end="-380,0" time="400" delay="400" easing="inout" tween="cubic" condition="Control.HasFocus(8007) | [Control.HasFocus(9107) + !Skin.HasSetting(nomoviewidgetplaylistmovie3)]">Conditional</animation>
                     <include>WidgetListLayout</include>
+                    <onleft condition="!Skin.HasSetting(nomoviewidgetplaylistmovie3)">9107</onleft>
                     <content limit="10">$VAR[WidgetContent]</content>
                 </control>
             </control>
@@ -846,68 +941,80 @@ b                    <description>Movie Widget</description>
                 <left>1028</left>
                 <top>52</top>
                 <visible>Container(9000).Hasfocus(7)</visible>
-                <visible>Skin.HasSetting(nomoviewidget)</visible>
-                <include>HomeWidgetInOutAnimation</include>
                 <!-- WIDGET -->
+                <include>HomeWidgetInOutAnimation</include>
                 <control type="group">
                     <visible>!Control.HasFocus(8001)</visible>
-                    <include>WidgetHomeLayout</include>
-                    <!-- Content List TV Shows -->
-                    <control type="wraplist" id="9101">
-                        <description>Movie Widget</description>
-                        <include>WidgetContentLabelLayout</include>
-                        <onup>8001</onup>
-                        <visible>Container(9000).Hasfocus(7)</visible>
-                        <content>
-                            <item id="1">
-                                <label>Recent Episodes</label>
-                                <onclick>noop</onclick>
-                                <property name="content">videodb://recentlyaddedepisodes/</property>
-                                <property name="layout">ThumbThumb</property>
-                            </item>
-                            <item id="2">
-                                <label>Random Episodes</label>
-                                <onclick>noop</onclick>
-                                <property name="content">plugin://service.library.data.provider?type=randomepisodes&amp;reload=10&amp;limit=10</property>
-                                <property name="layout">ThumbThumb</property>
-                            </item>
-                            <item id="3">
-                                <label>Recomended Episodes</label>
-                                <onclick>noop</onclick>
-                                <property name="content">plugin://service.library.data.provider?type=recommendedepisodes&amp;reload=10&amp;limit=10</property>
-                                <property name="layout">ThumbThumb</property>
-                            </item>
-                            <item id="4">
-                                <label>Popular TV Shows</label>
-                                <onclick>noop</onclick>
-                                <property name="content">plugin://script.extendedinfo?info=populartvshows</property>
-                                <property name="layout">PosterFanart</property>
-                            </item>
-                            <item id="5">
-                                <label>Top Rated TV Shows</label>
-                                <onclick>noop</onclick>
-                                <property name="content">plugin://script.extendedinfo?info=airingtodaytvshows</property>
-                                <property name="layout">PosterFanart</property>
-                            </item>
-                            <item id="6">
-                                <label>On Air TV Shows</label>
-                                <onclick>noop</onclick>
-                                <property name="content">plugin://script.extendedinfo?info=onairtvshows</property>
-                                <property name="layout">PosterFanart</property>
-                            </item>
-                            <item id="7">
-                                <label>Airing Today TV Shows</label>
-                                <onclick>noop</onclick>
-                                <property name="content">plugin://script.extendedinfo?info=airingtodaytvshows</property>
-                                <property name="layout">PosterFanart</property>
-                            </item>
-                        </content>
-                    </control>
+                    <include condition="Skin.HasSetting(notvshowwidget)">WidgetHomeLayout</include>
+                </control>
+                <!-- Content List TV Shows -->
+                <control type="wraplist" id="9101">
+                    <description>TV Widget</description>
+                    <include condition="Skin.HasSetting(notvshowwidget)">WidgetContentLabelAnimation</include>
+                    <include condition="!Skin.HasSetting(notvshowwidget)">NoWidgetContentLabelAnimation</include>
+                    <include condition="Skin.HasSetting(notvshowwidget)">WidgetContentLabelLayoutPosition</include>
+                    <include condition="!Skin.HasSetting(notvshowwidget)">NoWidgetContentLabelLayoutPosition</include>
+                    <include>WidgetContentLabelLayout</include>
+                    <onup>8001</onup>
+                    <focusposition>0</focusposition>
+                    <visible>[!Control.HasFocus(8001) + Skin.HasSetting(notvshowwidget)] | [[Control.HasFocus(8001) | Control.HasFocus(9101)] + !Skin.HasSetting(notvshowwidget)]</visible>
+                    <content>
+                        <item id="1">
+                            <label>Recent Episodes</label>
+                            <onclick>noop</onclick>
+                            <property name="content">videodb://recentlyaddedepisodes/</property>
+                            <property name="layout">ThumbThumb</property>
+                        </item>
+                        <item id="2">
+                            <label>Random Episodes</label>
+                            <onclick>noop</onclick>
+                            <property name="content">plugin://service.library.data.provider?type=randomepisodes&amp;reload=10&amp;limit=10</property>
+                            <property name="layout">ThumbThumb</property>
+                            <visible>System.HasAddon(service.library.data.provider)</visible>
+                        </item>
+                        <item id="3">
+                            <label>Recomended Episodes</label>
+                            <onclick>noop</onclick>
+                            <property name="content">plugin://service.library.data.provider?type=recommendedepisodes&amp;reload=10&amp;limit=10</property>
+                            <property name="layout">ThumbThumb</property>
+                            <visible>System.HasAddon(service.library.data.provider)</visible>
+                        </item>
+                        <item id="4">
+                            <label>Popular TV Shows</label>
+                            <onclick>noop</onclick>
+                            <property name="content">plugin://script.extendedinfo?info=populartvshows</property>
+                            <property name="layout">PosterFanart</property>
+                            <visible>System.HasAddon(script.extendedinfo)</visible>
+                        </item>
+                        <item id="5">
+                            <label>Top Rated TV Shows</label>
+                            <onclick>noop</onclick>
+                            <property name="content">plugin://script.extendedinfo?info=airingtodaytvshows</property>
+                            <property name="layout">PosterFanart</property>
+                            <visible>System.HasAddon(script.extendedinfo)</visible>
+                        </item>
+                        <item id="6">
+                            <label>On Air TV Shows</label>
+                            <onclick>noop</onclick>
+                            <property name="content">plugin://script.extendedinfo?info=onairtvshows</property>
+                            <property name="layout">PosterFanart</property>
+                            <visible>System.HasAddon(script.extendedinfo)</visible>
+                        </item>
+                        <item id="7">
+                            <label>Airing Today TV Shows</label>
+                            <onclick>noop</onclick>
+                            <property name="content">plugin://script.extendedinfo?info=airingtodaytvshows</property>
+                            <property name="layout">PosterFanart</property>
+                            <visible>System.HasAddon(script.extendedinfo)</visible>
+                        </item>
+                    </content>
                 </control>
                 <!-- LIST -->
                 <include>WidgetListInfoLayout</include>
                 <control type="list" id="8001">
+                    <animation effect="slide" start="0,0" end="-380,0" time="400" delay="400" easing="inout" tween="cubic" condition="Control.HasFocus(8001) | [Control.HasFocus(9101) + !Skin.HasSetting(notvshowwidget)]">Conditional</animation>
                     <include>WidgetListLayout</include>
+                    <onleft condition="!Skin.HasSetting(notvshowwidget)">9101</onleft>
                     <content limit="10">$VAR[WidgetContent]</content>
                 </control>
             </control>
@@ -916,32 +1023,39 @@ b                    <description>Movie Widget</description>
                 <left>1028</left>
                 <top>52</top>
                 <visible>Container(9000).Hasfocus(9)</visible>
-                <visible>Skin.HasSetting(nomoviewidget)</visible>
-                <include>HomeWidgetInOutAnimation</include>
                 <!-- WIDGET -->
+                <include>HomeWidgetInOutAnimation</include>
                 <control type="group">
                     <visible>!Control.HasFocus(8008)</visible>
-                    <include>WidgetHomeLayout</include>
-                    <!-- Content List Movies-->
-                    <control type="wraplist" id="9108">
-                        <description>Tv Playlist1 Widget</description>
-                        <include>WidgetContentLabelLayout</include>
-                        <onup>8008</onup>
-                        <visible>Container(9000).Hasfocus(9)</visible>
-                        <content>
-                            <item id="1">
-                                <label>$INFO[Skin.String(Menu_Custom9_Label)]</label>
-                                <onclick>noop</onclick>
-                                <property name="content">$INFO[Skin.String(Menu_Custom9_Path)]</property>
-                                <property name="layout">ThumbThumb</property>
-                            </item>
-                        </content>
-                    </control>
+                    <include condition="Skin.HasSetting(notvwidgetplaylisttv1)">WidgetHomeLayout</include>
+                </control>
+                <!-- Content List Movies-->
+                <control type="wraplist" id="9108">
+                    <description>Tv Playlist1 Widget</description>
+                    <include condition="Skin.HasSetting(notvwidgetplaylisttv1)">WidgetContentLabelAnimation</include>
+                    <include condition="!Skin.HasSetting(notvwidgetplaylisttv1)">NoWidgetContentLabelAnimation</include>
+                    <include condition="Skin.HasSetting(notvwidgetplaylisttv1)">WidgetContentLabelLayoutPosition</include>
+                    <include condition="!Skin.HasSetting(notvwidgetplaylisttv1)">NoWidgetContentLabelLayoutPosition</include>
+                    <include>WidgetContentLabelLayout</include>
+                    <onup>8008</onup>
+                    <focusposition>0</focusposition>
+                    <visible>[!Control.HasFocus(8008) + Skin.HasSetting(notvwidgetplaylisttv1)] | [[Control.HasFocus(8008) | Control.HasFocus(9108)] + !Skin.HasSetting(notvwidgetplaylisttv1)]</visible>
+                    <content>
+                        <item id="1">
+                            <label>$INFO[Skin.String(Menu_Custom9_Label)]</label>
+                            <onclick>noop</onclick>
+                            <property name="content">$INFO[Skin.String(Menu_Custom9_Path)]</property>
+                            <property name="layout">ThumbThumb</property>
+                            <visible>Skin.HasSetting(Menu_Custom9) + !IsEmpty(Skin.String(Menu_Custom9_Path))</visible>
+                        </item>
+                    </content>
                 </control>
                 <!-- LIST -->
                 <include>WidgetListInfoLayout</include>
                 <control type="list" id="8008">
+                    <animation effect="slide" start="0,0" end="-380,0" time="400" delay="400" easing="inout" tween="cubic" condition="Control.HasFocus(8008) | [Control.HasFocus(9108) + !Skin.HasSetting(notvwidgetplaylisttv1)]">Conditional</animation>
                     <include>WidgetListLayout</include>
+                    <onleft condition="!Skin.HasSetting(notvwidgetplaylisttv1)">9108</onleft>
                     <content limit="10">$VAR[WidgetContent]</content>
                 </control>
             </control>
@@ -950,32 +1064,39 @@ b                    <description>Movie Widget</description>
                 <left>1028</left>
                 <top>52</top>
                 <visible>Container(9000).Hasfocus(10)</visible>
-                <visible>Skin.HasSetting(nomoviewidget)</visible>
-                <include>HomeWidgetInOutAnimation</include>
                 <!-- WIDGET -->
+                <include>HomeWidgetInOutAnimation</include>
                 <control type="group">
                     <visible>!Control.HasFocus(8009)</visible>
-                    <include>WidgetHomeLayout</include>
-                    <!-- Content List Movies-->
-                    <control type="wraplist" id="9109">
-                        <description>Tv Playlist2 Widget</description>
-                        <include>WidgetContentLabelLayout</include>
-                        <onup>8009</onup>
-                        <visible>Container(9000).Hasfocus(10)</visible>
-                        <content>
-                            <item id="1">
-                                <label>$INFO[Skin.String(Menu_Custom10_Label)]</label>
-                                <onclick>noop</onclick>
-                                <property name="content">$INFO[Skin.String(Menu_Custom10_Path)]</property>
-                                <property name="layout">ThumbThumb</property>
-                            </item>
-                        </content>
-                    </control>
+                    <include condition="Skin.HasSetting(notvwidgetplaylisttv2)">WidgetHomeLayout</include>
+                </control>
+                <!-- Content List Movies-->
+                <control type="wraplist" id="9109">
+                    <description>Tv Playlist2 Widget</description>
+                    <include condition="Skin.HasSetting(notvwidgetplaylisttv2)">WidgetContentLabelAnimation</include>
+                    <include condition="!Skin.HasSetting(notvwidgetplaylisttv2)">NoWidgetContentLabelAnimation</include>
+                    <include condition="Skin.HasSetting(notvwidgetplaylisttv2)">WidgetContentLabelLayoutPosition</include>
+                    <include condition="!Skin.HasSetting(notvwidgetplaylisttv2)">NoWidgetContentLabelLayoutPosition</include>
+                    <include>WidgetContentLabelLayout</include>
+                    <onup>8009</onup>
+                    <focusposition>0</focusposition>
+                    <visible>[!Control.HasFocus(8009) + Skin.HasSetting(notvwidgetplaylisttv2)] | [[Control.HasFocus(8009) | Control.HasFocus(9109)] + !Skin.HasSetting(notvwidgetplaylisttv2)]</visible>
+                    <content>
+                        <item id="1">
+                            <label>$INFO[Skin.String(Menu_Custom10_Label)]</label>
+                            <onclick>noop</onclick>
+                            <property name="content">$INFO[Skin.String(Menu_Custom10_Path)]</property>
+                            <property name="layout">ThumbThumb</property>
+                            <visible>Skin.HasSetting(Menu_Custom10) + !IsEmpty(Skin.String(Menu_Custom10_Path))</visible>
+                        </item>
+                    </content>
                 </control>
                 <!-- LIST -->
                 <include>WidgetListInfoLayout</include>
                 <control type="list" id="8009">
+                    <animation effect="slide" start="0,0" end="-380,0" time="400" delay="400" easing="inout" tween="cubic" condition="Control.HasFocus(8009) | [Control.HasFocus(9109) + !Skin.HasSetting(notvwidgetplaylisttv2)]">Conditional</animation>
                     <include>WidgetListLayout</include>
+                    <onleft condition="!Skin.HasSetting(notvwidgetplaylisttv2)">9109</onleft>
                     <content limit="10">$VAR[WidgetContent]</content>
                 </control>
             </control>
@@ -984,32 +1105,39 @@ b                    <description>Movie Widget</description>
                 <left>1028</left>
                 <top>52</top>
                 <visible>Container(9000).Hasfocus(11)</visible>
-                <visible>Skin.HasSetting(nomoviewidget)</visible>
-                <include>HomeWidgetInOutAnimation</include>
                 <!-- WIDGET -->
+                <include>HomeWidgetInOutAnimation</include>
                 <control type="group">
                     <visible>!Control.HasFocus(8010)</visible>
-                    <include>WidgetHomeLayout</include>
-                    <!-- Content List Movies-->
-                    <control type="wraplist" id="9110">
-                        <description>Tv Playlist3 Widget</description>
-                        <include>WidgetContentLabelLayout</include>
-                        <onup>8010</onup>
-                        <visible>Container(9000).Hasfocus(11)</visible>
-                        <content>
-                            <item id="1">
-                                <label>$INFO[Skin.String(Menu_Custo11_Label)]</label>
-                                <onclick>noop</onclick>
-                                <property name="content">$INFO[Skin.String(Menu_Custo11_Path)]</property>
-                                <property name="layout">ThumbThumb</property>
-                            </item>
-                        </content>
-                    </control>
+                    <include condition="Skin.HasSetting(notvwidgetplaylisttv3)">WidgetHomeLayout</include>
+                </control>
+                <!-- Content List Movies-->
+                <control type="wraplist" id="9110">
+                    <description>Tv Playlist3 Widget</description>
+                    <include condition="Skin.HasSetting(notvwidgetplaylisttv3)">WidgetContentLabelAnimation</include>
+                    <include condition="!Skin.HasSetting(notvwidgetplaylisttv3)">NoWidgetContentLabelAnimation</include>
+                    <include condition="Skin.HasSetting(notvwidgetplaylisttv3)">WidgetContentLabelLayoutPosition</include>
+                    <include condition="!Skin.HasSetting(notvwidgetplaylisttv3)">NoWidgetContentLabelLayoutPosition</include>
+                    <include>WidgetContentLabelLayout</include>
+                    <onup>8010</onup>
+                    <focusposition>0</focusposition>
+                    <visible>[!Control.HasFocus(8010) + Skin.HasSetting(notvwidgetplaylisttv3)] | [[Control.HasFocus(8010) | Control.HasFocus(9110)] + !Skin.HasSetting(notvwidgetplaylisttv3)]</visible>
+                    <content>
+                        <item id="1">
+                            <label>$INFO[Skin.String(Menu_Custo11_Label)]</label>
+                            <onclick>noop</onclick>
+                            <property name="content">$INFO[Skin.String(Menu_Custo11_Path)]</property>
+                            <property name="layout">ThumbThumb</property>
+                            <visible>Skin.HasSetting(Menu_Custom11) + !IsEmpty(Skin.String(Menu_Custo11_Path))</visible>
+                        </item>
+                    </content>
                 </control>
                 <!-- LIST -->
                 <include>WidgetListInfoLayout</include>
                 <control type="list" id="8010">
+                    <animation effect="slide" start="0,0" end="-380,0" time="400" delay="400" easing="inout" tween="cubic" condition="Control.HasFocus(8010) | [Control.HasFocus(9110) + !Skin.HasSetting(notvwidgetplaylisttv3)]">Conditional</animation>
                     <include>WidgetListLayout</include>
+                    <onleft condition="!Skin.HasSetting(notvwidgetplaylisttv3)">9110</onleft>
                     <content limit="10">$VAR[WidgetContent]</content>
                 </control>
             </control>
@@ -1025,347 +1153,9 @@ b                    <description>Movie Widget</description>
                     <description>Recently Added Widget Series</description>
                     <animation effect="slide" start="400,0" end="0,0" easing="inout" tween="cubic" time="500" delay="100">VisibleChange</animation>
                     <visible>!Control.HasFocus(8001)</visible>
-                    <control type="image">
-                        <left>0</left>
-                        <top>28</top>
-                        <width>240</width>
-                        <height>230</height>
-                        <texture background="true">ContentPanelRecentlyaddedvertical.png</texture>
-                        <aspectratio>stretch</aspectratio>
-                        <visible>!Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(notvshowwidget)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>28</top>
-                        <width>240</width>
-                        <height>230</height>
-                        <texture background="true">ContentPanelRecentlyaddedvertical.png</texture>
-                        <aspectratio>stretch</aspectratio>
-                        <visible>!Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(nowatchlisttvshowwidget)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>28</top>
-                        <width>240</width>
-                        <height>230</height>
-                        <texture>nowplaying_shadow5.png</texture>
-                        <visible>Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(notvshowwidget)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>28</top>
-                        <width>240</width>
-                        <height>230</height>
-                        <texture>nowplaying_shadow5.png</texture>
-                        <visible>Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(nowatchlisttvshowwidget)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>28</top>
-                        <width>240</width>
-                        <height>230</height>
-                        <texture flipy="true">nowplaying_shadow5.png</texture>
-                        <visible>Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(notvshowwidget)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>28</top>
-                        <width>240</width>
-                        <height>230</height>
-                        <texture flipy="true">nowplaying_shadow5.png</texture>
-                        <visible>Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(nowatchlisttvshowwidget)</visible>
-                    </control>
-                    <control type="label">
-                        <description>RECENTLY ADDED</description>
-                        <left>10</left>
-                        <top>25</top>
-                        <width>220</width>
-                        <height>40</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <label>$LOCALIZE[31328]</label>
-                        <font>cirrus_20</font>
-                        <textcolor>c0FFFFFF</textcolor>
-                        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-                        <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
-                        <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-                        <visible>!Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(notvshowwidget)</visible>
-                    </control>
-                    <control type="label">
-                        <description>CURRENTLY WATCHING</description>
-                        <left>10</left>
-                        <top>25</top>
-                        <width>220</width>
-                        <height>40</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <label>41219</label>
-                        <font>cirrus_20</font>
-                        <textcolor>c0FFFFFF</textcolor>
-                        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-                        <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
-                        <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-                        <visible>!Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(nowatchlisttvshowwidget)</visible>
-                    </control>
-                    <control type="label">
-                        <description>RECENTLY ADDED</description>
-                        <left>10</left>
-                        <top>25</top>
-                        <width>220</width>
-                        <height>40</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <label>$LOCALIZE[31328]</label>
-                        <font>cirrus_20</font>
-                        <textcolor>c0FFFFFF</textcolor>
-                        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-                        <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
-                        <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-                        <visible>Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(notvshowwidget)</visible>
-                    </control>
-                    <control type="label">
-                        <description>CURRENTLY WATCHING</description>
-                        <left>10</left>
-                        <top>25</top>
-                        <width>220</width>
-                        <height>40</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <label>41219</label>
-                        <font>cirrus_20</font>
-                        <textcolor>c0FFFFFF</textcolor>
-                        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-                        <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
-                        <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-                        <visible>Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(nowatchlisttvshowwidget)</visible>
-                    </control>
-                    <control type="image">
-                        <texture background="true">$INFO[Container(8001).ListItem.Thumb]</texture>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
-                        <left>10</left>
-                        <top>67</top>
-                        <width>220</width>
-                        <height>123</height>
-                        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-                        <animation effect="fade" start="0" end="100" delay="500" time="1200">Visible</animation>
-                        <animation effect="fade" start="100" end="0" time="500">Hidden</animation>
-                        <visible>Skin.HasSetting(notvshowwidget)</visible>
-                    </control>
-                    <control type="image">
-                        <texture background="true">$INFO[Container(8001).ListItem.Thumb]</texture>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
-                        <left>10</left>
-                        <top>67</top>
-                        <width>220</width>
-                        <height>123</height>
-                        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-                        <animation effect="fade" start="0" end="100" delay="500" time="1200">Visible</animation>
-                        <animation effect="fade" start="100" end="0" time="500">Hidden</animation>
-                        <visible>Skin.HasSetting(nowatchlisttvshowwidget)</visible>
-                    </control>
-                    <control type="label">
-                        <description>Title label</description>
-                        <left>10</left>
-                        <top>230</top>
-                        <width>220</width>
-                        <height>20</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[Container(8001).ListItem.Title]</label>
-                        <font>cirrus_20</font>
-                        <textcolor>c0FFFFFF</textcolor>
-                        <scrollspeed>30</scrollspeed>
-                        <scrollout>true</scrollout>
-                        <pauseatend>1500</pauseatend>
-                        <scroll>true</scroll>
-                        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-                        <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
-                        <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-                        <visible>!Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(notvshowwidget)</visible>
-                    </control>
-                    <control type="label">
-                        <description>Title label</description>
-                        <left>10</left>
-                        <top>230</top>
-                        <width>220</width>
-                        <height>20</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[Container(8001).ListItem.Title]</label>
-                        <font>cirrus_20</font>
-                        <textcolor>c0FFFFFF</textcolor>
-                        <scrollspeed>30</scrollspeed>
-                        <scrollout>true</scrollout>
-                        <pauseatend>1500</pauseatend>
-                        <scroll>true</scroll>
-                        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-                        <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
-                        <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-                        <visible>!Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(nowatchlisttvshowwidget)</visible>
-                    </control>
-                    <control type="label">
-                        <description>Title label</description>
-                        <left>10</left>
-                        <top>225</top>
-                        <width>220</width>
-                        <height>20</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[Container(8001).ListItem.Title]</label>
-                        <font>cirrus_20</font>
-                        <textcolor>c0FFFFFF</textcolor>
-                        <scrollspeed>30</scrollspeed>
-                        <scrollout>true</scrollout>
-                        <pauseatend>1500</pauseatend>
-                        <scroll>true</scroll>
-                        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-                        <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
-                        <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-                        <visible>Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(notvshowwidget)</visible>
-                    </control>
-                    <control type="label">
-                        <description>Title label</description>
-                        <left>10</left>
-                        <top>225</top>
-                        <width>220</width>
-                        <height>20</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[Container(8001).ListItem.Title]</label>
-                        <font>cirrus_20</font>
-                        <textcolor>c0FFFFFF</textcolor>
-                        <scrollspeed>30</scrollspeed>
-                        <scrollout>true</scrollout>
-                        <pauseatend>1500</pauseatend>
-                        <scroll>true</scroll>
-                        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-                        <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
-                        <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-                        <visible>Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(nowatchlisttvshowwidget)</visible>
-                    </control>
-                    <control type="label">
-                        <description>Title label</description>
-                        <left>10</left>
-                        <top>198</top>
-                        <height>20</height>
-                        <width>220</width>
-                        <label>$INFO[Container(8001).ListItem.TVshowTitle]  $INFO[Container(8001).ListItem.Property(episodeno)]</label>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <font>cirrus_20</font>
-                        <textcolor>c0FFFFFF</textcolor>
-                        <shadowcolor>black</shadowcolor>
-                        <scrollspeed>30</scrollspeed>
-                        <scrollout>true</scrollout>
-                        <pauseatend>1500</pauseatend>
-                        <scroll>true</scroll>
-                        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-                        <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
-                        <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-                        <visible>!Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(notvshowwidget)</visible>
-                    </control>
-                    <control type="label">
-                        <description>Title label</description>
-                        <left>10</left>
-                        <top>198</top>
-                        <height>20</height>
-                        <width>220</width>
-                        <label>$INFO[Container(8001).ListItem.TVshowTitle]  $INFO[Container(8001).ListItem.Episode]</label>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <font>cirrus_20</font>
-                        <textcolor>c0FFFFFF</textcolor>
-                        <shadowcolor>black</shadowcolor>
-                        <scrollspeed>30</scrollspeed>
-                        <scrollout>true</scrollout>
-                        <pauseatend>1500</pauseatend>
-                        <scroll>true</scroll>
-                        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-                        <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
-                        <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-                        <visible>!Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(nowatchlisttvshowwidget)</visible>
-                    </control>
-                    <control type="label">
-                        <description>Title label</description>
-                        <left>10</left>
-                        <top>193</top>
-                        <height>20</height>
-                        <width>220</width>
-                        <label>$INFO[Container(8001).ListItem.TVshowTitle]  $INFO[Container(8001).ListItem.Property(episodeno)]</label>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <font>cirrus_20</font>
-                        <textcolor>c0FFFFFF</textcolor>
-                        <shadowcolor>black</shadowcolor>
-                        <scrollspeed>30</scrollspeed>
-                        <scrollout>true</scrollout>
-                        <pauseatend>1500</pauseatend>
-                        <scroll>true</scroll>
-                        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-                        <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
-                        <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-                        <visible>Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(notvshowwidget)</visible>
-                    </control>
-                    <control type="label">
-                        <description>Title label</description>
-                        <left>10</left>
-                        <top>193</top>
-                        <height>20</height>
-                        <width>220</width>
-                        <label>$INFO[Container(8001).ListItem.TVshowTitle]$INFO[Container(8001).ListItem.Episode]</label>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <font>cirrus_20</font>
-                        <textcolor>c0FFFFFF</textcolor>
-                        <shadowcolor>black</shadowcolor>
-                        <scrollspeed>30</scrollspeed>
-                        <scrollout>true</scrollout>
-                        <pauseatend>1500</pauseatend>
-                        <scroll>true</scroll>
-                        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-                        <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
-                        <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-                        <visible>Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(nowatchlisttvshowwidget)</visible>
-                    </control>
-                </control>
+                   
+                    
                 <control type="group">
-                    <description>Recently Added Widget Series</description>
-                    <visible>Control.HasFocus(8001)</visible>
-                    <left>-2033</left>
-                    <top>-11</top>
-                    <animation effect="slide" start="0,0" end="1020,0" time="500" easing="inout" tween="cubic" condition="Control.HasFocus(8001)">Conditional</animation>
                     <control type="group">
                         <left>159</left>
                         <animation effect="slide" start="0,0" end="150,50" time="0" condition="Container(9000).HasFocus(7) | [Container(9000).Hasfocus(12) + !Skin.HasSetting(HomeMenuNoTVShowsButton)]">Conditional</animation>
@@ -1457,237 +1247,62 @@ b                    <description>Movie Widget</description>
                             <visible>Skin.HasSetting(logoinshowwidget)</visible>
                         </control>
                     </control>
-                    <control type="image">
-                        <texture>black-back.png</texture>
-                        <bordertexture border="6">ContentPanelvertical.png</bordertexture>
-                        <bordersize>6</bordersize>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
-                        <left>0</left>
-                        <top>28</top>
-                        <width>321</width>
-                        <height>180</height>
-                        <fadetime>400</fadetime>
-                        <visible>!Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
-                    </control>
-                    <control type="image">
-                        <texture fallback="DefaultVideo.png">$INFO[Container(8001).ListItem.Thumb]</texture>
-                        <bordersize>8</bordersize>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
-                        <left>0</left>
-                        <top>28</top>
-                        <width>321</width>
-                        <height>180</height>
-                        <fadetime>400</fadetime>
-                        <visible>!Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
-                    </control>
-                    <control type="image">
-                        <texture>black-back.png</texture>
-                        <bordertexture border="6">ContentPanelvertical.png</bordertexture>
-                        <bordersize>6</bordersize>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
-                        <left>0</left>
-                        <top>28</top>
-                        <width>321</width>
-                        <height>180</height>
-                        <fadetime>400</fadetime>
-                        <visible>Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
-                        <visible>Skin.HasSetting(episodethumb)</visible>
-                    </control>
-                    <control type="image">
-                        <texture fallback="DefaultVideo.png">$INFO[Container(8001).ListItem.Thumb]</texture>
-                        <bordersize>8</bordersize>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
-                        <left>0</left>
-                        <top>28</top>
-                        <width>321</width>
-                        <height>180</height>
-                        <fadetime>400</fadetime>
-                        <visible>Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
-                        <visible>Skin.HasSetting(episodethumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>70</left>
-                        <top>25</top>
-                        <width>153</width>
-                        <height>230</height>
-                        <texture>black-back.png</texture>
-                        <bordertexture border="6">ContentPanelvertical.png</bordertexture>
-                        <bordersize>6</bordersize>
-                        <aspectratio scalediffuse="false">stretch</aspectratio>
-                        <fadetime>400</fadetime>
-                        <visible>Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
-                        <visible>Skin.HasSetting(tvshowthumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>70</left>
-                        <top>25</top>
-                        <description>Main Icon</description>
-                        <width>153</width>
-                        <height>230</height>
-                        <texture background="true" fallback="DefaultVideo.png">$INFO[Container(8001).ListItem.Art(tvshow.poster)]</texture>
-                        <bordersize>8</bordersize>
-                        <aspectratio scalediffuse="false">stretch</aspectratio>
-                        <fadetime>400</fadetime>
-                        <visible>Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
-                        <visible>Skin.HasSetting(tvshowthumb)</visible>
-                    </control>
-                </control>
-                <control type="group">
-                    <animation effect="slide" start="0,0" end="-380,0" time="500" easing="inout" tween="cubic" condition="Control.HasFocus(8001)">Conditional</animation>
-                    <left>342</left>
-                    <top>-22</top>
-                    <control type="label">
-                        <description>Title label</description>
-                        <left>21</left>
-                        <top>36</top>
-                        <width>255</width>
-                        <height>40</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <label />
-                        <font>cirrus_20</font>
-                        <textcolor>white</textcolor>
-                        <shadowcolor>black</shadowcolor>
-                        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-                        <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
-                        <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-                    </control>
-                    <control type="list" id="8001">
-                        <left>0</left>
-                        <top>5</top>
-                        <width>800</width>
-                        <height>275</height>
-                        <orientation>vertical</orientation>
-                        <onleft>9000</onleft>
-                        <onright>9000</onright>
-                        <onup>8001</onup>
-                        <ondown>8001</ondown>
-                        <viewtype label="535">list</viewtype>
-                        <pagecontrol>-</pagecontrol>
-                        <scrolltime tween="quadratic" easing="out">300</scrolltime>
-                        <focusposition>2</focusposition>
-                        <movement>1</movement>
-                        <itemlayout height="25" width="800">
-                            <control type="label">
-                                <left>20</left>
-                                <top>26</top>
-                                <width>250</width>
-                                <height>23</height>
-                                <font>cirrus_20</font>
-                                <textcolor>grey</textcolor>
-                                <shadowcolor>black</shadowcolor>
-                                <selectedcolor>selected</selectedcolor>
-                                <align>left</align>
-                                <aligny>center</aligny>
-                                <scroll>false</scroll>
-                                <label>$INFO[ListItem.Title]</label>
-                                <visible>!Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
-                            </control>
-                            <control type="label">
-                                <left>20</left>
-                                <top>26</top>
-                                <width>250</width>
-                                <height>23</height>
-                                <font>cirrus_20</font>
-                                <textcolor>grey</textcolor>
-                                <shadowcolor>black</shadowcolor>
-                                <selectedcolor>selected</selectedcolor>
-                                <align>left</align>
-                                <aligny>center</aligny>
-                                <scroll>false</scroll>
-                                <label>$INFO[ListItem.TVshowTitle]</label>
-                                <visible>Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
-                            </control>
-                        </itemlayout>
-                        <focusedlayout height="25" width="300">
-                            <control type="image">
-                                <left>-10</left>
-                                <top>27</top>
-                                <width>300</width>
-                                <height>24</height>
-                                <texture flipx="true">recentlyaddeddiffuse.png</texture>
-                                <aspectratio>stretch</aspectratio>
-                            </control>
-                            <control type="label">
-                                <left>20</left>
-                                <top>26</top>
-                                <width>250</width>
-                                <height>23</height>
-                                <font>cirrus_20</font>
-                                <textcolor>black</textcolor>
-                                <selectedcolor>selected</selectedcolor>
-                                <align>left</align>
-                                <aligny>center</aligny>
-                                <scroll>false</scroll>
-                                <label>$INFO[ListItem.Title]</label>
-                                <visible>!Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
-                            </control>
-                            <control type="label">
-                                <left>20</left>
-                                <top>26</top>
-                                <width>300</width>
-                                <height>23</height>
-                                <font>cirrus_20</font>
-                                <textcolor>black</textcolor>
-                                <selectedcolor>selected</selectedcolor>
-                                <align>left</align>
-                                <aligny>center</aligny>
-                                <scroll>false</scroll>
-                                <label>$INFO[ListItem.TVshowTitle]</label>
-                                <visible>Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
-                            </control>
-                        </focusedlayout>
-                        <content>plugin://service.library.data.provider?type=recentepisodes&amp;reload=10&amp;limit=10</content>
-                    </control>
                 </control>
             </control> -->
 
 
 
-            <!-- Music -->
+            <!-- Music -->  
             <control type="group">
                 <left>1028</left>
                 <top>52</top>
                 <visible>Container(9000).Hasfocus(14)</visible>
-                <!-- <visible>Skin.HasSetting(nomoviewidget)</visible> -->
-                <include>HomeWidgetInOutAnimation</include>
                 <!-- WIDGET -->
+                <include>HomeWidgetInOutAnimation</include>
                 <control type="group">
                     <visible>!Control.HasFocus(8002)</visible>
-                    <include>WidgetHomeLayout</include>
-                    <!-- Content List TV Shows -->
-                    <control type="wraplist" id="9102">
-                        <description>Movie Widget</description>
-                        <include>WidgetContentLabelLayout</include>
-                        <onup>8002</onup>
-                        <visible>Container(9000).Hasfocus(14)</visible>
-                        <content>
-                            <item id="1">
-                                <label>Recent Albums</label>
-                                <onclick>noop</onclick>
-                                <property name="content">musicdb://recentlyaddedalbums/</property>
-                                <property name="layout">CoverCover</property>
-                            </item>
-                            <item id="2">
-                                <label>Random Albums</label>
-                                <onclick>noop</onclick>
-                                <property name="content">plugin://service.library.data.provider?type=randomalbums&amp;reload=10&amp;limit=10</property>
-                                <property name="layout">CoverCover</property>
-                            </item>
-                            <item id="3">
-                                <label>Recomended Albums</label>
-                                <onclick>noop</onclick>
-                                <property name="content">plugin://service.library.data.provider?type=recommendedalbums&amp;reload=10&amp;limit=10</property>
-                                <property name="layout">CoverCover</property>
-                            </item>
-                        </content>
-                    </control>
+                    <include condition="Skin.HasSetting(nomusicwidget)">WidgetHomeLayout</include>
+                </control>
+                <!-- Content List TV Shows -->
+                <control type="wraplist" id="9102">
+                    <description>Music Widget</description>
+                    <include condition="Skin.HasSetting(nomusicwidget)">WidgetContentLabelAnimation</include>
+                    <include condition="!Skin.HasSetting(nomusicwidget)">NoWidgetContentLabelAnimation</include>
+                    <include condition="Skin.HasSetting(nomusicwidget)">WidgetContentLabelLayoutPosition</include>
+                    <include condition="!Skin.HasSetting(nomusicwidget)">NoWidgetContentLabelLayoutPosition</include>
+                    <include>WidgetContentLabelLayout</include>
+                    <onup>8002</onup>
+                    <focusposition>0</focusposition>
+                    <visible>[!Control.HasFocus(8002) + Skin.HasSetting(nomusicwidget)] | [[Control.HasFocus(8002) | Control.HasFocus(9102)] + !Skin.HasSetting(nomusicwidget)]</visible>
+                    <content>
+                        <item id="1">
+                            <label>Recent Albums</label>
+                            <onclick>noop</onclick>
+                            <property name="content">musicdb://recentlyaddedalbums/</property>
+                            <property name="layout">CoverCover</property>
+                        </item>
+                        <item id="2">
+                            <label>Random Albums</label>
+                            <onclick>noop</onclick>
+                            <property name="content">plugin://service.library.data.provider?type=randomalbums&amp;reload=10&amp;limit=10</property>
+                            <property name="layout">CoverCover</property>
+                            <visible>System.HasAddon(service.library.data.provider)</visible>
+                        </item>
+                        <item id="3">
+                            <label>Recomended Albums</label>
+                            <onclick>noop</onclick>
+                            <property name="content">plugin://service.library.data.provider?type=recommendedalbums&amp;reload=10&amp;limit=10</property>
+                            <property name="layout">CoverCover</property>
+                            <visible>System.HasAddon(service.library.data.provider)</visible>
+                        </item>
+                    </content>
                 </control>
                 <!-- LIST -->
                 <include>WidgetListInfoLayout</include>
                 <control type="list" id="8002">
+                    <animation effect="slide" start="0,0" end="-380,0" time="400" delay="400" easing="inout" tween="cubic" condition="Control.HasFocus(8002) | [Control.HasFocus(9102) + !Skin.HasSetting(nomusicwidget)]">Conditional</animation>
                     <include>WidgetListLayout</include>
+                    <onleft condition="!Skin.HasSetting(nomusicwidget)">9102</onleft>
                     <content limit="10">$VAR[WidgetContent]</content>
                 </control>
             </control>
@@ -1697,32 +1312,38 @@ b                    <description>Movie Widget</description>
                 <left>1028</left>
                 <top>52</top>
                 <visible>Container(9000).Hasfocus(31)</visible>
-                <!-- <visible>Skin.HasSetting(nomoviewidget)</visible> -->
-                <include>HomeWidgetInOutAnimation</include>
                 <!-- WIDGET -->
+                <include>HomeWidgetInOutAnimation</include>
                 <control type="group">
                     <visible>!Control.HasFocus(8003)</visible>
-                    <include>WidgetHomeLayout</include>
-                    <!-- Content List TV Shows -->
-                    <control type="wraplist" id="9103">
-                        <description>Movie Widget</description>
-                        <include>WidgetContentLabelLayout</include>
-                        <onup>8003</onup>
-                        <visible>Container(9000).Hasfocus(31)</visible>
-                        <content>
-                            <item id="1">
-                                <label>Recent Music Video</label>
-                                <onclick>noop</onclick>
-                                <property name="content">videodb://recentlyaddedmusicvideos/</property>
-                                <property name="layout">CoverCover</property>
-                            </item>
-                        </content>
-                    </control>
+                    <include condition="Skin.HasSetting(nomusicvideoswidget)">WidgetHomeLayout</include>
+                </control>
+                <!-- Content List TV Shows -->
+                <control type="wraplist" id="9103">
+                    <description>Movie Widget</description>
+                    <include condition="Skin.HasSetting(nomusicvideoswidget)">WidgetContentLabelAnimation</include>
+                    <include condition="!Skin.HasSetting(nomusicvideoswidget)">NoWidgetContentLabelAnimation</include>
+                    <include condition="Skin.HasSetting(nomusicvideoswidget)">WidgetContentLabelLayoutPosition</include>
+                    <include condition="!Skin.HasSetting(nomusicvideoswidget)">NoWidgetContentLabelLayoutPosition</include>
+                    <include>WidgetContentLabelLayout</include>
+                    <onup>8003</onup>
+                    <focusposition>0</focusposition>
+                    <visible>[!Control.HasFocus(8003) + Skin.HasSetting(nomusicvideoswidget)] | [[Control.HasFocus(8003) | Control.HasFocus(9103)] + !Skin.HasSetting(nomusicvideoswidget)]</visible>
+                    <content>
+                        <item id="1">
+                            <label>Recent Music Video</label>
+                            <onclick>noop</onclick>
+                            <property name="content">videodb://recentlyaddedmusicvideos/</property>
+                            <property name="layout">CoverCover</property>
+                        </item>
+                    </content>
                 </control>
                 <!-- LIST -->
                 <include>WidgetListInfoLayout</include>
                 <control type="list" id="8003">
+                    <animation effect="slide" start="0,0" end="-380,0" time="400" delay="400" easing="inout" tween="cubic" condition="Control.HasFocus(8003) | [Control.HasFocus(9103) + !Skin.HasSetting(nomusicvideoswidget)]">Conditional</animation>
                     <include>WidgetListLayout</include>
+                    <onleft condition="!Skin.HasSetting(nomusicvideoswidget)">9103</onleft>
                     <content limit="10">$VAR[WidgetContent]</content>
                 </control>
             </control>
@@ -1735,176 +1356,12 @@ b                    <description>Movie Widget</description>
                 <visible>Library.HasContent(Music)</visible>
                 <visible>Container(9000).Hasfocus(14)</visible>
                 <include>VisibleFadeEffect</include>
-                <control type="group">
-                    <description>Recently Added Widget Music</description>
-                    <animation effect="slide" start="400,0" end="0,0" easing="inout" tween="cubic" time="500" delay="100">VisibleChange</animation>
-                    <visible>!Control.HasFocus(8002)</visible>
-                    <control type="image">
-                        <left>0</left>
-                        <top>28</top>
-                        <width>240</width>
-                        <height>230</height>
-                        <texture background="true">ContentPanelRecentlyaddedvertical.png</texture>
-                        <aspectratio>stretch</aspectratio>
-                        <visible>!Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(nomusicwidget)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>28</top>
-                        <width>240</width>
-                        <height>230</height>
-                        <texture>nowplaying_shadow5.png</texture>
-                        <visible>Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(nomusicwidget)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>28</top>
-                        <width>240</width>
-                        <height>230</height>
-                        <texture flipy="true">nowplaying_shadow5.png</texture>
-                        <visible>Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(nomusicwidget)</visible>
-                    </control>
-                    <control type="label">
-                        <description>Title label</description>
-                        <left>10</left>
-                        <top>25</top>
-                        <width>220</width>
-                        <height>40</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <label>$LOCALIZE[31328]</label>
-                        <font>cirrus_20</font>
-                        <textcolor>c0FFFFFF</textcolor>
-                        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-                        <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
-                        <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-                        <visible>!Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(nomusicwidget)</visible>
-                    </control>
-                    <control type="label">
-                        <description>Title label</description>
-                        <left>10</left>
-                        <top>30</top>
-                        <width>220</width>
-                        <height>40</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <label>$LOCALIZE[31328]</label>
-                        <font>cirrus_20</font>
-                        <textcolor>c0FFFFFF</textcolor>
-                        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-                        <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
-                        <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-                        <visible>Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(nomusicwidget)</visible>
-                    </control>
-                    <control type="image">
-                        <texture>black-back.png</texture>
-                        <bordertexture border="6">ContentPanelvertical.png</bordertexture>
-                        <bordersize>6</bordersize>
-                        <aspectratio scalediffuse="false">stretch</aspectratio>
-                        <left>58</left>
-                        <top>67</top>
-                        <width>123</width>
-                        <height>123</height>
-                        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-                        <animation effect="fade" start="0" end="100" delay="500" time="1200">Visible</animation>
-                        <animation effect="fade" start="100" end="0" time="500">Hidden</animation>
-                        <visible>Skin.HasSetting(nomusicwidget)</visible>
-                    </control>
-                    <control type="image">
-                        <texture background="true">$INFO[Container(8002).ListItem.Icon]</texture>
-                        <bordersize>8</bordersize>
-                        <aspectratio scalediffuse="false">stretch</aspectratio>
-                        <left>58</left>
-                        <top>67</top>
-                        <width>123</width>
-                        <height>123</height>
-                        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-                        <animation effect="fade" start="0" end="100" delay="500" time="1200">Visible</animation>
-                        <animation effect="fade" start="100" end="0" time="500">Hidden</animation>
-                        <visible>Skin.HasSetting(nomusicwidget)</visible>
-                    </control>
-                    <control type="label">
-                        <description>Title label</description>
-                        <left>10</left>
-                        <top>230</top>
-                        <width>220</width>
-                        <height>20</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[Container(8002).ListItem.Label]</label>
-                        <font>cirrus_20</font>
-                        <textcolor>c0FFFFFF</textcolor>
-                        <scrollspeed>30</scrollspeed>
-                        <scrollout>true</scrollout>
-                        <pauseatend>1500</pauseatend>
-                        <scroll>true</scroll>
-                        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-                        <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
-                        <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-                        <visible>!Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(nomusicwidget)</visible>
-                    </control>
-                    <control type="label">
-                        <description>Title label</description>
-                        <left>10</left>
-                        <top>225</top>
-                        <width>220</width>
-                        <height>20</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[Container(8002).ListItem.Label]</label>
-                        <font>cirrus_24</font>
-                        <textcolor>c0FFFFFF</textcolor>
-                        <scrollspeed>30</scrollspeed>
-                        <scrollout>true</scrollout>
-                        <pauseatend>1500</pauseatend>
-                        <scroll>true</scroll>
-                        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-                        <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
-                        <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-                        <visible>Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(nomusicwidget)</visible>
-                    </control>
-                    <control type="label">
-                        <description>Title label</description>
-                        <left>10</left>
-                        <top>198</top>
-                        <height>20</height>
-                        <width>220</width>
-                        <label>$INFO[Container(8002).ListItem.Label2]</label>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <font>cirrus_20</font>
-                        <textcolor>c0FFFFFF</textcolor>
-                        <shadowcolor>black</shadowcolor>
-                        <scrollspeed>30</scrollspeed>
-                        <scrollout>true</scrollout>
-                        <pauseatend>1500</pauseatend>
-                        <scroll>true</scroll>
-                        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-                        <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
-                        <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-                        <visible>Skin.HasSetting(nomusicwidget)</visible>
-                    </control>
-                </control>
+                    
                 <control type="group">
                     <description>Latest Items Widget Music</description>
                     <visible>Control.HasFocus(8002)</visible>
                     <left>-2033</left>
                     <top>-11</top>
-                    <animation effect="slide" start="0,0" end="1020,0" time="500" easing="inout" tween="cubic" condition="Control.HasFocus(8002)">Conditional</animation>
                     <control type="group">
                         <left>159</left>
                         <control type="label">
@@ -1941,102 +1398,6 @@ b                    <description>Movie Widget</description>
                             <label>[COLOR=accent]$LOCALIZE[562]:[/COLOR] $INFO[Container(8002).ListItem.Property(Year)]</label>
                         </control>
                     </control>
-                    <control type="image">
-                        <texture>black-back.png</texture>
-                        <bordertexture border="6">ContentPanelvertical.png</bordertexture>
-                        <bordersize>6</bordersize>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
-                        <left>35</left>
-                        <top>28</top>
-                        <height>222</height>
-                        <width>222</width>
-                        <fadetime>400</fadetime>
-                    </control>
-                    <control type="image">
-                        <texture background="true" fallback="DefaultAlbumCover.png">$INFO[Container(8002).ListItem.Icon]</texture>
-                        <bordersize>8</bordersize>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
-                        <left>35</left>
-                        <top>28</top>
-                        <height>222</height>
-                        <width>222</width>
-                        <fadetime>400</fadetime>
-                    </control>
-                </control>
-                <control type="group">
-                    <animation effect="slide" start="0,0" end="-380,0" time="500" easing="inout" tween="cubic" condition="Control.HasFocus(8002)">Conditional</animation>
-                    <left>342</left>
-                    <top>-22</top>
-                    <control type="label">
-                        <description>Title label</description>
-                        <left>18</left>
-                        <top>36</top>
-                        <width>255</width>
-                        <height>40</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <label />
-                        <font>cirrus_20</font>
-                        <textcolor>white</textcolor>
-                        <shadowcolor>black</shadowcolor>
-                        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-                        <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
-                        <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-                    </control>
-                    <control type="list" id="8002">
-                        <left>0</left>
-                        <top>5</top>
-                        <width>800</width>
-                        <height>275</height>
-                        <onleft>9000</onleft>
-                        <onright>9000</onright>
-                        <onup>8002</onup>
-                        <ondown>8002</ondown>
-                        <viewtype label="535">list</viewtype>
-                        <pagecontrol>-</pagecontrol>
-                        <scrolltime>200</scrolltime>
-                        <itemlayout height="25" width="800">
-                            <control type="label">
-                                <left>20</left>
-                                <top>26</top>
-                                <width>250</width>
-                                <height>23</height>
-                                <font>cirrus_20</font>
-                                <textcolor>grey</textcolor>
-                                <shadowcolor>black</shadowcolor>
-                                <selectedcolor>selected</selectedcolor>
-                                <align>left</align>
-                                <aligny>center</aligny>
-                                <scroll>false</scroll>
-                                <label>$INFO[ListItem.Label]</label>
-                            </control>
-                        </itemlayout>
-                        <focusedlayout height="25" width="800">
-                            <control type="image">
-                                <left>-10</left>
-                                <top>27</top>
-                                <width>300</width>
-                                <height>24</height>
-                                <texture flipx="true">recentlyaddeddiffuse.png</texture>
-                                <aspectratio>stretch</aspectratio>
-                            </control>
-                            <control type="label">
-                                <left>20</left>
-                                <top>26</top>
-                                <width>250</width>
-                                <height>23</height>
-                                <font>cirrus_20</font>
-                                <textcolor>black</textcolor>
-                                <selectedcolor>selected</selectedcolor>
-                                <align>left</align>
-                                <aligny>center</aligny>
-                                <scroll>false</scroll>
-                                <label>$INFO[ListItem.Label]</label>
-                            </control>
-                        </focusedlayout>
-                        <content>plugin://service.library.data.provider?type=recentalbums&amp;reload=10&amp;limit=10</content>
-                    </control>
                 </control>
             </control>
             -->
@@ -2045,30 +1406,38 @@ b                    <description>Movie Widget</description>
                 <left>1028</left>
                 <top>52</top>
                 <visible>Container(9000).Hasfocus(18)</visible>
-                <include>HomeWidgetInOutAnimation</include>
                 <!-- WIDGET -->
+                <include>HomeWidgetInOutAnimation</include>
                 <control type="group">
                     <visible>!Control.HasFocus(8004)</visible>
-                    <include>WidgetHomeLayout</include>
-                    <!-- Content List TV Shows -->
-                    <control type="wraplist" id="9104">
-                        <description>Movie Widget</description>
-                        <include>WidgetContentLabelLayout</include>
-                        <onup>8004</onup>
-                        <visible>Container(9000).Hasfocus(18)</visible>
-                        <content>
-                            <item id="1">
-                                <label>Random Addons</label>
-                                <onclick>noop</onclick>
-                                <property name="layout">CoverCover</property>
-                            </item>
-                        </content>
-                    </control>
+                    <include condition="Skin.HasSetting(noaddonwidget)">WidgetHomeLayout</include>
+                </control>
+                <!-- Content List TV Shows -->
+                <control type="wraplist" id="9104">
+                    <description>Movie Widget</description>
+                    <include condition="Skin.HasSetting(noaddonwidget)">WidgetContentLabelAnimation</include>
+                    <include condition="!Skin.HasSetting(noaddonwidget)">NoWidgetContentLabelAnimation</include>
+                    <include condition="Skin.HasSetting(noaddonwidget)">WidgetContentLabelLayoutPosition</include>
+                    <include condition="!Skin.HasSetting(noaddonwidget)">NoWidgetContentLabelLayoutPosition</include>
+                    <include>WidgetContentLabelLayout</include>
+                    <onup>8004</onup>
+                    <focusposition>0</focusposition>
+                    <visible>[!Control.HasFocus(8004) + Skin.HasSetting(noaddonwidget)] | [[Control.HasFocus(8004) | Control.HasFocus(9104)] + !Skin.HasSetting(noaddonwidget)]</visible>
+                    <content>
+                        <item id="1">
+                            <label>Random Addons</label>
+                            <onclick>noop</onclick>
+                            <property name="layout">CoverCover</property>
+                            <visible>System.HasAddon(service.skin.widgets)</visible>
+                        </item>
+                    </content>
                 </control>
                 <!-- LIST -->
                 <include>WidgetListInfoLayout</include>
                 <control type="list" id="8004">
+                    <animation effect="slide" start="0,0" end="-380,0" time="400" delay="400" easing="inout" tween="cubic" condition="Control.HasFocus(8004) | [Control.HasFocus(9104) + !Skin.HasSetting(noaddonwidget)]">Conditional</animation>
                     <include>WidgetListLayout</include>
+                    <onleft condition="!Skin.HasSetting(noaddonwidget)">9104</onleft>
                     <content>
                         <item id="1">
                             <icon>$INFO[Window(Home).Property(RandomAddon.1.Thumb)]</icon>
@@ -2171,126 +1540,6 @@ b                    <description>Movie Widget</description>
                 <visible>Container(9000).Hasfocus(18)</visible>
                 <include>VisibleFadeEffect</include>
                 <control type="group">
-                    <description>Recently Added Widget Addons</description>
-                    <animation effect="slide" start="400,0" end="0,0" easing="inout" tween="cubic" time="500" delay="100">VisibleChange</animation>
-                    <visible>!Control.HasFocus(8005)</visible>
-                    <control type="image">
-                        <left>0</left>
-                        <top>28</top>
-                        <width>240</width>
-                        <height>230</height>
-                        <texture background="true">ContentPanelRecentlyaddedvertical.png</texture>
-                        <aspectratio>stretch</aspectratio>
-                        <visible>!Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(noaddonwidget)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>28</top>
-                        <width>240</width>
-                        <height>230</height>
-                        <texture>nowplaying_shadow5.png</texture>
-                        <visible>Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(noaddonwidget)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>28</top>
-                        <width>240</width>
-                        <height>230</height>
-                        <texture flipy="true">nowplaying_shadow5.png</texture>
-                        <visible>Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(noaddonwidget)</visible>
-                    </control>
-                    <control type="label">
-                        <description>Title label</description>
-                        <left>10</left>
-                        <top>25</top>
-                        <width>220</width>
-                        <height>40</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <label>$LOCALIZE[41187]</label>
-                        <font>cirrus_20</font>
-                        <textcolor>c0FFFFFF</textcolor>
-                        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-                        <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
-                        <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-                        <visible>!Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(noaddonwidget)</visible>
-                    </control>
-                    <control type="label">
-                        <description>Title label</description>
-                        <left>10</left>
-                        <top>25</top>
-                        <width>220</width>
-                        <height>40</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <label>$LOCALIZE[41187]</label>
-                        <font>cirrus_20</font>
-                        <textcolor>c0FFFFFF</textcolor>
-                        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-                        <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
-                        <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-                        <visible>Skin.HasSetting(themelighthorz)</visible>
-                        <visible>Skin.HasSetting(noaddonwidget)</visible>
-                    </control>
-                    <control type="image">
-                        <texture>black-back.png</texture>
-                        <bordertexture border="6">ContentPanelvertical.png</bordertexture>
-                        <bordersize>6</bordersize>
-                        <aspectratio scalediffuse="false">stretch</aspectratio>
-                        <left>58</left>
-                        <top>67</top>
-                        <width>123</width>
-                        <height>123</height>
-                        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-                        <animation effect="fade" start="0" end="100" delay="500" time="1200">Visible</animation>
-                        <animation effect="fade" start="100" end="0" time="500">Hidden</animation>
-                        <visible>Skin.HasSetting(noaddonwidget)</visible>
-                    </control>
-                    <control type="image">
-                        <texture background="true">$INFO[Container(8005).ListItem.Icon]</texture>
-                        <bordersize>8</bordersize>
-                        <aspectratio scalediffuse="false">stretch</aspectratio>
-                        <left>58</left>
-                        <top>67</top>
-                        <width>123</width>
-                        <height>123</height>
-                        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-                        <animation effect="fade" start="0" end="100" delay="500" time="1200">Visible</animation>
-                        <animation effect="fade" start="100" end="0" time="500">Hidden</animation>
-                        <visible>Skin.HasSetting(noaddonwidget)</visible>
-                    </control>
-                    <control type="label">
-                        <description>Title label</description>
-                        <left>10</left>
-                        <top>198</top>
-                        <height>20</height>
-                        <width>220</width>
-                        <label>$INFO[Container(8005).ListItem.Label]</label>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <font>cirrus_20</font>
-                        <textcolor>c0FFFFFF</textcolor>
-                        <shadowcolor>black</shadowcolor>
-                        <scrollspeed>30</scrollspeed>
-                        <scrollout>true</scrollout>
-                        <pauseatend>1500</pauseatend>
-                        <scroll>true</scroll>
-                        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-                        <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
-                        <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-                        <visible>Skin.HasSetting(noaddonwidget)</visible>
-                    </control>
-                </control>
-                <control type="group">
                     <description>Random Items Widget Addons</description>
                     <visible>Control.HasFocus(8005)</visible>
                     <left>-2033</left>
@@ -2331,102 +1580,6 @@ b                    <description>Movie Widget</description>
                             <aligny>center</aligny>
                             <label>[COLOR=accent]$LOCALIZE[20037]:[/COLOR] $INFO[Container(8005).ListItem.Property(Summary)]</label>
                         </control>
-                    </control>
-                    <control type="image">
-                        <left>35</left>
-                        <top>28</top>
-                        <height>222</height>
-                        <width>222</width>
-                        <texture>black-back.png</texture>
-                        <bordertexture border="8">ContentPanelvertical.png</bordertexture>
-                        <bordersize>8</bordersize>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
-                        <fadetime>400</fadetime>
-                    </control>
-                    <control type="image">
-                        <left>35</left>
-                        <top>28</top>
-                        <height>222</height>
-                        <width>222</width>
-                        <texture background="true">$INFO[Container(8005).ListItem.Icon]</texture>
-                        <bordersize>8</bordersize>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
-                        <fadetime>400</fadetime>
-                    </control>
-                </control>
-                <control type="group">
-                    <animation effect="slide" start="0,0" end="-380,0" time="500" easing="inout" tween="cubic" condition="Control.HasFocus(8005)">Conditional</animation>
-                    <left>342</left>
-                    <top>-22</top>
-                    <control type="label">
-                        <description>Title label</description>
-                        <left>18</left>
-                        <top>36</top>
-                        <width>255</width>
-                        <height>40</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <label />
-                        <font>cirrus_20</font>
-                        <textcolor>white</textcolor>
-                        <shadowcolor>black</shadowcolor>
-                        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-                        <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
-                        <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-                    </control>
-                    <control type="list" id="8005">
-                        <left>0</left>
-                        <top>5</top>
-                        <width>800</width>
-                        <height>275</height>
-                        <onleft>9000</onleft>
-                        <onright>9000</onright>
-                        <onup>8005</onup>
-                        <ondown>8005</ondown>
-                        <viewtype label="535">list</viewtype>
-                        <pagecontrol>-</pagecontrol>
-                        <scrolltime tween="quadratic" easing="out">300</scrolltime>
-                        <itemlayout height="25" width="800">
-                            <control type="label">
-                                <left>20</left>
-                                <top>26</top>
-                                <width>300</width>
-                                <height>23</height>
-                                <font>cirrus_20</font>
-                                <textcolor>grey</textcolor>
-                                <shadowcolor>black</shadowcolor>
-                                <selectedcolor>selected</selectedcolor>
-                                <align>left</align>
-                                <aligny>center</aligny>
-                                <scroll>false</scroll>
-                                <label>$INFO[ListItem.Label]</label>
-                            </control>
-                        </itemlayout>
-                        <focusedlayout height="25" width="800">
-                            <control type="image">
-                                <left>-10</left>
-                                <top>27</top>
-                                <width>300</width>
-                                <height>24</height>
-                                <texture flipx="true">recentlyaddeddiffuse.png</texture>
-                                <aspectratio>stretch</aspectratio>
-                            </control>
-                            <control type="label">
-                                <left>20</left>
-                                <top>26</top>
-                                <width>300</width>
-                                <height>23</height>
-                                <font>cirrus_20</font>
-                                <textcolor>black</textcolor>
-                                <selectedcolor>selected</selectedcolor>
-                                <align>left</align>
-                                <aligny>center</aligny>
-                                <scroll>false</scroll>
-                                <label>$INFO[ListItem.Label]</label>
-                            </control>
-                        </focusedlayout>
-                        
                     </control>
                 </control>
             </control> -->
