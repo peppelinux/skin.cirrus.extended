@@ -172,7 +172,7 @@
                             <top>0</top>
                             <width>70</width>
                             <height>36</height>
-                            <textcolor>black</textcolor>
+                            <textcolor>white</textcolor>
                             <aligny>center</aligny>
                             <font>cirrus_18_Bold</font>
                             <info>ListItem.Label</info>
@@ -209,7 +209,7 @@
                             <height>36</height>
                             <font>cirrus_18_Bold</font>
                             <aligny>center</aligny>
-                            <textcolor>black</textcolor>
+                            <textcolor>white</textcolor>
                             <align>left</align>
                             <info>ListItem.Label2</info>
                         </control>
@@ -290,7 +290,7 @@
                             <height>38</height>
                             <font>cirrus_18_Bold</font>
                             <aligny>center</aligny>
-                            <textcolor>grey</textcolor>
+                            <textcolor>white</textcolor>
                             <selectedcolor>white</selectedcolor>
                             <align>left</align>
                             <info>ListItem.Label</info>
@@ -310,7 +310,7 @@
                     <font>cirrus_18_Bold</font>
                     <textoffsetx>5</textoffsetx>
                     <textcolor>grey</textcolor>
-                    <focusedcolor>grey</focusedcolor>
+                    <focusedcolor>white</focusedcolor>
                     <texturefocus border="0" flipx="true">menuitemFO.png</texturefocus>
                     <texturenofocus border="0">-</texturenofocus>
                     <pulseonselect>false</pulseonselect>
