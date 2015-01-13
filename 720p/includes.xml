@@ -415,7 +415,7 @@
         <!-- PAGE COUNT STUFF UPPER RIGHT CORNER -->
         <control type="label">
             <description>Page Count Label</description>
-            <left>25r</left>
+            <left>755</left>
             <top>0</top>
             <width>500</width>
             <height>50</height>
