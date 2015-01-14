@@ -495,9 +495,16 @@
                     <width>575</width>
                     <height>106</height>
                     <aspectratio>stretch</aspectratio>
-                    <texture background="true">$INFO[ ListItem.Art(banner)]</texture>
+                    <texture background="true">$INFO[ListItem.Art(banner)]</texture>
                     <bordertexture border="8">ContentPanelvertical.png</bordertexture>
                     <bordersize>8</bordersize>
+                </control>
+                <control type="group">
+                    <left>-60</left> 
+                    <top>20</top>
+                    <width>575</width>
+                    <height>106</height>
+                    <include>FallbackBanner</include>
                 </control>
                 <control type="label">
                     <visible>Container.Content(TVShows)</visible>

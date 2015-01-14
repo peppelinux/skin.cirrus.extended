@@ -397,8 +397,16 @@
                     <height>141</height>
                     <aspectratio aligny="bottom">stretch</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
-                    <texture background="true" fallback="landscape fallback.png">$INFO[ListItem.Art(landscape)]</texture>
+                    <texture background="true">$INFO[ListItem.Art(landscape)]</texture>
                     <bordersize>8</bordersize>
+                    <visible>Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb)</visible>
+                </control>
+                <control type="group">
+                    <left>-10</left> 
+                    <top>-7</top>
+                    <width>250</width>
+                    <height>141</height>
+                    <include>FallbackWidethumb</include>
                     <visible>Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb)</visible>
                 </control>
                 <control type="image">
@@ -441,8 +449,16 @@
                     <height>95</height>
                     <aspectratio>stretch</aspectratio>
                     <fadetime>200</fadetime>
-                    <texture fallback="tvbanner.png" background="true">$INFO[ListItem.Art(banner)]</texture>
+                    <texture background="true">$INFO[ListItem.Art(banner)]</texture>
                     <bordersize>8</bordersize>
+                    <visible>Skin.HasSetting(banner) + !IsEmpty(ListItem.Thumb)</visible>
+                </control>
+                <control type="group">
+                    <left>0</left> 
+                    <top>14</top>
+                    <width>514</width>
+                    <height>95</height>
+                    <include>FallbackBanner</include>
                     <visible>Skin.HasSetting(banner) + !IsEmpty(ListItem.Thumb)</visible>
                 </control>
                 <control type="label">

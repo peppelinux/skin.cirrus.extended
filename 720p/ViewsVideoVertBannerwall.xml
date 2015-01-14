@@ -53,9 +53,16 @@
                             <height>106</height>
                             <aspectratio>stretch</aspectratio>
                             <fadetime>200</fadetime>
-                            <texture background="true" fallback="tvbanner.png">$INFO[ListItem.Art(banner)]</texture>
+                            <texture background="true">$INFO[ListItem.Art(banner)]</texture>
                             <bordertexture border="8">ThumbBorder.png</bordertexture>
                             <bordersize>8</bordersize>
+                        </control>
+                        <control type="group">
+                            <left>0</left> 
+                            <top>0</top>
+                            <width>575</width>
+                            <height>106</height>
+                            <include>FallbackBanner</include>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -89,9 +96,16 @@
                             <height>106</height>
                             <aspectratio>stretch</aspectratio>
                             <fadetime>200</fadetime>
-                            <texture background="true" fallback="tvbanner.png">$INFO[ListItem.Art(banner)]</texture>
+                            <texture background="true">$INFO[ListItem.Art(banner)]</texture>
                             <bordertexture border="8">ThumbBorder.png</bordertexture>
                             <bordersize>8</bordersize>
+                        </control>
+                        <control type="group">
+                            <left>0</left> 
+                            <top>0</top>
+                            <width>575</width>
+                            <height>106</height>
+                            <include>FallbackBanner</include>
                         </control>
                     </control>
                 </focusedlayout>

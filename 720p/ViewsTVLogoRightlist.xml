@@ -339,18 +339,18 @@
                         <visible>Skin.HasSetting(showmoviedvd)</visible>
                     </control>
                 </control>
-                    <control type="image">
-                        <left>-10</left>
-                        <top>-230</top>
-                        <width>240</width>
-                        <height>360</height>
-                        <aspectratio aligny="bottom">stretch</aspectratio>
-                        <fadetime>IconCrossfadeTime</fadetime>
-                        <texture>$INFO[ListItem.Icon]</texture>
-                        <visible>Container.Content(Movies)</visible>
-                        <bordertexture border="8">ContentPanelvertical.png</bordertexture>
-                        <bordersize>8</bordersize>
-                    </control>
+                <control type="image">
+                    <left>-10</left>
+                    <top>-230</top>
+                    <width>240</width>
+                    <height>360</height>
+                    <aspectratio aligny="bottom">stretch</aspectratio>
+                    <fadetime>IconCrossfadeTime</fadetime>
+                    <texture>$INFO[ListItem.Icon]</texture>
+                    <visible>Container.Content(Movies)</visible>
+                    <bordertexture border="8">ContentPanelvertical.png</bordertexture>
+                    <bordersize>8</bordersize>
+                </control>
                 <!-- Poster update v1.1-->
                 <control type="group">
                     <visible>Skin.HasSetting(poster)</visible>
@@ -437,9 +437,16 @@
                     <height>141</height>
                     <aspectratio aligny="bottom">stretch</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
-
-                    <texture background="true" fallback="landscape fallback.png">$INFO[ListItem.Art(landscape)]</texture>
+                    <texture background="true">$INFO[ListItem.Art(landscape)]</texture>
                     <bordersize>8</bordersize>
+                    <visible>Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb) + Container.Content(tvshows)</visible>
+                </control>
+                <control type="group">
+                    <left>-10</left> 
+                    <top>-7</top>
+                    <width>250</width>
+                    <height>141</height>
+                    <include>FallbackWidethumb</include>
                     <visible>Skin.HasSetting(widethumb) + !IsEmpty(ListItem.Thumb) + Container.Content(tvshows)</visible>
                 </control>
                 <control type="image">
@@ -460,23 +467,26 @@
                     <height>95</height>
                     <aspectratio>stretch</aspectratio>
                     <fadetime>200</fadetime>
-
-                    <texture fallback="tvbanner.png" background="true">$INFO[ListItem.Art(banner)]</texture>
+                    <texture background="true">$INFO[ListItem.Art(banner)]</texture>
                     <bordersize>8</bordersize>
                     <visible>Skin.HasSetting(banner) + !IsEmpty(ListItem.Thumb) + Container.Content(tvshows)</visible>
                 </control>
-                <control type="image">
-                    <left>0</left>
+                <control type="group">
+                    <left>0</left> 
                     <top>14</top>
                     <width>514</width>
                     <height>95</height>
-                    <aspectratio>stretch</aspectratio>
-                    <fadetime>200</fadetime>
-
-                    <texture background="true" fallback="tvbanner.png">$INFO[ListItem.Art(banner)]</texture>
-                    <bordersize>8</bordersize>
+                    <include>FallbackBanner</include>
                     <visible>Skin.HasSetting(banner) + !IsEmpty(ListItem.Thumb) + Container.Content(tvshows)</visible>
                 </control>
+                <control type="group">
+                    <left>0</left> 
+                    <top>14</top>
+                    <width>514</width>
+                    <height>95</height>
+                    <include>FallbackBanner</include>
+                    <visible>Skin.HasSetting(banner) + !IsEmpty(ListItem.Thumb) + Container.Content(tvshows)</visible>
+                </control>           
                 <control type="image">
                     <width>161</width>
                     <height>110</height>

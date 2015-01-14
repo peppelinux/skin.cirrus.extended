@@ -1261,4 +1261,67 @@
         <focusedcolor>black</focusedcolor>
     </include>
 
+    <include name="FallbackBanner">
+        <control type="image">
+            <left>0</left> 
+            <top>0</top> 
+            <aspectratio>stretch</aspectratio>
+            <texture background="true">bannerFallback.png</texture>
+            <bordertexture border="8">ContentPanelvertical.png</bordertexture>
+            <bordersize>8</bordersize>
+            <visible>IsEmpty(ListItem.Art(banner))</visible>
+        </control>
+        <control type="image">
+            <left>0</left> 
+            <centertop>50%</centertop>
+            <align>center</align>
+            <aligny>center</aligny>
+            <aspectratio>keep</aspectratio>
+            <texture background="true" border="5">$INFO[ListItem.Art(clearlogo)]</texture>
+            <visible>IsEmpty(ListItem.Art(banner)) + !IsEmpty(ListItem.Art(clearlogo))</visible>
+        </control>
+        <control type="label">
+            <left>0</left> 
+            <centertop>50%</centertop>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>cirrus_50_Bold</font>
+            <textcolor>white</textcolor>
+            <shadowcolor>black</shadowcolor>
+            <label>$INFO[ListItem.Label]</label>
+            <visible>IsEmpty(ListItem.Art(banner)) + IsEmpty(ListItem.Art(clearlogo))</visible>
+        </control>
+    </include>
+    
+    <include name="FallbackWidethumb">
+        <control type="image">
+            <left>0</left> 
+            <top>0</top> 
+            <aspectratio>stretch</aspectratio>
+            <texture background="true">bannerFallback.png</texture>
+            <bordersize>8</bordersize>
+            <visible>IsEmpty(ListItem.Art(landscape))</visible>
+        </control>
+        <control type="image">
+            <left>0</left> 
+            <centertop>50%</centertop>
+            <align>center</align>
+            <aligny>center</aligny>
+            <aspectratio>keep</aspectratio>
+            <texture background="true" border="5">$INFO[ListItem.Art(clearlogo)]</texture>
+            <visible>IsEmpty(ListItem.Art(landscape)) + !IsEmpty(ListItem.Art(clearlogo))</visible>
+        </control>
+        <control type="label">
+            <left>0</left> 
+            <centertop>50%</centertop>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>cirrus_50_Bold</font>
+            <textcolor>white</textcolor>
+            <shadowcolor>black</shadowcolor>
+            <label>$INFO[ListItem.Label]</label>
+            <visible>IsEmpty(ListItem.Art(landscape)) + IsEmpty(ListItem.Art(clearlogo))</visible>
+        </control>
+    </include>
+    
 </includes>
