@@ -466,6 +466,20 @@
         <value condition="Container(9000).Hasfocus(10)">$INFO[Container(9109).ListItem.Property(content)]</value>
         <value condition="Container(9000).Hasfocus(11)">$INFO[Container(9110).ListItem.Property(content)]</value>
     </variable>
+    <variable name="WidgetContentLabelPosition">
+        <value condition="Container(9000).Hasfocus(1) + !Skin.HasSetting(nomoviewidget)">$INFO[Container(9100).ListItem.Property(layout)]</value>
+        <value condition="Container(9000).Hasfocus(7) + !Skin.HasSetting(notvshowwidget)">$INFO[Container(9101).ListItem.Property(layout)]</value>
+        <value condition="Container(9000).Hasfocus(14) + !Skin.HasSetting(nomusicwidget)">$INFO[Container(9102).ListItem.Property(layout)]</value>
+        <value condition="Container(9000).Hasfocus(31) + !Skin.HasSetting(nomusicvideoswidget)">$INFO[Container(9103).ListItem.Property(layout)]</value>
+        <value condition="Container(9000).Hasfocus(18) + !Skin.HasSetting(noaddonwidget)">$INFO[Container(9104).ListItem.Property(layout)]</value>
+        <value condition="Container(9000).Hasfocus(3) + !Skin.HasSetting(nomoviewidgetplaylistmovie1)">$INFO[Container(9105).ListItem.Property(layout)]</value>
+        <value condition="Container(9000).Hasfocus(4) + !Skin.HasSetting(nomoviewidgetplaylistmovie2)">$INFO[Container(9106).ListItem.Property(layout)]</value>
+        <value condition="Container(9000).Hasfocus(5) + !Skin.HasSetting(nomoviewidgetplaylistmovie3)">$INFO[Container(9107).ListItem.Property(layout)]</value>
+        <value condition="Container(9000).Hasfocus(9) + !Skin.HasSetting(notvwidgetplaylisttv1)">$INFO[Container(9108).ListItem.Property(layout)]</value>
+        <value condition="Container(9000).Hasfocus(10) + !Skin.HasSetting(notvwidgetplaylisttv2)">$INFO[Container(9109).ListItem.Property(layout)]</value>
+        <value condition="Container(9000).Hasfocus(11) + !Skin.HasSetting(notvwidgetplaylisttv3)">$INFO[Container(9110).ListItem.Property(layout)]</value>
+        <value>Widget</value>
+    </variable>
     <variable name="WidgetArtLayout">
         <value condition="Container(9000).Hasfocus(1)">$INFO[Container(9100).ListItem.Property(layout)]</value>
         <value condition="Container(9000).Hasfocus(7)">$INFO[Container(9101).ListItem.Property(layout)]</value>
@@ -543,97 +557,97 @@
     </variable>
 
     <variable name="WidgetHomePrevious">
-        <value condition="Container(9000).Hasfocus(1)">$INFO[Container(9100).ListItemNoWrap(-1).Label]</value>
-        <value condition="Container(9000).Hasfocus(7)">$INFO[Container(9101).ListItemNoWrap(-1).Label]</value>
-        <value condition="Container(9000).Hasfocus(14)">$INFO[Container(9102).ListItemNoWrap(-1).Label]</value>
-        <value condition="Container(9000).Hasfocus(31)">$INFO[Container(9103).ListItemNoWrap(-1).Label]</value>
-        <value condition="Container(9000).Hasfocus(18)">$INFO[Container(9104).ListItemNoWrap(-1).Label]</value>
-        <value condition="Container(9000).Hasfocus(3)">$INFO[Container(9105).ListItemNoWrap(-1).Label]</value>
-        <value condition="Container(9000).Hasfocus(4)">$INFO[Container(9106).ListItemNoWrap(-1).Label]</value>
-        <value condition="Container(9000).Hasfocus(5)">$INFO[Container(9107).ListItemNoWrap(-1).Label]</value>
-        <value condition="Container(9000).Hasfocus(9)">$INFO[Container(9108).ListItemNoWrap(-1).Label]</value>
-        <value condition="Container(9000).Hasfocus(10)">$INFO[Container(9109).ListItemNoWrap(-1).Label]</value>
-        <value condition="Container(9000).Hasfocus(11)">$INFO[Container(9110).ListItemNoWrap(-1).Label]</value>
+        <value condition="Control.HasFocus(9100) + Container(9000).Hasfocus(1)">$INFO[Container(9100).ListItemNoWrap(-1).Label]</value>
+        <value condition="Control.HasFocus(9101) + Container(9000).Hasfocus(7)">$INFO[Container(9101).ListItemNoWrap(-1).Label]</value>
+        <value condition="Control.HasFocus(9102) + Container(9000).Hasfocus(14)">$INFO[Container(9102).ListItemNoWrap(-1).Label]</value>
+        <value condition="Control.HasFocus(9103) + Container(9000).Hasfocus(31)">$INFO[Container(9103).ListItemNoWrap(-1).Label]</value>
+        <value condition="Control.HasFocus(9104) + Container(9000).Hasfocus(18)">$INFO[Container(9104).ListItemNoWrap(-1).Label]</value>
+        <value condition="Control.HasFocus(9105) + Container(9000).Hasfocus(3)">$INFO[Container(9105).ListItemNoWrap(-1).Label]</value>
+        <value condition="Control.HasFocus(9106) + Container(9000).Hasfocus(4)">$INFO[Container(9106).ListItemNoWrap(-1).Label]</value>
+        <value condition="Control.HasFocus(9107) + Container(9000).Hasfocus(5)">$INFO[Container(9107).ListItemNoWrap(-1).Label]</value>
+        <value condition="Control.HasFocus(9108) + Container(9000).Hasfocus(9)">$INFO[Container(9108).ListItemNoWrap(-1).Label]</value>
+        <value condition="Control.HasFocus(9109) + Container(9000).Hasfocus(10)">$INFO[Container(9109).ListItemNoWrap(-1).Label]</value>
+        <value condition="Control.HasFocus(9110) + Container(9000).Hasfocus(11)">$INFO[Container(9110).ListItemNoWrap(-1).Label]</value>
     </variable>
     <variable name="WidgetHomeNext">
-        <value condition="Container(9000).Hasfocus(1) + IntegerGreaterThan(Container(9100).NumItems,1)">$INFO[Container(9100).ListItemNoWrap(1).Label]</value>
-        <value condition="Container(9000).Hasfocus(1)">$INFO[Container(9100).ListItemNoWrap(2).Label]</value>
-        <value condition="Container(9000).Hasfocus(7) + IntegerGreaterThan(Container(9101).NumItems,1)">$INFO[Container(9101).ListItemNoWrap(1).Label]</value>
-        <value condition="Container(9000).Hasfocus(7)">$INFO[Container(9101).ListItemNoWrap(2).Label]</value>
-        <value condition="Container(9000).Hasfocus(14) + IntegerGreaterThan(Container(9102).NumItems,1)">$INFO[Container(9102).ListItemNoWrap(1).Label]</value>
-        <value condition="Container(9000).Hasfocus(14)">$INFO[Container(9102).ListItemNoWrap(2).Label]</value>
-        <value condition="Container(9000).Hasfocus(31) + IntegerGreaterThan(Container(9103).NumItems,1)">$INFO[Container(9103).ListItemNoWrap(1).Label]</value>
-        <value condition="Container(9000).Hasfocus(31)">$INFO[Container(9103).ListItemNoWrap(2).Label]</value>
-        <value condition="Container(9000).Hasfocus(18) + IntegerGreaterThan(Container(9104).NumItems,1)">$INFO[Container(9104).ListItemNoWrap(1).Label]</value>
-        <value condition="Container(9000).Hasfocus(18)">$INFO[Container(9104).ListItemNoWrap(2).Label]</value>
-        <value condition="Container(9000).Hasfocus(3) + IntegerGreaterThan(Container(9105).NumItems,1)">$INFO[Container(9105).ListItemNoWrap(1).Label]</value>
-        <value condition="Container(9000).Hasfocus(3)">$INFO[Container(9105).ListItemNoWrap(2).Label]</value>
-        <value condition="Container(9000).Hasfocus(4) + IntegerGreaterThan(Container(9106).NumItems,1)">$INFO[Container(9106).ListItemNoWrap(1).Label]</value>
-        <value condition="Container(9000).Hasfocus(4)">$INFO[Container(9106).ListItemNoWrap(2).Label]</value>
-        <value condition="Container(9000).Hasfocus(5) + IntegerGreaterThan(Container(9107).NumItems,1)">$INFO[Container(9107).ListItemNoWrap(1).Label]</value>
-        <value condition="Container(9000).Hasfocus(5)">$INFO[Container(9107).ListItemNoWrap(2).Label]</value>
-        <value condition="Container(9000).Hasfocus(9) + IntegerGreaterThan(Container(9108).NumItems,1)">$INFO[Container(9108).ListItemNoWrap(1).Label]</value>
-        <value condition="Container(9000).Hasfocus(9)">$INFO[Container(9108).ListItemNoWrap(2).Label]</value>
-        <value condition="Container(9000).Hasfocus(10) + IntegerGreaterThan(Container(9109).NumItems,1)">$INFO[Container(9109).ListItemNoWrap(1).Label]</value>
-        <value condition="Container(9000).Hasfocus(10)">$INFO[Container(9109).ListItemNoWrap(2).Label]</value>
-        <value condition="Container(9000).Hasfocus(11) + IntegerGreaterThan(Container(9110).NumItems,1)">$INFO[Container(9110).ListItemNoWrap(1).Label]</value>
-        <value condition="Container(9000).Hasfocus(11)">$INFO[Container(9110).ListItemNoWrap(2).Label]</value>
+        <value condition="Control.HasFocus(9100) + Container(9000).Hasfocus(1) + IntegerGreaterThan(Container(9100).NumItems,1)">$INFO[Container(9100).ListItemNoWrap(1).Label]</value>
+        <value condition="Control.HasFocus(9100) + Container(9000).Hasfocus(1)">$INFO[Container(9100).ListItemNoWrap(2).Label]</value>
+        <value condition="Control.HasFocus(9101) + Container(9000).Hasfocus(7) + IntegerGreaterThan(Container(9101).NumItems,1)">$INFO[Container(9101).ListItemNoWrap(1).Label]</value>
+        <value condition="Control.HasFocus(9101) + Container(9000).Hasfocus(7)">$INFO[Container(9101).ListItemNoWrap(2).Label]</value>
+        <value condition="Control.HasFocus(9102) + Container(9000).Hasfocus(14) + IntegerGreaterThan(Container(9102).NumItems,1)">$INFO[Container(9102).ListItemNoWrap(1).Label]</value>
+        <value condition="Control.HasFocus(9102) + Container(9000).Hasfocus(14)">$INFO[Container(9102).ListItemNoWrap(2).Label]</value>
+        <value condition="Control.HasFocus(9103) + Container(9000).Hasfocus(31) + IntegerGreaterThan(Container(9103).NumItems,1)">$INFO[Container(9103).ListItemNoWrap(1).Label]</value>
+        <value condition="Control.HasFocus(9103) + Container(9000).Hasfocus(31)">$INFO[Container(9103).ListItemNoWrap(2).Label]</value>
+        <value condition="Control.HasFocus(9104) + Container(9000).Hasfocus(18) + IntegerGreaterThan(Container(9104).NumItems,1)">$INFO[Container(9104).ListItemNoWrap(1).Label]</value>
+        <value condition="Control.HasFocus(9104) + Container(9000).Hasfocus(18)">$INFO[Container(9104).ListItemNoWrap(2).Label]</value>
+        <value condition="Control.HasFocus(9105) + Container(9000).Hasfocus(3) + IntegerGreaterThan(Container(9105).NumItems,1)">$INFO[Container(9105).ListItemNoWrap(1).Label]</value>
+        <value condition="Control.HasFocus(9105) + Container(9000).Hasfocus(3)">$INFO[Container(9105).ListItemNoWrap(2).Label]</value>
+        <value condition="Control.HasFocus(9106) + Container(9000).Hasfocus(4) + IntegerGreaterThan(Container(9106).NumItems,1)">$INFO[Container(9106).ListItemNoWrap(1).Label]</value>
+        <value condition="Control.HasFocus(9106) + Container(9000).Hasfocus(4)">$INFO[Container(9106).ListItemNoWrap(2).Label]</value>
+        <value condition="Control.HasFocus(9107) + Container(9000).Hasfocus(5) + IntegerGreaterThan(Container(9107).NumItems,1)">$INFO[Container(9107).ListItemNoWrap(1).Label]</value>
+        <value condition="Control.HasFocus(9107) + Container(9000).Hasfocus(5)">$INFO[Container(9107).ListItemNoWrap(2).Label]</value>
+        <value condition="Control.HasFocus(9108) + Container(9000).Hasfocus(9) + IntegerGreaterThan(Container(9108).NumItems,1)">$INFO[Container(9108).ListItemNoWrap(1).Label]</value>
+        <value condition="Control.HasFocus(9108) + Container(9000).Hasfocus(9)">$INFO[Container(9108).ListItemNoWrap(2).Label]</value>
+        <value condition="Control.HasFocus(9109) + Container(9000).Hasfocus(10) + IntegerGreaterThan(Container(9109).NumItems,1)">$INFO[Container(9109).ListItemNoWrap(1).Label]</value>
+        <value condition="Control.HasFocus(9109) + Container(9000).Hasfocus(10)">$INFO[Container(9109).ListItemNoWrap(2).Label]</value>
+        <value condition="Control.HasFocus(9110) + Container(9000).Hasfocus(11) + IntegerGreaterThan(Container(9110).NumItems,1)">$INFO[Container(9110).ListItemNoWrap(1).Label]</value>
+        <value condition="Control.HasFocus(9110) + Container(9000).Hasfocus(11)">$INFO[Container(9110).ListItemNoWrap(2).Label]</value>
     </variable>
 
     <variable name="WidgetListLabel">
         <value condition="Container(9000).Hasfocus(1)">$INFO[ListItem.Label]</value>
-        <value condition="Control.HasFocus(8001)">$INFO[ListItem.Title]</value>
-        <value condition="Control.HasFocus(8002)">$INFO[ListItem.Title]</value>
-        <value condition="Control.HasFocus(8003)">$INFO[ListItem.Title]</value>
-        <value condition="Control.HasFocus(8004)">$INFO[ListItem.Label]</value>
-        <value condition="Control.HasFocus(8005)">$INFO[ListItem.Label]</value>
-        <value condition="Control.HasFocus(8006)">$INFO[ListItem.Label]</value>
-        <value condition="Control.HasFocus(8007)">$INFO[ListItem.Label]</value>
-        <value condition="Control.HasFocus(8008)">$INFO[ListItem.Title]</value>
-        <value condition="Control.HasFocus(8009)">$INFO[ListItem.Title]</value>
-        <value condition="Control.HasFocus(8010)">$INFO[ListItem.Title]</value>
+        <value condition="Container(9000).Hasfocus(7)">$INFO[ListItem.Title]</value>
+        <value condition="Container(9000).Hasfocus(14)">$INFO[ListItem.Title]</value>
+        <value condition="Container(9000).Hasfocus(31)">$INFO[ListItem.Title]</value>
+        <value condition="Container(9000).Hasfocus(18)">$INFO[ListItem.Label]</value>
+        <value condition="Container(9000).Hasfocus(3)">$INFO[ListItem.Label]</value>
+        <value condition="Container(9000).Hasfocus(4)">$INFO[ListItem.Label]</value>
+        <value condition="Container(9000).Hasfocus(5)">$INFO[ListItem.Label]</value>
+        <value condition="Container(9000).Hasfocus(9)">$INFO[ListItem.Title]</value>
+        <value condition="Container(9000).Hasfocus(10)">$INFO[ListItem.Title]</value>
+        <value condition="Container(9000).Hasfocus(11)">$INFO[ListItem.Title]</value>
     </variable>
 
     <variable name="WidgetListTitle">
         <value condition="Control.HasFocus(8000) | Container(9000).Hasfocus(1)">$INFO[Container(8000).ListItem.Label]</value>
-        <value condition="Control.HasFocus(8001)">$INFO[Container(8001).ListItem.Title]</value>
-        <value condition="Control.HasFocus(8002)">$INFO[Container(8002).ListItem.Title]</value>
-        <value condition="Control.HasFocus(8003)">$INFO[Container(8003).ListItem.Title]</value>
-        <value condition="Control.HasFocus(8004)">$INFO[Container(8004).ListItem.Label]</value>
-        <value condition="Control.HasFocus(8005)">$INFO[Container(8005).ListItem.Label]</value>
-        <value condition="Control.HasFocus(8006)">$INFO[Container(8006).ListItem.Label]</value>
-        <value condition="Control.HasFocus(8007)">$INFO[Container(8007).ListItem.Label]</value>
-        <value condition="Control.HasFocus(8008)">$INFO[Container(8008).ListItem.Title]</value>
-        <value condition="Control.HasFocus(8009)">$INFO[Container(8009).ListItem.Title]</value>
-        <value condition="Control.HasFocus(8010)">$INFO[Container(8010).ListItem.Title]</value>
+        <value condition="Control.HasFocus(8001) | Container(9000).Hasfocus(7)">$INFO[Container(8001).ListItem.Title]</value>
+        <value condition="Control.HasFocus(8002) | Container(9000).Hasfocus(14)">$INFO[Container(8002).ListItem.Title]</value>
+        <value condition="Control.HasFocus(8003) | Container(9000).Hasfocus(31)">$INFO[Container(8003).ListItem.Title]</value>
+        <value condition="Control.HasFocus(8004) | Container(9000).Hasfocus(18)">$INFO[Container(8004).ListItem.Label]</value>
+        <value condition="Control.HasFocus(8005) | Container(9000).Hasfocus(3)">$INFO[Container(8005).ListItem.Label]</value>
+        <value condition="Control.HasFocus(8006) | Container(9000).Hasfocus(4)">$INFO[Container(8006).ListItem.Label]</value>
+        <value condition="Control.HasFocus(8007) | Container(9000).Hasfocus(5)">$INFO[Container(8007).ListItem.Label]</value>
+        <value condition="Control.HasFocus(8008) | Container(9000).Hasfocus(9)">$INFO[Container(8008).ListItem.Title]</value>
+        <value condition="Control.HasFocus(8009) | Container(9000).Hasfocus(10)">$INFO[Container(8009).ListItem.Title]</value>
+        <value condition="Control.HasFocus(8010) | Container(9000).Hasfocus(11)">$INFO[Container(8010).ListItem.Title]</value>
     </variable>
     <variable name="WidgetListYear">
         <value condition="Control.HasFocus(8000) | Container(9000).Hasfocus(1)">$INFO[Container(8000).ListItem.Year]</value>
-        <value condition="Control.HasFocus(8005)">$INFO[Container(8005).ListItem.Year]</value>
-        <value condition="Control.HasFocus(8006)">$INFO[Container(8006).ListItem.Year]</value>
-        <value condition="Control.HasFocus(8007)">$INFO[Container(8007).ListItem.Year]</value>
+        <value condition="Control.HasFocus(8005) | Container(9000).Hasfocus(3)">$INFO[Container(8005).ListItem.Year]</value>
+        <value condition="Control.HasFocus(8006) | Container(9000).Hasfocus(4)">$INFO[Container(8006).ListItem.Year]</value>
+        <value condition="Control.HasFocus(8007) | Container(9000).Hasfocus(5)">$INFO[Container(8007).ListItem.Year]</value>
     </variable>
     <variable name="WidgetListRating">
         <value condition="Control.HasFocus(8000) | Container(9000).Hasfocus(1)">$INFO[Container(8000).ListItem.Rating]</value>
         <value condition="[Control.HasFocus(8000) | Container(9000).Hasfocus(1)]+ !IsEmpty(Container(8000).ListItem.Votes)">$INFO[Container(8000).ListItem.Rating] INFO[Container(8000).ListItem.Votes]</value>
-        <value condition="Control.HasFocus(8005)">$INFO[Container(8005).ListItem.Rating]</value>
-        <value condition="Control.HasFocus(8005) + !IsEmpty(Container(8005).ListItem.Votes)">$INFO[Container(8005).ListItem.Rating] $INFO[Container(8005).ListItem.Votes]</value>
-        <value condition="Control.HasFocus(8006)">$INFO[Container(8006).ListItem.Rating]</value>
-        <value condition="Control.HasFocus(8006) + !IsEmpty(Container(8006).ListItem.Votes)">$INFO[Container(8006).ListItem.Rating] $INFO[Container(8006).ListItem.Votes]</value>
-        <value condition="Control.HasFocus(8007)">$INFO[Container(8007).ListItem.Rating]</value>
-        <value condition="Control.HasFocus(8007) + !IsEmpty(Container(8007).ListItem.Votes)">$INFO[Container(8007).ListItem.Rating] $INFO[Container(8007).ListItem.Votes]</value>
+        <value condition="Control.HasFocus(8005) | Container(9000).Hasfocus(3)">$INFO[Container(8005).ListItem.Rating]</value>
+        <value condition="[Control.HasFocus(8005) | Container(9000).Hasfocus(3)] + !IsEmpty(Container(8005).ListItem.Votes)">$INFO[Container(8005).ListItem.Rating] $INFO[Container(8005).ListItem.Votes]</value>
+        <value condition="Control.HasFocus(8006) | Container(9000).Hasfocus(4)">$INFO[Container(8006).ListItem.Rating]</value>
+        <value condition="[Control.HasFocus(8006) | Container(9000).Hasfocus(4)] + !IsEmpty(Container(8006).ListItem.Votes)">$INFO[Container(8006).ListItem.Rating] $INFO[Container(8006).ListItem.Votes]</value>
+        <value condition="Control.HasFocus(8007) | Container(9000).Hasfocus(5)">$INFO[Container(8007).ListItem.Rating]</value>
+        <value condition="[Control.HasFocus(8007) | Container(9000).Hasfocus(5)] + !IsEmpty(Container(8007).ListItem.Votes)">$INFO[Container(8007).ListItem.Rating] $INFO[Container(8007).ListItem.Votes]</value>
     </variable>
     <variable name="WidgetListDuration">
         <value condition="Control.HasFocus(8000) | Container(9000).Hasfocus(1)">$INFO[Container(8000).ListItem.Duration]</value>
-        <value condition="Control.HasFocus(8005)">$INFO[Container(8005).ListItem.Duration]</value>
-        <value condition="Control.HasFocus(8006)">$INFO[Container(8006).ListItem.Duration]</value>
-        <value condition="Control.HasFocus(8007)">$INFO[Container(8007).ListItem.Duration]</value>
+        <value condition="Control.HasFocus(8005) | Container(9000).Hasfocus(3)">$INFO[Container(8005).ListItem.Duration]</value>
+        <value condition="Control.HasFocus(8006) | Container(9000).Hasfocus(4)">$INFO[Container(8006).ListItem.Duration]</value>
+        <value condition="Control.HasFocus(8007) | Container(9000).Hasfocus(5)">$INFO[Container(8007).ListItem.Duration]</value>
     </variable>
     <variable name="WidgetListPlot">
         <value condition="Control.HasFocus(8000) | Container(9000).Hasfocus(1)">$INFO[Container(8000).ListItem.Plot]</value>
-        <value condition="Control.HasFocus(8005)">$INFO[Container(8005).ListItem.Plot]</value>
-        <value condition="Control.HasFocus(8006)">$INFO[Container(8006).ListItem.Plot]</value>
-        <value condition="Control.HasFocus(8007)">$INFO[Container(8007).ListItem.Plot]</value>
+        <value condition="Control.HasFocus(8005) | Container(9000).Hasfocus(3)">$INFO[Container(8005).ListItem.Plot]</value>
+        <value condition="Control.HasFocus(8006) | Container(9000).Hasfocus(4)">$INFO[Container(8006).ListItem.Plot]</value>
+        <value condition="Control.HasFocus(8007) | Container(9000).Hasfocus(5)">$INFO[Container(8007).ListItem.Plot]</value>
     </variable>
 
     <!-- Banner Fallback -->
