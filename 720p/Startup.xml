@@ -3,8 +3,6 @@
     <defaultcontrol always="true">10</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <onload>RunScript(script.skin.info.service)</onload>
-    <onload condition="System.HasAddon(script.artistslideshow) + Skin.HasSetting(HomeMusicFanart)">RunScript(script.artistslideshow, daemon=True)</onload>
-    <onload condition="Library.HasContent(tvshows) + System.HasAddon(script.tv.show.next.aired)">XBMC.AlarmClock(NextAired,XBMC.RunScript(script.tv.show.next.aired,silent=True),00:00:10,silent)</onload>
     <onload condition="System.HasAddon(script.randomandlastitems) + [Skin.HasSetting(nomoviewidgetplaylistmovie1) | Skin.HasSetting(latestmoviesplaylist1)] + Skin.HasSetting(Menu_Custom4) + !IsEmpty(Skin.String(Menu_Custom4_Path))">XBMC.RunScript(script.randomandlastitems,type=Movie,unwatched=True,limit=10,method=Last,playlist=$INFO[Skin.String(Menu_Custom4_Path)],menu=Menu1)</onload>
     <onload condition="System.HasAddon(script.randomandlastitems) + [Skin.HasSetting(nomoviewidgetplaylistmovie2) | Skin.HasSetting(latestmoviesplaylist2)] + Skin.HasSetting(Menu_Custom5) + !IsEmpty(Skin.String(Menu_Custom5_Path))">XBMC.RunScript(script.randomandlastitems,type=Movie,unwatched=True,limit=10,method=Last,playlist=$INFO[Skin.String(Menu_Custom5_Path)],menu=Menu2)</onload>
     <onload condition="System.HasAddon(script.randomandlastitems) + [Skin.HasSetting(nomoviewidgetplaylistmovie3) | Skin.HasSetting(latestmoviesplaylist3)] + Skin.HasSetting(Menu_Custom6) + !IsEmpty(Skin.String(Menu_Custom6_Path))">XBMC.RunScript(script.randomandlastitems,type=Movie,unwatched=True,limit=10,method=Last,playlist=$INFO[Skin.String(Menu_Custom6_Path)],menu=Menu3)</onload>
@@ -24,12 +22,12 @@
                 <texture>black.png</texture>
             </control>
             <control type="image">
-                <left>440</left>
+                <centerleft>640</centerleft>
                 <top>100</top>
                 <width>400</width>
                 <height>400</height>
                 <aspectratio>keep</aspectratio>
-                <texture>kodiLogo.png</texture>
+                <texture>kodiSplash.png</texture>
             </control>
             <control type="image">
                 <description>Busy animation</description>
