@@ -306,55 +306,6 @@
                         <selected>Skin.HasSetting(BlackBackground)</selected>
                         <enable>!Skin.HasSetting(Artistslideshow) + !Skin.HasSetting(CustomBackground) + !Skin.HasSetting(CDWallNoVisualisation)</enable>
                     </control>
-                    <control type="label" id="106">
-                        <include>MenuTitleSettings</include>
-                        <label>512</label>
-                    </control>
-                    <control type="radiobutton" id="1011">
-                        <include>MenuItemSettings</include>
-                        <label>$LOCALIZE[41211]</label>
-                        <onclick>Skin.ToggleSetting(Use_Startup_Playlist)</onclick>
-                        <selected>Skin.HasSetting(Use_Startup_Playlist)</selected>
-                        <enable>!Skin.HasSetting(Use_Startup_VideoPlaylist)</enable>
-                    </control>
-                    <control type="button" id="108">
-                        <description>Startup Music Playlist Path</description>
-                        <include>MenuItemSettings</include>
-                        <label>41212</label>
-                        <label2>$INFO[Skin.String(Startup_Playlist_Path)]</label2>
-                        <onclick>Skin.SetFile(Startup_Playlist_Path,,special://MusicPlaylists/)</onclick>
-                        <enable>Skin.HasSetting(Use_Startup_Playlist)</enable>
-                    </control>
-                    <control type="radiobutton" id="1122">
-                        <include>MenuItemSettings</include>
-                        <label>41213</label>
-                        <onclick>Skin.ToggleSetting(Use_Startup_VideoPlaylist)</onclick>
-                        <selected>Skin.HasSetting(Use_Startup_VideoPlaylist)</selected>
-                        <enable>!Skin.HasSetting(Use_Startup_Playlist)</enable>
-                    </control>
-                    <control type="button" id="1123">
-                        <description>Startup Video Playlist Path</description>
-                        <include>MenuItemSettings</include>
-                        <label>41214</label>
-                        <label2>$INFO[Skin.String(Startup_VideoPlaylist_Path)]</label2>
-                        <onclick>Skin.SetFile(Startup_VideoPlaylist_Path,,special://VideoPlaylists/)</onclick>
-                        <enable>Skin.HasSetting(Use_Startup_VideoPlaylist)</enable>
-                    </control>
-                    <control type="radiobutton" id="1124">
-                        <include>MenuItemSettings</include>
-                        <label>41215</label>
-                        <onclick>Skin.ToggleSetting(Use_Startup_DreamVideo)</onclick>
-                        <selected>Skin.HasSetting(Use_Startup_DreamVideo)</selected>
-                        <enable>!Skin.HasSetting(Use_Startup_Playlist) + !Skin.HasSetting(Use_Startup_VideoPlaylist)</enable>
-                    </control>
-                    <control type="button" id="1125">
-                        <description>Dream Video Path</description>
-                        <include>MenuItemSettings</include>
-                        <label>41216</label>
-                        <label2>$INFO[Skin.String(Startup_DreamVideo_Path)]</label2>
-                        <onclick>Skin.SetFile(Startup_DreamVideo_Path)</onclick>
-                        <enable>Skin.HasSetting(Use_Startup_DreamVideo)</enable>
-                    </control>
                     <control type="label" id="109">
                         <include>MenuTitleSettings</include>
                         <label>33068</label>
@@ -623,7 +574,7 @@
                         <label>$LOCALIZE[24022] $LOCALIZE[41274]</label>
                         <onclick>Skin.ToggleSetting(notvwidgetplaylisttv)</onclick>
                         <selected>Skin.HasSetting(notvwidgetplaylisttv)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz) + System.HasAddon(script.randomandlastitems)</enable>
+                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</enable>
                     </control>
                     <control type="radiobutton" id="1170">
                         <description>Show Recently added Playlists TVShow Widget 1</description>
@@ -631,7 +582,7 @@
                         <label>$LOCALIZE[24022] $LOCALIZE[41287]</label>
                         <onclick>Skin.ToggleSetting(notvwidgetplaylisttv1)</onclick>
                         <selected>Skin.HasSetting(notvwidgetplaylisttv1)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz) + System.HasAddon(script.randomandlastitems) + Skin.HasSetting(notvwidgetplaylisttv)</enable>
+                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz) + Skin.HasSetting(notvwidgetplaylisttv)</enable>
                     </control>
                     <control type="radiobutton" id="1171">
                         <description>Show Recently added Playlists TVShow Widget 2</description>
@@ -639,7 +590,7 @@
                         <label>$LOCALIZE[24022] $LOCALIZE[41288]</label>
                         <onclick>Skin.ToggleSetting(notvwidgetplaylisttv2)</onclick>
                         <selected>Skin.HasSetting(notvwidgetplaylisttv2)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz) + System.HasAddon(script.randomandlastitems) + Skin.HasSetting(notvwidgetplaylisttv)</enable>
+                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz) + Skin.HasSetting(notvwidgetplaylisttv)</enable>
                     </control>
                     <control type="radiobutton" id="1172">
                         <description>Show Recently added Playlists TVShow Widget 3</description>
@@ -647,7 +598,7 @@
                         <label>$LOCALIZE[24022] $LOCALIZE[41289]</label>
                         <onclick>Skin.ToggleSetting(notvwidgetplaylisttv3)</onclick>
                         <selected>Skin.HasSetting(notvwidgetplaylisttv3)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz) + System.HasAddon(script.randomandlastitems) + Skin.HasSetting(notvwidgetplaylisttv)</enable>
+                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz) + Skin.HasSetting(notvwidgetplaylisttv)</enable>
                     </control>
                     <control type="radiobutton" id="1127">
                         <description>Show Currently Watching TVShow Widget</description>
@@ -679,7 +630,7 @@
                         <label>$LOCALIZE[24022] $LOCALIZE[41273]</label>
                         <onclick>Skin.ToggleSetting(nomoviewidgetplaylistmovie)</onclick>
                         <selected>Skin.HasSetting(nomoviewidgetplaylistmovie)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz) + System.HasAddon(script.randomandlastitems)</enable>
+                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</enable>
                     </control>
                     <control type="radiobutton" id="1173">
                         <description>Show Recently added Playlists Movie1 Witget</description>
@@ -687,7 +638,7 @@
                         <label>$LOCALIZE[24022] $LOCALIZE[41290]</label>
                         <onclick>Skin.ToggleSetting(nomoviewidgetplaylistmovie1)</onclick>
                         <selected>Skin.HasSetting(nomoviewidgetplaylistmovie1)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz) + System.HasAddon(script.randomandlastitems) + Skin.HasSetting(nomoviewidgetplaylistmovie)</enable>
+                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz) + Skin.HasSetting(nomoviewidgetplaylistmovie)</enable>
                     </control>
                     <control type="radiobutton" id="1174">
                         <description>Show Recently added Playlists Movie2 Widget</description>
@@ -695,7 +646,7 @@
                         <label>$LOCALIZE[24022] $LOCALIZE[41291]</label>
                         <onclick>Skin.ToggleSetting(nomoviewidgetplaylistmovie2)</onclick>
                         <selected>Skin.HasSetting(nomoviewidgetplaylistmovie2)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz) + System.HasAddon(script.randomandlastitems) + Skin.HasSetting(nomoviewidgetplaylistmovie)</enable>
+                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz) + Skin.HasSetting(nomoviewidgetplaylistmovie)</enable>
                     </control>
                     <control type="radiobutton" id="1175">
                         <description>Show Recently added Playlists Movie3 Widget</description>
@@ -703,7 +654,7 @@
                         <label>$LOCALIZE[24022] $LOCALIZE[41292]</label>
                         <onclick>Skin.ToggleSetting(nomoviewidgetplaylistmovie3)</onclick>
                         <selected>Skin.HasSetting(nomoviewidgetplaylistmovie3)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz) + System.HasAddon(script.randomandlastitems) + Skin.HasSetting(nomoviewidgetplaylistmovie)</enable>
+                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz) + Skin.HasSetting(nomoviewidgetplaylistmovie)</enable>
                     </control>
                     <control type="radiobutton" id="1116">
                         <description>Show Recently added Status Widget</description>
@@ -779,7 +730,7 @@
                         <label>41279</label>
                         <onclick>Skin.ToggleSetting(latestmoviesplaylist1)</onclick>
                         <selected>Skin.HasSetting(latestmoviesplaylist1)</selected>
-                        <enable>Skin.HasSetting(homepagerecentlyaddedinfohorz) + System.HasAddon(script.randomandlastitems) + Skin.HasSetting(homepageHideRecentlyAdded)</enable>
+                        <enable>Skin.HasSetting(homepagerecentlyaddedinfohorz) + Skin.HasSetting(homepageHideRecentlyAdded)</enable>
                     </control>
                     <control type="radiobutton" id="1161">
                         <description>Enable Custom Movieplaylist 2</description>
@@ -787,7 +738,7 @@
                         <label>41280</label>
                         <onclick>Skin.ToggleSetting(latestmoviesplaylist2)</onclick>
                         <selected>Skin.HasSetting(latestmoviesplaylist2)</selected>
-                        <enable>Skin.HasSetting(homepagerecentlyaddedinfohorz) + System.HasAddon(script.randomandlastitems) + Skin.HasSetting(homepageHideRecentlyAdded)</enable>
+                        <enable>Skin.HasSetting(homepagerecentlyaddedinfohorz) + Skin.HasSetting(homepageHideRecentlyAdded)</enable>
                     </control>
                     <control type="radiobutton" id="1162">
                         <description>Enable Custom Movieplaylist 3</description>
@@ -795,7 +746,7 @@
                         <label>41281</label>
                         <onclick>Skin.ToggleSetting(latestmoviesplaylist3)</onclick>
                         <selected>Skin.HasSetting(latestmoviesplaylist3)</selected>
-                        <enable>Skin.HasSetting(homepagerecentlyaddedinfohorz) + System.HasAddon(script.randomandlastitems) + Skin.HasSetting(homepageHideRecentlyAdded)</enable>
+                        <enable>Skin.HasSetting(homepagerecentlyaddedinfohorz) + Skin.HasSetting(homepageHideRecentlyAdded)</enable>
                     </control>
                     <control type="radiobutton" id="1163">
                         <description>Enable Latest Episodes</description>
@@ -819,7 +770,7 @@
                         <label>41282</label>
                         <onclick>Skin.ToggleSetting(latestepisodesplaylist1)</onclick>
                         <selected>Skin.HasSetting(latestepisodesplaylist1)</selected>
-                        <enable>Skin.HasSetting(homepagerecentlyaddedinfohorz) + System.HasAddon(script.randomandlastitems) + Skin.HasSetting(homepageHideRecentlyAdded)</enable>
+                        <enable>Skin.HasSetting(homepagerecentlyaddedinfohorz)  + Skin.HasSetting(homepageHideRecentlyAdded)</enable>
                     </control>
                     <control type="radiobutton" id="1166">
                         <description>Enable Latest Custom TVPlaylist2</description>
@@ -827,7 +778,7 @@
                         <label>41283</label>
                         <onclick>Skin.ToggleSetting(latestepisodesplaylist2)</onclick>
                         <selected>Skin.HasSetting(latestepisodesplaylist2)</selected>
-                        <enable>Skin.HasSetting(homepagerecentlyaddedinfohorz) + System.HasAddon(script.randomandlastitems) + Skin.HasSetting(homepageHideRecentlyAdded)</enable>
+                        <enable>Skin.HasSetting(homepagerecentlyaddedinfohorz) + Skin.HasSetting(homepageHideRecentlyAdded)</enable>
                     </control>
                     <control type="radiobutton" id="1167">
                         <description>Enable Latest Custom TVPlaylist3</description>
@@ -835,7 +786,7 @@
                         <label>41284</label>
                         <onclick>Skin.ToggleSetting(latestepisodesplaylist3)</onclick>
                         <selected>Skin.HasSetting(latestepisodesplaylist3)</selected>
-                        <enable>Skin.HasSetting(homepagerecentlyaddedinfohorz) + System.HasAddon(script.randomandlastitems) + Skin.HasSetting(homepageHideRecentlyAdded)</enable>
+                        <enable>Skin.HasSetting(homepagerecentlyaddedinfohorz) + Skin.HasSetting(homepageHideRecentlyAdded)</enable>
                     </control>
                     <control type="radiobutton" id="1168">
                         <description>Enable Latest Albums</description>

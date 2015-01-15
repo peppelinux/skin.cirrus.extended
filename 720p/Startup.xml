@@ -54,40 +54,6 @@
                 <onfocus>ReplaceWindow(Home)</onfocus>
                 <texturenofocus>-</texturenofocus>
                 <texturefocus>-</texturefocus>
-                <visible>!Skin.HasSetting(Use_Startup_Playlist) + !Skin.HasSetting(Use_Startup_VideoPlaylist) + !Skin.HasSetting(Use_Startup_DreamVideo)</visible>
-                <animation effect="fade" start="0" end="100" time="0" delay="8000" condition="Skin.HasSetting(EnableStartupAnimation)">Focus</animation>
-                <width>300</width>
-                <height>42</height>
-            </control>
-            <control type="button" id="10">
-                <description>trigger with startup Playlist</description>
-                <onfocus>XBMC.PlayMedia($INFO[Skin.String(Startup_Playlist_Path)])</onfocus>
-                <onfocus>ReplaceWindow(Home)</onfocus>
-                <texturenofocus>-</texturenofocus>
-                <texturefocus>-</texturefocus>
-                <visible>Skin.HasSetting(Use_Startup_Playlist)</visible>
-                <animation effect="fade" start="0" end="100" time="0" delay="8000" condition="Skin.HasSetting(EnableStartupAnimation)">Focus</animation>
-                <width>300</width>
-                <height>42</height>
-            </control>
-            <control type="button" id="10">
-                <description>trigger with startup Playlist</description>
-                <onfocus>XBMC.PlayMedia($INFO[Skin.String(Startup_VideoPlaylist_Path)],1)</onfocus>
-                <onfocus>ReplaceWindow(Home)</onfocus>
-                <texturenofocus>-</texturenofocus>
-                <texturefocus>-</texturefocus>
-                <visible>Skin.HasSetting(Use_Startup_VideoPlaylist)</visible>
-                <animation effect="fade" start="0" end="100" time="0" delay="8000" condition="Skin.HasSetting(EnableStartupAnimation)">Focus</animation>
-                <width>300</width>
-                <height>42</height>
-            </control>
-            <control type="button" id="10">
-                <description>trigger with startup Playlist</description>
-                <onfocus>XBMC.PlayMedia($INFO[Skin.String(Startup_DreamVideo_Path)],isdir,1)</onfocus>
-                <onfocus>ActivateWindow(Home)</onfocus>
-                <texturenofocus>-</texturenofocus>
-                <texturefocus>-</texturefocus>
-                <visible>Skin.HasSetting(Use_Startup_DreamVideo)</visible>
                 <animation effect="fade" start="0" end="100" time="0" delay="8000" condition="Skin.HasSetting(EnableStartupAnimation)">Focus</animation>
                 <width>300</width>
                 <height>42</height>

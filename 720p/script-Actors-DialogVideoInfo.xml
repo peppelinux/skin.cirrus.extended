@@ -268,14 +268,6 @@
               <bordertexture border="6">ContentPanelvertical.png</bordertexture>
               <bordersize>6</bordersize>
               <aspectratio>stretch</aspectratio>
-              <visible>!Player.HasVideo | Skin.HasSetting(Use_Startup_DreamVideo)</visible>
-            </control>
-            <control type="videowindow" id="8">
-              <left>795</left>
-              <top>385</top>
-              <width>405</width>
-              <height>227</height>
-              <visible>!Skin.HasSetting(Use_Startup_DreamVideo)</visible>
             </control>
           </control>
           <!-- LABELS -->
