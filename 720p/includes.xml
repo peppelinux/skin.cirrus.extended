@@ -1272,8 +1272,10 @@
             <visible>IsEmpty(ListItem.Art(banner))</visible>
         </control>
         <control type="image">
-            <left>0</left> 
+            <centerleft>50%</centerleft> 
             <centertop>50%</centertop>
+            <width>90%</width>
+            <height>90%</height>
             <align>center</align>
             <aligny>center</aligny>
             <aspectratio>keep</aspectratio>
@@ -1281,18 +1283,20 @@
             <visible>IsEmpty(ListItem.Art(banner)) + !IsEmpty(ListItem.Art(clearlogo))</visible>
         </control>
         <control type="label">
-            <left>0</left> 
+            <centerleft>50%</centerleft> 
             <centertop>50%</centertop>
+            <width>90%</width>
+            <height>90%</height>
             <align>center</align>
             <aligny>center</aligny>
-            <font>cirrus_50_Bold</font>
+            <font>cirrus_40_Bold</font>
             <textcolor>white</textcolor>
             <shadowcolor>black</shadowcolor>
+            <scrol>true</scrol>
             <label>$INFO[ListItem.Label]</label>
             <visible>IsEmpty(ListItem.Art(banner)) + IsEmpty(ListItem.Art(clearlogo))</visible>
         </control>
     </include>
-    
     <include name="FallbackWidethumb">
         <control type="image">
             <left>0</left> 
@@ -1303,8 +1307,10 @@
             <visible>IsEmpty(ListItem.Art(landscape))</visible>
         </control>
         <control type="image">
-            <left>0</left> 
+            <centerleft>50%</centerleft> 
             <centertop>50%</centertop>
+            <width>90%</width>
+            <height>90%</height>
             <align>center</align>
             <aligny>center</aligny>
             <aspectratio>keep</aspectratio>
@@ -1312,13 +1318,17 @@
             <visible>IsEmpty(ListItem.Art(landscape)) + !IsEmpty(ListItem.Art(clearlogo))</visible>
         </control>
         <control type="label">
-            <left>0</left> 
+            <centerleft>50%</centerleft> 
             <centertop>50%</centertop>
+            <width>90%</width>
+            <height>90%</height>
             <align>center</align>
             <aligny>center</aligny>
-            <font>cirrus_50_Bold</font>
+            <font>cirrus_30_Bold</font>
             <textcolor>white</textcolor>
             <shadowcolor>black</shadowcolor>
+            <wrapmultiline>true</wrapmultiline>
+            <scrol>true</scrol>
             <label>$INFO[ListItem.Label]</label>
             <visible>IsEmpty(ListItem.Art(landscape)) + IsEmpty(ListItem.Art(clearlogo))</visible>
         </control>
