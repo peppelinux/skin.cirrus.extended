@@ -1261,12 +1261,27 @@
         <focusedcolor>black</focusedcolor>
     </include>
 
+    <variable name="BannerImageFallback">
+        <value condition="!IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="!IsEmpty(FanArt.image)">$INFO[FanArt.image]</value>
+		<value>$INFO[ListItem.Thumb]</value>
+    </variable>
+    
     <include name="FallbackBanner">
         <control type="image">
             <left>0</left> 
             <top>0</top> 
-            <aspectratio>stretch</aspectratio>
-            <texture background="true">bannerFallback.png</texture>
+            <aspectratio scalediffuse="false" align="left">scale</aspectratio>
+            <texture background="true" fallback="bannerFallback.png">$VAR[BannerImageFallback]</texture>
+            <bordertexture border="8">ThumbBorder.png</bordertexture>
+            <bordersize>8</bordersize>
+            <visible>IsEmpty(ListItem.Art(banner)) + [Control.IsVisible(519) | Control.IsVisible(571)]</visible>
+        </control>
+        <control type="image">
+            <left>0</left> 
+            <top>0</top> 
+            <aspectratio scalediffuse="false" align="left">scale</aspectratio>
+            <texture background="true" fallback="bannerFallback.png">$VAR[BannerImageFallback]</texture>
             <bordertexture border="8">ContentPanelvertical.png</bordertexture>
             <bordersize>8</bordersize>
             <visible>IsEmpty(ListItem.Art(banner))</visible>
@@ -1333,5 +1348,4 @@
             <visible>IsEmpty(ListItem.Art(landscape)) + IsEmpty(ListItem.Art(clearlogo))</visible>
         </control>
     </include>
-    
 </includes>

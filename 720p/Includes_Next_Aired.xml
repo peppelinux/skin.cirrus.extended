@@ -97,7 +97,7 @@
                 <top>6</top>
                 <width>160</width>
                 <height>40</height>
-                <texture background="true" fallback="tvbanner.png">$INFO[ListItem.Property(Art(banner))]</texture>
+                <texture background="true">$INFO[ListItem.Property(Art(banner))]</texture>
                 <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                 <aspectratio>keep</aspectratio>
                 <bordersize>3</bordersize>
@@ -157,7 +157,7 @@
                 <top>6</top>
                 <width>160</width>
                 <height>40</height>
-                <texture background="true" fallback="tvbanner.png">$INFO[ListItem.Property(Art(banner))]</texture>
+                <texture background="true">$INFO[ListItem.Property(Art(banner))]</texture>
                 <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                 <aspectratio>keep</aspectratio>
                 <bordersize>3</bordersize>
