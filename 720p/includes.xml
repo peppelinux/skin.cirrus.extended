@@ -1284,7 +1284,7 @@
             <texture background="true" fallback="bannerFallback.png">$VAR[BannerImageFallback]</texture>
             <bordertexture border="8">ContentPanelvertical.png</bordertexture>
             <bordersize>8</bordersize>
-            <visible>IsEmpty(ListItem.Art(banner))</visible>
+            <visible>IsEmpty(ListItem.Art(banner)) + ![Control.IsVisible(519) | Control.IsVisible(571)]</visible>
         </control>
         <control type="image">
             <centerleft>50%</centerleft> 
