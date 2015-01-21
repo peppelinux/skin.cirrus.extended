@@ -70,7 +70,8 @@
                 <top>650</top>
                 <width>160</width>
                 <height>40</height>
-                <texture>xbmc_logo_white.png</texture>
+                <aspectratio>keep</aspectratio>
+                <texture>cirrusLogo.png</texture>
             </control>
             <control type="group">   
                 <left>-240</left>
@@ -154,7 +155,7 @@
                     <onup>99</onup>
                     <ondown>19</ondown>
                 </control>
-                <control type="radiobutton" id="19">
+                <control type="edit" id="19">
                     <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
                     <description>Filter</description>
                     <left>0</left>

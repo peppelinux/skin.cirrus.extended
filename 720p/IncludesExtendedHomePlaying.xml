@@ -108,7 +108,7 @@
                     <height>150</height>
                     <left>85</left>
                     <top>10</top>
-                    <texture fallback="cdartdefault 2b.png">$INFO[Player.FolderPath]cdart.png</texture>
+                    <texture fallback="cdartdefault.png">$INFO[Player.FolderPath]cdart.png</texture>
                     <aspectratio align="bottom">keep</aspectratio>
                     <visible>Skin.HasSetting(cdart2)</visible>
                 </control>
@@ -127,7 +127,7 @@
                     <height>150</height>
                     <left>85</left>
                     <top>10</top>
-                    <texture fallback="cdartdefault 3w.png">$INFO[Player.FolderPath]cdart.png</texture>
+                    <texture fallback="cdartdefaultw.png">$INFO[Player.FolderPath]cdart.png</texture>
                     <aspectratio align="bottom">keep</aspectratio>
                     <visible>Skin.HasSetting(cdart3)</visible>
                 </control>

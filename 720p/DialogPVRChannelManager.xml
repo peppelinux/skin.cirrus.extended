@@ -31,7 +31,7 @@
         <width>160</width>
         <height>40</height>
         <aspectratio>keep</aspectratio>
-        <texture>xbmc_logo_white.png</texture>
+        <texture>cirrusLogo.png</texture>
       </control>
       <!-- PVR Butchabay End -->
       <control type="button" id="4">

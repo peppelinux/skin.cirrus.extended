@@ -90,7 +90,8 @@
                 <top>650</top>
                 <width>160</width>
                 <height>40</height>
-                <texture>xbmc_logo_white.png</texture>
+                <aspectratio>keep</aspectratio>
+                <texture>cirrusLogo.png</texture>
             </control>
             <control type="group">   
                 <left>-240</left>

@@ -29,7 +29,8 @@
                 <top>30</top>
                 <width>160</width>
                 <height>40</height>
-                <texture>xbmc_logo_white.png</texture>
+                <aspectratio>keep</aspectratio>
+                <texture>cirrusLogo.png</texture>
             </control>
             <control type="list" id="9000">
                 <left>10</left>

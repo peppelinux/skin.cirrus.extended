@@ -238,7 +238,8 @@
                 <top>650</top>
                 <width>160</width>
                 <height>40</height>
-                <texture>xbmc_logo_white.png</texture>
+                <aspectratio>keep</aspectratio>
+                <texture>cirrusLogo.png</texture>
             </control>
 
             <!-- eye image and view options label at top of menu -->
@@ -324,7 +325,7 @@
                     <label>589</label>
                     <include>ButtonCommonValues</include>
                 </control>
-                <control type="radiobutton" id="19">
+                <control type="edit" id="19">
                     <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
                     <description>Filter</description>
                     <include>ButtonCommonValues</include>

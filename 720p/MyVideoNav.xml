@@ -20,7 +20,7 @@
                 <include>global_kenburns_fanart</include>
                 <fadetime>FanartCrossfadeTime</fadetime>
                 <visible>!Skin.HasSetting(VideoLibraryMovieFanart) | Control.IsVisible(590) | Control.IsVisible(591) | Control.IsVisible(592) | Control.IsVisible(593) | Control.IsVisible(594) | Control.IsVisible(595)</visible>
-                <visible>Container.Content(Movies) | Container.Content(Addons) | Container.Content(Files)</visible>
+                <visible>Container.Content(Movies) | Container.Content(Addons) | Container.Content(Files) | Container.Content(Sets)</visible>
             </control>
             <control type="multiimage">
                 <left>0</left>
@@ -359,7 +359,8 @@
                 <top>650</top>
                 <width>160</width>
                 <height>40</height>
-                <texture>xbmc_logo_white.png</texture>
+                <aspectratio>keep</aspectratio>
+                <texture>cirrusLogo.png</texture>
             </control>
             <!-- eye image and view options label at top of menu -->
             <control type="group">   
