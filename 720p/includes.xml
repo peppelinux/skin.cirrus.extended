@@ -399,6 +399,28 @@
         <texturenofocus border="0">button-nofocus.png</texturenofocus>
         <pulseonselect>false</pulseonselect>
     </include>
+    <include name="SideBladeLeft">
+        <control type="image">
+            <posx>-820</posx>
+            <posy>0</posy>
+            <width>820</width>
+            <height>720</height>
+            <texture border="5">dialogbackground.png</texture>
+            <animation effect="slide" start="-26,0" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+            <animation effect="slide" start="0,0" end="-26,0" time="200" delay="200" tween="quadratic" easing="out">WindowClose</animation>
+        </control>
+    </include>
+    <include name="SideBladeLeftPVR">
+        <control type="image">
+            <posx>-820</posx>
+            <posy>0</posy>
+            <width>846</width>
+            <height>720</height>
+            <texture>HomeBlade.png</texture>
+            <animation effect="slide" start="-26,0" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+            <animation effect="slide" start="0,0" end="-26,0" time="200" delay="200" tween="quadratic" easing="out">WindowClose</animation>
+        </control>
+    </include>
 
     <!-- Animation Includes 1.2.2 -->
     <include name="switch_horizontal_fanart">
