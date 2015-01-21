@@ -91,21 +91,21 @@
             </control>
         </control>
         <control type="group">
-      <animation effect="slide" start="0,0" end="250,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | Control.HasFocus(8999)">Conditional</animation>
-      <animation effect="slide" start="0,0" end="-250,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | Control.HasFocus(8999)">WindowClose</animation>
-      <control type="button" id="8999">
-        <description>Fake button for mouse control</description>
-        <left>-250</left>
-        <top>0</top>
-        <width>265</width>
-        <height>720</height>
-        <label>-</label>
-        <font>-</font>
-        <texturenofocus>-</texturenofocus>
-        <texturefocus>-</texturefocus>
-        <visible>true</visible>
-      </control>
-      <include>SideBladeLeft</include>
+            <animation effect="slide" start="0,0" end="250,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | Control.HasFocus(8999)">Conditional</animation>
+            <animation effect="slide" start="0,0" end="-250,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | Control.HasFocus(8999)">WindowClose</animation>
+            <control type="button" id="8999">
+                <description>Fake button for mouse control</description>
+                <left>-250</left>
+                <top>0</top>
+                <width>265</width>
+                <height>720</height>
+                <label>-</label>
+                <font>-</font>
+                <texturenofocus>-</texturenofocus>
+                <texturefocus>-</texturefocus>
+                <visible>true</visible>
+            </control>
+            <include>SideBladeLeft</include>
             <control type="group" id="9000">
                 <left>-250</left>
                 <top>130</top>
@@ -176,7 +176,7 @@
                     <onleft>55</onleft>
                     <onright>55</onright>
                     <onup>5</onup>
-                    <ondown>610</ondown>
+                    <ondown>7</ondown>
                 </control>
                 <control type="radiobutton" id="7">
                     <description>Hide foreign</description>
@@ -184,6 +184,21 @@
                     <top>210</top>
                     <include>ButtonCommonValues</include>
                     <label>25001</label>
+                    <onleft>55</onleft>
+                    <onright>55</onright>
+                    <onup>6</onup>
+                    <ondown>8</ondown>
+                </control>
+                <control type="radiobutton" id="8">
+                    <description>Hide broken</description>
+                    <left>0</left>
+                    <top>250</top>
+                    <include>ButtonCommonValues</include>
+                    <label>24999</label>
+                    <onleft>55</onleft>
+                    <onright>55</onright>
+                    <onup>7</onup>
+                    <ondown>610</ondown>
                 </control>
                 <control type="button" id="610">
                     <description>Fake Button to fix Player Controls Navigation</description>
