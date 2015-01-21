@@ -9,13 +9,6 @@
         <top>130</top>
     </coordinates>
     <controls>
-        <!--<control type="image">
-			<left>5</left>
-			<top>156</top>
-			<width>483</width>
-			<height>53</height>
-			<texture flipy="true" border="20,20,20,2">InfoMessagePanel.png</texture>
-		</control> -->
         <control type="image">
             <left>0</left>
             <top>0</top>

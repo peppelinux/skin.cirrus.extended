@@ -8,18 +8,14 @@
             <control type="group">
                 <left>300</left>
                 <top>-520</top>
-                <visible>Container(9000).HasFocus(1) | [Container(9000).HasFocus(3) + System.HasAddon(script.randomandlastitems)] | [Container(9000).HasFocus(4) + System.HasAddon(script.randomandlastitems)] | [Container(9000).HasFocus(5) + System.HasAddon(script.randomandlastitems)] | [Container(9000).HasFocus(9) + System.HasAddon(script.randomandlastitems)] | [Container(9000).HasFocus(10) + System.HasAddon(script.randomandlastitems)] | [Container(9000).HasFocus(11) + System.HasAddon(script.randomandlastitems)] | Container(9000).HasFocus(7) | Container(9000).HasFocus(14)</visible>
-                <animation type="Conditional" condition="Container(9000).HasFocus(1) | Container(9000).HasFocus(3) | Container(9000).HasFocus(4) | Container(9000).HasFocus(5) | Container(9000).HasFocus(7) | Container(9000).HasFocus(9) | Container(9000).HasFocus(10) | Container(9000).HasFocus(11) | Container(9000).HasFocus(14)" reversible="false">
+                <visible>Container(9000).HasFocus(1) | [Container(9000).HasFocus(3)] | [Container(9000).HasFocus(4)] | [Container(9000).HasFocus(5)] | [Container(9000).HasFocus(9)] | [Container(9000).HasFocus(10)] | [Container(9000).HasFocus(11)] | Container(9000).HasFocus(7) | Container(9000).HasFocus(14)</visible>
+                <!-- <animation type="Conditional" condition="Container(9000).HasFocus(1) | Container(9000).HasFocus(3) | Container(9000).HasFocus(4) | Container(9000).HasFocus(5) | Container(9000).HasFocus(7) | Container(9000).HasFocus(9) | Container(9000).HasFocus(10) | Container(9000).HasFocus(11) | Container(9000).HasFocus(14)" reversible="false">
                     <effect type="fade" start="0" end="100" time="250"/>
-                </animation>
-                <animation type="Hidden" reversible="false">
-                    <effect type="fade" start="100" end="0" time="250"/>
-                </animation>			
+                </animation> -->
+                <animation effect="fade" start="0" end="100" time="250" reversible="false">Visible</animation>
+                <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
                 <animation effect="fade" start="0" end="100" time="900" delay="800">WindowOpen</animation>
-                <animation type="WindowClose" condition="!Window.Previous(startup)" reversible="false">
-                    <effect type="fade" start="100" end="0" time="200"/>
-                </animation>
-
+                <animation effect="fade" start="100" end="0" time="200" condition="!Window.Previous(startup)" reversible="false">WindowClose</animation>
                 <control type="image">
                     <left>723</left>
                     <top>920</top>
@@ -66,7 +62,7 @@
                     <font>cirrus_24</font>
                     <textcolor>white</textcolor>
                     <label>$LOCALIZE[342]</label>
-                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(3) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(3)</visible>
                 </control>	
                 <control type="label">
                     <left>760</left>
@@ -77,7 +73,7 @@
                     <font>cirrus_24</font>
                     <textcolor>white</textcolor>
                     <label>$LOCALIZE[342]</label>
-                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(4) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(4)</visible>
                 </control>	
                 <control type="label">
                     <left>760</left>
@@ -88,7 +84,7 @@
                     <font>cirrus_24</font>
                     <textcolor>white</textcolor>
                     <label>$LOCALIZE[342]</label>
-                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(5) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(5)</visible>
                 </control>	
                 <control type="label">
                     <left>760</left>
@@ -110,7 +106,7 @@
                     <font>cirrus_24</font>
                     <textcolor>white</textcolor>
                     <label>$LOCALIZE[342]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(3) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(3)</visible>
                 </control>	
                 <control type="label">
                     <left>760</left>
@@ -121,7 +117,7 @@
                     <font>cirrus_24</font>
                     <textcolor>white</textcolor>
                     <label>$LOCALIZE[342]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(4) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(4)</visible>
                 </control>	
                 <control type="label">
                     <left>760</left>
@@ -132,7 +128,7 @@
                     <font>cirrus_24</font>
                     <textcolor>white</textcolor>
                     <label>$LOCALIZE[342]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(5) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(5)</visible>
                 </control>	
                 <control type="label">
                     <left>760</left>
@@ -154,7 +150,7 @@
                     <font>cirrus_24</font>
                     <textcolor>white</textcolor>
                     <label>$LOCALIZE[342]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(3) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(3)</visible>
                 </control>	
                 <control type="label">
                     <left>760</left>
@@ -165,7 +161,7 @@
                     <font>cirrus_24</font>
                     <textcolor>white</textcolor>
                     <label>$LOCALIZE[342]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(4) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(4)</visible>
                 </control>	
                 <control type="label">
                     <left>760</left>
@@ -176,7 +172,7 @@
                     <font>cirrus_24</font>
                     <textcolor>white</textcolor>
                     <label>$LOCALIZE[342]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(5) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(5)</visible>
                 </control>	
 
                 <!-- ==============  ================= -->
@@ -199,7 +195,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[41295] : $INFO[Window.Property(PlaylistLastMovieMenu1.Count),,]</label>
-                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(3) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(3)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -209,7 +205,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[41295] : $INFO[Window.Property(PlaylistLastMovieMenu2.Count),,]</label>
-                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(4) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(4)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -219,7 +215,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[41295] : $INFO[Window.Property(PlaylistLastMovieMenu3.Count),,]</label>
-                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(5) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(5)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -239,7 +235,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[41295] : $INFO[Window.Property(PlaylistLastMovieMenu1.Count),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(3) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(3)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -249,7 +245,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[41295] : $INFO[Window.Property(PlaylistLastMovieMenu2.Count),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(4) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(4)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -259,7 +255,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[41295] : $INFO[Window.Property(PlaylistLastMovieMenu3.Count),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(5) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(5)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -279,7 +275,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[41295] : $INFO[Window.Property(PlaylistLastMovieMenu1.Count),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(3) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(3)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -289,7 +285,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[41295] : $INFO[Window.Property(PlaylistLastMovieMenu2.Count),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(4) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(4)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -299,7 +295,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[41295] : $INFO[Window.Property(PlaylistLastMovieMenu3.Count),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(5) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(5)</visible>
                 </control>
 
                 <!-- ==============  ================= -->
@@ -322,7 +318,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[16102] : $INFO[Window.Property(PlaylistLastMovieMenu1.Watched),,]</label>
-                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(3) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(3)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -332,7 +328,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[16102] : $INFO[Window.Property(PlaylistLastMovieMenu2.Watched),,]</label>
-                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(4) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(4)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -342,7 +338,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[16102] : $INFO[Window.Property(PlaylistLastMovieMenu3.Watched),,]</label>
-                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(5) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(5)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -362,7 +358,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[16102] : $INFO[Window.Property(PlaylistLastMovieMenu1.Watched),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(3) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(3)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -372,7 +368,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[16102] : $INFO[Window.Property(PlaylistLastMovieMenu2.Watched),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(4) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(4)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -382,7 +378,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[16102] : $INFO[Window.Property(PlaylistLastMovieMenu3.Watched),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(5) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(5)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -402,7 +398,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[16102] : $INFO[Window.Property(PlaylistLastMovieMenu1.Watched),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(3) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(3)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -412,7 +408,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[16102] : $INFO[Window.Property(PlaylistLastMovieMenu2.Watched),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(4) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(4)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -422,7 +418,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[16102] : $INFO[Window.Property(PlaylistLastMovieMenu3.Watched),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(5) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(5)</visible>
                 </control>
 
                 <!-- ==============  ================= -->
@@ -445,7 +441,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[16101] : $INFO[Window.Property(PlaylistLastMovieMenu1.Unwatched),,]</label>
-                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(3) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(3)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -455,7 +451,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[16101] : $INFO[Window.Property(PlaylistLastMovieMenu2.Unwatched),,]</label>
-                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(4) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(4)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -465,7 +461,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[16101] : $INFO[Window.Property(PlaylistLastMovieMenu3.Unwatched),,]</label>
-                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(5) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(5)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -485,7 +481,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[16101] : $INFO[Window.Property(PlaylistLastMovieMenu1.Unwatched),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(3) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(3)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -495,7 +491,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[16101] : $INFO[Window.Property(PlaylistLastMovieMenu2.Unwatched),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(4) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(4)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -505,7 +501,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[16101] : $INFO[Window.Property(PlaylistLastMovieMenu3.Unwatched),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(5) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(5)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -525,7 +521,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[16101] : $INFO[Window.Property(PlaylistLastMovieMenu1.Unwatched),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(3) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(3)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -535,7 +531,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[16101] : $INFO[Window.Property(PlaylistLastMovieMenu2.Unwatched),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(4) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(4)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -545,7 +541,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[16101] : $INFO[Window.Property(PlaylistLastMovieMenu3.Unwatched),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(5) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(5)</visible>
                 </control>
                 <!-- ============== TV-Show Infos ================= -->
                 <control type="label">
@@ -568,7 +564,7 @@
                     <font>cirrus_24</font>
                     <textcolor>white</textcolor>
                     <label>$LOCALIZE[41103]</label>
-                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(9) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(9)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -579,7 +575,7 @@
                     <font>cirrus_24</font>
                     <textcolor>white</textcolor>
                     <label>$LOCALIZE[41103]</label>
-                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(10) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(10)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -590,7 +586,7 @@
                     <font>cirrus_24</font>
                     <textcolor>white</textcolor>
                     <label>$LOCALIZE[41103]</label>
-                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(11) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(11)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -612,7 +608,7 @@
                     <font>cirrus_24</font>
                     <textcolor>white</textcolor>
                     <label>$LOCALIZE[41103]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(9) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(9)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -623,7 +619,7 @@
                     <font>cirrus_24</font>
                     <textcolor>white</textcolor>
                     <label>$LOCALIZE[41103]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(10) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(10)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -634,7 +630,7 @@
                     <font>cirrus_24</font>
                     <textcolor>white</textcolor>
                     <label>$LOCALIZE[41103]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(11) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(11)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -656,7 +652,7 @@
                     <font>cirrus_24</font>
                     <textcolor>white</textcolor>
                     <label>$LOCALIZE[41103]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(9) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(9)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -667,7 +663,7 @@
                     <font>cirrus_24</font>
                     <textcolor>white</textcolor>
                     <label>$LOCALIZE[41103]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(10) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(10)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -678,7 +674,7 @@
                     <font>cirrus_24</font>
                     <textcolor>white</textcolor>
                     <label>$LOCALIZE[41103]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(11) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(11)</visible>
                 </control>
 
                 <!-- ==============  ================= -->
@@ -701,7 +697,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[41296] : $INFO[Window.Property(PlaylistLastEpisodeMenu4.TvShows),,]</label>
-                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(9) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(9)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -711,7 +707,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[41296] : $INFO[Window.Property(PlaylistLastEpisodeMenu5.TvShows),,]</label>
-                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(10) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(10)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -721,7 +717,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[41296] : $INFO[Window.Property(PlaylistLastEpisodeMenu6.TvShows),,]</label>
-                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(11) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(11)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -741,7 +737,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[41296] : $INFO[Window.Property(PlaylistLastEpisodeMenu4.TvShows),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(9) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(9)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -751,7 +747,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[41296] : $INFO[Window.Property(PlaylistLastEpisodeMenu5.TvShows),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(10) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(10)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -761,7 +757,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[41296] : $INFO[Window.Property(PlaylistLastEpisodeMenu6.TvShows),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(11) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(11)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -781,7 +777,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[41296] : $INFO[Window.Property(PlaylistLastEpisodeMenu4.TvShows),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(9) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(9)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -791,7 +787,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[41296] : $INFO[Window.Property(PlaylistLastEpisodeMenu5.TvShows),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(10) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(10)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -801,7 +797,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[41296] : $INFO[Window.Property(PlaylistLastEpisodeMenu6.TvShows),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(11) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(11)</visible>
                 </control>
 
                 <!-- ==============  ================= -->
@@ -824,7 +820,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[41294] : $INFO[Window.Property(PlaylistLastEpisodeMenu4.Count),,]</label>
-                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(9) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(9)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -834,7 +830,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[41294] : $INFO[Window.Property(PlaylistLastEpisodeMenu5.Count),,]</label>
-                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(10) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(10)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -844,7 +840,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[41294] : $INFO[Window.Property(PlaylistLastEpisodeMenu6.Count),,]</label>
-                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(11) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(11)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -864,7 +860,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[41294] : $INFO[Window.Property(PlaylistLastEpisodeMenu4.Count),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(9) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(9)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -874,7 +870,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[41294] : $INFO[Window.Property(PlaylistLastEpisodeMenu5.Count),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(10) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(10)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -884,7 +880,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[41294] : $INFO[Window.Property(PlaylistLastEpisodeMenu6.Count),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(11) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(11)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -904,7 +900,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[41294] : $INFO[Window.Property(PlaylistLastEpisodeMenu4.Count),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(9) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(9)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -914,7 +910,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[41294] : $INFO[Window.Property(PlaylistLastEpisodeMenu5.Count),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(10) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(10)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -924,7 +920,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[41294] : $INFO[Window.Property(PlaylistLastEpisodeMenu6.Count),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(11) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(11)</visible>
                 </control>
 
                 <!-- ============== ================= -->
@@ -947,7 +943,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[16101] : $INFO[Window.Property(PlaylistLastEpisodeMenu4.Unwatched),,]</label>
-                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(9) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(9)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -957,7 +953,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[16101] : $INFO[Window.Property(PlaylistLastEpisodeMenu5.Unwatched),,]</label>
-                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(10) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(10)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -967,7 +963,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[16101] : $INFO[Window.Property(PlaylistLastEpisodeMenu6.Unwatched),,]</label>
-                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(11) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>!Skin.HasSetting(horzHomeMenu) + !Player.HasMedia + Container(9000).HasFocus(11)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -987,7 +983,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[16101] : $INFO[Window.Property(PlaylistLastEpisodeMenu4.Unwatched),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(9) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(9)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -997,7 +993,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[16101] : $INFO[Window.Property(PlaylistLastEpisodeMenu5.Unwatched),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(10) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(10)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -1007,7 +1003,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[16101] : $INFO[Window.Property(PlaylistLastEpisodeMenu6.Unwatched),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(11) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(11)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -1027,7 +1023,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[16101] : $INFO[Window.Property(PlaylistLastEpisodeMenu4.Unwatched),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(9) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(9)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -1037,7 +1033,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[16101] : $INFO[Window.Property(PlaylistLastEpisodeMenu5.Unwatched),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(10) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(10)</visible>
                 </control>
                 <control type="label">
                     <left>760</left>
@@ -1047,7 +1043,7 @@
                     <font>cirrus_20</font>
                     <textcolor>white</textcolor>
                     <label fallback="-">$LOCALIZE[16101] : $INFO[Window.Property(PlaylistLastEpisodeMenu6.Unwatched),,]</label>
-                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(11) + System.HasAddon(script.randomandlastitems)</visible>
+                    <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu) + Container(9000).HasFocus(11)</visible>
                 </control>
                 <!-- ============== Music Infos ================= -->
                 <control type="label">
@@ -1181,16 +1177,10 @@
                 <top>100</top>
                 <visible>Container(9000).HasFocus(25)</visible>
                 <visible>!Player.HasVideo | !Skin.HasSetting(videowindowonhome)</visible>
-                <animation type="Conditional" condition="Container(9000).HasFocus(25)" reversible="false">
-                    <effect type="fade" start="0" end="100" time="250"/>
-                </animation>
-                <animation type="Hidden" reversible="false">
-                    <effect type="fade" start="100" end="0" time="250"/>
-                </animation>					
+                <animation effect="fade" start="0" end="100" time="250" delay="400" condition="Container(9000).HasFocus(25)" reversible="true">Conditional</animation>
+                <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
                 <animation effect="fade" start="0" end="100" time="900" delay="800">WindowOpen</animation>
-                <animation type="WindowClose" reversible="false">
-                    <effect type="fade" start="100" end="0" time="200"/>
-                </animation>
+                <animation effect="fade" start="100" end="0" time="200" reversible="false">WindowClose</animation>
                 <control type="image">
                     <left>0</left>
                     <top>0</top>
