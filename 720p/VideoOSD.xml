@@ -1,8 +1,20 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="true">602</defaultcontrol>
+    <defaultcontrol always="true">100</defaultcontrol>
     <controls>
         <control type="group">
+            <control type="button" id="899">
+                <description>Fake button for mouse control</description>
+                <left>0</left>
+                <top>0</top>
+                <width>1280</width>
+                <height>140</height>
+                <label>-</label>
+                <font>-</font>
+                <texturenofocus>-</texturenofocus>
+                <texturefocus>-</texturefocus>
+                <visible>true</visible>
+            </control>
             <animation effect="slide" start="0,-145" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
             <animation effect="slide" start="0,0" end="0,-145" time="300" delay="150" tween="quadratic" easing="out">WindowClose</animation>
             <animation effect="slide" start="0,0" end="0,-145" time="300" tween="quadratic" easing="out" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide)">Conditional</animation>
@@ -60,7 +72,7 @@
                         <onleft>701</onleft>
                         <onright>703</onright>
                         <ondown>500</ondown>
-                        <onclick>ActivateWindow(123)</onclick>
+                        <onclick>ActivateWindow(osdvideosettings)</onclick>
                     </control>
                     <control type="button" id="703">
                         <left>150</left>
@@ -76,6 +88,7 @@
                         <ondown>802</ondown>
                         <onclick>Dialog.Close(VideoOSD)</onclick>
                         <onclick>ActivateWindow(SubtitleSearch)</onclick>
+                        <visible>VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)</visible>
                     </control>
                     <control type="button" id="704">
                         <left>250</left>
@@ -208,6 +221,8 @@
                         <onright>603</onright>
                         <ondown>500</ondown>
                         <onclick>PlayerControl(Play)</onclick>
+                        <enable>Player.PauseEnabled</enable>
+                        <animation effect="fade" start="100" end="50" time="100" condition="!Player.PauseEnabled">Conditional</animation>
                     </control>
                     <control type="button" id="603">
                         <left>150</left>
@@ -392,10 +407,13 @@
                         <usealttexture>VideoPlayer.SubtitlesEnabled</usealttexture>
                         <onclick>ShowSubtitles</onclick>
                         <pulseonselect>false</pulseonselect>
-                        <visible>VideoPlayer.HasSubtitles</visible>
+                        <enable>VideoPlayer.HasSubtitles</enable>
+                        <animation effect="fade" start="100" end="50" time="100" condition="!VideoPlayer.HasSubtitles">Conditional</animation>
                     </control>
                     <control type="group" id="8000">
                         <width>60</width>
+                        <enable>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</enable>
+                        <animation effect="fade" start="100" end="50" time="100" condition="!VideoPlayer.HasSubtitles | !VideoPlayer.SubtitlesEnabled">Conditional</animation>
                         <control type="button" id="804">
                             <width>60</width>
                             <height>28</height>
@@ -405,7 +423,6 @@
                             <texturenofocus>OSDSubsLangNF.png</texturenofocus>
                             <pulseonselect>false</pulseonselect>
                             <onclick>CycleSubtitle</onclick>
-                            <visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
                             <onleft>803</onleft>
                             <onright>807</onright>
                             <onup>703</onup>
@@ -443,7 +460,8 @@
                         <pulseonselect>false</pulseonselect>
                         <label>22006</label>
                         <onclick>SubtitleDelay</onclick>
-                        <visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
+                        <enable>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</enable>
+                        <animation effect="fade" start="100" end="50" time="100" condition="!VideoPlayer.HasSubtitles | !VideoPlayer.SubtitlesEnabled">Conditional</animation>
                     </control>
                 </control>
             </control>
