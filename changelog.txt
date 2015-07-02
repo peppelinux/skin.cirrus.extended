@@ -1,5 +1,7 @@
-[B]3.2.0[/B] (xx.yy.2015)
-- changelog in progress
+[B]3.2.0[/B] (02.07.2015)
+- recently added widget redesigned
+- Kodi Helix skin adjustments
+- different fixes and adjustments
 
 [B]3.1.2[/B] (31.10.2014)
 - weather cleanup and change to support new addons
