@@ -88,14 +88,14 @@
             <width>1280</width>
             <height>720</height>
             <texture>special://skin/backgrounds/media-overlay.png</texture>
-            <visible>Player.HasVideo + !Skin.HasSetting(ShowBackgroundVideo)+ !SubString(Window(videolibrary).Property(tvtunesIsAlive),True)</visible>
+            <visible>Player.HasVideo + !Skin.HasSetting(ShowBackgroundVideo) + IsEmpty(Window(10025).Property(PlayingBackgroundMedia))</visible>
         </control>
         <control type="visualisation">
             <left>0</left>
             <top>0</top>
             <width>1280</width>
             <height>720</height>
-            <visible>Player.HasAudio + !Skin.HasSetting(ShowBackgroundVis)+ !SubString(Window(videolibrary).Property(tvtunesIsAlive),True)</visible>
+            <visible>Player.HasAudio + !Skin.HasSetting(ShowBackgroundVis) + IsEmpty(Window(10025).Property(PlayingBackgroundMedia))</visible>
         </control>
         <control type="videowindow">
             <left>0</left>
@@ -113,14 +113,14 @@
             <width>1280</width>
             <height>720</height>
             <texture>special://skin/backgrounds/media-overlay.png</texture>
-            <visible>Player.HasVideo + !SubString(Window(videolibrary).Property(tvtunesIsAlive),True) + !Skin.HasSetting(ShowBackgroundVideoBrowser)</visible>
+            <visible>Player.HasVideo + IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) + !Skin.HasSetting(ShowBackgroundVideoBrowser)</visible>
         </control>
         <control type="visualisation">
             <left>0</left>
             <top>0</top>
             <width>1280</width>
             <height>720</height>
-            <visible>Player.HasAudio + !SubString(Window(videolibrary).Property(tvtunesIsAlive),True) + !Skin.HasSetting(ShowBackgroundVideoBrowser)</visible>
+            <visible>Player.HasAudio + IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) + !Skin.HasSetting(ShowBackgroundVideoBrowser)</visible>
         </control>
         <control type="videowindow">
             <left>0</left>
