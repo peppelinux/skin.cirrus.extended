@@ -141,7 +141,7 @@
         <focusedlayout height="230" width="370" condition="SubString(Control.GetLabel(91004),Thumb,left)">
             <include>WidgetContentLabelControl</include>
         </focusedlayout>
-        <focusedlayout height="230" width="260" condition="SubString(Control.GetLabel(91004),Cover,left)">
+        <focusedlayout height="230" width="290" condition="SubString(Control.GetLabel(91004),Cover,left)">
             <include>WidgetContentLabelControl</include>
         </focusedlayout>
         <focusedlayout height="230" width="220" condition="SubString(Control.GetLabel(91004),Poster,left) | StringCompare(Control.GetLabel(91004),Widget)">
@@ -224,18 +224,15 @@
         </control>
     </include>
 
-    <include name="WidgetListInfoPositionCover">
-        <left>280</left>
-    </include>
-    <include name="WidgetListInfoPositionPoster">
+    <include name="WidgetListInfoLabels">
         <control type="label">
             <left>0</left>
             <top>30</top>
-            <width>700</width>
+            <width>450</width>
             <height>30</height>
             <align>left</align>
             <aligny>center</aligny>
-            <label>$VAR[WidgetListTitle]</label>
+            <label>$VAR[WidgetListHeader]</label>
             <scroll>true</scroll>
             <font>cirrus_24</font>
             <textcolor>white</textcolor>
@@ -246,7 +243,7 @@
             <width>533</width>
             <height>25</height>
             <top>60</top>
-            <label>[COLOR=accent]$LOCALIZE[562]:[/COLOR] $VAR[WidgetListYear]</label>
+            <label>$VAR[WidgetListInfo1]</label>
             <font>cirrus_20</font>
             <shadowcolor>black</shadowcolor>
         </control>
@@ -255,7 +252,7 @@
             <width>533</width>
             <height>25</height>
             <top>85</top>
-            <label>[COLOR=accent]$LOCALIZE[368]:[/COLOR] $VAR[WidgetListRating]</label>
+            <label>$VAR[WidgetListInfo2]</label>
             <font>cirrus_20</font>
             <shadowcolor>black</shadowcolor>
         </control>
@@ -264,7 +261,7 @@
             <width>533</width>
             <height>25</height>
             <top>110</top>
-            <label>[COLOR=accent]$LOCALIZE[31054]:[/COLOR] $VAR[WidgetListDuration] $LOCALIZE[12391]</label>
+            <label>$VAR[WidgetListInfo3]</label>
             <font>cirrus_20</font>
             <shadowcolor>black</shadowcolor>
         </control>
@@ -272,7 +269,7 @@
             <left>0</left>
             <top>135</top>
             <width>740</width>
-            <height>90</height>
+            <height>130</height>
             <align>left</align>
             <aligny>top</aligny>
             <font>cirrus_20</font>
@@ -280,10 +277,32 @@
             <shadowcolor>black</shadowcolor>
             <label>$VAR[WidgetListPlot]</label>
             <autoscroll delay="5000" time="3000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+            <visible>SubString(Control.GetLabel(91001),Poster,left) | SubString(Control.GetLabel(91001),Cover,left)</visible>
         </control>
-    </include>
-    <include name="WidgetListInfoPositionThumb">
-        <left>380</left>
+        <control type="textbox">
+            <left>0</left>
+            <top>135</top>
+            <width>570</width>
+            <height>130</height>
+            <align>left</align>
+            <aligny>top</aligny>
+            <font>cirrus_20</font>
+            <textcolor>white</textcolor>
+            <shadowcolor>black</shadowcolor>
+            <label>$VAR[WidgetListPlot]</label>
+            <autoscroll delay="5000" time="3000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+            <visible>SubString(Control.GetLabel(91001),Thumb,left)</visible>
+        </control>
+        <control type="image">
+            <description>Show clearlogo</description>
+            <right>1340</right>
+            <top>0</top>
+            <width>250</width>
+            <height>170</height>
+            <texture background="true">$VAR[WidgetListLogo]</texture>
+            <aspectratio scalediffuse="false">keep</aspectratio>
+            <visible>Skin.HasSetting(logoinshowwidget)</visible>
+        </control>
     </include>
 
     <include name="WidgetListInfoLayout">
@@ -296,8 +315,18 @@
             <animation effect="slide" start="1020,0" end="0,0" time="400" easing="inout" tween="cubic">Hidden</animation>
             <control type="group">
                 <left>280</left>
-                <include>WidgetListInfoPositionPoster</include>
+                <include>WidgetListInfoLabels</include>
                 <visible>SubString(Control.GetLabel(91001),Poster,left)</visible>
+            </control>
+            <control type="group">
+                <left>330</left>
+                <include>WidgetListInfoLabels</include>
+                <visible>SubString(Control.GetLabel(91001),Cover,left)</visible>
+            </control>
+            <control type="group">
+                <left>440</left>
+                <include>WidgetListInfoLabels</include>
+                <visible>SubString(Control.GetLabel(91001),Thumb,left)</visible>
             </control>
             <control type="group">
                 <left>0</left>
@@ -505,6 +534,16 @@
                 <posx>2000</posx>
                 <posy>2000</posy>
                 <label>$VAR[WidgetContentLabelPosition]</label>
+                <width>1</width>
+                <height>1</height>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+                <font>-</font>
+            </control>
+            <control type="label" id="91005">
+                <posx>2000</posx>
+                <posy>2000</posy>
+                <label>$VAR[WidgetContentSource]</label>
                 <width>1</width>
                 <height>1</height>
                 <texturefocus>-</texturefocus>
@@ -964,12 +1003,14 @@
                             <onclick>noop</onclick>
                             <property name="content">videodb://recentlyaddedepisodes/</property>
                             <property name="layout">ThumbThumb</property>
+                            <property name="source">Library</property>
                         </item>
                         <item id="2">
                             <label>Random Episodes</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://service.library.data.provider?type=randomepisodes&amp;reload=10&amp;limit=10</property>
                             <property name="layout">ThumbThumb</property>
+                            <property name="source">Library</property>
                             <visible>System.HasAddon(service.library.data.provider)</visible>
                         </item>
                         <item id="3">
@@ -977,6 +1018,7 @@
                             <onclick>noop</onclick>
                             <property name="content">plugin://service.library.data.provider?type=recommendedepisodes&amp;reload=10&amp;limit=10</property>
                             <property name="layout">ThumbThumb</property>
+                            <property name="source">Library</property>
                             <visible>System.HasAddon(service.library.data.provider)</visible>
                         </item>
                         <item id="4">
@@ -984,6 +1026,7 @@
                             <onclick>noop</onclick>
                             <property name="content">plugin://script.extendedinfo?info=populartvshows</property>
                             <property name="layout">PosterFanart</property>
+                            <property name="source">ExtendedInfoMovieDB</property>
                             <visible>System.HasAddon(script.extendedinfo)</visible>
                         </item>
                         <item id="5">
@@ -991,6 +1034,7 @@
                             <onclick>noop</onclick>
                             <property name="content">plugin://script.extendedinfo?info=airingtodaytvshows</property>
                             <property name="layout">PosterFanart</property>
+                            <property name="source">ExtendedInfoMovieDB</property>
                             <visible>System.HasAddon(script.extendedinfo)</visible>
                         </item>
                         <item id="6">
@@ -998,6 +1042,7 @@
                             <onclick>noop</onclick>
                             <property name="content">plugin://script.extendedinfo?info=onairtvshows</property>
                             <property name="layout">PosterFanart</property>
+                            <property name="source">ExtendedInfoMovieDB</property>
                             <visible>System.HasAddon(script.extendedinfo)</visible>
                         </item>
                         <item id="7">
@@ -1005,6 +1050,31 @@
                             <onclick>noop</onclick>
                             <property name="content">plugin://script.extendedinfo?info=airingtodaytvshows</property>
                             <property name="layout">PosterFanart</property>
+                            <property name="source">ExtendedInfoMovieDB</property>
+                            <visible>System.HasAddon(script.extendedinfo)</visible>
+                        </item>
+                        <item id="8">
+                            <label>Trending TV Shows</label>
+                            <onclick>noop</onclick>
+                            <property name="content">plugin://script.extendedinfo?info=trendingshows</property>
+                            <property name="layout">PosterFanart</property>
+                            <property name="source">TraktTV</property>
+                            <visible>System.HasAddon(script.extendedinfo)</visible>
+                        </item>
+                        <item id="9">
+                            <label>Airing TV Shows</label>
+                            <onclick>noop</onclick>
+                            <property name="content">plugin://script.extendedinfo?info=airingshows</property>
+                            <property name="layout">PosterFanart</property>
+                            <property name="source">TraktTV</property>
+                            <visible>System.HasAddon(script.extendedinfo)</visible>
+                        </item>
+                        <item id="10">
+                            <label>Premiere TV Shows</label>
+                            <onclick>noop</onclick>
+                            <property name="content">plugin://script.extendedinfo?info=premiereshows</property>
+                            <property name="layout">PosterFanart</property>
+                            <property name="source">TraktTV</property>
                             <visible>System.HasAddon(script.extendedinfo)</visible>
                         </item>
                     </content>
@@ -1141,117 +1211,6 @@
                     <content limit="10">$VAR[WidgetContent]</content>
                 </control>
             </control>
-
-
-            <!-- <control type="group">
-                <left>1028</left>
-                <top>53</top>
-                <visible>Library.HasContent(TVShows)</visible>
-                <visible>Container(9000).Hasfocus(7)</visible>
-                <include>VisibleFadeEffect</include>
-                <control type="group">
-                    <description>Recently Added Widget Series</description>
-                    <animation effect="slide" start="400,0" end="0,0" easing="inout" tween="cubic" time="500" delay="100">VisibleChange</animation>
-                    <visible>!Control.HasFocus(8001)</visible>
-                   
-                    
-                <control type="group">
-                    <control type="group">
-                        <left>159</left>
-                        <animation effect="slide" start="0,0" end="150,50" time="0" condition="Container(9000).HasFocus(7) | [Container(9000).Hasfocus(12) + !Skin.HasSetting(HomeMenuNoTVShowsButton)]">Conditional</animation>
-                        <control type="label">
-                            <left>28</left>
-                            <top>-25</top>
-                            <width>550</width>
-                            <height>30</height>
-                            <font>cirrus_24</font>
-                            <textcolor>white</textcolor>
-                            <shadowcolor>black</shadowcolor>
-                            <aligny>center</aligny>
-                            <label fallback="-">$INFO[Container(8001).ListItem.TVshowTitle]</label>
-                            <visible>!Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
-                        </control>
-                        <control type="label">
-                            <left>28</left>
-                            <top>-25</top>
-                            <width>550</width>
-                            <height>30</height>
-                            <font>cirrus_24</font>
-                            <textcolor>white</textcolor>
-                            <shadowcolor>black</shadowcolor>
-                            <aligny>center</aligny>
-                            <label fallback="-">$INFO[Container(8001).ListItem.Title]</label>
-                            <visible>Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
-                        </control>
-                        <control type="label">
-                            <left>28</left>
-                            <width>533</width>
-                            <height>25</height>
-                            <top>8</top>
-                            <label>[COLOR=accent]$LOCALIZE[20373]:[/COLOR] $INFO[Container(8001).ListItem.Season]</label>
-                            <font>cirrus_20</font>
-                            <shadowcolor>black</shadowcolor>
-                            <visible>!Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
-                        </control>
-                        <control type="label">
-                            <left>28</left>
-                            <width>533</width>
-                            <height>25</height>
-                            <top>8</top>
-                            <label>[COLOR=accent]$LOCALIZE[20373]:[/COLOR] $INFO[Container(8001).ListItem.Season]</label>
-                            <font>cirrus_20</font>
-                            <shadowcolor>black</shadowcolor>
-                            <visible>Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
-                        </control>
-                        <control type="label">
-                            <left>28</left>
-                            <width>533</width>
-                            <height>25</height>
-                            <top>34</top>
-                            <label>[COLOR=accent]$LOCALIZE[20359]:[/COLOR] $INFO[Container(8001).ListItem.Episode]</label>
-                            <font>cirrus_20</font>
-                            <shadowcolor>black</shadowcolor>
-                            <visible>!Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
-                        </control>
-                        <control type="label">
-                            <left>28</left>
-                            <width>533</width>
-                            <height>25</height>
-                            <top>34</top>
-                            <label>[COLOR=accent]$LOCALIZE[20359]:[/COLOR] $INFO[Container(8001).ListItem.Episode]</label>
-                            <font>cirrus_20</font>
-                            <shadowcolor>black</shadowcolor>
-                            <visible>Skin.HasSetting(watchlisttv)+Container(9000).HasFocus(7)</visible>
-                        </control>
-                        <control type="textbox">
-                            <left>28</left>
-                            <top>70</top>
-                            <width>610</width>
-                            <height>110</height>
-                            <align>left</align>
-                            <aligny>top</aligny>
-                            <font>cirrus_20</font>
-                            <textcolor>white</textcolor>
-                            <shadowcolor>black</shadowcolor>
-                            <label>$INFO[Container(8001).ListItem.Property(Plot)]</label>
-                            <autoscroll delay="5000" time="3000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-                        </control>
-                        <control type="image">
-                            <description>Show clearlogo</description>
-                            <left>380</left>
-                            <top>-65</top>
-                            <width>250</width>
-                            <height>170</height>
-                            <texture background="true">$INFO[Container(8001).ListItem.Art(tvshow.clearlogo)]</texture>
-                            <aspectratio scalediffuse="false">keep</aspectratio>
-                            <visible>Skin.HasSetting(logoinshowwidget)</visible>
-                        </control>
-                    </control>
-                </control>
-            </control> -->
-
-
-
             <!-- Music -->  
             <control type="group">
                 <left>1028</left>
@@ -1347,60 +1306,6 @@
                     <content limit="10">$VAR[WidgetContent]</content>
                 </control>
             </control>
-
-
-            <!--
-            <control type="group">
-                <left>1028</left>
-                <top>53</top>
-                <visible>Library.HasContent(Music)</visible>
-                <visible>Container(9000).Hasfocus(14)</visible>
-                <include>VisibleFadeEffect</include>
-                    
-                <control type="group">
-                    <description>Latest Items Widget Music</description>
-                    <visible>Control.HasFocus(8002)</visible>
-                    <left>-2033</left>
-                    <top>-11</top>
-                    <control type="group">
-                        <left>159</left>
-                        <control type="label">
-                            <left>130</left>
-                            <top>30</top>
-                            <width>550</width>
-                            <height>30</height>
-                            <font>cirrus_24</font>
-                            <textcolor>white</textcolor>
-                            <shadowcolor>black</shadowcolor>
-                            <aligny>center</aligny>
-                            <label>$INFO[Container(8002).ListItem.Label2]</label>
-                        </control>
-                        <control type="label">
-                            <left>130</left>
-                            <top>65</top>
-                            <width>550</width>
-                            <height>30</height>
-                            <font>cirrus_20</font>
-                            <textcolor>white</textcolor>
-                            <shadowcolor>black</shadowcolor>
-                            <aligny>center</aligny>
-                            <label fallback="-">[COLOR=accent]Album:[/COLOR] $INFO[Container(8002).ListItem.Label]</label>
-                        </control>
-                        <control type="label">
-                            <left>130</left>
-                            <top>100</top>
-                            <width>533</width>
-                            <height>25</height>
-                            <font>cirrus_20</font>
-                            <textcolor>white</textcolor>
-                            <shadowcolor>black</shadowcolor>
-                            <aligny>center</aligny>
-                            <label>[COLOR=accent]$LOCALIZE[562]:[/COLOR] $INFO[Container(8002).ListItem.Property(Year)]</label>
-                        </control>
-                    </control>
-                </control>
-            </control>
-            -->
             <!-- Addons -->
             <control type="group">
                 <left>1028</left>
@@ -1532,57 +1437,6 @@
                     </content>
                 </control>
             </control>
-
-
-            <!-- <control type="group">
-                <left>1028</left>
-                <top>53</top>
-                <visible>Container(9000).Hasfocus(18)</visible>
-                <include>VisibleFadeEffect</include>
-                <control type="group">
-                    <description>Random Items Widget Addons</description>
-                    <visible>Control.HasFocus(8005)</visible>
-                    <left>-2033</left>
-                    <top>-11</top>
-                    <animation effect="slide" start="0,0" end="1020,0" time="500" easing="inout" tween="cubic" condition="Control.HasFocus(8005)">Conditional</animation>
-                    <control type="group">
-                        <left>159</left>
-                        <control type="label">
-                            <left>130</left>
-                            <top>30</top>
-                            <width>550</width>
-                            <height>30</height>
-                            <font>cirrus_24</font>
-                            <textcolor>white</textcolor>
-                            <shadowcolor>black</shadowcolor>
-                            <aligny>center</aligny>
-                            <label>$INFO[Container(8005).ListItem.Label] [COLOR=grey]$INFO[Container(8005).ListItem.Property(Version)][/COLOR]</label>
-                        </control>
-                        <control type="label">
-                            <left>130</left>
-                            <top>65</top>
-                            <width>550</width>
-                            <height>30</height>
-                            <font>cirrus_20</font>
-                            <textcolor>white</textcolor>
-                            <shadowcolor>black</shadowcolor>
-                            <aligny>center</aligny>
-                            <label fallback="-">[COLOR=accent]$LOCALIZE[41193]:[/COLOR]  $INFO[Container(8005).ListItem.Label2]</label>
-                        </control>
-                        <control type="label">
-                            <left>130</left>
-                            <top>100</top>
-                            <width>550</width>
-                            <height>150</height>
-                            <font>cirrus_20</font>
-                            <textcolor>white</textcolor>
-                            <shadowcolor>black</shadowcolor>
-                            <aligny>center</aligny>
-                            <label>[COLOR=accent]$LOCALIZE[20037]:[/COLOR] $INFO[Container(8005).ListItem.Property(Summary)]</label>
-                        </control>
-                    </control>
-                </control>
-            </control> -->
         </control>
     </include>
 </includes>

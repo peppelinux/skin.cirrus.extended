@@ -1224,7 +1224,7 @@
                                 <width>640</width>
                                 <height>40</height>
                                 <font>cirrus_20</font>
-                                <textcolor>grey2</textcolor>
+                                <textcolor>white</textcolor>
                                 <align>right</align>
                                 <aligny>center</aligny>
                                 <label>$INFO[ListItem.Label]</label>
@@ -1246,33 +1246,33 @@
                         <content>
                             <item id="1">
                                 <label>3</label>
-                                <onclick>noop</onclick>
+                                <onclick>-</onclick>
                                 <icon>special://skin/backgrounds/videos.jpg</icon>
                                 <thumb>$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</thumb>
                             </item>
                             <!-- PVR Butchabay -->
                             <item id="12">
                                 <label>31502</label>
-                                <onclick>noop</onclick>
+                                <onclick>-</onclick>
                                 <icon>special://skin/backgrounds/livetv.jpg</icon>
                                 <thumb>$INFO[Skin.String(Home_Custom_Back_TV_Folder)]</thumb>
                             </item>
                             <item id="40">
                                 <label>41183</label>
-                                <onclick>noop</onclick>
+                                <onclick>-</onclick>
                                 <icon>special://skin/backgrounds/moviesets.jpg</icon>
                                 <thumb>$INFO[Skin.String(Home_Custom_Back_MoviesSets_Folder)]</thumb>
                             </item>
                             <!-- PVR Butchabay End -->
                             <item id="10">
                                 <label>20342</label>
-                                <onclick>noop</onclick>
+                                <onclick>-</onclick>
                                 <icon>special://skin/backgrounds/movies.jpg</icon>
                                 <thumb>$INFO[Skin.String(Home_Custom_Back_Movies_Folder)]</thumb>
                             </item>
                             <item id="41">
                                 <label>41256</label>
-                                <onclick>noop</onclick>
+                                <onclick>-</onclick>
                                 <icon>special://skin/backgrounds/concerts.jpg</icon>
                                 <thumb>$INFO[Skin.String(Home_Custom_Back_Concerts_Folder)]</thumb>
                             </item>
