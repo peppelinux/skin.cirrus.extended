@@ -298,6 +298,110 @@ msgstr ""
 #Extra labels
 #empty strings from id 31253 to 31299
 
+msgctxt "#31253"
+msgid "Recent Movies"
+msgstr ""
+
+msgctxt "#31254"
+msgid "Random Movies"
+msgstr ""
+
+msgctxt "#31255"
+msgid "Recommended Movies"
+msgstr ""
+
+msgctxt "#31256"
+msgid "In theaters"
+msgstr ""
+
+msgctxt "#31257"
+msgid "Comming Soon"
+msgstr ""
+
+msgctxt "#31258"
+msgid "Opening"
+msgstr ""
+
+msgctxt "#31259"
+msgid "Box Office"
+msgstr ""
+
+msgctxt "#31260"
+msgid "Top Rentals"
+msgstr ""
+
+msgctxt "#31261"
+msgid "Current DVD"
+msgstr ""
+
+msgctxt "#31262"
+msgid "New DVDs"
+msgstr ""
+
+msgctxt "#31263"
+msgid "Trending Movies"
+msgstr ""
+
+msgctxt "#31264"
+msgid "Recent Episodes"
+msgstr ""
+
+msgctxt "#31265"
+msgid "Random Episodes"
+msgstr ""
+
+msgctxt "#31266"
+msgid "Recomended Episodes"
+msgstr ""
+
+msgctxt "#31267"
+msgid "Popular TV Shows"
+msgstr ""
+
+msgctxt "#31268"
+msgid "Top Rated TV Shows"
+msgstr ""
+
+msgctxt "#31269"
+msgid "On Air TV Shows"
+msgstr ""
+
+msgctxt "#31270"
+msgid "Airing Today TV Shows"
+msgstr ""
+
+msgctxt "#31271"
+msgid "Trending TV Shows"
+msgstr ""
+
+msgctxt "#31272"
+msgid "Airing TV Shows"
+msgstr ""
+
+msgctxt "#31273"
+msgid "Premiere TV Shows"
+msgstr ""
+
+msgctxt "#31274"
+msgid "Recent Albums"
+msgstr ""
+
+msgctxt "#31275"
+msgid "Random Albums"
+msgstr ""
+
+msgctxt "#31276"
+msgid "Recomended Albums"
+msgstr ""
+
+msgctxt "#31277"
+msgid "Recent Music Video"
+msgstr ""
+
+msgctxt "#31278"
+msgid "Random Addons"
+msgstr ""
+
 msgctxt "#31301"
 msgid "Last Updated"
 msgstr ""

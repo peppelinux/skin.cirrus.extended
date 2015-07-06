@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">9000</defaultcontrol>
     <controls>
@@ -1246,33 +1246,33 @@
                         <content>
                             <item id="1">
                                 <label>3</label>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                                 <icon>special://skin/backgrounds/videos.jpg</icon>
                                 <thumb>$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</thumb>
                             </item>
                             <!-- PVR Butchabay -->
                             <item id="12">
                                 <label>31502</label>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                                 <icon>special://skin/backgrounds/livetv.jpg</icon>
                                 <thumb>$INFO[Skin.String(Home_Custom_Back_TV_Folder)]</thumb>
                             </item>
                             <item id="40">
                                 <label>41183</label>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                                 <icon>special://skin/backgrounds/moviesets.jpg</icon>
                                 <thumb>$INFO[Skin.String(Home_Custom_Back_MoviesSets_Folder)]</thumb>
                             </item>
                             <!-- PVR Butchabay End -->
                             <item id="10">
                                 <label>20342</label>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                                 <icon>special://skin/backgrounds/movies.jpg</icon>
                                 <thumb>$INFO[Skin.String(Home_Custom_Back_Movies_Folder)]</thumb>
                             </item>
                             <item id="41">
                                 <label>41256</label>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                                 <icon>special://skin/backgrounds/concerts.jpg</icon>
                                 <thumb>$INFO[Skin.String(Home_Custom_Back_Concerts_Folder)]</thumb>
                             </item>
