@@ -1075,7 +1075,7 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>grey</textcolor>
-                            <info>ListItem.Label</info>
+                            <label>$INFO[ListItem.Label]$INFO[ListItem.Label2, $LOCALIZE[20347] ,]</label>
                         </control>
                     </itemlayout>
                     <focusedlayout height="22" width="530">
@@ -1088,7 +1088,7 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>accent</textcolor>
-                            <info>ListItem.Label</info>
+                            <label>$INFO[ListItem.Label]$INFO[ListItem.Label2, $LOCALIZE[20347] ,]</label>
                         </control>
                     </focusedlayout>
                 </control>

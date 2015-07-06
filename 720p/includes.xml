@@ -76,8 +76,6 @@
     <include file="IncludesPVR.xml"/>
     <include file="ViewsPVRGuide.xml"/>
 
-    <include file="IncludesSideBlade.xml"/>
-
     <constant name="FanartCrossfadeTime">200</constant>
     <constant name="IconCrossfadeTime">200</constant>
 

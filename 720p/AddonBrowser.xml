@@ -198,6 +198,17 @@
                     <onleft>55</onleft>
                     <onright>55</onright>
                     <onup>7</onup>
+                    <ondown>9</ondown>
+                </control>
+                <control type="button" id="9">
+                    <description>Check for updates</description>
+                    <left>0</left>
+                    <top>290</top>
+                    <include>ButtonCommonValues</include>
+                    <label>24034</label>
+                    <onleft>55</onleft>
+                    <onright>55</onright>
+                    <onup>8</onup>
                     <ondown>610</ondown>
                 </control>
                 <control type="button" id="610">

@@ -191,6 +191,18 @@
             <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
             <aligny>center</aligny>
         </control>
+        <control type="label" id="14">
+            <description>Default Label</description>
+            <left>0</left>
+            <top>0</top>
+            <height>30</height>
+            <label>-</label>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>cirrus_20</font>
+            <textcolor>grey</textcolor>
+            <shadowcolor>black</shadowcolor>
+        </control>
         <control type="image" id="11">
             <description>separator image</description>
             <height>2</height>
@@ -207,38 +219,38 @@
         </control>
         <control type="group">
             <visible>!Skin.HasSetting(kiosk)</visible>
-      <animation effect="slide" start="0,0" end="280,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | ControlGroup(9001).HasFocus | Control.HasFocus(8999)">Conditional</animation>
-      <animation effect="slide" start="0,0" end="-380,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | ControlGroup(9001).HasFocus">WindowClose</animation>
-      <control type="button" id="8999">
-        <description>Fake button for mouse control</description>
-        <left>-250</left>
-        <top>0</top>
-        <width>265</width>
-        <height>720</height>
-        <label>-</label>
-        <font>-</font>
-        <texturenofocus>-</texturenofocus>
-        <texturefocus>-</texturefocus>
-        <visible>true</visible>
-      </control>
-      <!-- Menu background panel -->
-      <control type="image">
-        <left>-820</left>
-        <top>0</top>
-        <width>820</width>
-        <height>720</height>
-        <texture border="5">dialogbackground.png</texture>
-        <aspectratio>stretch</aspectratio>
-      </control>
-      <control type="image">
-        <left>-820</left>
-        <top>0</top>
-        <width>820</width>
-        <height>720</height>
-        <texture border="5">dialogbackground.png</texture>
-        <aspectratio>stretch</aspectratio>
-      </control>
-      <control type="image">
+            <animation effect="slide" start="0,0" end="280,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | ControlGroup(9001).HasFocus | Control.HasFocus(8999)">Conditional</animation>
+            <animation effect="slide" start="0,0" end="-380,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | ControlGroup(9001).HasFocus">WindowClose</animation>
+            <control type="button" id="8999">
+                <description>Fake button for mouse control</description>
+                <left>-250</left>
+                <top>0</top>
+                <width>265</width>
+                <height>720</height>
+                <label>-</label>
+                <font>-</font>
+                <texturenofocus>-</texturenofocus>
+                <texturefocus>-</texturefocus>
+                <visible>true</visible>
+            </control>
+            <!-- Menu background panel -->
+            <control type="image">
+                <left>-820</left>
+                <top>0</top>
+                <width>820</width>
+                <height>720</height>
+                <texture border="5">dialogbackground.png</texture>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
+                <left>-820</left>
+                <top>0</top>
+                <width>820</width>
+                <height>720</height>
+                <texture border="5">dialogbackground.png</texture>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
                 <left>-250</left>
                 <top>650</top>
                 <width>160</width>

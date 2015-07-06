@@ -1,8 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <includes>
-
-    <!-- WIP -->
-
     <include name="WidgetHomeLayout">
         <animation effect="fade" start="0" end="100" delay="800" time="500">Visible</animation>
         <animation effect="fade" start="100" end="0" time="400">Hidden</animation>
@@ -205,7 +202,7 @@
                 <visible>SubString(Control.GetLabel(91001),Thumb,left)</visible>
             </control>
             <control type="image">
-                <left>260</left>
+                <left>270</left>
                 <top>80</top>
                 <width>1</width>
                 <height>240</height>
@@ -277,7 +274,21 @@
             <shadowcolor>black</shadowcolor>
             <label>$VAR[WidgetListPlot]</label>
             <autoscroll delay="5000" time="3000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-            <visible>SubString(Control.GetLabel(91001),Poster,left) | SubString(Control.GetLabel(91001),Cover,left)</visible>
+            <visible>SubString(Control.GetLabel(91001),Poster,left)</visible>
+        </control>
+        <control type="textbox">
+            <left>0</left>
+            <top>135</top>
+            <width>680</width>
+            <height>130</height>
+            <align>left</align>
+            <aligny>top</aligny>
+            <font>cirrus_20</font>
+            <textcolor>white</textcolor>
+            <shadowcolor>black</shadowcolor>
+            <label>$VAR[WidgetListPlot]</label>
+            <autoscroll delay="5000" time="3000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+            <visible>SubString(Control.GetLabel(91001),Cover,left)</visible>
         </control>
         <control type="textbox">
             <left>0</left>
@@ -319,7 +330,7 @@
                 <visible>SubString(Control.GetLabel(91001),Poster,left)</visible>
             </control>
             <control type="group">
-                <left>330</left>
+                <left>340</left>
                 <include>WidgetListInfoLabels</include>
                 <visible>SubString(Control.GetLabel(91001),Cover,left)</visible>
             </control>

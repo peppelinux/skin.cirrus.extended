@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+    <!-- Caching/Paused/Seeking -->
+    <variable name="PauseSeekLabel">
+        <value condition="Player.Paused + !Player.Caching + !Player.Seeking">$LOCALIZE[31043]</value>
+        <value condition="[Player.Paused + Player.Caching] + !Player.Seeking">$LOCALIZE[15107] $INFO[Player.CacheLevel]%</value>
+        <value condition="!IsEmpty(Player.SeekStepSize) + ![Player.Forwarding | Player.Rewinding]">$LOCALIZE[31044] $INFO[Player.SeekStepSize]</value>
+        <value condition="Player.DisplayAfterSeek + ![Player.Forwarding | Player.Rewinding]">$LOCALIZE[31044] $INFO[Player.SeekOffset]</value>
+		<value condition="!Player.DisplayAfterSeek + Player.Seeking">$LOCALIZE[31044]</value>
+    </variable>
+    <!-- SeekBar Artwork -->
+    <variable name="SeekBarCover">
+        <value condition="VideoPlayer.Content(Movies) | VideoPlayer.Content(LiveTV)">$INFO[VideoPlayer.Cover]</value>
+        <value condition="VideoPlayer.Content(Episodes)">$INFO[Player.Art(tvshow.poster)]</value>
+    </variable>
+    
     <!-- Overlay variable -->
     <variable name="overlayIcon">
         <value condition="[[!ListItem.IsResumable + !StringCompare(ListItem.PlayCount, )] | [ListItem.IsResumable + !StringCompare(ListItem.PlayCount, ) + Skin.HasSetting(DisableInProgress)]]">$INFO[ListItem.Overlay]</value>
