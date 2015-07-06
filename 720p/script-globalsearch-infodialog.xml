@@ -341,117 +341,117 @@
                             <item>
                                 <label>$LOCALIZE[21893]:</label>
                                 <label2>$INFO[Container(100).ListItem.Property(Artist_Born)]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                                 <visible>!IsEmpty(Container(100).ListItem.Property(Artist_Born))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21894]:</label>
                                 <label2>$INFO[Container(100).ListItem.Property(Artist_Formed)]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                                 <visible>!IsEmpty(Container(100).ListItem.Property(Artist_Formed))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21897]:</label>
                                 <label2>$INFO[Container(100).ListItem.Property(Artist_Died)]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                                 <visible>!IsEmpty(Container(100).ListItem.Property(Artist_Died))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21896]:</label>
                                 <label2>$INFO[Container(100).ListItem.Property(Artist_Disbanded)]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                                 <visible>!IsEmpty(Container(100).ListItem.Property(Artist_Disbanded))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21898]:</label>
                                 <label2>$INFO[Container(100).ListItem.Property(Artist_YearsActive)]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                                 <visible>!IsEmpty(Container(100).ListItem.Property(Artist_YearsActive))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[175]:</label>
                                 <label2>$INFO[Container(100).ListItem.Property(Artist_Mood)]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                                 <visible>!IsEmpty(Container(100).ListItem.Property(Artist_Mood))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[176]:</label>
                                 <label2>$INFO[Container(100).ListItem.Property(Artist_Style)]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                                 <visible>!IsEmpty(Container(100).ListItem.Property(Artist_Style))</visible>
                             </item>
                             <!-- Album -->
                             <item>
                                 <label>$LOCALIZE[557]:</label>
                                 <label2>$INFO[Container(100).ListItem.Property(Artist)]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                                 <visible>!IsEmpty(Container(100).ListItem.Property(Artist))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[562]:</label>
                                 <label2>$INFO[Container(100).ListItem.Property(Year)]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                                 <visible>!IsEmpty(Container(100).ListItem.Property(Year)) + Control.IsVisible(170)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[175]:</label>
                                 <label2>$INFO[Container(100).ListItem.Property(Album_Mood)]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                                 <visible>!IsEmpty(Container(100).ListItem.Property(Album_Mood))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[176]:</label>
                                 <label2>$INFO[Container(100).ListItem.Property(Album_Style)]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                                 <visible>!IsEmpty(Container(100).ListItem.Property(Album_Style))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21895]:</label>
                                 <label2>$INFO[Container(100).ListItem.Property(Album_Theme)]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                                 <visible>!IsEmpty(Container(100).ListItem.Property(Album_Theme))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[146]</label>
                                 <label2>$INFO[Container(100).ListItem.Property(Album_Type)]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                                 <visible>!IsEmpty(Container(100).ListItem.Property(Album_Type))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21899]:</label>
                                 <label2>$INFO[Container(100).ListItem.Property(Album_Label)]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                                 <visible>!IsEmpty(Container(100).ListItem.Property(Album_Label))</visible>
                             </item>
                             <!-- Songs -->
                             <item>
                                 <label>$LOCALIZE[558]</label>
                                 <label2>$INFO[Container(100).ListItem.Property(Album)]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                                 <visible>!IsEmpty(Container(100).ListItem.Property(Album))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[562]:</label>
                                 <label2>$INFO[Container(100).ListItem.Property(Year)]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                                 <visible>!IsEmpty(Container(100).ListItem.Property(Year)) + Control.IsVisible(180)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[554]:</label>
                                 <label2>$INFO[Container(100).ListItem.Property(Track)]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                                 <visible>!IsEmpty(Container(100).ListItem.Property(Track))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[2050]:</label>
                                 <label2>$INFO[Container(100).ListItem.Property(Duration),, $LOCALIZE[12391]]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                                 <visible>!IsEmpty(Container(100).ListItem.Property(Duration)) + !SubString(Container(100).ListItem.Property(Duration),min)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[2050]:</label>
                                 <label2>$INFO[Container(100).ListItem.Property(Duration)]</label2>
-                                <onclick>-</onclick>
+                                <onclick>noop</onclick>
                                 <visible>!IsEmpty(Container(100).ListItem.Property(Duration)) + SubString(Container(100).ListItem.Property(Duration),min)</visible>
                             </item>
                             <!-- Movies Episodes Seasons TvShows -->
