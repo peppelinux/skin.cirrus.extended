@@ -576,76 +576,76 @@
                     <visible>[!Control.HasFocus(8000) + Skin.HasSetting(nomoviewidget)] | [[Control.HasFocus(8000) | Control.HasFocus(9100)] + !Skin.HasSetting(nomoviewidget)]</visible>
                     <content>
                         <item id="1">
-                            <label>Recent Movies</label>
+                            <label>$LOCALIZE[31253]</label>
                             <onclick>ActivateWindow(Settings)</onclick>
                             <property name="content">videodb://recentlyaddedmovies/</property>
                             <property name="layout">PosterFanart</property>
                         </item>
                         <item id="2">
-                            <label>Random Movies</label>
+                            <label>$LOCALIZE[31254]</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://service.library.data.provider?type=randommovies&amp;reload=10&amp;limit=10</property>
                             <property name="layout">PosterFanart</property>
                             <visible>System.HasAddon(service.library.data.provider)</visible>
                         </item>
                         <item id="3">
-                            <label>Recommended Movies</label>
+                            <label>$LOCALIZE[31255]</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://service.library.data.provider?type=recommendedmovies&amp;reload=10&amp;limit=10</property>
                             <property name="layout">PosterFanart</property>
                             <visible>System.HasAddon(service.library.data.provider)</visible>
                         </item>
                         <item id="4">
-                            <label>In theaters</label>
+                            <label>$LOCALIZE[31256]</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://script.extendedinfo?info=intheaters</property>
                             <property name="layout">PosterPoster</property>
                             <visible>System.HasAddon(script.extendedinfo)</visible>
                         </item>
                         <item id="5">
-                            <label>Comming Soon</label>
+                            <label>$LOCALIZE[31257]</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://script.extendedinfo?info=comingsoon</property>
                             <property name="layout">PosterPoster</property>
                             <visible>System.HasAddon(script.extendedinfo)</visible>
                         </item>
                         <item id="6">
-                            <label>Opening</label>
+                            <label>$LOCALIZE[31258]</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://script.extendedinfo?info=opening</property>
                             <property name="layout">PosterPoster</property>
                             <visible>System.HasAddon(script.extendedinfo)</visible>
                         </item>
                         <item id="7">
-                            <label>Box Office</label>
+                            <label>$LOCALIZE[31259]</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://script.extendedinfo?info=boxoffice</property>
                             <property name="layout">PosterPoster</property>
                             <visible>System.HasAddon(script.extendedinfo)</visible>
                         </item>
                         <item id="8">
-                            <label>Top Rentals</label>
+                            <label>$LOCALIZE[31260]</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://script.extendedinfo?info=toprentals</property>
                             <property name="layout">PosterPoster</property>
                             <visible>System.HasAddon(script.extendedinfo)</visible>
                         </item>
                         <item id="9">
-                            <label>Current DVD</label>
+                            <label>$LOCALIZE[31261]</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://script.extendedinfo?info=currentdvdreleases</property>
                             <property name="layout">PosterPoster</property>
                             <visible>System.HasAddon(script.extendedinfo)</visible>
                         </item>
                         <item id="10">
-                            <label>New DVDs</label>
+                            <label>$LOCALIZE[31262]</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://script.extendedinfo?info=newdvdreleases</property>
                             <property name="layout">PosterPoster</property>
                             <visible>System.HasAddon(script.extendedinfo)</visible>
                         </item>
                         <item id="15">
-                            <label>Trending Movies</label>
+                            <label>$LOCALIZE[31263]</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://script.extendedinfo?info=trendingmovies</property>
                             <property name="layout">PosterFanart</property>
@@ -999,14 +999,14 @@
                     <visible>[!Control.HasFocus(8001) + Skin.HasSetting(notvshowwidget)] | [[Control.HasFocus(8001) | Control.HasFocus(9101)] + !Skin.HasSetting(notvshowwidget)]</visible>
                     <content>
                         <item id="1">
-                            <label>Recent Episodes</label>
+                            <label>$LOCALIZE[31264]</label>
                             <onclick>noop</onclick>
                             <property name="content">videodb://recentlyaddedepisodes/</property>
                             <property name="layout">ThumbThumb</property>
                             <property name="source">Library</property>
                         </item>
                         <item id="2">
-                            <label>Random Episodes</label>
+                            <label>$LOCALIZE[31265]</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://service.library.data.provider?type=randomepisodes&amp;reload=10&amp;limit=10</property>
                             <property name="layout">ThumbThumb</property>
@@ -1014,7 +1014,7 @@
                             <visible>System.HasAddon(service.library.data.provider)</visible>
                         </item>
                         <item id="3">
-                            <label>Recomended Episodes</label>
+                            <label>$LOCALIZE[31266]</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://service.library.data.provider?type=recommendedepisodes&amp;reload=10&amp;limit=10</property>
                             <property name="layout">ThumbThumb</property>
@@ -1022,7 +1022,7 @@
                             <visible>System.HasAddon(service.library.data.provider)</visible>
                         </item>
                         <item id="4">
-                            <label>Popular TV Shows</label>
+                            <label>$LOCALIZE[31267]</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://script.extendedinfo?info=populartvshows</property>
                             <property name="layout">PosterFanart</property>
@@ -1030,7 +1030,7 @@
                             <visible>System.HasAddon(script.extendedinfo)</visible>
                         </item>
                         <item id="5">
-                            <label>Top Rated TV Shows</label>
+                            <label>$LOCALIZE[31268]</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://script.extendedinfo?info=airingtodaytvshows</property>
                             <property name="layout">PosterFanart</property>
@@ -1038,7 +1038,7 @@
                             <visible>System.HasAddon(script.extendedinfo)</visible>
                         </item>
                         <item id="6">
-                            <label>On Air TV Shows</label>
+                            <label>$LOCALIZE[31269]</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://script.extendedinfo?info=onairtvshows</property>
                             <property name="layout">PosterFanart</property>
@@ -1046,7 +1046,7 @@
                             <visible>System.HasAddon(script.extendedinfo)</visible>
                         </item>
                         <item id="7">
-                            <label>Airing Today TV Shows</label>
+                            <label>$LOCALIZE[31270]</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://script.extendedinfo?info=airingtodaytvshows</property>
                             <property name="layout">PosterFanart</property>
@@ -1054,7 +1054,7 @@
                             <visible>System.HasAddon(script.extendedinfo)</visible>
                         </item>
                         <item id="8">
-                            <label>Trending TV Shows</label>
+                            <label>$LOCALIZE[31271]</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://script.extendedinfo?info=trendingshows</property>
                             <property name="layout">PosterFanart</property>
@@ -1062,7 +1062,7 @@
                             <visible>System.HasAddon(script.extendedinfo)</visible>
                         </item>
                         <item id="9">
-                            <label>Airing TV Shows</label>
+                            <label>$LOCALIZE[31272]</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://script.extendedinfo?info=airingshows</property>
                             <property name="layout">PosterFanart</property>
@@ -1070,7 +1070,7 @@
                             <visible>System.HasAddon(script.extendedinfo)</visible>
                         </item>
                         <item id="10">
-                            <label>Premiere TV Shows</label>
+                            <label>$LOCALIZE[31273]</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://script.extendedinfo?info=premiereshows</property>
                             <property name="layout">PosterFanart</property>
@@ -1235,20 +1235,20 @@
                     <visible>[!Control.HasFocus(8002) + Skin.HasSetting(nomusicwidget)] | [[Control.HasFocus(8002) | Control.HasFocus(9102)] + !Skin.HasSetting(nomusicwidget)]</visible>
                     <content>
                         <item id="1">
-                            <label>Recent Albums</label>
+                            <label>$LOCALIZE[31274]</label>
                             <onclick>noop</onclick>
                             <property name="content">musicdb://recentlyaddedalbums/</property>
                             <property name="layout">CoverCover</property>
                         </item>
                         <item id="2">
-                            <label>Random Albums</label>
+                            <label>$LOCALIZE[31275]</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://service.library.data.provider?type=randomalbums&amp;reload=10&amp;limit=10</property>
                             <property name="layout">CoverCover</property>
                             <visible>System.HasAddon(service.library.data.provider)</visible>
                         </item>
                         <item id="3">
-                            <label>Recomended Albums</label>
+                            <label>$LOCALIZE[31276]</label>
                             <onclick>noop</onclick>
                             <property name="content">plugin://service.library.data.provider?type=recommendedalbums&amp;reload=10&amp;limit=10</property>
                             <property name="layout">CoverCover</property>
@@ -1290,7 +1290,7 @@
                     <visible>[!Control.HasFocus(8003) + Skin.HasSetting(nomusicvideoswidget)] | [[Control.HasFocus(8003) | Control.HasFocus(9103)] + !Skin.HasSetting(nomusicvideoswidget)]</visible>
                     <content>
                         <item id="1">
-                            <label>Recent Music Video</label>
+                            <label>$LOCALIZE[31277]</label>
                             <onclick>noop</onclick>
                             <property name="content">videodb://recentlyaddedmusicvideos/</property>
                             <property name="layout">CoverCover</property>
@@ -1330,7 +1330,7 @@
                     <visible>[!Control.HasFocus(8004) + Skin.HasSetting(noaddonwidget)] | [[Control.HasFocus(8004) | Control.HasFocus(9104)] + !Skin.HasSetting(noaddonwidget)]</visible>
                     <content>
                         <item id="1">
-                            <label>Random Addons</label>
+                            <label>$LOCALIZE[31278]</label>
                             <onclick>noop</onclick>
                             <property name="layout">CoverCover</property>
                             <visible>System.HasAddon(service.skin.widgets)</visible>
