@@ -581,6 +581,7 @@
                     <include condition="!Skin.HasSetting(nomoviewidget)">NoWidgetContentLabelLayoutPosition</include>
                     <include>WidgetContentLabelLayout</include>
                     <onup>8000</onup>
+                    <onright>8000</onright>
                     <focusposition>0</focusposition>
                     <visible>[!Control.HasFocus(8000) + Skin.HasSetting(nomoviewidget)] | [[Control.HasFocus(8000) | Control.HasFocus(9100)] + !Skin.HasSetting(nomoviewidget)]</visible>
                     <content>
@@ -692,6 +693,7 @@
                     <include condition="!Skin.HasSetting(nomoviewidgetplaylistmovie1)">NoWidgetContentLabelLayoutPosition</include>
                     <include>WidgetContentLabelLayout</include>
                     <onup>8005</onup>
+                    <onright>8005</onright>
                     <focusposition>0</focusposition>
                     <visible>[!Control.HasFocus(8005) + Skin.HasSetting(nomoviewidgetplaylistmovie1)] | [[Control.HasFocus(8005) | Control.HasFocus(9105)] + !Skin.HasSetting(nomoviewidgetplaylistmovie1)]</visible>
                     <content>
@@ -733,6 +735,7 @@
                     <include condition="!Skin.HasSetting(nomoviewidgetplaylistmovie2)">NoWidgetContentLabelLayoutPosition</include>
                     <include>WidgetContentLabelLayout</include>
                     <onup>8006</onup>
+                    <onright>8006</onright>
                     <focusposition>0</focusposition>
                     <visible>[!Control.HasFocus(8006) + Skin.HasSetting(nomoviewidgetplaylistmovie2)] | [[Control.HasFocus(8006) | Control.HasFocus(9106)] + !Skin.HasSetting(nomoviewidgetplaylistmovie2)]</visible>
                     <content>
@@ -774,6 +777,7 @@
                     <include condition="!Skin.HasSetting(nomoviewidgetplaylistmovie3)">NoWidgetContentLabelLayoutPosition</include>
                     <include>WidgetContentLabelLayout</include>
                     <onup>8007</onup>
+                    <onright>8007</onright>
                     <focusposition>0</focusposition>
                     <visible>[!Control.HasFocus(8007) + Skin.HasSetting(nomoviewidgetplaylistmovie3)] | [[Control.HasFocus(8007) | Control.HasFocus(9107)] + !Skin.HasSetting(nomoviewidgetplaylistmovie3)]</visible>
                     <content>
@@ -1004,6 +1008,7 @@
                     <include condition="!Skin.HasSetting(notvshowwidget)">NoWidgetContentLabelLayoutPosition</include>
                     <include>WidgetContentLabelLayout</include>
                     <onup>8001</onup>
+                    <onright>8001</onright>
                     <focusposition>0</focusposition>
                     <visible>[!Control.HasFocus(8001) + Skin.HasSetting(notvshowwidget)] | [[Control.HasFocus(8001) | Control.HasFocus(9101)] + !Skin.HasSetting(notvshowwidget)]</visible>
                     <content>
@@ -1117,6 +1122,7 @@
                     <include condition="!Skin.HasSetting(notvwidgetplaylisttv1)">NoWidgetContentLabelLayoutPosition</include>
                     <include>WidgetContentLabelLayout</include>
                     <onup>8008</onup>
+                    <onright>8008</onright>
                     <focusposition>0</focusposition>
                     <visible>[!Control.HasFocus(8008) + Skin.HasSetting(notvwidgetplaylisttv1)] | [[Control.HasFocus(8008) | Control.HasFocus(9108)] + !Skin.HasSetting(notvwidgetplaylisttv1)]</visible>
                     <content>
@@ -1158,6 +1164,7 @@
                     <include condition="!Skin.HasSetting(notvwidgetplaylisttv2)">NoWidgetContentLabelLayoutPosition</include>
                     <include>WidgetContentLabelLayout</include>
                     <onup>8009</onup>
+                    <onright>8009</onright>
                     <focusposition>0</focusposition>
                     <visible>[!Control.HasFocus(8009) + Skin.HasSetting(notvwidgetplaylisttv2)] | [[Control.HasFocus(8009) | Control.HasFocus(9109)] + !Skin.HasSetting(notvwidgetplaylisttv2)]</visible>
                     <content>
@@ -1199,6 +1206,7 @@
                     <include condition="!Skin.HasSetting(notvwidgetplaylisttv3)">NoWidgetContentLabelLayoutPosition</include>
                     <include>WidgetContentLabelLayout</include>
                     <onup>8010</onup>
+                    <onright>8010</onright>
                     <focusposition>0</focusposition>
                     <visible>[!Control.HasFocus(8010) + Skin.HasSetting(notvwidgetplaylisttv3)] | [[Control.HasFocus(8010) | Control.HasFocus(9110)] + !Skin.HasSetting(notvwidgetplaylisttv3)]</visible>
                     <content>
@@ -1240,6 +1248,7 @@
                     <include condition="!Skin.HasSetting(nomusicwidget)">NoWidgetContentLabelLayoutPosition</include>
                     <include>WidgetContentLabelLayout</include>
                     <onup>8002</onup>
+                    <onright>8002</onright>
                     <focusposition>0</focusposition>
                     <visible>[!Control.HasFocus(8002) + Skin.HasSetting(nomusicwidget)] | [[Control.HasFocus(8002) | Control.HasFocus(9102)] + !Skin.HasSetting(nomusicwidget)]</visible>
                     <content>
@@ -1295,6 +1304,7 @@
                     <include condition="!Skin.HasSetting(nomusicvideoswidget)">NoWidgetContentLabelLayoutPosition</include>
                     <include>WidgetContentLabelLayout</include>
                     <onup>8003</onup>
+                    <onright>8003</onright>
                     <focusposition>0</focusposition>
                     <visible>[!Control.HasFocus(8003) + Skin.HasSetting(nomusicvideoswidget)] | [[Control.HasFocus(8003) | Control.HasFocus(9103)] + !Skin.HasSetting(nomusicvideoswidget)]</visible>
                     <content>
@@ -1335,6 +1345,7 @@
                     <include condition="!Skin.HasSetting(noaddonwidget)">NoWidgetContentLabelLayoutPosition</include>
                     <include>WidgetContentLabelLayout</include>
                     <onup>8004</onup>
+                    <onright>8004</onright>
                     <focusposition>0</focusposition>
                     <visible>[!Control.HasFocus(8004) + Skin.HasSetting(noaddonwidget)] | [[Control.HasFocus(8004) | Control.HasFocus(9104)] + !Skin.HasSetting(noaddonwidget)]</visible>
                     <content>
