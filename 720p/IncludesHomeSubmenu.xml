@@ -111,7 +111,7 @@
         <width>1000</width>
         <height>350</height>
         <onleft>9000</onleft>
-        <onright>8002</onright>
+        <onright>9102</onright>
         <onup>9010</onup>
         <ondown>9010</ondown>
         <scrolltime tween="quadratic" easing="out">300</scrolltime>
@@ -285,7 +285,7 @@
         <width>1000</width>
         <height>350</height>
         <onleft>9000</onleft>
-        <onright>8005</onright>
+        <onright>9104</onright>
         <onup>9010</onup>
         <ondown>9010</ondown>
         <scrolltime tween="quadratic" easing="out">300</scrolltime>
@@ -431,7 +431,7 @@
         <width>1000</width>
         <height>350</height>
         <onleft>9000</onleft>
-        <onright>8000</onright>
+        <onright>9100</onright>
         <onup>9010</onup>
         <ondown>9010</ondown>
         <scrolltime tween="quadratic" easing="out">300</scrolltime>
@@ -643,7 +643,7 @@
         <width>1000</width>
         <height>350</height>
         <onleft>9000</onleft>
-        <onright>8001</onright>
+        <onright>9101</onright>
         <onup>9010</onup>
         <ondown>9010</ondown>
         <scrolltime tween="quadratic" easing="out">300</scrolltime>
@@ -828,7 +828,7 @@
         <width>1000</width>
         <height>350</height>
         <onleft>9000</onleft>
-        <onright>8006</onright>
+        <onright>9105</onright>
         <onup>9010</onup>
         <ondown>9010</ondown>
         <scrolltime tween="quadratic" easing="out">300</scrolltime>
@@ -1040,7 +1040,7 @@
         <width>1000</width>
         <height>350</height>
         <onleft>9000</onleft>
-        <onright>8007</onright>
+        <onright>9106</onright>
         <onup>9010</onup>
         <ondown>9010</ondown>
         <scrolltime tween="quadratic" easing="out">300</scrolltime>
@@ -1252,7 +1252,7 @@
         <width>1000</width>
         <height>350</height>
         <onleft>9000</onleft>
-        <onright>8008</onright>
+        <onright>9107</onright>
         <onup>9010</onup>
         <ondown>9010</ondown>
         <scrolltime tween="quadratic" easing="out">300</scrolltime>
@@ -1464,7 +1464,7 @@
         <width>1000</width>
         <height>350</height>
         <onleft>9000</onleft>
-        <onright>8009</onright>
+        <onright>9108</onright>
         <onup>9010</onup>
         <ondown>9010</ondown>
         <scrolltime tween="quadratic" easing="out">300</scrolltime>
@@ -1645,7 +1645,7 @@
         <width>1000</width>
         <height>350</height>
         <onleft>9000</onleft>
-        <onright>8010</onright>
+        <onright>9109</onright>
         <onup>9010</onup>
         <ondown>9010</ondown>
         <scrolltime tween="quadratic" easing="out">300</scrolltime>
@@ -1826,7 +1826,7 @@
         <width>1000</width>
         <height>350</height>
         <onleft>9000</onleft>
-        <onright>8011</onright>
+        <onright>9110</onright>
         <onup>9010</onup>
         <ondown>9010</ondown>
         <scrolltime tween="quadratic" easing="out">300</scrolltime>
