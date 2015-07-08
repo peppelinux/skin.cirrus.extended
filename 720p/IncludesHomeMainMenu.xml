@@ -25,7 +25,14 @@
             <width>1000</width>
             <height>350</height>
             <onleft>10</onleft>
-            <onright>9001</onright>
+            <onright condition="!Container(9000).Hasfocus(3) + !Container(9000).Hasfocus(4) + !Container(9000).Hasfocus(5) + !Container(9000).Hasfocus(9) + !Container(9000).Hasfocus(10) + !Container(9000).Hasfocus(11) + !Container(9000).Hasfocus(31)">9001</onright>
+            <onright condition="Container(9000).Hasfocus(3)">9105</onright>
+            <onright condition="Container(9000).Hasfocus(4)">9106</onright>
+            <onright condition="Container(9000).Hasfocus(5)">9107</onright>
+            <onright condition="Container(9000).Hasfocus(9)">9108</onright>
+            <onright condition="Container(9000).Hasfocus(10)">9109</onright>
+            <onright condition="Container(9000).Hasfocus(11)">9110</onright>
+            <onright condition="Container(9000).Hasfocus(31)">9103</onright>
             <onup>9000</onup>
             <ondown>9000</ondown>
             <pagecontrol>-</pagecontrol>

@@ -502,59 +502,6 @@
                         <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</enable>
                         <visible>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</visible>
                     </control>
-                    <control type="radiobutton" id="1131">
-                        <description>Show Watchlist Movie info</description>
-                        <include>MenuItemSettings</include>
-                        <label>41226</label>
-                        <onclick>Skin.ToggleSetting(watchlistmovies)</onclick>
-                        <onclick>Skin.Reset(nomoviewidget)</onclick>
-                        <selected>Skin.HasSetting(watchlistmovies)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(watchlistmovieswidget) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</enable>
-                        <visible>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(watchlistmovieswidget) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</visible>
-                    </control>
-                    <control type="radiobutton" id="1126">
-                        <description>Show Watchlist TV info</description>
-                        <include>MenuItemSettings</include>
-                        <label>41227</label>
-                        <onclick>Skin.ToggleSetting(watchlisttv)</onclick>
-                        <onclick>Skin.Reset(notvshowwidget)</onclick>
-                        <selected>Skin.HasSetting(watchlisttv)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(nowatchlisttvshowwidget) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</enable>
-                        <visible>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(nowatchlisttvshowwidget) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</visible>
-                    </control>
-                    <control type="label" id="1134">
-                        <description>Select Thumb</description>
-                        <include>MenuTitleSettings</include>
-                        <label>$LOCALIZE[41229]</label>
-                        <visible>Skin.HasSetting(watchlisttv) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</visible>
-                    </control>
-                    <control type="radiobutton" id="1128">
-                        <description>Episodethumb</description>
-                        <include>MenuItemSettings</include>
-                        <label>41225</label>
-                        <onclick>Skin.ToggleSetting(episodethumb)</onclick>
-                        <selected>Skin.HasSetting(episodethumb)</selected>
-                        <visible>Skin.HasSetting(watchlisttv) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</visible>
-                        <enable>Skin.HasSetting(watchlisttv) + !Skin.HasSetting(tvshowthumb) + !Skin.HasSetting(seasonthumb) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</enable>
-                    </control>
-                    <control type="radiobutton" id="1129">
-                        <description>TVShowthumb</description>
-                        <include>MenuItemSettings</include>
-                        <label>41224</label>
-                        <onclick>Skin.ToggleSetting(tvshowthumb)</onclick>
-                        <selected>Skin.HasSetting(tvshowthumb)</selected>
-                        <visible>Skin.HasSetting(watchlisttv) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</visible>
-                        <enable>Skin.HasSetting(watchlisttv) + !Skin.HasSetting(episodethumb) + !Skin.HasSetting(seasonthumb) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</enable>
-                    </control>
-                    <control type="radiobutton" id="1130">
-                        <description>Seasonthumb</description>
-                        <include>MenuItemSettings</include>
-                        <label>41223</label>
-                        <onclick>Skin.ToggleSetting(seasonthumb)</onclick>
-                        <selected>Skin.HasSetting(seasonthumb)</selected>
-                        <visible>Skin.HasSetting(watchlisttv) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</visible>
-                        <enable>Skin.HasSetting(watchlisttv) + !Skin.HasSetting(episodethumb) + !Skin.HasSetting(tvshowthumb) + Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</enable>
-                    </control>
                     <control type="label" id="1135">
                         <description>Widgets</description>
                         <include>MenuTitleSettings</include>
@@ -565,16 +512,7 @@
                         <include>MenuItemSettings</include>
                         <label>$LOCALIZE[24022] $LOCALIZE[41196]</label>
                         <onclick>Skin.ToggleSetting(notvshowwidget)</onclick>
-                        <onclick>Skin.Reset(watchlisttv)</onclick>
                         <selected>Skin.HasSetting(notvshowwidget)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz) + !Skin.HasSetting(nowatchlisttvshowwidget) + !Skin.HasSetting(watchlisttv)</enable>
-                    </control>
-                    <control type="radiobutton" id="1154">
-                        <description>Show Recently added Playlists TVShow Widget</description>
-                        <include>MenuItemSettings</include>
-                        <label>$LOCALIZE[24022] $LOCALIZE[41274]</label>
-                        <onclick>Skin.ToggleSetting(notvwidgetplaylisttv)</onclick>
-                        <selected>Skin.HasSetting(notvwidgetplaylisttv)</selected>
                         <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</enable>
                     </control>
                     <control type="radiobutton" id="1170">
@@ -583,7 +521,7 @@
                         <label>$LOCALIZE[24022] $LOCALIZE[41287]</label>
                         <onclick>Skin.ToggleSetting(notvwidgetplaylisttv1)</onclick>
                         <selected>Skin.HasSetting(notvwidgetplaylisttv1)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz) + Skin.HasSetting(notvwidgetplaylisttv)</enable>
+                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz) + Skin.HasSetting(Menu_Custom4) + !IsEmpty(Skin.String(Menu_Custom4_Path))</enable>
                     </control>
                     <control type="radiobutton" id="1171">
                         <description>Show Recently added Playlists TVShow Widget 2</description>
@@ -591,7 +529,7 @@
                         <label>$LOCALIZE[24022] $LOCALIZE[41288]</label>
                         <onclick>Skin.ToggleSetting(notvwidgetplaylisttv2)</onclick>
                         <selected>Skin.HasSetting(notvwidgetplaylisttv2)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz) + Skin.HasSetting(notvwidgetplaylisttv)</enable>
+                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz) + Skin.HasSetting(Menu_Custom5) + !IsEmpty(Skin.String(Menu_Custom5_Path))</enable>
                     </control>
                     <control type="radiobutton" id="1172">
                         <description>Show Recently added Playlists TVShow Widget 3</description>
@@ -599,23 +537,7 @@
                         <label>$LOCALIZE[24022] $LOCALIZE[41289]</label>
                         <onclick>Skin.ToggleSetting(notvwidgetplaylisttv3)</onclick>
                         <selected>Skin.HasSetting(notvwidgetplaylisttv3)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz) + Skin.HasSetting(notvwidgetplaylisttv)</enable>
-                    </control>
-                    <control type="radiobutton" id="1127">
-                        <description>Show Currently Watching TVShow Widget</description>
-                        <include>MenuItemSettings</include>
-                        <label>41222</label>
-                        <onclick>Skin.ToggleSetting(nowatchlisttvshowwidget)</onclick>
-                        <selected>Skin.HasSetting(nowatchlisttvshowwidget)</selected>
-                        <enable>!Skin.HasSetting(notvshowwidget) + Skin.HasSetting(watchlisttv) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</enable>
-                    </control>
-                    <control type="radiobutton" id="1132">
-                        <description>Show Watchlist Movie Widget</description>
-                        <include>MenuItemSettings</include>
-                        <label>41221</label>
-                        <onclick>Skin.ToggleSetting(watchlistmovieswidget)</onclick>
-                        <selected>Skin.HasSetting(watchlistmovieswidget)</selected>
-                        <enable>Skin.HasSetting(watchlistmovies) + !Skin.HasSetting(nomoviewidget) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</enable>
+                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz) + Skin.HasSetting(Menu_Custom6) + !IsEmpty(Skin.String(Menu_Custom6_Path))</enable>
                     </control>
                     <control type="radiobutton" id="1115">
                         <description>Show Recently added Movie Widget</description>
@@ -623,14 +545,6 @@
                         <label>$LOCALIZE[24022] $LOCALIZE[41195]</label>
                         <onclick>Skin.ToggleSetting(nomoviewidget)</onclick>
                         <selected>Skin.HasSetting(nomoviewidget)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz) + !Skin.HasSetting(watchlistmovieswidget)</enable>
-                    </control>
-                    <control type="radiobutton" id="1155">
-                        <description>Show Recently added Playlists Movie</description>
-                        <include>MenuItemSettings</include>
-                        <label>$LOCALIZE[24022] $LOCALIZE[41273]</label>
-                        <onclick>Skin.ToggleSetting(nomoviewidgetplaylistmovie)</onclick>
-                        <selected>Skin.HasSetting(nomoviewidgetplaylistmovie)</selected>
                         <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</enable>
                     </control>
                     <control type="radiobutton" id="1173">
@@ -639,7 +553,7 @@
                         <label>$LOCALIZE[24022] $LOCALIZE[41290]</label>
                         <onclick>Skin.ToggleSetting(nomoviewidgetplaylistmovie1)</onclick>
                         <selected>Skin.HasSetting(nomoviewidgetplaylistmovie1)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz) + Skin.HasSetting(nomoviewidgetplaylistmovie)</enable>
+                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz) + Skin.HasSetting(Menu_Custom9) + !IsEmpty(Skin.String(Menu_Custom9_Path))</enable>
                     </control>
                     <control type="radiobutton" id="1174">
                         <description>Show Recently added Playlists Movie2 Widget</description>
@@ -647,7 +561,7 @@
                         <label>$LOCALIZE[24022] $LOCALIZE[41291]</label>
                         <onclick>Skin.ToggleSetting(nomoviewidgetplaylistmovie2)</onclick>
                         <selected>Skin.HasSetting(nomoviewidgetplaylistmovie2)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz) + Skin.HasSetting(nomoviewidgetplaylistmovie)</enable>
+                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz) + Skin.HasSetting(Menu_Custom10) + !IsEmpty(Skin.String(Menu_Custom10_Path))</enable>
                     </control>
                     <control type="radiobutton" id="1175">
                         <description>Show Recently added Playlists Movie3 Widget</description>
@@ -655,7 +569,7 @@
                         <label>$LOCALIZE[24022] $LOCALIZE[41292]</label>
                         <onclick>Skin.ToggleSetting(nomoviewidgetplaylistmovie3)</onclick>
                         <selected>Skin.HasSetting(nomoviewidgetplaylistmovie3)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz) + Skin.HasSetting(nomoviewidgetplaylistmovie)</enable>
+                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz) + Skin.HasSetting(Menu_Custom11) + !IsEmpty(Skin.String(Menu_Custom11_Path))</enable>
                     </control>
                     <control type="radiobutton" id="1116">
                         <description>Show Recently added Status Widget</description>
@@ -691,16 +605,11 @@
                         <include>MenuItemSettings</include>
                         <label>41184</label>
                         <onclick>Skin.ToggleSetting(homepagerecentlyaddedinfohorz)</onclick>
-                        <onclick>Skin.Reset(watchlistmovies)</onclick>
-                        <onclick>Skin.Reset(watchlisttv)</onclick>
                         <onclick>Skin.Reset(episodethumb)</onclick>
                         <onclick>Skin.Reset(tvshowthumb)</onclick>
                         <onclick>Skin.Reset(seasonthumb)</onclick>
-                        <onclick>Skin.Reset(notvshowwidget)</onclick>
                         <onclick>Skin.Reset(logoinshowwidget)</onclick>
                         <onclick>Skin.Reset(notvwidgetplaylisttv)</onclick>
-                        <onclick>Skin.Reset(nowatchlisttvshowwidget)</onclick>
-                        <onclick>Skin.Reset(watchlistmovieswidget)</onclick>
                         <onclick>Skin.Reset(nomoviewidget)</onclick>
                         <onclick>Skin.Reset(nomoviewidgetplaylistmovie)</onclick>
                         <onclick>Skin.Reset(nostatswidget)</onclick>

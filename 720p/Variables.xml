@@ -495,7 +495,7 @@
         <value>Widget</value>
     </variable>
     <variable name="WidgetContentSource">
-        <value condition="Container(9000).Hasfocus(7) + !Skin.HasSetting(notvshowwidget)">$INFO[Container(9101).ListItem.Property(source)]</value>
+        <value condition="Container(9000).Hasfocus(7)">$INFO[Container(9101).ListItem.Property(source)]</value>
     </variable>
     <variable name="WidgetArtLayout">
         <value condition="Container(9000).Hasfocus(1)">$INFO[Container(9100).ListItem.Property(layout)]</value>
@@ -546,7 +546,6 @@
         <value condition="Container(9000).Hasfocus(11) + SubString(Control.GetLabel(91001),Thumb,left)">$INFO[Container(8010).ListItem.Art(thumb)]</value>
     </variable>
     <variable name="WidgetHomeTitle1Label">
-        <value condition="Control.IsVisible(9101) + Container(9000).Hasfocus(7) + IsEmpty(Container(8001).ListItem.TVshowTitle)">$INFO[Container(8001).ListItem.Title]</value>
         <value condition="Control.IsVisible(9101) + Container(9000).Hasfocus(7)">$INFO[Container(8001).ListItem.TVshowTitle]</value>
         <value condition="Control.IsVisible(9102) + Container(9000).Hasfocus(14)">$INFO[Container(8002).ListItem.Artist]</value>
         <value condition="Control.IsVisible(9103) + Container(9000).Hasfocus(31)">$INFO[Container(8003).ListItem.Artist]</value>
@@ -560,7 +559,7 @@
     </variable>
     <variable name="WidgetHomeTitle2Label">
         <value condition="Control.IsVisible(9100) + Container(9000).Hasfocus(1)">$INFO[Container(8000).ListItem.Label]</value>
-        <value condition="Control.IsVisible(9101) + Container(9000).Hasfocus(7) + IsEmpty(Container(8001).ListItem.TVshowTitle)">$INFO[Container(8001).ListItem.Rating] / $INFO[Container(8001).ListItem.Votes] $LOCALIZE[205]</value>
+        <value condition="Control.IsVisible(9101) + Container(9000).Hasfocus(7) + StringCompare(Container(8001).ListItem.Title,Container(8001).ListItem.TVshowTitle)">$INFO[Container(8001).ListItem.Rating] / $INFO[Container(8001).ListItem.Votes] $LOCALIZE[205]</value>
         <value condition="Control.IsVisible(9101) + Container(9000).Hasfocus(7)">$INFO[Container(8001).ListItem.Title]</value>
         <value condition="Control.IsVisible(9102) + Container(9000).Hasfocus(14)">$INFO[Container(8002).ListItem.Title]</value>
         <value condition="Control.IsVisible(9103) + Container(9000).Hasfocus(31)">$INFO[Container(8003).ListItem.Title]</value>
@@ -578,13 +577,6 @@
         <value condition="Control.HasFocus(9101) + Container(9000).Hasfocus(7)">$INFO[Container(9101).ListItemNoWrap(-1).Label]</value>
         <value condition="Control.HasFocus(9102) + Container(9000).Hasfocus(14)">$INFO[Container(9102).ListItemNoWrap(-1).Label]</value>
         <value condition="Control.HasFocus(9103) + Container(9000).Hasfocus(31)">$INFO[Container(9103).ListItemNoWrap(-1).Label]</value>
-        <value condition="Control.HasFocus(9104) + Container(9000).Hasfocus(18)">$INFO[Container(9104).ListItemNoWrap(-1).Label]</value>
-        <value condition="Control.HasFocus(9105) + Container(9000).Hasfocus(3)">$INFO[Container(9105).ListItemNoWrap(-1).Label]</value>
-        <value condition="Control.HasFocus(9106) + Container(9000).Hasfocus(4)">$INFO[Container(9106).ListItemNoWrap(-1).Label]</value>
-        <value condition="Control.HasFocus(9107) + Container(9000).Hasfocus(5)">$INFO[Container(9107).ListItemNoWrap(-1).Label]</value>
-        <value condition="Control.HasFocus(9108) + Container(9000).Hasfocus(9)">$INFO[Container(9108).ListItemNoWrap(-1).Label]</value>
-        <value condition="Control.HasFocus(9109) + Container(9000).Hasfocus(10)">$INFO[Container(9109).ListItemNoWrap(-1).Label]</value>
-        <value condition="Control.HasFocus(9110) + Container(9000).Hasfocus(11)">$INFO[Container(9110).ListItemNoWrap(-1).Label]</value>
     </variable>
     <variable name="WidgetHomeNext">
         <value condition="Control.HasFocus(9100) + Container(9000).Hasfocus(1) + IntegerGreaterThan(Container(9100).NumItems,1)">$INFO[Container(9100).ListItemNoWrap(1).Label]</value>
@@ -595,20 +587,6 @@
         <value condition="Control.HasFocus(9102) + Container(9000).Hasfocus(14)">$INFO[Container(9102).ListItemNoWrap(2).Label]</value>
         <value condition="Control.HasFocus(9103) + Container(9000).Hasfocus(31) + IntegerGreaterThan(Container(9103).NumItems,1)">$INFO[Container(9103).ListItemNoWrap(1).Label]</value>
         <value condition="Control.HasFocus(9103) + Container(9000).Hasfocus(31)">$INFO[Container(9103).ListItemNoWrap(2).Label]</value>
-        <value condition="Control.HasFocus(9104) + Container(9000).Hasfocus(18) + IntegerGreaterThan(Container(9104).NumItems,1)">$INFO[Container(9104).ListItemNoWrap(1).Label]</value>
-        <value condition="Control.HasFocus(9104) + Container(9000).Hasfocus(18)">$INFO[Container(9104).ListItemNoWrap(2).Label]</value>
-        <value condition="Control.HasFocus(9105) + Container(9000).Hasfocus(3) + IntegerGreaterThan(Container(9105).NumItems,1)">$INFO[Container(9105).ListItemNoWrap(1).Label]</value>
-        <value condition="Control.HasFocus(9105) + Container(9000).Hasfocus(3)">$INFO[Container(9105).ListItemNoWrap(2).Label]</value>
-        <value condition="Control.HasFocus(9106) + Container(9000).Hasfocus(4) + IntegerGreaterThan(Container(9106).NumItems,1)">$INFO[Container(9106).ListItemNoWrap(1).Label]</value>
-        <value condition="Control.HasFocus(9106) + Container(9000).Hasfocus(4)">$INFO[Container(9106).ListItemNoWrap(2).Label]</value>
-        <value condition="Control.HasFocus(9107) + Container(9000).Hasfocus(5) + IntegerGreaterThan(Container(9107).NumItems,1)">$INFO[Container(9107).ListItemNoWrap(1).Label]</value>
-        <value condition="Control.HasFocus(9107) + Container(9000).Hasfocus(5)">$INFO[Container(9107).ListItemNoWrap(2).Label]</value>
-        <value condition="Control.HasFocus(9108) + Container(9000).Hasfocus(9) + IntegerGreaterThan(Container(9108).NumItems,1)">$INFO[Container(9108).ListItemNoWrap(1).Label]</value>
-        <value condition="Control.HasFocus(9108) + Container(9000).Hasfocus(9)">$INFO[Container(9108).ListItemNoWrap(2).Label]</value>
-        <value condition="Control.HasFocus(9109) + Container(9000).Hasfocus(10) + IntegerGreaterThan(Container(9109).NumItems,1)">$INFO[Container(9109).ListItemNoWrap(1).Label]</value>
-        <value condition="Control.HasFocus(9109) + Container(9000).Hasfocus(10)">$INFO[Container(9109).ListItemNoWrap(2).Label]</value>
-        <value condition="Control.HasFocus(9110) + Container(9000).Hasfocus(11) + IntegerGreaterThan(Container(9110).NumItems,1)">$INFO[Container(9110).ListItemNoWrap(1).Label]</value>
-        <value condition="Control.HasFocus(9110) + Container(9000).Hasfocus(11)">$INFO[Container(9110).ListItemNoWrap(2).Label]</value>
     </variable>
 
     <variable name="WidgetListLabel">
@@ -629,8 +607,7 @@
         <!-- Movies-->
         <value condition="Control.HasFocus(8000) | Container(9000).Hasfocus(1)">$INFO[Container(8000).ListItem.Label]</value>
         <!-- TV Shows -->
-        <value condition="[Control.HasFocus(8001) | Container(9000).Hasfocus(7)] + SubString(Control.GetLabel(91005),Library) + !Skin.HasSetting(watchlisttv)">$INFO[Container(8001).ListItem.Title]</value>
-        <value condition="[Control.HasFocus(8001) | Container(9000).Hasfocus(7)] + SubString(Control.GetLabel(91005),Library) + Skin.HasSetting(watchlisttv)">$INFO[Container(8001).ListItem.TVshowTitle]</value>
+        <value condition="[Control.HasFocus(8001) | Container(9000).Hasfocus(7)] + SubString(Control.GetLabel(91005),Library)">$INFO[Container(8001).ListItem.TVshowTitle]</value>
         <value condition="[Control.HasFocus(8001) | Container(9000).Hasfocus(7)] + SubString(Control.GetLabel(91005),ExtendedInfoMovieDB)">$INFO[Container(8001).ListItem.Title]</value>
         <value condition="[Control.HasFocus(8001) | Container(9000).Hasfocus(7)] + SubString(Control.GetLabel(91005),TraktTV)">$INFO[Container(8001).ListItem.TVshowTitle]</value>
         <!-- Music -->
@@ -688,7 +665,7 @@
         <!-- TV Shows -->
         <value condition="[Control.HasFocus(8001) | Container(9000).Hasfocus(7)] + SubString(Control.GetLabel(91005),ExtendedInfoMovieDB)">[COLOR=accent]$LOCALIZE[563]:[/COLOR] $INFO[Container(8001).ListItem.Rating]</value>
         <value condition="[Control.HasFocus(8001) | Container(9000).Hasfocus(7)] + SubString(Control.GetLabel(91005),TraktTV)">[COLOR=accent]$LOCALIZE[563]:[/COLOR] $INFO[Container(8001).ListItem.Rating]</value>
-        <value condition="[Control.HasFocus(8001) | Container(9000).Hasfocus(7)] + SubString(Control.GetLabel(91005),Library) + Skin.HasSetting(watchlisttv)">[COLOR=accent]$LOCALIZE[20359]:[/COLOR] $INFO[Container(8001).ListItem.Episode]</value>
+        <value condition="[Control.HasFocus(8001) | Container(9000).Hasfocus(7)] + SubString(Control.GetLabel(91005),Library)">[COLOR=accent]$LOCALIZE[20359]:[/COLOR] $INFO[Container(8001).ListItem.Episode]</value>
         <!-- Movies Playlist 1-3 -->
         <value condition="Control.HasFocus(8005) | Container(9000).Hasfocus(3)">[COLOR=accent]$LOCALIZE[563]:[/COLOR] $INFO[Container(8005).ListItem.Rating]</value>
         <value condition="[Control.HasFocus(8005) | Container(9000).Hasfocus(3)] + !IsEmpty(Container(8005).ListItem.Votes)">[COLOR=accent]$LOCALIZE[563]:[/COLOR] $INFO[Container(8005).ListItem.Rating] ($INFO[Container(8005).ListItem.Votes] $LOCALIZE[20350])</value>
@@ -712,7 +689,7 @@
         <!-- TV Shows -->
         <value condition="[Control.HasFocus(8001) | Container(9000).Hasfocus(7)] + SubString(Control.GetLabel(91005),ExtendedInfoMovieDB)">[COLOR=accent]Votes:[/COLOR] $INFO[Container(8001).ListItem.Votes]</value>
         <value condition="[Control.HasFocus(8001) | Container(9000).Hasfocus(7)] + SubString(Control.GetLabel(91005),TraktTV)">[COLOR=accent]Votes:[/COLOR] $INFO[Container(8001).ListItem.Votes]</value>
-        <value condition="[Control.HasFocus(8001) | Container(9000).Hasfocus(7)] + SubString(Control.GetLabel(91005),Library) + Skin.HasSetting(watchlisttv)">[COLOR=accent]$LOCALIZE[31054]:[/COLOR] $INFO[Container(8001).ListItem.Duration] $LOCALIZE[12391]</value>
+        <value condition="[Control.HasFocus(8001) | Container(9000).Hasfocus(7)] + SubString(Control.GetLabel(91005),Library)">[COLOR=accent]$LOCALIZE[31054]:[/COLOR] $INFO[Container(8001).ListItem.Duration] $LOCALIZE[12391]</value>
         <!-- Movies Playlist 1-3 -->
         <value condition="Control.HasFocus(8005) | Container(9000).Hasfocus(3)">[COLOR=accent]$LOCALIZE[31054]:[/COLOR] $INFO[Container(8005).ListItem.Duration] $LOCALIZE[12391]</value>
         <value condition="Control.HasFocus(8006) | Container(9000).Hasfocus(4)">[COLOR=accent]$LOCALIZE[31054]:[/COLOR] $INFO[Container(8006).ListItem.Duration] $LOCALIZE[12391]</value>
