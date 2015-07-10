@@ -507,7 +507,7 @@
                         <label>31041</label>
                         <onclick>Skin.ToggleSetting(logoinshowwidget)</onclick>
                         <selected>Skin.HasSetting(logoinshowwidget)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded)</enable>
+                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</enable>
                     </control>
                     <control type="label" id="1135">
                         <description>Widgets</description>
@@ -1016,7 +1016,7 @@
                                 <visible>[Control.HasFocus(304) | Control.HasFocus(305)]</visible>
                             </control>
                             <control type="label">
-                                <left>650</left>
+                                <left>0</left>
                                 <top>0</top>
                                 <width>640</width>
                                 <height>40</height>
@@ -1028,7 +1028,7 @@
                                 <visible>![Control.HasFocus(304) | Control.HasFocus(305)]</visible>
                             </control>
                             <control type="label">
-                                <left>650</left>
+                                <left>0</left>
                                 <top>0</top>
                                 <width>640</width>
                                 <height>40</height>

@@ -1695,9 +1695,10 @@
                     <animation effect="slide" start="0,0" end="0,355" time="0" condition="[Control.HasFocus(8004) | [Control.HasFocus(9104) + !Skin.HasSetting(noaddonwidget)]] + Skin.HasSetting(homepagerecentlyaddedinfohorz)">Conditional</animation>
                     <include condition="!Skin.HasSetting(homepagerecentlyaddedinfohorz)">WidgetListLayout</include>
                     <include condition="Skin.HasSetting(homepagerecentlyaddedinfohorz)">WidgetListLayoutHorz</include>
-                    <onleft condition="!Skin.HasSetting(noaddonwidget) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)">9104</onleft>
-                    <onup condition="Skin.HasSetting(homepagerecentlyaddedinfohorz)">9104</onup>
-                    <onright condition="!Skin.HasSetting(homepagerecentlyaddedinfohorz)">9104</onright>
+                    <onleft condition="!Skin.HasSetting(homepagerecentlyaddedinfohorz) + !Skin.HasSetting(noaddonwidget)">9104</onleft>
+                    <ondown condition="Skin.HasSetting(homepagerecentlyaddedinfohorz) + !Skin.HasSetting(noaddonwidget)">9104</ondown>
+                    <ondown condition="Skin.HasSetting(homepagerecentlyaddedinfohorz) + Skin.HasSetting(noaddonwidget)">9000</ondown>
+                    <onup condition="Skin.HasSetting(homepagerecentlyaddedinfohorz)">9000</onup>
                     <content>
                         <item id="1">
                             <icon>$INFO[Window(Home).Property(RandomAddon.1.Thumb)]</icon>
