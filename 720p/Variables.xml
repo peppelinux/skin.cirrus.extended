@@ -525,13 +525,13 @@
     </variable>
     <variable name="WidgetRating">
         <value condition="Container(9000).Hasfocus(1)">$INFO[Container(8000).ListItem.Rating,recentlyadded/,.png]</value>
-        <value condition="Control.HasFocus(8001)">$INFO[Container(8001).ListItem.Rating,recentlyadded/,.png]</value>
+        <value condition="Container(9000).Hasfocus(7) + [[!Control.IsVisible(9101) + Skin.HasSetting(notvshowwidget)] | [Control.IsVisible(9101) + !Skin.HasSetting(notvshowwidget)]]">$INFO[Container(8001).ListItem.Rating,recentlyadded/,.png]</value>
         <value condition="Container(9000).Hasfocus(3)">$INFO[Container(8005).ListItem.Rating,recentlyadded/,.png]</value>
         <value condition="Container(9000).Hasfocus(4)">$INFO[Container(8006).ListItem.Rating,recentlyadded/,.png]</value>
         <value condition="Container(9000).Hasfocus(5)">$INFO[Container(8007).ListItem.Rating,recentlyadded/,.png]</value>
-        <value condition="Control.HasFocus(8008)">$INFO[Container(8008).ListItem.Rating,recentlyadded/,.png]</value>
-        <value condition="Control.HasFocus(8008)">$INFO[Container(8009).ListItem.Rating,recentlyadded/,.png]</value>
-        <value condition="Control.HasFocus(8008)">$INFO[Container(8010).ListItem.Rating,recentlyadded/,.png]</value>
+        <value condition="Container(9000).Hasfocus(9) + [[!Control.IsVisible(9108) + Skin.HasSetting(notvwidgetplaylisttv1)] | [Control.IsVisible(9108) + !Skin.HasSetting(notvwidgetplaylisttv1)]]">$INFO[Container(8008).ListItem.Rating,recentlyadded/,.png]</value>
+        <value condition="Container(9000).Hasfocus(10) + [[!Control.IsVisible(9109) + Skin.HasSetting(notvwidgetplaylisttv2)] | [Control.IsVisible(9109) + !Skin.HasSetting(notvwidgetplaylisttv2)]]">$INFO[Container(8008).ListItem.Rating,recentlyadded/,.png]</value>
+        <value condition="Container(9000).Hasfocus(11) + [[!Control.IsVisible(9110) + Skin.HasSetting(notvwidgetplaylisttv3)] | [Control.IsVisible(9110) + !Skin.HasSetting(notvwidgetplaylisttv3)]]">$INFO[Container(8008).ListItem.Rating,recentlyadded/,.png]</value>
     </variable>
     <variable name="WidgetHomeArt">
         <value condition="Container(9000).Hasfocus(1) + SubString(Control.GetLabel(91001),Fanart,right)">$INFO[Container(8000).ListItem.Art(fanart)]</value>
