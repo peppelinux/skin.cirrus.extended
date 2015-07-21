@@ -749,16 +749,6 @@
                 <texturenofocus>-</texturenofocus>
                 <font>-</font>
             </control>
-            <control type="label" id="91006">
-                <posx>2000</posx>
-                <posy>2000</posy>
-                <label>$VAR[WidgetHomeCount]</label>
-                <width>1</width>
-                <height>1</height>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
-                <font>-</font>
-            </control>
 
             <include>WidgetListBackground</include>
             <!-- Recently Added Movies  -->
