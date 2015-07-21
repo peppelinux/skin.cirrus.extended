@@ -1141,7 +1141,7 @@
             <left>240</left>
             <top>100</top>
             <include>VisibleFadeEffect</include>
-            <visible>Player.ShowCodec + ![Window.IsVisible(121) | Window.IsVisible(122)]</visible>
+            <visible>Player.ShowCodec + !Window.IsVisible(122)</visible>
             <control type="image">
                 <description>gradient</description>
                 <left>0</left>
