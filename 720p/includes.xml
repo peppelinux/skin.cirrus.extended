@@ -1282,10 +1282,10 @@
 
     <variable name="BannerImageFallback">
         <value condition="!IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
-		<value condition="!IsEmpty(FanArt.image)">$INFO[FanArt.image]</value>
-		<value>$INFO[ListItem.Thumb]</value>
+        <value condition="!IsEmpty(FanArt.image)">$INFO[FanArt.image]</value>
+        <value>$INFO[ListItem.Thumb]</value>
     </variable>
-    
+
     <include name="FallbackBanner">
         <control type="image">
             <left>0</left> 
@@ -1365,6 +1365,201 @@
             <scrol>true</scrol>
             <label>$INFO[ListItem.Label]</label>
             <visible>IsEmpty(ListItem.Art(landscape)) + IsEmpty(ListItem.Art(clearlogo))</visible>
+        </control>
+    </include>
+    <include name="TopSlideoutSlimMusicOSD">
+        <control type="image">
+            <!-- Top Bar background -->
+            <left>0</left>
+            <top>0</top>
+            <width>1280</width>
+            <height>125</height>
+            <aspectratio>stretch</aspectratio>
+            <texture flipy="true">OSDbackground.png</texture>
+            <!-- flip y when up the top -->
+        </control>
+        <control type="image">
+            <description>Codec Image</description>
+            <left>10</left>
+            <top>85</top>
+            <width>80</width>
+            <height>40</height>
+            <aspectratio>keep</aspectratio>
+            <texture colordiffuse="$VAR[FlagColor]">$INFO[MusicPlayer.Codec,special://skin/extras/flagging/audio/,.png]</texture>
+        </control>
+        <control type="image">
+            <description>Channels Image</description>
+            <right>10</right>
+            <top>85</top>
+            <width>80</width>
+            <height>40</height>
+            <aspectratio>keep</aspectratio>
+            <texture colordiffuse="$VAR[FlagColor]">$INFO[MusicPlayer.Channels,special://skin/extras/flagging/audio/,.png]</texture>
+        </control>
+        <control type="image">
+            <!-- STARS Music-->
+            <description>Album rating</description>
+            <centerleft>50%</centerleft>
+            <top>102</top>
+            <width>90</width>
+            <height>19</height>
+            <align>center</align>
+            <texture>$INFO[Player.StarRating]</texture>
+            <colordiffuse>FFFFFFFF</colordiffuse>
+        </control>
+        <control type="label">
+            <centerleft>50%</centerleft>
+            <top>10</top>
+            <width>1280</width>
+            <height>45</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <label>[UPPERCASE]$INFO[MusicPlayer.Artist][/UPPERCASE]</label>
+            <scroll>true</scroll>
+            <font>cirrus_40</font>
+            <textcolor>accent</textcolor>
+            <shadowcolor>black</shadowcolor>
+        </control>
+        <control type="label">
+            <centerleft>50%</centerleft>
+            <top>50</top>
+            <width>1280</width>
+            <height>30</height>
+            <label>[UPPERCASE]$INFO[MusicPlayer.Album, ][/UPPERCASE]</label>
+            <scroll>true</scroll>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>cirrus_30</font>
+            <textcolor>white</textcolor>
+            <shadowcolor>black</shadowcolor>
+        </control>
+        <control type="label">
+            <centerleft>50%</centerleft>
+            <top>80</top>
+            <width>1080</width>
+            <height>30</height>
+            <label>[UPPERCASE]$INFO[MusicPlayer.Title, ][/UPPERCASE]</label>
+            <scroll>true</scroll>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>cirrus_20</font>
+            <textcolor>grey</textcolor>
+            <shadowcolor>black</shadowcolor>
+        </control>
+    </include>
+
+    <include name="VisualisationCdArtAnimaiton">
+        <!-- ==================== CD ART ================== -->
+        <control type="group">
+            <visible>Skin.HasSetting(cdart)</visible>
+            <left>180</left>
+            <top>397</top>
+            <!-- CD Animation -->
+            <control type="image">
+                <description>Cd Disc</description>
+                <animation effect="slide" start="-150" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
+                <animation type="WindowClose">
+                    <effect type="slide" start="0" end="-150" time="800" tween="cubic" easing="in" delay="0" />
+                    <condition type="!Player.Playing" />
+                </animation>
+                <animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+                <width>280</width>
+                <height>280</height>
+                <left>0</left>
+                <top>0</top>
+                <texture fallback="cdartdefault.png">$INFO[Player.FolderPath]cdart.png</texture>
+                <aspectratio align="bottom">keep</aspectratio>
+                <visible>!Skin.HasSetting(cdart2) + !Skin.HasSetting(cdart3)</visible>
+            </control>
+            <control type="image">
+                <description>Cd Disc</description>
+                <animation effect="slide" start="-150" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
+                <animation type="WindowClose">
+                    <effect type="slide" start="0" end="-150" time="800" tween="cubic" easing="in" delay="0" />
+                    <condition type="!Player.Playing" />
+                </animation>
+                <animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+                <width>280</width>
+                <height>280</height>
+                <left>0</left>
+                <top>0</top>
+                <texture fallback="cdartdefault.png">$INFO[Player.FolderPath]cdart.png</texture>
+                <aspectratio align="bottom">keep</aspectratio>
+                <visible>Skin.HasSetting(cdart2)</visible>
+            </control>
+            <control type="image">
+                <description>Cd Disc</description>
+                <animation effect="slide" start="-150" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
+                <animation type="WindowClose">
+                    <effect type="slide" start="0" end="-150" time="800" tween="cubic" easing="in" delay="0" />
+                    <condition type="!Player.Playing" />
+                </animation>
+                <animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+                <width>280</width>
+                <height>280</height>
+                <left>0</left>
+                <top>0</top>
+                <texture fallback="cdartdefaultw.png">$INFO[Player.FolderPath]cdart.png</texture>
+                <aspectratio align="bottom">keep</aspectratio>
+                <visible>Skin.HasSetting(cdart3)</visible>
+            </control>
+            <control type="multiimage">
+                <description>Cd Disc</description>
+                <animation effect="slide" start="-118" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
+                <animation type="WindowClose">
+                    <effect type="slide" start="0" end="-114" time="800" tween="cubic" easing="in" delay="0" />
+                    <condition type="!Player.Playing" />
+                </animation>
+                <animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+                <width>280</width>
+                <height>280</height>
+                <left>0</left>
+                <top>0</top>
+                <imagepath background="true">special://skin/extras/defaultcdarts</imagepath>
+                <aspectratio align="bottom">keep</aspectratio>
+                <fadetime>FanartCrossfadeTime</fadetime>
+                <timeperimage>210000</timeperimage>
+                <visible>Skin.HasSetting(randomdefaultcdart)</visible>
+            </control>
+        </control>
+        <!-- =========== END CDART ============= -->
+    </include>
+    <include name="MusicVisCommonInfo">
+        <control type="group">
+            <!-- <visible>Player.ShowInfo</visible> -->
+            <control type="progress">
+                <description>Progressbar</description>
+                <left>25</left>
+                <bottom>10</bottom>
+                <width>1235</width>
+                <height>14</height>
+                <info>Player.Progress</info>
+            </control>
+            <control type="label">
+                <right>20</right>
+                <bottom>35</bottom>
+                <width>490</width>
+                <height>20</height>
+                <label>[COLOR=accent]$LOCALIZE[209] :[/COLOR] $INFO[MusicPlayer.offset(1).Artist,, - ]$INFO[MusicPlayer.offset(1).Title]</label>
+                <align>right</align>
+                <aligny>center</aligny>
+                <scroll>true</scroll>
+                <font>cirrus_20</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <visible>Player.ShowInfo</visible>
+            </control>
+            <control type="image">
+                <left>30</left>
+                <bottom>35</bottom>
+                <width>300</width>
+                <height>300</height>
+                <aspectratio aligny="bottom">stretch</aspectratio>
+                <fadetime>IconCrossfadeTime</fadetime>
+                <texture>$INFO[MusicPlayer.cover]</texture>
+                <bordertexture border="6">ContentPanelvertical.png</bordertexture>
+                <bordersize>6</bordersize>
+            </control>
         </control>
     </include>
 </includes>
