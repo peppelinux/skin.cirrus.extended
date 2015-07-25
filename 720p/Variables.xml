@@ -800,7 +800,7 @@
         <value condition="Container(9000).HasFocus(10)">$LOCALIZE[41296] : $INFO[Window(Home).Property(PlaylistTVShowCount)]</value>
         <value condition="Container(9000).HasFocus(11)">$LOCALIZE[41296] : $INFO[Window(Home).Property(PlaylistTVShowCount)]</value>
         <value condition="Container(9000).HasFocus(14)">$LOCALIZE[41297] : $INFO[Window.Property(Music.ArtistsCount)]</value>
-        <variable>-</variable>
+        <value>-</value>
     </variable>
     <variable name="InfoHomeLine2Var">
         <value condition="Container(9000).HasFocus(1)">$LOCALIZE[16102] : $INFO[Window.Property(Movies.Watched)]</value>
@@ -813,7 +813,7 @@
         <value condition="Container(9000).HasFocus(10)">$LOCALIZE[41294] : $INFO[Window(Home).Property(PlaylistEpisodes)]</value>
         <value condition="Container(9000).HasFocus(11)">$LOCALIZE[41294] : $INFO[Window(Home).Property(PlaylistEpisodes)]</value>
         <value condition="Container(9000).HasFocus(14)">$LOCALIZE[41298] : $INFO[Window.Property(Music.AlbumsCount)]</value>
-        <variable>-</variable>
+        <value>-</value>
     </variable>
     <variable name="InfoHomeLine3Var">
         <value condition="Container(9000).HasFocus(1)">$LOCALIZE[16101] : $INFO[Window.Property(Movies.Unwatched)]</value>
@@ -826,6 +826,6 @@
         <value condition="Container(9000).HasFocus(10)">$LOCALIZE[41294] : $INFO[Window(Home).Property(PlaylistEpisodesUnWatched)]</value>
         <value condition="Container(9000).HasFocus(11)">$LOCALIZE[41294] : $INFO[Window(Home).Property(PlaylistEpisodesUnWatched)]</value>
         <value condition="Container(9000).HasFocus(14)">$LOCALIZE[41299] : $INFO[Window.Property(Music.SongsCount)]</value>
-        <variable>-</variable>
+        <value>-</value>
     </variable>
 </includes>
