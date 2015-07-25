@@ -749,7 +749,6 @@
                 <texturenofocus>-</texturenofocus>
                 <font>-</font>
             </control>
-
             <include>WidgetListBackground</include>
             <!-- Recently Added Movies  -->
             <control type="group">
