@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">9000</defaultcontrol>
+    <onunload condition="Skin.HasSetting(SkinShortcutsAddonEnabled)">RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;group=addon|concerts|customfav1|customfav2|customfav3|customfav4|customfav5|customplaylist1|customplaylist2|customplaylist3|customplaylist4|customplaylist5|customplaylist6|customplaylist7|customplaylist8|favourites|games|hdmovies|movies|moviesets|music|pictures|play|power|pvrradio|pvrtv|search|settings|tvguide|tvshows|videos|weather)</onunload>
     <controls>
         <!-- Last ID 1176 21.05.2012 -->
         <include>CommonSettingsBackground</include>
@@ -110,36 +111,44 @@
                     </control>
                 </focusedlayout>
                 <content>
+                    <!-- General -->
                     <item id="1">
                         <label>128</label>
                         <label2>5</label2>
                         <onclick>noop</onclick>
                     </item>
+                    <!-- Home Window -->
                     <item id="2">
                         <label>513</label>
                         <label2>33063</label2>
                         <onclick>noop</onclick>
                     </item>
+                    <!-- Background -->
                     <item id="3">
                         <label>33068</label>
                         <label2>31115</label2>
                         <onclick>noop</onclick>
                     </item>
+                    <!-- Submenu -->
                     <item id="4">
                         <label>41000</label>
                         <label2>41001</label2>
                         <onclick>noop</onclick>
+                        <visible>!Skin.HasSetting(SkinShortcutsAddonEnabled)</visible>
                     </item>
+                    <!-- Custom Home -->
                     <item id="5">
                         <label>41002</label>
                         <label2>41003</label2>
                         <onclick>noop</onclick>
                     </item>
+                    <!-- Extended -->
                     <item id="6">
                         <label>41004</label>
                         <label2>41005</label2>
                         <onclick>noop</onclick>
                     </item>
+                    <!-- Views -->
                     <item id="7">
                         <label>41101</label>
                         <label2>41107</label2>
@@ -2901,6 +2910,23 @@
                             <include>MenuTitleSettings</include>
                             <label>41065</label>
                         </control>
+                        
+                        
+                        <control type="radiobutton" id="4370">
+                            <label>script.skinshortcuts $INFO[System.AddonVersion(script.skinshortcuts)]</label>
+                            <include>MenuItemSettings</include>
+                            <onclick>Skin.ToggleSetting(SkinShortcutsAddonEnabled)</onclick>
+                            <selected>Skin.HasSetting(SkinShortcutsAddonEnabled)</selected>
+                        </control>
+                        <control type="button" id="4371">
+                            <label>script.skinshortcuts $INFO[System.AddonVersion(script.skinshortcuts)]</label>
+                            <include>MenuItemSettings</include>
+                            <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=moviesets)</onclick>
+                            <selected>System.HasAddon(script.skinshortcuts)</selected>
+                            <enable>Skin.HasSetting(SkinShortcutsAddonEnabled)</enable>
+                        </control>
+                        
+                        
                         <control type="radiobutton" id="501">
                             <description>custom home 1</description>
                             <include>MenuItemSettings</include>
