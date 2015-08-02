@@ -79,7 +79,11 @@ msgctxt "#31011"
 msgid "Enable Debug Info"
 msgstr ""
 
-#empty strings from id 31012 to 31020
+msgctxt "#31012"
+msgid "Edit submenu"
+msgstr ""
+
+#empty strings from id 31013 to 31020
 
 msgctxt "#31021"
 msgid "Video: Files"
@@ -203,16 +207,8 @@ msgstr ""
 
 #empty string with id 31107
 
-msgctxt "#31108"
-msgid "Hide Main Menu Buttons"
-msgstr ""
-
-msgctxt "#31109"
-msgid "Home screen backgrounds"
-msgstr ""
-
 msgctxt "#31110"
-msgid "Edit Background for Home Button"
+msgid "Select Background for Home Item"
 msgstr ""
 
 msgctxt "#31111"
@@ -225,10 +221,6 @@ msgstr ""
 
 msgctxt "#31114"
 msgid "Multi Image"
-msgstr ""
-
-msgctxt "#31115"
-msgid "Customizer"
 msgstr ""
 
 msgctxt "#31120"
@@ -278,10 +270,6 @@ msgstr ""
 
 #New labels Misc.  Cirrus Extended v2 *** NEW V2.05
 #empty strings from id 31188 to 31199
-
-msgctxt "#31203"
-msgid "Choose Your Song"
-msgstr ""
 
 msgctxt "#31205"
 msgid "Lyrics Source"
@@ -468,9 +456,7 @@ msgctxt "#31329"
 msgid "[B]Timer set![/B] [COLOR=grey2] - System auto shutdown in[/COLOR]"
 msgstr ""
 
-msgctxt "#31331"
-msgid "Search"
-msgstr ""
+
 
 
 #Video and Music OSD Labels
@@ -674,7 +660,7 @@ msgid "Change Submenues"
 msgstr ""
 
 msgctxt "#41002"
-msgid "Custom Home"
+msgid "Customize Home"
 msgstr ""
 
 msgctxt "#41003"
@@ -759,9 +745,7 @@ msgctxt "#41023"
 msgid "Play Disc"
 msgstr ""
 
-msgctxt "#41025"
-msgid "Music Visualisation"
-msgstr ""
+
 
 
 
@@ -932,7 +916,7 @@ msgstr ""
 #New labels Settings (Custom Home Items)
 
 msgctxt "#41065"
-msgid "Add Custom Items to Home Screen"
+msgid "Customize Items in Home Screen"
 msgstr ""
 
 msgctxt "#41066"
@@ -1485,10 +1469,6 @@ msgstr ""
 
 msgctxt "#41253"
 msgid "Enable TV Tunes"
-msgstr ""
-
-msgctxt "#41254"
-msgid "Root"
 msgstr ""
 
 msgctxt "#41255"

@@ -145,14 +145,6 @@ msgctxt "#31106"
 msgid "Miscellaneous options"
 msgstr "Diverse opties"
 
-msgctxt "#31108"
-msgid "Hide Main Menu Buttons"
-msgstr "Verberg knoppen hoofdmenu"
-
-msgctxt "#31109"
-msgid "Home screen backgrounds"
-msgstr "Beginscherm achtergronden"
-
 msgctxt "#31110"
 msgid "Edit Background for Home Button"
 msgstr "Achtergrond beginscherm bewerken"
@@ -168,10 +160,6 @@ msgstr "Enkele foto"
 msgctxt "#31114"
 msgid "Multi Image"
 msgstr "Meerdere foto's"
-
-msgctxt "#31115"
-msgid "Customizer"
-msgstr "Aanpassen"
 
 msgctxt "#31120"
 msgid "BUTTON LABEL"
@@ -208,10 +196,6 @@ msgstr "Vandaag uitgezonden"
 msgctxt "#31187"
 msgid "TV Guide"
 msgstr "TV Gids"
-
-msgctxt "#31203"
-msgid "Choose Your Song"
-msgstr "Kies uw nummer"
 
 msgctxt "#31205"
 msgid "Lyrics Source"
@@ -524,10 +508,6 @@ msgstr "Globaal geanimeerde achtergronden"
 msgctxt "#41023"
 msgid "Play Disc"
 msgstr "Disc afspelen"
-
-msgctxt "#41025"
-msgid "Music Visualisation"
-msgstr "Muziekvisualisatie"
 
 msgctxt "#41027"
 msgid "Addon Submenu"

@@ -145,14 +145,6 @@ msgctxt "#31106"
 msgid "Miscellaneous options"
 msgstr "Diverse indstillinger"
 
-msgctxt "#31108"
-msgid "Hide Main Menu Buttons"
-msgstr "Skjul hovedsideknapper"
-
-msgctxt "#31109"
-msgid "Home screen backgrounds"
-msgstr "Baggrunde til hovedsiden"
-
 msgctxt "#31110"
 msgid "Edit Background for Home Button"
 msgstr "Skift baggrund på hjem-knappen"
@@ -168,10 +160,6 @@ msgstr "Enkelt billede"
 msgctxt "#31114"
 msgid "Multi Image"
 msgstr "Flere billeder"
-
-msgctxt "#31115"
-msgid "Customizer"
-msgstr "Tilpasningsprogram"
 
 msgctxt "#31120"
 msgid "BUTTON LABEL"
@@ -208,10 +196,6 @@ msgstr ""
 msgctxt "#31187"
 msgid "TV Guide"
 msgstr ""
-
-msgctxt "#31203"
-msgid "Choose Your Song"
-msgstr "Vælg din sang"
 
 msgctxt "#31205"
 msgid "Lyrics Source"
@@ -522,10 +506,6 @@ msgstr ""
 
 msgctxt "#41023"
 msgid "Play Disc"
-msgstr ""
-
-msgctxt "#41025"
-msgid "Music Visualisation"
 msgstr ""
 
 msgctxt "#41027"

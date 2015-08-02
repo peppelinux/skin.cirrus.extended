@@ -6,14 +6,14 @@
         <value condition="[Player.Paused + Player.Caching] + !Player.Seeking">$LOCALIZE[15107] $INFO[Player.CacheLevel]%</value>
         <value condition="!IsEmpty(Player.SeekStepSize) + ![Player.Forwarding | Player.Rewinding]">$LOCALIZE[31044] $INFO[Player.SeekStepSize]</value>
         <value condition="Player.DisplayAfterSeek + ![Player.Forwarding | Player.Rewinding]">$LOCALIZE[31044] $INFO[Player.SeekOffset]</value>
-		<value condition="!Player.DisplayAfterSeek + Player.Seeking">$LOCALIZE[31044]</value>
+        <value condition="!Player.DisplayAfterSeek + Player.Seeking">$LOCALIZE[31044]</value>
     </variable>
     <!-- SeekBar Artwork -->
     <variable name="SeekBarCover">
         <value condition="VideoPlayer.Content(Movies) | VideoPlayer.Content(LiveTV)">$INFO[VideoPlayer.Cover]</value>
         <value condition="VideoPlayer.Content(Episodes)">$INFO[Player.Art(tvshow.poster)]</value>
     </variable>
-    
+
     <!-- Overlay variable -->
     <variable name="overlayIcon">
         <value condition="[[!ListItem.IsResumable + !StringCompare(ListItem.PlayCount, )] | [ListItem.IsResumable + !StringCompare(ListItem.PlayCount, ) + Skin.HasSetting(DisableInProgress)]]">$INFO[ListItem.Overlay]</value>
@@ -827,5 +827,52 @@
         <value condition="Container(9000).HasFocus(11)">$LOCALIZE[41294] : $INFO[Window(Home).Property(PlaylistEpisodesUnWatched)]</value>
         <value condition="Container(9000).HasFocus(14)">$LOCALIZE[41299] : $INFO[Window.Property(Music.SongsCount)]</value>
         <value>-</value>
+    </variable>
+    <variable name="HomeItemBackgroundPath">
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Home_Custom_Back_Movies_Folder)">$INFO[Skin.String(Home_Custom_Back_Movies_Folder)]</value>
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Home_Custom_Back_MovieSets_Folder)">$INFO[Skin.String(Home_Custom_Back_MovieSets_Folder)]</value>
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Menu_Custom1_Folder)">$INFO[Skin.String(Menu_Custom1_Folder)]</value>
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Menu_Custom4_Folder)">$INFO[Skin.String(Menu_Custom4_Folder)]</value>
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Menu_Custom5_Folder)">$INFO[Skin.String(Menu_Custom5_Folder)]</value>
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Menu_Custom6_Folder)">$INFO[Skin.String(Menu_Custom6_Folder)]</value>
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Home_Custom_Back_HDMovies_Folder)">$INFO[Skin.String(Home_Custom_Back_HDMovies_Folder)]</value>
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Home_Custom_Back_TVShow_Folder)">$INFO[Skin.String(Home_Custom_Back_TVShow_Folder)]</value>
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Home_Custom_Back_TVGuide_Folder)">$INFO[Skin.String(Home_Custom_Back_TVGuide_Folder)]</value>
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Menu_Custom2_Folder)">$INFO[Skin.String(Menu_Custom2_Folder)]</value>
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Menu_Custom9_Folder)">$INFO[Skin.String(Menu_Custom9_Folder)]</value>
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Menu_Custom10_Folder)">$INFO[Skin.String(Menu_Custom10_Folder)]</value>
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Menu_Custom11_Folder)">$INFO[Skin.String(Menu_Custom11_Folder)]</value>
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Home_Custom_Back_Video_Folder)">$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</value>
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Home_Custom_Back_TV_Folder)">$INFO[Skin.String(Home_Custom_Back_TV_Folder)]</value>
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Home_Custom_Back_Concerts_Folder)">$INFO[Skin.String(Home_Custom_Back_Concerts_Folder)]</value>
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Home_Custom_Back_Music_Folder)">$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</value>
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Menu_Custom3_Folder)">$INFO[Skin.String(Menu_Custom3_Folder)]</value>
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Menu_Custom12_Folder)">$INFO[Skin.String(Menu_Custom12_Folder)]</value>
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Menu_Custom13_Folder)">$INFO[Skin.String(Menu_Custom13_Folder)]</value>
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Home_Custom_Back_Scripts_Folder)">$INFO[Skin.String(Home_Custom_Back_Scripts_Folder)]</value>
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Menu_Custom7_Folder)">$INFO[Skin.String(Menu_Custom7_Folder)]</value>
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Menu_Custom8_Folder)">$INFO[Skin.String(Menu_Custom8_Folder)]</value>
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Home_Custom_Back_Favourites_Folder)">$INFO[Skin.String(Home_Custom_Back_Favourites_Folder)]</value>
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Home_Custom_Back_Games_Folder)">$INFO[Skin.String(Home_Custom_Back_Games_Folder)]</value>
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Home_Custom_Back_Pictures_Folder)">$INFO[Skin.String(Home_Custom_Back_Pictures_Folder)]</value>
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Home_Custom_Back_Weather_Folder)">$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</value>
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Home_Custom_Back_Settings_Folder)">$INFO[Skin.String(Home_Custom_Back_Settings_Folder)]</value>
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Home_Custom_Back_Shutdown_Folder)">$INFO[Skin.String(Home_Custom_Back_Shutdown_Folder)]</value>
+        <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Home_Custom_Back_GlobalSearch_Folder)">$INFO[Skin.String(Home_Custom_Back_GlobalSearch_Folder)]</value>
+    </variable>
+    <variable name="HomeItemCustomFavouritePath">
+        <value condition="Skin.String(HomeItemToEdit.LabelPathString,Menu_Custom1_Path)">$INFO[Skin.String(Menu_Custom1_Path)]</value>
+        <value condition="Skin.String(HomeItemToEdit.LabelPathString,Menu_Custom2_Path)">$INFO[Skin.String(Menu_Custom2_Path)]</value>
+        <value condition="Skin.String(HomeItemToEdit.LabelPathString,Menu_Custom3_Path)">$INFO[Skin.String(Menu_Custom3_Path)]</value>
+        <value condition="Skin.String(HomeItemToEdit.LabelPathString,Menu_Custom4_Path)">$INFO[Skin.String(Menu_Custom4_Path)]</value>
+        <value condition="Skin.String(HomeItemToEdit.LabelPathString,Menu_Custom5_Path)">$INFO[Skin.String(Menu_Custom5_Path)]</value>
+        <value condition="Skin.String(HomeItemToEdit.LabelPathString,Menu_Custom6_Path)">$INFO[Skin.String(Menu_Custom6_Path)]</value>
+        <value condition="Skin.String(HomeItemToEdit.LabelPathString,Menu_Custom7_Path)">$INFO[Skin.String(Menu_Custom7_Path)]</value>
+        <value condition="Skin.String(HomeItemToEdit.LabelPathString,Menu_Custom8_Path)">$INFO[Skin.String(Menu_Custom8_Path)]</value>
+        <value condition="Skin.String(HomeItemToEdit.LabelPathString,Menu_Custom9_Path)">$INFO[Skin.String(Menu_Custom9_Path)]</value>
+        <value condition="Skin.String(HomeItemToEdit.LabelPathString,Menu_Custom10_Path)">$INFO[Skin.String(Menu_Custom10_Path)]</value>
+        <value condition="Skin.String(HomeItemToEdit.LabelPathString,Menu_Custom11_Path)">$INFO[Skin.String(Menu_Custom11_Path)]</value>
+        <value condition="Skin.String(HomeItemToEdit.LabelPathString,Menu_Custom12_Path)">$INFO[Skin.String(Menu_Custom12_Path)]</value>
+        <value condition="Skin.String(HomeItemToEdit.LabelPathString,Menu_Custom13_Path)">$INFO[Skin.String(Menu_Custom13_Path)]</value>
     </variable>
 </includes>

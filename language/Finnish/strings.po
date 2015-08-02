@@ -145,14 +145,6 @@ msgctxt "#31106"
 msgid "Miscellaneous options"
 msgstr "Yleiset asetukset"
 
-msgctxt "#31108"
-msgid "Hide Main Menu Buttons"
-msgstr "Piilota päävalikon painikkeet"
-
-msgctxt "#31109"
-msgid "Home screen backgrounds"
-msgstr "Päävalikon taustakuvat"
-
 msgctxt "#31110"
 msgid "Edit Background for Home Button"
 msgstr "Muokkaa taustakuvaa päävalikon painikkeelle"
@@ -168,10 +160,6 @@ msgstr "Yksittäinen kuva"
 msgctxt "#31114"
 msgid "Multi Image"
 msgstr "Vaihtuva kuva"
-
-msgctxt "#31115"
-msgid "Customizer"
-msgstr "Mukautus"
 
 msgctxt "#31120"
 msgid "BUTTON LABEL"
@@ -208,10 +196,6 @@ msgstr ""
 msgctxt "#31187"
 msgid "TV Guide"
 msgstr ""
-
-msgctxt "#31203"
-msgid "Choose Your Song"
-msgstr "Valitse kappale"
 
 msgctxt "#31205"
 msgid "Lyrics Source"
@@ -522,10 +506,6 @@ msgstr ""
 
 msgctxt "#41023"
 msgid "Play Disc"
-msgstr ""
-
-msgctxt "#41025"
-msgid "Music Visualisation"
 msgstr ""
 
 msgctxt "#41027"

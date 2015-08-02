@@ -149,14 +149,6 @@ msgctxt "#31106"
 msgid "Miscellaneous options"
 msgstr "Различные опции"
 
-msgctxt "#31108"
-msgid "Hide Main Menu Buttons"
-msgstr "Спрятать Кнопки Главного Меню"
-
-msgctxt "#31109"
-msgid "Home screen backgrounds"
-msgstr "Фон главного экрана"
-
 msgctxt "#31110"
 msgid "Edit Background for Home Button"
 msgstr "Изменить фон для главного экрана"
@@ -172,10 +164,6 @@ msgstr "Одно изобр."
 msgctxt "#31114"
 msgid "Multi Image"
 msgstr "Много изобр."
-
-msgctxt "#31115"
-msgid "Customizer"
-msgstr "Настройки"
 
 msgctxt "#31120"
 msgid "BUTTON LABEL"
@@ -212,10 +200,6 @@ msgstr ""
 msgctxt "#31187"
 msgid "TV Guide"
 msgstr ""
-
-msgctxt "#31203"
-msgid "Choose Your Song"
-msgstr "Выберите Вашу Песню"
 
 msgctxt "#31205"
 msgid "Lyrics Source"
@@ -523,10 +507,6 @@ msgstr ""
 
 msgctxt "#41023"
 msgid "Play Disc"
-msgstr ""
-
-msgctxt "#41025"
-msgid "Music Visualisation"
 msgstr ""
 
 msgctxt "#41027"

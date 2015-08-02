@@ -145,14 +145,6 @@ msgctxt "#31106"
 msgid "Miscellaneous options"
 msgstr "Ýmsir valkostir"
 
-msgctxt "#31108"
-msgid "Hide Main Menu Buttons"
-msgstr "Fela hnapp í aðalvalmynd"
-
-msgctxt "#31109"
-msgid "Home screen backgrounds"
-msgstr "Bakgrunnar heimasvæðis"
-
 msgctxt "#31110"
 msgid "Edit Background for Home Button"
 msgstr "Breyta bakgrunni fyrir heimahnapp"
@@ -168,10 +160,6 @@ msgstr "Einföld mynd"
 msgctxt "#31114"
 msgid "Multi Image"
 msgstr "Margföld mynd"
-
-msgctxt "#31115"
-msgid "Customizer"
-msgstr "Sérsníðari"
 
 msgctxt "#31120"
 msgid "BUTTON LABEL"
@@ -208,10 +196,6 @@ msgstr ""
 msgctxt "#31187"
 msgid "TV Guide"
 msgstr ""
-
-msgctxt "#31203"
-msgid "Choose Your Song"
-msgstr "Veldu þitt lag"
 
 msgctxt "#31205"
 msgid "Lyrics Source"
@@ -515,10 +499,6 @@ msgstr ""
 
 msgctxt "#41023"
 msgid "Play Disc"
-msgstr ""
-
-msgctxt "#41025"
-msgid "Music Visualisation"
 msgstr ""
 
 msgctxt "#41027"

@@ -145,14 +145,6 @@ msgctxt "#31106"
 msgid "Miscellaneous options"
 msgstr "Opzioni Varie"
 
-msgctxt "#31108"
-msgid "Hide Main Menu Buttons"
-msgstr "Nascondi i pulsanti del menu principale"
-
-msgctxt "#31109"
-msgid "Home screen backgrounds"
-msgstr "Sfondo Home"
-
 msgctxt "#31110"
 msgid "Edit Background for Home Button"
 msgstr "Cambia lo sfondo per il pulsante Home"
@@ -168,10 +160,6 @@ msgstr "Immagine Singola"
 msgctxt "#31114"
 msgid "Multi Image"
 msgstr "Immagini multiple"
-
-msgctxt "#31115"
-msgid "Customizer"
-msgstr "Personalizzazione"
 
 msgctxt "#31120"
 msgid "BUTTON LABEL"
@@ -208,10 +196,6 @@ msgstr "Airing Today"
 msgctxt "#31187"
 msgid "TV Guide"
 msgstr "TV Guide"
-
-msgctxt "#31203"
-msgid "Choose Your Song"
-msgstr "Scegli la canzone"
 
 msgctxt "#31205"
 msgid "Lyrics Source"
@@ -520,10 +504,6 @@ msgstr "Sfondi Animati Globali"
 msgctxt "#41023"
 msgid "Play Disc"
 msgstr "Riproduzione Disco"
-
-msgctxt "#41025"
-msgid "Music Visualisation"
-msgstr "Visualizzazione Musica"
 
 msgctxt "#41027"
 msgid "Addon Submenu"

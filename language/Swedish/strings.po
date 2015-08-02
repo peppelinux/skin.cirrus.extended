@@ -157,14 +157,6 @@ msgctxt "#31106"
 msgid "Miscellaneous options"
 msgstr "Övriga alternativ"
 
-msgctxt "#31108"
-msgid "Hide Main Menu Buttons"
-msgstr "Dölj huvudmenyknappar"
-
-msgctxt "#31109"
-msgid "Home screen backgrounds"
-msgstr "Hemskärmsbakgrunder"
-
 msgctxt "#31110"
 msgid "Edit Background for Home Button"
 msgstr "Ändra hemknappsbakgrund"
@@ -180,10 +172,6 @@ msgstr "Solobild"
 msgctxt "#31114"
 msgid "Multi Image"
 msgstr "Flerbild"
-
-msgctxt "#31115"
-msgid "Customizer"
-msgstr "Anpassare"
 
 msgctxt "#31120"
 msgid "BUTTON LABEL"
@@ -224,10 +212,6 @@ msgstr "Visas idag"
 msgctxt "#31187"
 msgid "TV Guide"
 msgstr "TV-guide"
-
-msgctxt "#31203"
-msgid "Choose Your Song"
-msgstr "Välj din låt"
 
 msgctxt "#31205"
 msgid "Lyrics Source"
@@ -536,10 +520,6 @@ msgstr "Globalt animerade bakgrunder"
 msgctxt "#41023"
 msgid "Play Disc"
 msgstr "Spela skiva"
-
-msgctxt "#41025"
-msgid "Music Visualisation"
-msgstr "Musikvisualisering"
 
 msgctxt "#41027"
 msgid "Addon Submenu"

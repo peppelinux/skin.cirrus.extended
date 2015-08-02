@@ -149,14 +149,6 @@ msgctxt "#31106"
 msgid "Miscellaneous options"
 msgstr "Różnego rodzaju opcje"
 
-msgctxt "#31108"
-msgid "Hide Main Menu Buttons"
-msgstr ""
-
-msgctxt "#31109"
-msgid "Home screen backgrounds"
-msgstr "Tła ekranu głównego"
-
 msgctxt "#31110"
 msgid "Edit Background for Home Button"
 msgstr ""
@@ -171,10 +163,6 @@ msgstr ""
 
 msgctxt "#31114"
 msgid "Multi Image"
-msgstr ""
-
-msgctxt "#31115"
-msgid "Customizer"
 msgstr ""
 
 msgctxt "#31120"
@@ -211,10 +199,6 @@ msgstr ""
 
 msgctxt "#31187"
 msgid "TV Guide"
-msgstr ""
-
-msgctxt "#31203"
-msgid "Choose Your Song"
 msgstr ""
 
 msgctxt "#31205"
@@ -523,10 +507,6 @@ msgstr ""
 
 msgctxt "#41023"
 msgid "Play Disc"
-msgstr ""
-
-msgctxt "#41025"
-msgid "Music Visualisation"
 msgstr ""
 
 msgctxt "#41027"

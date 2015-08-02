@@ -157,10 +157,6 @@ msgctxt "#31108"
 msgid "Hide Main Menu Buttons"
 msgstr "Απόκρυψη πλήκτρων από το κεντρικό μενού επιλογών"
 
-msgctxt "#31109"
-msgid "Home screen backgrounds"
-msgstr "Υπόβαθρα αρχικής οθόνης"
-
 msgctxt "#31110"
 msgid "Edit Background for Home Button"
 msgstr "Επεξεργασία υπόβαθρου για το αρχικό πλήκτρο"
@@ -176,10 +172,6 @@ msgstr "Εικόνα"
 msgctxt "#31114"
 msgid "Multi Image"
 msgstr "Φάκελος"
-
-msgctxt "#31115"
-msgid "Customizer"
-msgstr "Προσαρμογή"
 
 msgctxt "#31119"
 msgid "Enable Custom Script Button"
@@ -563,10 +555,6 @@ msgstr ""
 
 msgctxt "#41023"
 msgid "Play Disc"
-msgstr ""
-
-msgctxt "#41025"
-msgid "Music Visualisation"
 msgstr ""
 
 msgctxt "#41027"
