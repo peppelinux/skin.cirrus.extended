@@ -1,3 +1,8 @@
+[B]3.3.2[/B] (XX.YY.2015)
+- skin shortcuts support
+- lot of refactor
+- some fixes
+
 [B]3.3.0[/B] (09.07.2015)
 - initial Isengard version
 
