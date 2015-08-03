@@ -181,6 +181,7 @@
                     <label>$LOCALIZE[31012]</label>
                     <include>MenuItemSettings</include>
                     <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=$INFO[Skin.String(HomeItemToEdit.Submenu)])</onclick>
+                    <visible>Skin.HasSetting(SkinShortcutsAddonEnabled)</visible>
                 </control>
                 <control type="label" id="7">
                     <include>MenuTitleSettings</include>
