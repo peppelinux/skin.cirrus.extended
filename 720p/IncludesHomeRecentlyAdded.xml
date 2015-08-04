@@ -754,7 +754,7 @@
             <control type="group">
                 <left>1028</left>
                 <top>52</top>
-                <visible>Container(9000).Hasfocus(1)</visible>
+                <visible>Container(9000).Hasfocus(1) + Skin.HasSetting(EnableRecentlyAddedMovies)</visible>
                 <!-- WIDGET -->
                 <include>HomeWidgetInOutAnimation</include>
                 <control type="group">
@@ -875,12 +875,11 @@
                     <content limit="10">$VAR[WidgetContent]</content>
                 </control>
             </control>
-
             <!-- Custom Movie Playlist 1 -->
             <control type="group">
                 <left>1028</left>
                 <top>52</top>
-                <visible>Container(9000).Hasfocus(3)</visible>
+                <visible>Container(9000).Hasfocus(3) + Skin.HasSetting(EnableRecentlyAddedMoviesPlaylist1)</visible>
                 <!-- WIDGET -->
                 <include>HomeWidgetInOutAnimation</include>
                 <control type="group">
@@ -936,7 +935,7 @@
             <control type="group">
                 <left>1028</left>
                 <top>52</top>
-                <visible>Container(9000).Hasfocus(4)</visible>
+                <visible>Container(9000).Hasfocus(4) + Skin.HasSetting(EnableRecentlyAddedMoviesPlaylist2)</visible>
                 <!-- WIDGET -->
                 <include>HomeWidgetInOutAnimation</include>
                 <control type="group">
@@ -992,7 +991,7 @@
             <control type="group">
                 <left>1028</left>
                 <top>52</top>
-                <visible>Container(9000).Hasfocus(5)</visible>
+                <visible>Container(9000).Hasfocus(5) + Skin.HasSetting(EnableRecentlyAddedMoviesPlaylist3)</visible>
                 <!-- WIDGET -->
                 <include>HomeWidgetInOutAnimation</include>
                 <control type="group">
@@ -1233,7 +1232,7 @@
             <control type="group">
                 <left>1028</left>
                 <top>52</top>
-                <visible>Container(9000).Hasfocus(7)</visible>
+                <visible>Container(9000).Hasfocus(7) + Skin.HasSetting(EnableRecentlyAddedTVShows)</visible>
                 <!-- WIDGET -->
                 <include>HomeWidgetInOutAnimation</include>
                 <control type="group">
@@ -1361,7 +1360,7 @@
             <control type="group">
                 <left>1028</left>
                 <top>52</top>
-                <visible>Container(9000).Hasfocus(9)</visible>
+                <visible>Container(9000).Hasfocus(9) + Skin.HasSetting(EnableRecentlyAddedTVShowsPlaylist1)</visible>
                 <!-- WIDGET -->
                 <include>HomeWidgetInOutAnimation</include>
                 <control type="group">
@@ -1417,7 +1416,7 @@
             <control type="group">
                 <left>1028</left>
                 <top>52</top>
-                <visible>Container(9000).Hasfocus(10)</visible>
+                <visible>Container(9000).Hasfocus(10) + Skin.HasSetting(EnableRecentlyAddedTVShowsPlaylist2)</visible>
                 <!-- WIDGET -->
                 <include>HomeWidgetInOutAnimation</include>
                 <control type="group">
@@ -1473,7 +1472,7 @@
             <control type="group">
                 <left>1028</left>
                 <top>52</top>
-                <visible>Container(9000).Hasfocus(11)</visible>
+                <visible>Container(9000).Hasfocus(11) + Skin.HasSetting(EnableRecentlyAddedTVShowsPlaylist3)</visible>
                 <!-- WIDGET -->
                 <include>HomeWidgetInOutAnimation</include>
                 <control type="group">
@@ -1529,7 +1528,7 @@
             <control type="group">
                 <left>1028</left>
                 <top>52</top>
-                <visible>Container(9000).Hasfocus(14)</visible>
+                <visible>Container(9000).Hasfocus(14) + Skin.HasSetting(EnableRecentlyAddedMusic)</visible>
                 <!-- WIDGET -->
                 <include>HomeWidgetInOutAnimation</include>
                 <control type="group">
@@ -1594,12 +1593,11 @@
                     <content limit="10">$VAR[WidgetContent]</content>
                 </control>
             </control>
-
             <!-- Music Videos -->
             <control type="group">
                 <left>1028</left>
                 <top>52</top>
-                <visible>Container(9000).Hasfocus(31)</visible>
+                <visible>Container(9000).Hasfocus(31) + Skin.HasSetting(EnableRecentlyAddedMusicVideos)</visible>
                 <!-- WIDGET -->
                 <include>HomeWidgetInOutAnimation</include>
                 <control type="group">
@@ -1654,7 +1652,7 @@
             <control type="group">
                 <left>1028</left>
                 <top>52</top>
-                <visible>Container(9000).Hasfocus(18)</visible>
+                <visible>Container(9000).Hasfocus(18) + Skin.HasSetting(EnableRecentlyAddedAddons)</visible>
                 <!-- WIDGET -->
                 <include>HomeWidgetInOutAnimation</include>
                 <control type="group">

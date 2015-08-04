@@ -11,6 +11,10 @@
     <onunload>Skin.Reset(HomeItemToEdit.EnableString)</onunload>
     <onunload>Skin.Reset(HomeItemToEdit.Enabled)</onunload>
     <onunload>Skin.Reset(HomeItemToEdit.Submenu)</onunload>
+    <onunload>Skin.Reset(HomeItemToEdit.EnableWidgetString)</onunload>
+    <onunload>Skin.Reset(HomeItemToEdit.EnableWidget)</onunload>
+    <onunload>Skin.Reset(HomeItemToEdit.EnableRecentlyAddedString)</onunload>
+    <onunload>Skin.Reset(HomeItemToEdit.EnableRecentlyAdded)</onunload>
     <controls>
         <include>CommonSettingsBackground</include>
         <include>CommonMediaPlayingBackgroundBrowser</include>
@@ -182,6 +186,29 @@
                     <include>MenuItemSettings</include>
                     <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=$INFO[Skin.String(HomeItemToEdit.Submenu)])</onclick>
                     <visible>Skin.HasSetting(SkinShortcutsAddonEnabled)</visible>
+                    <enable>[Skin.String(HomeItemToEdit.Enabled,1) + Skin.String(HomeItemToEdit.LabelSuffix,$LOCALIZE[24022])] | [!Skin.String(HomeItemToEdit.Enabled) + !Skin.String(HomeItemToEdit.LabelSuffix,$LOCALIZE[24022])]</enable>
+                </control>
+                <control type="radiobutton" id="12">
+                    <description>Enable Recently Added</description>
+                    <include>MenuItemSettings</include>
+                    <label>$LOCALIZE[24022] Recently Added List</label>
+                    <onclick>Skin.ToggleSetting($ESCINFO[Skin.String(HomeItemToEdit.EnableRecentlyAddedString)])</onclick>
+                    <onclick condition="IsEmpty(Skin.String(HomeItemToEdit.EnableRecentlyAdded))">Skin.SetString(HomeItemToEdit.EnableRecentlyAdded,1)</onclick>
+                    <onclick condition="!IsEmpty(Skin.String(HomeItemToEdit.EnableRecentlyAdded))">Skin.Reset(HomeItemToEdit.EnableRecentlyAdded)</onclick>
+                    <selected>Skin.String(HomeItemToEdit.EnableRecentlyAdded,1)</selected>
+                    <visible>Skin.String(HomeItemToEdit.EnableRecentlyAddedString)</visible>
+                    <enable>[Skin.String(HomeItemToEdit.Enabled,1) + Skin.String(HomeItemToEdit.LabelSuffix,$LOCALIZE[24022])] | [!Skin.String(HomeItemToEdit.Enabled) + !Skin.String(HomeItemToEdit.LabelSuffix,$LOCALIZE[24022])]</enable>
+                </control>
+                <control type="radiobutton" id="11">
+                    <description>Hide Widget Button</description>
+                    <include>MenuItemSettings</include>
+                    <label>$LOCALIZE[24022] Widget</label>
+                    <onclick>Skin.ToggleSetting($ESCINFO[Skin.String(HomeItemToEdit.EnableWidgetString)])</onclick>
+                    <onclick condition="IsEmpty(Skin.String(HomeItemToEdit.EnableWidget))">Skin.SetString(HomeItemToEdit.EnableWidget,1)</onclick>
+                    <onclick condition="!IsEmpty(Skin.String(HomeItemToEdit.EnableWidget))">Skin.Reset(HomeItemToEdit.EnableWidget)</onclick>
+                    <selected>Skin.String(HomeItemToEdit.EnableWidget,1)</selected>
+                    <visible>Skin.String(HomeItemToEdit.EnableWidgetString) + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
+                    <enable>Skin.String(HomeItemToEdit.EnableRecentlyAdded) + [[Skin.String(HomeItemToEdit.Enabled,1) + Skin.String(HomeItemToEdit.LabelSuffix,$LOCALIZE[24022])] | [!Skin.String(HomeItemToEdit.Enabled) + !Skin.String(HomeItemToEdit.LabelSuffix,$LOCALIZE[24022])]]</enable>
                 </control>
                 <control type="label" id="7">
                     <include>MenuTitleSettings</include>

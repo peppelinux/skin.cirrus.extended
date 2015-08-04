@@ -16,6 +16,10 @@
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableString,HomeMenuNoMoviesButton)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(HomeMenuNoMoviesButton)">Skin.SetString(HomeItemToEdit.Enabled,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.Submenu,movies)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedString,EnableRecentlyAddedMovies)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedMovies)">Skin.SetString(HomeItemToEdit.EnableRecentlyAdded,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableWidgetString,nomoviewidget)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(nomoviewidget)">Skin.SetString(HomeItemToEdit.EnableWidget,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">ActivateWindow(1124)</onclick>
         </item>
         <item id="30">
@@ -73,6 +77,10 @@
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableString,Menu_Custom4)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(Menu_Custom4)">Skin.SetString(HomeItemToEdit.Enabled,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.Submenu,customplaylist1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedString,EnableRecentlyAddedMoviesPlaylist1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedMoviesPlaylist1)">Skin.SetString(HomeItemToEdit.EnableRecentlyAdded,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableWidgetString,nomoviewidgetplaylistmovie1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(nomoviewidgetplaylistmovie1)">Skin.SetString(HomeItemToEdit.EnableWidget,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">ActivateWindow(1124)</onclick>
         </item>
         <item id="4">
@@ -93,6 +101,10 @@
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableString,Menu_Custom5)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(Menu_Custom5)">Skin.SetString(HomeItemToEdit.Enabled,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.Submenu,customplaylist2)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedString,EnableRecentlyAddedMoviesPlaylist2)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedMoviesPlaylist2)">Skin.SetString(HomeItemToEdit.EnableRecentlyAdded,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableWidgetString,nomoviewidgetplaylistmovie2)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(nomoviewidgetplaylistmovie2)">Skin.SetString(HomeItemToEdit.EnableWidget,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">ActivateWindow(1124)</onclick>
         </item>
         <item id="5">
@@ -113,6 +125,10 @@
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableString,Menu_Custom6)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(Menu_Custom6)">Skin.SetString(HomeItemToEdit.Enabled,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.Submenu,customplaylist3)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedString,EnableRecentlyAddedMoviesPlaylist3)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedMoviesPlaylist3)">Skin.SetString(HomeItemToEdit.EnableRecentlyAdded,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableWidgetString,nomoviewidgetplaylistmovie3)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(nomoviewidgetplaylistmovie3)">Skin.SetString(HomeItemToEdit.EnableWidget,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">ActivateWindow(1124)</onclick>
         </item>
         <item id="6">
@@ -147,6 +163,10 @@
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableString,HomeMenuNoTVShowsButton)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(HomeMenuNoTVShowsButton)">Skin.SetString(HomeItemToEdit.Enabled,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.Submenu,tvshows)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedString,EnableRecentlyAddedTVShows)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedTVShows)">Skin.SetString(HomeItemToEdit.EnableRecentlyAdded,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableWidgetString,notvshowwidget)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(notvshowwidget)">Skin.SetString(HomeItemToEdit.EnableWidget,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">ActivateWindow(1124)</onclick>
         </item>	
         <item id="28">
@@ -203,6 +223,10 @@
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableString,Menu_Custom9)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(Menu_Custom9)">Skin.SetString(HomeItemToEdit.Enabled,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.Submenu,customplaylist4)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedString,EnableRecentlyAddedTVShowsPlaylist1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedTVShowsPlaylist1)">Skin.SetString(HomeItemToEdit.EnableRecentlyAdded,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableWidgetString,notvwidgetplaylisttv1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(notvwidgetplaylisttv1)">Skin.SetString(HomeItemToEdit.EnableWidget,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">ActivateWindow(1124)</onclick>
         </item>
         <item id="10">
@@ -223,6 +247,10 @@
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableString,Menu_Custom10)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(Menu_Custom10)">Skin.SetString(HomeItemToEdit.Enabled,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.Submenu,customplaylist5)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedString,EnableRecentlyAddedTVShowsPlaylist2)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedTVShowsPlaylist2)">Skin.SetString(HomeItemToEdit.EnableRecentlyAdded,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableWidgetString,notvwidgetplaylisttv2)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(notvwidgetplaylisttv2)">Skin.SetString(HomeItemToEdit.EnableWidget,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">ActivateWindow(1124)</onclick>
         </item>
         <item id="11">
@@ -243,6 +271,10 @@
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableString,Menu_Custom11)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(Menu_Custom11)">Skin.SetString(HomeItemToEdit.Enabled,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.Submenu,customplaylist6)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedString,EnableRecentlyAddedTVShowsPlaylist3)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedTVShowsPlaylist3)">Skin.SetString(HomeItemToEdit.EnableRecentlyAdded,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableWidgetString,notvwidgetplaylisttv3)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(notvwidgetplaylisttv3)">Skin.SetString(HomeItemToEdit.EnableWidget,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">ActivateWindow(1124)</onclick>
         </item>	
         <item id="12">
@@ -260,6 +292,8 @@
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableString,HomeMenuNoVideosButton)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(HomeMenuNoVideosButton)">Skin.SetString(HomeItemToEdit.Enabled,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.Submenu,videos)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableWidgetString,nostatswidget)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(nostatswidget)">Skin.SetString(HomeItemToEdit.EnableWidget,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">ActivateWindow(1124)</onclick>
         </item>
         <!-- PVR Butchabay -->
@@ -311,6 +345,10 @@
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableString,HomeMenuNoConcertsButton)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(HomeMenuNoConcertsButton)">Skin.SetString(HomeItemToEdit.Enabled,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.Submenu,concerts)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedString,EnableRecentlyAddedMusicVideos)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedMusicVideos)">Skin.SetString(HomeItemToEdit.EnableRecentlyAdded,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableWidgetString,nomusicvideoswidget)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(nomusicvideoswidget)">Skin.SetString(HomeItemToEdit.EnableWidget,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">ActivateWindow(1124)</onclick>
         </item>			
         <item id="14">
@@ -328,6 +366,10 @@
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableString,HomeMenuNoMusicButton)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(HomeMenuNoMusicButton)">Skin.SetString(HomeItemToEdit.Enabled,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.Submenu,music)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedString,EnableRecentlyAddedMusic)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedMusic)">Skin.SetString(HomeItemToEdit.EnableRecentlyAdded,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableWidgetString,nomusicwidget)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(nomusicwidget)">Skin.SetString(HomeItemToEdit.EnableWidget,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">ActivateWindow(1124)</onclick>
         </item>
         <item id="15">
@@ -405,6 +447,10 @@
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableString,HomeMenuNoScriptsButton)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(HomeMenuNoScriptsButton)">Skin.SetString(HomeItemToEdit.Enabled,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.Submenu,addon)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedString,EnableRecentlyAddedAddons)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedAddons)">Skin.SetString(HomeItemToEdit.EnableRecentlyAdded,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableWidgetString,noaddonwidget)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(noaddonwidget)">Skin.SetString(HomeItemToEdit.EnableWidget,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">ActivateWindow(1124)</onclick>
         </item>
         <item id="19">

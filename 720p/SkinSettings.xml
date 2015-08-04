@@ -484,127 +484,6 @@
                         <selected>Skin.HasSetting(animation_bg_global)</selected>
                         <enable>Skin.HasSetting(animation_bg)</enable>
                     </control>
-                    <control type="label" id="1133">
-                        <description>Recently Added</description>
-                        <include>MenuTitleSettings</include>
-                        <label>$LOCALIZE[41230]</label>
-                    </control>
-                    <control type="radiobutton" id="1019">
-                        <description>Show Recently added info</description>
-                        <include>MenuItemSettings</include>
-                        <label>$LOCALIZE[24022] $LOCALIZE[31328]</label>
-                        <onclick>Skin.ToggleSetting(homepageHideRecentlyAdded)</onclick>
-                        <selected>Skin.HasSetting(homepageHideRecentlyAdded)</selected>
-                    </control>
-                    <control type="radiobutton" id="1157">
-                        <description>Show Recently added info Horizontal</description>
-                        <include>MenuItemSettings</include>
-                        <label>41184</label>
-                        <onclick>Skin.ToggleSetting(homepagerecentlyaddedinfohorz)</onclick>
-                        <selected>Skin.HasSetting(homepagerecentlyaddedinfohorz)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded)</enable>
-                    </control>
-                    <control type="radiobutton" id="1199">
-                        <description>Show TV Show Logo in Recent/Recommended List</description>
-                        <include>MenuItemSettings</include>
-                        <label>31041</label>
-                        <onclick>Skin.ToggleSetting(logoinshowwidget)</onclick>
-                        <selected>Skin.HasSetting(logoinshowwidget)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</enable>
-                    </control>
-                    <control type="label" id="1135">
-                        <description>Widgets</description>
-                        <include>MenuTitleSettings</include>
-                        <label>$LOCALIZE[41228]</label>
-                    </control>
-                    <control type="radiobutton" id="1117">
-                        <description>Show Recently added TVShow Widget</description>
-                        <include>MenuItemSettings</include>
-                        <label>$LOCALIZE[24022] $LOCALIZE[41196]</label>
-                        <onclick>Skin.ToggleSetting(notvshowwidget)</onclick>
-                        <selected>Skin.HasSetting(notvshowwidget)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded)</enable>
-                    </control>
-                    <control type="radiobutton" id="1170">
-                        <description>Show Recently added Playlists TVShow Widget 1</description>
-                        <include>MenuItemSettings</include>
-                        <label>$LOCALIZE[24022] $LOCALIZE[41287]</label>
-                        <onclick>Skin.ToggleSetting(notvwidgetplaylisttv1)</onclick>
-                        <selected>Skin.HasSetting(notvwidgetplaylisttv1)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + Skin.HasSetting(Menu_Custom9) + !IsEmpty(Skin.String(Menu_Custom9_Path))</enable>
-                    </control>
-                    <control type="radiobutton" id="1171">
-                        <description>Show Recently added Playlists TVShow Widget 2</description>
-                        <include>MenuItemSettings</include>
-                        <label>$LOCALIZE[24022] $LOCALIZE[41288]</label>
-                        <onclick>Skin.ToggleSetting(notvwidgetplaylisttv2)</onclick>
-                        <selected>Skin.HasSetting(notvwidgetplaylisttv2)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + Skin.HasSetting(Menu_Custom10) + !IsEmpty(Skin.String(Menu_Custom10_Path))</enable>
-                    </control>
-                    <control type="radiobutton" id="1172">
-                        <description>Show Recently added Playlists TVShow Widget 3</description>
-                        <include>MenuItemSettings</include>
-                        <label>$LOCALIZE[24022] $LOCALIZE[41289]</label>
-                        <onclick>Skin.ToggleSetting(notvwidgetplaylisttv3)</onclick>
-                        <selected>Skin.HasSetting(notvwidgetplaylisttv3)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + Skin.HasSetting(Menu_Custom11) + !IsEmpty(Skin.String(Menu_Custom11_Path))</enable>
-                    </control>
-                    <control type="radiobutton" id="1115">
-                        <description>Show Recently added Movie Widget</description>
-                        <include>MenuItemSettings</include>
-                        <label>$LOCALIZE[24022] $LOCALIZE[41195]</label>
-                        <onclick>Skin.ToggleSetting(nomoviewidget)</onclick>
-                        <selected>Skin.HasSetting(nomoviewidget)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded)</enable>
-                    </control>
-                    <control type="radiobutton" id="1173">
-                        <description>Show Recently added Playlists Movie1 Witget</description>
-                        <include>MenuItemSettings</include>
-                        <label>$LOCALIZE[24022] $LOCALIZE[41290]</label>
-                        <onclick>Skin.ToggleSetting(nomoviewidgetplaylistmovie1)</onclick>
-                        <selected>Skin.HasSetting(nomoviewidgetplaylistmovie1)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + Skin.HasSetting(Menu_Custom4) + !IsEmpty(Skin.String(Menu_Custom4_Path))</enable>
-                    </control>
-                    <control type="radiobutton" id="1174">
-                        <description>Show Recently added Playlists Movie2 Widget</description>
-                        <include>MenuItemSettings</include>
-                        <label>$LOCALIZE[24022] $LOCALIZE[41291]</label>
-                        <onclick>Skin.ToggleSetting(nomoviewidgetplaylistmovie2)</onclick>
-                        <selected>Skin.HasSetting(nomoviewidgetplaylistmovie2)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + Skin.HasSetting(Menu_Custom5) + !IsEmpty(Skin.String(Menu_Custom5_Path))</enable>
-                    </control>
-                    <control type="radiobutton" id="1175">
-                        <description>Show Recently added Playlists Movie3 Widget</description>
-                        <include>MenuItemSettings</include>
-                        <label>$LOCALIZE[24022] $LOCALIZE[41292]</label>
-                        <onclick>Skin.ToggleSetting(nomoviewidgetplaylistmovie3)</onclick>
-                        <selected>Skin.HasSetting(nomoviewidgetplaylistmovie3)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded) + Skin.HasSetting(Menu_Custom6) + !IsEmpty(Skin.String(Menu_Custom6_Path))</enable>
-                    </control>
-                    <control type="radiobutton" id="1116">
-                        <description>Show Recently added Status Widget</description>
-                        <include>MenuItemSettings</include>
-                        <label>$LOCALIZE[24022] $LOCALIZE[41199]</label>
-                        <onclick>Skin.ToggleSetting(nostatswidget)</onclick>
-                        <selected>Skin.HasSetting(nostatswidget)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded)</enable>
-                    </control>
-                    <control type="radiobutton" id="1118">
-                        <description>Show Recently added Music Widget</description>
-                        <include>MenuItemSettings</include>
-                        <label>$LOCALIZE[24022] $LOCALIZE[41197]</label>
-                        <onclick>Skin.ToggleSetting(nomusicwidget)</onclick>
-                        <selected>Skin.HasSetting(nomusicwidget)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded)</enable>
-                    </control>
-                    <control type="radiobutton" id="1119">
-                        <description>Show Recently added Addon Widget</description>
-                        <include>MenuItemSettings</include>
-                        <label>$LOCALIZE[24022] $LOCALIZE[41198]</label>
-                        <onclick>Skin.ToggleSetting(noaddonwidget)</onclick>
-                        <selected>Skin.HasSetting(noaddonwidget)</selected>
-                        <enable>Skin.HasSetting(homepageHideRecentlyAdded)</enable>
-                    </control>
                     <control type="label" id="1139">
                         <description>Home and Weather</description>
                         <include>MenuTitleSettings</include>
@@ -1816,6 +1695,34 @@
                             <enable>Skin.HasSetting(SkinShortcutsAddonEnabled)</enable>
                             <visible>System.HasAddon(script.skinshortcuts)</visible>
                         </control>
+                        <control type="label" id="1133">
+                            <description>Recently Added</description>
+                            <include>MenuTitleSettings</include>
+                            <label>$LOCALIZE[41230]</label>
+                        </control>
+                        <control type="radiobutton" id="1019">
+                            <description>Show Recently added info</description>
+                            <include>MenuItemSettings</include>
+                            <label>$LOCALIZE[24022] $LOCALIZE[31328]</label>
+                            <onclick>Skin.ToggleSetting(homepageHideRecentlyAdded)</onclick>
+                            <selected>Skin.HasSetting(homepageHideRecentlyAdded)</selected>
+                        </control>
+                        <control type="radiobutton" id="1157">
+                            <description>Show Recently added info Horizontal</description>
+                            <include>MenuItemSettings</include>
+                            <label>41184</label>
+                            <onclick>Skin.ToggleSetting(homepagerecentlyaddedinfohorz)</onclick>
+                            <selected>Skin.HasSetting(homepagerecentlyaddedinfohorz)</selected>
+                            <enable>Skin.HasSetting(homepageHideRecentlyAdded)</enable>
+                        </control>
+                        <control type="radiobutton" id="1199">
+                            <description>Show TV Show Logo in Recent/Recommended List</description>
+                            <include>MenuItemSettings</include>
+                            <label>31041</label>
+                            <onclick>Skin.ToggleSetting(logoinshowwidget)</onclick>
+                            <selected>Skin.HasSetting(logoinshowwidget)</selected>
+                            <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</enable>
+                        </control>
                         <control type="label" id="500">
                             <include>MenuTitleSettings</include>
                             <label>41065</label>
@@ -1824,7 +1731,6 @@
                             <left>290</left>
                             <width>750</width>
                             <height>495</height>
-                            <pagecontrol>60</pagecontrol>
                             <itemlayout height="33" width="750">
                                 <control type="image">
                                     <left>0</left>
