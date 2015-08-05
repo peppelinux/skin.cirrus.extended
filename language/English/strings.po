@@ -115,16 +115,20 @@ msgctxt "#31031"
 msgid "Pic Thumbs"
 msgstr ""
 
-#Extra labels
-#empty strings from id 31033 to 31039
-
 msgctxt "#31040"
 msgid "Now Playing"
 msgstr ""
 
 msgctxt "#31041"
-msgid "Enable clearlogo"
+msgid " - Enable Logo"
 msgstr ""
+
+msgctxt "#31042"
+msgid " - Enable Widget"
+msgstr ""
+
+#Extra labels
+#empty strings from id 31033 to 31039
 
 msgctxt "#31042"
 msgid "Disable \"Watching\" icon when watched"
@@ -456,8 +460,13 @@ msgctxt "#31329"
 msgid "[B]Timer set![/B] [COLOR=grey2] - System auto shutdown in[/COLOR]"
 msgstr ""
 
+msgctxt "#31330"
+msgid "Recently Added List"
+msgstr ""
 
-
+msgctxt "#31331"
+msgid " - Enable Horizontal Layout"
+msgstr ""
 
 #Video and Music OSD Labels
 #empty strings from id 31332 to 31350
@@ -936,7 +945,7 @@ msgid "Custom Favorite 4"
 msgstr ""
 
 msgctxt "#41070"
-msgid "- Set Playlist"
+msgid " - Set Playlist"
 msgstr ""
 
 msgctxt "#41071"
@@ -1317,10 +1326,6 @@ msgctxt "#41183"
 msgid "Movie Sets"
 msgstr ""
 
-msgctxt "#41184"
-msgid "Horizontal Layout"
-msgstr ""
-
 msgctxt "#41185"
 msgid "Global Search"
 msgstr ""
@@ -1329,25 +1334,15 @@ msgctxt "#41192"
 msgid "Enable Extra Fanart for Music"
 msgstr ""
 
-msgctxt "#41195"
-msgid "Movie Widget"
-msgstr ""
 
-msgctxt "#41196"
-msgid "TV Show Widget"
-msgstr ""
 
-msgctxt "#41197"
-msgid "Music Widget"
-msgstr ""
 
-msgctxt "#41198"
-msgid "Addons Widget"
-msgstr ""
 
-msgctxt "#41199"
-msgid "Status Widget"
-msgstr ""
+
+
+
+
+
 
 #New labels Misc.  Cirrus Extended v2 *** NEW V2.07
 
@@ -1397,14 +1392,6 @@ msgstr ""
 
 msgctxt "#41217"
 msgid "Original Cirrus Clock"
-msgstr ""
-
-msgctxt "#41228"
-msgid "Widgets"
-msgstr ""
-
-msgctxt "#41230"
-msgid "Recently Added and Watchlist on Home"
 msgstr ""
 
 msgctxt "#41235"
@@ -1560,30 +1547,6 @@ msgstr ""
 
 msgctxt "#41286"
 msgid "Actor Info"
-msgstr ""
-
-msgctxt "#41287"
-msgid "Latest TV Shows Playlist1 Widget"
-msgstr ""
-
-msgctxt "#41288"
-msgid "Latest TV Shows Playlist2 Widget"
-msgstr ""
-
-msgctxt "#41289"
-msgid "Latest TV Shows Playlist3 Widget"
-msgstr ""
-
-msgctxt "#41290"
-msgid "Latest Movie Playlist1 Widget"
-msgstr ""
-
-msgctxt "#41291"
-msgid "Latest Movie Playlist2 Widget"
-msgstr ""
-
-msgctxt "#41292"
-msgid "Latest Movie Playlist3 Widget"
 msgstr ""
 
 msgctxt "#41293"

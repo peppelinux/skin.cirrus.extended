@@ -989,10 +989,6 @@ msgctxt "#41183"
 msgid "Movie Sets"
 msgstr "Filmset"
 
-msgctxt "#41184"
-msgid "Horizontal Layout"
-msgstr "Horizontale indeling"
-
 msgctxt "#41185"
 msgid "Global Search"
 msgstr "Globaal Zoeken"
@@ -1000,26 +996,6 @@ msgstr "Globaal Zoeken"
 msgctxt "#41192"
 msgid "Enable Extra Fanart for Music"
 msgstr "Extra fanart voor muziek inschakelen"
-
-msgctxt "#41195"
-msgid "Movie Widget"
-msgstr "Film widget"
-
-msgctxt "#41196"
-msgid "TV Show Widget"
-msgstr "TV-serie widget"
-
-msgctxt "#41197"
-msgid "Music Widget"
-msgstr "Muziek widget"
-
-msgctxt "#41198"
-msgid "Addons Widget"
-msgstr "Add-ons widget"
-
-msgctxt "#41199"
-msgid "Status Widget"
-msgstr "Status widget"
 
 msgctxt "#41200"
 msgid "Get Extrafanart"
@@ -1064,14 +1040,6 @@ msgstr "Achtergrond op beginscherm dimmen"
 msgctxt "#41217"
 msgid "Original Cirrus Clock"
 msgstr "Originele Cirrus-klok"
-
-msgctxt "#41228"
-msgid "Widgets"
-msgstr "Widgets"
-
-msgctxt "#41230"
-msgid "Recently Added and Watchlist on Home"
-msgstr "'Onlangs toegevoegd' en 'Watchlist' op beginscherm"
 
 msgctxt "#41235"
 msgid "Hide Plot on Pause"
@@ -1208,30 +1176,6 @@ msgstr ""
 msgctxt "#41286"
 msgid "Actor Info"
 msgstr "Info acteur"
-
-msgctxt "#41287"
-msgid "Latest TV Shows Playlist1 Widget"
-msgstr ""
-
-msgctxt "#41288"
-msgid "Latest TV Shows Playlist2 Widget"
-msgstr ""
-
-msgctxt "#41289"
-msgid "Latest TV Shows Playlist3 Widget"
-msgstr ""
-
-msgctxt "#41290"
-msgid "Latest Movie Playlist1 Widget"
-msgstr ""
-
-msgctxt "#41291"
-msgid "Latest Movie Playlist2 Widget"
-msgstr ""
-
-msgctxt "#41292"
-msgid "Latest Movie Playlist3 Widget"
-msgstr ""
 
 msgctxt "#41293"
 msgid "Extra Info"

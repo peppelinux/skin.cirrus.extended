@@ -1695,34 +1695,6 @@
                             <enable>Skin.HasSetting(SkinShortcutsAddonEnabled)</enable>
                             <visible>System.HasAddon(script.skinshortcuts)</visible>
                         </control>
-                        <control type="label" id="1133">
-                            <description>Recently Added</description>
-                            <include>MenuTitleSettings</include>
-                            <label>$LOCALIZE[41230]</label>
-                        </control>
-                        <control type="radiobutton" id="1019">
-                            <description>Show Recently added info</description>
-                            <include>MenuItemSettings</include>
-                            <label>$LOCALIZE[24022] $LOCALIZE[31328]</label>
-                            <onclick>Skin.ToggleSetting(homepageHideRecentlyAdded)</onclick>
-                            <selected>Skin.HasSetting(homepageHideRecentlyAdded)</selected>
-                        </control>
-                        <control type="radiobutton" id="1157">
-                            <description>Show Recently added info Horizontal</description>
-                            <include>MenuItemSettings</include>
-                            <label>41184</label>
-                            <onclick>Skin.ToggleSetting(homepagerecentlyaddedinfohorz)</onclick>
-                            <selected>Skin.HasSetting(homepagerecentlyaddedinfohorz)</selected>
-                            <enable>Skin.HasSetting(homepageHideRecentlyAdded)</enable>
-                        </control>
-                        <control type="radiobutton" id="1199">
-                            <description>Show TV Show Logo in Recent/Recommended List</description>
-                            <include>MenuItemSettings</include>
-                            <label>31041</label>
-                            <onclick>Skin.ToggleSetting(logoinshowwidget)</onclick>
-                            <selected>Skin.HasSetting(logoinshowwidget)</selected>
-                            <enable>Skin.HasSetting(homepageHideRecentlyAdded) + !Skin.HasSetting(homepagerecentlyaddedinfohorz)</enable>
-                        </control>
                         <control type="label" id="500">
                             <include>MenuTitleSettings</include>
                             <label>41065</label>

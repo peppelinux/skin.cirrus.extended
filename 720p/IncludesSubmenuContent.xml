@@ -18,6 +18,10 @@
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.Submenu,movies)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedString,EnableRecentlyAddedMovies)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedMovies)">Skin.SetString(HomeItemToEdit.EnableRecentlyAdded,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedHorzString,EnableRecentlyAddedMoviesHorz)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedMoviesHorz)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedHorz,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableMovieLogoString,EnableMovieLogo)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableMovieLogo)">Skin.SetString(HomeItemToEdit.EnableLogo,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableWidgetString,nomoviewidget)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(nomoviewidget)">Skin.SetString(HomeItemToEdit.EnableWidget,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">ActivateWindow(1124)</onclick>
@@ -79,6 +83,10 @@
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.Submenu,customplaylist1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedString,EnableRecentlyAddedMoviesPlaylist1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedMoviesPlaylist1)">Skin.SetString(HomeItemToEdit.EnableRecentlyAdded,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedHorzString,EnableRecentlyAddedMoviesPlaylist1Horz)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedMoviesPlaylist1Horz)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedHorz,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableMovieLogoString,EnableMoviePlaylist1Logo)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableMoviePlaylist1Logo)">Skin.SetString(HomeItemToEdit.EnableLogo,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableWidgetString,nomoviewidgetplaylistmovie1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(nomoviewidgetplaylistmovie1)">Skin.SetString(HomeItemToEdit.EnableWidget,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">ActivateWindow(1124)</onclick>
@@ -103,6 +111,10 @@
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.Submenu,customplaylist2)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedString,EnableRecentlyAddedMoviesPlaylist2)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedMoviesPlaylist2)">Skin.SetString(HomeItemToEdit.EnableRecentlyAdded,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedHorzString,EnableRecentlyAddedMoviesPlaylist2Horz)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedMoviesPlaylist2Horz)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedHorz,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableMovieLogoString,EnableMoviePlaylist2Logo)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableMoviePlaylist2Logo)">Skin.SetString(HomeItemToEdit.EnableLogo,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableWidgetString,nomoviewidgetplaylistmovie2)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(nomoviewidgetplaylistmovie2)">Skin.SetString(HomeItemToEdit.EnableWidget,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">ActivateWindow(1124)</onclick>
@@ -127,6 +139,10 @@
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.Submenu,customplaylist3)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedString,EnableRecentlyAddedMoviesPlaylist3)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedMoviesPlaylist3)">Skin.SetString(HomeItemToEdit.EnableRecentlyAdded,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedHorzString,EnableRecentlyAddedMoviesPlaylist3Horz)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedMoviesPlaylist3Horz)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedHorz,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableMovieLogoString,EnableMoviePlaylist3Logo)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableMoviePlaylist3Logo)">Skin.SetString(HomeItemToEdit.EnableLogo,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableWidgetString,nomoviewidgetplaylistmovie3)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(nomoviewidgetplaylistmovie3)">Skin.SetString(HomeItemToEdit.EnableWidget,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">ActivateWindow(1124)</onclick>
@@ -165,6 +181,10 @@
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.Submenu,tvshows)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedString,EnableRecentlyAddedTVShows)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedTVShows)">Skin.SetString(HomeItemToEdit.EnableRecentlyAdded,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedHorzString,EnableRecentlyAddedTVShowsHorz)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedTVShowsHorz)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedHorz,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableMovieLogoString,EnableTVShowLogo)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableTVShowLogo)">Skin.SetString(HomeItemToEdit.EnableLogo,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableWidgetString,notvshowwidget)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(notvshowwidget)">Skin.SetString(HomeItemToEdit.EnableWidget,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">ActivateWindow(1124)</onclick>
@@ -225,6 +245,10 @@
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.Submenu,customplaylist4)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedString,EnableRecentlyAddedTVShowsPlaylist1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedTVShowsPlaylist1)">Skin.SetString(HomeItemToEdit.EnableRecentlyAdded,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedHorzString,EnableRecentlyAddedTVShowsPlaylist1Horz)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedTVShowsPlaylist1Horz)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedHorz,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableMovieLogoString,EnableTVShowPlaylist1Logo)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableTVShowPlaylist1Logo)">Skin.SetString(HomeItemToEdit.EnableLogo,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableWidgetString,notvwidgetplaylisttv1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(notvwidgetplaylisttv1)">Skin.SetString(HomeItemToEdit.EnableWidget,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">ActivateWindow(1124)</onclick>
@@ -249,6 +273,10 @@
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.Submenu,customplaylist5)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedString,EnableRecentlyAddedTVShowsPlaylist2)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedTVShowsPlaylist2)">Skin.SetString(HomeItemToEdit.EnableRecentlyAdded,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedHorzString,EnableRecentlyAddedTVShowsPlaylist2Horz)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedTVShowsPlaylist2Horz)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedHorz,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableMovieLogoString,EnableTVShowPlaylist2Logo)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableTVShowPlaylist2Logo)">Skin.SetString(HomeItemToEdit.EnableLogo,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableWidgetString,notvwidgetplaylisttv2)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(notvwidgetplaylisttv2)">Skin.SetString(HomeItemToEdit.EnableWidget,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">ActivateWindow(1124)</onclick>
@@ -273,6 +301,10 @@
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.Submenu,customplaylist6)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedString,EnableRecentlyAddedTVShowsPlaylist3)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedTVShowsPlaylist3)">Skin.SetString(HomeItemToEdit.EnableRecentlyAdded,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedHorzString,EnableRecentlyAddedTVShowsPlaylist3Horz)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedTVShowsPlaylist3Horz)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedHorz,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableMovieLogoString,EnableTVShowPlaylist3Logo)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableTVShowPlaylist3Logo)">Skin.SetString(HomeItemToEdit.EnableLogo,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableWidgetString,notvwidgetplaylisttv3)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(notvwidgetplaylisttv3)">Skin.SetString(HomeItemToEdit.EnableWidget,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">ActivateWindow(1124)</onclick>
@@ -347,6 +379,8 @@
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.Submenu,concerts)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedString,EnableRecentlyAddedMusicVideos)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedMusicVideos)">Skin.SetString(HomeItemToEdit.EnableRecentlyAdded,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedHorzString,EnableRecentlyAddedMusicVideosHorz)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedMusicVideosHorz)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedHorz,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableWidgetString,nomusicvideoswidget)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(nomusicvideoswidget)">Skin.SetString(HomeItemToEdit.EnableWidget,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">ActivateWindow(1124)</onclick>
@@ -368,6 +402,8 @@
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.Submenu,music)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedString,EnableRecentlyAddedMusic)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedMusic)">Skin.SetString(HomeItemToEdit.EnableRecentlyAdded,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedHorzString,EnableRecentlyAddedMusicHorz)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedMusicHorz)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedHorz,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableWidgetString,nomusicwidget)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(nomusicwidget)">Skin.SetString(HomeItemToEdit.EnableWidget,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">ActivateWindow(1124)</onclick>
@@ -449,6 +485,8 @@
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.Submenu,addon)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedString,EnableRecentlyAddedAddons)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedAddons)">Skin.SetString(HomeItemToEdit.EnableRecentlyAdded,1)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedHorzString,EnableRecentlyAddedAddonsHorz)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(EnableRecentlyAddedAddonsHorz)">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedHorz,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableWidgetString,noaddonwidget)</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.HasSetting(noaddonwidget)">Skin.SetString(HomeItemToEdit.EnableWidget,1)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">ActivateWindow(1124)</onclick>

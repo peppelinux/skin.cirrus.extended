@@ -119,7 +119,7 @@
         <!-- Changes Ending Butchabay MOD 1.2.0 -->
         <!-- Changes Malexx MOD 1.2.0 -->
         <include>CommonMediaPlayingBackground</include>
-        <include condition="Skin.HasSetting(homepageHideRecentlyAdded)">HomeRecentlyAddedInfo</include>
+        <include>HomeRecentlyAddedInfo</include>
         <include condition="!Skin.HasSetting(horzHomeMenu)">HomeNowPlaying</include>
         <include condition="Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu)">HomeNowPlayingHorzLow</include>
         <include condition="Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu)">HomeNowPlayingHorz</include>

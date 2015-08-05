@@ -15,6 +15,10 @@
     <onunload>Skin.Reset(HomeItemToEdit.EnableWidget)</onunload>
     <onunload>Skin.Reset(HomeItemToEdit.EnableRecentlyAddedString)</onunload>
     <onunload>Skin.Reset(HomeItemToEdit.EnableRecentlyAdded)</onunload>
+    <onunload>Skin.Reset(HomeItemToEdit.EnableRecentlyAddedHorzString)</onunload>
+    <onunload>Skin.Reset(HomeItemToEdit.EnableRecentlyAddedHorz)</onunload>
+    <onunload>Skin.Reset(HomeItemToEdit.EnableMovieLogoString)</onunload>
+    <onunload>Skin.Reset(HomeItemToEdit.EnableLogo)</onunload>
     <controls>
         <include>CommonSettingsBackground</include>
         <include>CommonMediaPlayingBackgroundBrowser</include>
@@ -101,7 +105,7 @@
                 </focusedlayout>
                 <content>
                     <item id="1">
-                        <label>$INFO[Skin.String(HomeItemToEdit.Label)]</label>
+                        <label>$VAR[HomeItemCustomFavouriteLabel]</label>
                         <onclick>noop</onclick>
                         <icon>$INFO[Skin.String(HomeItemToEdit.DefaultBackground)]</icon>
                         <thumb>$VAR[HomeItemBackgroundPath]</thumb>
@@ -122,7 +126,7 @@
                 <width>740</width>
                 <height>30</height>
                 <font>cirrus_30</font>
-                <label>$LOCALIZE[41002] - $INFO[Container(9000).ListItem.Label]</label>
+                <label>$LOCALIZE[41002] - $VAR[HomeItemCustomFavouriteLabel]</label>
                 <align>left</align>
                 <aligny>center</aligny>
                 <textcolor>white</textcolor>
@@ -147,7 +151,7 @@
                 <control type="radiobutton" id="2">
                     <description>Hide Videos Button</description>
                     <include>MenuItemSettings</include>
-                    <label>$INFO[Skin.String(HomeItemToEdit.LabelSuffix)] - $INFO[Skin.String(HomeItemToEdit.Label)]</label>
+                    <label>$INFO[Skin.String(HomeItemToEdit.LabelSuffix)] - $VAR[HomeItemCustomFavouriteLabel]</label>
                     <onclick>Skin.ToggleSetting($ESCINFO[Skin.String(HomeItemToEdit.EnableString)])</onclick>
                     <onclick condition="IsEmpty(Skin.String(HomeItemToEdit.Enabled))">Skin.SetString(HomeItemToEdit.Enabled,1)</onclick>
                     <onclick condition="!IsEmpty(Skin.String(HomeItemToEdit.Enabled))">Skin.Reset(HomeItemToEdit.Enabled)</onclick>
@@ -157,7 +161,7 @@
                     <description>HomeMenu Item Label</description>
                     <include>MenuItemSettings</include>
                     <label>$LOCALIZE[41058]</label>
-                    <label2>[COLOR=selected]$INFO[Skin.String(HomeItemToEdit.Label)][/COLOR]</label2>
+                    <label2 fallback="$INFO[Skin.String(HomeItemToEdit.Label)]">[COLOR=selected]$VAR[HomeItemCustomFavouriteLabel][/COLOR]</label2>
                     <onclick>Skin.SetString($INFO[Skin.String(HomeItemToEdit.LabelSkinString)])</onclick>
                     <visible>Skin.String(HomeItemToEdit.LabelSuffix,$LOCALIZE[24022])</visible>
                     <enable>Skin.String(HomeItemToEdit.Enabled,1)</enable>
@@ -188,10 +192,10 @@
                     <visible>Skin.HasSetting(SkinShortcutsAddonEnabled)</visible>
                     <enable>[Skin.String(HomeItemToEdit.Enabled,1) + Skin.String(HomeItemToEdit.LabelSuffix,$LOCALIZE[24022])] | [!Skin.String(HomeItemToEdit.Enabled) + !Skin.String(HomeItemToEdit.LabelSuffix,$LOCALIZE[24022])]</enable>
                 </control>
-                <control type="radiobutton" id="12">
+                <control type="radiobutton" id="7">
                     <description>Enable Recently Added</description>
                     <include>MenuItemSettings</include>
-                    <label>$LOCALIZE[24022] Recently Added List</label>
+                    <label>$LOCALIZE[24022] $LOCALIZE[31330]</label>
                     <onclick>Skin.ToggleSetting($ESCINFO[Skin.String(HomeItemToEdit.EnableRecentlyAddedString)])</onclick>
                     <onclick condition="IsEmpty(Skin.String(HomeItemToEdit.EnableRecentlyAdded))">Skin.SetString(HomeItemToEdit.EnableRecentlyAdded,1)</onclick>
                     <onclick condition="!IsEmpty(Skin.String(HomeItemToEdit.EnableRecentlyAdded))">Skin.Reset(HomeItemToEdit.EnableRecentlyAdded)</onclick>
@@ -199,29 +203,51 @@
                     <visible>Skin.String(HomeItemToEdit.EnableRecentlyAddedString)</visible>
                     <enable>[Skin.String(HomeItemToEdit.Enabled,1) + Skin.String(HomeItemToEdit.LabelSuffix,$LOCALIZE[24022])] | [!Skin.String(HomeItemToEdit.Enabled) + !Skin.String(HomeItemToEdit.LabelSuffix,$LOCALIZE[24022])]</enable>
                 </control>
-                <control type="radiobutton" id="11">
+                <control type="radiobutton" id="8">
+                    <description>Enable Recently Added Horz</description>
+                    <include>MenuItemSettings</include>
+                    <label>$LOCALIZE[31331]</label>
+                    <onclick>Skin.ToggleSetting($ESCINFO[Skin.String(HomeItemToEdit.EnableRecentlyAddedHorzString)])</onclick>
+                    <onclick condition="IsEmpty(Skin.String(HomeItemToEdit.EnableRecentlyAddedHorz))">Skin.SetString(HomeItemToEdit.EnableRecentlyAddedHorz,1)</onclick>
+                    <onclick condition="!IsEmpty(Skin.String(HomeItemToEdit.EnableRecentlyAddedHorz))">Skin.Reset(HomeItemToEdit.EnableRecentlyAddedHorz)</onclick>
+                    <selected>Skin.String(HomeItemToEdit.EnableRecentlyAddedHorz,1)</selected>
+                    <visible>Skin.String(HomeItemToEdit.EnableRecentlyAddedHorzString)</visible>
+                    <enable>Skin.String(HomeItemToEdit.EnableRecentlyAdded) + [[Skin.String(HomeItemToEdit.Enabled,1) + Skin.String(HomeItemToEdit.LabelSuffix,$LOCALIZE[24022])] | [!Skin.String(HomeItemToEdit.Enabled) + !Skin.String(HomeItemToEdit.LabelSuffix,$LOCALIZE[24022])]]</enable>
+                </control>
+                <control type="radiobutton" id="9">
+                    <description>Enable Logo</description>
+                    <include>MenuItemSettings</include>
+                    <label>$LOCALIZE[31041]</label>
+                    <onclick>Skin.ToggleSetting($ESCINFO[Skin.String(HomeItemToEdit.EnableMovieLogoString)])</onclick>
+                    <onclick condition="IsEmpty(Skin.String(HomeItemToEdit.EnableLogo))">Skin.SetString(HomeItemToEdit.EnableLogo,1)</onclick>
+                    <onclick condition="!IsEmpty(Skin.String(HomeItemToEdit.EnableLogo))">Skin.Reset(HomeItemToEdit.EnableLogo)</onclick>
+                    <selected>Skin.String(HomeItemToEdit.EnableLogo,1)</selected>
+                    <visible>Skin.String(HomeItemToEdit.EnableMovieLogoString)</visible>
+                    <enable>Skin.String(HomeItemToEdit.EnableRecentlyAdded) + !Skin.String(HomeItemToEdit.EnableRecentlyAddedHorz) + [[Skin.String(HomeItemToEdit.Enabled,1) + Skin.String(HomeItemToEdit.LabelSuffix,$LOCALIZE[24022])] | [!Skin.String(HomeItemToEdit.Enabled) + !Skin.String(HomeItemToEdit.LabelSuffix,$LOCALIZE[24022])]]</enable>
+                </control>
+                <control type="radiobutton" id="10">
                     <description>Hide Widget Button</description>
                     <include>MenuItemSettings</include>
-                    <label>$LOCALIZE[24022] Widget</label>
+                    <label>$LOCALIZE[31042]</label>
                     <onclick>Skin.ToggleSetting($ESCINFO[Skin.String(HomeItemToEdit.EnableWidgetString)])</onclick>
                     <onclick condition="IsEmpty(Skin.String(HomeItemToEdit.EnableWidget))">Skin.SetString(HomeItemToEdit.EnableWidget,1)</onclick>
                     <onclick condition="!IsEmpty(Skin.String(HomeItemToEdit.EnableWidget))">Skin.Reset(HomeItemToEdit.EnableWidget)</onclick>
                     <selected>Skin.String(HomeItemToEdit.EnableWidget,1)</selected>
-                    <visible>Skin.String(HomeItemToEdit.EnableWidgetString) + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
+                    <visible>Skin.String(HomeItemToEdit.EnableWidgetString)</visible>
                     <enable>Skin.String(HomeItemToEdit.EnableRecentlyAdded) + [[Skin.String(HomeItemToEdit.Enabled,1) + Skin.String(HomeItemToEdit.LabelSuffix,$LOCALIZE[24022])] | [!Skin.String(HomeItemToEdit.Enabled) + !Skin.String(HomeItemToEdit.LabelSuffix,$LOCALIZE[24022])]]</enable>
                 </control>
-                <control type="label" id="7">
+                <control type="label" id="11">
                     <include>MenuTitleSettings</include>
                     <label>$LOCALIZE[31110]</label>
                 </control>
-                <control type="group" id="8">
+                <control type="group" id="12">
                     <height>45</height>
                     <control type="button" id="300">
                         <description>Single Image button</description>
                         <include>MenuSettingsImagebutton</include>
                         <left>100</left>
                         <label>31113</label>
-                        <onup>6</onup>
+                        <onup>10</onup>
                         <ondown>2</ondown>
                         <onleft>302</onleft>
                         <onright>301</onright>
@@ -232,7 +258,7 @@
                         <include>MenuSettingsImagebutton</include>
                         <left>285</left>
                         <label>31114</label>
-                        <onup>6</onup>
+                        <onup>10</onup>
                         <ondown>2</ondown>
                         <onleft>300</onleft>
                         <onright>302</onright>
@@ -243,25 +269,23 @@
                         <include>MenuSettingsImagebutton</include>
                         <left>470</left>
                         <label>571</label>
-                        <onup>6</onup>
+                        <onup>10</onup>
                         <ondown>2</ondown>
                         <onleft>301</onleft>
                         <onright>300</onright>
                         <onclick>Skin.Reset($ESCINFO[Skin.String(HomeItemToEdit.CustomBackgroundPath)])</onclick>
                     </control>
                 </control>
-                <control type="multiimage" id="9">
+                <control type="multiimage" id="13">
                     <left>95</left>
                     <width>560</width>
                     <height>335</height>
                     <imagepath background="true">$INFO[Container(9000).ListItem.Icon]</imagepath>
                     <timeperimage>6000</timeperimage>
-                    <bordertexture border="8">ContentPanelvertical.png</bordertexture>
-                    <bordersize>8</bordersize>
                     <randomize>true</randomize>
                     <fadetime>500</fadetime>
                 </control>
-                <control type="label" id="10">
+                <control type="label" id="14">
                     <width>750</width>
                     <height>30</height>
                     <align>center</align>
