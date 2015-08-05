@@ -232,6 +232,7 @@
                 <top>315</top>
                 <include>ButtonVideoInfoCommonValues</include>
                 <onup>307</onup>
+                <ondown>301</ondown>
                 <onleft>260</onleft>
                 <onright>111</onright>
                 <onclick>noop</onclick>
@@ -251,6 +252,38 @@
                 <height>720</height>
                 <texture border="15,0,0,0">homesubbackground.png</texture>
             </control>
+            <control type="label" id="101">
+                <left>20</left>
+                <top>10</top>
+                <width>400</width>
+                <height>30</height>
+            </control>
+            <control type="button" id="102">
+                <right>20</right>
+                <centertop>25</centertop>
+                <width>20</width>
+                <height>13</height>
+                <onclick>-</onclick>
+                <texturefocus>scrolldown.png</texturefocus>
+                <texturenofocus>scrolldownNF.png</texturenofocus>
+                <onup>111</onup>
+                <ondown>111</ondown>
+                <onleft>103</onleft>
+                <onright>103</onright>
+            </control>
+            <control type="button" id="103">
+                <right>40</right>
+                <centertop>25</centertop>
+                <width>20</width>
+                <height>13</height>
+                <onclick>-</onclick>
+                <texturefocus>scrollup.png</texturefocus>
+                <texturenofocus>scrollupNF.png</texturenofocus>
+                <onup>111</onup>
+                <ondown>111</ondown>
+                <onleft>102</onleft>
+                <onright>102</onright>
+            </control>
             <!-- id 111 - List of available plugins -->
             <control type="list" id="111">
                 <top>50</top>
@@ -259,7 +292,7 @@
                 <height>650</height>
                 <onleft>300</onleft>
                 <onright>160</onright>
-                <onup>103</onup>
+                <onup>102</onup>
                 <pagecontrol>160</pagecontrol>
                 <orientation>vertical</orientation>
                 <viewtype label="535">list</viewtype>
@@ -340,7 +373,7 @@
                 <textureslidernib>ScrollBarNib.png</textureslidernib>
                 <textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
                 <onleft>111</onleft>
-                <onright>102</onright>
+                <onright>111</onright>
                 <showonepage>false</showonepage>
                 <orientation>vertical</orientation>
             </control>
