@@ -463,7 +463,6 @@
         <value condition="Player.Forwarding">Forward</value>
         <value condition="Player.Rewinding">Rewind</value>
     </variable>
-
     <!-- Home Widget -->
     <!-- ID 8000/9100 - Movies
          ID 8001/9101 - TV Shows
@@ -480,7 +479,6 @@
          ID 8010/9110 - tv playlist 3
 
     -->
-
     <variable name="WidgetContent">
         <value condition="Container(9000).Hasfocus(1)">$INFO[Container(9100).ListItem.Property(content)]</value>
         <value condition="Container(9000).Hasfocus(7)">$INFO[Container(9101).ListItem.Property(content)]</value>
@@ -839,6 +837,7 @@
         <value condition="Container(9000).HasFocus(14)">$LOCALIZE[41299] : $INFO[Window.Property(Music.SongsCount)]</value>
         <value>-</value>
     </variable>
+    <!-- Home Customizer -->
     <variable name="HomeItemBackgroundPath">
         <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Home_Custom_Back_Movies_Folder)">$INFO[Skin.String(Home_Custom_Back_Movies_Folder)]</value>
         <value condition="Skin.String(HomeItemToEdit.CustomBackgroundPath,Home_Custom_Back_MovieSets_Folder)">$INFO[Skin.String(Home_Custom_Back_MovieSets_Folder)]</value>
@@ -901,5 +900,18 @@
         <value condition="Skin.String(HomeItemToEdit.LabelSkinString,Menu_Custom12_Label) + !IsEmpty(Skin.String(Menu_Custom12_Label))">$INFO[Skin.String(Menu_Custom12_Label)]</value>
         <value condition="Skin.String(HomeItemToEdit.LabelSkinString,Menu_Custom13_Label) + !IsEmpty(Skin.String(Menu_Custom13_Label))">$INFO[Skin.String(Menu_Custom13_Label)]</value>
         <value>$INFO[Skin.String(HomeItemToEdit.Label)]</value>
+    </variable>
+    <!-- Profile Settings -->
+    <variable name="LoginScreenLabel">
+        <value condition="System.HasLoginScreen">$LOCALIZE[305]</value>
+        <value>$LOCALIZE[1223]</value>
+    </variable>
+    <variable name="LoginScreenLabel2Color">
+        <value condition="Control.HasFocus(4)">grey2</value>
+        <value>grey3</value>
+    </variable>
+    <variable name="ProfileAutoLoginLabel2Color">
+        <value condition="Control.HasFocus(5)">grey2</value>
+        <value>grey3</value>
     </variable>
 </includes>
