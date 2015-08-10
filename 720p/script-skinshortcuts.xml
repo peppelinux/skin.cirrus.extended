@@ -263,7 +263,7 @@
                 <centertop>25</centertop>
                 <width>20</width>
                 <height>13</height>
-                <onclick>-</onclick>
+                <onclick>noop</onclick>
                 <texturefocus>scrolldown.png</texturefocus>
                 <texturenofocus>scrolldownNF.png</texturenofocus>
                 <onup>111</onup>
@@ -276,7 +276,7 @@
                 <centertop>25</centertop>
                 <width>20</width>
                 <height>13</height>
-                <onclick>-</onclick>
+                <onclick>noop</onclick>
                 <texturefocus>scrollup.png</texturefocus>
                 <texturenofocus>scrollupNF.png</texturenofocus>
                 <onup>111</onup>
