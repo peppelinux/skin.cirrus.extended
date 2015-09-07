@@ -142,6 +142,12 @@
             <size>50</size>
             <style>bold</style>
         </font>
+        <font>
+            <name>cirrus_85_Bold</name>
+            <filename>Vegur-Light.ttf</filename>
+            <size>55</size>
+            <style>bold</style>
+        </font>
         <!-- Title Fonts -->
         <font>
             <name>font10_title</name>
@@ -496,6 +502,12 @@
             <size>50</size>
             <style>bold</style>
         </font>
+        <font>
+            <name>cirrus_85_Bold</name>
+            <filename>Vegur-Light.ttf</filename>
+            <size>55</size>
+            <style>bold</style>
+        </font>
         <!-- Title Fonts -->
         <font>
             <name>font10_title</name>
@@ -678,6 +690,12 @@
             <name>cirrus_50_Bold</name>
             <filename>Vegur-Regular.ttf</filename>
             <size>50</size>
+            <style>bold</style>
+        </font>
+        <font>
+            <name>cirrus_85_Bold</name>
+            <filename>Vegur-Light.ttf</filename>
+            <size>55</size>
             <style>bold</style>
         </font>
         <!-- Title Fonts -->
@@ -864,6 +882,12 @@
             <name>cirrus_50_Bold</name>
             <filename>Ubuntu-L.ttf</filename>
             <size>50</size>
+            <style>bold</style>
+        </font>
+        <font>
+            <name>cirrus_85_Bold</name>
+            <filename>Vegur-Light.ttf</filename>
+            <size>55</size>
             <style>bold</style>
         </font>
         <!-- Title Fonts -->
