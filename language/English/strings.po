@@ -123,7 +123,7 @@ msgctxt "#31041"
 msgid " - Enable Logo"
 msgstr ""
 
-msgctxt "#31042"
+msgctxt "#31039"
 msgid " - Enable Widget"
 msgstr ""
 
