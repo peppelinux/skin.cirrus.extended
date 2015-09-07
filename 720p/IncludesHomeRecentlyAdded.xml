@@ -1626,7 +1626,7 @@
                         <ondown condition="Skin.HasSetting(EnableRecentlyAddedMusicHorz) + !Skin.HasSetting(nomusicwidget)">9102</ondown>
                         <ondown condition="Skin.HasSetting(EnableRecentlyAddedMusicHorz) + Skin.HasSetting(nomusicwidget)">9000</ondown>
                         <onup condition="Skin.HasSetting(EnableRecentlyAddedMusicHorz)">9000</onup>
-                        <content limit="10">$VAR[WidgetContent]</content>
+                        <content limit="10" target="music">$VAR[WidgetContent]</content>
                     </control>
                 </control>
             </control>
