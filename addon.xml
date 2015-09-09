@@ -19,5 +19,9 @@
     <description lang="en">mod based on cirrus</description>
     <disclaimer lang="en">use the skin at your own risk :)</disclaimer>
     <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+    <source>https://github.com/paradix/skin.cirrus.extended.v3</source>
+    <forum>http://forum.kodi.tv/showthread.php?tid=153704</forum>
+    <email>paradix@outlook.com</email>
   </extension>
 </addon>
