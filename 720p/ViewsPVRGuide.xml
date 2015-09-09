@@ -70,7 +70,7 @@
                         <top>0</top>
                         <width>160</width>
                         <height>52</height>
-                        <font>cirrus_25</font>
+                        <font>cirrus_24</font>
                         <aligny>center</aligny>
                         <selectedcolor>selected</selectedcolor>
                         <textcolor>grey2</textcolor>
@@ -101,7 +101,7 @@
                         <top>0</top>
                         <width>160</width>
                         <height>52</height>
-                        <font>cirrus_25</font>
+                        <font>cirrus_24</font>
                         <aligny>center</aligny>
                         <selectedcolor>selected</selectedcolor>
                         <textcolor>accent</textcolor>
@@ -125,7 +125,7 @@
                         <top>3</top>
                         <width>30</width>
                         <height>25</height>
-                        <font>cirrus_25</font>
+                        <font>cirrus_24</font>
                         <aligny>center</aligny>
                         <selectedcolor>selected</selectedcolor>
                         <textcolor>white</textcolor>
@@ -184,7 +184,7 @@
                         <top>3</top>
                         <width>30</width>
                         <height>25</height>
-                        <font>cirrus_25</font>
+                        <font>cirrus_24</font>
                         <aligny>center</aligny>
                         <selectedcolor>selected</selectedcolor>
                         <textcolor>accent</textcolor>
@@ -389,7 +389,7 @@
                     <top>20</top>
                     <width>120</width>
                     <height>20</height>
-                    <font>cirrus_25</font>
+                    <font>cirrus_24</font>
                     <textcolor>accent</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <align>left</align>
@@ -402,7 +402,7 @@
                     <top>20</top>
                     <width>250</width>
                     <height>20</height>
-                    <font>cirrus_25</font>
+                    <font>cirrus_24</font>
                     <textcolor>accent</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <align>left</align>
@@ -415,7 +415,7 @@
                     <top>20</top>
                     <width>550</width>
                     <height>20</height>
-                    <font>cirrus_25</font>
+                    <font>cirrus_24</font>
                     <textcolor>accent</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <align>left</align>
@@ -428,7 +428,7 @@
                     <top>20</top>
                     <width>110</width>
                     <height>20</height>
-                    <font>cirrus_25</font>
+                    <font>cirrus_24</font>
                     <textcolor>accent</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <align>left</align>
@@ -497,7 +497,7 @@
                             <top>0</top>
                             <width>120</width>
                             <height>40</height>
-                            <font>cirrus_25</font>
+                            <font>cirrus_24</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>grey2</textcolor>
@@ -517,7 +517,7 @@
                             <top>0</top>
                             <width>220</width>
                             <height>35</height>
-                            <font>cirrus_25</font>
+                            <font>cirrus_24</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>grey2</textcolor>
@@ -529,7 +529,7 @@
                             <top>0</top>
                             <width>550</width>
                             <height>35</height>
-                            <font>cirrus_25</font>
+                            <font>cirrus_24</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>grey2</textcolor>
@@ -550,7 +550,7 @@
                             <top>0</top>
                             <width>80</width>
                             <height>40</height>
-                            <font>cirrus_25</font>
+                            <font>cirrus_24</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>accent</textcolor>
@@ -572,7 +572,7 @@
                             <top>0</top>
                             <width>80</width>
                             <height>40</height>
-                            <font>cirrus_25</font>
+                            <font>cirrus_24</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>accent</textcolor>
@@ -635,7 +635,7 @@
                             <top>0</top>
                             <width>120</width>
                             <height>40</height>
-                            <font>cirrus_25</font>
+                            <font>cirrus_24</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>accent</textcolor>
@@ -655,7 +655,7 @@
                             <top>0</top>
                             <width>220</width>
                             <height>35</height>
-                            <font>cirrus_25</font>
+                            <font>cirrus_24</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>accent</textcolor>
@@ -667,7 +667,7 @@
                             <top>0</top>
                             <width>550</width>
                             <height>35</height>
-                            <font>cirrus_25</font>
+                            <font>cirrus_24</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>accent</textcolor>
@@ -688,7 +688,7 @@
                             <top>0</top>
                             <width>120</width>
                             <height>40</height>
-                            <font>cirrus_25</font>
+                            <font>cirrus_24</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>accent</textcolor>
@@ -710,7 +710,7 @@
                             <top>0</top>
                             <width>120</width>
                             <height>40</height>
-                            <font>cirrus_25</font>
+                            <font>cirrus_24</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>accent</textcolor>
@@ -769,7 +769,7 @@
                     <top>20</top>
                     <width>120</width>
                     <height>20</height>
-                    <font>cirrus_25</font>
+                    <font>cirrus_24</font>
                     <textcolor>accent</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <align>left</align>
@@ -782,7 +782,7 @@
                     <top>20</top>
                     <width>250</width>
                     <height>20</height>
-                    <font>cirrus_25</font>
+                    <font>cirrus_24</font>
                     <textcolor>accent</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <align>left</align>
@@ -795,7 +795,7 @@
                     <top>20</top>
                     <width>550</width>
                     <height>20</height>
-                    <font>cirrus_25</font>
+                    <font>cirrus_24</font>
                     <textcolor>accent</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <align>left</align>
@@ -808,7 +808,7 @@
                     <top>20</top>
                     <width>110</width>
                     <height>20</height>
-                    <font>cirrus_25</font>
+                    <font>cirrus_24</font>
                     <textcolor>accent</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <align>left</align>
@@ -877,7 +877,7 @@
                             <top>0</top>
                             <width>120</width>
                             <height>40</height>
-                            <font>cirrus_25</font>
+                            <font>cirrus_24</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>grey2</textcolor>
@@ -897,7 +897,7 @@
                             <top>0</top>
                             <width>220</width>
                             <height>35</height>
-                            <font>cirrus_25</font>
+                            <font>cirrus_24</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>grey2</textcolor>
@@ -909,7 +909,7 @@
                             <top>0</top>
                             <width>550</width>
                             <height>35</height>
-                            <font>cirrus_25</font>
+                            <font>cirrus_24</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>grey2</textcolor>
@@ -930,7 +930,7 @@
                             <top>0</top>
                             <width>80</width>
                             <height>40</height>
-                            <font>cirrus_25</font>
+                            <font>cirrus_24</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>accent</textcolor>
@@ -952,7 +952,7 @@
                             <top>0</top>
                             <width>80</width>
                             <height>40</height>
-                            <font>cirrus_25</font>
+                            <font>cirrus_24</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>accent</textcolor>
@@ -1015,7 +1015,7 @@
                             <top>0</top>
                             <width>120</width>
                             <height>40</height>
-                            <font>cirrus_25</font>
+                            <font>cirrus_24</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>accent</textcolor>
@@ -1035,7 +1035,7 @@
                             <top>0</top>
                             <width>220</width>
                             <height>35</height>
-                            <font>cirrus_25</font>
+                            <font>cirrus_24</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>accent</textcolor>
@@ -1047,7 +1047,7 @@
                             <top>0</top>
                             <width>550</width>
                             <height>35</height>
-                            <font>cirrus_25</font>
+                            <font>cirrus_24</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>accent</textcolor>
@@ -1068,7 +1068,7 @@
                             <top>0</top>
                             <width>120</width>
                             <height>40</height>
-                            <font>cirrus_25</font>
+                            <font>cirrus_24</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>accent</textcolor>
@@ -1090,7 +1090,7 @@
                             <top>0</top>
                             <width>120</width>
                             <height>40</height>
-                            <font>cirrus_25</font>
+                            <font>cirrus_24</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>accent</textcolor>
@@ -1149,7 +1149,7 @@
                     <top>20</top>
                     <width>300</width>
                     <height>20</height>
-                    <font>cirrus_25</font>
+                    <font>cirrus_24</font>
                     <textcolor>accent</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <align>left</align>
@@ -1162,7 +1162,7 @@
                     <top>20</top>
                     <width>600</width>
                     <height>20</height>
-                    <font>cirrus_25</font>
+                    <font>cirrus_24</font>
                     <textcolor>accent</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <align>left</align>
@@ -1175,7 +1175,7 @@
                     <top>20</top>
                     <width>140</width>
                     <height>20</height>
-                    <font>cirrus_25</font>
+                    <font>cirrus_24</font>
                     <textcolor>accent</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <align>left</align>
@@ -1226,7 +1226,7 @@
                             <top>0</top>
                             <width>300</width>
                             <height>40</height>
-                            <font>cirrus_25</font>
+                            <font>cirrus_24</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>grey2</textcolor>
@@ -1238,7 +1238,7 @@
                             <top>0</top>
                             <width>600</width>
                             <height>40</height>
-                            <font>cirrus_25</font>
+                            <font>cirrus_24</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>grey2</textcolor>
@@ -1259,7 +1259,7 @@
                             <top>0</top>
                             <width>120</width>
                             <height>40</height>
-                            <font>cirrus_25</font>
+                            <font>cirrus_24</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>accent</textcolor>
@@ -1281,7 +1281,7 @@
                             <top>0</top>
                             <width>120</width>
                             <height>40</height>
-                            <font>cirrus_25</font>
+                            <font>cirrus_24</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>accent</textcolor>
@@ -1324,7 +1324,7 @@
                             <top>0</top>
                             <width>300</width>
                             <height>40</height>
-                            <font>cirrus_25</font>
+                            <font>cirrus_24</font>
                             <align>center</align>
                             <aligny>center</aligny>
                             <textcolor>accent</textcolor>
@@ -1336,7 +1336,7 @@
                             <top>0</top>
                             <width>600</width>
                             <height>40</height>
-                            <font>cirrus_25</font>
+                            <font>cirrus_24</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>accent</textcolor>
@@ -1357,7 +1357,7 @@
                             <top>0</top>
                             <width>120</width>
                             <height>40</height>
-                            <font>cirrus_25</font>
+                            <font>cirrus_24</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>accent</textcolor>
@@ -1379,7 +1379,7 @@
                             <top>0</top>
                             <width>120</width>
                             <height>40</height>
-                            <font>cirrus_25</font>
+                            <font>cirrus_24</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>accent</textcolor>

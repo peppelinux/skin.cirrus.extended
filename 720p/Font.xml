@@ -69,6 +69,11 @@
             <size>26</size>
         </font>
         <font>
+            <name>cirrus_28</name>
+            <filename>Vegur-Light.ttf</filename>
+            <size>28</size>
+        </font>
+        <font>
             <name>cirrus_30</name>
             <filename>Vegur-Light.ttf</filename>
             <size>30</size>
@@ -119,15 +124,27 @@
             <style>bold</style>
         </font>
         <font>
-            <name>cirrus_24_Bold</name>
+            <name>cirrus_24_bold</name>
             <filename>Vegur-Light.ttf</filename>
             <size>24</size>
+            <style>bold</style>
+        </font>
+        <font>
+            <name>cirrus_26_Bold</name>
+            <filename>Vegur-Light.ttf</filename>
+            <size>26</size>
             <style>bold</style>
         </font>
         <font>
             <name>cirrus_30_Bold</name>
             <filename>Vegur-Light.ttf</filename>
             <size>30</size>
+            <style>bold</style>
+        </font>
+        <font>
+            <name>cirrus_38_Bold</name>
+            <filename>Vegur-Light.ttf</filename>
+            <size>38</size>
             <style>bold</style>
         </font>
         <font>

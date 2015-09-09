@@ -79,7 +79,7 @@
                         <top>20</top>
                         <width>300</width>
                         <height>20</height>
-                        <font>cirrus_25</font>
+                        <font>cirrus_24</font>
                         <textcolor>accent</textcolor>
                         <shadowcolor>black</shadowcolor>
                         <align>center</align>
@@ -92,7 +92,7 @@
                         <top>20</top>
                         <width>250</width>
                         <height>20</height>
-                        <font>cirrus_25</font>
+                        <font>cirrus_24</font>
                         <textcolor>accent</textcolor>
                         <shadowcolor>black</shadowcolor>
                         <align>center</align>
@@ -105,7 +105,7 @@
                         <top>20</top>
                         <width>350</width>
                         <height>20</height>
-                        <font>cirrus_25</font>
+                        <font>cirrus_24</font>
                         <textcolor>accent</textcolor>
                         <shadowcolor>black</shadowcolor>
                         <align>center</align>
@@ -118,7 +118,7 @@
                         <top>20</top>
                         <width>220</width>
                         <height>20</height>
-                        <font>cirrus_25</font>
+                        <font>cirrus_24</font>
                         <textcolor>accent</textcolor>
                         <shadowcolor>black</shadowcolor>
                         <align>center</align>
@@ -209,7 +209,7 @@
                                 <top>0</top>
                                 <width>390</width>
                                 <height>35</height>
-                                <font>Cirrus_20</font>
+                                <font>cirrus_20</font>
                                 <align>left</align>
                                 <aligny>center</aligny>
                                 <textcolor>grey2</textcolor>
