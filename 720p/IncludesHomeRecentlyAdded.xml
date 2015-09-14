@@ -704,8 +704,6 @@
                 <label>$VAR[WidgetArtLayout]</label>
                 <width>1</width>
                 <height>1</height>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
                 <font>-</font>
             </control>
             <control type="label" id="91002">
@@ -714,8 +712,6 @@
                 <label>$VAR[WidgetHomePrevious]</label>
                 <width>1</width>
                 <height>1</height>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
                 <font>-</font>
             </control>
             <control type="label" id="91003">
@@ -724,8 +720,6 @@
                 <label>$VAR[WidgetHomeNext]</label>
                 <width>1</width>
                 <height>1</height>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
                 <font>-</font>
             </control>
             <control type="label" id="91004">
@@ -734,8 +728,6 @@
                 <label>$VAR[WidgetContentLabelPosition]</label>
                 <width>1</width>
                 <height>1</height>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
                 <font>-</font>
             </control>
             <control type="label" id="91005">
@@ -744,8 +736,6 @@
                 <label>$VAR[WidgetContentSource]</label>
                 <width>1</width>
                 <height>1</height>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
                 <font>-</font>
             </control>
             <!-- Recently Added Movies  -->
