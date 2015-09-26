@@ -57,7 +57,7 @@
                 <preloaditems>2</preloaditems>
                 <!-- ITEM TVSHOWS -->
                 <itemlayout condition="Container.Content(Movies) | Container.Content(TVShows) " height="200" width="350">
-                    <control type="largeimage">
+                    <control type="image">
                         <left>2</left>
                         <top>50</top>
                         <width>220</width>

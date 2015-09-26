@@ -133,11 +133,11 @@ msgid "Disable \"Watching\" icon when watched"
 msgstr ""
 
 msgctxt "#31043"
-msgid "PAUSED"
+msgid "Paused"
 msgstr ""
 
 msgctxt "#31044"
-msgid "SEEKING"
+msgid "Seeking"
 msgstr ""
 
 msgctxt "#31046"
