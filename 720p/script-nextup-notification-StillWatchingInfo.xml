@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="true">3012</defaultcontrol>
+    <defaultcontrol always="true">4012</defaultcontrol>
     <zorder>0</zorder>
     <controls>
         <control type="group">
@@ -45,14 +45,14 @@
                     <aspectratio scalediffuse="false">scale</aspectratio>
                     <texture>ContentPanelvertical.png</texture>
                 </control>
-                <control type="image" id="3009">
+                <control type="image" id="4001">
                     <width>100%</width>
                     <height>100%</height>
                     <fadetime>200</fadetime>
                     <aspectratio scalediffuse="false">scale</aspectratio>
                 </control>
             </control>
-            <control type="label" id="3003">
+            <control type="label" id="4003">
                 <description>IMDB rating</description>
                 <left>2000</left>
                 <top>2000</top>
@@ -67,10 +67,10 @@
             <control type="label">
                 <left>240</left>
                 <bottom>145</bottom>
-                <width>400</width>
+                <width>700</width>
                 <height>30</height>
                 <scroll>true</scroll>
-                <label>$ADDON[service.nextup.notification 30008]</label>
+                <label>$ADDON[service.nextup.notification 30012]</label>
                 <align>left</align>
                 <aligny>center</aligny>
                 <font>cirrus_24_Bold</font>
@@ -83,7 +83,7 @@
                 <width>580</width>
                 <height>30</height>
                 <scroll>true</scroll>
-                <label>$INFO[Control.GetLabel(3002)] $INFO[Control.GetLabel(3000)]</label>
+                <label>$INFO[Control.GetLabel(4000)]</label>
                 <align>left</align>
                 <aligny>center</aligny>
                 <font>cirrus_24_Bold</font>
@@ -96,13 +96,13 @@
                 <bottom>145</bottom>
                 <width>250</width>
                 <height>30</height>
-                <label>[COLOR=accent]$LOCALIZE[20416]: [/COLOR] $INFO[Control.GetLabel(3004)]</label>
+                <label>[COLOR=accent]$LOCALIZE[20416]: [/COLOR] $INFO[Control.GetLabel(4004)]</label>
                 <align>right</align>
                 <aligny>center</aligny>
                 <font>cirrus_24</font>
-                <visible>!IsEmpty(Control.GetLabel(3004))</visible>
+                <visible>!IsEmpty(Control.GetLabel(4004))</visible>
             </control>
-            <control type="label" id="3000">
+            <control type="label" id="4000">
                 <left>2000</left>
                 <top>2000</top>
                 <align>right</align>
@@ -111,7 +111,7 @@
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
             </control>
-            <control type="label" id="3002">
+            <control type="label" id="4004">
                 <left>2000</left>
                 <top>2000</top>
                 <align>right</align>
@@ -120,16 +120,7 @@
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
             </control>
-            <control type="label" id="3004">
-                <left>2000</left>
-                <top>2000</top>
-                <align>right</align>
-                <aligny>center</aligny>
-                <font>cirrus_24</font>
-                <textcolor>white</textcolor>
-                <shadowcolor>black</shadowcolor>
-            </control>
-            <control type="textbox" id="3001">
+            <control type="textbox" id="4006">
                 <left>240</left>
                 <bottom>10</bottom>
                 <width>860</width>
@@ -170,25 +161,39 @@
                     <aspectratio>keep</aspectratio>
                     <animation effect="rotate" start="360" end="0" center="auto" time="2000" loop="true" condition="Player.Playing">conditional</animation>
                 </control>
-                <control type="button" id="3012">
-                    <description>Watch Now</description>
-                    <include>ButtonVideoInfoCommonValues</include>
-                    <width>80%</width>
+                <control type="button" id="4012">
+                    <description>Continue</description>
+                    <height>40</height>
+                    <width>90%</width>
                     <centerright>50%</centerright>
                     <top>5</top>
-                    <ondown>3013</ondown>
-                    <onup>3013</onup>
-                    <label>$ADDON[service.nextup.notification 30006]</label>
+                    <ondown>4013</ondown>
+                    <onup>4013</onup>
+                    <label>$ADDON[service.nextup.notification 30010]</label>
+                    <textoffsetx>20</textoffsetx>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <font>cirrus_16</font>
+                    <texturefocus border="0">button-focus.png</texturefocus>
+                    <texturenofocus border="0">button-nofocus.png</texturenofocus>
+                    <pulseonselect>false</pulseonselect>
                 </control>
-                <control type="button" id="3013">
+                <control type="button" id="4013">
                     <description>Cancel</description>
-                    <include>ButtonVideoInfoCommonValues</include>
-                    <width>80%</width>
+                    <height>40</height>
+                    <width>90%</width>
                     <centerright>50%</centerright>
                     <bottom>5</bottom>
-                    <onup>3012</onup>
-                    <ondown>3012</ondown>
+                    <onup>4012</onup>
+                    <ondown>4012</ondown>
                     <label>222</label>
+                    <textoffsetx>20</textoffsetx>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <font>cirrus_16</font>
+                    <texturefocus border="0">button-focus.png</texturefocus>
+                    <texturenofocus border="0">button-nofocus.png</texturenofocus>
+                    <pulseonselect>false</pulseonselect>
                 </control>
             </control>
         </control>
