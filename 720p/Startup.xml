@@ -35,7 +35,7 @@
                 <top>480</top>
                 <width>64</width>
                 <height>64</height>
-                <texture>rolling.png</texture>
+                <texture>busy.png</texture>
                 <animation effect="rotate" start="360" end="0" center="auto" time="2000" loop="true" condition="Skin.HasSetting(EnableStartupAnimation)">conditional</animation>
                 <aspectratio>keep</aspectratio>
             </control>
