@@ -37,7 +37,7 @@
                 <bottom>30</bottom>
                 <width>200</width>
                 <height>300</height>
-                <control type="image" description="border">
+                <control type="image">
                     <top>-6</top>
                     <left>-6</left>
                     <bottom>-6</bottom>
@@ -152,7 +152,7 @@
                     <height>40</height>
                     <centerright>50%</centerright>
                     <centertop>-20</centertop>
-                    <font>cirrus_22_bold</font>
+                    <font>cirrus_22_Bold</font>
                     <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <label>$INFO[Player.TimeRemaining(ss)]</label>
