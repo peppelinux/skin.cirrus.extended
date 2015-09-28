@@ -13,7 +13,7 @@
             <animation effect="fade" start="0" end="100" time="300" delay="10000">WindowOpen</animation>
             <animation effect="fade" start="100" end="0" time="300" delay="300">WindowClose</animation>
             <animation effect="fade" start="0" end="100" time="300" delay="10000">VisibleChange</animation>
-            <visible>!Window.IsVisible(fullscreeninfo) | Player.Paused | !Window.IsVisible(subtitlesearch)</visible>
+            <visible>Player.Paused + [!Window.IsVisible(fullscreeninfo) + !Window.IsVisible(subtitlesearch) + !Window.IsVisible(script-nextup-notification-NextUpInfo.xml) + !Window.IsVisible(script-nextup-notification-StillWatchingInfo.xml)]</visible>
             <include>VideoPlayerCommonInfo</include>
         </control>
     </controls>
