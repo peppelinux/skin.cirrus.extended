@@ -502,8 +502,8 @@
             <onclick condition="Window.IsVisible(skinsettings) + !Skin.String(Menu_Custom7_Label)">Skin.SetString(HomeItemToEdit.Label,$LOCALIZE[41069])</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.String(Menu_Custom7_Label)">Skin.SetString(HomeItemToEdit.Label,$INFO[Skin.String(Menu_Custom7_Label)])</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.LabelSuffix,$LOCALIZE[24022])</onclick>
-            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.LabelSkinString,Menu_Custom4_Label)</onclick>
-            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.LabelPathString,Menu_Custom4_Path)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.LabelSkinString,Menu_Custom7_Label)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.LabelPathString,Menu_Custom7_Path)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.DefaultBackground,special://skin/backgrounds/custom.jpg)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.CustomBackgroundPath,Menu_Custom7_Folder)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableString,Menu_Custom7)</onclick>
@@ -522,8 +522,8 @@
             <onclick condition="Window.IsVisible(skinsettings) + !Skin.String(Menu_Custom8_Label)">Skin.SetString(HomeItemToEdit.Label,$LOCALIZE[41071])</onclick>
             <onclick condition="Window.IsVisible(skinsettings) + Skin.String(Menu_Custom8_Label)">Skin.SetString(HomeItemToEdit.Label,$INFO[Skin.String(Menu_Custom8_Label)])</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.LabelSuffix,$LOCALIZE[24022])</onclick>
-            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.LabelSkinString,Menu_Custom5_Label)</onclick>
-            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.LabelPathString,Menu_Custom5_Path)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.LabelSkinString,Menu_Custom8_Label)</onclick>
+            <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.LabelPathString,Menu_Custom8_Path)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.DefaultBackground,special://skin/backgrounds/custom.jpg)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.CustomBackgroundPath,Menu_Custom8_Folder)</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.EnableString,Menu_Custom8)</onclick>
