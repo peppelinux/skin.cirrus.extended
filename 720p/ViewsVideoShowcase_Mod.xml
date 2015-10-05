@@ -498,26 +498,11 @@
                     <pauseatend>2000</pauseatend>
                     <visible>!ListItem.IsFolder</visible>
                 </control>
-
-                <control type="image">
-                    <!-- Top250IMDB Mod 1.2 -->
-                    <left>350</left>
-                    <top>547</top>
-                    <width>88</width>
-                    <height>30</height>
-                    <aspectratio aligny="bottom">stretch</aspectratio>
-                    <fadetime>IconCrossfadeTime</fadetime>
-                    <texture>IMDBFlag.png</texture>
-                    <visible>!IsEmpty(ListItem.Top250)</visible>
-                    <colordiffuse>accent</colordiffuse>
-                </control>
-
-                <control type="label">
+                <control type="group">
                     <left>348</left>
                     <top>545</top>
                     <include>Top250Label</include>
                 </control>
-
                 <control type="textbox">
                     <!-- Plotoutline Mod -->
                     <description>Movie Plot</description>
