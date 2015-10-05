@@ -153,19 +153,7 @@
                         <shadowcolor>black</shadowcolor>
                     </control>
                 </control>
-                <control type="image">
-                    <!-- Top250IMDB Mod 1.2 -->
-                    <left>390</left>
-                    <top>38r</top>
-                    <width>88</width>
-                    <height>30</height>
-                    <aspectratio aligny="bottom">stretch</aspectratio>
-                    <fadetime>IconCrossfadeTime</fadetime>
-                    <texture>IMDBFlag.png</texture>
-                    <visible>!IsEmpty(ListItem.Top250)</visible>
-                    <colordiffuse>accent</colordiffuse>
-                </control>
-                <control type="label">
+                <control type="group">
                     <left>251</left>
                     <top>40r</top>
                     <include>Top250Label</include>
