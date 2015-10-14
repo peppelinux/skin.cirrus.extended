@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="503">
   <defaultcontrol allways="true">6</defaultcontrol>
-  <allowoverlay>no</allowoverlay>
   <controls>
     <include>CommonMusicBackground</include>
     <include>CommonMediaPlayingBackgroundBrowser</include>
