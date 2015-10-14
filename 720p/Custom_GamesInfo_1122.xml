@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="1122" type="dialog">
     <defaultcontrol always="true">8</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
     <controls>
         <control type="group">
             <visible>!Window.IsVisible(FileBrowser)</visible>

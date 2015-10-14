@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="501">
     <defaultcontrol always="true">55</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
     <views>55,566,547,525</views>
     <controls>
         <include>CommonMusicBackground</include>

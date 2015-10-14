@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="115">
-    <allowoverlay>yes</allowoverlay>
     <visible>Window.IsActive(fullscreenvideo) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding] + !Window.IsVisible(subtitlesearch) + !Window.IsVisible(videoosd)</visible>
     <controls>
         <control type="group">

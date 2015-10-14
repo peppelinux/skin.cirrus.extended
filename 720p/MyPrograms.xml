@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="1">
     <defaultcontrol>55</defaultcontrol>
-    <allowoverlay>yes</allowoverlay>
     <views>55,590,591,592,593,594,595,596,525</views>
     <visible>!Skin.HasSetting(kiosk)</visible>
     <controls>

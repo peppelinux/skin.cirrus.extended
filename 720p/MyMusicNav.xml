@@ -2,7 +2,6 @@
 <window id="502">
 
     <defaultcontrol always="true">55</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
 
     <views>55,511,566,525,555,547,701</views>
 
