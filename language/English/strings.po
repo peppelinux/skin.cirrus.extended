@@ -115,6 +115,10 @@ msgctxt "#31031"
 msgid "Pic Thumbs"
 msgstr ""
 
+msgctxt "#31039"
+msgid " - Enable Widget"
+msgstr ""
+
 msgctxt "#31040"
 msgid "Now Playing"
 msgstr ""
@@ -123,10 +127,8 @@ msgctxt "#31041"
 msgid " - Enable Logo"
 msgstr ""
 
-
-
 #Extra labels
-#empty strings from id 31033 to 31039
+#empty strings from id 31032 to 31038
 
 msgctxt "#31042"
 msgid "Disable \"Watching\" icon when watched"

@@ -228,7 +228,7 @@
                 <control type="radiobutton" id="10">
                     <description>Hide Widget Button</description>
                     <include>MenuItemSettings</include>
-                    <label>$LOCALIZE[31042]</label>
+                    <label>$LOCALIZE[31039]</label>
                     <onclick>Skin.ToggleSetting($ESCINFO[Skin.String(HomeItemToEdit.EnableWidgetString)])</onclick>
                     <onclick condition="IsEmpty(Skin.String(HomeItemToEdit.EnableWidget))">Skin.SetString(HomeItemToEdit.EnableWidget,1)</onclick>
                     <onclick condition="!IsEmpty(Skin.String(HomeItemToEdit.EnableWidget))">Skin.Reset(HomeItemToEdit.EnableWidget)</onclick>
