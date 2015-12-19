@@ -4,27 +4,27 @@
         <label>137</label>
         <label2>32019</label2>
         <icon>DefaultMusicAlbums.png</icon>
-        <action>ActivateWindow(MusicLibrary)</action>
+        <action>ActivateWindow(Music)</action>
         <action>SendClick(8)</action>
     </shortcut>
     <shortcut>
         <label>133</label>
         <label2>32019</label2>
         <icon>DefaultMusicArtists.png</icon>
-        <action>ActivateWindow(MusicLibrary,Artists,return)</action>
+        <action>ActivateWindow(Music,Artists,return)</action>
     </shortcut>
     <shortcut>
         <label>132</label>
         <label2>32019</label2>
         <icon>DefaultMusicAlbums.png</icon>
         <thumb />
-        <action>ActivateWindow(MusicLibrary,Albums,return)</action>
+        <action>ActivateWindow(Music,Albums,return)</action>
     </shortcut>
     <shortcut>
         <label>134</label>
         <label2>32019</label2>
         <icon>DefaultMusicSongs.png</icon>
-        <action>ActivateWindow(MusicLibrary,Songs,return)</action>
+        <action>ActivateWindow(Music,Songs,return)</action>
     </shortcut>
     <shortcut>
         <label>744</label>
@@ -36,7 +36,7 @@
         <label>14022</label>
         <label2>32019</label2>
         <icon>DefaultMusicAlbums.png</icon>
-        <action>ActivateWindow(MusicLibrary)</action>
+        <action>ActivateWindow(Music)</action>
     </shortcut>
     <shortcut>
         <label>653</label>
