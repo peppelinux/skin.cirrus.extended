@@ -113,6 +113,7 @@
         <value>$INFO[ListItem.VideoCodec,special://skin/extras/flagging/video/,.png]</value>
     </variable>
     <variable name="AudioChannels">
+        <value condition="IsEmpty(ListItem.AudioChannels) | IsEmpty(VideoPlayer.AudioChannels) | IsEmpty(Container(100).ListItem.Property(AudioChannels))">special://skin/extras/flagging/audio/0.png</value>
         <value condition="Window.IsVisible(script-globalsearch-infodialog.xml)">$INFO[Container(100).ListItem.Property(AudioChannels),special://skin/extras/flagging/audio/,.png]</value>
         <value condition="Window.IsVisible(fullscreenvideo)">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audio/,.png]</value>
         <value>$INFO[ListItem.AudioChannels,special://skin/extras/flagging/audio/,.png]</value>
