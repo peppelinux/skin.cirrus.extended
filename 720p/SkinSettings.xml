@@ -337,17 +337,11 @@
                         <include>MenuTitleSettings</include>
                         <label>654</label>
                     </control>
-                    <control type="radiobutton" id="1201">
-                        <description>Enable Debug Grid</description>
-                        <include>MenuItemSettings</include>
-                        <label>$LOCALIZE[31010]</label>
-                        <onclick>Skin.ToggleSetting(DebugGrid)</onclick>
-                        <selected>Skin.HasSetting(DebugGrid)</selected>
-                    </control>
                     <control type="radiobutton" id="1202">
                         <description>Enable Debug Info</description>
                         <include>MenuItemSettings</include>
                         <label>$LOCALIZE[31011]</label>
+                        <onclick>Skin.ToggleDebug()</onclick>
                         <onclick>Skin.ToggleSetting(ShowDebugInfo)</onclick>
                         <selected>Skin.HasSetting(ShowDebugInfo)</selected>
                     </control>
