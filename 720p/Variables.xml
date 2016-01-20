@@ -187,6 +187,11 @@
 
 
     <!-- Weather Variables -->
+
+    <variable name="WeatherIconResourcePath">
+        <value condition="!IsEmpty(Skin.String(resource.images.weathericons.path))">$INFO[Skin.String(resource.images.weathericons.path)]</value>
+        <value>resource://resource.images.weathericons.default/</value>
+    </variable>
     <variable name="WeatherHighTemp0">
         <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Day0.HighTemp)]$INFO[System.TemperatureUnits]</value>
         <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Daily.1.HighTemperature)]</value>
@@ -236,28 +241,28 @@
         <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Daily.6.LowTemperature)]</value>
     </variable>
     <variable name="WeatherIcon0">
-        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Day0.OutlookIcon)]</value>
-        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Daily.1.OutlookIcon)]</value>
+        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched))">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Day0.FanartCode),,.png]</value>
+        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched))">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Daily.1.OutlookIcon)]</value>
     </variable>
     <variable name="WeatherIcon1">
-        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Day1.OutlookIcon)]</value>
-        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Daily.2.OutlookIcon)]</value>
+        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched))">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Day1.FanartCode),,.png]</value>
+        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched))">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Daily.2.OutlookIcon)]</value>
     </variable>
     <variable name="WeatherIcon2">
-        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Day2.OutlookIcon)]</value>
-        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Daily.3.OutlookIcon)]</value>
+        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched))">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Day2.FanartCode),,.png]</value>
+        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched))">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Daily.3.OutlookIcon)]</value>
     </variable>
     <variable name="WeatherIcon3">
-        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Day3.OutlookIcon)]</value>
-        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Daily.4.OutlookIcon)]</value>
+        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched))">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Day3.FanartCode),,.png]</value>
+        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched))">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Daily.4.OutlookIcon)]</value>
     </variable>
     <variable name="WeatherIcon4">
-        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Day4.OutlookIcon)]</value>
-        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Daily.5.OutlookIcon)]</value>
+        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched))">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Day4.FanartCode),,.png]</value>
+        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched))">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Daily.5.OutlookIcon)]</value>
     </variable>
     <variable name="WeatherIcon5">
-        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Day5.OutlookIcon)]</value>
-        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Daily.6.OutlookIcon)]</value>
+        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched))">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Day5.FanartCode),,.png]</value>
+        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched))">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Daily.6.OutlookIcon)]</value>
     </variable>
     <variable name="WeatherShortDay0">
         <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Day0.Title)]</value>
