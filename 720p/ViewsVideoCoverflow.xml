@@ -658,7 +658,7 @@
                 <aspectratio>keep</aspectratio>
                 <align>center</align>
                 <aligny>bottom</aligny>
-                <texture diffuse="maskflags.png">$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
+                <texture diffuse="maskflags.png">$VAR[StudioIcon]$INFO[ListItem.Studio,,.png]</texture>
             </control>
             <control type="grouplist">
                 <description>MPAA Rating Flagging Images</description>

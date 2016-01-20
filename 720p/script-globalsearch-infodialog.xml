@@ -151,7 +151,7 @@
                             <top>550</top>
                             <aspectratio>keep</aspectratio>
                             <align>right</align>
-                            <texture>$INFO[Container(100).ListItem.Property(Studio),special://skin/extras/flagging/studios/,.png]</texture>
+                            <texture>$VAR[StudioIcon]$INFO[Container(100).ListItem.Property(Studio),,.png]</texture>
                         </control>
                         <control type="image">
                             <!-- STARS -->

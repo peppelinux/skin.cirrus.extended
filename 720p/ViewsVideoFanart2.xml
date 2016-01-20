@@ -549,7 +549,7 @@
                 <left>170</left>
                 <top>240</top>
                 <aspectratio align="center">keep</aspectratio>
-                <texture border="2">$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
+                <texture border="2">$VAR[StudioIcon]$INFO[ListItem.Studio,,.png]</texture>
             </control>
             <control type="image">
                 <!-- Movie Logo -->
@@ -921,7 +921,7 @@
                 <left>680</left>
                 <top>-51</top>
                 <aspectratio align="center">keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
+                <texture diffuse="maskflags.png">$VAR[StudioIcon]$INFO[ListItem.Studio,,.png]</texture>
             </control>
         </control>
         <!-- WHEN INFO IS NOT HIDDEN SEASONS -->
@@ -1138,7 +1138,7 @@
                 <left>680</left>
                 <top>-51</top>
                 <aspectratio align="center">keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
+                <texture diffuse="maskflags.png">$VAR[StudioIcon]$INFO[ListItem.Studio,,.png]</texture>
             </control>
         </control>
         <!-- WHEN INFO IS NOT HIDDEN EPISODES -->

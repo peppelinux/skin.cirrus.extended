@@ -192,7 +192,7 @@
                             <top>550</top>
                             <aspectratio>keep</aspectratio>
                             <align>right</align>
-                            <texture>$INFO[ListItem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
+                            <texture>$VAR[StudioIcon]$INFO[ListItem.Studio,,.png]</texture>
                         </control>
                         <control type="image">
                             <description>IMDB rating</description>

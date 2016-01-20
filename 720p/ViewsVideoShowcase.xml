@@ -137,7 +137,7 @@
                 <top>670</top>
                 <fadetime>200</fadetime>
                 <aspectratio>keep</aspectratio>
-                <texture>$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
+                <texture>$VAR[StudioIcon]$INFO[ListItem.Studio,,.png]</texture>
                 <visible>!IsEmpty(ListItem.Thumb)</visible> 
                 <visible>Container.Content(Movies)</visible> 
             </control>
@@ -148,7 +148,7 @@
                 <top>670</top>
                 <fadetime>200</fadetime>
                 <aspectratio>keep</aspectratio>
-                <texture>$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
+                <texture>$VAR[StudioIcon]$INFO[ListItem.Studio,,.png]</texture>
                 <visible>!IsEmpty(ListItem.Thumb)</visible> 
                 <visible>Container.Content(TVShows) | Container.Content(Seasons)</visible> 
             </control>

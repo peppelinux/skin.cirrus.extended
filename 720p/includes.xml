@@ -1695,7 +1695,7 @@
             <right>20</right>
             <bottom>10</bottom>
             <aspectratio>keep</aspectratio>
-            <texture>$INFO[VideoPlayer.Studio,special://skin/extras/flagging/studios/,.png]</texture>
+            <texture>$VAR[StudioIcon]$INFO[VideoPlayer.Studio,,.png]</texture>
         </control>
         <control type="grouplist">
             <description>Media Codec Flagging Images</description>

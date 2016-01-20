@@ -494,8 +494,8 @@
                     <top>0</top>
                     <fadetime>100</fadetime>
                     <aspectratio>keep</aspectratio>
-                    <texture>$INFO[Skin.String(Studios_Folder_Path)]$INFO[ListItem.Studio,,.png]</texture>
-                    <visible>Skin.HasSetting(banner) + Skin.HasSetting(studios)</visible>
+                    <texture>$VAR[StudioIcon]$INFO[ListItem.Studio,,.png]</texture>
+                    <visible>Skin.HasSetting(banner)</visible>
                 </control>
                 <!-- TV SHOW LOGO -->
                 <control type="largeimage" id="7914"> 

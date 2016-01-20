@@ -176,7 +176,7 @@
                     <aspectratio>keep</aspectratio>
                     <align>right</align>
                     <aligny>bottom</aligny>
-                    <texture>$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
+                    <texture>$VAR[StudioIcon]$INFO[ListItem.Studio,,.png]</texture>
                 </control>
                 <control type="grouplist">
                     <!-- MPAA Rating -->
@@ -288,7 +288,7 @@
                     <top>-23</top>
                     <fadetime>100</fadetime>
                     <aspectratio>keep</aspectratio>
-                    <texture>$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
+                    <texture>$VAR[StudioIcon]$INFO[ListItem.Studio,,.png]</texture>
                 </control>
                 <!-- TV SHOW LOGO -->
                 <control type="largeimage" id="7914"> 

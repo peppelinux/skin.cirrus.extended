@@ -377,7 +377,7 @@
                     <aspectratio>keep</aspectratio>
                     <align>right</align>
                     <aligny>top</aligny>
-                    <texture diffuse="maskflags.png">$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
+                    <texture diffuse="maskflags.png">$VAR[StudioIcon]$INFO[ListItem.Studio,,.png]</texture>
                 </control>
                 <control type="image">
                     <description>Rating value</description>

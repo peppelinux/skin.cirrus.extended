@@ -414,7 +414,7 @@
                     <top>50</top>
                     <fadetime>200</fadetime>
                     <aspectratio>keep</aspectratio>
-                    <texture>$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
+                    <texture>$VAR[StudioIcon]$INFO[ListItem.Studio,,.png]</texture>
                     <visible>Skin.HasSetting(banner) + !IsEmpty(ListItem.Thumb)</visible>
                 </control>
                 <!-- TV SHOW LOGO -->
@@ -576,7 +576,7 @@
                         <top>265</top>
                         <fadetime>200</fadetime>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
+                        <texture>$VAR[StudioIcon]$INFO[ListItem.Studio,,.png]</texture>
                         <visible>!IsEmpty(ListItem.Thumb)</visible>
                     </control>
                 </control>
@@ -616,7 +616,7 @@
                         <top>265</top>
                         <fadetime>100</fadetime>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
+                        <texture>$VAR[StudioIcon]$INFO[ListItem.Studio,,.png]</texture>
                     </control>
                 </control>
                 <!-- TV SHOW LOGO -->
