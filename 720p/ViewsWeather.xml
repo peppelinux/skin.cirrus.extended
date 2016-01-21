@@ -52,14 +52,8 @@
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
-                    <control type="image">
-                        <left>383</left>
-                        <top>15</top>
-                        <width>135</width>
-                        <height>135</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.ActualIcon]</texture>
-                    </control>
+                    <include condition="Skin.HasSetting(resource.images.weathericons.multi)">WeatherIconDailyAnimated</include>
+                    <include condition="!Skin.HasSetting(resource.images.weathericons.multi)">WeatherIconDailySingle</include>
                     <control type="label">
                         <left>30</left>
                         <top>35</top>
@@ -121,14 +115,8 @@
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
-                    <control type="image">
-                        <left>383</left>
-                        <top>15</top>
-                        <width>135</width>
-                        <height>135</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.ActualIcon]</texture>
-                    </control>
+                    <include condition="Skin.HasSetting(resource.images.weathericons.multi)">WeatherIconDailyAnimated</include>
+                    <include condition="!Skin.HasSetting(resource.images.weathericons.multi)">WeatherIconDailySingle</include>
                     <control type="label">
                         <left>30</left>
                         <top>35</top>
@@ -177,14 +165,8 @@
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
-                    <control type="image">
-                        <left>110</left>
-                        <top>5</top>
-                        <width>80</width>
-                        <height>80</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Thumb]</texture>
-                    </control>
+                    <include condition="Skin.HasSetting(resource.images.weathericons.multi)">WeatherIconDailyHourlyAnimatedExtended</include>
+                    <include condition="!Skin.HasSetting(resource.images.weathericons.multi)">WeatherIconDailyHourlySingleExtended</include>
                     <control type="label">
                         <left>200</left>
                         <top>0</top>
@@ -242,14 +224,8 @@
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
-                    <control type="image">
-                        <left>110</left>
-                        <top>5</top>
-                        <width>80</width>
-                        <height>80</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Thumb]</texture>
-                    </control>
+                    <include condition="Skin.HasSetting(resource.images.weathericons.multi)">WeatherIconDailyHourlyAnimatedExtended</include>
+                    <include condition="!Skin.HasSetting(resource.images.weathericons.multi)">WeatherIconDailyHourlySingleExtended</include>
                     <control type="label">
                         <left>200</left>
                         <top>0</top>
@@ -436,14 +412,12 @@
                         <aligny>center</aligny>
                         <label>$INFO[Window.Property(36Hour.1.Heading)]</label>
                     </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>10</top>
-                        <width>120</width>
-                        <height>110</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>$VAR[WeatherIconResourcePath]$INFO[Window.Property(36Hour.1.OutlookIcon)]</texture>
-                    </control>
+                    <include condition="!Skin.HasSetting(resource.images.weathericons.multi)" name="WeatherIcon36HourSingle">
+                        <param name="item_id" value="1" />
+                    </include>
+                    <include condition="Skin.HasSetting(resource.images.weathericons.multi)" name="WeatherIcon36HourAnimated">
+                        <param name="item_id" value="1" />
+                    </include>
                     <control type="label">
                         <left>120</left>
                         <top>40</top>
@@ -501,14 +475,12 @@
                         <aligny>center</aligny>
                         <label>$INFO[Window.Property(36Hour.2.Heading)]</label>
                     </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>10</top>
-                        <width>120</width>
-                        <height>110</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>$VAR[WeatherIconResourcePath]$INFO[Window.Property(36Hour.2.OutlookIcon)]</texture>
-                    </control>
+                    <include condition="!Skin.HasSetting(resource.images.weathericons.multi)" name="WeatherIcon36HourSingle">
+                        <param name="item_id" value="2" />
+                    </include>
+                    <include condition="Skin.HasSetting(resource.images.weathericons.multi)" name="WeatherIcon36HourAnimated">
+                        <param name="item_id" value="2" />
+                    </include>
                     <control type="label">
                         <left>120</left>
                         <top>40</top>
@@ -566,14 +538,12 @@
                         <aligny>center</aligny>
                         <label>$INFO[Window.Property(36Hour.3.Heading)]</label>
                     </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>10</top>
-                        <width>120</width>
-                        <height>110</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>$VAR[WeatherIconResourcePath]$INFO[Window.Property(36Hour.3.OutlookIcon)]</texture>
-                    </control>
+                    <include condition="!Skin.HasSetting(resource.images.weathericons.multi)" name="WeatherIcon36HourSingle">
+                        <param name="item_id" value="3" />
+                    </include>
+                    <include condition="Skin.HasSetting(resource.images.weathericons.multi)" name="WeatherIcon36HourAnimated">
+                        <param name="item_id" value="3" />
+                    </include>
                     <control type="label">
                         <left>120</left>
                         <top>40</top>
@@ -663,14 +633,8 @@
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
-                    <control type="image">
-                        <left>110</left>
-                        <top>5</top>
-                        <width>80</width>
-                        <height>80</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Thumb]</texture>
-                    </control>
+                    <include condition="Skin.HasSetting(resource.images.weathericons.multi)">WeatherIconDailyHourlyAnimatedExtended</include>
+                    <include condition="!Skin.HasSetting(resource.images.weathericons.multi)">WeatherIconDailyHourlySingleExtended</include>
                     <control type="label">
                         <left>200</left>
                         <top>5</top>
@@ -728,14 +692,8 @@
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
-                    <control type="image">
-                        <left>110</left>
-                        <top>5</top>
-                        <width>80</width>
-                        <height>80</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Thumb]</texture>
-                    </control>
+                    <include condition="Skin.HasSetting(resource.images.weathericons.multi)">WeatherIconDailyHourlyAnimatedExtended</include>
+                    <include condition="!Skin.HasSetting(resource.images.weathericons.multi)">WeatherIconDailyHourlySingleExtended</include>
                     <control type="label">
                         <left>200</left>
                         <top>5</top>
@@ -930,14 +888,12 @@
                         <aligny>center</aligny>
                         <label>$INFO[Window.Property(Weekend.1.LongDay)] - $INFO[Window.Property(Weekend.1.ShortDate)]</label>
                     </control>
-                    <control type="image">
-                        <left>10</left>
-                        <top>20</top>
-                        <width>130</width>
-                        <height>160</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>$VAR[WeatherIconResourcePath]$INFO[Window.Property(Weekend.1.OutlookIcon)]</texture>
-                    </control>
+                    <include condition="!Skin.HasSetting(resource.images.weathericons.multi)" name="WeatherIconWeekendSingle">
+                        <param name="item_id" value="1" />
+                    </include>
+                    <include condition="Skin.HasSetting(resource.images.weathericons.multi)" name="WeatherIconWeekendAnimated">
+                        <param name="item_id" value="1" />
+                    </include>
                     <control type="label">
                         <left>140</left>
                         <top>50</top>
@@ -1017,14 +973,12 @@
                         <aligny>center</aligny>
                         <label>$INFO[Window.Property(Weekend.2.LongDay)] - $INFO[Window.Property(Weekend.2.ShortDate)]</label>
                     </control>
-                    <control type="image">
-                        <left>10</left>
-                        <top>20</top>
-                        <width>130</width>
-                        <height>160</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>$VAR[WeatherIconResourcePath]$INFO[Window.Property(Weekend.2.OutlookIcon)]</texture>
-                    </control>
+                    <include condition="!Skin.HasSetting(resource.images.weathericons.multi)" name="WeatherIconWeekendSingle">
+                        <param name="item_id" value="2" />
+                    </include>
+                    <include condition="Skin.HasSetting(resource.images.weathericons.multi)" name="WeatherIconWeekendAnimated">
+                        <param name="item_id" value="2" />
+                    </include>
                     <control type="label">
                         <left>140</left>
                         <top>50</top>
@@ -1319,7 +1273,18 @@
             <property name="Outlook">$INFO[Window.Property(Day$PARAM[item_id].Outlook)]</property>
             <property name="TempUnits">$INFO[System.TemperatureUnits]</property>
             <onclick>noop</onclick>
-            <visible>Weather.IsFetched + !IsEmpty(Window.Property(Day$PARAM[item_id].Outlook)) + IsEmpty(Window.Property(Daily.IsFetched))</visible>
+            <visible>Weather.IsFetched + !IsEmpty(Window.Property(Day$PARAM[item_id].Outlook)) + IsEmpty(Window.Property(Daily.IsFetched)) + !Skin.HasSetting(resource.images.weathericons.multi)</visible>
+        </item>
+        <item>
+            <label>$INFO[Window.Property(Day$PARAM[item_id].Title)]</label>
+            <icon>$VAR[WeatherIconResourcePath]$INFO[Window.Property(Day$PARAM[item_id].FanartCode)]</icon>
+            <property name="FanartCode">$INFO[Window.Property(Day$PARAM[item_id].FanartCode)]</property>
+            <property name="HighTemp">$INFO[Window.Property(Day$PARAM[item_id].HighTemp)]</property>
+            <property name="LowTemp">$INFO[Window.Property(Day$PARAM[item_id].LowTemp)]</property>
+            <property name="Outlook">$INFO[Window.Property(Day$PARAM[item_id].Outlook)]</property>
+            <property name="TempUnits">$INFO[System.TemperatureUnits]</property>
+            <onclick>noop</onclick>
+            <visible>Weather.IsFetched + !IsEmpty(Window.Property(Day$PARAM[item_id].Outlook)) + IsEmpty(Window.Property(Daily.IsFetched)) + Skin.HasSetting(resource.images.weathericons.multi)</visible>
         </item>
     </include>
     <include name="WeatherDailyItem">
@@ -1330,10 +1295,28 @@
             <icon>$INFO[Window.Property(Daily.$PARAM[item_id].Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Daily.$PARAM[item_id].WindSpeed)] $INFO[Window.Property(Daily.$PARAM[item_id].WindDirection)]</icon>
             <property name="FanartCode">$INFO[Window.Property(Daily.$PARAM[item_id].FanartCode)]</property>
             <onclick>noop</onclick>
-            <visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.$PARAM[item_id].Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched))</visible>
-          </item>
+            <visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.$PARAM[item_id].Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched)) + !Skin.HasSetting(resource.images.weathericons.multi)</visible>
+        </item>
+        <item>
+            <label>[B]$INFO[Window.Property(Daily.$PARAM[item_id].ShortDay)][/B][CR][COLOR=grey2]$INFO[Window.Property(Daily.$PARAM[item_id].ShortDate)][/COLOR]</label>
+            <label2>$INFO[Window.Property(Daily.$PARAM[item_id].HighTemperature),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Daily.$PARAM[item_id].LowTemperature),[COLOR=grey2]$LOCALIZE[418] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.$PARAM[item_id].Precipitation),[COLOR=grey2]$LOCALIZE[33022] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.$PARAM[item_id].Cloudiness),[COLOR=grey2]$LOCALIZE[387] :[/COLOR][B] ,[/B]]</label2>
+            <thumb>$VAR[WeatherIconResourcePath]$INFO[Window.Property(Daily.$PARAM[item_id].FanartCode)]</thumb>
+            <icon>$INFO[Window.Property(Daily.$PARAM[item_id].Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Daily.$PARAM[item_id].WindSpeed)] $INFO[Window.Property(Daily.$PARAM[item_id].WindDirection)]</icon>
+            <property name="FanartCode">$INFO[Window.Property(Daily.$PARAM[item_id].FanartCode)]</property>
+            <onclick>noop</onclick>
+            <visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.$PARAM[item_id].Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched)) + Skin.HasSetting(resource.images.weathericons.multi)</visible>
+        </item>
     </include>
     <include name="WeatherHourlyItem">
+        <item>
+            <label>[B]$INFO[Window.Property(Hourly.$PARAM[item_id].Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Hourly.$PARAM[item_id].ShortDate)][/COLOR]</label>
+            <label2>$INFO[Window.Property(Hourly.$PARAM[item_id].Temperature),[COLOR=grey2]$LOCALIZE[401] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Hourly.$PARAM[item_id].FeelsLike),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.$PARAM[item_id].Humidity),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.$PARAM[item_id].Precipitation),[COLOR=grey2]$LOCALIZE[1448] :[/COLOR][B] ,[/B]]</label2>
+            <thumb>$VAR[WeatherIconResourcePath]$INFO[Window.Property(Hourly.$PARAM[item_id].FanartCode)]</thumb>
+            <icon>$INFO[Window.Property(Hourly.$PARAM[item_id].Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.$PARAM[item_id].WindSpeed)] $INFO[Window.Property(Hourly.$PARAM[item_id].WindDirection)]</icon>
+            <property name="FanartCode">$VAR[WeatherIconResourcePath]$INFO[Window.Property(Hourly.$PARAM[item_id].FanartCode)]</property>
+            <onclick>noop</onclick>
+            <visible>!IsEmpty(Window.Property(Hourly.IsFetched)) + Skin.HasSetting(resource.images.weathericons.multi)</visible>
+        </item>
         <item>
             <label>[B]$INFO[Window.Property(Hourly.$PARAM[item_id].Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Hourly.$PARAM[item_id].ShortDate)][/COLOR]</label>
             <label2>$INFO[Window.Property(Hourly.$PARAM[item_id].Temperature),[COLOR=grey2]$LOCALIZE[401] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Hourly.$PARAM[item_id].FeelsLike),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.$PARAM[item_id].Humidity),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.$PARAM[item_id].Precipitation),[COLOR=grey2]$LOCALIZE[1448] :[/COLOR][B] ,[/B]]</label2>
@@ -1341,7 +1324,7 @@
             <icon>$INFO[Window.Property(Hourly.$PARAM[item_id].Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.$PARAM[item_id].WindSpeed)] $INFO[Window.Property(Hourly.$PARAM[item_id].WindDirection)]</icon>
             <property name="FanartCode">$VAR[WeatherIconResourcePath]$INFO[Window.Property(Hourly.$PARAM[item_id].FanartCode)]</property>
             <onclick>noop</onclick>
-            <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+            <visible>!IsEmpty(Window.Property(Hourly.IsFetched)) + !Skin.HasSetting(resource.images.weathericons.multi)</visible>
         </item>
     </include>
     <include name="WeatherMapItem">
@@ -1353,5 +1336,248 @@
             <onclick>noop</onclick>
             <visible>Weather.IsFetched + !IsEmpty(Window.Property(Map.$PARAM[item_id].Area)) + !IsEmpty(Window.Property(Map.IsFetched))</visible>
         </item>
+    </include>
+    <!-- Weather Includes -->
+    <include name="WeatherIconHomeTopAnimated">
+        <control type="multiimage">
+            <left>0</left>
+            <top>-10</top>
+            <width>50</width>
+            <height>50</height>
+            <aspectratio>keep</aspectratio>
+            <imagepath>$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
+            <timeperimage>100</timeperimage>
+            <randomize>false</randomize>
+            <fadetime>1</fadetime>
+        </control>
+    </include>
+    <include name="WeatherIconHomeTopSingle">
+        <control type="image">
+            <left>0</left>
+            <top>-10</top>
+            <width>50</width>
+            <height>50</height>
+            <aspectratio>keep</aspectratio>
+            <texture>$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Current.OutlookIcon)]</texture>
+        </control>
+    </include>
+    <include name="WeatherIconHomeCurrentAnimated">
+        <control type="multiimage">
+            <left>140</left>
+            <top>45</top>
+            <width>80</width>
+            <height>80</height>
+            <imagepath>$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
+            <timeperimage>100</timeperimage>
+            <randomize>false</randomize>
+            <fadetime>1</fadetime>
+        </control>
+    </include>
+    <include name="WeatherIconHomeCurrentSingle">
+        <control type="image">
+            <left>140</left>
+            <top>45</top>
+            <width>80</width>
+            <height>80</height>
+            <texture>$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Current.OutlookIcon)]</texture>
+            <aspectratio>keep</aspectratio>
+        </control>
+    </include>
+    <include name="WeatherIconCurrentAnimated">
+        <control type="multiimage">
+            <left>230</left>
+            <top>120</top>
+            <width>230</width>
+            <height>170</height>
+            <aspectratio>keep</aspectratio>
+            <imagepath>$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
+            <timeperimage>100</timeperimage>
+            <randomize>false</randomize>
+            <fadetime>1</fadetime>
+        </control>
+    </include>
+    <include name="WeatherIconCurrentSingle">
+        <control type="image">
+            <left>230</left>
+            <top>120</top>
+            <width>230</width>
+            <height>170</height>
+            <texture>$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Current.OutlookIcon)]</texture>
+            <aspectratio>keep</aspectratio>
+        </control>
+    </include>
+    <include name="WeatherIconHomeDayCommonAnimated">
+        <left>40</left>
+        <top>60</top>
+        <width>70</width>
+        <height>70</height>
+        <timeperimage>100</timeperimage>
+        <randomize>false</randomize>
+        <fadetime>1</fadetime>
+    </include>
+    <include name="WeatherIconHomeDay1Animated">
+        <control type="multiimage">
+            <include>WeatherIconHomeDayCommonAnimated</include>
+            <imagepath>$VAR[WeatherIcon1]</imagepath>
+        </control>
+    </include>
+    <include name="WeatherIconHomeDay2Animated">
+        <control type="multiimage">
+            <include>WeatherIconHomeDayCommonAnimated</include>
+            <imagepath>$VAR[WeatherIcon2]</imagepath>
+        </control>
+    </include>
+    <include name="WeatherIconHomeDay3Animated">
+        <control type="multiimage">
+            <include>WeatherIconHomeDayCommonAnimated</include>
+            <imagepath>$VAR[WeatherIcon3]</imagepath>
+        </control>
+    </include>
+    <include name="WeatherIconHomeDay4Animated">
+        <control type="multiimage">
+            <include>WeatherIconHomeDayCommonAnimated</include>
+            <imagepath>$VAR[WeatherIcon4]</imagepath>
+        </control>
+    </include>
+    <include name="WeatherIconHomeDay5Animated">
+        <control type="multiimage">
+            <include>WeatherIconHomeDayCommonAnimated</include>
+            <imagepath>$VAR[WeatherIcon5]</imagepath>
+        </control>
+    </include>
+    <include name="WeatherIconHomeDayCommonSingle">
+        <description>Weather image</description>
+        <left>40</left>
+        <top>60</top>
+        <width>70</width>
+        <height>70</height>
+    </include>
+    <include name="WeatherIconHomeDay1Single">
+        <control type="image">
+            <include>WeatherIconHomeDayCommonSingle</include>
+            <texture>$VAR[WeatherIcon1]</texture>
+        </control>
+    </include>
+    <include name="WeatherIconHomeDay2Single">
+        <control type="image">
+            <include>WeatherIconHomeDayCommonSingle</include>
+            <texture>$VAR[WeatherIcon2]</texture>
+        </control>
+    </include>
+    <include name="WeatherIconHomeDay3Single">
+        <control type="image">
+            <include>WeatherIconHomeDayCommonSingle</include>
+            <texture>$VAR[WeatherIcon3]</texture>
+        </control>
+    </include>
+    <include name="WeatherIconHomeDay4Single">
+        <control type="image">
+            <include>WeatherIconHomeDayCommonSingle</include>
+            <texture>$VAR[WeatherIcon4]</texture>
+        </control>
+    </include>
+    <include name="WeatherIconHomeDay5Single">
+        <control type="image">
+            <include>WeatherIconHomeDayCommonSingle</include>
+            <texture>$VAR[WeatherIcon5]</texture>
+        </control>
+    </include>
+    <include name="WeatherIconDailySingle">
+        <control type="image">
+            <left>398</left>
+            <top>30</top>
+            <width>105</width>
+            <height>105</height>
+            <aspectratio>keep</aspectratio>
+            <texture>$INFO[ListItem.ActualIcon]</texture>
+        </control>
+    </include>
+    <include name="WeatherIconDailyAnimated">
+        <control type="multiimage">
+            <left>398</left>
+            <top>30</top>
+            <width>105</width>
+            <height>105</height>
+            <aspectratio>keep</aspectratio>
+            <imagepath>$INFO[ListItem.ActualIcon]</imagepath>
+            <aspectratio>keep</aspectratio>
+            <timeperimage>100</timeperimage>
+            <randomize>false</randomize>
+            <fadetime>1</fadetime>
+        </control>
+    </include>
+    <include name="WeatherIconDailyHourlySingleExtended">
+        <control type="image">
+            <left>120</left>
+            <top>25</top>
+            <width>80</width>
+            <height>80</height>
+            <aligny>top</aligny>
+            <aspectratio>keep</aspectratio>
+            <texture>$INFO[ListItem.Thumb]</texture>
+        </control>
+    </include>
+    <include name="WeatherIconDailyHourlyAnimatedExtended">
+        <control type="multiimage">
+            <left>120</left>
+            <top>25</top>
+            <width>80</width>
+            <height>80</height>
+            <aligny>top</aligny>
+            <aspectratio>keep</aspectratio>
+            <imagepath>$INFO[ListItem.Thumb]</imagepath>
+            <aspectratio>keep</aspectratio>
+            <timeperimage>100</timeperimage>
+            <randomize>false</randomize>
+            <fadetime>1</fadetime>
+        </control>
+    </include>
+    <include name="WeatherIcon36HourSingle">
+        <control type="image">
+            <left>0</left>
+            <top>10</top>
+            <width>120</width>
+            <height>110</height>
+            <aspectratio>keep</aspectratio>
+            <texture>$VAR[WeatherIconResourcePath]$INFO[Window.Property(36Hour.$PARAM[item_id].OutlookIcon)]</texture>
+        </control>
+    </include>
+    <include name="WeatherIcon36HourAnimated">
+        <control type="multiimage">
+            <left>0</left>
+            <top>10</top>
+            <width>120</width>
+            <height>110</height>
+            <aspectratio>keep</aspectratio>
+            <imagepath>$VAR[WeatherIconResourcePath]$INFO[Window.Property(36Hour.$PARAM[item_id].FanartCode)]</imagepath>
+            <aspectratio>keep</aspectratio>
+            <timeperimage>100</timeperimage>
+            <randomize>false</randomize>
+            <fadetime>1</fadetime>
+        </control>
+    </include>
+    <include name="WeatherIconWeekendSingle">
+        <control type="image">
+            <left>10</left>
+            <top>20</top>
+            <width>130</width>
+            <height>160</height>
+            <aspectratio>keep</aspectratio>
+            <texture>$VAR[WeatherIconResourcePath]$INFO[Window.Property(Weekend.$PARAM[item_id].OutlookIcon)]</texture>
+        </control>
+    </include>
+    <include name="WeatherIconWeekendAnimated">
+        <control type="multiimage">
+            <left>10</left>
+            <top>20</top>
+            <width>130</width>
+            <height>160</height>
+            <aspectratio>keep</aspectratio>
+            <imagepath>$VAR[WeatherIconResourcePath]$INFO[Window.Property(Weekend.$PARAM[item_id].FanartCode)]</imagepath>
+            <aspectratio>keep</aspectratio>
+            <timeperimage>100</timeperimage>
+            <randomize>false</randomize>
+            <fadetime>1</fadetime>
+        </control>
     </include>
 </includes>
