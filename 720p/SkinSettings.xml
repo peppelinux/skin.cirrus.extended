@@ -512,13 +512,6 @@
                         <onclick>Skin.ToggleSetting(HomeWeatherFanart)</onclick>
                         <selected>Skin.HasSetting(HomeWeatherFanart)</selected>
                     </control>
-                    <control type="button" id="1067">
-                        <description>Weather fanart location</description>
-                        <include>MenuItemSettings</include>
-                        <label>$LOCALIZE[41140] [COLOR=accent]$INFO[Skin.String(HomeWeatherFanartFolder)][/COLOR]</label>
-                        <onclick>Skin.SetPath(HomeWeatherFanartFolder)</onclick>
-                        <visible>Skin.HasSetting(HomeWeatherFanart)</visible>
-                    </control>
                     <control type="radiobutton" id="1073">
                         <description>Hide Black Bar for Weather widget on home</description>
                         <include>MenuItemSettings</include>
@@ -2044,6 +2037,12 @@
                         <label>Weater Icons</label>
 						<label2>$INFO[Skin.String(resource.images.weathericons.name)]</label2>
 						<onclick>RunScript(script.image.resource.select,type=resource.images.weathericons&amp;property=resource.images.weathericons)</onclick>
+					</control>
+                    <control type="button" id="90087">
+						<include>MenuItemSettings</include>
+                        <label>Weater Fanart</label>
+						<label2>$INFO[Skin.String(resource.images.weatherfanart.name)]</label2>
+						<onclick>RunScript(script.image.resource.select,type=resource.images.weatherfanart&amp;property=resource.images.weatherfanart)</onclick>
 					</control>
                 </control>
                 <control type="scrollbar" id="60">

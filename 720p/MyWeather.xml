@@ -7,26 +7,12 @@
             <top>0</top>
             <width>1280</width>
             <height>720</height>
-            <imagepath fallback="special://skin/backgrounds/weather.jpg">$INFO[Skin.String(HomeWeatherFanartFolder)]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
-            <timeperimage>30000</timeperimage>
+            <imagepath>$VAR[WeatherFanartBackground]</imagepath>
+            <timeperimage>8000</timeperimage>
             <randomize>true</randomize>
             <fadetime>600</fadetime>
             <include>VisibleFadeEffect</include>
             <include>Animation_CommonFadeNoHide</include>
-            <visible>Skin.HasSetting(HomeWeatherFanart) + !IsEmpty(Skin.String(HomeWeatherFanartFolder))</visible>
-            <animation effect="fade" time="200">WindowClose</animation>
-        </control>
-        <control type="multiimage">
-            <left>0</left>
-            <top>0</top>
-            <width>1280</width>
-            <height>720</height>
-            <timeperimage>10000</timeperimage>
-            <imagepath fallback="special://skin/backgrounds/weatherfanart.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</imagepath>
-            <aspectratio>scale</aspectratio>
-            <randomize>true</randomize>
-            <fadetime>2000</fadetime>
-            <visible>![Skin.HasSetting(HomeWeatherFanart) + !IsEmpty(Skin.String(HomeWeatherFanartFolder))]</visible>
             <animation effect="fade" time="200">WindowClose</animation>
         </control>
         <control type="grouplist">
@@ -137,15 +123,8 @@
                     <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
                 </control>
-                <control type="image">
-                    <description>current weather icon</description>
-                    <left>230</left>
-                    <top>105</top>
-                    <width>230</width>
-                    <height>180</height>
-                    <texture>$VAR[WeatherIconResourcePath]$INFO[Window.Property(Current.OutlookIcon)]</texture>
-                    <aspectratio>keep</aspectratio>
-                </control>
+                <include condition="Skin.HasSetting(resource.images.weathericons.multi)">WeatherIconCurrentAnimated</include>
+                <include condition="!Skin.HasSetting(resource.images.weathericons.multi)">WeatherIconCurrentSingle</include>
                 <control type="label">
                     <description>current condition label</description>
                     <left>10</left>
@@ -480,19 +459,6 @@
                     <onclick>ActivateWindow(MyWeatherSettings)</onclick>
                     <textwidth>235</textwidth>
                     <include>ButtonCommonValues</include>
-                </control>
-                <control type="radiobutton" id="250">
-                    <description>Fanart Toggle</description>
-                    <include>ButtonCommonValues</include>
-                    <label>$LOCALIZE[31307]</label>
-                    <onclick>Skin.ToggleSetting(HomeWeatherFanart)</onclick>
-                    <selected>!Skin.HasSetting(HomeWeatherFanart)</selected>
-                </control>
-                <control type="button" id="251">
-                    <include>ButtonCommonValues</include>
-                    <label>$LOCALIZE[31317]</label>
-                    <onclick>Skin.SetPath(HomeWeatherFanartFolder)</onclick>
-                    <enable>Skin.HasSetting(HomeWeatherFanart)</enable>
                 </control>
             </control>
         </control>
