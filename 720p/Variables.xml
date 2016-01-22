@@ -952,10 +952,24 @@
         <value condition="VideoPlayer.Content(MusicVideos)">$INFO[VideoPlayer.Artist]$INFO[VideoPlayer.Album, - ]</value>
         <value>$INFO[VideoPlayer.Title]</value>
     </variable>
-    
+
     <!-- Studio Flags -->
     <variable name="StudioIcon">
         <value condition="!IsEmpty(Skin.String(resource.images.studios.path))">$INFO[Skin.String(resource.images.studios.path)]</value>
         <value>resource://resource.images.studios.white/</value>
+    </variable>
+
+
+    <!-- Movie Genre Icons add-on -->	
+    <variable name="MovieGenreIcon">
+        <value condition="System.HasAddon(script.image.resource.select) + [SubString(Skin.String(resource.images.moviegenreicons.path),resource.images.moviegenreicons.transparent) | SubString(Skin.String(resource.images.moviegenreicons.path),resource.images.moviegenreicons.xzener-flat) | SubString(Skin.String(resource.images.moviegenreicons.path),resource.images.moviegenreicons.xzener-reflection)]">$INFO[Skin.String(resource.images.moviegenreicons.path)]$INFO[ListItem.Label,,.png]</value>
+        <value condition="System.HasAddon(script.image.resource.select) + !IsEmpty(Skin.String(resource.images.moviegenreicons.path))">$INFO[Skin.String(resource.images.moviegenreicons.path)]$INFO[ListItem.Label,,.jpg]</value>
+        <value>$INFO[ListItem.Label,special://skin/extras/moviegenres/,.png]</value>
+    </variable>
+
+    <!-- Music Genre Icons add-on -->
+    <variable name="MusicGenreIcon">
+        <value condition="System.HasAddon(script.image.resource.select) + !IsEmpty(Skin.String(resource.images.musicgenreicons.path))">$INFO[Skin.String(resource.images.musicgenreicons.path)]$INFO[ListItem.Label,,.jpg]</value>
+        <value>$INFO[ListItem.Label,special://skin/extras/musicgenres/,.png]</value>
     </variable>
 </includes>
