@@ -54,8 +54,8 @@
         <value>$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
     </variable>
     <variable name="ListItemStudio">
-        <value condition="System.HasAddon(script.skin.info.service) + SubString(ListItem.Path,videodb://movies/sets/,left)">$INFO[Window(home).Property(Set.Movies.Studio),special://skin/extras/flagging/studios/,.png]</value>
-        <value>$INFO[ListItem.Studio,special://skin/extras/flagging/studios/,.png]</value>
+        <value condition="System.HasAddon(script.skin.info.service) + SubString(ListItem.Path,videodb://movies/sets/,left)">$VAR[StudioIcon]$INFO[Window(home).Property(Set.Movies.Studio),,.png]</value>
+        <value>$VAR[StudioIcon]$INFO[ListItem.Studio,,.png]</value>
     </variable>
     <variable name="ListItemYear">
         <value condition="System.HasAddon(script.skin.info.service) + SubString(ListItem.Path,videodb://movies/sets/,left) + Control.IsVisible(766)">$INFO[Window(home).Property(Set.Movies.Years),[COLOR=accent]$LOCALIZE[41250]:[/COLOR] ]</value>
@@ -187,6 +187,11 @@
 
 
     <!-- Weather Variables -->
+
+    <variable name="WeatherIconResourcePath">
+        <value condition="!IsEmpty(Skin.String(resource.images.weathericons.path))">$INFO[Skin.String(resource.images.weathericons.path)]</value>
+        <value>resource://resource.images.weathericons.default/</value>
+    </variable>
     <variable name="WeatherHighTemp0">
         <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Day0.HighTemp)]$INFO[System.TemperatureUnits]</value>
         <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Daily.1.HighTemperature)]</value>
@@ -236,28 +241,40 @@
         <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Daily.6.LowTemperature)]</value>
     </variable>
     <variable name="WeatherIcon0">
-        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Day0.OutlookIcon)]</value>
-        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Daily.1.OutlookIcon)]</value>
+        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched)) + !Skin.HasSetting(resource.images.weathericons.multi)">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Day0.FanartCode),,.png]</value>
+        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched)) + Skin.HasSetting(resource.images.weathericons.multi)">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Day0.FanartCode)]</value>
+        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched)) + !Skin.HasSetting(resource.images.weathericons.multi)">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Daily.1.OutlookIcon)]</value>
+        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched)) + Skin.HasSetting(resource.images.weathericons.multi)">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Daily.1.FanartCode)]</value>
     </variable>
     <variable name="WeatherIcon1">
-        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Day1.OutlookIcon)]</value>
-        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Daily.2.OutlookIcon)]</value>
+        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched)) + !Skin.HasSetting(resource.images.weathericons.multi)">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Day1.FanartCode),,.png]</value>
+        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched)) + Skin.HasSetting(resource.images.weathericons.multi)">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Day1.FanartCode)]</value>
+        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched)) + !Skin.HasSetting(resource.images.weathericons.multi)">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Daily.2.OutlookIcon)]</value>
+        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched)) + Skin.HasSetting(resource.images.weathericons.multi)">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Daily.2.FanartCode)]</value>
     </variable>
     <variable name="WeatherIcon2">
-        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Day2.OutlookIcon)]</value>
-        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Daily.3.OutlookIcon)]</value>
+        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched)) + !Skin.HasSetting(resource.images.weathericons.multi)">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Day2.FanartCode),,.png]</value>
+        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched)) + Skin.HasSetting(resource.images.weathericons.multi)">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Day2.FanartCode)]</value>
+        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched)) + !Skin.HasSetting(resource.images.weathericons.multi)">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Daily.3.OutlookIcon)]</value>
+        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched)) + Skin.HasSetting(resource.images.weathericons.multi)">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Daily.3.FanartCode)]</value>
     </variable>
     <variable name="WeatherIcon3">
-        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Day3.OutlookIcon)]</value>
-        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Daily.4.OutlookIcon)]</value>
+        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched)) + !Skin.HasSetting(resource.images.weathericons.multi)">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Day3.FanartCode),,.png]</value>
+        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched)) + Skin.HasSetting(resource.images.weathericons.multi)">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Day3.FanartCode)]</value>
+        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched)) + !Skin.HasSetting(resource.images.weathericons.multi)">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Daily.4.OutlookIcon)]</value>
+        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched)) + Skin.HasSetting(resource.images.weathericons.multi)">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Daily.4.FanartCode)]</value>
     </variable>
     <variable name="WeatherIcon4">
-        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Day4.OutlookIcon)]</value>
-        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Daily.5.OutlookIcon)]</value>
+        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched)) + !Skin.HasSetting(resource.images.weathericons.multi)">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Day4.FanartCode),,.png]</value>
+        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched)) + Skin.HasSetting(resource.images.weathericons.multi)">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Day4.FanartCode)]</value>
+        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched)) + !Skin.HasSetting(resource.images.weathericons.multi)">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Daily.5.OutlookIcon)]</value>
+        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched)) + Skin.HasSetting(resource.images.weathericons.multi)">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Daily.5.FanartCode)]</value>
     </variable>
     <variable name="WeatherIcon5">
-        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Day5.OutlookIcon)]</value>
-        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Daily.6.OutlookIcon)]</value>
+        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched)) + !Skin.HasSetting(resource.images.weathericons.multi)">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Day5.FanartCode),,.png]</value>
+        <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched)) + Skin.HasSetting(resource.images.weathericons.multi)">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Day5.FanartCode)]</value>
+        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched)) + !Skin.HasSetting(resource.images.weathericons.multi)">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Daily.6.OutlookIcon)]</value>
+        <value condition="!IsEmpty(Window(Weather).Property(Daily.IsFetched)) + Skin.HasSetting(resource.images.weathericons.multi)">$VAR[WeatherIconResourcePath]$INFO[Window(Weather).Property(Daily.6.FanartCode)]</value>
     </variable>
     <variable name="WeatherShortDay0">
         <value condition="IsEmpty(Window(Weather).Property(Daily.IsFetched))">$INFO[Window(Weather).Property(Day0.Title)]</value>
@@ -316,22 +333,22 @@
         <value condition="Control.HasFocus(215) + StringCompare(Window(Home).Property(TVGuide.BackgroundFanart),1)">$INFO[Container(215).ListItem.Property(Art(fanart))]</value>
     </variable>
     <variable name="NextAiredNetwork">
-        <value condition="Control.HasFocus(200)">$INFO[Container(200).ListItem.Property(Network),special://skin/extras/flagging/studios/,.png]</value>
-        <value condition="Control.HasFocus(201)">$INFO[Container(201).ListItem.Property(Network),special://skin/extras/flagging/studios/,.png]</value>
-        <value condition="Control.HasFocus(202)">$INFO[Container(202).ListItem.Property(Network),special://skin/extras/flagging/studios/,.png]</value>
-        <value condition="Control.HasFocus(203)">$INFO[Container(203).ListItem.Property(Network),special://skin/extras/flagging/studios/,.png]</value>
-        <value condition="Control.HasFocus(204)">$INFO[Container(204).ListItem.Property(Network),special://skin/extras/flagging/studios/,.png]</value>
-        <value condition="Control.HasFocus(205)">$INFO[Container(205).ListItem.Property(Network),special://skin/extras/flagging/studios/,.png]</value>
-        <value condition="Control.HasFocus(206)">$INFO[Container(206).ListItem.Property(Network),special://skin/extras/flagging/studios/,.png]</value>
-        <value condition="Control.HasFocus(207)">$INFO[Container(207).ListItem.Property(Network),special://skin/extras/flagging/studios/,.png]</value>
-        <value condition="Control.HasFocus(208)">$INFO[Container(208).ListItem.Property(Network),special://skin/extras/flagging/studios/,.png]</value>
-        <value condition="Control.HasFocus(209)">$INFO[Container(209).ListItem.Property(Network),special://skin/extras/flagging/studios/,.png]</value>
-        <value condition="Control.HasFocus(210)">$INFO[Container(210).ListItem.Property(Network),special://skin/extras/flagging/studios/,.png]</value>
-        <value condition="Control.HasFocus(211)">$INFO[Container(211).ListItem.Property(Network),special://skin/extras/flagging/studios/,.png]</value>
-        <value condition="Control.HasFocus(212)">$INFO[Container(212).ListItem.Property(Network),special://skin/extras/flagging/studios/,.png]</value>
-        <value condition="Control.HasFocus(213)">$INFO[Container(213).ListItem.Property(Network),special://skin/extras/flagging/studios/,.png]</value>
-        <value condition="Control.HasFocus(214)">$INFO[Container(214).ListItem.Property(Network),special://skin/extras/flagging/studios/,.png]</value>
-        <value condition="Control.HasFocus(215)">$INFO[Container(215).ListItem.Property(Network),special://skin/extras/flagging/studios/,.png]</value>
+        <value condition="Control.HasFocus(200)">$VAR[StudioIcon]$INFO[Container(200).ListItem.Property(Network),,.png]</value>
+        <value condition="Control.HasFocus(201)">$VAR[StudioIcon]$INFO[Container(201).ListItem.Property(Network),,.png]</value>
+        <value condition="Control.HasFocus(202)">$VAR[StudioIcon]$INFO[Container(202).ListItem.Property(Network),,.png]</value>
+        <value condition="Control.HasFocus(203)">$VAR[StudioIcon]$INFO[Container(203).ListItem.Property(Network),,.png]</value>
+        <value condition="Control.HasFocus(204)">$VAR[StudioIcon]$INFO[Container(204).ListItem.Property(Network),,.png]</value>
+        <value condition="Control.HasFocus(205)">$VAR[StudioIcon]$INFO[Container(205).ListItem.Property(Network),,.png]</value>
+        <value condition="Control.HasFocus(206)">$VAR[StudioIcon]$INFO[Container(206).ListItem.Property(Network),,.png]</value>
+        <value condition="Control.HasFocus(207)">$VAR[StudioIcon]$INFO[Container(207).ListItem.Property(Network),,.png]</value>
+        <value condition="Control.HasFocus(208)">$VAR[StudioIcon]$INFO[Container(208).ListItem.Property(Network),,.png]</value>
+        <value condition="Control.HasFocus(209)">$VAR[StudioIcon]$INFO[Container(209).ListItem.Property(Network),,.png]</value>
+        <value condition="Control.HasFocus(210)">$VAR[StudioIcon]$INFO[Container(210).ListItem.Property(Network),,.png]</value>
+        <value condition="Control.HasFocus(211)">$VAR[StudioIcon]$INFO[Container(211).ListItem.Property(Network),,.png]</value>
+        <value condition="Control.HasFocus(212)">$VAR[StudioIcon]$INFO[Container(212).ListItem.Property(Network),,.png]</value>
+        <value condition="Control.HasFocus(213)">$VAR[StudioIcon]$INFO[Container(213).ListItem.Property(Network),,.png]</value>
+        <value condition="Control.HasFocus(214)">$VAR[StudioIcon]$INFO[Container(214).ListItem.Property(Network),,.png]</value>
+        <value condition="Control.HasFocus(215)">$VAR[StudioIcon]$INFO[Container(215).ListItem.Property(Network),,.png]</value>
     </variable>
     <variable name="NextAiredGenre">
         <value condition="Control.HasFocus(200)">$INFO[Container(200).ListItem.Property(Genre)]</value>
@@ -934,5 +951,34 @@
         <value condition="VideoPlayer.Content(Episodes)">$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.Title, - ]</value>
         <value condition="VideoPlayer.Content(MusicVideos)">$INFO[VideoPlayer.Artist]$INFO[VideoPlayer.Album, - ]</value>
         <value>$INFO[VideoPlayer.Title]</value>
+    </variable>
+    <!-- Studio Flags -->
+    <variable name="StudioIcon">
+        <value condition="!IsEmpty(Skin.String(resource.images.studios.path))">$INFO[Skin.String(resource.images.studios.path)]</value>
+        <value>resource://resource.images.studios.white/</value>
+    </variable>
+    <!-- Movie Genre Icons add-on -->	
+    <variable name="MovieGenreIcon">
+        <value condition="System.HasAddon(script.image.resource.select) + [SubString(Skin.String(resource.images.moviegenreicons.path),resource.images.moviegenreicons.transparent) | SubString(Skin.String(resource.images.moviegenreicons.path),resource.images.moviegenreicons.xzener-flat) | SubString(Skin.String(resource.images.moviegenreicons.path),resource.images.moviegenreicons.xzener-reflection)]">$INFO[Skin.String(resource.images.moviegenreicons.path)]$INFO[ListItem.Label,,.png]</value>
+        <value condition="System.HasAddon(script.image.resource.select) + !IsEmpty(Skin.String(resource.images.moviegenreicons.path))">$INFO[Skin.String(resource.images.moviegenreicons.path)]$INFO[ListItem.Label,,.jpg]</value>
+        <value>$INFO[ListItem.Label,special://skin/extras/moviegenres/,.png]</value>
+    </variable>
+    <!-- Music Genre Icons add-on -->
+    <variable name="MusicGenreIcon">
+        <value condition="System.HasAddon(script.image.resource.select) + !IsEmpty(Skin.String(resource.images.musicgenreicons.path))">$INFO[Skin.String(resource.images.musicgenreicons.path)]$INFO[ListItem.Label,,.jpg]</value>
+        <value>$INFO[ListItem.Label,special://skin/extras/musicgenres/,.png]</value>
+    </variable>
+    <!-- Weather Fanart Home Background -->
+    <variable name="WeatherFanartHomeBackground">
+        <value condition="Skin.HasSetting(HomeWeatherFanart) + !IsEmpty(Skin.String(resource.images.weatherfanart.path) + !Skin.HasSetting(resource.images.weatherfanart.multi)">$INFO[Skin.String(resource.images.weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode),,.jpg]</value>
+        <value condition="Skin.HasSetting(HomeWeatherFanart) + !IsEmpty(Skin.String(resource.images.weatherfanart.path) + Skin.HasSetting(resource.images.weatherfanart.multi)">$INFO[Skin.String(resource.images.weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]</value>
+        <value condition="Skin.HasSetting(HomeWeatherFanart) + !IsEmpty(Skin.String(Home_Custom_Back_Weather_Folder)) + IsEmpty(Skin.String(resource.images.weatherfanart.path)">$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</value>
+        <value>special://skin/backgrounds/weatherfanart.jpg</value>
+    </variable>
+    <!-- Weather Fanart Background -->
+    <variable name="WeatherFanartBackground">
+        <value condition="!IsEmpty(Skin.String(resource.images.weatherfanart.path) + !Skin.HasSetting(resource.images.weatherfanart.multi)">$INFO[Skin.String(resource.images.weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode),,.jpg]</value>
+        <value condition="!IsEmpty(Skin.String(resource.images.weatherfanart.path) + Skin.HasSetting(resource.images.weatherfanart.multi)">$INFO[Skin.String(resource.images.weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]</value>
+        <value>special://skin/backgrounds/weatherfanart.jpg</value>
     </variable>
 </includes>

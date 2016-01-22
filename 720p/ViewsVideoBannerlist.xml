@@ -393,7 +393,7 @@
                     <top>0</top>
                     <fadetime>100</fadetime>
                     <aspectratio>keep</aspectratio>
-                    <texture>$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
+                    <texture>$VAR[StudioIcon]$INFO[ListItem.Studio,,.png]</texture>
                     <visible>!Skin.HasSetting(poster) + !Skin.HasSetting(widethumb)</visible>
                     <visible>!IsEmpty(ListItem.Thumb)</visible>
                 </control>

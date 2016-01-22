@@ -579,7 +579,7 @@
                     <left>967</left>
                     <top>50</top>
                     <aspectratio align="center">keep</aspectratio>
-                    <texture border="2">$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
+                    <texture border="2">$VAR[StudioIcon]$INFO[ListItem.Studio,,.png]</texture>
                     <visible>!Container(721).OnNext + !Container(721).OnPrevious + Container.Content(movies)</visible>
                     <animation effect="slide" start="0,-100" end="0,0" easing="out" tween="back" time="900" delay="900" reversible="false">Visible</animation>
                     <animation effect="slide" start="0,-100" end="0,0" easing="out" tween="back" time="900" delay="900" reversible="false">WindowOpen</animation>
@@ -1047,7 +1047,7 @@
                 <left>30</left>
                 <top>200</top>
                 <aspectratio align="center">keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
+                <texture diffuse="maskflags.png">$VAR[StudioIcon]$INFO[ListItem.Studio,,.png]</texture>
                 <visible>!Container(721).OnNext + !Container(721).OnPrevious</visible>
                 <animation effect="fade" start="0" end="100" easing="out" time="1200" delay="1100" reversible="false">Visible</animation>
                 <animation effect="fade" start="0" end="100" easing="out" time="1200" delay="1100" reversible="false">WindowOpen</animation>
@@ -1291,7 +1291,7 @@
                 <left>30</left>
                 <top>200</top>
                 <aspectratio align="center">keep</aspectratio>
-                <texture diffuse="maskflags.png">$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
+                <texture diffuse="maskflags.png">$VAR[StudioIcon]$INFO[ListItem.Studio,,.png]</texture>
                 <visible>!Container(721).OnNext + !Container(721).OnPrevious</visible>
                 <animation effect="fade" start="0" end="100" easing="out" time="1200" delay="1100" reversible="false">Visible</animation>
                 <animation effect="fade" start="0" end="100" easing="out" time="1200" delay="1100" reversible="false">WindowOpen</animation>

@@ -585,8 +585,8 @@
             <description>Weather</description>
             <label>8</label>
             <property name="Path">ActivateWindow(Weather)</property>
-            <icon>$INFO[Skin.String(HomeWeatherFanartFolder)]$INFO[Window(Weather).Property(Current.FanartCode)]</icon>
-            <visible>Weather.IsFetched + Skin.HasSetting(HomeWeatherFanart) + !Skin.HasSetting(HomeMenuNoWeatherButton)</visible>
+            <icon>$VAR[WeatherFanartHomeBackground]</icon>
+            <visible>Weather.IsFetched + !Skin.HasSetting(HomeMenuNoWeatherButton) + !Window.IsVisible(skinsettings)</visible>
             <onclick condition="!Window.IsVisible(skinsettings)">ActivateWindow(Weather)</onclick>
         </item>
         <item id="24">
@@ -595,8 +595,7 @@
             <property name="Path">ActivateWindow(Weather)</property>
             <icon>special://skin/backgrounds/weatherfanart.jpg</icon>
             <thumb>$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</thumb>
-            <visible>[Weather.IsFetched + !Skin.HasSetting(HomeWeatherFanart) + !Skin.HasSetting(HomeMenuNoWeatherButton)] | Window.IsVisible(skinsettings)</visible>
-            <onclick condition="!Window.IsVisible(skinsettings)">ActivateWindow(Weather)</onclick>
+            <visible>Window.IsVisible(skinsettings)</visible>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.Label,$LOCALIZE[8])</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.LabelSuffix,$LOCALIZE[31111])</onclick>
             <onclick condition="Window.IsVisible(skinsettings)">Skin.SetString(HomeItemToEdit.DefaultBackground,special://skin/backgrounds/weatherfanart.jpg)</onclick>

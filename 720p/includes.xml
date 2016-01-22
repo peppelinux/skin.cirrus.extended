@@ -43,7 +43,8 @@
     <!-- Added this view  Movie Sets View Butchabay -->  
     <include file="ViewsVideoShowcase.xml"/>
     <!-- Added this view 52 -->  
-    <!--  <include file="ViewsVideoSlide.xml" />  -->	              <!-- Added this view 56 -->  
+    <!--  <include file="ViewsVideoSlide.xml" />  -->
+    <!-- Added this view 56 -->  
     <include file="ViewsVideoFanart2.xml"/>
     <!-- Added this view 720 by jugger75 -->
     <include file="ViewsVideoShowcase_Mod.xml"/>
@@ -246,25 +247,12 @@
             <top>0</top>
             <width>1280</width>
             <height>720</height>
-            <imagepath fallback="special://skin/backgrounds/weatherfanart.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</imagepath>
+            <imagepath background="true">$VAR[WeatherFanartBackground]</imagepath>
             <timeperimage>10000</timeperimage>
             <randomize>true</randomize>
             <fadetime>1000</fadetime>
             <animation effect="zoom" start="110" end="130" center="auto" time="16000" tween="cubic" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
             <animation effect="slide" start="-10,-10" end="20,20" time="8000" tween="cubic" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
-            <visible>![Skin.HasSetting(HomeWeatherFanart) + !IsEmpty(Skin.String(HomeWeatherFanartFolder))]</visible>
-        </control>
-        <control type="multiimage">
-            <left>0</left>
-            <top>0</top>
-            <width>1280</width>
-            <height>720</height>
-            <imagepath background="true">$INFO[Skin.String(HomeWeatherFanartFolder)]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
-            <timeperimage>10000</timeperimage>
-            <randomize>true</randomize>
-            <fadetime>1000</fadetime>  
-            <visible>Skin.HasSetting(HomeWeatherFanart) + !IsEmpty(Skin.String(HomeWeatherFanartFolder))</visible>
-            <animation effect="fade" time="200">WindowClose</animation>
         </control>
     </include>
     <include name="CommonSettingsBackground">
@@ -1695,7 +1683,7 @@
             <right>20</right>
             <bottom>10</bottom>
             <aspectratio>keep</aspectratio>
-            <texture>$INFO[VideoPlayer.Studio,special://skin/extras/flagging/studios/,.png]</texture>
+            <texture>$VAR[StudioIcon]$INFO[VideoPlayer.Studio,,.png]</texture>
         </control>
         <control type="grouplist">
             <description>Media Codec Flagging Images</description>
@@ -1710,5 +1698,4 @@
             <include>AudioCodecFlaggingConditions</include>
         </control>
     </include>
-
 </includes>

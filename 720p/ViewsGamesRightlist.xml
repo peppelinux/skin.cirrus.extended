@@ -328,7 +328,7 @@
           <aspectratio>keep</aspectratio>
           <align>right</align>
           <aligny>bottom</aligny>
-          <texture border="2">$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
+          <texture border="2">$VAR[StudioIcon]$INFO[ListItem.Studio,,.png]</texture>
         </control>
         <control type="image">
           <left>282r</left>

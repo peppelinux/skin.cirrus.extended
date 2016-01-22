@@ -385,7 +385,7 @@
                 <left>0</left>
                 <top>300</top>
                 <aspectratio align="center">keep</aspectratio>
-                <texture border="2">$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
+                <texture border="2">$VAR[StudioIcon]$INFO[ListItem.Studio,,.png]</texture>
                 <!-- Games Studioflags here  -->
             </control>
         </control>

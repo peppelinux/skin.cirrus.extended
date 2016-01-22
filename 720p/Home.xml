@@ -139,6 +139,7 @@
             <include condition="Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu)">HomeHorzLowSubmenu</include>
             <!-- Weather Plus Widget Beginning -->
             <control type="group">
+                <!-- <visible>!IsEmpty(Window(Weather).Property(Daily.IsFetched))</visible> -->
                 <left>80</left>
                 <top>100</top>
                 <animation type="Conditional" condition="Container(9000).HasFocus(25)" reversible="false">
@@ -158,7 +159,7 @@
                     <height>210</height>
                     <texture>videoinfoback.png</texture>
                 </control>
-                <visible>Container(9000).HasFocus(24) + Weather.IsFetched + !Skin.HasSetting(NoBackgroundWeatherWidget) + !Skin.HasSetting(themelighthorz)</visible>
+                <visible>Container(9000).HasFocus(24) + !Skin.HasSetting(NoBackgroundWeatherWidget) + !Skin.HasSetting(themelighthorz)</visible>
                 <control type="label">
                     <description>location label</description>
                     <left>10</left>
@@ -172,14 +173,8 @@
                     <textcolor>white</textcolor>
                     <shadowcolor>black</shadowcolor>
                 </control>
-                <control type="image">
-                    <description>Weather image</description>
-                    <left>140</left>
-                    <top>45</top>
-                    <width>80</width>
-                    <height>80</height>
-                    <texture>$INFO[Window(Weather).Property(Current.ConditionIcon)]</texture>
-                </control>
+                <include condition="Skin.HasSetting(resource.images.weathericons.multi)">WeatherIconHomeCurrentAnimated</include>
+                <include condition="!Skin.HasSetting(resource.images.weathericons.multi)">WeatherIconHomeCurrentSingle</include>
                 <control type="label">
                     <description>Temp Label</description>
                     <left>10</left>
@@ -237,14 +232,8 @@
                             <aspectratio>stretch</aspectratio>
                             <texture>separator.png</texture>
                         </control>
-                        <control type="image">
-                            <description>Weather image</description>
-                            <left>40</left>
-                            <top>60</top>
-                            <width>70</width>
-                            <height>70</height>
-                            <texture>$VAR[WeatherIcon1]</texture>
-                        </control>
+                        <include condition="!Skin.HasSetting(resource.images.weathericons.multi)">WeatherIconHomeDay1Single</include>
+                        <include condition="Skin.HasSetting(resource.images.weathericons.multi)">WeatherIconHomeDay1Animated</include>
                         <control type="image">
                             <left>30</left>
                             <top>140</top>
@@ -308,14 +297,8 @@
                             <aspectratio>stretch</aspectratio>
                             <texture>separator.png</texture>
                         </control>
-                        <control type="image">
-                            <description>Weather image</description>
-                            <left>40</left>
-                            <top>60</top>
-                            <width>70</width>
-                            <height>70</height>
-                            <texture>$VAR[WeatherIcon2]</texture>
-                        </control>
+                        <include condition="!Skin.HasSetting(resource.images.weathericons.multi)">WeatherIconHomeDay2Single</include>
+                        <include condition="Skin.HasSetting(resource.images.weathericons.multi)">WeatherIconHomeDay2Animated</include>
                         <control type="image">
                             <left>30</left>
                             <top>140</top>
@@ -379,14 +362,8 @@
                             <aspectratio>stretch</aspectratio>
                             <texture>separator.png</texture>
                         </control>
-                        <control type="image">
-                            <description>Weather image</description>
-                            <left>40</left>
-                            <top>60</top>
-                            <width>70</width>
-                            <height>70</height>
-                            <texture>$VAR[WeatherIcon3]</texture>
-                        </control>
+                        <include condition="!Skin.HasSetting(resource.images.weathericons.multi)">WeatherIconHomeDay3Single</include>
+                        <include condition="Skin.HasSetting(resource.images.weathericons.multi)">WeatherIconHomeDay3Animated</include>
                         <control type="image">
                             <left>30</left>
                             <top>140</top>
@@ -450,14 +427,8 @@
                             <aspectratio>stretch</aspectratio>
                             <texture>separator.png</texture>
                         </control>
-                        <control type="image">
-                            <description>Weather image</description>
-                            <left>40</left>
-                            <top>60</top>
-                            <width>70</width>
-                            <height>70</height>
-                            <texture>$VAR[WeatherIcon4]</texture>
-                        </control>
+                        <include condition="!Skin.HasSetting(resource.images.weathericons.multi)">WeatherIconHomeDay4Single</include>
+                        <include condition="Skin.HasSetting(resource.images.weathericons.multi)">WeatherIconHomeDay4Animated</include>
                         <control type="image">
                             <left>30</left>
                             <top>140</top>
@@ -521,14 +492,8 @@
                             <aspectratio>stretch</aspectratio>
                             <texture>separator.png</texture>
                         </control>
-                        <control type="image">
-                            <description>Weather image</description>
-                            <left>40</left>
-                            <top>60</top>
-                            <width>70</width>
-                            <height>70</height>
-                            <texture>$VAR[WeatherIcon5]</texture>
-                        </control>
+                        <include condition="!Skin.HasSetting(resource.images.weathericons.multi)">WeatherIconHomeDay5Single</include>
+                        <include condition="Skin.HasSetting(resource.images.weathericons.multi)">WeatherIconHomeDay5Animated</include>
                         <control type="image">
                             <left>30</left>
                             <top>140</top>
@@ -624,7 +589,7 @@
                     <height>33</height>
                     <label>-</label>
                     <font>-</font>
-                    
+
                     <onclick>ActivateWindow(ShutdownMenu)</onclick>
                     <texturefocus>homepowerbuttonFO.png</texturefocus>
                     <texturenofocus>homepowerbuttonNF.png</texturenofocus>
@@ -642,7 +607,7 @@
                     <height>33</height>
                     <label>-</label>
                     <font>-</font>
-                    
+
                     <onclick>ActivateWindow(Favourites)</onclick>
                     <texturefocus>homefavouritesbuttonFO.png</texturefocus>
                     <texturenofocus>homefavouritesbuttonNF.png</texturenofocus>
@@ -660,7 +625,7 @@
                     <height>24</height>
                     <label>-</label>
                     <font>-</font>
-                    
+
                     <onclick>XBMC.PlayDVD()</onclick>
                     <texturefocus>OSDDvdFO.png</texturefocus>
                     <texturenofocus>OSDDvdNF.png</texturenofocus>
@@ -679,7 +644,7 @@
                     <height>24</height>
                     <label>-</label>
                     <font>-</font>
-                    
+
                     <onclick>ActivateWindow(1113)</onclick>
                     <texturefocus>OSDDvdFO.png</texturefocus>
                     <texturenofocus>OSDDvdNF.png</texturenofocus>
@@ -697,7 +662,7 @@
                     <height>33</height>
                     <label>-</label>
                     <font>-</font>
-                    
+
                     <onclick>RunScript(script.globalsearch)</onclick>
                     <texturefocus>homeglobalsearchbuttonFO.png</texturefocus>
                     <texturenofocus>homeglobalsearchbuttonNF.png</texturenofocus>
@@ -716,7 +681,7 @@
                     <height>33</height>
                     <label>-</label>
                     <font>-</font>
-                    
+
                     <onclick>ActivateWindow(114)</onclick>
                     <texturefocus>homeplaybuttonFO.png</texturefocus>
                     <texturenofocus>homeplaybuttonNF.png</texturenofocus>
@@ -735,7 +700,7 @@
                     <height>33</height>
                     <label>-</label>
                     <font>-</font>
-                    
+
                     <onclick>ActivateWindow(114)</onclick>
                     <texturefocus>homeplaybuttonFO.png</texturefocus>
                     <texturenofocus>homeplaybuttonNF.png</texturenofocus>
@@ -754,7 +719,7 @@
                     <height>40</height>
                     <label>-</label>
                     <font>-</font>
-                    
+
                     <onclick>Fullscreen</onclick>
                     <texturefocus>fullscreen_v1FO.png</texturefocus>
                     <texturenofocus>fullscreen_v1NF.png</texturenofocus>
@@ -773,7 +738,7 @@
                     <height>40</height>
                     <label>-</label>
                     <font>-</font>
-                    
+
                     <onclick>Fullscreen</onclick>
                     <texturefocus>fullscreen_v1FO.png</texturefocus>
                     <texturenofocus>fullscreen_v1NF.png</texturenofocus>
@@ -798,7 +763,7 @@
                     <height>43</height>
                     <label>-</label>
                     <font>-</font>
-                    
+
                     <onclick>ActivateWindow(ShutdownMenu)</onclick>
                     <texturefocus>homepowerbuttonFO.png</texturefocus>
                     <texturenofocus>homepowerbuttonNF.png</texturenofocus>
@@ -816,7 +781,7 @@
                     <height>43</height>
                     <label>-</label>
                     <font>-</font>
-                    
+
                     <onclick>ActivateWindow(Favourites)</onclick>
                     <texturefocus>homefavouritesbuttonFO.png</texturefocus>
                     <texturenofocus>homefavouritesbuttonNF.png</texturenofocus>
@@ -834,7 +799,7 @@
                     <height>33</height>
                     <label>-</label>
                     <font>-</font>
-                    
+
                     <onclick>XBMC.PlayDVD()</onclick>
                     <texturefocus>OSDDvdFO.png</texturefocus>
                     <texturenofocus>OSDDvdNF.png</texturenofocus>
@@ -853,7 +818,7 @@
                     <height>33</height>
                     <label>-</label>
                     <font>-</font>
-                    
+
                     <onclick>ActivateWindow(1113)</onclick>
                     <texturefocus>OSDDvdFO.png</texturefocus>
                     <texturenofocus>OSDDvdNF.png</texturenofocus>
@@ -871,7 +836,7 @@
                     <height>43</height>
                     <label>-</label>
                     <font>-</font>
-                    
+
                     <onclick>RunScript(script.globalsearch)</onclick>
                     <texturefocus>homeglobalsearchbuttonFO.png</texturefocus>
                     <texturenofocus>homeglobalsearchbuttonNF.png</texturenofocus>
@@ -890,7 +855,7 @@
                     <height>43</height>
                     <label>-</label>
                     <font>-</font>
-                    
+
                     <onclick>ActivateWindow(114)</onclick>
                     <texturefocus>homeplaybuttonFO.png</texturefocus>
                     <texturenofocus>homeplaybuttonNF.png</texturenofocus>
@@ -909,7 +874,7 @@
                     <height>43</height>
                     <label>-</label>
                     <font>-</font>
-                    
+
                     <onclick>ActivateWindow(114)</onclick>
                     <texturefocus>homeplaybuttonFO.png</texturefocus>
                     <texturenofocus>homeplaybuttonNF.png</texturenofocus>
@@ -928,7 +893,7 @@
                     <height>50</height>
                     <label>-</label>
                     <font>-</font>
-                    
+
                     <onclick>Fullscreen</onclick>
                     <texturefocus>fullscreen_v1FO.png</texturefocus>
                     <texturenofocus>fullscreen_v1NF.png</texturenofocus>
@@ -947,7 +912,7 @@
                     <height>50</height>
                     <label>-</label>
                     <font>-</font>
-                    
+
                     <onclick>Fullscreen</onclick>
                     <texturefocus>fullscreen_v1FO.png</texturefocus>
                     <texturenofocus>fullscreen_v1NF.png</texturenofocus>
@@ -1008,15 +973,8 @@
                 <textcolor>grey</textcolor>
                 <label>$INFO[Weather.Temperature]  $INFO[System.Time]  $INFO[System.Date(DDD)],  $INFO[System.Date(DD MMM YYYY)]</label>
             </control>
-            <control type="image">
-                <description>Weather image</description>
-                <left>0</left>
-                <top>-10</top>
-                <width>50</width>
-                <height>50</height>
-                <aspectratio>keep</aspectratio>
-                <texture>$INFO[Weather.Conditions]</texture>
-            </control>
+            <include condition="Skin.HasSetting(resource.images.weathericons.multi)">WeatherIconHomeTopAnimated</include>
+            <include condition="!Skin.HasSetting(resource.images.weathericons.multi)">WeatherIconHomeTopSingle</include>
         </control>
         <control type="group">
             <visible>Skin.HasSetting(originalcirrusclock)</visible>
