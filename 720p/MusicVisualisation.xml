@@ -623,7 +623,7 @@
             <visible>Player.HasAudio + Skin.HasSetting(CDWallNoVisualisation)</visible>
         </control>
         <control type="group">
-            <visible>!Window.IsVisible(AddonSettings) + !Window.IsVisible(VisualisationPresetList)</visible>
+            <visible>!Window.IsVisible(AddonSettings) + !Window.IsVisible(VisualisationPresetList) + !Window.IsVisible(selectdialog) + !Window.IsVisible(osdaudiodspsettings)</visible>
             <!-- Zombie -->
             <control type="group">
                 <visible>Skin.HasSetting(zombie_osd)</visible>
@@ -852,7 +852,7 @@
             <left>240</left>
             <top>100</top>
             <include>VisibleFadeEffect</include>
-            <visible>Player.ShowCodec + ![Window.IsVisible(script-cu-lrclyrics-main.xml) | Window.IsVisible(VisualisationSettings) | Window.IsVisible(VisualisationPresetList)]</visible>
+            <visible>Player.ShowCodec + ![Window.IsVisible(script-cu-lrclyrics-main.xml) | Window.IsVisible(VisualisationSettings) | Window.IsVisible(VisualisationPresetList) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(selectdialog)]</visible>
             <control type="image">
                 <description>gradient</description>
                 <left>0</left>
@@ -950,7 +950,7 @@
                 <wrapmultiline>true</wrapmultiline>
             </control>
         </control>
-         --><control type="button" id="999">
+        <control type="button" id="999">
             <left>-10</left>
             <top>-10</top>
             <width>1</width>

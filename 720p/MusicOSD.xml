@@ -5,7 +5,7 @@
         <control type="group">
             <animation effect="slide" start="0,-145" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
             <animation effect="slide" start="0,0" end="0,-145" time="300" delay="150" tween="quadratic" easing="out">WindowClose</animation>
-            <animation effect="slide" start="0,0" end="0,-145" time="300" tween="quadratic" easing="out" condition="Window.IsVisible(VisualisationSettings) | Window.IsVisible(VisualisationPresetList)">Conditional</animation>
+            <animation effect="slide" start="0,0" end="0,-145" time="300" tween="quadratic" easing="out" condition="Window.IsVisible(VisualisationSettings) | Window.IsVisible(VisualisationPresetList) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(selectdialog)">Conditional</animation>
             <control type="image">
                 <!-- background -->
                 <left>0</left>
@@ -105,7 +105,7 @@
             </control>
             <!-- GROUP FOR REPEAT AND RANDOM BUTTONS -->
             <control type="group" id="201">
-                <left>600</left>
+                <left>575</left>
                 <top>20</top>
                 <control type="button" id="704">
                     <left>50</left>
@@ -193,7 +193,7 @@
             </control>
             <!-- SETTING GROUP -->
             <control type="group" id="200">
-                <left>800</left>
+                <left>775</left>
                 <top>20</top>
                 <control type="button" id="700">
                     <left>0</left>
@@ -205,14 +205,28 @@
                     <texturefocus>OSDPlaylistFO.png</texturefocus>
                     <texturenofocus>OSDPlaylistNF.png</texturenofocus>
                     <onleft>705</onleft>
-                    <onright>500</onright>
+                    <onright>706</onright>
                     <onup>600</onup>
                     <ondown>600</ondown>
                     <onclick>Dialog.Close(musicosd)</onclick>
                     <onclick>ActivateWindow(musicplaylist)</onclick>
                 </control>
-                <control type="button" id="500">
+                <control type="button" id="706">
                     <left>50</left>
+                    <top>0</top>
+                    <width>40</width>
+                    <height>28</height>
+                    <label>31128</label>
+                    <font>-</font>
+                    <texturefocus>OSDAudioFO.png</texturefocus>
+                    <texturenofocus>OSDAudioNF.png</texturenofocus>
+                    <onleft>700</onleft>
+                    <onright>500</onright>
+                    <onclick>ActivateWindow(OSDAudioDSPSettings)</onclick>
+                    <visible>system.getbool(audiooutput.dspaddonsenabled)</visible>
+                </control>
+                <control type="button" id="500">
+                    <left>100</left>
                     <top>0</top>
                     <width>40</width>
                     <height>28</height>
@@ -220,11 +234,12 @@
                     <font>-</font>
                     <texturefocus>OSDVizFO.png</texturefocus>
                     <texturenofocus>OSDVizNF.png</texturenofocus>
-                    <onleft>700</onleft>
+                    <onleft>706</onleft>
                     <onright>701</onright>
                 </control>
+                
                 <control type="button" id="701">
-                    <left>100</left>
+                    <left>150</left>
                     <top>0</top>
                     <width>40</width>
                     <height>28</height>
@@ -237,7 +252,7 @@
                     <onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
                 </control>
                 <control type="button" id="702">
-                    <left>150</left>
+                    <left>200</left>
                     <top>0</top>
                     <width>40</width>
                     <height>28</height>
@@ -251,7 +266,7 @@
                 </control>
                 <!-- LYRICS  -->
                 <control type="togglebutton" id="703">
-                    <left>200</left>
+                    <left>250</left>
                     <top>0</top>
                     <width>40</width>
                     <height>28</height>
