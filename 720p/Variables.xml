@@ -113,7 +113,7 @@
         <value>$INFO[ListItem.VideoCodec,special://skin/extras/flagging/video/,.png]</value>
     </variable>
     <variable name="AudioChannels">
-        <value condition="IsEmpty(ListItem.AudioChannels) | IsEmpty(VideoPlayer.AudioChannels) | IsEmpty(Container(100).ListItem.Property(AudioChannels))">special://skin/extras/flagging/audio/0.png</value>
+        <value condition="IsEmpty(ListItem.AudioChannels) + IsEmpty(VideoPlayer.AudioChannels) + IsEmpty(Container(100).ListItem.Property(AudioChannels))">special://skin/extras/flagging/audio/0.png</value>
         <value condition="Window.IsVisible(script-globalsearch-infodialog.xml)">$INFO[Container(100).ListItem.Property(AudioChannels),special://skin/extras/flagging/audio/,.png]</value>
         <value condition="Window.IsVisible(fullscreenvideo)">$INFO[VideoPlayer.AudioChannels,special://skin/extras/flagging/audio/,.png]</value>
         <value>$INFO[ListItem.AudioChannels,special://skin/extras/flagging/audio/,.png]</value>
@@ -970,15 +970,15 @@
     </variable>
     <!-- Weather Fanart Home Background -->
     <variable name="WeatherFanartHomeBackground">
-        <value condition="Skin.HasSetting(HomeWeatherFanart) + !IsEmpty(Skin.String(resource.images.weatherfanart.path) + !Skin.HasSetting(resource.images.weatherfanart.multi)">$INFO[Skin.String(resource.images.weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode),,.jpg]</value>
-        <value condition="Skin.HasSetting(HomeWeatherFanart) + !IsEmpty(Skin.String(resource.images.weatherfanart.path) + Skin.HasSetting(resource.images.weatherfanart.multi)">$INFO[Skin.String(resource.images.weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]</value>
-        <value condition="Skin.HasSetting(HomeWeatherFanart) + !IsEmpty(Skin.String(Home_Custom_Back_Weather_Folder)) + IsEmpty(Skin.String(resource.images.weatherfanart.path)">$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</value>
+        <value condition="Skin.HasSetting(HomeWeatherFanart) + !IsEmpty(Skin.String(resource.images.weatherfanart.path)) + !Skin.HasSetting(resource.images.weatherfanart.multi)">$INFO[Skin.String(resource.images.weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode),,.jpg]</value>
+        <value condition="Skin.HasSetting(HomeWeatherFanart) + !IsEmpty(Skin.String(resource.images.weatherfanart.path)) + Skin.HasSetting(resource.images.weatherfanart.multi)">$INFO[Skin.String(resource.images.weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]</value>
+        <value condition="Skin.HasSetting(HomeWeatherFanart) + !IsEmpty(Skin.String(Home_Custom_Back_Weather_Folder)) + IsEmpty(Skin.String(resource.images.weatherfanart.path))">$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</value>
         <value>special://skin/backgrounds/weatherfanart.jpg</value>
     </variable>
     <!-- Weather Fanart Background -->
     <variable name="WeatherFanartBackground">
-        <value condition="!IsEmpty(Skin.String(resource.images.weatherfanart.path) + !Skin.HasSetting(resource.images.weatherfanart.multi)">$INFO[Skin.String(resource.images.weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode),,.jpg]</value>
-        <value condition="!IsEmpty(Skin.String(resource.images.weatherfanart.path) + Skin.HasSetting(resource.images.weatherfanart.multi)">$INFO[Skin.String(resource.images.weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]</value>
+        <value condition="!IsEmpty(Skin.String(resource.images.weatherfanart.path)) + !Skin.HasSetting(resource.images.weatherfanart.multi)">$INFO[Skin.String(resource.images.weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode),,.jpg]</value>
+        <value condition="!IsEmpty(Skin.String(resource.images.weatherfanart.path)) + Skin.HasSetting(resource.images.weatherfanart.multi)">$INFO[Skin.String(resource.images.weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]</value>
         <value>special://skin/backgrounds/weatherfanart.jpg</value>
     </variable>
 </includes>

@@ -4,10 +4,48 @@
     <include>dialogeffect</include>
     <coordinates>
         <system>2</system>
-        <left>180</left>
-        <top>145</top>
+        <left>220</left>
+        <top>160</top>
     </coordinates>
     <controls>
+        <control type="group">
+            <left>0</left>
+            <top>-90</top>
+            <visible>Control.IsVisible(313)</visible>
+            <control type="image">
+                <left>0</left>
+                <top>0</top>
+                <width>860</width>
+                <height>102</height>
+                <texture border="20">OverlayDialogBackground.png</texture>
+            </control>
+            <control type="image">
+                <left>50</left>
+                <top>18</top>
+                <width>760</width>
+                <height>32</height>
+                <aspectratio>stretch</aspectratio>
+                <texture border="20">KeyboardEditArea.png</texture>
+            </control>
+            <control type="image">
+                <left>0</left>
+                <top>53</top>
+                <width>860</width>
+                <height>2</height>
+                <aspectratio>stretch</aspectratio>
+                <texture>separator.png</texture>
+            </control>
+            <control type="label" id="313">
+                <description>HZCODE label</description>
+                <left>55</left>
+                <top>18</top>
+                <width>750</width>
+                <height>30</height>
+                <font>font13</font>
+                <align>center</align>
+                <aligny>center</aligny>
+            </control>
+        </control>
         <control type="group">
             <include>VisibleFadeEffect</include>
             <visible>!Window.IsVisible(numericinput)</visible>

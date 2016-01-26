@@ -1140,6 +1140,13 @@
                         <altlabel>1024</altlabel>
                         <usealttexture>Container.Content(TVShows)</usealttexture>
                     </control>
+                    <control type="button" id="11">
+                        <description>Play Trailer</description>
+                        <include>ButtonVideoInfoCommonValues</include>
+                        <label>20410</label>
+                        <ondown>ActivateWindow(1121)</ondown>
+                        <visible>!IsEmpty(ListItem.Trailer)</visible>
+                    </control>
                     <control type="button" id="134">
                         <description>Wishlist</description>
                         <include>ButtonVideoInfoCommonValues</include>
@@ -1153,6 +1160,11 @@
                         <description>Refresh</description>
                         <include>ButtonVideoInfoCommonValues</include>
                         <label>184</label>
+                    </control>
+                    <control type="button" id="7">
+                        <description>Refresh</description>
+                        <include>ButtonVideoInfoCommonValues</include>
+                        <label>38023</label>
                     </control>
                     <control type="button" id="10">
                         <description>Choose Art</description>
@@ -1183,13 +1195,7 @@
                         <onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=movie, dbid=$INFO[ListItem.DBID], extrafanart)</onclick>
                         <visible>Container.Content(movies) +System.HasAddon(script.artwork.downloader)</visible>
                     </control>
-                    <control type="button" id="11">
-                        <description>Play Trailer</description>
-                        <include>ButtonVideoInfoCommonValues</include>
-                        <label>20410</label>
-                        <ondown>ActivateWindow(1121)</ondown>
-                        <visible>!IsEmpty(ListItem.Trailer)</visible>
-                    </control>
+                    
                     <control type="button" id="107">
                         <description>Home Cinema Experience</description>
                         <include>ButtonVideoInfoCommonValues</include>

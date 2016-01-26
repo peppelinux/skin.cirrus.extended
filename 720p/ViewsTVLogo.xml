@@ -631,6 +631,7 @@
                     <top>-5</top>
                     <aspectratio align="center">keep</aspectratio>
                     <texture diffuse="maskflags.png">$VAR[StudioIcon]$INFO[ListItem.Studio,,.png]</texture>
+                </control>
             </control>
         </control>
     </include>
