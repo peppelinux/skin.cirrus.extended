@@ -1,12 +1,12 @@
-# XBMC Media Center language file
+# Kodi Media Center language file
 # Addon Name: Cirrus Extended V3
 # Addon id: skin.cirrus.extended.v3
 # Addon version: 3.0.0
 # Addon Provider: butchabay
 msgid ""
 msgstr ""
-"Project-Id-Version: XBMC-Addons\n"
-"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"Project-Id-Version: Kodi-Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@kodi.tv\n"
 "POT-Creation-Date: 2013-01-10 11:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -22,7 +22,7 @@ msgid "skin created by crookas - modded by butchabay, malexx and more."
 msgstr ""
 
 msgctxt "Addon Description"
-msgid "mod based on cirrus - our goal is to keep the original look, functions and extend them to make use of all the extra stuff XBMC has to offer."
+msgid "mod based on cirrus - our goal is to keep the original look, functions and extend them to make use of all the extra stuff Kodi has to offer."
 msgstr ""
 
 msgctxt "Addon Disclaimer"
@@ -248,7 +248,7 @@ msgid "Enable Lyrics Addon"
 msgstr ""
 
 msgctxt "#31128"
-msgid "XBMC Lyrics"
+msgid "Kodi Lyrics"
 msgstr ""
 
 msgctxt "#31131"
@@ -519,7 +519,7 @@ msgid "[B]CONFIGURE WEATHER SETTINGS[/B][CR][CR]Set three cities to collect weat
 msgstr ""
 
 msgctxt "#31405"
-msgid "[B]CONFIGURE NETWORK SETTINGS[/B][CR][CR]Setup control of XBMC via UPnP and HTTP · Configure file sharing[CR]Set internet access options"
+msgid "[B]CONFIGURE NETWORK SETTINGS[/B][CR][CR]Setup control of Kodi via UPnP and HTTP · Configure file sharing[CR]Set internet access options"
 msgstr ""
 
 msgctxt "#31406"
@@ -527,7 +527,7 @@ msgid "[B]CONFIGURE SYSTEM SETTINGS[/B][CR][CR]Setup and calibrate displays · C
 msgstr ""
 
 msgctxt "#31408"
-msgid "[B]CONFIGURE ADD-ONS[/B][CR][CR]Manage your installed Add-ons · Browse for and install Add-ons from xbmc.org[CR]Modify Add-on settings"
+msgid "[B]CONFIGURE ADD-ONS[/B][CR][CR]Manage your installed Add-ons · Browse for and install Add-ons from kodi.tv[CR]Modify Add-on settings"
 msgstr ""
 
 msgctxt "#31409"
@@ -539,7 +539,7 @@ msgstr ""
 #. v2.08
 
 msgctxt "#31421"
-msgid "Select your XBMC user Profile to login and continue"
+msgid "Select your Kodi user Profile to login and continue"
 msgstr ""
 
 #Extra Unified PVR labels

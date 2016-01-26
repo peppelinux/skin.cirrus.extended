@@ -1,12 +1,12 @@
-# XBMC Media Center language file
+# Kodi Media Center language file
 # Addon Name: Cirrus Extended V3
 # Addon id: skin.cirrus.extended.v3
 # Addon version: 3.0.0
 # Addon Provider: butchabay
 msgid ""
 msgstr ""
-"Project-Id-Version: XBMC-Addons\n"
-"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"Project-Id-Version: Kodi-Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@kodi.tv\n"
 "POT-Creation-Date: 2013-01-10 11:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -22,7 +22,7 @@ msgid "skin created by crookas - modded by butchabay, malexx and more."
 msgstr ""
 
 msgctxt "Addon Description"
-msgid "mod based on cirrus - our goal is to keep the original look, functions and extend them to make use of all the extra stuff XBMC has to offer."
+msgid "mod based on cirrus - our goal is to keep the original look, functions and extend them to make use of all the extra stuff Kodi has to offer."
 msgstr ""
 
 msgctxt "Addon Disclaimer"
@@ -202,8 +202,8 @@ msgid "Enable Lyrics Addon"
 msgstr "Εμφάνιση στίχων στις \"Aπεικόνισεις οθόνης (OSD)\""
 
 msgctxt "#31128"
-msgid "XBMC Lyrics"
-msgstr "Στίχοι XBMC"
+msgid "Kodi Lyrics"
+msgstr "Στίχοι Kodi"
 
 msgctxt "#31185"
 msgid "Listed Shows"
@@ -358,7 +358,7 @@ msgid "[B]CONFIGURE WEATHER SETTINGS[/B][CR][CR]Set three cities to collect weat
 msgstr "[B]ΠΡΟΣΑΡΜΟΓΗ ΡΥΘΜΙΣΕΩΝ ΚΑΙΡΟΥ[/B][CR][CR]Ορισμός τριών πόλεων για τις οποίες θα γίνει πρόγνωση καιρού"
 
 msgctxt "#31405"
-msgid "[B]CONFIGURE NETWORK SETTINGS[/B][CR][CR]Setup control of XBMC via UPnP and HTTP · Configure file sharing[CR]Set internet access options"
+msgid "[B]CONFIGURE NETWORK SETTINGS[/B][CR][CR]Setup control of Kodi via UPnP and HTTP · Configure file sharing[CR]Set internet access options"
 msgstr "[B]ΠΡΟΣΑΡΜΟΓΗ ΡΥΘΜΙΣΕΩΝ ΔΙΚΤΥΟΥ[/B][CR][CR]Προσαρμογή πρωτοκόλλων επικοινωνίας και μεταφοράς κοινόχρηστων αρχείων[CR]Ρύθμιση κοινόχρηστων αρχείων πολυμέσων · Ορισμός ρυθμίσεων δικτύου"
 
 msgctxt "#31406"
@@ -374,8 +374,8 @@ msgid "[B]CONFIGURE TV SETTINGS[/B][CR][CR]Change fullscreen info · Manage EPG 
 msgstr ""
 
 msgctxt "#31421"
-msgid "Select your XBMC user Profile to login and continue"
-msgstr "Επιλέξτε προφίλ χρήστη για το XBMC[CR]για να συνδεθείτε και συνεχίστε"
+msgid "Select your Kodi user Profile to login and continue"
+msgstr "Επιλέξτε προφίλ χρήστη για το Kodi[CR]για να συνδεθείτε και συνεχίστε"
 
 msgctxt "#31501"
 msgid "Scheduled Time"

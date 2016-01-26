@@ -1,12 +1,12 @@
-# XBMC Media Center language file
+# Kodi Media Center language file
 # Addon Name: Cirrus Extended V3
 # Addon id: skin.cirrus.extended.v3
 # Addon version: 3.0.0
 # Addon Provider: butchabay
 msgid ""
 msgstr ""
-"Project-Id-Version: XBMC-Addons\n"
-"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"Project-Id-Version: Kodi-Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@kodi.tv\n"
 "POT-Creation-Date: 2013-01-10 11:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -22,7 +22,7 @@ msgid "skin created by crookas - modded by butchabay, malexx and more."
 msgstr ""
 
 msgctxt "Addon Description"
-msgid "mod based on cirrus - our goal is to keep the original look, functions and extend them to make use of all the extra stuff XBMC has to offer."
+msgid "mod based on cirrus - our goal is to keep the original look, functions and extend them to make use of all the extra stuff Kodi has to offer."
 msgstr ""
 
 msgctxt "Addon Disclaimer"
@@ -186,8 +186,8 @@ msgid "Enable Lyrics Addon"
 msgstr "Показывать Тексты Песен на OSD Музыки"
 
 msgctxt "#31128"
-msgid "XBMC Lyrics"
-msgstr "XBMC Lyrics"
+msgid "Kodi Lyrics"
+msgstr "Kodi Lyrics"
 
 msgctxt "#31185"
 msgid "Listed Shows"
@@ -314,8 +314,8 @@ msgid "[B]CONFIGURE WEATHER SETTINGS[/B][CR][CR]Set three cities to collect weat
 msgstr "[B]НАСТРОЙКА ПАРАМЕТРОВ ПОГОДЫ[/B][CR][CR]Установить три города для получения информации о погоде"
 
 msgctxt "#31405"
-msgid "[B]CONFIGURE NETWORK SETTINGS[/B][CR][CR]Setup control of XBMC via UPnP and HTTP · Configure file sharing[CR]Set internet access options"
-msgstr "[B]НАСТРОЙКА ПАРАМЕТРОВ СЕТИ[/B][CR][CR]Настроить управление XBMC через UPnP и HTTP · Настроить обмен файлами[CR]Изменить настройки доступа в интернет"
+msgid "[B]CONFIGURE NETWORK SETTINGS[/B][CR][CR]Setup control of Kodi via UPnP and HTTP · Configure file sharing[CR]Set internet access options"
+msgstr "[B]НАСТРОЙКА ПАРАМЕТРОВ СЕТИ[/B][CR][CR]Настроить управление Kodi через UPnP и HTTP · Настроить обмен файлами[CR]Изменить настройки доступа в интернет"
 
 msgctxt "#31406"
 msgid "[B]CONFIGURE SYSTEM SETTINGS[/B][CR][CR]Setup and calibrate displays · Configure audio output · Setup remote controls[CR]Set power saving options · Enable debugging · Setup master lock"
@@ -326,8 +326,8 @@ msgid "[B]CONFIGURE TV SETTINGS[/B][CR][CR]Change fullscreen info · Manage EPG 
 msgstr ""
 
 msgctxt "#31421"
-msgid "Select your XBMC user Profile to login and continue"
-msgstr "Выберите ваш профиль пользователя XBMC[CR]чтобы войти в систему и продолжить."
+msgid "Select your Kodi user Profile to login and continue"
+msgstr "Выберите ваш профиль пользователя Kodi[CR]чтобы войти в систему и продолжить."
 
 msgctxt "#31501"
 msgid "Scheduled Time"
