@@ -38,23 +38,6 @@
             <textcolor>accent</textcolor>
             <shadowcolor>black</shadowcolor>
         </control>
-        <control type="button">
-            <description>Close Window button</description>
-            <left>770</left>
-            <top>9</top>
-            <width>64</width>
-            <height>32</height>
-            <label>-</label>
-            <font>-</font>
-            <onclick>PreviousMenu</onclick>
-            <texturefocus>DialogCloseButton-focus.png</texturefocus>
-            <texturenofocus>DialogCloseButton.png</texturenofocus>
-            <onleft>3</onleft>
-            <onright>3</onright>
-            <onup>3</onup>
-            <ondown>3</ondown>
-            <visible>system.getbool(input.enablemouse)</visible>
-        </control>
         <control type="label">
             <description>Search string</description>
             <left>30</left>
