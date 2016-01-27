@@ -1165,16 +1165,6 @@
             <visible>Skin.HasSetting(MovieButton24) + !IsEmpty(Skin.String(MovieButton24_label))</visible>
         </item>
         <item>
-            <label>41181</label>
-            <onclick>RunScript(script.randommovie, filtergenre=True)</onclick>
-            <visible>System.HasAddon(script.randommovie)</visible>
-        </item>
-        <item>
-            <label>41182</label>
-            <onclick>RunScript(script.randommovie)</onclick>
-            <visible>System.HasAddon(script.randommovie)</visible>
-        </item>
-        <item>
             <label>41183</label>
             <onclick>ActivateWindow(Videos,MovieSets,return)</onclick>
             <visible>!Skin.HasSetting(hidemovievideofiles)</visible>
