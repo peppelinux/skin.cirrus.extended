@@ -955,7 +955,8 @@
     <!-- Studio Flags -->
     <variable name="StudioIcon">
         <value condition="!IsEmpty(Skin.String(resource.images.studios.path))">$INFO[Skin.String(resource.images.studios.path)]</value>
-        <value>resource://resource.images.studios.white/</value>
+        <value condition="IsEmpty(Skin.String(resource.images.studios.path)) + System.HasAddon(resource.images.studios.white)">resource://resource.images.studios.white/</value>
+        <value>special://skin/extras/flagging/studios/</value>
     </variable>
     <!-- Movie Genre Icons add-on -->	
     <variable name="MovieGenreIcon">
