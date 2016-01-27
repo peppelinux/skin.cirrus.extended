@@ -994,7 +994,7 @@
                                     <width>260</width>
                                     <height>15</height>
                                     <label>$INFO[ListItem.Label]</label>
-                                    <font>cirrus_16_title</font>
+                                    <font>cirrus_16_Bold</font>
                                     <textcolor>white</textcolor>
                                     <aligny>center</aligny>
                                 </control>
@@ -1032,7 +1032,7 @@
                                     <width>260</width>
                                     <height>15</height>
                                     <label>$INFO[ListItem.Label]</label>
-                                    <font>cirrus_16_title</font>
+                                    <font>cirrus_16_Bold</font>
                                     <textcolor>white</textcolor>
                                     <aligny>center</aligny>
                                 </control>

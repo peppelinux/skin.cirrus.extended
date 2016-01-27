@@ -1498,7 +1498,6 @@
             <top>30</top>
             <width>105</width>
             <height>105</height>
-            <aspectratio>keep</aspectratio>
             <imagepath>$INFO[ListItem.ActualIcon]</imagepath>
             <aspectratio>keep</aspectratio>
             <timeperimage>100</timeperimage>
@@ -1524,7 +1523,6 @@
             <width>80</width>
             <height>80</height>
             <aligny>top</aligny>
-            <aspectratio>keep</aspectratio>
             <imagepath>$INFO[ListItem.Thumb]</imagepath>
             <aspectratio>keep</aspectratio>
             <timeperimage>100</timeperimage>
@@ -1548,7 +1546,6 @@
             <top>10</top>
             <width>120</width>
             <height>110</height>
-            <aspectratio>keep</aspectratio>
             <imagepath>$VAR[WeatherIconResourcePath]$INFO[Window.Property(36Hour.$PARAM[item_id].FanartCode)]</imagepath>
             <aspectratio>keep</aspectratio>
             <timeperimage>100</timeperimage>
@@ -1572,7 +1569,6 @@
             <top>20</top>
             <width>130</width>
             <height>160</height>
-            <aspectratio>keep</aspectratio>
             <imagepath>$VAR[WeatherIconResourcePath]$INFO[Window.Property(Weekend.$PARAM[item_id].FanartCode)]</imagepath>
             <aspectratio>keep</aspectratio>
             <timeperimage>100</timeperimage>
