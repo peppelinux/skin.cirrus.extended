@@ -1,3 +1,12 @@
+[B]3.4.0[/B] (01.02.2016)
+- added support for resource addons
+- added customization for icons & fanart (studio, weather, genre)
+- removed skin internal studio icons (use resource addon or custom set in "extras/flagging/studios" directory)
+- different bug fixes
+- removed library editor button
+- removed script.randommovie support
+- removed script.metadata.actors support
+
 [B]3.3.5[/B] (28.09.2015)
 - removed sound resources
 - fixed missing fonts
