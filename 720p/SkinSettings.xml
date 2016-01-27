@@ -286,6 +286,14 @@
                         <selected>Skin.HasSetting(Artistslideshow)</selected>
                         <enable>!Skin.HasSetting(Custombackground) + !Skin.HasSetting(BlackBackground) + !Skin.HasSetting(CDWallNoVisualisation)</enable>
                     </control>
+                    <control type="radiobutton" id="1108">
+                        <description>Script Artist Slide Show Animation</description>
+                        <include>MenuItemSettings</include>
+                        <label>$LOCALIZE[41009]</label>
+                        <onclick>Skin.ToggleSetting(ArtistslideshowAnimation)</onclick>
+                        <selected>Skin.HasSetting(ArtistslideshowAnimation)</selected>
+                        <enable>Skin.HasSetting(Artistslideshow)</enable>
+                    </control>
                     <control type="radiobutton" id="1147">
                         <include>MenuItemSettings</include>
                         <label>$LOCALIZE[41263]</label>
