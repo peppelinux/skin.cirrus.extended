@@ -233,10 +233,6 @@ msgctxt "#31314"
 msgid "Content Scanning Options"
 msgstr "Opzioni di scansione"
 
-msgctxt "#31317"
-msgid "Set Fanart Path"
-msgstr "Scegli il percorso delle Fanart"
-
 msgctxt "#31319"
 msgid "Selected Profile"
 msgstr "Profilo Selezionato"
@@ -244,10 +240,6 @@ msgstr "Profilo Selezionato"
 msgctxt "#31320"
 msgid "Last Logged In"
 msgstr "Ultimo Accesso"
-
-msgctxt "#31321"
-msgid "Karaoke Song Selector"
-msgstr "Selettore di Karaoke"
 
 msgctxt "#31325"
 msgid "Playlist Options"
@@ -860,10 +852,6 @@ msgstr "Artist fanart slideshow on home while playing music"
 msgctxt "#41139"
 msgid "Weather Condition fanart on home"
 msgstr "Weather Condition fanart on home"
-
-msgctxt "#41140"
-msgid "Weather fanart location:"
-msgstr "Weather fanart location:"
 
 msgctxt "#41141"
 msgid "Enable Extended Now Playing (Overrides Clean Home Now Playing)"

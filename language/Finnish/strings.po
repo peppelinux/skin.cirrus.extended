@@ -233,10 +233,6 @@ msgctxt "#31314"
 msgid "Content Scanning Options"
 msgstr "Sisällön hakuasetukset"
 
-msgctxt "#31317"
-msgid "Set Fanart Path"
-msgstr "Polku"
-
 msgctxt "#31319"
 msgid "Selected Profile"
 msgstr "Valittu profiili"
@@ -244,10 +240,6 @@ msgstr "Valittu profiili"
 msgctxt "#31320"
 msgid "Last Logged In"
 msgstr "Viimeksi kirjauduttu"
-
-msgctxt "#31321"
-msgid "Karaoke Song Selector"
-msgstr "Karaoke kappaleen valinta"
 
 msgctxt "#31325"
 msgid "Playlist Options"
@@ -862,10 +854,6 @@ msgstr ""
 
 msgctxt "#41139"
 msgid "Weather Condition fanart on home"
-msgstr ""
-
-msgctxt "#41140"
-msgid "Weather fanart location:"
 msgstr ""
 
 msgctxt "#41141"

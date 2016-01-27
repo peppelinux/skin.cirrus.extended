@@ -233,10 +233,6 @@ msgctxt "#31314"
 msgid "Content Scanning Options"
 msgstr "Opções de busca de conteúdo"
 
-msgctxt "#31317"
-msgid "Set Fanart Path"
-msgstr "Definir caminho do Fanart"
-
 msgctxt "#31319"
 msgid "Selected Profile"
 msgstr "Perfil selecionado"
@@ -244,10 +240,6 @@ msgstr "Perfil selecionado"
 msgctxt "#31320"
 msgid "Last Logged In"
 msgstr "Última conexão"
-
-msgctxt "#31321"
-msgid "Karaoke Song Selector"
-msgstr "Selecionador de Música Karaoke"
 
 msgctxt "#31325"
 msgid "Playlist Options"
@@ -859,10 +851,6 @@ msgstr ""
 
 msgctxt "#41139"
 msgid "Weather Condition fanart on home"
-msgstr ""
-
-msgctxt "#41140"
-msgid "Weather fanart location:"
 msgstr ""
 
 msgctxt "#41141"

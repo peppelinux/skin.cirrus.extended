@@ -253,10 +253,6 @@ msgctxt "#31314"
 msgid "Content Scanning Options"
 msgstr "컨텐츠 검색 옵션"
 
-msgctxt "#31317"
-msgid "Set Fanart Path"
-msgstr "팬아트 경로 설정"
-
 msgctxt "#31319"
 msgid "Selected Profile"
 msgstr "선택된 프로파일"
@@ -879,10 +875,6 @@ msgstr ""
 
 msgctxt "#41139"
 msgid "Weather Condition fanart on home"
-msgstr ""
-
-msgctxt "#41140"
-msgid "Weather fanart location:"
 msgstr ""
 
 msgctxt "#41141"

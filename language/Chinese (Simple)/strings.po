@@ -249,10 +249,6 @@ msgctxt "#31314"
 msgid "Content Scanning Options"
 msgstr "内容扫描选项"
 
-msgctxt "#31317"
-msgid "Set Fanart Path"
-msgstr "设置同人画目录"
-
 msgctxt "#31319"
 msgid "Selected Profile"
 msgstr "选择用户配置文件"
@@ -260,10 +256,6 @@ msgstr "选择用户配置文件"
 msgctxt "#31320"
 msgid "Last Logged In"
 msgstr "最近登录"
-
-msgctxt "#31321"
-msgid "Karaoke Song Selector"
-msgstr "卡拉OK歌曲选择器"
 
 msgctxt "#31325"
 msgid "Playlist Options"
@@ -882,10 +874,6 @@ msgstr ""
 
 msgctxt "#41139"
 msgid "Weather Condition fanart on home"
-msgstr ""
-
-msgctxt "#41140"
-msgid "Weather fanart location:"
 msgstr ""
 
 msgctxt "#41141"

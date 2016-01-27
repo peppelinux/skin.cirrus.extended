@@ -138,8 +138,8 @@
                     </item>
                     <!-- Icons -->
                     <item id="8">
-                        <label>Icons</label>
-                        <label2>Download and set icons</label2>
+                        <label>31013</label>
+                        <label2>31014</label2>
                         <onclick>noop</onclick>
                         <visible>System.HasAddon(script.image.resource.select)</visible>
                     </item>
@@ -2005,11 +2005,11 @@
                     <ondown>9008</ondown>
                     <control type="label" id="90080">
                         <include>MenuTitleSettings</include>
-                        <label>Customize Icons</label>
+                        <label>31015</label>
                     </control>
                     <control type="button" id="90082">
 						<include>MenuItemSettings</include>
-                        <label>Studio Icons</label>
+                        <label>31016</label>
 						<label2>$INFO[Skin.String(resource.images.studios.name)]</label2>
 						<onclick>RunScript(script.image.resource.select,type=resource.images.studios&amp;property=resource.images.studios)</onclick>
 					</control>
@@ -2022,25 +2022,25 @@
 					</control> -->
 					<control type="button" id="90084">
 						<include>MenuItemSettings</include>
-                        <label>Moviegenre Icons</label>
+                        <label>31017</label>
 						<label2>$INFO[Skin.String(resource.images.moviegenreicons.name)]</label2>
 						<onclick>RunScript(script.image.resource.select,type=resource.images.moviegenreicons&amp;property=resource.images.moviegenreicons)</onclick>
 					</control>
 					<control type="button" id="90085">
 						<include>MenuItemSettings</include>
-                        <label>Musicgenre Icons</label>
+                        <label>31018</label>
 						<label2>$INFO[Skin.String(resource.images.musicgenreicons.name)]</label2>
 						<onclick>RunScript(script.image.resource.select,type=resource.images.musicgenreicons&amp;property=resource.images.musicgenreicons)</onclick>
 					</control>
 					<control type="button" id="90086">
 						<include>MenuItemSettings</include>
-                        <label>Weater Icons</label>
+                        <label>31019</label>
 						<label2>$INFO[Skin.String(resource.images.weathericons.name)]</label2>
 						<onclick>RunScript(script.image.resource.select,type=resource.images.weathericons&amp;property=resource.images.weathericons)</onclick>
 					</control>
                     <control type="button" id="90087">
 						<include>MenuItemSettings</include>
-                        <label>Weater Fanart</label>
+                        <label>31020</label>
 						<label2>$INFO[Skin.String(resource.images.weatherfanart.name)]</label2>
 						<onclick>RunScript(script.image.resource.select,type=resource.images.weatherfanart&amp;property=resource.images.weatherfanart)</onclick>
 					</control>

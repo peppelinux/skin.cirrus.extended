@@ -71,10 +71,6 @@ msgctxt "#31009"
 msgid "Status:"
 msgstr ""
 
-msgctxt "#31010"
-msgid "Enable Debug Grid"
-msgstr ""
-
 msgctxt "#31011"
 msgid "Enable Debug Info"
 msgstr ""
@@ -83,7 +79,37 @@ msgctxt "#31012"
 msgid "Edit submenu"
 msgstr ""
 
-#empty strings from id 31013 to 31020
+msgctxt "#31013"
+msgid "Icons"
+msgstr ""
+
+msgctxt "#31014"
+msgid "Download and set icons"
+msgstr ""
+
+msgctxt "#31015"
+msgid "Customize Icons"
+msgstr ""
+
+msgctxt "#31016"
+msgid "Studio Icons"
+msgstr "
+
+msgctxt "#31017"
+msgid "Moviegenre Icons"
+msgstr "
+
+msgctxt "#31018"
+msgid "Musicgenre Icons"
+msgstr "
+
+msgctxt "#31019"
+msgid "Weater Icons"
+msgstr "
+
+msgctxt "#31020"
+msgid "Weater Fanart"
+msgstr "
 
 msgctxt "#31021"
 msgid "Video: Files"
@@ -404,10 +430,6 @@ msgctxt "#31307"
 msgid "Hide Fanart"
 msgstr ""
 
-msgctxt "#31317"
-msgid "Set Fanart Path"
-msgstr ""
-
 msgctxt "#31309"
 msgid "Memory Used:"
 msgstr ""
@@ -438,10 +460,6 @@ msgstr ""
 
 msgctxt "#31320"
 msgid "Last Logged In"
-msgstr ""
-
-msgctxt "#31321"
-msgid "Karaoke Song Selector"
 msgstr ""
 
 msgctxt "#31325"
@@ -1191,10 +1209,6 @@ msgstr ""
 
 msgctxt "#41139"
 msgid "Weather Condition fanart on home"
-msgstr ""
-
-msgctxt "#41140"
-msgid "Weather fanart location:"
 msgstr ""
 
 msgctxt "#41141"

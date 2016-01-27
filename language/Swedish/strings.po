@@ -249,10 +249,6 @@ msgctxt "#31314"
 msgid "Content Scanning Options"
 msgstr "Innehållsskrapealternativ"
 
-msgctxt "#31317"
-msgid "Set Fanart Path"
-msgstr "Sätt fanartsökväg"
-
 msgctxt "#31319"
 msgid "Selected Profile"
 msgstr "Vald profil"
@@ -260,10 +256,6 @@ msgstr "Vald profil"
 msgctxt "#31320"
 msgid "Last Logged In"
 msgstr "Sist inloggad"
-
-msgctxt "#31321"
-msgid "Karaoke Song Selector"
-msgstr "Karaoke låtväljare"
 
 msgctxt "#31325"
 msgid "Playlist Options"
@@ -876,10 +868,6 @@ msgstr "Artist-fanart på hemskärmen när musik spelas"
 msgctxt "#41139"
 msgid "Weather Condition fanart on home"
 msgstr "Väderförhållande-fanart på hemskärmen"
-
-msgctxt "#41140"
-msgid "Weather fanart location:"
-msgstr "Väder-fanartplats"
 
 msgctxt "#41141"
 msgid "Enable Extended Now Playing (Overrides Clean Home Now Playing)"
