@@ -712,6 +712,10 @@ msgctxt "#41007"
 msgid "Enable CDArt animation on music visualization screen"
 msgstr ""
 
+msgctxt "#41009"
+msgid "Animate Artist Slideshow on music visualization screen"
+msgstr ""
+
 msgctxt "#41010"
 msgid "Enable New Media Flags"
 msgstr ""
@@ -1169,10 +1173,6 @@ msgctxt "#41126"
 msgid "Wall"
 msgstr ""
 
-msgctxt "#41127"
-msgid "Edit Library"
-msgstr ""
-
 msgctxt "#41128"
 msgid "Fanart Landscape"
 msgstr ""
@@ -1319,14 +1319,6 @@ msgid "Hide Now Playing Title in Video Window"
 msgstr ""
 
 #New labels Misc.  Cirrus Extended v2 *** NEW V2.06
-
-msgctxt "#41181"
-msgid "Random Genre"
-msgstr ""
-
-msgctxt "#41182"
-msgid "Random Movie"
-msgstr ""
 
 msgctxt "#41183"
 msgid "Movie Sets"
@@ -1522,14 +1514,6 @@ msgid "Hide Common Page Count"
 msgstr ""
 
 #empty string with id 41278
-
-msgctxt "#41285"
-msgid "Press left and enter for Actor Info"
-msgstr ""
-
-msgctxt "#41286"
-msgid "Actor Info"
-msgstr ""
 
 msgctxt "#41293"
 msgid "Extra Info"

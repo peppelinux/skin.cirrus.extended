@@ -957,14 +957,6 @@ msgctxt "#41180"
 msgid "Hide Now Playing Title in Video Window"
 msgstr "Titel 'Nu Speelt' verbergen in videovenster"
 
-msgctxt "#41181"
-msgid "Random Genre"
-msgstr "Willekeurig genre"
-
-msgctxt "#41182"
-msgid "Random Movie"
-msgstr "Willekeurige film"
-
 msgctxt "#41183"
 msgid "Movie Sets"
 msgstr "Filmset"
@@ -1116,14 +1108,6 @@ msgstr "Aantal seizoenen:"
 msgctxt "#41276"
 msgid "Hide Common Page Count"
 msgstr "Paginanummering verbergen"
-
-msgctxt "#41285"
-msgid "Press left and enter for Actor Info"
-msgstr ""
-
-msgctxt "#41286"
-msgid "Actor Info"
-msgstr "Info acteur"
 
 msgctxt "#41293"
 msgid "Extra Info"

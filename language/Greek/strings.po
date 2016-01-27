@@ -1009,14 +1009,6 @@ msgctxt "#41180"
 msgid "Hide Now Playing Title in Video Window"
 msgstr ""
 
-msgctxt "#41181"
-msgid "Random Genre"
-msgstr ""
-
-msgctxt "#41182"
-msgid "Random Movie"
-msgstr ""
-
 msgctxt "#41183"
 msgid "Movie Sets"
 msgstr ""
@@ -1167,14 +1159,6 @@ msgstr ""
 
 msgctxt "#41276"
 msgid "Hide Common Page Count"
-msgstr ""
-
-msgctxt "#41285"
-msgid "Press left and enter for Actor Info"
-msgstr ""
-
-msgctxt "#41286"
-msgid "Actor Info"
 msgstr ""
 
 msgctxt "#41293"
