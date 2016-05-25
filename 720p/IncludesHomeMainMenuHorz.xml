@@ -3,6 +3,7 @@
     <include name="HomeMainMenuHorz">
 
         <!-- Background for horizontal menu -->
+        
         <control type="image">
             <left>0</left>
             <top>423</top>
@@ -23,7 +24,7 @@
         </control>
         <control type="image">
             <left>-100</left>
-            <top>485</top>
+            <top>423</top>
             <width>1480</width>
             <height>20</height>
             <texture flipy="true">white-reflec1t.png</texture>
@@ -61,9 +62,9 @@
         <!-- Background for low horizontal menu -->
         <control type="image">
             <left>0</left>
-            <top>100r</top>
+            <top>53r</top>
             <width>1280</width>
-            <height>105</height>
+            <height>55</height>
             <texture>horzmenuback.png</texture>
             <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu)</visible>
             <visible>!Skin.HasSetting(themelighthorz)</visible>
@@ -146,17 +147,19 @@
                 </control>
             </itemlayout>
             <itemlayout condition="Skin.HasSetting(horzLowHomeMenu)" width="430">
+<!--
                 <control type="label">
                     <left>0</left>
-                    <top>218</top>
+                    <top>243</top>
                     <width>430</width>
                     <height>40</height>
-                    <font>cirrus_50</font>
+                    <font>cirrus_16</font>
                     <textcolor>grey3</textcolor>
                     <align>center</align>
                     <aligny>center</aligny>
                     <label>$INFO[ListItem.Label]</label>
                 </control>
+-->
             </itemlayout>
             <focusedlayout condition="!Skin.HasSetting(horzLowHomeMenu)" width="430">
                 <control type="label">
@@ -173,13 +176,13 @@
             </focusedlayout>
             <focusedlayout condition="Skin.HasSetting(horzLowHomeMenu)" width="430">
                 <control type="label">
-                    <left>0</left>
-                    <top>218</top>
+                    <left>12r</left>
+                    <top>243</top>
                     <width>430</width>
                     <height>40</height>
-                    <font>cirrus_50</font>
+                    <font>cirrus_16</font>
                     <textcolor>white</textcolor>
-                    <align>center</align>
+                    <align>right</align>
                     <aligny>center</aligny>
                     <label>$INFO[ListItem.Label]</label>
                 </control>
